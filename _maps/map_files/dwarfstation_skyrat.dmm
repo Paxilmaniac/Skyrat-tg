@@ -48,6 +48,22 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"aP" = (
+/mob/living/simple_animal/hostile/blob/blobspore/independent{
+	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
+	name = "Cave Blob"
+	},
+/turf/open/misc/grass/planet{
+	color = "#ff814f";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "bf" = (
 /turf/open/misc/grass/planet{
 	color = "#ff814f";
@@ -76,6 +92,15 @@
 	pixel_y = 6
 	},
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"br" = (
+/obj/structure/spider/stickyweb,
+/mob/living/simple_animal/hostile/giant_spider/hunter,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -112,6 +137,24 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"ch" = (
+/obj/structure/spider/stickyweb,
+/mob/living/simple_animal/hostile/giant_spider,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"cq" = (
+/obj/structure/spider/stickyweb,
+/mob/living/simple_animal/hostile/giant_spider,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "cw" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -130,6 +173,20 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"cD" = (
+/obj/structure/flora/ash/stem_shroom,
+/obj/structure/spider/stickyweb,
+/turf/open/misc/grass/planet{
+	color = "#00ccff";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "cG" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 4
@@ -142,6 +199,16 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"cK" = (
+/mob/living/simple_animal/hostile/ant,
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "cL" = (
 /obj/item/reagent_containers/glass/bucket/wooden,
@@ -168,6 +235,16 @@
 /obj/item/seeds/chanter,
 /obj/item/seeds/chanter,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"dk" = (
+/obj/effect/decal/remains/xeno,
+/obj/item/clothing/suit/armor/riot/chaplain/clock,
+/obj/item/clothing/head/helmet/chaplain/clock,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -213,6 +290,15 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"ds" = (
+/obj/structure/flora/ash/tall_shroom,
+/obj/item/gun/ballistic/bow,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "du" = (
 /mob/living/simple_animal/hostile/asteroid/lobstrosity,
 /turf/open/misc/snow/actually_safe{
@@ -247,6 +333,29 @@
 /obj/item/glassblowing/shears,
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"dJ" = (
+/obj/structure/flora/ash/cap_shroom{
+	color = "#ff0000";
+	desc = "Several mushrooms that are all dark-red. The red means that it is dangerous, not faster!";
+	harvest_message_high = "You slice off a number of caps from these goblin-caps.";
+	harvest_message_low = "You slice the cap off a single goblin-cap.";
+	harvest_message_med = "You slice off a few caps from the larger goblin-caps.";
+	harvested_desc = "Are there goblins around here? These ones are already picked.";
+	harvested_name = "harvested goblin-caps";
+	name = "goblin-caps"
+	},
+/obj/effect/gibspawner/generic/animal,
+/turf/open/misc/grass/planet{
+	color = "#fbff00";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
 	},
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -432,6 +541,14 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"gH" = (
+/obj/item/clothing/head/helmet/reagent_clothing,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "gJ" = (
 /turf/open/misc/snow/actually_safe{
 	baseturfs = /turf/open/misc/sandy_dirt/planet
@@ -551,6 +668,15 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"hE" = (
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/water/overlay/outdoors
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "hS" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -627,6 +753,31 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"iE" = (
+/obj/structure/spider/stickyweb,
+/turf/open/misc/grass/planet{
+	color = "#fbff00";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"iL" = (
+/obj/effect/decal/remains/human,
+/obj/item/shield/riot/buckler,
+/obj/item/hatchet/wooden,
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "iT" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
@@ -657,6 +808,14 @@
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"jr" = (
+/mob/living/simple_animal/hostile/giant_spider,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -711,6 +870,22 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"jW" = (
+/obj/item/broken_bottle,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"jZ" = (
+/obj/structure/spider/cocoon,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "kq" = (
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
@@ -753,6 +928,21 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"kT" = (
+/obj/structure/flora/ash/leaf_shroom{
+	color = "#fff44f";
+	desc = "Fungi-caps are underground fungi, likely related to the tower-cap, however has numerous lemon-colored leaves coming out of it. If picked at the perfect time, they tend to taste like fine grain.";
+	harvested_desc = "A bunch of formerly-leafed fungi-caps, with their sporangiums exposed. I thought these were meant to give some sort of wood? Eh, forget it.";
+	harvested_name = "leafless fungi-caps";
+	name = "fungi-caps"
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "kX" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -768,6 +958,27 @@
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"lb" = (
+/obj/effect/gibspawner/generic/animal,
+/turf/open/misc/grass/planet{
+	color = "#fbff00";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"lf" = (
+/obj/structure/deployable_barricade/wooden,
+/turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -797,6 +1008,15 @@
 	mood_bonus = 0;
 	mood_message = "<span class='warning'>We dug too deep!</span>\n";
 	name = "The Circus of Fun"
+	})
+"lX" = (
+/obj/structure/flora/ash/tall_shroom,
+/obj/structure/spider/stickyweb,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "mf" = (
 /obj/effect/turf_decal/siding/wood{
@@ -832,6 +1052,14 @@
 	name = "goblin dagger";
 	throwforce = 15
 	},
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"no" = (
+/obj/structure/flora/ash/seraka,
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -894,6 +1122,16 @@
 	set_luminosity = 6
 	},
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"oi" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/suit/armor/riot/knight/yellow,
+/obj/item/clothing/head/helmet/knight/yellow,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -1063,6 +1301,25 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"pZ" = (
+/obj/structure/flora/ash/stem_shroom{
+	color = "#00FFFF";
+	desc = "Spore shrooms are a type of underground fungus, and when cut down, yield glowing mushrooms that may change in color afterwards.";
+	harvest_message_high = "You acquire a number of stems from these spore shrooms.";
+	harvest_message_low = "You pick and slice the cap off a spore shroom, leaving the stem.";
+	harvest_message_med = "You pick and decapitate several spore shrooms for their stems.";
+	harvested_desc = "A few tiny spore shrooms around larger stumps. You can already see them growing back.";
+	harvested_name = "harvested spore shrooms";
+	light_color = "#00FFFF";
+	light_range = 3;
+	name = "spore shrooms"
+	},
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "qd" = (
 /obj/structure/flora/ash/stem_shroom{
 	color = "#00FFFF";
@@ -1112,6 +1369,37 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"qE" = (
+/obj/structure/barricade/wooden,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"qF" = (
+/obj/structure/flora/ash/leaf_shroom{
+	color = "#fff44f";
+	desc = "Fungi-caps are underground fungi, likely related to the tower-cap, however has numerous lemon-colored leaves coming out of it. If picked at the perfect time, they tend to taste like fine grain.";
+	harvested_desc = "A bunch of formerly-leafed fungi-caps, with their sporangiums exposed. I thought these were meant to give some sort of wood? Eh, forget it.";
+	harvested_name = "leafless fungi-caps";
+	name = "fungi-caps"
+	},
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"qW" = (
+/obj/structure/spider/stickyweb,
+/obj/item/food/spidereggs,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "qZ" = (
 /mob/living/simple_animal/chicken,
 /turf/open/misc/dirt/planet,
@@ -1128,6 +1416,14 @@
 	baseturfs = /turf/open/misc/dirt/planet;
 	name = "fungal grass"
 	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"rp" = (
+/obj/item/gun/ballistic/bow,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -1171,6 +1467,14 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"rT" = (
+/obj/item/pickaxe/rusted,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "sn" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -1193,6 +1497,22 @@
 /obj/structure/fermenting_barrel,
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"sY" = (
+/mob/living/simple_animal/hostile/blob/blobspore/independent{
+	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
+	name = "Cave Blob"
+	},
+/turf/open/misc/grass/planet{
+	color = "#fbff00";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
 	},
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -1238,6 +1558,25 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"tK" = (
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"tR" = (
+/obj/effect/gibspawner/generic/animal,
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "tS" = (
 /obj/effect/landmark/start/chief_medical_officer,
 /turf/open/misc/dirt/planet,
@@ -1257,6 +1596,16 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"uw" = (
+/obj/structure/flora/ash/tall_shroom,
+/obj/structure/spider/stickyweb,
+/obj/item/food/spidereggs,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "uC" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -1335,6 +1684,19 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"vm" = (
+/obj/structure/barricade/wooden/crude,
+/turf/open/misc/grass/planet{
+	color = "#00ccff";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "vt" = (
 /turf/closed/mineral/random/high_chance{
 	mineralAmt = 15;
@@ -1369,6 +1731,14 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"wo" = (
+/obj/structure/flora/ash/stem_shroom,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "wr" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/stack/sheet/mineral/gold{
@@ -1386,6 +1756,36 @@
 	amount = 50
 	},
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"wy" = (
+/obj/structure/spider/stickyweb,
+/mob/living/simple_animal/hostile/giant_spider/tarantula,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"wI" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/water/overlay/outdoors
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"wK" = (
+/obj/effect/decal/remains/human,
+/obj/item/hatchet/wooden,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -1449,6 +1849,16 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"yL" = (
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "yQ" = (
 /mob/living/simple_animal/hostile/scorpion,
 /turf/open/misc/dirt/planet,
@@ -1456,6 +1866,19 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"yR" = (
+/obj/structure/barricade/wooden,
+/turf/open/misc/grass/planet{
+	color = "#00ccff";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "yT" = (
 /obj/effect/turf_decal/siding/wood{
@@ -1466,6 +1889,14 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"zh" = (
+/obj/effect/decal/remains/xeno,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "zi" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -1495,6 +1926,14 @@
 /obj/item/seeds/plump,
 /obj/item/seeds/plump,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Ai" = (
+/obj/item/food/spidereggs,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -1602,6 +2041,27 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"Bm" = (
+/obj/item/pickaxe/rusted,
+/turf/open/misc/grass/planet{
+	color = "#fbff00";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Bv" = (
+/obj/structure/barricade/wooden/crude,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "BM" = (
 /turf/open/misc/grass/planet{
 	color = "#00ccff";
@@ -1609,6 +2069,25 @@
 	baseturfs = /turf/open/misc/dirt/planet;
 	name = "fungal grass"
 	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"BP" = (
+/obj/structure/flora/ash/cap_shroom{
+	color = "#ff0000";
+	desc = "Several mushrooms that are all dark-red. The red means that it is dangerous, not faster!";
+	harvest_message_high = "You slice off a number of caps from these goblin-caps.";
+	harvest_message_low = "You slice the cap off a single goblin-cap.";
+	harvest_message_med = "You slice off a few caps from the larger goblin-caps.";
+	harvested_desc = "Are there goblins around here? These ones are already picked.";
+	harvested_name = "harvested goblin-caps";
+	name = "goblin-caps"
+	},
+/obj/item/gun/ballistic/bow,
+/obj/item/food/spidereggs,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -1623,6 +2102,14 @@
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"BW" = (
+/obj/structure/ore_vein/stone,
+/turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -1680,6 +2167,40 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"Cn" = (
+/obj/structure/flora/ash/stem_shroom{
+	color = "#00FFFF";
+	desc = "Spore shrooms are a type of underground fungus, and when cut down, yield glowing mushrooms that may change in color afterwards.";
+	harvest_message_high = "You acquire a number of stems from these spore shrooms.";
+	harvest_message_low = "You pick and slice the cap off a spore shroom, leaving the stem.";
+	harvest_message_med = "You pick and decapitate several spore shrooms for their stems.";
+	harvested_desc = "A few tiny spore shrooms around larger stumps. You can already see them growing back.";
+	harvested_name = "harvested spore shrooms";
+	light_color = "#00FFFF";
+	light_range = 3;
+	name = "spore shrooms"
+	},
+/obj/structure/spider/stickyweb,
+/mob/living/simple_animal/hostile/giant_spider/hunter,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Cz" = (
+/obj/effect/gibspawner/generic/animal,
+/turf/open/misc/grass/planet{
+	color = "#ff814f";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "CB" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -1694,9 +2215,38 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"CF" = (
+/obj/structure/flora/biolumi/mine/weaklight{
+	light_power = 0.2;
+	light_range = 3
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/misc/grass/planet{
+	color = "#00ccff";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "CK" = (
 /obj/structure/chair/stool/bamboo,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"CL" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/water/overlay/outdoors
+	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -1728,6 +2278,34 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"Db" = (
+/mob/living/simple_animal/hostile/faithless{
+	attack_sound = 'sound/weapons/rapierhit.ogg';
+	attack_verb_continuous = "shivs";
+	attack_verb_simple = "shiv";
+	color = "#00FF00";
+	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
+	faction = list("faithless");
+	loot = list(/obj/item/kitchen/knife/shiv);
+	melee_damage_lower = 10;
+	melee_damage_upper = 10;
+	name = "Goblin";
+	resize = 1;
+	response_help_continuous = "stares at";
+	response_help_simple = "stare at";
+	wander = 0
+	},
+/turf/open/misc/grass/planet{
+	color = "#ff814f";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "Dg" = (
 /mob/living/simple_animal/crab,
 /turf/open/water/overlay/outdoors,
@@ -1758,6 +2336,14 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"Dt" = (
+/obj/structure/spider/stickyweb,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "DJ" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -1769,6 +2355,26 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"DO" = (
+/obj/effect/decal/remains/human,
+/obj/item/saddle,
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"DP" = (
+/obj/structure/spider/cocoon,
+/obj/item/clothing/suit/armor/vest/cuirass,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "DQ" = (
 /obj/effect/turf_decal/siding/wood{
@@ -1828,6 +2434,28 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"EF" = (
+/obj/effect/gibspawner/generic/animal,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"EH" = (
+/obj/structure/spider/stickyweb,
+/mob/living/simple_animal/hostile/giant_spider/tarantula,
+/turf/open/misc/grass/planet{
+	color = "#00ccff";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "EV" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -1855,6 +2483,18 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"Fq" = (
+/mob/living/simple_animal/hostile/blob/blobspore/independent{
+	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
+	name = "Cave Blob"
+	},
+/obj/effect/gibspawner/generic/animal,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "FI" = (
 /mob/living/simple_animal/hostile/asteroid/gutlunch/grublunch,
 /turf/open/misc/dirt/planet,
@@ -1881,6 +2521,37 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"FW" = (
+/obj/effect/gibspawner/human,
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"FY" = (
+/obj/structure/flora/ash/stem_shroom{
+	color = "#00FFFF";
+	desc = "Spore shrooms are a type of underground fungus, and when cut down, yield glowing mushrooms that may change in color afterwards.";
+	harvest_message_high = "You acquire a number of stems from these spore shrooms.";
+	harvest_message_low = "You pick and slice the cap off a spore shroom, leaving the stem.";
+	harvest_message_med = "You pick and decapitate several spore shrooms for their stems.";
+	harvested_desc = "A few tiny spore shrooms around larger stumps. You can already see them growing back.";
+	harvested_name = "harvested spore shrooms";
+	light_color = "#00FFFF";
+	light_range = 3;
+	name = "spore shrooms"
+	},
+/obj/structure/spider/stickyweb,
+/obj/item/food/spidereggs,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "Gd" = (
 /obj/structure/flora/tree/pine,
 /turf/open/misc/grass/planet{
@@ -1903,6 +2574,16 @@
 "Gl" = (
 /obj/machinery/light/warm/no_nightlight/directional/north,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Go" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -1954,6 +2635,25 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"GG" = (
+/obj/structure/alien/gelpod{
+	max_integrity = 666
+	},
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"GK" = (
+/turf/open/water/overlay/outdoors,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "GQ" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/t_scanner/adv_mining_scanner,
@@ -1976,6 +2676,14 @@
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Hc" = (
+/mob/living/simple_animal/hostile/giant_spider/hunter,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -2030,6 +2738,50 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"HL" = (
+/obj/structure/flora/ash/leaf_shroom{
+	color = "#fff44f";
+	desc = "Fungi-caps are underground fungi, likely related to the tower-cap, however has numerous lemon-colored leaves coming out of it. If picked at the perfect time, they tend to taste like fine grain.";
+	harvested_desc = "A bunch of formerly-leafed fungi-caps, with their sporangiums exposed. I thought these were meant to give some sort of wood? Eh, forget it.";
+	harvested_name = "leafless fungi-caps";
+	name = "fungi-caps"
+	},
+/mob/living/simple_animal/hostile/blob/blobspore/independent{
+	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
+	name = "Cave Blob"
+	},
+/turf/open/misc/grass/planet{
+	color = "#fbff00";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Ia" = (
+/obj/structure/flora/ash/stem_shroom{
+	color = "#00FFFF";
+	desc = "Spore shrooms are a type of underground fungus, and when cut down, yield glowing mushrooms that may change in color afterwards.";
+	harvest_message_high = "You acquire a number of stems from these spore shrooms.";
+	harvest_message_low = "You pick and slice the cap off a spore shroom, leaving the stem.";
+	harvest_message_med = "You pick and decapitate several spore shrooms for their stems.";
+	harvested_desc = "A few tiny spore shrooms around larger stumps. You can already see them growing back.";
+	harvested_name = "harvested spore shrooms";
+	light_color = "#00FFFF";
+	light_range = 3;
+	name = "spore shrooms"
+	},
+/obj/structure/spider/stickyweb,
+/mob/living/simple_animal/hostile/giant_spider,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "Ib" = (
 /mob/living/simple_animal/hostile/faithless{
 	attack_sound = 'sound/weapons/rapierhit.ogg';
@@ -2053,6 +2805,43 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"Ie" = (
+/obj/structure/spider/stickyweb,
+/turf/open/misc/grass/planet{
+	color = "#00ccff";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"If" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/water/overlay/outdoors
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Ig" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/water/overlay/outdoors
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "Iq" = (
 /obj/effect/turf_decal/weather/snow/corner,
 /turf/open/misc/sandy_dirt/planet{
@@ -2063,6 +2852,20 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"Ir" = (
+/mob/living/simple_animal/hostile/blob/blobspore/independent{
+	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
+	name = "Cave Blob"
+	},
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "Iv" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -2108,6 +2911,25 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"Jl" = (
+/obj/structure/flora/ash/cap_shroom{
+	color = "#ff0000";
+	desc = "Several mushrooms that are all dark-red. The red means that it is dangerous, not faster!";
+	harvest_message_high = "You slice off a number of caps from these goblin-caps.";
+	harvest_message_low = "You slice the cap off a single goblin-cap.";
+	harvest_message_med = "You slice off a few caps from the larger goblin-caps.";
+	harvested_desc = "Are there goblins around here? These ones are already picked.";
+	harvested_name = "harvested goblin-caps";
+	name = "goblin-caps"
+	},
+/obj/structure/spider/stickyweb,
+/mob/living/simple_animal/hostile/giant_spider,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "JJ" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -2135,6 +2957,52 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"JU" = (
+/mob/living/simple_animal/hostile/faithless{
+	attack_sound = 'sound/weapons/rapierhit.ogg';
+	attack_verb_continuous = "shivs";
+	attack_verb_simple = "shiv";
+	color = "#00FF00";
+	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
+	faction = list("faithless");
+	loot = list(/obj/item/kitchen/knife/shiv);
+	melee_damage_lower = 10;
+	melee_damage_upper = 10;
+	name = "Goblin";
+	resize = 1;
+	response_help_continuous = "stares at";
+	response_help_simple = "stare at";
+	wander = 0
+	},
+/turf/open/misc/grass/planet{
+	color = "#fbff00";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Kb" = (
+/obj/structure/flora/ash/tall_shroom,
+/mob/living/simple_animal/hostile/giant_spider/viper,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Kh" = (
+/obj/item/storage/bag/quiver,
+/obj/item/food/spidereggs,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "Ku" = (
 /obj/effect/turf_decal/siding/wood{
@@ -2199,6 +3067,18 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"LI" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/water/overlay/outdoors
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "LW" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -2243,6 +3123,41 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"My" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Mz" = (
+/obj/structure/spider/stickyweb,
+/mob/living/simple_animal/hostile/giant_spider/tarantula,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"ME" = (
+/obj/structure/flora/ash/leaf_shroom{
+	color = "#fff44f";
+	desc = "Fungi-caps are underground fungi, likely related to the tower-cap, however has numerous lemon-colored leaves coming out of it. If picked at the perfect time, they tend to taste like fine grain.";
+	harvested_desc = "A bunch of formerly-leafed fungi-caps, with their sporangiums exposed. I thought these were meant to give some sort of wood? Eh, forget it.";
+	harvested_name = "leafless fungi-caps";
+	name = "fungi-caps"
+	},
+/obj/structure/spider/stickyweb,
+/mob/living/simple_animal/hostile/giant_spider/hunter,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "MJ" = (
 /obj/structure/rack{
 	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
@@ -2257,6 +3172,75 @@
 	toolspeed = 0.2
 	},
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"MK" = (
+/mob/living/simple_animal/hostile/faithless{
+	attack_sound = 'sound/weapons/rapierhit.ogg';
+	attack_verb_continuous = "shivs";
+	attack_verb_simple = "shiv";
+	color = "#00FF00";
+	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
+	faction = list("faithless");
+	loot = list(/obj/item/kitchen/knife/shiv);
+	melee_damage_lower = 10;
+	melee_damage_upper = 10;
+	name = "Goblin";
+	resize = 1;
+	response_help_continuous = "stares at";
+	response_help_simple = "stare at";
+	wander = 0
+	},
+/turf/open/misc/grass/planet{
+	color = "#00ccff";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"MM" = (
+/obj/structure/spider/stickyweb,
+/turf/open/misc/grass/planet{
+	color = "#ff814f";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"MV" = (
+/obj/structure/spider/stickyweb,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Na" = (
+/obj/structure/flora/ash/stem_shroom{
+	color = "#00FFFF";
+	desc = "Spore shrooms are a type of underground fungus, and when cut down, yield glowing mushrooms that may change in color afterwards.";
+	harvest_message_high = "You acquire a number of stems from these spore shrooms.";
+	harvest_message_low = "You pick and slice the cap off a spore shroom, leaving the stem.";
+	harvest_message_med = "You pick and decapitate several spore shrooms for their stems.";
+	harvested_desc = "A few tiny spore shrooms around larger stumps. You can already see them growing back.";
+	harvested_name = "harvested spore shrooms";
+	light_color = "#00FFFF";
+	light_range = 3;
+	name = "spore shrooms"
+	},
+/obj/item/food/spidereggs,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -2302,9 +3286,48 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"Ob" = (
+/obj/structure/flora/ash/stem_shroom{
+	color = "#00FFFF";
+	desc = "Spore shrooms are a type of underground fungus, and when cut down, yield glowing mushrooms that may change in color afterwards.";
+	harvest_message_high = "You acquire a number of stems from these spore shrooms.";
+	harvest_message_low = "You pick and slice the cap off a spore shroom, leaving the stem.";
+	harvest_message_med = "You pick and decapitate several spore shrooms for their stems.";
+	harvested_desc = "A few tiny spore shrooms around larger stumps. You can already see them growing back.";
+	harvested_name = "harvested spore shrooms";
+	light_color = "#00FFFF";
+	light_range = 3;
+	name = "spore shrooms"
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "On" = (
 /obj/structure/bonfire,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Or" = (
+/obj/structure/flora/ash/cap_shroom{
+	color = "#ff0000";
+	desc = "Several mushrooms that are all dark-red. The red means that it is dangerous, not faster!";
+	harvest_message_high = "You slice off a number of caps from these goblin-caps.";
+	harvest_message_low = "You slice the cap off a single goblin-cap.";
+	harvest_message_med = "You slice off a few caps from the larger goblin-caps.";
+	harvested_desc = "Are there goblins around here? These ones are already picked.";
+	harvested_name = "harvested goblin-caps";
+	name = "goblin-caps"
+	},
+/obj/structure/spider/stickyweb,
+/obj/item/food/spidereggs,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -2369,6 +3392,18 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"OY" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/water/overlay/outdoors
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "Pa" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -2395,6 +3430,15 @@
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Pb" = (
+/obj/structure/spider/cocoon,
+/obj/item/highfrequencyblade,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -2468,6 +3512,16 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"PC" = (
+/obj/structure/deployable_barricade/wooden{
+	dir = 4
+	},
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "PH" = (
 /obj/structure/table/wood,
 /obj/machinery/light/warm/no_nightlight/directional/east,
@@ -2484,6 +3538,39 @@
 	baseturfs = /turf/open/misc/dirt/planet;
 	name = "fungal grass"
 	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"PN" = (
+/obj/structure/punji_sticks/spikes,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"PP" = (
+/obj/structure/flora/ash/tall_shroom,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"PW" = (
+/obj/structure/flora/ash/cap_shroom{
+	color = "#ff0000";
+	desc = "Several mushrooms that are all dark-red. The red means that it is dangerous, not faster!";
+	harvest_message_high = "You slice off a number of caps from these goblin-caps.";
+	harvest_message_low = "You slice the cap off a single goblin-cap.";
+	harvest_message_med = "You slice off a few caps from the larger goblin-caps.";
+	harvested_desc = "Are there goblins around here? These ones are already picked.";
+	harvested_name = "harvested goblin-caps";
+	name = "goblin-caps"
+	},
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -2567,6 +3654,29 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"QD" = (
+/mob/living/simple_animal/hostile/blob/blobspore/independent{
+	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
+	name = "Cave Blob"
+	},
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"QF" = (
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/water/overlay/outdoors
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "QJ" = (
 /obj/structure/rack{
 	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
@@ -2578,6 +3688,26 @@
 /obj/item/storage/bag/plants/portaseeder,
 /obj/item/storage/bag/plants/portaseeder,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"QW" = (
+/obj/structure/flora/ash/leaf_shroom{
+	color = "#fff44f";
+	desc = "Fungi-caps are underground fungi, likely related to the tower-cap, however has numerous lemon-colored leaves coming out of it. If picked at the perfect time, they tend to taste like fine grain.";
+	harvested_desc = "A bunch of formerly-leafed fungi-caps, with their sporangiums exposed. I thought these were meant to give some sort of wood? Eh, forget it.";
+	harvested_name = "leafless fungi-caps";
+	name = "fungi-caps"
+	},
+/obj/effect/gibspawner/generic/animal,
+/turf/open/misc/grass/planet{
+	color = "#fbff00";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -2611,6 +3741,18 @@
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Ru" = (
+/obj/structure/flora/rock{
+	move_force = 3000;
+	move_resist = 3000;
+	pull_force = 3000
+	},
+/turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -2679,6 +3821,23 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"Sf" = (
+/obj/structure/flora/ash/tall_shroom,
+/obj/item/food/spidereggs,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Sn" = (
+/obj/effect/decal/remains/human,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "SE" = (
 /mob/living/simple_animal/deer,
 /turf/open/misc/snow/actually_safe{
@@ -2688,6 +3847,15 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"Ta" = (
+/obj/effect/decal/remains/human,
+/obj/item/food/spidereggs,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "Tb" = (
 /obj/structure/rack{
@@ -2728,6 +3896,19 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"TI" = (
+/obj/structure/punji_sticks/spikes,
+/turf/open/misc/grass/planet{
+	color = "#00ccff";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "TO" = (
 /turf/open/misc/dirt/planet,
@@ -2795,8 +3976,38 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"Uk" = (
+/turf/closed/wall/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "Ul" = (
 /obj/structure/fermenting_barrel,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Un" = (
+/mob/living/simple_animal/hostile/blob/blobspore/independent{
+	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
+	name = "Cave Blob"
+	},
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Ur" = (
+/obj/structure/deployable_barricade/wooden{
+	dir = 1
+	},
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -2823,6 +4034,42 @@
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Vb" = (
+/obj/structure/flora/ash/cap_shroom{
+	color = "#ff0000";
+	desc = "Several mushrooms that are all dark-red. The red means that it is dangerous, not faster!";
+	harvest_message_high = "You slice off a number of caps from these goblin-caps.";
+	harvest_message_low = "You slice the cap off a single goblin-cap.";
+	harvest_message_med = "You slice off a few caps from the larger goblin-caps.";
+	harvested_desc = "Are there goblins around here? These ones are already picked.";
+	harvested_name = "harvested goblin-caps";
+	name = "goblin-caps"
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Vc" = (
+/obj/structure/alien/egg/burst,
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Vn" = (
+/obj/item/storage/bag/quiver,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -2879,6 +4126,18 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"VO" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/water/overlay/outdoors
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "VU" = (
 /obj/structure/water_source/puddle,
 /turf/open/misc/sandy_dirt/planet,
@@ -2886,6 +4145,22 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"VV" = (
+/mob/living/simple_animal/hostile/blob/blobspore/independent{
+	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
+	name = "Cave Blob"
+	},
+/turf/open/misc/grass/planet{
+	color = "#00ccff";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "Wb" = (
 /turf/closed/indestructible/riveted/boss{
@@ -2904,6 +4179,14 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"Wi" = (
+/mob/living/simple_animal/hostile/giant_spider/viper,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "Wk" = (
 /mob/living/simple_animal/pet/cat/jerry,
@@ -2986,6 +4269,30 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"Xh" = (
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Xm" = (
+/obj/effect/decal/remains/human,
+/obj/item/nullrod/claymore{
+	desc = "A weapon well-documented by non-Arthurian legends. Now includes anti-evil seals to prevent being corrupted by dark forces!";
+	force = 50;
+	max_integrity = 800;
+	name = "XL Calibur";
+	obj_flags = 0
+	},
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "Xt" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -3002,10 +4309,37 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"XB" = (
+/obj/effect/decal/remains/xeno,
+/obj/item/hatchet/wooden,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "XW" = (
 /turf/closed/wall/mineral/stone{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Yl" = (
+/mob/living/simple_animal/hostile/cazador,
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Ym" = (
+/obj/effect/turf_decal/siding/wood,
+/turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -3068,10 +4402,29 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"Yv" = (
+/obj/effect/gibspawner/xeno,
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "YJ" = (
 /obj/structure/table/wood,
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"YR" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/suit/armor/vest/cuirass,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -3089,6 +4442,22 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"YY" = (
+/obj/structure/flora/ash/leaf_shroom{
+	color = "#fff44f";
+	desc = "Fungi-caps are underground fungi, likely related to the tower-cap, however has numerous lemon-colored leaves coming out of it. If picked at the perfect time, they tend to taste like fine grain.";
+	harvested_desc = "A bunch of formerly-leafed fungi-caps, with their sporangiums exposed. I thought these were meant to give some sort of wood? Eh, forget it.";
+	harvested_name = "leafless fungi-caps";
+	name = "fungi-caps"
+	},
+/obj/structure/spider/stickyweb,
+/mob/living/simple_animal/hostile/giant_spider,
+/turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "Zg" = (
 /obj/item/flashlight/lantern/heirloom_moth,
 /turf/open/misc/dirt/planet,
@@ -3100,6 +4469,21 @@
 "Zs" = (
 /obj/structure/water_source/puddle,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Zv" = (
+/obj/structure/flora/ash/leaf_shroom{
+	color = "#fff44f";
+	desc = "Fungi-caps are underground fungi, likely related to the tower-cap, however has numerous lemon-colored leaves coming out of it. If picked at the perfect time, they tend to taste like fine grain.";
+	harvested_desc = "A bunch of formerly-leafed fungi-caps, with their sporangiums exposed. I thought these were meant to give some sort of wood? Eh, forget it.";
+	harvested_name = "leafless fungi-caps";
+	name = "fungi-caps"
+	},
+/obj/item/food/spidereggs,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -29067,9 +30451,9 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
+kq
+BW
+Ru
 sy
 nP
 nP
@@ -29323,10 +30707,10 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
+kq
+kq
+Ru
+kq
 sy
 nP
 nP
@@ -29579,11 +30963,11 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
+Ru
+kq
+Ru
+kq
+kq
 sy
 nP
 nP
@@ -29835,12 +31219,12 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+GK
+GK
 sy
 nP
 nP
@@ -30091,13 +31475,13 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
+kq
+kq
+GK
+GK
+GK
+GK
 sy
 nP
 nP
@@ -30345,16 +31729,16 @@ QC
 QC
 QC
 QC
+Ru
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+BW
+kq
+kq
+GK
+GK
+GK
+GK
 sy
 nP
 nP
@@ -30570,6 +31954,17 @@ QC
 QC
 QC
 QC
+BW
+kq
+QC
+kq
+kq
+BW
+kq
+BW
+QC
+QC
+BW
 QC
 QC
 QC
@@ -30592,26 +31987,15 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+BW
+kq
+kq
+GK
+GK
+GK
+GK
+kq
 sy
 nP
 nP
@@ -30823,6 +32207,24 @@ QC
 QC
 QC
 QC
+kq
+kq
+BW
+kq
+kq
+kq
+Ru
+Ru
+kq
+kq
+kq
+kq
+Ru
+kq
+Ru
+BW
+kq
+kq
 QC
 QC
 QC
@@ -30839,36 +32241,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
+kq
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+Ru
+kq
 sy
 nP
 nP
@@ -31076,6 +32460,31 @@ QC
 QC
 QC
 QC
+kq
+kq
+kq
+kq
+BW
+kq
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+BW
+kq
+kq
 QC
 QC
 QC
@@ -31084,48 +32493,23 @@ QC
 QC
 QC
 QC
+Ru
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
+kq
+kq
+BW
+BW
+kq
+kq
+GK
+GK
+GK
+GK
+Ru
+kq
+kq
 sy
 nP
 nP
@@ -31331,58 +32715,58 @@ QC
 QC
 QC
 QC
+Ru
+kq
+Ru
+kq
+kq
+Ru
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+BW
+BW
+kq
+kq
+kq
 QC
 QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+BW
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+Ru
+kq
+kq
+kq
+kq
 sy
 nP
 nP
@@ -31587,58 +32971,58 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+BW
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+Ru
+kq
+kq
+Ru
+kq
+BW
+kq
+kq
+Ru
+BW
+Ru
+BW
+kq
+Ru
+kq
+GK
+GK
+GK
+GK
+GK
+Ru
+kq
+kq
+kq
+BW
 QC
 sy
 nP
@@ -31842,58 +33226,58 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
+kq
+kq
+Ru
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+BW
+GK
+kq
+kq
+BW
+kq
+Ru
+kq
+kq
+Ru
+Ru
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+BW
 QC
 QC
 QC
@@ -32097,58 +33481,58 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
+kq
+kq
+kq
+kq
+BW
+GK
+GK
+GK
+GK
+GK
+BW
+GK
+GK
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+Ru
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+GK
+GK
+GK
+GK
+kq
+GK
+GK
+GK
+GK
+GK
+BW
+kq
+kq
 QC
 QC
 QC
@@ -32180,18 +33564,18 @@ QC
 QC
 QC
 QC
+Ru
+BW
+kq
+kq
+BW
+kq
+kq
+Ru
+BW
+BW
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
 QC
 QC
 QC
@@ -32353,6 +33737,22 @@ QC
 QC
 QC
 QC
+kq
+kq
+kq
+kq
+BW
+GK
+GK
+GK
+GK
+BW
+GK
+kq
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -32361,50 +33761,34 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+BW
+kq
+kq
+Ru
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+BW
+GK
+BW
+Ru
+kq
+kq
+kq
 QC
 QC
 QC
@@ -32436,20 +33820,20 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+BW
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+Ru
 QC
 QC
 QC
@@ -32609,6 +33993,19 @@ QC
 QC
 QC
 QC
+kq
+kq
+Ru
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -32625,41 +34022,28 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+BW
+kq
+kq
+kq
+Ru
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+Ru
+Ru
+GK
+Ru
+kq
+kq
+kq
 QC
 QC
 QC
@@ -32691,25 +34075,25 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+Ru
+BW
+Ru
 QC
 QC
 QC
@@ -32863,6 +34247,20 @@ QC
 QC
 QC
 QC
+Ru
+kq
+kq
+Ru
+GK
+BW
+GK
+GK
+GK
+kq
+kq
+BW
+kq
+kq
 QC
 QC
 QC
@@ -32883,38 +34281,24 @@ QC
 QC
 QC
 QC
+BW
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+Ru
+kq
+kq
+kq
+BW
+kq
+kq
+Ru
+kq
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -32943,31 +34327,31 @@ nP
 sy
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
+kq
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+BW
+kq
 QC
 QC
 QC
@@ -33119,6 +34503,18 @@ QC
 QC
 QC
 QC
+kq
+kq
+Ru
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+BW
+Ru
 QC
 QC
 QC
@@ -33147,28 +34543,16 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+Ru
+kq
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -33198,35 +34582,35 @@ nP
 nP
 nP
 sy
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+BW
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+kq
+Ru
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+kq
+kq
+BW
+Ru
 QC
 QC
 QC
@@ -33375,18 +34759,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
 QC
 QC
 QC
@@ -33455,38 +34839,38 @@ nP
 nP
 nP
 sy
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+Ru
+BW
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+BW
+BW
+Ru
+BW
+kq
+kq
+Ru
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+kq
+Ru
 QC
 QC
 QC
@@ -33630,18 +35014,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
+kq
+BW
+kq
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -33712,39 +35096,39 @@ nP
 nP
 nP
 sy
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+BW
+kq
+kq
+BW
+kq
+kq
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
+Ru
+kq
+BW
+kq
+Ru
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+BW
+kq
+Ru
 QC
 QC
 QC
@@ -33885,19 +35269,19 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+kq
+kq
+kq
+kq
+Ru
 QC
 QC
 QC
@@ -33969,6 +35353,18 @@ nP
 nP
 nP
 sy
+GK
+GK
+GK
+GK
+GK
+GK
+BW
+kq
+kq
+kq
+QC
+Ru
 QC
 QC
 QC
@@ -33978,31 +35374,19 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
+kq
+BW
+Ru
+kq
+GK
+GK
+GK
+GK
+kq
+BW
+kq
+kq
 QC
 QC
 QC
@@ -34142,17 +35526,17 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+BW
+GK
+GK
+GK
+GK
+kq
+kq
+Ru
+kq
 QC
 QC
 QC
@@ -34226,6 +35610,14 @@ nP
 nP
 nP
 sy
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+Ru
 QC
 QC
 QC
@@ -34242,26 +35634,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
+BW
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+Ru
+kq
+kq
 QC
 QC
 QC
@@ -34397,18 +35781,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+BW
+kq
+kq
+kq
+GK
+GK
+GK
+kq
+kq
+Ru
+kq
 QC
 QC
 QC
@@ -34483,6 +35867,11 @@ nP
 nP
 nP
 sy
+kq
+kq
+kq
+Ru
+kq
 QC
 QC
 QC
@@ -34504,22 +35893,17 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+kq
+Ru
+Ru
+kq
 QC
 QC
 QC
@@ -34651,19 +36035,19 @@ QC
 QC
 QC
 QC
+Ru
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+kq
+BW
+kq
 QC
 QC
 QC
@@ -34740,6 +36124,10 @@ nP
 nP
 nP
 sy
+BW
+Ru
+Ru
+kq
 QC
 QC
 QC
@@ -34763,21 +36151,17 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -34908,18 +36292,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+Ru
+kq
+kq
 QC
 QC
 QC
@@ -35025,17 +36409,17 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+kq
+kq
+Ru
+Ru
 QC
 QC
 QC
@@ -35163,18 +36547,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+BW
+Ru
+kq
+kq
+GK
+GK
+GK
+GK
+kq
+BW
+kq
 QC
 QC
 QC
@@ -35283,18 +36667,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
+BW
+kq
+kq
+GK
+GK
+GK
+GK
+kq
+BW
+kq
+kq
 QC
 QC
 QC
@@ -35419,18 +36803,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+BW
+Ru
+kq
+kq
+kq
+GK
+GK
+GK
+kq
+kq
+kq
+Ru
 QC
 QC
 QC
@@ -35542,17 +36926,17 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+Ru
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+BW
 QC
 QC
 QC
@@ -35674,18 +37058,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+BW
+Ru
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+Ru
+BW
 QC
 QC
 QC
@@ -35799,19 +37183,19 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+BW
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -35930,18 +37314,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
 QC
 QC
 QC
@@ -36058,17 +37442,17 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+BW
+kq
+kq
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+BW
 QC
 QC
 QC
@@ -36185,18 +37569,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+BW
+Ru
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+Ru
 QC
 QC
 QC
@@ -36316,18 +37700,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+kq
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -36440,19 +37824,19 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+BW
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+Ru
+BW
 QC
 QC
 QC
@@ -36574,18 +37958,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+BW
+kq
 QC
 QC
 QC
@@ -36696,19 +38080,19 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+Ru
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
 QC
 QC
 QC
@@ -36832,18 +38216,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+BW
+kq
+kq
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+Ru
 QC
 QC
 QC
@@ -36952,19 +38336,19 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+Ru
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+Ru
+BW
 QC
 QC
 QC
@@ -37090,19 +38474,19 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -37207,19 +38591,19 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+BW
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+BW
+kq
 QC
 QC
 QC
@@ -37348,20 +38732,20 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+BW
+kq
+kq
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+Ru
+Ru
+kq
 QC
 QC
 QC
@@ -37462,20 +38846,20 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+Ru
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+Ru
 QC
 QC
 QC
@@ -37606,19 +38990,19 @@ QC
 QC
 QC
 QC
-QC
-QC
-pK
-pK
-pK
-pK
-pK
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+Ru
 QC
 QC
 QC
@@ -37718,20 +39102,20 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+Ru
+kq
+Ru
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+Ru
+BW
 QC
 QC
 QC
@@ -37864,19 +39248,19 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-QC
+kq
+Ru
+Ru
+kq
+Ru
+GK
+GK
+GK
+GK
+GK
+BW
+Ru
+kq
 QC
 QC
 QC
@@ -37975,18 +39359,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+BW
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+BW
 QC
 QC
 QC
@@ -38123,21 +39507,21 @@ pK
 pK
 pK
 pK
+kq
+kq
+kq
+kq
+Ru
+GK
+GK
+GK
+GK
+kq
+kq
+BW
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
 QC
 QC
 QC
@@ -38230,18 +39614,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+BW
+kq
+kq
+Ru
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
 QC
 QC
 QC
@@ -38380,23 +39764,23 @@ pK
 pK
 pK
 pK
+Ru
+Ru
+BW
+Ru
+kq
+kq
+GK
+GK
+GK
+GK
+kq
+kq
+BW
 pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
 QC
 QC
 QC
@@ -38449,6 +39833,7 @@ QC
 QC
 QC
 QC
+XW
 QC
 QC
 QC
@@ -38485,19 +39870,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+Ru
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+BW
 QC
 QC
 QC
@@ -38639,24 +40023,24 @@ pK
 pK
 pK
 pK
+kq
+kq
+BW
+kq
+kq
+kq
+GK
+GK
+GK
+kq
+kq
+BW
+kq
 pK
 pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
 QC
 QC
 QC
@@ -38703,6 +40087,8 @@ QC
 QC
 QC
 QC
+XW
+Gl
 QC
 QC
 QC
@@ -38739,20 +40125,18 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+kq
 QC
 QC
 QC
@@ -38899,24 +40283,24 @@ pK
 pK
 pK
 pK
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+kq
+kq
+Ru
+BW
+kq
 pK
 pK
 pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
 QC
 QC
 QC
@@ -38961,6 +40345,7 @@ QC
 QC
 QC
 QC
+kq
 QC
 QC
 QC
@@ -38996,21 +40381,20 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+Ru
+BW
 QC
 QC
 QC
@@ -39157,25 +40541,25 @@ pK
 pK
 pK
 pK
+kq
+BW
+kq
+Ru
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+BW
+kq
 pK
 pK
 pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
 QC
 QC
 QC
@@ -39218,6 +40602,8 @@ QC
 QC
 QC
 QC
+kq
+kq
 QC
 QC
 QC
@@ -39250,21 +40636,19 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+BW
+Ru
+kq
+Ru
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
 QC
 QC
 QC
@@ -39416,6 +40800,19 @@ pK
 pK
 pK
 pK
+kq
+kq
+Ru
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+Ru
+BW
 pK
 pK
 pK
@@ -39423,19 +40820,6 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
 QC
 QC
 QC
@@ -39475,6 +40859,8 @@ QC
 QC
 QC
 QC
+kq
+kq
 QC
 QC
 QC
@@ -39506,21 +40892,19 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+Ru
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+Ru
 QC
 QC
 QC
@@ -39675,25 +41059,25 @@ pK
 pK
 pK
 pK
+Ru
+BW
+Ru
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+BW
+pK
+Ru
 pK
 pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
 QC
 QC
 QC
@@ -39733,6 +41117,7 @@ QC
 QC
 QC
 QC
+kq
 QC
 QC
 QC
@@ -39761,23 +41146,22 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
+BW
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+BW
+Ru
 QC
 QC
 QC
@@ -39932,27 +41316,27 @@ pK
 pK
 pK
 pK
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+BW
+kq
 pK
 pK
 pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
 QC
 QC
 QC
@@ -39988,6 +41372,7 @@ QC
 QC
 QC
 QC
+XW
 QC
 QC
 QC
@@ -40017,23 +41402,22 @@ QC
 QC
 QC
 QC
+BW
+kq
+kq
+Ru
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+Ru
+BW
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+Ru
 QC
 QC
 QC
@@ -40190,28 +41574,28 @@ pK
 pK
 pK
 pK
+kq
+kq
+kq
+BW
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+Ru
+kq
+kq
+BW
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
 QC
 QC
 QC
@@ -40246,7 +41630,9 @@ QC
 QC
 QC
 QC
+kq
 QC
+XW
 QC
 QC
 QC
@@ -40271,23 +41657,21 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+BW
+kq
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+BW
+Ru
 QC
 QC
 QC
@@ -40450,47 +41834,23 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-pK
-pK
-pK
+kq
+kq
+kq
+BW
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+Ru
+kq
 pK
 pK
 pK
@@ -40512,6 +41872,24 @@ QC
 QC
 QC
 QC
+pK
+pK
+pK
+pK
+pK
+pK
+pK
+QC
+QC
+QC
+QC
+QC
+QC
+QC
+QC
+kq
+kq
+kq
 QC
 QC
 QC
@@ -40532,18 +41910,24 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+BW
+kq
+kq
+kq
 QC
 QC
 QC
@@ -40708,6 +42092,34 @@ pK
 pK
 pK
 pK
+kq
+Ru
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+Ru
+BW
+pK
+pK
+pK
+pK
+QC
+QC
+QC
+QC
+QC
 pK
 pK
 pK
@@ -40729,34 +42141,13 @@ pK
 pK
 pK
 pK
-pK
-pK
 QC
 QC
-QC
-QC
-QC
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+kq
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -40769,37 +42160,30 @@ QC
 QC
 QC
 QC
+Ru
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+BW
+BW
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+Ru
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -40967,6 +42351,28 @@ pK
 pK
 pK
 pK
+Ru
+kq
+kq
+BW
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+BW
+kq
+BW
+pK
+BW
 pK
 pK
 pK
@@ -40994,32 +42400,12 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+kq
+kq
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -41029,31 +42415,29 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -41225,6 +42609,31 @@ pK
 pK
 pK
 pK
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+kq
+pK
+pK
+pK
+BW
+BW
 pK
 pK
 pK
@@ -41247,38 +42656,13 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+PC
+PC
+qE
+hk
+BM
+yR
+PC
 pK
 pK
 pK
@@ -41286,29 +42670,29 @@ pK
 pK
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+BW
+BW
+kq
+BW
+kq
+BW
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+BW
+kq
+kq
 QC
 QC
 QC
@@ -41483,6 +42867,32 @@ pK
 pK
 pK
 pK
+kq
+kq
+kq
+kq
+kq
+BW
+GK
+Ru
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+Ru
+kq
+kq
+kq
+kq
+pK
+pK
+BW
 pK
 pK
 pK
@@ -41503,65 +42913,39 @@ pK
 pK
 pK
 pK
+PN
+TI
+vm
+BM
+hk
+vm
+TI
+PN
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+qE
+Ur
+kq
+BW
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+BW
+Ru
 QC
 QC
 QC
@@ -41742,6 +43126,33 @@ pK
 pK
 pK
 pK
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+Ru
+kq
+kq
+Ru
+kq
+BW
+kq
 pK
 pK
 pK
@@ -41759,65 +43170,38 @@ pK
 pK
 pK
 pK
+kq
+hk
+yR
+BM
+BM
+yR
+Qj
+kq
+kq
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+Bv
+Ur
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+Ru
+GK
+Ru
+kq
+BW
+kq
 QC
 QC
 QC
@@ -41916,7 +43300,7 @@ pK
 pK
 pK
 pK
-kq
+no
 kq
 kq
 kq
@@ -42001,78 +43385,78 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+Ru
+kq
+kq
+BW
+kq
+Ru
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+pK
+pK
+pK
+pK
+pK
+pK
+pK
+pK
+pK
+pK
+pK
+pK
+pK
+pK
+pK
+kq
+Ib
+kq
+Qj
+hk
+BM
+hk
+MK
+kq
+kq
+kq
+kq
+kq
+qE
+Ur
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+Ru
+BW
+Ru
+BW
+kq
+kq
 QC
 QC
 QC
@@ -42129,7 +43513,7 @@ ps
 Cb
 ps
 kq
-kq
+no
 pK
 pK
 pK
@@ -42173,7 +43557,7 @@ pK
 pK
 pK
 ps
-kq
+no
 kq
 kq
 kq
@@ -42259,75 +43643,75 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+Ru
+kq
+kq
+Ru
+kq
+Ru
+kq
+kq
+kq
+pK
+pK
+pK
+pK
+pK
+pK
+pK
+pK
+pK
+pK
+kq
+kq
+Ym
+kq
+kq
+kq
+My
+kq
+rT
+Ib
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+Ru
+kq
+kq
+kq
+kq
+kq
 pK
 pK
 pK
@@ -42372,7 +43756,7 @@ qd
 PI
 PI
 kq
-kq
+no
 ps
 ps
 Cb
@@ -42384,7 +43768,7 @@ ps
 ps
 ps
 ps
-ps
+no
 kq
 kq
 kq
@@ -42519,69 +43903,69 @@ pK
 pK
 pK
 pK
+kq
+kq
+Ru
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+kq
+Ru
+kq
+Ru
+kq
+Ru
+kq
+kq
+kq
 pK
 pK
 pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+kq
+kq
+kq
+rT
+Ym
+VO
+wI
+Ig
+My
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+Ru
+kq
+kq
+kq
+kq
+kq
+kq
 pK
 pK
 pK
@@ -42778,64 +44162,64 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+kq
+kq
+Ru
+Ru
+kq
+kq
+kq
+BW
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+kq
+kq
+Ru
+kq
+kq
+kq
+BW
+kq
+kq
+lf
+qE
+kq
+kq
+kq
+kq
+Ib
+kq
+kq
+Ym
+If
+hE
+QF
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+Ru
+Ru
+kq
+kq
+kq
+kq
 pK
 pK
 pK
@@ -42883,9 +44267,9 @@ Gz
 PI
 PI
 qd
-qd
+no
 PI
-kq
+no
 kq
 kq
 kq
@@ -42896,11 +44280,11 @@ Cb
 ps
 xr
 ps
-ps
+no
 kq
-kq
-kq
-kq
+no
+no
+no
 kq
 BM
 Qj
@@ -43037,57 +44421,57 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+kq
+kq
+kq
+Ru
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+kq
+Ru
+Ru
+kq
+kq
+lf
+Bv
+kq
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+If
+hE
+QF
+GK
+GK
+GK
+GK
+GK
+GK
+qE
+Ur
+BW
+kq
+kq
+Ru
 pK
 pK
 pK
@@ -43298,50 +44682,50 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+Ru
+Ru
+kq
+kq
+kq
+kq
+kq
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+lf
+qE
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+If
+hE
+QF
+GK
+GK
+GK
+GK
+kq
+kq
+Bv
+Ur
+kq
 pK
 pK
 pK
@@ -43399,7 +44783,7 @@ PI
 PI
 kq
 kq
-kq
+no
 Ho
 Ho
 Ho
@@ -43556,48 +44940,48 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+kq
+kq
+kq
+Ru
+Ru
+kq
+BW
+BW
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+If
+hE
+QF
+GK
+kq
+kq
+Ib
+kq
+kq
+qE
+Ur
 pK
 pK
 pK
@@ -43816,43 +45200,43 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+kq
+kq
+Ru
+Ru
+kq
+Ru
+kq
+BW
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+Ym
+OY
+LI
+CL
+My
+kq
+kq
+kq
+kq
+kq
 pK
 pK
 pK
@@ -43939,32 +45323,32 @@ BM
 hk
 hk
 BM
+no
+kq
+no
+kq
+kq
+kq
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+BM
 BM
 kq
-kq
-kq
-kq
-kq
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-BM
-BM
-kq
-kq
+no
 ps
 ps
 Ho
@@ -44077,37 +45461,37 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+kq
+kq
+Ru
+BW
+kq
+lf
+qE
+kq
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+GK
+kq
+kq
+kq
+Ym
+kq
+kq
+kq
+My
+kq
+PI
+qd
 pK
 pK
 pK
@@ -44157,7 +45541,7 @@ pK
 BM
 Qj
 hk
-kq
+no
 kq
 PI
 PI
@@ -44200,7 +45584,7 @@ kq
 kq
 kq
 kq
-kq
+no
 kq
 kq
 ps
@@ -44219,9 +45603,9 @@ GD
 GD
 BM
 hk
-hk
-kq
-kq
+no
+no
+no
 kq
 Ho
 jv
@@ -44334,37 +45718,37 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+kq
+kq
+kq
+kq
+kq
+lf
+Bv
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+ps
+Cb
+xr
+Ib
+kq
+kq
+kq
+qd
+qd
+PI
 pK
 pK
 pK
@@ -44414,7 +45798,7 @@ BM
 BM
 BM
 kq
-kq
+no
 kq
 kq
 PI
@@ -44454,11 +45838,11 @@ BM
 BM
 BM
 kq
+no
 kq
+no
 kq
-kq
-kq
-kq
+no
 kq
 ps
 ps
@@ -44479,7 +45863,7 @@ hk
 BM
 BM
 kq
-kq
+no
 jv
 Qn
 jv
@@ -44488,7 +45872,7 @@ Ho
 Ho
 jv
 kq
-kq
+no
 kq
 sy
 nP
@@ -44593,35 +45977,35 @@ pK
 pK
 pK
 pK
+kq
+kq
+kq
+lf
+qE
+kq
+kq
+kq
+kq
 pK
+kq
+kq
+kq
+kq
+kq
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+kq
+kq
+ps
+Cb
+JU
+ps
+ps
+kq
+kq
+kq
+Db
+Gz
+Gz
 pK
 pK
 pK
@@ -44670,7 +46054,7 @@ BM
 hk
 hk
 BM
-kq
+no
 kq
 rS
 jv
@@ -44711,11 +46095,11 @@ Ho
 Ho
 kq
 kq
+no
 kq
 kq
 kq
-kq
-kq
+no
 kq
 ps
 ps
@@ -44746,7 +46130,7 @@ Ho
 ps
 Cb
 kq
-kq
+no
 sy
 nP
 nP
@@ -44869,15 +46253,15 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+ps
+xr
+ps
+xr
+Cb
+kq
+kq
+Gz
+PI
 pK
 pK
 pK
@@ -44927,7 +46311,7 @@ BM
 BM
 Qj
 BM
-Ho
+no
 Ho
 Ho
 Ho
@@ -44968,7 +46352,7 @@ Ho
 Ho
 Ho
 kq
-kq
+no
 kq
 kq
 kq
@@ -45020,9 +46404,9 @@ nP
 nP
 nP
 sy
-kq
-kq
-kq
+no
+no
+no
 kq
 kq
 pK
@@ -45127,14 +46511,14 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
-pK
+ps
+Cb
+Cb
+Bm
+JU
+kq
+kq
+qd
 pK
 pK
 pK
@@ -45224,7 +46608,7 @@ jv
 jv
 jv
 jv
-Ho
+no
 Ho
 kq
 kq
@@ -45279,8 +46663,8 @@ nP
 sy
 kq
 kq
-kq
-kq
+no
+no
 kq
 kq
 ps
@@ -45387,10 +46771,10 @@ pK
 pK
 pK
 pK
-pK
-pK
-pK
-pK
+Cb
+xr
+kq
+kq
 pK
 pK
 pK
@@ -45454,8 +46838,8 @@ Ho
 Ho
 kq
 kq
-kq
-kq
+no
+no
 kq
 BM
 BM
@@ -45538,7 +46922,7 @@ kq
 kq
 kq
 kq
-kq
+no
 kq
 kq
 ps
@@ -45709,7 +47093,7 @@ ps
 kq
 kq
 kq
-kq
+no
 kq
 kq
 kq
@@ -45725,9 +47109,9 @@ BM
 BM
 kq
 kq
-kq
-kq
-kq
+no
+no
+no
 kq
 kq
 kq
@@ -45965,8 +47349,8 @@ Cb
 ps
 Cb
 ps
-kq
-kq
+no
+no
 kq
 kq
 kq
@@ -45981,7 +47365,7 @@ BM
 Qj
 BM
 kq
-kq
+no
 kq
 kq
 kq
@@ -46114,7 +47498,7 @@ PI
 Gz
 PI
 PI
-kq
+no
 kq
 kq
 ps
@@ -46224,8 +47608,8 @@ ps
 ps
 ps
 kq
-kq
-kq
+no
+no
 BM
 Qj
 hk
@@ -46238,9 +47622,9 @@ BM
 hk
 hk
 BM
-kq
-kq
-kq
+no
+no
+no
 kq
 ps
 Cb
@@ -46278,9 +47662,9 @@ Ho
 Ho
 kq
 kq
-kq
-kq
-kq
+no
+no
+no
 kq
 GD
 GD
@@ -46361,7 +47745,7 @@ BM
 BM
 kq
 kq
-kq
+no
 qd
 kq
 qd
@@ -46371,7 +47755,7 @@ PI
 PI
 kq
 kq
-kq
+no
 kq
 Ho
 Ho
@@ -46533,12 +47917,12 @@ Ho
 PI
 kq
 kq
-kq
-kq
+no
+no
 kq
 GD
 kq
-kq
+no
 GD
 GD
 GD
@@ -46584,7 +47968,7 @@ xr
 ps
 ps
 kq
-kq
+no
 kq
 kq
 PI
@@ -46616,8 +48000,8 @@ Qj
 BM
 BM
 kq
-kq
-kq
+no
+no
 kq
 kq
 QZ
@@ -46627,7 +48011,7 @@ jv
 Ho
 Ho
 Qn
-jv
+no
 Ho
 jv
 jv
@@ -46769,11 +48153,11 @@ ps
 kq
 kq
 kq
-kq
-kq
+no
+no
+no
 Ho
-Ho
-Ho
+no
 Ho
 Ho
 Ho
@@ -46790,10 +48174,10 @@ PI
 qd
 PI
 kq
-kq
+no
 kq
 GD
-GD
+no
 kq
 kq
 kq
@@ -46840,11 +48224,11 @@ ps
 ps
 kq
 kq
+no
 kq
 kq
-kq
-kq
-kq
+no
+no
 PI
 PI
 Gz
@@ -47023,13 +48407,13 @@ ps
 Cb
 ps
 kq
+no
+kq
+no
 kq
 kq
 kq
-kq
-kq
-kq
-kq
+no
 kq
 kq
 kq
@@ -47052,7 +48436,7 @@ kq
 GD
 GD
 GD
-kq
+no
 kq
 BM
 GD
@@ -47101,8 +48485,8 @@ rS
 kq
 kq
 kq
-kq
-kq
+no
+no
 qd
 Gz
 qd
@@ -47237,7 +48621,7 @@ rS
 Ho
 kq
 kq
-kq
+no
 kq
 ps
 ps
@@ -47280,9 +48664,9 @@ ps
 ps
 ps
 kq
+no
 kq
-kq
-kq
+no
 kq
 BM
 BM
@@ -47290,7 +48674,7 @@ hk
 kq
 kq
 kq
-PI
+no
 qd
 Gz
 PI
@@ -47334,7 +48718,7 @@ nP
 nP
 sy
 kq
-kq
+no
 kq
 kq
 Ho
@@ -47403,7 +48787,7 @@ PI
 PI
 kq
 kq
-kq
+no
 kq
 kq
 ps
@@ -47492,7 +48876,7 @@ Ho
 Ho
 Ho
 PI
-kq
+no
 kq
 kq
 kq
@@ -47537,9 +48921,9 @@ GD
 GD
 GD
 kq
+no
 kq
-kq
-kq
+no
 BM
 Qj
 BM
@@ -47590,11 +48974,11 @@ nP
 nP
 nP
 sy
+no
+no
 kq
 kq
-kq
-kq
-kq
+no
 kq
 Ho
 Ho
@@ -47672,7 +49056,7 @@ ps
 ps
 ps
 ps
-kq
+no
 kq
 Ho
 Ho
@@ -47747,8 +49131,8 @@ Ho
 jv
 Qn
 Yt
-Gz
-PI
+no
+no
 PI
 GD
 GD
@@ -47897,7 +49281,7 @@ Ho
 Ho
 Ho
 kq
-kq
+no
 PI
 PI
 qd
@@ -47915,7 +49299,7 @@ PI
 PI
 PI
 PI
-kq
+no
 kq
 kq
 ps
@@ -48152,7 +49536,7 @@ ps
 ps
 ps
 kq
-kq
+no
 kq
 kq
 Gz
@@ -48172,7 +49556,7 @@ GD
 GD
 PI
 kq
-kq
+no
 kq
 kq
 ps
@@ -48189,8 +49573,8 @@ ps
 ps
 kq
 kq
-kq
-kq
+no
+no
 kq
 kq
 kq
@@ -48285,11 +49669,11 @@ GD
 GD
 GD
 kq
+no
 kq
 kq
-kq
-kq
-kq
+no
+no
 kq
 GD
 GD
@@ -48410,8 +49794,8 @@ xr
 Cb
 ps
 ps
-kq
-kq
+no
+no
 kq
 PI
 PI
@@ -48429,7 +49813,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 kq
 ps
@@ -48445,9 +49829,9 @@ Cb
 ps
 ps
 kq
-kq
-kq
-kq
+no
+no
+no
 kq
 kq
 PI
@@ -48542,11 +49926,11 @@ PI
 qd
 PI
 kq
+no
+no
 kq
 kq
-kq
-kq
-kq
+no
 kq
 GD
 GD
@@ -48649,9 +50033,9 @@ qd
 Gz
 PI
 kq
+no
 kq
-kq
-ps
+no
 ps
 ps
 ps
@@ -48667,26 +50051,26 @@ ps
 GD
 GD
 GD
+no
+no
+no
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
 GD
 kq
 kq
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-kq
-kq
-kq
+no
 kq
 GD
 GD
@@ -48907,7 +50291,7 @@ PI
 PI
 kq
 kq
-ps
+no
 ps
 xr
 xr
@@ -48960,9 +50344,9 @@ ps
 Cb
 ps
 kq
-kq
-kq
-kq
+no
+no
+no
 PI
 qd
 Gz
@@ -49218,8 +50602,8 @@ GD
 GD
 GD
 GD
-kq
-kq
+no
+no
 PI
 PI
 PI
@@ -49233,8 +50617,8 @@ PI
 PI
 Gz
 PI
-jv
-Ho
+no
+no
 rS
 jv
 jv
@@ -49279,10 +50663,10 @@ kq
 kq
 kq
 kq
-PI
+no
 GD
-GD
-GD
+no
+no
 GD
 GD
 GD
@@ -49342,8 +50726,8 @@ BM
 BM
 hk
 BM
-kq
-kq
+no
+no
 kq
 kq
 GD
@@ -49399,7 +50783,7 @@ GD
 GD
 GD
 GD
-kq
+no
 kq
 BM
 GD
@@ -49535,10 +50919,10 @@ kq
 kq
 kq
 kq
+no
+no
 kq
-kq
-kq
-kq
+no
 kq
 kq
 BM
@@ -49600,9 +50984,9 @@ Qj
 hk
 kq
 kq
+no
 kq
-kq
-kq
+no
 kq
 kq
 GD
@@ -49614,7 +50998,7 @@ GD
 GD
 qd
 PI
-kq
+no
 kq
 kq
 GD
@@ -49656,7 +51040,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 GD
 GD
@@ -49747,7 +51131,7 @@ PI
 PI
 PI
 PI
-kq
+no
 kq
 ps
 ps
@@ -49789,7 +51173,7 @@ kq
 kq
 kq
 kq
-kq
+no
 kq
 kq
 kq
@@ -49861,7 +51245,7 @@ GD
 GD
 kq
 kq
-kq
+no
 kq
 GD
 GD
@@ -49873,7 +51257,7 @@ qd
 kq
 kq
 kq
-kq
+no
 GD
 GD
 GD
@@ -50038,11 +51422,11 @@ Ho
 rS
 Ho
 Ho
+no
 kq
 kq
 kq
-kq
-kq
+no
 kq
 GD
 GD
@@ -50119,18 +51503,7 @@ GD
 GD
 kq
 kq
-kq
-kq
-GD
-GD
-GD
-GD
-GD
-GD
-kq
-kq
-kq
-kq
+no
 kq
 GD
 GD
@@ -50138,10 +51511,21 @@ GD
 GD
 GD
 GD
+no
+kq
+no
+no
+kq
 GD
 GD
-kq
-kq
+GD
+GD
+GD
+GD
+GD
+no
+no
+no
 GD
 GD
 sy
@@ -50198,7 +51582,7 @@ GD
 GD
 GD
 kq
-kq
+no
 ps
 ps
 GD
@@ -50215,10 +51599,10 @@ GD
 Gz
 PI
 PI
+no
 PI
-PI
-GD
-GD
+no
+no
 GD
 GD
 GD
@@ -50260,7 +51644,7 @@ PI
 Gz
 Gz
 kq
-kq
+no
 ps
 ps
 xr
@@ -50365,20 +51749,20 @@ GD
 GD
 GD
 GD
+VV
+EF
+kq
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+kq
+kq
 BM
-kq
-kq
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-kq
-kq
-BM
 GD
 GD
 GD
@@ -50386,9 +51770,9 @@ GD
 GD
 kq
 kq
-kq
-kq
-kq
+no
+no
+no
 kq
 GD
 GD
@@ -50453,7 +51837,7 @@ GD
 GD
 GD
 GD
-kq
+no
 kq
 kq
 GD
@@ -50476,7 +51860,7 @@ PI
 kq
 kq
 kq
-kq
+no
 BM
 BM
 BM
@@ -50616,7 +52000,7 @@ GD
 PI
 qd
 Gz
-PI
+aP
 GD
 GD
 GD
@@ -50646,8 +52030,8 @@ kq
 GD
 GD
 kq
-kq
-kq
+no
+no
 kq
 GD
 GD
@@ -50730,7 +52114,7 @@ GD
 Gz
 PI
 GD
-kq
+no
 kq
 kq
 BM
@@ -50846,10 +52230,10 @@ BM
 kq
 Gz
 kq
-kq
-kq
-kq
-kq
+no
+no
+no
+no
 GD
 GD
 GD
@@ -50881,7 +52265,7 @@ GD
 GD
 GD
 kq
-kq
+Un
 GD
 GD
 GD
@@ -50904,7 +52288,7 @@ GD
 GD
 GD
 kq
-kq
+no
 ps
 ps
 GD
@@ -50967,7 +52351,7 @@ GD
 GD
 GD
 kq
-kq
+no
 GD
 GD
 GD
@@ -51106,7 +52490,7 @@ Gz
 Gz
 PI
 kq
-kq
+no
 kq
 ps
 ps
@@ -51139,7 +52523,7 @@ GD
 GD
 kq
 kq
-kq
+EF
 GD
 GD
 GD
@@ -51223,7 +52607,7 @@ PI
 Gz
 PI
 GD
-kq
+no
 kq
 GD
 GD
@@ -51264,11 +52648,11 @@ GD
 GD
 GD
 GD
-GD
+no
 kq
 kq
 kq
-kq
+no
 GD
 GD
 GD
@@ -51364,7 +52748,7 @@ qd
 Gz
 PI
 kq
-kq
+no
 ps
 xr
 ps
@@ -51387,17 +52771,17 @@ GD
 GD
 GD
 GD
+aP
 PI
-PI
 kq
-kq
-kq
-GD
-GD
-GD
-kq
+EF
 kq
 GD
+GD
+Uk
+Uk
+Uk
+Uk
 GD
 GD
 GD
@@ -51480,7 +52864,7 @@ GD
 PI
 PI
 PI
-kq
+no
 kq
 GD
 GD
@@ -51513,7 +52897,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 GD
 GD
@@ -51522,10 +52906,10 @@ GD
 GD
 GD
 kq
-kq
-kq
-kq
-kq
+no
+no
+no
+no
 PI
 Gz
 qd
@@ -51620,7 +53004,7 @@ PI
 qd
 PI
 PI
-kq
+no
 kq
 kq
 ps
@@ -51647,15 +53031,15 @@ GD
 GD
 GD
 kq
-kq
-kq
-kq
-GD
-GD
-ps
-ps
-GD
-GD
+uV
+Un
+Uk
+Uk
+Uk
+tK
+tK
+Uk
+Uk
 GD
 GD
 GD
@@ -51752,7 +53136,7 @@ GD
 GD
 GD
 GD
-GD
+no
 GD
 Gz
 PI
@@ -51771,7 +53155,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 GD
 GD
@@ -51779,10 +53163,10 @@ GD
 GD
 GD
 BM
+no
 BM
-BM
-kq
-kq
+no
+no
 kq
 PI
 PI
@@ -51798,11 +53182,11 @@ GD
 GD
 GD
 GD
-Gz
+no
+no
 kq
-kq
-kq
-kq
+no
+no
 ps
 GD
 xr
@@ -51879,7 +53263,7 @@ Gz
 qd
 PI
 kq
-kq
+no
 ps
 ps
 ps
@@ -51903,17 +53287,17 @@ GD
 GD
 GD
 GD
+EF
 kq
-kq
-ps
-ps
-Cb
-ps
-ps
-ps
-ps
-GD
-GD
+Uk
+Uk
+Yv
+tK
+QD
+yL
+tK
+Uk
+Uk
 GD
 GD
 GD
@@ -52028,7 +53412,7 @@ kq
 kq
 kq
 kq
-kq
+no
 kq
 kq
 kq
@@ -52136,7 +53520,7 @@ GD
 PI
 qd
 kq
-kq
+no
 kq
 kq
 ps
@@ -52151,9 +53535,9 @@ ps
 kq
 kq
 kq
+EF
 kq
 kq
-kq
 GD
 GD
 GD
@@ -52162,18 +53546,18 @@ GD
 GD
 GD
 GD
-GD
-xr
-xr
+Uk
+tK
+tK
+Yl
+Vc
+Yl
+cK
+tR
+Uk
 ps
 ps
-Cb
-ps
-xr
-ps
-ps
-ps
-kq
+Un
 kq
 kq
 kq
@@ -52266,10 +53650,10 @@ GD
 GD
 GD
 kq
+no
 kq
 kq
-kq
-kq
+no
 GD
 GD
 GD
@@ -52282,12 +53666,12 @@ BM
 hk
 BM
 kq
+no
 kq
 kq
 kq
 kq
-kq
-kq
+no
 kq
 BM
 hk
@@ -52313,7 +53697,7 @@ Gz
 qd
 qd
 PI
-PI
+no
 GD
 GD
 GD
@@ -52346,8 +53730,8 @@ GD
 GD
 GD
 kq
-kq
-kq
+no
+no
 GD
 GD
 GD
@@ -52366,6 +53750,9 @@ GD
 GD
 ps
 kq
+no
+kq
+no
 kq
 kq
 kq
@@ -52374,9 +53761,6 @@ kq
 kq
 kq
 kq
-kq
-kq
-kq
 GD
 GD
 GD
@@ -52394,7 +53778,7 @@ GD
 GD
 kq
 kq
-kq
+no
 kq
 kq
 GD
@@ -52406,33 +53790,33 @@ ps
 kq
 kq
 kq
+Un
 kq
 kq
 kq
+Un
+Uk
+Uk
+Uk
+Uk
+GD
+GD
+GD
+Uk
+Uk
+Uk
+Uk
+iL
+tK
+FW
+tK
+tK
+Uk
+Uk
+sY
+lb
 kq
-kq
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-ps
-ps
-xr
-xr
-ps
-ps
-ps
-ps
-ps
-kq
-kq
+no
 kq
 kq
 BM
@@ -52524,7 +53908,7 @@ PI
 PI
 PI
 kq
-kq
+no
 kq
 kq
 BM
@@ -52605,7 +53989,7 @@ GD
 GD
 kq
 kq
-kq
+no
 GD
 GD
 GD
@@ -52626,7 +54010,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 kq
 kq
@@ -52661,36 +54045,36 @@ GD
 GD
 GD
 GD
+aP
+Gz
 PI
 Gz
-PI
 Gz
-Gz
+EF
 kq
-kq
-kq
-ps
-ps
-GD
-GD
-GD
-GD
-GD
+Uk
+Yl
+tK
+Uk
+Uk
+Uk
+Uk
+Uk
+Vc
+cK
+tK
+tK
+cK
+GG
+Go
+Yl
+tK
+Uk
 ps
 Cb
 ps
-ps
-ps
-xr
-ps
-ps
-Cb
-ps
-ps
-Cb
-ps
 kq
-kq
+no
 kq
 kq
 hk
@@ -52755,9 +54139,9 @@ GD
 GD
 GD
 GD
-GD
+no
 kq
-kq
+no
 ps
 xr
 ps
@@ -52782,8 +54166,8 @@ qd
 qd
 PI
 kq
-kq
-kq
+no
+no
 BM
 hk
 hk
@@ -52793,20 +54177,20 @@ hk
 BM
 BM
 hk
+Ie
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+Ie
 BM
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
 BM
-BM
-Qj
 hk
 hk
 BM
@@ -52844,7 +54228,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 GD
 GD
@@ -52861,7 +54245,7 @@ GD
 GD
 GD
 GD
-kq
+no
 PI
 GD
 GD
@@ -52883,15 +54267,15 @@ GD
 GD
 GD
 GD
+no
 kq
-kq
-kq
-kq
+no
+no
 kq
 GD
 GD
 kq
-kq
+no
 kq
 kq
 GD
@@ -52919,37 +54303,37 @@ GD
 GD
 GD
 PI
-PI
+Cz
 qd
 Gz
 PI
 kq
-kq
-ps
-ps
-ps
+Uk
+Uk
+Vc
+Ir
+DO
+GG
+tR
+tK
+Yl
+tK
+GG
+yL
+Yl
+tK
+Yv
+tK
+yL
+tK
+Uk
 xr
 ps
-xr
-ps
-ps
-ps
-ps
-ps
-ps
-ps
-xr
-ps
-ps
-xr
-ps
-xr
-ps
-ps
+sY
 kq
-kq
-kq
-kq
+Fq
+no
+no
 BM
 BM
 BM
@@ -53013,9 +54397,9 @@ GD
 BM
 BM
 kq
+no
 kq
-kq
-kq
+no
 Cb
 Cb
 xr
@@ -53050,7 +54434,7 @@ Qj
 BM
 BM
 hk
-BM
+Ie
 GD
 GD
 GD
@@ -53061,7 +54445,7 @@ GD
 GD
 GD
 GD
-BM
+Ie
 BM
 BM
 BM
@@ -53101,8 +54485,8 @@ GD
 GD
 GD
 GD
-kq
-kq
+no
+no
 BM
 GD
 GD
@@ -53142,8 +54526,8 @@ GD
 GD
 kq
 kq
-kq
-kq
+no
+no
 GD
 GD
 GD
@@ -53162,7 +54546,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 GD
 PI
@@ -53179,35 +54563,35 @@ PI
 qd
 qd
 Gz
-PI
+aP
+kq
+Uk
+tK
+cK
+tK
+Yl
+FW
+Vc
+tK
+tK
+Yv
+QD
+Vc
+FW
+Vc
+Yl
+tK
+GG
+cK
+Uk
+lb
+ps
+ps
 kq
 kq
-ps
-Cb
-ps
-ps
-ps
-ps
-ps
-ps
-ps
-ps
-xr
-Cb
-ps
-ps
-ps
-ps
-ps
-ps
-ps
-ps
-ps
 kq
 kq
-kq
-kq
-Qj
+no
 BM
 BM
 BM
@@ -53219,8 +54603,8 @@ GD
 GD
 GD
 GD
-ps
-Cb
+no
+no
 ps
 GD
 ps
@@ -53271,7 +54655,7 @@ hk
 BM
 BM
 kq
-kq
+no
 kq
 ps
 xr
@@ -53306,22 +54690,22 @@ hk
 BM
 BM
 BM
+cD
+Ie
+Ie
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+Ie
+Ie
 hk
-Qj
 BM
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
 BM
-Qj
-hk
-BM
-Qj
 BM
 hk
 BM
@@ -53348,8 +54732,8 @@ GD
 GD
 GD
 kq
-kq
-kq
+no
+no
 kq
 kq
 GD
@@ -53399,7 +54783,7 @@ GD
 kq
 kq
 kq
-kq
+no
 kq
 GD
 GD
@@ -53438,32 +54822,32 @@ qd
 GD
 GD
 kq
+Uk
+Yl
+FW
+tK
+Yv
+QD
+cK
+Yl
+yL
+tK
+Xm
+cK
+Vc
+QD
+tK
+tR
+Uk
+Uk
+Uk
+GD
+GD
+GD
+GD
+GD
 kq
-ps
-ps
-xr
-ps
-xr
-xr
-xr
-Cb
-Cb
-ps
-ps
-ps
-ps
-ps
-ps
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-kq
-kq
+no
 kq
 BM
 BM
@@ -53474,15 +54858,15 @@ BM
 GD
 GD
 GD
-kq
-kq
+no
+no
 kq
 ps
 GD
 GD
 GD
-kq
-kq
+no
+no
 GD
 GD
 sy
@@ -53505,9 +54889,9 @@ GD
 GD
 GD
 GD
-kq
-kq
-GD
+no
+no
+no
 GD
 GD
 GD
@@ -53560,23 +54944,23 @@ GD
 GD
 GD
 GD
-Qj
-BM
-hk
-BM
-BM
-Qj
-BM
+CF
+Ie
+cD
+Ie
+Ie
+Ie
+Ie
 GD
 GD
 GD
 GD
 GD
 GD
-BM
-hk
-BM
-hk
+Ie
+cD
+Ie
+cD
 BM
 BM
 BM
@@ -53606,8 +54990,8 @@ GD
 GD
 kq
 kq
-kq
-kq
+no
+no
 GD
 GD
 GD
@@ -53695,35 +55079,35 @@ PI
 GD
 GD
 GD
-GD
-GD
-ps
-ps
-ps
-xr
-ps
-ps
-ps
-ps
-ps
-ps
-ps
-GD
-GD
-GD
-GD
-GD
-GD
-GD
+Uk
+Uk
+tK
+Vc
+cK
+tK
+Go
+Vc
+cK
+Vc
+Yl
+Yv
+tK
+Uk
+Uk
+Uk
+Uk
 GD
 GD
 GD
 GD
 GD
 GD
+GD
+GD
+no
+no
 kq
-kq
-BM
+no
 BM
 hk
 BM
@@ -53731,7 +55115,7 @@ BM
 BM
 Qj
 BM
-kq
+no
 kq
 kq
 GD
@@ -53763,7 +55147,7 @@ GD
 GD
 GD
 kq
-kq
+no
 GD
 GD
 GD
@@ -53818,23 +55202,23 @@ GD
 GD
 GD
 GD
-BM
-Qj
-BM
-hk
-BM
-BM
-BM
+Ie
+Ie
+Ie
+cD
+Ie
+Ie
+Dt
 GD
 GD
 GD
 GD
 GD
-BM
-BM
-Qj
-BM
-BM
+Ie
+Ie
+Ie
+Ie
+Ie
 GD
 BM
 BM
@@ -53863,7 +55247,7 @@ GD
 PI
 PI
 Gz
-kq
+no
 kq
 GD
 GD
@@ -53910,11 +55294,11 @@ GD
 GD
 GD
 GD
+no
 kq
 kq
 kq
-kq
-kq
+no
 GD
 GD
 GD
@@ -53953,24 +55337,19 @@ GD
 GD
 GD
 GD
-GD
-GD
-GD
-GD
-ps
-ps
-ps
-ps
-xr
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
+Uk
+Uk
+Uk
+Uk
+Yl
+tK
+GG
+FW
+tK
+Uk
+Uk
+Uk
+Uk
 GD
 GD
 GD
@@ -53979,6 +55358,11 @@ GD
 GD
 GD
 GD
+GD
+GD
+GD
+GD
+no
 kq
 kq
 BM
@@ -53995,7 +55379,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 GD
 GD
@@ -54019,7 +55403,7 @@ GD
 GD
 GD
 GD
-kq
+no
 kq
 GD
 GD
@@ -54076,21 +55460,21 @@ GD
 GD
 GD
 GD
-BM
-BM
-Qj
-BM
-BM
-BM
-BM
+Ie
+Ie
+Ie
+Ie
+Ie
+cq
+Dt
 GD
 GD
 GD
 GD
-kq
-kq
-BM
-BM
+Dt
+Dt
+EH
+Ie
 GD
 GD
 kq
@@ -54167,7 +55551,7 @@ GD
 GD
 GD
 GD
-kq
+no
 kq
 kq
 kq
@@ -54213,13 +55597,13 @@ GD
 GD
 GD
 GD
-GD
-GD
-GD
-ps
-xr
-xr
-ps
+Uk
+Uk
+Uk
+tK
+Uk
+Uk
+Uk
 GD
 GD
 GD
@@ -54252,7 +55636,7 @@ GD
 GD
 GD
 kq
-kq
+no
 GD
 GD
 GD
@@ -54334,20 +55718,20 @@ GD
 GD
 GD
 GD
-BM
-BM
-BM
-Qj
-hk
-kq
+Ie
+Ie
+EH
+Dt
+wo
+Xh
 GD
 GD
 GD
-kq
-kq
-kq
-kq
-kq
+Dt
+Dt
+Dt
+Dt
+Dt
 GD
 GD
 GD
@@ -54384,7 +55768,7 @@ GD
 GD
 kq
 kq
-kq
+no
 kq
 Qj
 BM
@@ -54472,9 +55856,9 @@ GD
 GD
 GD
 GD
-GD
-GD
-ps
+Uk
+Uk
+Uk
 Cb
 xr
 ps
@@ -54496,7 +55880,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 kq
 GD
@@ -54544,7 +55928,7 @@ GD
 GD
 GD
 GD
-GD
+no
 kq
 kq
 BM
@@ -54592,18 +55976,18 @@ GD
 GD
 GD
 GD
-BM
-BM
-BM
-kq
-kq
-kq
+Ie
+Dt
+Xh
+Xh
+Xh
+jZ
 GD
 GD
-PI
-PI
-kq
-kq
+cq
+Dt
+Dt
+Dt
 GD
 GD
 GD
@@ -54643,7 +56027,7 @@ kq
 kq
 kq
 kq
-kq
+no
 hk
 hk
 BM
@@ -54682,7 +56066,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 kq
 GD
@@ -54731,9 +56115,9 @@ GD
 GD
 GD
 ps
+sY
 ps
-ps
-ps
+lb
 xr
 xr
 GD
@@ -54766,7 +56150,7 @@ GD
 GD
 BM
 kq
-kq
+no
 GD
 GD
 GD
@@ -54801,10 +56185,10 @@ GD
 GD
 GD
 GD
+no
+no
 kq
-kq
-kq
-kq
+no
 kq
 BM
 BM
@@ -54823,9 +56207,9 @@ GD
 GD
 GD
 GD
-kq
-kq
-kq
+no
+no
+no
 GD
 GD
 GD
@@ -54849,18 +56233,18 @@ GD
 GD
 GD
 GD
-kq
-kq
-kq
-kq
-kq
-kq
-PI
-Gz
-qd
-PI
-PI
-kq
+Dt
+Dt
+Xh
+Hc
+gH
+Xh
+qW
+lX
+FY
+Dt
+qW
+Dt
 GD
 GD
 GD
@@ -54898,8 +56282,8 @@ PI
 qd
 PI
 kq
-kq
-kq
+no
+no
 kq
 BM
 BM
@@ -54987,13 +56371,13 @@ GD
 GD
 GD
 ps
+HL
 xr
 xr
-xr
-ps
+sY
 ps
 Cb
-xr
+QW
 ps
 GD
 GD
@@ -55022,7 +56406,7 @@ GD
 GD
 GD
 hk
-BM
+no
 GD
 GD
 GD
@@ -55061,29 +56445,29 @@ GD
 ps
 ps
 kq
-kq
-kq
-kq
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-kq
+no
 kq
 kq
 GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+no
+kq
+kq
+no
 GD
 GD
 GD
@@ -55107,16 +56491,16 @@ GD
 GD
 GD
 GD
-kq
-kq
-kq
-kq
-PI
-PI
-Gz
-PI
-PI
-PI
+Dt
+Xh
+Dt
+YR
+Vn
+Xh
+PP
+br
+Dt
+Dt
 GD
 GD
 GD
@@ -55244,13 +56628,13 @@ GD
 GD
 kq
 kq
-Cb
+dJ
 ps
 GD
 GD
 GD
 ps
-ps
+sY
 ps
 kq
 kq
@@ -55337,29 +56721,9 @@ GD
 GD
 GD
 GD
+no
 kq
 kq
-kq
-GD
-GD
-GD
-GD
-GD
-kq
-kq
-kq
-PI
-PI
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
 GD
 GD
 GD
@@ -55369,10 +56733,30 @@ kq
 kq
 kq
 PI
-Gz
-Gz
-qd
 PI
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+Xh
+Dt
+Dt
+XB
+Kb
+PP
+pZ
+Dt
 GD
 GD
 GD
@@ -55499,7 +56883,7 @@ GD
 GD
 GD
 kq
-kq
+Un
 kq
 GD
 GD
@@ -55594,6 +56978,16 @@ GD
 GD
 GD
 GD
+no
+no
+kq
+GD
+GD
+GD
+GD
+GD
+no
+no
 kq
 kq
 kq
@@ -55602,11 +56996,6 @@ GD
 GD
 GD
 GD
-kq
-kq
-kq
-kq
-kq
 GD
 GD
 GD
@@ -55616,19 +57005,14 @@ GD
 GD
 GD
 GD
-GD
-GD
-GD
-GD
-GD
-kq
-kq
-kq
-kq
-PI
-Gz
-Gz
-PI
+Pb
+oi
+Ai
+Dt
+rp
+PP
+lX
+qW
 GD
 GD
 GD
@@ -55686,7 +57070,7 @@ GD
 GD
 kq
 kq
-kq
+no
 PI
 PI
 qd
@@ -55718,9 +57102,9 @@ GD
 GD
 GD
 GD
-GD
+no
 kq
-kq
+no
 kq
 ps
 xr
@@ -55739,7 +57123,7 @@ GD
 GD
 kq
 kq
-kq
+no
 kq
 kq
 GD
@@ -55823,7 +57207,7 @@ hk
 BM
 BM
 kq
-kq
+no
 ps
 ps
 Cb
@@ -55853,7 +57237,7 @@ GD
 GD
 kq
 kq
-kq
+no
 GD
 GD
 GD
@@ -55861,11 +57245,11 @@ GD
 GD
 kq
 kq
+no
 kq
 kq
 kq
 kq
-kq
 GD
 GD
 GD
@@ -55877,15 +57261,15 @@ GD
 GD
 GD
 GD
-Cb
-ps
-ps
-kq
-kq
-PI
-qd
-Gz
-PI
+PW
+Xh
+Wi
+Dt
+Dt
+Dt
+Ob
+uw
+Sn
 GD
 GD
 GD
@@ -55910,7 +57294,7 @@ ps
 ps
 Cb
 kq
-kq
+no
 kq
 PI
 PI
@@ -55942,9 +57326,9 @@ GD
 GD
 GD
 GD
+no
 kq
-kq
-kq
+no
 PI
 Gz
 Gz
@@ -55975,7 +57359,7 @@ GD
 GD
 kq
 kq
-kq
+no
 kq
 kq
 kq
@@ -55987,18 +57371,18 @@ GD
 GD
 Cb
 xr
-Cb
+no
 GD
 GD
 GD
 GD
 GD
+no
 kq
-kq
-kq
+no
 GD
-kq
-kq
+no
+no
 GD
 GD
 GD
@@ -56010,8 +57394,8 @@ GD
 qd
 Gz
 PI
-kq
-kq
+no
+no
 kq
 GD
 GD
@@ -56117,33 +57501,33 @@ GD
 GD
 Qj
 kq
-kq
-kq
-GD
-kq
-kq
-kq
+no
 kq
 GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-Cb
-GD
-xr
-Cb
-ps
-ps
 kq
+no
+no
 kq
-PI
-PI
-Gz
-PI
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+PW
+GD
+kT
+Vb
+Dt
+Dt
+Kh
+Dt
+Xh
+jr
+PP
+DP
 GD
 GD
 GD
@@ -56153,21 +57537,21 @@ GD
 GD
 GD
 GD
-ps
-ps
-xr
-ps
-ps
-ps
-ps
 ps
 ps
 xr
+ps
+ps
+ps
+ps
+ps
+ps
+xr
 xr
 ps
 kq
-kq
-kq
+no
+no
 PI
 PI
 Gz
@@ -56182,7 +57566,7 @@ GD
 GD
 GD
 OE
-kq
+jW
 Qr
 Qr
 GD
@@ -56200,7 +57584,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 kq
 PI
@@ -56255,7 +57639,7 @@ kq
 GD
 GD
 kq
-kq
+no
 hk
 BM
 GD
@@ -56375,44 +57759,44 @@ GD
 hk
 BM
 BM
+no
 GD
 GD
+no
+kq
+kq
+kq
+MV
+MV
+Dt
+Dt
 GD
-kq
-kq
-kq
-kq
-kq
-kq
+PW
+kT
+Dt
+Ai
+Xh
+Vb
+Dt
+dk
+DP
+Dt
+Dt
+PP
+ds
+gH
+Dt
+Dt
+Dt
+MV
+MV
+MV
+MV
+iE
+iE
 ps
-ps
-GD
-Cb
 xr
 ps
-ps
-ps
-Cb
-ps
-ps
-kq
-kq
-PI
-Gz
-Gz
-PI
-PI
-PI
-PI
-kq
-kq
-kq
-kq
-ps
-ps
-ps
-xr
-ps
 Cb
 GD
 GD
@@ -56422,7 +57806,7 @@ ps
 Cb
 ps
 xr
-kq
+no
 kq
 kq
 PI
@@ -56456,7 +57840,7 @@ GD
 GD
 GD
 GD
-GD
+no
 kq
 kq
 kq
@@ -56506,7 +57890,7 @@ kq
 GD
 GD
 kq
-kq
+no
 kq
 GD
 GD
@@ -56522,8 +57906,8 @@ GD
 GD
 GD
 kq
-kq
-kq
+no
+no
 kq
 GD
 GD
@@ -56638,34 +58022,34 @@ GD
 GD
 GD
 kq
-kq
-kq
-ps
-ps
-xr
-xr
-xr
-ps
-Cb
-ps
-ps
-Cb
-Cb
-ps
-kq
-kq
-PI
-PI
-PI
-Gz
-Gz
-qd
-PI
-PI
-kq
-kq
-kq
-kq
+MV
+MV
+Dt
+wy
+kT
+kT
+qF
+Hc
+Vb
+Dt
+wK
+Jl
+BP
+gH
+Wi
+Xh
+Dt
+qW
+Vn
+uw
+lX
+Na
+Xh
+Dt
+Mz
+MV
+MV
+MV
 ps
 ps
 ps
@@ -56678,9 +58062,9 @@ GD
 GD
 ps
 ps
-kq
-kq
-kq
+no
+no
+no
 PI
 Gz
 PI
@@ -56715,9 +58099,9 @@ GD
 GD
 GD
 kq
+no
 kq
-kq
-kq
+no
 xr
 ps
 GD
@@ -56778,11 +58162,11 @@ GD
 GD
 GD
 hk
-kq
-kq
-kq
-kq
-kq
+no
+no
+no
+no
+no
 GD
 GD
 GD
@@ -56899,24 +58283,24 @@ GD
 GD
 GD
 GD
-ps
-ps
-Cb
-ps
-xr
-xr
-ps
-ps
-ps
-ps
+Dt
+Xh
+PW
+zh
+Zv
+kT
+Dt
+Dt
+Xh
+wK
 GD
-PI
-PI
-PI
-qd
-PI
-PI
-qd
+Xh
+Ta
+Dt
+Ob
+qW
+Hc
+pZ
 GD
 GD
 GD
@@ -56954,7 +58338,7 @@ GD
 GD
 XW
 kq
-kq
+jW
 OE
 GD
 GD
@@ -56974,7 +58358,7 @@ GD
 GD
 kq
 kq
-ps
+no
 ps
 ps
 ps
@@ -57017,7 +58401,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 kq
 kq
@@ -57067,10 +58451,10 @@ GD
 GD
 GD
 GD
-kq
-kq
-kq
-kq
+no
+no
+no
+no
 kq
 BM
 GD
@@ -57159,21 +58543,21 @@ GD
 GD
 GD
 GD
-ps
-ps
-ps
-xr
-ps
-ps
+jZ
+Xh
+Dt
+kT
+qW
+Dt
 GD
 GD
-PI
-qd
-PI
-qd
-PI
-PI
-PI
+Xh
+pZ
+Ai
+Ob
+Dt
+Dt
+Ai
 GD
 GD
 GD
@@ -57276,7 +58660,7 @@ GD
 kq
 kq
 kq
-kq
+no
 GD
 GD
 GD
@@ -57292,7 +58676,7 @@ BM
 hk
 hk
 BM
-BM
+no
 kq
 GD
 GD
@@ -57326,7 +58710,7 @@ GD
 GD
 kq
 kq
-kq
+no
 kq
 GD
 GD
@@ -57415,23 +58799,23 @@ GD
 GD
 GD
 GD
-ps
-ps
-ps
-Cb
-xr
-ps
-ps
+Dt
+Dt
+Dt
+Or
+qF
+Xh
+Dt
 GD
 GD
 GD
-PI
-Gz
-Gz
-PI
-PI
-PI
-PI
+jZ
+PP
+PP
+Dt
+Dt
+Dt
+Dt
 GD
 GD
 GD
@@ -57581,7 +58965,7 @@ GD
 GD
 GD
 GD
-kq
+no
 kq
 kq
 kq
@@ -57672,33 +59056,33 @@ GD
 GD
 GD
 GD
+Xh
+Sn
+kT
+qF
+Xh
+GD
+GD
+GD
+GD
+GD
+Xh
+Sf
+PP
+lX
+PP
+PP
+Xh
+GD
+GD
+GD
+GD
+GD
+GD
+GD
 ps
-ps
-xr
-xr
-ps
-GD
-GD
-GD
-GD
-GD
-PI
-Gz
-Gz
-Gz
-Gz
-Gz
-PI
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-ps
-kq
-kq
+no
+no
 kq
 GD
 GD
@@ -57807,7 +59191,7 @@ GD
 GD
 GD
 kq
-qd
+no
 kq
 GD
 GD
@@ -57928,41 +59312,25 @@ GD
 GD
 GD
 GD
-ps
-xr
-ps
-ps
-xr
-ps
+Dt
+qF
+Dt
+qW
+kT
+qW
 GD
 GD
 GD
 GD
 GD
 GD
-PI
-PI
-qd
-Gz
-PI
-PI
-PI
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-kq
-kq
-kq
-GD
-GD
-GD
-GD
-GD
-GD
+Xh
+Dt
+Cn
+lX
+Xh
+Xh
+Xh
 GD
 GD
 GD
@@ -57971,6 +59339,22 @@ GD
 GD
 GD
 kq
+no
+kq
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+no
 PI
 qd
 qd
@@ -58184,27 +59568,41 @@ GD
 GD
 GD
 GD
-ps
-ps
-xr
-Cb
-ps
-ps
-ps
+Dt
+Dt
+ME
+Vb
+Dt
+Xh
+Dt
 GD
 GD
 GD
 GD
 GD
 GD
-PI
-PI
-PI
-PI
-Gz
-PI
-PI
-PI
+Dt
+Dt
+Xh
+Dt
+lX
+Xh
+Xh
+Xh
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+no
+no
+no
+GD
+GD
+GD
+GD
 GD
 GD
 GD
@@ -58213,21 +59611,7 @@ GD
 GD
 GD
 kq
-kq
-kq
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-kq
-kq
+no
 kq
 PI
 GD
@@ -58239,7 +59623,7 @@ PI
 GD
 XW
 kq
-kq
+no
 kq
 PI
 GD
@@ -58313,8 +59697,8 @@ GD
 GD
 GD
 GD
-kq
-kq
+no
+no
 kq
 GD
 GD
@@ -58420,7 +59804,7 @@ GD
 GD
 GD
 GD
-GD
+no
 kq
 kq
 BM
@@ -58440,38 +59824,38 @@ GD
 GD
 GD
 GD
+Dt
+Dt
+kT
+kT
+PW
+Vb
+Xh
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+Xh
+Xh
+Dt
+Ob
+pZ
+PP
+Dt
+GD
+GD
+GD
+GD
+GD
+GD
+GD
 kq
-ps
-xr
-xr
-Cb
-Cb
-ps
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-kq
-kq
-PI
-qd
-qd
-Gz
-PI
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-kq
-kq
+no
 kq
 kq
 GD
@@ -58485,8 +59869,8 @@ GD
 BM
 BM
 kq
-kq
-PI
+no
+no
 GD
 GD
 GD
@@ -58513,7 +59897,7 @@ qd
 Gz
 PI
 GD
-GD
+no
 GD
 GD
 ps
@@ -58591,7 +59975,7 @@ GD
 qd
 qd
 kq
-kq
+no
 kq
 BM
 hk
@@ -58678,7 +60062,7 @@ GD
 ps
 ps
 kq
-kq
+no
 kq
 kq
 BM
@@ -58696,14 +60080,14 @@ GD
 GD
 GD
 GD
-kq
-kq
-ps
-ps
-xr
-ps
-xr
-ps
+Dt
+Dt
+Dt
+Dt
+YY
+Dt
+kT
+br
 GD
 GD
 GD
@@ -58714,14 +60098,14 @@ GD
 GD
 GD
 GD
-kq
-kq
-PI
-qd
-PI
-PI
-PI
-kq
+Xh
+Xh
+Dt
+Ob
+Dt
+Dt
+Dt
+MV
 GD
 GD
 GD
@@ -58750,9 +60134,9 @@ GD
 GD
 kq
 kq
+no
 kq
-kq
-kq
+no
 kq
 GD
 GD
@@ -58828,7 +60212,7 @@ GD
 GD
 ps
 ps
-kq
+no
 GD
 GD
 GD
@@ -58945,23 +60329,23 @@ hk
 hk
 Qj
 BM
+no
 kq
-kq
 PI
 PI
 GD
 GD
-PI
-PI
-PI
-kq
-kq
-Cb
-ps
-ps
-xr
-ps
-ps
+MM
+MM
+MM
+Dt
+wy
+Vb
+Dt
+Dt
+qF
+Dt
+Dt
 GD
 GD
 GD
@@ -58973,20 +60357,20 @@ GD
 GD
 GD
 GD
-PI
-PI
-qd
-PI
-kq
-kq
-kq
+Dt
+Dt
+Ia
+Dt
+MV
+MV
+MV
 GD
 GD
 GD
 GD
 GD
 GD
-BM
+no
 BM
 BM
 hk
@@ -59006,10 +60390,10 @@ GD
 GD
 GD
 GD
+no
+no
 kq
-kq
-kq
-kq
+no
 GD
 GD
 GD
@@ -59026,9 +60410,9 @@ GD
 GD
 GD
 kq
+no
 kq
-kq
-kq
+no
 ps
 ps
 ps
@@ -59077,7 +60461,7 @@ PI
 PI
 PI
 PI
-kq
+no
 kq
 Cb
 ps
@@ -59195,14 +60579,14 @@ Cb
 Cb
 kq
 kq
-kq
+no
 BM
 BM
 BM
 BM
 BM
 BM
-kq
+no
 kq
 PI
 PI
@@ -59210,17 +60594,15 @@ Gz
 qd
 qd
 qd
-PI
-PI
-kq
-kq
-ps
+MM
+MM
+Dt
+Dt
+Dt
 GD
-Cb
-xr
-ps
-GD
-GD
+PW
+qF
+Dt
 GD
 GD
 GD
@@ -59230,14 +60612,16 @@ GD
 GD
 GD
 GD
-PI
-PI
-qd
-kq
-kq
-kq
-kq
-kq
+GD
+GD
+Dt
+Dt
+Ob
+MV
+MV
+MV
+MV
+MV
 GD
 GD
 GD
@@ -59332,8 +60716,8 @@ GD
 GD
 PI
 PI
-kq
-kq
+no
+no
 kq
 ps
 ps
@@ -59370,7 +60754,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 GD
 GD
@@ -59427,7 +60811,7 @@ ps
 ps
 kq
 kq
-GD
+no
 GD
 GD
 GD
@@ -59458,7 +60842,7 @@ BM
 BM
 BM
 BM
-kq
+no
 kq
 PI
 PI
@@ -59468,19 +60852,15 @@ Gz
 Gz
 Gz
 qd
-PI
-kq
-kq
+MM
+Dt
+Dt
 GD
 GD
 GD
-Cb
-xr
-ps
-GD
-GD
-GD
-GD
+PW
+qF
+Dt
 GD
 GD
 GD
@@ -59488,15 +60868,19 @@ GD
 GD
 GD
 GD
-kq
-kq
-kq
-kq
-kq
-kq
-kq
-kq
-kq
+GD
+GD
+GD
+GD
+MV
+MV
+MV
+Mz
+MV
+MV
+MV
+no
+no
 kq
 GD
 GD
@@ -59566,7 +60950,7 @@ qd
 PI
 Gz
 kq
-kq
+no
 kq
 GD
 GD
@@ -59576,22 +60960,22 @@ GD
 GD
 BM
 Qj
+no
+kq
+kq
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
 kq
 kq
 kq
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-kq
-kq
-kq
-kq
+no
 xr
 xr
 ps
@@ -59627,8 +61011,8 @@ GD
 GD
 GD
 GD
-kq
-kq
+no
+no
 GD
 GD
 GD
@@ -59648,7 +61032,7 @@ GD
 GD
 GD
 GD
-kq
+no
 kq
 PI
 GD
@@ -59682,9 +61066,9 @@ GD
 GD
 kq
 kq
-kq
-kq
-kq
+no
+no
+no
 GD
 GD
 GD
@@ -59714,8 +61098,8 @@ GD
 GD
 BM
 kq
-kq
-kq
+no
+no
 kq
 PI
 Gz
@@ -59725,15 +61109,15 @@ Gz
 PI
 PI
 PI
-PI
+MM
 GD
 GD
 GD
 GD
 GD
 GD
-ps
-ps
+Dt
+Dt
 GD
 GD
 GD
@@ -59744,17 +61128,17 @@ GD
 GD
 GD
 GD
+MV
+MV
+MV
+MV
+MV
+MV
+MV
+MV
 kq
 kq
-kq
-kq
-kq
-kq
-kq
-kq
-kq
-kq
-kq
+no
 kq
 BM
 BM
@@ -59833,8 +61217,8 @@ GD
 GD
 kq
 kq
-kq
-kq
+no
+no
 kq
 PI
 PI
@@ -59845,7 +61229,7 @@ GD
 GD
 GD
 GD
-kq
+no
 kq
 kq
 kq
@@ -59971,7 +61355,7 @@ GD
 GD
 GD
 GD
-kq
+no
 kq
 kq
 PI
@@ -59989,9 +61373,9 @@ GD
 GD
 GD
 GD
-ps
-kq
-kq
+Dt
+Mz
+MV
 GD
 GD
 GD
@@ -60000,18 +61384,18 @@ GD
 GD
 GD
 GD
-kq
-kq
-kq
+MV
+ch
+MV
 GD
+MV
+MV
+MV
+MV
 kq
 kq
 kq
-kq
-kq
-kq
-kq
-kq
+no
 kq
 BM
 hk
@@ -60088,7 +61472,7 @@ GD
 GD
 GD
 GD
-kq
+no
 kq
 kq
 GD
@@ -60103,7 +61487,7 @@ GD
 GD
 GD
 PI
-kq
+no
 kq
 kq
 ps
@@ -60143,7 +61527,7 @@ GD
 GD
 kq
 kq
-kq
+no
 GD
 GD
 GD
@@ -60247,8 +61631,8 @@ GD
 GD
 GD
 GD
-kq
-kq
+MV
+MV
 GD
 GD
 GD
@@ -60258,13 +61642,13 @@ GD
 GD
 BM
 BM
-kq
+MV
 GD
 GD
 GD
-kq
-kq
-kq
+MV
+MV
+MV
 kq
 kq
 kq
@@ -60306,10 +61690,10 @@ GD
 GD
 GD
 GD
+no
+no
 kq
-kq
-kq
-kq
+no
 GD
 GD
 GD
@@ -60345,9 +61729,9 @@ GD
 GD
 GD
 GD
-GD
-kq
-kq
+no
+no
+no
 GD
 GD
 Gz
@@ -60400,7 +61784,7 @@ GD
 GD
 GD
 BM
-kq
+no
 GD
 GD
 GD
@@ -60444,7 +61828,7 @@ GD
 GD
 PI
 kq
-kq
+no
 kq
 PI
 Gz
@@ -60453,7 +61837,7 @@ PI
 GD
 GD
 GD
-hk
+no
 BM
 BM
 hk
@@ -60504,9 +61888,9 @@ GD
 GD
 GD
 GD
-kq
-kq
-kq
+MV
+MV
+MV
 GD
 GD
 GD
@@ -60525,9 +61909,9 @@ kq
 kq
 kq
 kq
+no
 kq
-kq
-kq
+no
 BM
 BM
 Qj
@@ -60583,8 +61967,8 @@ GD
 GD
 GD
 GD
-kq
-kq
+no
+no
 kq
 GD
 GD
@@ -60640,8 +62024,8 @@ GD
 GD
 PI
 kq
-kq
-kq
+no
+no
 GD
 GD
 GD
@@ -60699,10 +62083,10 @@ nP
 sy
 GD
 GD
+no
+no
 kq
-kq
-kq
-kq
+no
 kq
 PI
 GD
@@ -60762,7 +62146,7 @@ GD
 GD
 GD
 GD
-kq
+MV
 kq
 GD
 GD
@@ -60793,8 +62177,8 @@ BM
 BM
 GD
 GD
-GD
-BM
+no
+no
 kq
 kq
 GD
@@ -60825,7 +62209,7 @@ GD
 GD
 kq
 kq
-kq
+no
 GD
 GD
 GD
@@ -60840,7 +62224,7 @@ GD
 GD
 GD
 GD
-kq
+no
 kq
 kq
 GD
@@ -60854,7 +62238,7 @@ GD
 PI
 PI
 kq
-kq
+no
 GD
 GD
 GD
@@ -60886,8 +62270,8 @@ ps
 ps
 xr
 ps
-kq
-kq
+no
+no
 GD
 GD
 GD
@@ -60898,7 +62282,7 @@ GD
 GD
 kq
 kq
-kq
+no
 kq
 kq
 GD
@@ -60930,8 +62314,8 @@ ps
 xr
 ps
 kq
-kq
-kq
+no
+no
 GD
 GD
 PI
@@ -61020,7 +62404,7 @@ GD
 kq
 kq
 kq
-kq
+no
 kq
 GD
 GD
@@ -61097,7 +62481,7 @@ GD
 GD
 kq
 kq
-kq
+no
 kq
 GD
 GD
@@ -61110,8 +62494,8 @@ GD
 GD
 GD
 GD
-kq
-kq
+no
+no
 GD
 GD
 GD
@@ -61142,7 +62526,7 @@ GD
 ps
 ps
 ps
-kq
+no
 kq
 kq
 PI
@@ -61174,7 +62558,7 @@ BM
 BM
 BM
 BM
-kq
+no
 ps
 ps
 ps
@@ -61274,11 +62658,11 @@ Gz
 Gz
 qd
 kq
+no
+no
+no
 kq
-kq
-kq
-kq
-kq
+no
 kq
 BM
 Qj
@@ -61310,15 +62694,15 @@ GD
 GD
 GD
 kq
+no
+no
+no
+no
+no
 kq
-kq
-kq
-kq
-kq
-kq
-kq
-kq
-kq
+no
+no
+no
 ps
 ps
 ps
@@ -61341,7 +62725,7 @@ GD
 GD
 kq
 kq
-kq
+no
 kq
 GD
 GD
@@ -61368,7 +62752,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 GD
 GD
@@ -61399,7 +62783,7 @@ GD
 GD
 kq
 kq
-kq
+no
 kq
 PI
 Gz
@@ -61443,7 +62827,7 @@ GD
 GD
 GD
 GD
-GD
+no
 kq
 PI
 qd
@@ -61491,7 +62875,7 @@ BM
 BM
 kq
 kq
-kq
+no
 kq
 ps
 ps
@@ -61570,9 +62954,9 @@ kq
 kq
 kq
 kq
+no
 kq
-kq
-kq
+no
 kq
 kq
 kq
@@ -61598,8 +62982,8 @@ GD
 GD
 GD
 GD
-kq
-kq
+no
+no
 kq
 GD
 GD
@@ -61746,7 +63130,7 @@ BM
 Qj
 BM
 kq
-kq
+no
 kq
 kq
 kq
@@ -61818,14 +63202,14 @@ GD
 GD
 GD
 kq
+no
+no
 kq
 kq
+no
+no
 kq
-kq
-kq
-kq
-kq
-GD
+no
 GD
 GD
 kq
@@ -61856,7 +63240,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 BM
 Qj
@@ -61938,7 +63322,7 @@ GD
 ps
 ps
 kq
-kq
+no
 BM
 hk
 Qj
@@ -62003,11 +63387,11 @@ GD
 kq
 kq
 kq
+no
 kq
 kq
-kq
-kq
-kq
+no
+no
 kq
 ps
 ps
@@ -62019,9 +63403,9 @@ ps
 ps
 ps
 kq
-kq
-kq
-kq
+no
+no
+no
 kq
 kq
 kq
@@ -62064,7 +63448,7 @@ BM
 BM
 kq
 kq
-kq
+no
 GD
 GD
 GD
@@ -62075,7 +63459,7 @@ GD
 kq
 kq
 kq
-kq
+no
 kq
 kq
 kq
@@ -62112,7 +63496,7 @@ qd
 qd
 PI
 kq
-kq
+no
 kq
 Qj
 BM
@@ -62154,7 +63538,7 @@ GD
 ps
 kq
 kq
-kq
+no
 kq
 kq
 kq
@@ -62181,7 +63565,7 @@ PI
 PI
 PI
 GD
-GD
+no
 GD
 GD
 GD
@@ -62202,8 +63586,8 @@ BM
 BM
 hk
 BM
-BM
-kq
+no
+no
 kq
 GD
 GD
@@ -62255,8 +63639,8 @@ GD
 GD
 GD
 GD
-GD
-GD
+no
+no
 kq
 kq
 kq
@@ -62277,60 +63661,60 @@ GD
 GD
 GD
 kq
+no
+no
+kq
+no
+kq
+no
+no
+no
+kq
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+GD
+kq
+no
 kq
 kq
 kq
+no
 kq
+no
 kq
+no
 kq
-kq
-kq
-kq
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-kq
-kq
-kq
-kq
-kq
-kq
-kq
-kq
-kq
-kq
-kq
-kq
+no
 kq
 GD
 GD
@@ -62412,14 +63796,14 @@ Cb
 ps
 kq
 kq
+no
 kq
 kq
+no
 kq
-kq
-kq
+no
 GD
-GD
-GD
+no
 GD
 GD
 GD
@@ -62438,7 +63822,7 @@ Gz
 Gz
 PI
 PI
-kq
+no
 GD
 GD
 GD
@@ -62460,7 +63844,7 @@ GD
 BM
 Qj
 kq
-kq
+no
 kq
 kq
 GD
@@ -62512,10 +63896,10 @@ GD
 GD
 kq
 kq
+no
 kq
 kq
-kq
-kq
+no
 GD
 GD
 GD
@@ -62577,9 +63961,9 @@ vt
 vt
 vt
 vt
-vt
+no
 kq
-kq
+no
 kq
 kq
 kq
@@ -62674,7 +64058,7 @@ GD
 kq
 kq
 kq
-kq
+no
 GD
 GD
 GD
@@ -62709,7 +64093,7 @@ ps
 Cb
 ps
 ps
-kq
+no
 kq
 GD
 GD
@@ -62930,9 +64314,9 @@ GD
 GD
 GD
 GD
-kq
-kq
-kq
+no
+no
+no
 kq
 PI
 qd
@@ -62950,8 +64334,8 @@ PI
 PI
 PI
 PI
-PI
-kq
+no
+no
 kq
 ps
 ps
@@ -62975,10 +64359,10 @@ GD
 GD
 GD
 GD
-GD
+no
 kq
-kq
-kq
+no
+no
 kq
 GD
 GD
@@ -63235,8 +64619,8 @@ GD
 GD
 GD
 kq
-kq
-kq
+no
+no
 kq
 GD
 GD
@@ -63416,7 +64800,7 @@ GD
 GD
 GD
 kq
-kq
+no
 kq
 GD
 GD
@@ -63424,7 +64808,7 @@ GD
 kq
 kq
 kq
-kq
+no
 kq
 GD
 Cb
@@ -63673,10 +65057,10 @@ hk
 hk
 BM
 kq
-kq
-GD
-kq
-kq
+no
+no
+no
+no
 kq
 kq
 kq
@@ -63933,8 +65317,8 @@ BM
 kq
 kq
 kq
-kq
-kq
+no
+no
 kq
 GD
 GD
@@ -79895,7 +81279,7 @@ vt
 NG
 NG
 NG
-nS
+NG
 NG
 NG
 vt
@@ -80152,7 +81536,7 @@ vt
 NG
 NG
 NG
-nS
+NG
 NG
 NG
 NG
@@ -80409,8 +81793,8 @@ vt
 NG
 NG
 NG
-nS
-nS
+NG
+NG
 NG
 NG
 vt
@@ -80666,8 +82050,8 @@ vt
 NG
 NG
 NG
-nS
-nS
+NG
+NG
 NG
 NG
 vt
@@ -80923,8 +82307,8 @@ vt
 NG
 NG
 nS
-nS
-nS
+NG
+NG
 NG
 NG
 vt
@@ -81180,8 +82564,8 @@ NG
 NG
 NG
 nS
-nS
-nS
+NG
+NG
 NG
 NG
 vt
@@ -81438,7 +82822,7 @@ NG
 NG
 nS
 nS
-nS
+NG
 NG
 NG
 NG
@@ -81695,7 +83079,7 @@ NG
 nS
 nS
 nS
-nS
+NG
 NG
 NG
 NG
@@ -81953,7 +83337,7 @@ nS
 nS
 nS
 nS
-nS
+NG
 NG
 NG
 vt
@@ -82210,7 +83594,7 @@ nS
 nS
 nS
 nS
-nS
+NG
 NG
 NG
 vt
@@ -82467,7 +83851,7 @@ nS
 nS
 nS
 nS
-nS
+NG
 NG
 NG
 vt
@@ -82982,7 +84366,7 @@ nS
 nS
 nS
 nS
-nS
+NG
 NG
 NG
 vt
@@ -83239,7 +84623,7 @@ nS
 nS
 nS
 nS
-nS
+NG
 NG
 NG
 pb
@@ -83496,7 +84880,7 @@ nS
 nS
 nS
 nS
-nS
+NG
 NG
 NG
 NG
@@ -84525,7 +85909,7 @@ nS
 nS
 nS
 nS
-nS
+NG
 NG
 NG
 pb
@@ -84782,7 +86166,7 @@ nS
 nS
 nS
 nS
-nS
+NG
 NG
 NG
 nS
