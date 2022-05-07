@@ -1,4 +1,28 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ab" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/obj/structure/closet/crate/miningcar,
+/obj/item/stack/sheet/mineral/coal/ten,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"ae" = (
+/obj/structure/spawner/nether,
+/turf/open/floor/cult{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "al" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -35,6 +59,29 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"av" = (
+/obj/structure/closet/crate/wooden,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"aA" = (
+/obj/structure/railing/corner,
+/obj/structure/railing/corner{
+	dir = 8;
+	icon_state = "railing_corner"
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/turf/open/floor/stone{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "aC" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -58,6 +105,40 @@
 	desc = "A patch of grass?";
 	baseturfs = /turf/open/misc/dirt/planet;
 	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"aT" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 9
+	},
+/turf/open/floor/stone{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"aY" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/obj/structure/closet/crate/miningcar,
+/obj/item/stack/ore/iron{
+	amount = 50
+	},
+/obj/item/stack/ore/iron{
+	amount = 50
+	},
+/obj/item/stack/ore/iron{
+	amount = 50
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
 	},
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -218,6 +299,32 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"cM" = (
+/obj/structure/spawner/mining/goldgrub,
+/turf/open/misc/grass/planet{
+	color = "#fbff00";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"cT" = (
+/obj/structure/spawner/mining/basilisk,
+/turf/open/misc/grass/planet{
+	color = "#fbff00";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "cY" = (
 /obj/structure/ore_vein/stone,
 /turf/open/misc/dirt/planet,
@@ -370,6 +477,15 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"dZ" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/suit/armor/riot/chaplain/studentuni,
+/turf/open/misc/asteroid/basalt/lava,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "ee" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/food/meat/slab/rawcrab,
@@ -407,6 +523,14 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"ep" = (
+/obj/effect/gibspawner/human,
+/turf/open/misc/asteroid/basalt/lava,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "eG" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/stack/sheet/mineral/diamond{
@@ -434,6 +558,15 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"ft" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/suit/armor/riot/chaplain/hospitaller,
+/turf/open/misc/asteroid/basalt/lava,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "fy" = (
 /mob/living/simple_animal/pet/dog/markus,
 /turf/open/misc/dirt/planet,
@@ -451,6 +584,17 @@
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
+	})
+"fB" = (
+/obj/structure/spawner/mining{
+	name = "crab den";
+	mob_types = list(/mob/living/simple_animal/crab)
+	},
+/turf/open/water/overlay/outdoors,
+/area/ruin/powered/beach{
+	name = "Surface";
+	base_lighting_alpha = 255;
+	static_lighting = 0
 	})
 "fG" = (
 /turf/closed/mineral/random{
@@ -579,6 +723,14 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"gZ" = (
+/obj/item/clothing/suit/armor/riot/chaplain/hospitaller,
+/turf/open/misc/asteroid/basalt/lava,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "hb" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -677,13 +829,25 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
-"hF" = (
-/obj/structure/railing/corner{
-	dir = 1;
-	icon_state = "railing_corner"
+"hP" = (
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
 	},
+/obj/item/storage/bag/ore,
+/obj/item/storage/bag/ore,
+/obj/item/storage/bag/ore,
+/obj/item/storage/bag/ore,
+/obj/item/storage/bag/ore,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"hQ" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
+	dir = 5
 	},
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava
@@ -763,6 +927,26 @@
 	},
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"ih" = (
+/obj/structure/railing/corner{
+	dir = 1;
+	icon_state = "railing_corner"
+	},
+/obj/structure/railing/corner{
+	dir = 4;
+	icon_state = "railing_corner"
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/turf/open/floor/stone{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
 	},
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -909,6 +1093,22 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"ks" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/reagent_forge{
+	icon_state = "primitive_forge_empty";
+	primitive = 1
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "kA" = (
 /turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
@@ -917,8 +1117,7 @@
 	name = "\improper Mountains"
 	})
 "kC" = (
-/obj/machinery/light/warm/no_nightlight/directional/west,
-/turf/open/misc/dirt/planet,
+/turf/open/lava/smooth,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -1024,6 +1223,18 @@
 	mood_bonus = 0;
 	mood_message = "<span class='warning'>We dug too deep!</span>\n";
 	name = "The Circus of Fun"
+	})
+"lG" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/turf/open/floor/stone{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "lX" = (
 /obj/structure/flora/ash/tall_shroom,
@@ -1153,6 +1364,14 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"oD" = (
+/obj/item/clothing/suit/armor/bone,
+/turf/open/misc/asteroid/basalt/lava,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "oK" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -1213,26 +1432,6 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
-	})
-"pm" = (
-/obj/structure/railing/corner{
-	dir = 1;
-	icon_state = "railing_corner"
-	},
-/obj/structure/railing/corner{
-	dir = 4;
-	icon_state = "railing_corner"
-	},
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/turf/open/floor/stone{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava
-	},
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
-	name = "\improper Mountains"
 	})
 "ps" = (
 /turf/open/misc/grass/planet{
@@ -1391,10 +1590,19 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"qq" = (
+/obj/structure/spawner/mining/goliath,
+/turf/open/misc/asteroid/basalt/lava,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "qt" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/reagent_forge{
-	icon_state = "primitive_forge_empty"
+	icon_state = "primitive_forge_empty";
+	primitive = 1
 	},
 /obj/item/forging/billow,
 /turf/open/floor/wood/large{
@@ -1493,19 +1701,6 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
-"rQ" = (
-/turf/closed/mineral/random/high_chance{
-	mineralAmt = 15;
-	tool_mine_speed = 100;
-	baseturfs = s;
-	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
-	name = "volcanic rock"
-	},
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
-	name = "\improper Mountains"
-	})
 "rS" = (
 /obj/structure/flora/biolumi/lamp/weaklight{
 	light_range = 3
@@ -1552,6 +1747,24 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"sJ" = (
+/obj/item/clothing/head/helmet/knight/blue,
+/turf/open/misc/asteroid/basalt/lava,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"sU" = (
+/obj/item/clothing/head/helmet/knight/blue,
+/turf/open/floor/cult{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "sY" = (
 /mob/living/simple_animal/hostile/blob/blobspore/independent{
 	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
@@ -1562,21 +1775,6 @@
 	desc = "A patch of grass?";
 	baseturfs = /turf/open/misc/dirt/planet;
 	name = "fungal grass"
-	},
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
-	name = "\improper Mountains"
-	})
-"sZ" = (
-/obj/structure/railing/corner,
-/obj/structure/railing/corner{
-	dir = 8;
-	icon_state = "railing_corner"
-	},
-/obj/effect/turf_decal/siding/thinplating/dark,
-/turf/open/floor/stone{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava
 	},
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -1602,6 +1800,16 @@
 "tk" = (
 /obj/structure/mineral_door/wood,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"tw" = (
+/obj/structure/deployable_barricade/wooden{
+	dir = 4
+	},
+/turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -1649,6 +1857,44 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"ua" = (
+/obj/structure/railing/corner{
+	dir = 1;
+	icon_state = "railing_corner"
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/turf/open/floor/stone{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"uk" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/obj/structure/closet/crate/miningcar,
+/obj/item/stack/ore/stone{
+	amount = 50
+	},
+/obj/item/stack/ore/stone{
+	amount = 50
+	},
+/obj/item/stack/ore/stone{
+	amount = 50
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "uq" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
@@ -1681,6 +1927,17 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"uH" = (
+/obj/item/claymore/weak{
+	force = 30;
+	name = "rusted claymore"
+	},
+/turf/open/misc/asteroid/basalt/lava,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "uV" = (
 /turf/open/misc/dirt/planet{
@@ -1725,6 +1982,17 @@
 /obj/item/cultivator/rake,
 /obj/item/cultivator/rake,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"vb" = (
+/obj/structure/railing,
+/obj/effect/turf_decal/siding/thinplating/dark,
+/turf/open/floor/stone{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -1782,13 +2050,23 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"vU" = (
+/obj/structure/statue/bone/rib,
+/turf/open/floor/cult{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "wb" = (
 /obj/structure/closet/crate/miningcar{
 	desc = "What's the hardness DC of this again?";
 	max_integrity = 2000;
 	name = "Dead Elf Wagon"
 	},
-/obj/item/toy/plush/bubbleplush,
+/obj/item/toy/plush/rouny,
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -1834,6 +2112,15 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"wH" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/head/helmet/knight,
+/turf/open/misc/asteroid/basalt/lava,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "wI" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -1867,6 +2154,14 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"xf" = (
+/obj/item/clothing/head/helmet/knight,
+/turf/open/misc/asteroid/basalt/lava,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "xr" = (
 /obj/structure/flora/ash/leaf_shroom{
@@ -1905,18 +2200,12 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
-"xD" = (
-/obj/structure/flora/ausbushes/stalkybush,
-/turf/open/water/overlay/outdoors,
-/area/ruin/powered/beach{
-	name = "Surface";
-	base_lighting_alpha = 255;
-	static_lighting = 0
-	})
-"ym" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 5
+"xC" = (
+/obj/structure/railing/corner{
+	dir = 8;
+	icon_state = "railing_corner"
 	},
+/obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava
 	},
@@ -1925,15 +2214,33 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
-"ys" = (
-/obj/structure/railing{
-	dir = 1
+"xD" = (
+/obj/structure/flora/ausbushes/stalkybush,
+/turf/open/water/overlay/outdoors,
+/area/ruin/powered/beach{
+	name = "Surface";
+	base_lighting_alpha = 255;
+	static_lighting = 0
+	})
+"yH" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/item/flashlight/flare/torch{
+	on = 1;
+	fuel = 1000000
 	},
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/turf/open/floor/stone{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"yJ" = (
+/obj/structure/spawner/mining/hivelord,
+/turf/open/misc/grass/planet{
+	color = "#fbff00";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
 	},
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -1965,18 +2272,6 @@
 	desc = "A patch of grass?";
 	baseturfs = /turf/open/misc/dirt/planet;
 	name = "fungal grass"
-	},
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
-	name = "\improper Mountains"
-	})
-"yS" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 10
-	},
-/turf/open/floor/stone{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava
 	},
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -2034,9 +2329,28 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"zT" = (
+/obj/structure/trap/eldritch/mad,
+/turf/open/misc/asteroid/basalt/lava,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "Ai" = (
 /obj/item/food/spidereggs,
 /turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"At" = (
+/obj/item/flashlight/flare/torch{
+	on = 1;
+	fuel = 1000000
+	},
+/turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -2065,6 +2379,14 @@
 "AA" = (
 /obj/machinery/hydroponics/soil,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"AE" = (
+/obj/structure/trap/eldritch/tentacle,
+/turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -2131,6 +2453,14 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"Be" = (
+/obj/structure/statue/bone/rib,
+/turf/open/misc/asteroid/basalt/lava,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "Bi" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 1
@@ -2160,6 +2490,14 @@
 "Bv" = (
 /obj/structure/barricade/wooden/crude,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"BJ" = (
+/obj/effect/decal/remains/human,
+/turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -2270,15 +2608,6 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
-"Cl" = (
-/turf/open/floor/stone{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava
-	},
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
-	name = "\improper Mountains"
-	})
 "Cn" = (
 /obj/structure/flora/ash/stem_shroom{
 	color = "#00FFFF";
@@ -2339,6 +2668,14 @@
 	baseturfs = /turf/open/misc/dirt/planet;
 	name = "fungal grass"
 	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"CH" = (
+/obj/item/gun/magic/hook,
+/turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -2568,9 +2905,10 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
-"EK" = (
-/obj/structure/railing/corner,
-/obj/effect/turf_decal/siding/thinplating/dark,
+"ER" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava
 	},
@@ -2606,9 +2944,13 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
-"Ff" = (
+"Fj" = (
+/obj/structure/railing/corner{
+	dir = 4;
+	icon_state = "railing_corner"
+	},
 /obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 9
+	dir = 1
 	},
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava
@@ -2646,6 +2988,18 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"FL" = (
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/item/stack/sheet/mineral/wood/fifty,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "FM" = (
 /obj/structure/flora/ausbushes/reedbush,
@@ -2707,8 +3061,10 @@
 	static_lighting = 0
 	})
 "Gl" = (
-/obj/machinery/light/warm/no_nightlight/directional/north,
-/turf/open/misc/dirt/planet,
+/obj/effect/gibspawner/human,
+/turf/open/floor/cult{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -2782,6 +3138,19 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"GH" = (
+/obj/structure/spawner/mining/wumborian,
+/turf/open/misc/grass/planet{
+	color = "#fbff00";
+	desc = "A patch of grass?";
+	baseturfs = /turf/open/misc/dirt/planet;
+	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "GK" = (
 /turf/open/water/overlay/outdoors,
 /area/ruin/powered{
@@ -2816,6 +3185,16 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"GU" = (
+/obj/item/clothing/head/helmet/knight,
+/turf/open/floor/cult{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "Hc" = (
 /mob/living/simple_animal/hostile/giant_spider/hunter,
 /turf/open/misc/sandy_dirt/planet,
@@ -2825,8 +3204,14 @@
 	name = "\improper Mountains"
 	})
 "Hi" = (
-/obj/machinery/light/warm/no_nightlight/directional/east,
-/turf/open/misc/dirt/planet,
+/obj/item/flashlight/flare/torch{
+	name = "wall torch";
+	on = 1;
+	fuel = 1000000
+	},
+/turf/closed/wall/mineral/stone{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -3038,8 +3423,12 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
-"IV" = (
-/turf/open/lava/smooth,
+"IM" = (
+/obj/structure/railing/corner,
+/obj/effect/turf_decal/siding/thinplating/dark,
+/turf/open/floor/stone{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -3082,6 +3471,15 @@
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"JO" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/head/helmet/knight/blue,
+/turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -3146,12 +3544,25 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"Kp" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 6
+	},
+/turf/open/floor/stone{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "Ku" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
 /obj/structure/reagent_forge{
-	icon_state = "primitive_forge_empty"
+	icon_state = "primitive_forge_empty";
+	primitive = 1
 	},
 /obj/item/forging/billow,
 /turf/open/floor/wood/large{
@@ -3167,7 +3578,8 @@
 	dir = 9
 	},
 /obj/structure/reagent_forge{
-	icon_state = "primitive_forge_empty"
+	icon_state = "primitive_forge_empty";
+	primitive = 1
 	},
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
@@ -3182,6 +3594,20 @@
 	dir = 8
 	},
 /obj/structure/table_frame/wood,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Lc" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/obj/structure/closet/crate/miningcar,
+/obj/item/stack/sheet/mineral/coal/ten,
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
@@ -3284,12 +3710,24 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"MC" = (
+/obj/item/clothing/suit/armor/riot/knight/blue,
+/turf/open/misc/asteroid/basalt/lava,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "MD" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/turf/open/floor/stone{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava
+/obj/structure/reagent_forge{
+	icon_state = "primitive_forge_empty";
+	primitive = 1
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
 	},
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -3372,6 +3810,18 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"MP" = (
+/obj/effect/turf_decal/weather/snow/corner,
+/obj/effect/landmark/start/hangover,
+/turf/open/misc/sandy_dirt/planet{
+	color = "#c4af8b";
+	name = "dirt road"
+	},
+/area/ruin/powered/beach{
+	name = "Surface";
+	base_lighting_alpha = 255;
+	static_lighting = 0
+	})
 "MV" = (
 /obj/structure/spider/stickyweb,
 /turf/open/misc/dirt/planet,
@@ -3395,6 +3845,21 @@
 	},
 /obj/item/food/spidereggs,
 /turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Nq" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/turf/open/floor/stone{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -3435,6 +3900,20 @@
 "NO" = (
 /obj/structure/flora/ash/chilly,
 /turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered/beach{
+	name = "Surface";
+	base_lighting_alpha = 255;
+	static_lighting = 0
+	})
+"NV" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 9
+	},
+/obj/effect/landmark/start/hangover,
+/turf/open/misc/sandy_dirt/planet{
+	color = "#c4af8b";
+	name = "dirt road"
+	},
 /area/ruin/powered/beach{
 	name = "Surface";
 	base_lighting_alpha = 255;
@@ -3635,6 +4114,20 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"Pw" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/obj/effect/landmark/start/hangover,
+/turf/open/misc/sandy_dirt/planet{
+	color = "#c4af8b";
+	name = "dirt road"
+	},
+/area/ruin/powered/beach{
+	name = "Surface";
+	base_lighting_alpha = 255;
+	static_lighting = 0
+	})
 "Py" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -3677,9 +4170,10 @@
 	name = "\improper Mountains"
 	})
 "PH" = (
-/obj/structure/table/wood,
-/obj/machinery/light/warm/no_nightlight/directional/east,
-/turf/open/misc/dirt/planet,
+/obj/structure/statue/bone/rib{
+	dir = 1
+	},
+/turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -3746,22 +4240,6 @@
 /obj/item/seeds/coffee/robusta,
 /obj/item/seeds/coffee/robusta,
 /turf/open/misc/dirt/planet,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
-	name = "\improper Mountains"
-	})
-"Qd" = (
-/obj/structure/railing/corner{
-	dir = 4;
-	icon_state = "railing_corner"
-	},
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/turf/open/floor/stone{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava
-	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -3863,18 +4341,6 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
-"QS" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 6
-	},
-/turf/open/floor/stone{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava
-	},
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
-	name = "\improper Mountains"
-	})
 "QW" = (
 /obj/structure/flora/ash/leaf_shroom{
 	color = "#fff44f";
@@ -3900,6 +4366,7 @@
 	dir = 1
 	},
 /obj/structure/bonfire,
+/obj/item/stack/rods/ten,
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
@@ -3935,6 +4402,15 @@
 	pull_force = 3000
 	},
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"RE" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/suit/armor/riot/knight/blue,
+/turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -3983,6 +4459,28 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"RT" = (
+/turf/open/floor/stone{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"RU" = (
+/obj/item/flashlight/flare/torch{
+	on = 1;
+	fuel = 1000000
+	},
+/turf/closed/wall/mineral/stone{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "Sc" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/seeds/cocaleaf,
@@ -4020,6 +4518,14 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"Sp" = (
+/obj/structure/ore_vein/gold,
+/turf/open/misc/asteroid/basalt/lava,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "SE" = (
 /mob/living/simple_animal/deer,
 /turf/open/misc/snow/actually_safe{
@@ -4029,18 +4535,6 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
-	})
-"SO" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 4
-	},
-/turf/open/floor/stone{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava
-	},
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
-	name = "\improper Mountains"
 	})
 "Ta" = (
 /obj/effect/decal/remains/human,
@@ -4062,6 +4556,25 @@
 /obj/item/reagent_containers/glass/bucket/wooden,
 /obj/item/reagent_containers/glass/bucket/wooden,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Te" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/head/helmet/knight/blue,
+/turf/open/floor/cult{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Tj" = (
+/obj/structure/ore_vein/stone,
+/turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -4091,6 +4604,18 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+"TG" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 10
+	},
+/turf/open/floor/stone{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "TI" = (
 /obj/structure/punji_sticks/spikes,
 /turf/open/misc/grass/planet{
@@ -4098,6 +4623,15 @@
 	desc = "A patch of grass?";
 	baseturfs = /turf/open/misc/dirt/planet;
 	name = "fungal grass"
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"TN" = (
+/turf/open/floor/cult{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
 	},
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -4118,6 +4652,19 @@
 	},
 /obj/item/knife/bloodletter,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"TY" = (
+/turf/closed/mineral/random/high_chance{
+	mineralAmt = 15;
+	tool_mine_speed = 100;
+	baseturfs = s;
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
+	name = "volcanic rock"
+	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -4203,20 +4750,6 @@
 	dir = 1
 	},
 /turf/open/misc/dirt/planet,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
-	name = "\improper Mountains"
-	})
-"UF" = (
-/obj/structure/railing/corner{
-	dir = 8;
-	icon_state = "railing_corner"
-	},
-/obj/effect/turf_decal/siding/thinplating/dark,
-/turf/open/floor/stone{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava
-	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -4383,6 +4916,19 @@
 	mood_message = "<span class='warning'>We dug too deep!</span>\n";
 	name = "The Circus of Fun"
 	})
+"We" = (
+/obj/item/claymore/weak{
+	force = 30;
+	name = "rusted claymore"
+	},
+/turf/open/floor/cult{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
 "Wf" = (
 /turf/open/water/overlay/outdoors,
 /area/ruin/powered/beach{
@@ -4456,6 +5002,16 @@
 "WQ" = (
 /mob/living/simple_animal/hostile/asteroid/gutlunch/gubbuck,
 /turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"Xa" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/cult{
+	baseturfs = /turf/open/misc/asteroid/basalt/lava
+	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -4640,6 +5196,17 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
+"YT" = (
+/obj/effect/landmark/start/hangover,
+/turf/open/misc/sandy_dirt/planet{
+	color = "#c4af8b";
+	name = "dirt road"
+	},
+/area/ruin/powered/beach{
+	name = "Surface";
+	base_lighting_alpha = 255;
+	static_lighting = 0
+	})
 "YW" = (
 /obj/structure/rack{
 	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
@@ -4671,17 +5238,6 @@
 "Zg" = (
 /obj/item/flashlight/lantern/heirloom_moth,
 /turf/open/misc/dirt/planet,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
-	name = "\improper Mountains"
-	})
-"Zl" = (
-/obj/structure/railing,
-/obj/effect/turf_decal/siding/thinplating/dark,
-/turf/open/floor/stone{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava
-	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -6647,9 +7203,9 @@ gJ
 gJ
 gJ
 gJ
-Bi
+Pw
 xw
-xw
+YT
 Iq
 gJ
 gJ
@@ -7162,9 +7718,9 @@ gJ
 gJ
 gJ
 Bi
+YT
 xw
-xw
-Iq
+MP
 gJ
 gJ
 gJ
@@ -7417,7 +7973,7 @@ Uh
 gJ
 gJ
 Ox
-pk
+NV
 xw
 xw
 xw
@@ -7677,7 +8233,7 @@ gJ
 Bi
 xw
 xw
-xw
+YT
 Iq
 gA
 gJ
@@ -7932,8 +8488,8 @@ gJ
 gJ
 gJ
 Bi
-xw
-xw
+YT
+YT
 xw
 Iq
 gJ
@@ -8188,10 +8744,10 @@ gJ
 Ox
 gJ
 gJ
-Bi
+Pw
 xw
 xw
-xw
+YT
 Iq
 gJ
 gJ
@@ -8447,7 +9003,7 @@ gJ
 gJ
 Bi
 xw
-xw
+YT
 xw
 Iq
 gJ
@@ -8703,10 +9259,10 @@ gJ
 gJ
 gJ
 Bi
+YT
 xw
 xw
-xw
-Iq
+MP
 gJ
 gJ
 gA
@@ -8958,11 +9514,11 @@ gJ
 gJ
 Ox
 gJ
-pk
+NV
 xw
 xw
 xw
-xw
+YT
 Iq
 gJ
 gA
@@ -9216,10 +9772,10 @@ gA
 gJ
 gJ
 Bi
+YT
 xw
-xw
-xw
-xw
+YT
+YT
 Iq
 Ox
 gJ
@@ -9473,8 +10029,8 @@ gJ
 gJ
 gJ
 Bi
-xw
-xw
+YT
+YT
 xw
 xw
 TD
@@ -9730,10 +10286,10 @@ gA
 gJ
 Ld
 Bi
-xw
-xw
-xw
-Iq
+YT
+YT
+YT
+MP
 gJ
 gJ
 gJ
@@ -9986,10 +10542,10 @@ gJ
 gJ
 gJ
 gJ
-Bi
+Pw
+YT
 xw
-xw
-xw
+YT
 Iq
 gJ
 gJ
@@ -10243,11 +10799,11 @@ gA
 gJ
 gJ
 gJ
-Bi
+Pw
 xw
+YT
 xw
-xw
-Iq
+MP
 gJ
 gJ
 gJ
@@ -10500,9 +11056,9 @@ gA
 gJ
 gJ
 gJ
-Bi
-xw
-xw
+Pw
+YT
+YT
 xw
 TD
 Ox
@@ -10758,9 +11314,9 @@ gJ
 gA
 gJ
 Bi
+YT
 xw
-xw
-Iq
+MP
 gJ
 gJ
 gJ
@@ -11015,7 +11571,7 @@ gJ
 Uh
 gJ
 Bi
-xw
+YT
 xw
 Iq
 gJ
@@ -11271,10 +11827,10 @@ gJ
 gA
 gJ
 gJ
-Bi
+Pw
 xw
-xw
-Iq
+YT
+MP
 gJ
 gJ
 Ox
@@ -11530,7 +12086,7 @@ gJ
 gJ
 wO
 xw
-xw
+YT
 Iq
 gJ
 gJ
@@ -11788,7 +12344,7 @@ gJ
 gJ
 Bi
 xw
-Iq
+MP
 gJ
 gJ
 gJ
@@ -12043,8 +12599,8 @@ gA
 gJ
 gJ
 gJ
-Bi
-xw
+Pw
+YT
 xw
 JQ
 gJ
@@ -12558,9 +13114,9 @@ Ox
 gJ
 Ox
 Bi
+YT
 xw
-xw
-Iq
+MP
 gJ
 gJ
 gA
@@ -12816,7 +13372,7 @@ gJ
 gJ
 Bi
 xw
-xw
+YT
 xw
 JQ
 gJ
@@ -13074,7 +13630,7 @@ gJ
 Bi
 xw
 xw
-xw
+YT
 Iq
 gJ
 Uh
@@ -13329,7 +13885,7 @@ gJ
 gJ
 gJ
 wO
-xw
+YT
 xw
 xw
 Iq
@@ -13587,8 +14143,8 @@ gJ
 gJ
 gJ
 Bi
-xw
-xw
+YT
+YT
 Iq
 gJ
 gA
@@ -13846,7 +14402,7 @@ bf
 xw
 xw
 xw
-xw
+YT
 JQ
 gJ
 gA
@@ -14100,9 +14656,9 @@ bf
 bf
 bf
 bf
+YT
 xw
-xw
-xw
+YT
 xw
 Iq
 Ld
@@ -15026,7 +15582,7 @@ Wf
 xD
 Dg
 Gk
-Wf
+fB
 Wf
 xD
 xD
@@ -16002,7 +16558,7 @@ xD
 Wf
 xD
 xD
-Wf
+fB
 Wf
 Dg
 xD
@@ -16697,7 +17253,7 @@ Wf
 xD
 Gk
 Wf
-Wf
+fB
 Gk
 Wf
 Wf
@@ -17103,7 +17659,7 @@ Gk
 Wf
 Wf
 xD
-Wf
+fB
 Wf
 Gk
 Wf
@@ -17403,7 +17959,7 @@ Wf
 Wf
 Wf
 Wf
-Wf
+fB
 xD
 Wf
 Gk
@@ -17422,7 +17978,7 @@ Wf
 Wf
 xD
 Gk
-Wf
+fB
 Wf
 Wf
 Wf
@@ -17501,7 +18057,7 @@ xD
 xD
 Wf
 Wf
-Wf
+fB
 Gk
 Gk
 Wf
@@ -32073,7 +32629,7 @@ QC
 QC
 QC
 QC
-XW
+Hi
 QC
 QC
 QC
@@ -32330,7 +32886,7 @@ QC
 QC
 QC
 kq
-kC
+kq
 kq
 kq
 QC
@@ -32619,7 +33175,7 @@ QC
 QC
 QC
 QC
-XW
+Hi
 QC
 QC
 QC
@@ -32872,15 +33428,15 @@ QC
 QC
 QC
 QC
-XW
+Hi
 QC
 kq
 kq
-kC
+kq
 kq
 kq
 QC
-XW
+Hi
 QC
 QC
 QC
@@ -33098,8 +33654,8 @@ QC
 QC
 QC
 QC
-XW
-Gl
+Hi
+kq
 kq
 QX
 Oz
@@ -33108,7 +33664,7 @@ HF
 Qr
 Qr
 kq
-XW
+Hi
 QC
 QC
 QC
@@ -33129,7 +33685,6 @@ QC
 QC
 QC
 kq
-kC
 kq
 kq
 kq
@@ -33137,7 +33692,8 @@ kq
 kq
 kq
 kq
-kC
+kq
+kq
 kq
 QC
 QC
@@ -33365,7 +33921,7 @@ kq
 fb
 YJ
 kq
-kC
+kq
 kq
 QC
 QC
@@ -33629,17 +34185,17 @@ QC
 QC
 QC
 QC
-QC
+Hi
 kq
 kq
 kq
 kq
+Hi
 QC
 QC
 QC
 QC
-QC
-XW
+Hi
 kq
 kq
 kq
@@ -33872,7 +34428,7 @@ QC
 QC
 QC
 kq
-Hi
+kq
 kq
 FI
 kq
@@ -33896,7 +34452,7 @@ QC
 QC
 QC
 QC
-kC
+kq
 kq
 jf
 Rh
@@ -33912,8 +34468,8 @@ rO
 kq
 kq
 kq
-fd
-XW
+kq
+Hi
 QC
 QC
 QC
@@ -34129,7 +34685,7 @@ QC
 QC
 QC
 QC
-XW
+Hi
 Zs
 kq
 Ui
@@ -34141,7 +34697,7 @@ fz
 kq
 kq
 QC
-XW
+Hi
 QC
 kq
 kq
@@ -34150,7 +34706,7 @@ kq
 kq
 kq
 QC
-XW
+Hi
 QC
 kq
 kq
@@ -34398,7 +34954,6 @@ VG
 kq
 kq
 kq
-kC
 kq
 kq
 kq
@@ -34407,7 +34962,8 @@ kq
 kq
 kq
 kq
-kC
+kq
+kq
 kq
 kq
 kq
@@ -35165,7 +35721,7 @@ kq
 kq
 QC
 CK
-PH
+fb
 rA
 QC
 QC
@@ -35412,7 +35968,7 @@ QC
 QC
 QC
 QC
-XW
+Hi
 QC
 he
 kq
@@ -35422,7 +35978,7 @@ Sc
 QC
 QC
 QC
-XW
+Hi
 QC
 QC
 QC
@@ -35453,8 +36009,8 @@ Pa
 hS
 kq
 kq
-fd
-XW
+kq
+Hi
 QC
 QC
 QC
@@ -35669,7 +36225,7 @@ QC
 QC
 QC
 QJ
-kC
+kq
 kq
 kq
 kq
@@ -35677,7 +36233,7 @@ bh
 kq
 RR
 QC
-XW
+Hi
 QC
 QC
 QC
@@ -35934,22 +36490,22 @@ kq
 kq
 kq
 kq
-kC
+kq
 QC
 QC
 QC
 QC
 QC
-XW
-Gl
+Hi
 kq
 kq
 kq
 kq
+kq
 QC
 QC
-XW
-Gl
+Hi
+kq
 XW
 px
 BR
@@ -36221,7 +36777,7 @@ Va
 kq
 kq
 kq
-Hi
+kq
 kq
 QC
 QC
@@ -36436,8 +36992,8 @@ QC
 QC
 QC
 QC
-XW
-Gl
+Hi
+kq
 kq
 AA
 zq
@@ -36478,7 +37034,7 @@ kX
 kq
 kq
 kq
-XW
+Hi
 QC
 QC
 QC
@@ -36709,7 +37265,7 @@ kq
 AA
 AA
 kq
-XW
+Hi
 QC
 kq
 kq
@@ -36718,19 +37274,19 @@ kq
 kq
 QC
 QC
+av
+av
 QC
 QC
-QC
-QC
-kq
-kq
-Hi
 kq
 kq
 kq
 kq
 kq
-Hi
+kq
+kq
+kq
+kq
 kq
 kq
 QC
@@ -36966,28 +37522,28 @@ AA
 qZ
 kq
 kq
-kC
 kq
 kq
 kq
 kq
 kq
+kq
+kq
+QC
+av
+av
+av
+FL
+QC
+QC
+QC
+Hi
 QC
 QC
 QC
 QC
 QC
-QC
-QC
-QC
-QC
-XW
-QC
-QC
-QC
-QC
-QC
-XW
+Hi
 QC
 QC
 QC
@@ -37229,13 +37785,13 @@ kq
 kq
 kq
 kq
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -37486,14 +38042,14 @@ kq
 kq
 kq
 qh
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+uk
+MD
+Lc
+kq
+Hi
 QC
 QC
 QC
@@ -37721,8 +38277,8 @@ QC
 QC
 QC
 QC
-XW
-Gl
+Hi
+kq
 AA
 AA
 kq
@@ -37736,20 +38292,20 @@ kq
 qZ
 AA
 kq
-Hi
 kq
 kq
 kq
 kq
 kq
-QC
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+kq
+am
+Oz
+uW
+kq
 QC
 QC
 QC
@@ -37993,7 +38549,7 @@ AA
 WL
 AA
 kq
-XW
+Hi
 QC
 qh
 kq
@@ -38001,12 +38557,12 @@ kq
 kq
 QC
 QC
-QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+aY
+ks
+ab
+kq
 QC
 QC
 QC
@@ -38255,15 +38811,15 @@ QC
 kq
 kq
 kq
-fd
-XW
+kq
+Hi
 QC
 QC
-QC
-QC
-QC
-QC
-QC
+kq
+kq
+kq
+kq
+kq
 QC
 QC
 QC
@@ -38497,19 +39053,19 @@ QC
 QC
 QC
 kq
-Hi
+kq
 kq
 kq
 AA
 AA
 kq
-Hi
+kq
 kq
 QC
 QC
 QC
-XW
-Gl
+Hi
+kq
 kq
 wb
 kq
@@ -38517,9 +39073,9 @@ QC
 QC
 QC
 QC
-QC
-QC
-QC
+hP
+hP
+hP
 QC
 QC
 QC
@@ -38754,13 +39310,13 @@ QC
 QC
 QC
 QC
-XW
+Hi
 QC
 kq
 kq
 kq
 kq
-XW
+Hi
 QC
 QC
 QC
@@ -38775,7 +39331,7 @@ QC
 QC
 QC
 QC
-QC
+Hi
 QC
 QC
 QC
@@ -40308,8 +40864,8 @@ QC
 QC
 QC
 QC
-XW
-Gl
+Hi
+kq
 QC
 QC
 QC
@@ -44168,7 +44724,7 @@ VO
 wI
 Ig
 My
-kq
+At
 kq
 kq
 GK
@@ -44419,7 +44975,7 @@ kq
 kq
 Ib
 kq
-kq
+At
 Ym
 If
 hE
@@ -45448,12 +46004,12 @@ GK
 GK
 GK
 kq
-Ym
+yH
 OY
 LI
 CL
 My
-kq
+At
 kq
 kq
 kq
@@ -50044,7 +50600,7 @@ xr
 ps
 xr
 Cb
-ps
+cT
 xr
 Cb
 ps
@@ -52462,7 +53018,7 @@ GD
 ps
 ps
 xr
-ps
+cT
 ps
 ps
 xr
@@ -52641,7 +53197,7 @@ GD
 ps
 ps
 Cb
-ps
+GH
 xr
 xr
 ps
@@ -53542,7 +54098,7 @@ GD
 GD
 ps
 xr
-ps
+yJ
 ps
 GD
 GD
@@ -53964,7 +54520,7 @@ Cb
 ps
 xr
 ps
-ps
+GH
 ps
 GD
 GD
@@ -54883,7 +55439,7 @@ xr
 ps
 Cb
 xr
-ps
+GH
 ps
 ps
 Cb
@@ -56304,7 +56860,7 @@ GD
 GD
 Cb
 ps
-ps
+cM
 ps
 ps
 ps
@@ -57507,7 +58063,7 @@ ps
 ps
 xr
 xr
-ps
+yJ
 xr
 ps
 ps
@@ -57533,7 +58089,7 @@ kq
 kq
 OE
 kq
-XW
+RU
 GD
 BM
 BM
@@ -58557,7 +59113,7 @@ GD
 GD
 GD
 GD
-XW
+RU
 kq
 jW
 OE
@@ -58717,7 +59273,7 @@ GD
 GD
 GD
 ps
-ps
+cM
 ps
 ps
 GD
@@ -58818,7 +59374,7 @@ GD
 kq
 kq
 OE
-XW
+RU
 GD
 GD
 Gz
@@ -59610,7 +60166,7 @@ GD
 ps
 ps
 ps
-ps
+cT
 ps
 ps
 GD
@@ -60985,7 +61541,7 @@ GD
 GD
 GD
 ps
-ps
+cM
 ps
 ps
 GD
@@ -62334,7 +62890,7 @@ ps
 xr
 ps
 xr
-ps
+cT
 ps
 GD
 GD
@@ -62675,7 +63231,7 @@ ps
 ps
 xr
 xr
-ps
+yJ
 xr
 xr
 ps
@@ -63750,7 +64306,7 @@ GD
 ps
 ps
 Cb
-ps
+yJ
 ps
 ps
 ps
@@ -64565,7 +65121,7 @@ ps
 xr
 xr
 Cb
-ps
+GH
 ps
 ps
 ps
@@ -68068,11 +68624,11 @@ vt
 kA
 kA
 kA
-XW
-Ff
-MD
-yS
-XW
+RU
+aT
+lG
+TG
+RU
 kA
 kA
 kA
@@ -68326,9 +68882,9 @@ kA
 kA
 kA
 XW
-Qd
-Cl
-EK
+Fj
+RT
+IM
 XW
 kA
 kA
@@ -68578,20 +69134,20 @@ vt
 vt
 vt
 kA
+Tj
+kA
+kA
+kA
+kA
+Nq
+RT
+vb
 kA
 kA
 kA
 kA
 kA
-ys
-Cl
-Zl
-kA
-kA
-kA
-kA
-kA
-kA
+Tj
 kA
 kA
 kA
@@ -68782,6 +69338,70 @@ vt
 kA
 kA
 kA
+Sp
+kA
+kA
+kA
+kA
+kA
+kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+kA
+kA
+kA
+kA
+kC
+kC
+Nq
+RT
+vb
+kC
+kC
+kC
 kA
 kA
 kA
@@ -68789,71 +69409,7 @@ kA
 kA
 kA
 kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-kA
-kA
-kA
-kA
-kA
-kA
-IV
-IV
-ys
-Cl
-Zl
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
+Sp
 kA
 kA
 vt
@@ -69089,31 +69645,31 @@ vt
 vt
 kA
 kA
+Sp
 kA
 kA
 kA
-kA
-IV
-IV
-IV
+kC
+kC
+kC
 XW
-pm
-Cl
-sZ
+ih
+RT
+aA
 XW
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
-kA
+Tj
 kA
 kA
 kA
@@ -69292,88 +69848,88 @@ kA
 kA
 kA
 kA
+Tj
+kA
+kA
+Tj
+kC
+kC
+kC
 kA
 kA
 kA
-kA
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-kA
-kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-ys
-Cl
-Zl
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+Tj
 kA
 kA
 kA
 kA
 kA
+kA
+kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+kA
+kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Nq
+RT
+vb
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kA
+kA
+kA
+kA
+Tj
 kA
 kA
 kA
@@ -69546,28 +70102,28 @@ kA
 kA
 kA
 kA
+Sp
+kA
+kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+Sp
 kA
 kA
 kA
-kA
-kA
-kA
-kA
-kA
+Tj
 vt
 vt
 vt
@@ -69602,37 +70158,37 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-ys
-Cl
-Zl
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Nq
+RT
+vb
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Tj
 kA
-kA
-kA
+Tj
 kA
 kA
 kA
@@ -69801,32 +70357,32 @@ kA
 kA
 kA
 kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 kA
+kA
+kA
 vt
 vt
 vt
@@ -69855,42 +70411,42 @@ vt
 vt
 kA
 kA
+Sp
 kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 XW
-pm
-Cl
-sZ
+ih
+RT
+aA
 XW
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Tj
 kA
 kA
 kA
@@ -70055,126 +70611,37 @@ vt
 kA
 kA
 kA
+Tj
 kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-ys
-Cl
-Zl
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Tj
 vt
 vt
 vt
@@ -70199,11 +70666,100 @@ kA
 kA
 kA
 kA
+Tj
+kA
+kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Nq
+RT
+vb
+kC
+kC
+kC
+kA
+kA
+kA
+kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Tj
+kA
+kA
+kA
+Sp
+kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 kA
 kA
 kA
 kA
 kA
+kA
+kA
+kA
+Sp
 kA
 kA
 vt
@@ -70270,9 +70826,9 @@ nP
 nP
 sy
 kA
+Tj
 kA
 kA
-kA
 vt
 vt
 vt
@@ -70307,45 +70863,45 @@ vt
 vt
 vt
 vt
-kA
 kA
 kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
 kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
+Sp
 kA
 kA
 kA
-vt
-vt
+Tj
+Tj
 vt
 vt
 vt
@@ -70368,23 +70924,23 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
-ys
-Cl
-Zl
+Nq
+RT
+vb
 kA
 kA
 kA
@@ -70397,22 +70953,22 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
+Tj
 kA
 kA
 kA
 kA
-kA
 vt
 vt
 vt
@@ -70504,11 +71060,11 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
 kA
 kA
+Sp
+Tj
+Tj
 kA
 sy
 nP
@@ -70563,46 +71119,47 @@ vt
 vt
 vt
 vt
+Tj
+kA
+kA
+kA
+Sp
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kA
+kA
+kA
+kA
+Tj
+kA
+kA
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
 kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-kA
+Tj
 vt
 vt
 vt
@@ -70615,7 +71172,6 @@ vt
 vt
 vt
 vt
-vt
 kA
 kA
 kA
@@ -70624,24 +71180,24 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 XW
-hF
-Cl
-UF
+ua
+RT
+xC
 XW
 kA
 kA
@@ -70656,70 +71212,18 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Tj
 kA
 kA
 kA
@@ -70757,16 +71261,68 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+Tj
+kA
+kA
+Tj
+kA
+kA
+kA
+kA
+kA
+kA
 vt
 vt
 vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 kA
 kA
 kA
 kA
 kA
-IV
-IV
+kC
+kC
 sy
 nP
 nP
@@ -70783,14 +71339,14 @@ nP
 nP
 nP
 sy
-IV
-IV
-IV
+kC
+kC
+kC
+Sp
 kA
 kA
 kA
 kA
-kA
 vt
 vt
 vt
@@ -70817,51 +71373,52 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
+Tj
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
 kA
 kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Sp
 kA
 kA
 kA
 kA
+Tj
+Tj
 kA
 kA
 kA
 kA
 kA
 kA
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
 kA
 kA
 kA
-kA
-kA
 vt
+Tj
 vt
 vt
 vt
@@ -70869,70 +71426,69 @@ vt
 vt
 vt
 vt
-vt
-kA
 kA
 kA
+Tj
 kA
 kA
+Sp
 kA
 kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
 kA
 kA
 kA
 kA
+RU
+hQ
+ER
+Kp
+RU
 kA
-XW
-ym
-SO
-QS
-XW
 kA
 kA
 kA
 kA
+Sp
 kA
 kA
 kA
+Tj
+Tj
 kA
 kA
 kA
 kA
 kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+Tj
 kA
 kA
 kA
-kA
-kA
-kA
-kA
-kA
 vt
 vt
 vt
@@ -70960,32 +71516,32 @@ vt
 vt
 vt
 vt
+kA
 kA
 kA
 kA
+Sp
 kA
 kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
 kA
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 kA
 kA
+kA
 vt
 vt
 vt
@@ -71014,16 +71570,16 @@ vt
 vt
 vt
 vt
-kA
 kA
 kA
 kA
 kA
+Tj
 kA
 kA
-IV
-IV
-IV
+kC
+kC
+kC
 sy
 nP
 nP
@@ -71040,15 +71596,15 @@ nP
 nP
 nP
 sy
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
 kA
 kA
+Tj
 kA
-kA
 vt
 vt
 vt
@@ -71070,24 +71626,24 @@ vt
 vt
 vt
 vt
+Tj
 vt
 vt
-vt
 kA
 kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
@@ -71100,30 +71656,29 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
 kA
 kA
+Tj
 kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 kA
 kA
+Tj
 kA
+Sp
 kA
 kA
 kA
@@ -71132,23 +71687,24 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
 kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
+Sp
 vt
 kA
 kA
@@ -71173,23 +71729,23 @@ kA
 kA
 kA
 kA
+Sp
 kA
 kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
 kA
 kA
+Tj
 kA
-kA
-kA
-kA
+Tj
 vt
 vt
 vt
@@ -71222,29 +71778,29 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
 kA
 kA
 kA
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
+Tj
+kA
+kA
 vt
 vt
 vt
@@ -71268,19 +71824,19 @@ vt
 vt
 vt
 vt
-kA
 kA
 kA
 kA
 kA
+Sp
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
 sy
 nP
 nP
@@ -71297,18 +71853,18 @@ nP
 nP
 nP
 sy
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
+Tj
 kA
 kA
 kA
-kA
 vt
 vt
 vt
@@ -71325,7 +71881,7 @@ vt
 vt
 vt
 vt
-kA
+Tj
 kA
 kA
 kA
@@ -71333,21 +71889,22 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 kA
+Tj
 vt
 vt
 vt
@@ -71358,51 +71915,50 @@ vt
 vt
 vt
 vt
-vt
-kA
 kA
 kA
 kA
+Tj
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 kA
 kA
+Tj
 kA
 kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+Tj
 kA
 kA
-kA
-kA
 vt
 vt
 vt
@@ -71434,17 +71990,17 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
@@ -71476,34 +72032,34 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
 kA
 kA
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
+Tj
+kA
 vt
 vt
 vt
@@ -71522,22 +72078,22 @@ vt
 vt
 vt
 vt
-kA
 kA
 kA
 kA
 kA
+Tj
 kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 sy
 nP
 nP
@@ -71554,30 +72110,33 @@ nP
 nP
 nP
 sy
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
+Tj
 kA
 kA
+Tj
 kA
-kA
-kA
-kA
+Tj
 vt
 vt
 vt
 vt
 vt
-vt
+Tj
+kA
+kA
+Tj
 kA
 kA
 kA
@@ -71586,88 +72145,15 @@ kA
 kA
 kA
 kA
-kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-kA
-kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-kA
-kA
-kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
@@ -71684,27 +72170,59 @@ vt
 vt
 vt
 vt
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+kA
+Sp
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 kA
 kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
 kA
 kA
 kA
@@ -71726,43 +72244,81 @@ kA
 kA
 kA
 kA
+Tj
 kA
 kA
 kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 kA
 kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+kA
+kA
+Sp
+kA
+kA
+kA
+kA
+kA
+kA
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kA
+kA
+kA
+kA
+kA
+Tj
 kA
 vt
 vt
@@ -71780,19 +72336,19 @@ kA
 kA
 kA
 kA
+Tj
 kA
 kA
 kA
 kA
 kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 sy
@@ -71811,20 +72367,28 @@ nP
 nP
 nP
 sy
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kA
+kA
+kA
+kA
+kA
+Tj
+kA
+Tj
 kA
 kA
 kA
@@ -71834,28 +72398,24 @@ kA
 kA
 kA
 kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
-kA
-kA
-kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
+vt
+vt
+vt
+Tj
 vt
 vt
 vt
@@ -71874,41 +72434,37 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
 kA
 kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
@@ -71924,10 +72480,9 @@ vt
 vt
 vt
 XW
-kA
-kA
-kA
-kA
+tw
+tw
+tw
 XW
 vt
 vt
@@ -71943,6 +72498,7 @@ vt
 vt
 vt
 vt
+vt
 kA
 kA
 kA
@@ -71950,73 +72506,27 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 kA
 kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+Sp
 kA
 kA
 kA
@@ -72031,6 +72541,38 @@ kA
 kA
 kA
 kA
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kA
+kA
+kA
+kA
+kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
@@ -72038,19 +72580,33 @@ kA
 kA
 kA
 kA
+Tj
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+Tj
 kA
 kA
+kA
+kA
+kA
+kA
+Tj
+kA
+kA
+kA
+kA
+kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kA
+Tj
 kA
 sy
 nP
@@ -72069,116 +72625,51 @@ nP
 nP
 sy
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 kA
 kA
+Sp
 kA
 kA
 kA
 kA
 kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Sp
 kA
 kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Tj
 vt
 vt
 vt
@@ -72207,50 +72698,143 @@ kA
 kA
 kA
 kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
+Sp
+kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+kA
+Sp
+kA
+kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kA
+kA
+kA
+kA
+Tj
+kA
+kA
+kA
+Tj
+kA
+kA
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kA
+kA
+Tj
+Tj
+kA
+Tj
+kA
+kA
+kA
+kA
+kA
+kA
+Tj
+kA
+kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Sp
 kA
 kA
 kA
@@ -72259,51 +72843,23 @@ kA
 kA
 kA
 kA
+Tj
+Sp
 kA
 kA
 kA
 kA
 kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
@@ -72329,112 +72885,47 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-kA
-kA
-kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Tj
 vt
 vt
 vt
@@ -72462,29 +72953,94 @@ vt
 vt
 vt
 kA
+Tj
+kA
+kA
+kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kA
+kA
+kA
+kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 kA
 kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
@@ -72496,15 +73052,15 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
@@ -72516,6 +73072,30 @@ kA
 kA
 kA
 kA
+Sp
+kA
+kA
+kA
+kA
+kA
+kA
+Tj
+kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
@@ -72523,42 +73103,18 @@ kA
 kA
 kA
 kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
@@ -72586,109 +73142,44 @@ vt
 vt
 kA
 kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Tj
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Tj
 vt
 vt
 vt
@@ -72722,46 +73213,111 @@ vt
 vt
 vt
 kA
+Tj
+kA
+kA
+kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+Tj
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 kA
+PH
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+kA
+kA
+kA
+kC
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Tj
 kA
 kA
 kA
@@ -72783,41 +73339,41 @@ kA
 kA
 kA
 kA
+Tj
+kA
+kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Sp
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-kA
+Tj
+Tj
 vt
 vt
 vt
@@ -72846,34 +73402,34 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
@@ -72916,21 +73472,34 @@ vt
 kA
 kA
 kA
+Sp
+kA
+kA
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
 kA
 kA
 kA
+Sp
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+PH
 kA
+PH
 kA
-kA
-kA
 vt
 vt
 vt
@@ -72938,35 +73507,7 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+XW
 vt
 vt
 vt
@@ -72981,52 +73522,9 @@ vt
 vt
 vt
 kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
+TN
+TN
+BJ
 vt
 vt
 vt
@@ -73046,32 +73544,90 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kA
+Tj
+kA
+kA
+kA
+kA
+kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 kA
 kA
 kA
 kA
 kA
 kA
+kA
+kA
+kA
+kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kA
+kA
+kA
+kA
+kA
+Tj
 kA
 vt
 vt
@@ -73105,101 +73661,34 @@ kA
 kA
 kA
 kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Sp
 kA
 kA
 kA
 kA
 kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
 vt
 vt
 vt
@@ -73245,34 +73734,101 @@ kA
 kA
 kA
 kA
-kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+Tj
 kA
 kA
 kA
 kA
+Tj
+kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+TN
+Xa
+kA
+PH
+vt
+vt
+vt
+kA
+kA
+JO
+AE
+kA
+ep
+kA
+kA
+XW
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+PH
+TN
+TN
+TN
+TN
+PH
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+Tj
+kA
+Tj
+kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kA
+kA
+kA
+Tj
 kA
 kA
 kA
@@ -73301,34 +73857,34 @@ kA
 kA
 kA
 kA
+Sp
 kA
 kA
 kA
 kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
+Tj
 vt
-vt
+Tj
 vt
 vt
 vt
@@ -73363,98 +73919,31 @@ vt
 kA
 kA
 kA
+Tj
 kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Sp
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 kA
+Tj
 kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
 vt
 vt
 vt
@@ -73506,23 +73995,90 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+TN
+TN
+TN
+TN
+TN
+kA
+vt
+kA
+zT
+kA
+MC
+kA
+kA
+zT
+kA
+AE
+kA
+kA
+kA
+vt
+vt
+vt
+vt
+vt
+kA
+sU
+Gl
+ae
+TN
+kA
+PH
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+Be
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+Tj
+kC
+Tj
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
@@ -73565,25 +74121,25 @@ kA
 kA
 kA
 kA
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
-IV
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 kA
+Tj
+kA
+Tj
 kA
 kA
-kA
-kA
-vt
 vt
 vt
 vt
@@ -73626,163 +74182,20 @@ kA
 kA
 kA
 kA
+Tj
+kA
+kA
+Tj
+kA
+Tj
 kA
 kA
 kA
 kA
 kA
+Tj
 kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-IV
-IV
-IV
-IV
-IV
-IV
-kA
-kA
-kA
-kA
-kA
-kA
-kA
+Tj
 kA
 kA
 vt
@@ -73814,6 +74227,94 @@ vt
 vt
 vt
 vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+PH
+TN
+Gl
+ae
+TN
+TN
+Gl
+AE
+kA
+ep
+kA
+AE
+kA
+ep
+vt
+vt
+vt
+vt
+kA
+ep
+kA
+AE
+kA
+vt
+vt
+vt
+MC
+TN
+TN
+TN
+TN
+TN
+kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+BJ
+Be
+vt
+vt
+vt
+vt
+vt
+vt
 kA
 kA
 kA
@@ -73825,21 +74326,76 @@ kA
 kA
 kA
 kA
+kC
+kC
+kC
+kC
+kC
+kC
 kA
 kA
 kA
 kA
 kA
 kA
-kA
-kA
-kA
-kA
-kA
+Sp
 kA
 kA
 vt
 vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+zT
+kA
+AE
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+kA
+kA
+kA
+Tj
+kA
+Tj
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+Tj
+kA
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -73966,6 +74522,50 @@ vt
 vt
 vt
 vt
+kA
+TN
+TN
+TN
+TN
+TN
+kA
+BJ
+kA
+kA
+kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+BJ
+kA
+vt
+vt
+vt
+kA
+Xa
+TN
+Gl
+TN
+BJ
+kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -73977,32 +74577,24 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+Tj
+kA
+kA
+kA
+kA
+kA
+Tj
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -74023,17 +74615,7 @@ vt
 vt
 kA
 kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
+AE
 kA
 kA
 kA
@@ -74045,37 +74627,7 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Be
 kA
 kA
 kA
@@ -74084,6 +74636,16 @@ kA
 kA
 kA
 kA
+Tj
+kA
+kA
+Tj
+kA
+Tj
+kA
+kA
+kA
+Sp
 kA
 kA
 kA
@@ -74091,12 +74653,6 @@ kA
 kA
 kA
 kA
-kA
-kA
-vt
-vt
-vt
-vt
 vt
 vt
 vt
@@ -74223,6 +74779,14 @@ vt
 vt
 vt
 vt
+kA
+BJ
+TN
+Gl
+TN
+TN
+kA
+Be
 vt
 vt
 vt
@@ -74236,6 +74800,29 @@ vt
 vt
 vt
 vt
+zT
+kA
+kA
+vt
+vt
+Be
+kA
+kA
+sJ
+kA
+MC
+ep
+kA
+AE
+vt
+vt
+vt
+vt
+kA
+kA
+AE
+ep
+kA
 vt
 vt
 vt
@@ -74248,20 +74835,24 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+Sp
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -74282,57 +74873,22 @@ vt
 kA
 kA
 kA
+vt
+vt
 kA
 kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
+ep
 kA
 vt
 vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
+Be
+kA
 vt
 vt
 vt
@@ -74348,11 +74904,11 @@ kA
 kA
 vt
 vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
+kA
+Be
 vt
 vt
 vt
@@ -74480,6 +75036,13 @@ vt
 vt
 vt
 vt
+kA
+kA
+TN
+TN
+TN
+kA
+kA
 vt
 vt
 vt
@@ -74494,12 +75057,29 @@ vt
 vt
 vt
 vt
+ep
+kA
+kA
 vt
 vt
 vt
+kA
+kA
+Be
+kA
+Be
 vt
 vt
+kA
+kA
+zT
+kA
+ep
+kA
+kA
 vt
+kA
+kA
 vt
 vt
 vt
@@ -74523,6 +75103,14 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+Be
 vt
 vt
 vt
@@ -74538,12 +75126,24 @@ vt
 vt
 vt
 vt
+kA
+kA
 vt
 vt
 vt
+kA
+kA
+kA
+kA
+kA
+kA
 vt
 vt
 vt
+kA
+kA
+kA
+zT
 vt
 vt
 vt
@@ -74562,54 +75162,10 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Be
+kA
+kA
+kA
 vt
 vt
 vt
@@ -74737,6 +75293,12 @@ vt
 vt
 vt
 vt
+Be
+kA
+kA
+kA
+BJ
+Be
 vt
 vt
 vt
@@ -74752,6 +75314,9 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
 vt
 vt
 vt
@@ -74764,8 +75329,14 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+zT
+kA
 vt
 vt
+zT
 vt
 vt
 vt
@@ -74792,6 +75363,11 @@ vt
 vt
 vt
 vt
+kA
+kA
+AE
+kA
+kA
 vt
 vt
 vt
@@ -74807,9 +75383,24 @@ vt
 vt
 vt
 vt
+kA
 vt
 vt
 vt
+kA
+kA
+kA
+zT
+kA
+kA
+kA
+dZ
+ep
+kA
+AE
+kA
+kA
+kA
 vt
 vt
 vt
@@ -74829,44 +75420,9 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
 vt
 vt
 vt
@@ -74996,6 +75552,9 @@ vt
 vt
 vt
 vt
+kA
+Be
+kA
 vt
 vt
 vt
@@ -75004,15 +75563,18 @@ vt
 vt
 vt
 vt
+TY
 vt
 vt
 vt
-rQ
 vt
 vt
 vt
 vt
 vt
+kA
+AE
+kA
 vt
 vt
 vt
@@ -75026,9 +75588,12 @@ vt
 vt
 vt
 vt
+AE
+kA
 vt
 vt
 vt
+kA
 vt
 vt
 vt
@@ -75057,6 +75622,9 @@ vt
 vt
 vt
 vt
+Be
+kA
+kA
 vt
 vt
 vt
@@ -75072,12 +75640,24 @@ vt
 vt
 vt
 vt
+kA
 vt
 vt
 vt
+kA
+ep
 vt
 vt
 vt
+AE
+kA
+kA
+kA
+zT
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -75097,33 +75677,9 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
 vt
 vt
 vt
@@ -75273,6 +75829,10 @@ vt
 vt
 vt
 vt
+kA
+ep
+ep
+kA
 vt
 vt
 vt
@@ -75285,9 +75845,12 @@ vt
 vt
 vt
 vt
+kA
+kA
 vt
 vt
 vt
+ep
 vt
 vt
 vt
@@ -75317,6 +75880,9 @@ vt
 vt
 vt
 vt
+kA
+zT
+kA
 vt
 vt
 vt
@@ -75330,13 +75896,24 @@ vt
 vt
 vt
 vt
+kA
+AE
 vt
 vt
 vt
+kA
+kA
 vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
+kA
+kA
+AE
 vt
 vt
 vt
@@ -75358,29 +75935,8 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
 vt
 vt
 vt
@@ -75531,6 +76087,10 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+zT
 vt
 vt
 vt
@@ -75541,9 +76101,14 @@ vt
 vt
 vt
 vt
+kA
+ep
+zT
 vt
 vt
 vt
+kA
+kA
 vt
 vt
 vt
@@ -75552,6 +76117,9 @@ vt
 vt
 vt
 vt
+PH
+kA
+PH
 vt
 vt
 vt
@@ -75569,6 +76137,10 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -75580,9 +76152,15 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
 vt
 vt
 vt
+kA
+gZ
+wH
 vt
 vt
 vt
@@ -75614,30 +76192,8 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+AE
 vt
 vt
 vt
@@ -75788,19 +76344,40 @@ vt
 vt
 vt
 vt
+zT
+kA
+BJ
+kA
+kA
+kA
 vt
 vt
 vt
 vt
 vt
+ep
+kA
+kA
+kA
+BJ
+kA
 vt
 vt
+kA
+kA
+AE
+kA
 vt
 vt
 vt
 vt
 vt
 vt
+kA
+kA
+TN
+TN
+TN
 vt
 vt
 vt
@@ -75818,6 +76395,10 @@ vt
 vt
 vt
 vt
+kA
+AE
+ep
+kA
 vt
 vt
 vt
@@ -75827,10 +76408,18 @@ vt
 vt
 vt
 vt
+kA
+kA
+ep
+kA
 vt
 vt
 vt
 vt
+kA
+kA
+kA
+PH
 vt
 vt
 vt
@@ -75860,41 +76449,8 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
 vt
 vt
 vt
@@ -76035,15 +76591,51 @@ vt
 vt
 vt
 vt
+kA
+PH
+BJ
+kA
+PH
+kA
 vt
 vt
 vt
 vt
 vt
 vt
+kA
+MC
+ep
+AE
+kA
+kA
+kA
+kA
+kA
+kA
+AE
+kA
+zT
+kA
+kA
 vt
+kA
+kA
+BJ
+kA
+kA
+kA
+ep
+kA
 vt
 vt
+PH
+kA
+kA
+Gl
+TN
+TN
+PH
 vt
 vt
 vt
@@ -76061,8 +76653,31 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
+kA
+AE
+kA
 vt
+kA
+zT
+kA
+kA
+kA
+kA
+kA
+kA
+kA
 vt
+kA
+PH
+uH
+AE
+kA
+ep
+kA
 vt
 vt
 vt
@@ -76090,68 +76705,9 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+zT
+kA
 vt
 vt
 vt
@@ -76292,14 +76848,51 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
+kA
+kA
+PH
 vt
 vt
 vt
 vt
 vt
 vt
+kA
+kA
+sJ
 vt
 vt
+zT
+kA
+kA
+kA
+kA
+kA
+kA
+ep
+kA
+kA
+kA
+MC
+kA
+sJ
+zT
+kA
+kA
+AE
+kA
+kA
+zT
+kA
+Xa
+TN
+TN
+ae
+TN
 vt
 vt
 vt
@@ -76317,6 +76910,32 @@ vt
 vt
 vt
 vt
+kA
+dZ
+kA
+zT
+kA
+kA
+kA
+ep
+kA
+BJ
+kA
+kA
+kA
+AE
+kA
+zT
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -76343,72 +76962,9 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
 vt
 vt
 vt
@@ -76548,23 +77104,53 @@ vt
 vt
 vt
 vt
+PH
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
 vt
 vt
 vt
 vt
 vt
+kA
 vt
 vt
 vt
 vt
+kA
+kA
+kA
 vt
 vt
 vt
 vt
+kA
+AE
+kA
+ep
 vt
 vt
 vt
 vt
+kA
+kA
+ep
+kA
+kA
+sJ
+TN
+TN
+TN
+TN
+TN
+TN
 vt
 vt
 vt
@@ -76579,10 +77165,36 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
+AE
+kA
+kA
+zT
+kA
+kA
+oD
+CH
+AE
 vt
 vt
 vt
 vt
+kA
+kA
+ep
+kA
+kA
+kA
+kA
+kA
+BJ
+zT
+kA
+ep
+kA
 vt
 vt
 vt
@@ -76607,64 +77219,8 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+AE
+kA
 vt
 vt
 vt
@@ -76805,16 +77361,36 @@ vt
 vt
 vt
 vt
+kA
+kA
+zT
+kA
+ep
+qq
+kA
+zT
+kA
+kA
+PH
 vt
 vt
 vt
+kA
+kA
+kA
 vt
 vt
+kA
+AE
+kA
 vt
 vt
 vt
 vt
 vt
+kA
+kA
+kA
 vt
 vt
 vt
@@ -76822,6 +77398,16 @@ vt
 vt
 vt
 vt
+kA
+kA
+RE
+kA
+TN
+TN
+Gl
+TN
+TN
+TN
 vt
 vt
 vt
@@ -76834,6 +77420,12 @@ vt
 vt
 vt
 vt
+kA
+kA
+AE
+kA
+ep
+kA
 vt
 vt
 vt
@@ -76847,6 +77439,20 @@ vt
 vt
 vt
 vt
+kA
+kA
+BJ
+kA
+kA
+qq
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -76869,59 +77475,9 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
 vt
 vt
 vt
@@ -77062,13 +77618,36 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+ep
+kA
+kA
+AE
+kA
+kA
+kA
 vt
+kA
+kA
+kA
 vt
 vt
 vt
 vt
 vt
 vt
+kA
+BJ
+zT
 vt
 vt
 vt
@@ -77078,6 +77657,14 @@ vt
 vt
 vt
 vt
+Be
+kA
+ep
+TN
+TN
+TN
+TN
+Be
 vt
 vt
 vt
@@ -77090,6 +77677,11 @@ vt
 vt
 vt
 vt
+kA
+ep
+wH
+kA
+kA
 vt
 vt
 vt
@@ -77105,7 +77697,21 @@ vt
 vt
 vt
 vt
+Be
+kA
+AE
+kA
+kA
+zT
+kA
+kA
+Be
 vt
+kA
+kA
+AE
+kA
+kA
 vt
 vt
 vt
@@ -77116,69 +77722,19 @@ vt
 vt
 vt
 vt
+kA
+BJ
+zT
+kA
+kA
+AE
+kA
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
 vt
 vt
 vt
@@ -77319,8 +77875,26 @@ vt
 vt
 vt
 vt
+kA
+ep
+BJ
+kA
+kA
+kA
+kA
+AE
+kA
+BJ
+kA
+kA
+kA
+kA
+kA
+zT
 vt
 vt
+kA
+ep
 vt
 vt
 vt
@@ -77329,6 +77903,8 @@ vt
 vt
 vt
 vt
+kA
+kA
 vt
 vt
 vt
@@ -77339,6 +77915,12 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+MC
+Te
+TN
 vt
 vt
 vt
@@ -77352,6 +77934,10 @@ vt
 vt
 vt
 vt
+kA
+uH
+gZ
+kA
 vt
 vt
 vt
@@ -77369,10 +77955,21 @@ vt
 vt
 vt
 vt
+kA
+Be
+kA
+kA
+kA
+Be
+kA
 vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -77380,61 +77977,20 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+AE
+kA
+kA
+kA
+ep
+kA
+kA
+kA
+kA
+kA
+ep
+kA
 vt
 vt
 vt
@@ -77576,9 +78132,26 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
+zT
+kA
+MC
+ep
+kA
+kA
+Be
 vt
 vt
+ep
+kA
+kA
 vt
+kA
+kA
+kA
 vt
 vt
 vt
@@ -77586,6 +78159,12 @@ vt
 vt
 vt
 vt
+PH
+ep
+kA
+kA
+PH
+kA
 vt
 vt
 vt
@@ -77594,6 +78173,10 @@ vt
 vt
 vt
 vt
+Be
+kA
+kA
+Be
 vt
 vt
 vt
@@ -77607,6 +78190,10 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -77627,6 +78214,9 @@ vt
 vt
 vt
 vt
+kA
+Be
+kA
 vt
 vt
 vt
@@ -77634,63 +78224,29 @@ vt
 vt
 vt
 vt
+kA
+kA
+zT
+kA
+kA
 vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+ep
+kA
+kA
+kA
+kA
+vt
+vt
+kA
+kA
+kA
+BJ
+zT
+kA
 vt
 vt
 vt
@@ -77833,16 +78389,39 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+JO
+kA
+kA
 vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
+kA
 vt
 vt
 vt
 vt
 vt
 vt
+PH
+kA
+kA
+kA
+AE
+kA
+kA
+kA
 vt
 vt
 vt
@@ -77868,6 +78447,10 @@ vt
 vt
 vt
 vt
+kA
+zT
+kA
+AE
 vt
 vt
 vt
@@ -77899,54 +78482,27 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+AE
+kA
+kA
+kA
+kA
+zT
+kA
+kA
 vt
 vt
 vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -78090,18 +78646,40 @@ vt
 vt
 vt
 vt
+Be
+kA
+kA
+kA
+ep
+kA
+kA
+kA
+Be
 vt
 vt
 vt
 vt
 vt
 vt
+kA
+kA
+zT
+kA
 vt
 vt
 vt
 vt
 vt
 vt
+kA
+kA
+BJ
+kA
+kA
+sJ
+kA
+kA
+PH
 vt
 vt
 vt
@@ -78124,6 +78702,13 @@ vt
 vt
 vt
 vt
+kA
+PH
+kA
+kA
+kA
+kA
+PH
 vt
 vt
 vt
@@ -78156,6 +78741,12 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
+AE
+kA
 vt
 vt
 vt
@@ -78166,44 +78757,9 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+AE
+kA
+kA
 vt
 vt
 vt
@@ -78350,6 +78906,10 @@ vt
 vt
 vt
 vt
+Be
+kA
+kA
+Be
 vt
 vt
 vt
@@ -78358,11 +78918,25 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+BJ
 vt
 vt
 vt
 vt
 vt
+kA
+zT
+kA
+MC
+kA
+kA
+kA
+zT
+kA
+kA
 vt
 vt
 vt
@@ -78384,6 +78958,14 @@ vt
 vt
 vt
 vt
+PH
+kA
+kA
+BJ
+kA
+kA
+ep
+kA
 vt
 vt
 vt
@@ -78432,35 +79014,9 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
 vt
 vt
 vt
@@ -78620,6 +79176,24 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+kA
+AE
+kA
+qq
+kA
+kA
+BJ
+kA
 vt
 vt
 vt
@@ -78641,33 +79215,15 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+ep
+kA
+kA
+TN
+kA
+kA
+kA
+PH
 vt
 vt
 vt
@@ -78716,9 +79272,9 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
+kA
+kA
+kA
 vt
 vt
 vt
@@ -78878,6 +79434,23 @@ vt
 vt
 vt
 vt
+AE
+ep
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+ep
+kA
+kA
 vt
 vt
 vt
@@ -78898,33 +79471,16 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
+kA
+TN
+TN
+TN
+TN
+BJ
+kA
 vt
 vt
 vt
@@ -78973,9 +79529,9 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
+kA
+kA
+AE
 vt
 vt
 vt
@@ -79135,6 +79691,23 @@ vt
 vt
 vt
 vt
+kA
+ep
+kA
+vt
+vt
+vt
+vt
+Be
+kA
+kA
+ep
+kA
+kA
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -79155,33 +79728,16 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
+TN
+TN
+TN
+TN
+TN
+TN
+kA
 vt
 vt
 vt
@@ -79230,9 +79786,9 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
+kA
+ep
+kA
 vt
 vt
 vt
@@ -79392,6 +79948,23 @@ vt
 vt
 vt
 vt
+kA
+kA
+zT
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+kA
+kA
+kA
+zT
+kA
+kA
+kA
 vt
 vt
 vt
@@ -79413,32 +79986,15 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+TN
+TN
+TN
+TN
+TN
+ep
+kA
 vt
 vt
 vt
@@ -79486,10 +80042,10 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -79649,6 +80205,23 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+Be
+kA
+BJ
+kA
+kA
+kA
+Be
 vt
 vt
 vt
@@ -79670,32 +80243,15 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Be
+BJ
+TN
+Gl
+ae
+TN
+TN
+TN
+kA
 vt
 vt
 vt
@@ -79742,11 +80298,11 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
+gZ
+kA
 vt
 vt
 vt
@@ -79898,6 +80454,30 @@ vt
 vt
 vt
 vt
+kA
+PH
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+AE
+kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+Be
+kA
+kA
 vt
 vt
 vt
@@ -79921,38 +80501,14 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+Be
+TN
+TN
+TN
+TN
+Be
+kA
 vt
 vt
 vt
@@ -79986,6 +80542,11 @@ vt
 vt
 vt
 vt
+PH
+gZ
+kA
+kA
+PH
 vt
 vt
 vt
@@ -79994,16 +80555,11 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
+kA
+wH
 vt
 vt
 vt
@@ -80153,6 +80709,19 @@ vt
 vt
 vt
 vt
+kA
+PH
+kA
+kA
+kA
+PH
+vt
+vt
+vt
+vt
+ep
+kA
+BJ
 vt
 vt
 vt
@@ -80191,23 +80760,10 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+TN
+vU
+kA
 vt
 vt
 vt
@@ -80242,25 +80798,25 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+BJ
+kA
+kA
+kA
 vt
 vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+AE
+kA
+kA
+AE
+kA
+kA
 vt
 vt
 vt
@@ -80409,20 +80965,20 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+PH
+kA
+TN
+TN
+Xa
+kA
+ep
+kA
+kA
+kA
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -80498,25 +81054,25 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
+We
+TN
+GU
+TN
+kA
+AE
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+uH
+kA
 vt
 vt
 vt
@@ -80666,19 +81222,19 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+Gl
+TN
+TN
+TN
+kA
+AE
+kA
+kA
+zT
+kA
+kA
 vt
 vt
 vt
@@ -80755,25 +81311,25 @@ vt
 vt
 vt
 vt
+kA
+kA
+Gl
+TN
+TN
+TN
+TN
+kA
+ep
+kA
+gZ
+wH
+kA
+AE
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+ep
+kA
 vt
 vt
 vt
@@ -80923,18 +81479,18 @@ vt
 vt
 vt
 vt
+kA
+TN
+TN
+ae
+Gl
+TN
+kA
+Be
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
 vt
 vt
 vt
@@ -81012,27 +81568,27 @@ vt
 vt
 vt
 vt
+kA
+BJ
+TN
+TN
+ae
+TN
+TN
+kA
+kA
+kA
+kA
 vt
 vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
+PH
+kA
 vt
 vt
 vt
@@ -81180,13 +81736,13 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+TN
+TN
+TN
+TN
+kA
+kA
 vt
 vt
 vt
@@ -81269,6 +81825,14 @@ vt
 vt
 vt
 vt
+kA
+kA
+TN
+TN
+TN
+TN
+Xa
+TN
 vt
 vt
 vt
@@ -81276,21 +81840,13 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+PH
+kA
+kA
+ft
+kA
+kA
+PH
 vt
 vt
 vt
@@ -81437,6 +81993,17 @@ vt
 vt
 vt
 vt
+Be
+kA
+BJ
+TN
+kA
+kA
+kA
+vt
+vt
+vt
+NG
 vt
 vt
 vt
@@ -81447,6 +82014,50 @@ vt
 vt
 vt
 vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+NG
+NG
+NG
+NG
+NG
 NG
 vt
 vt
@@ -81472,82 +82083,27 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-NG
-NG
-NG
-NG
-NG
-NG
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+TN
+TN
+TN
+TN
+kA
+vt
+vt
+vt
+vt
+vt
+PH
+kA
+kA
+kA
+kA
+kA
+uH
+kA
+kA
 vt
 vt
 vt
@@ -81695,6 +82251,16 @@ vt
 vt
 vt
 vt
+kA
+kA
+kA
+kA
+Be
+vt
+vt
+vt
+vt
+NG
 vt
 vt
 vt
@@ -81704,6 +82270,52 @@ vt
 vt
 vt
 vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+NG
+NG
+NG
+NG
+NG
+NG
 NG
 vt
 vt
@@ -81728,84 +82340,28 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-NG
-NG
-NG
-NG
-NG
-NG
-NG
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+kA
+kA
+xf
+AE
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -81953,6 +82509,15 @@ vt
 vt
 vt
 vt
+Be
+kA
+kA
+vt
+vt
+vt
+vt
+vt
+NG
 vt
 vt
 vt
@@ -81961,6 +82526,53 @@ vt
 vt
 vt
 vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+NG
+NG
+NG
+NG
+NG
+NG
 NG
 vt
 vt
@@ -81985,85 +82597,29 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-NG
-NG
-NG
-NG
-NG
-NG
-NG
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
+ep
+BJ
+kA
+kA
+vt
+vt
+vt
+vt
+vt
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -82298,29 +82854,29 @@ vt
 vt
 vt
 vt
+Be
+kA
+kA
+kA
+kA
+kA
+Be
 vt
 vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+BJ
+kA
+kA
+kA
+kA
+ep
+kA
+kA
+kA
 vt
 vt
 vt
@@ -82557,6 +83113,10 @@ vt
 vt
 vt
 vt
+kA
+Be
+kA
+kA
 vt
 vt
 vt
@@ -82564,20 +83124,16 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+kA
+kA
+qq
+kA
+kA
+BJ
+kA
+Be
 vt
 vt
 vt
@@ -82825,15 +83381,15 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Be
+kA
+AE
+kA
+kA
+kA
+kA
+kA
+kA
 vt
 vt
 vt
@@ -83083,13 +83639,13 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+kA
+kA
+Be
+kA
+kA
+kA
+Be
 vt
 vt
 vt
@@ -83344,7 +83900,7 @@ vt
 vt
 vt
 vt
-vt
+Be
 vt
 vt
 vt
@@ -87368,8 +87924,8 @@ NG
 pb
 pb
 pb
-kA
-kA
+nS
+nS
 nS
 nS
 nS
