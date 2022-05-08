@@ -2289,29 +2289,6 @@
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
 	name = "\improper Mountains"
 	})
-"oI" = (
-/mob/living/simple_animal/hostile/faithless{
-	attack_sound = 'sound/weapons/rapierhit.ogg';
-	attack_verb_continuous = "shivs";
-	attack_verb_simple = "shiv";
-	color = "#00FF00";
-	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = s;
-	loot = list(/obj/item/kitchen/knife/shiv);
-	melee_damage_lower = 10;
-	melee_damage_upper = 10;
-	name = "Goblin";
-	resize = 1;
-	response_help_continuous = "stares at";
-	response_help_simple = "stare at";
-	wander = 0
-	},
-/turf/open/misc/dirt/planet,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
-	name = "\improper Mountains"
-	})
 "oK" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -2787,8 +2764,7 @@
 /obj/item/flashlight/flare/torch{
 	name = "wall torch";
 	on = 1;
-	fuel = 1000000;
-	light_range = 5
+	fuel = 1000000
 	},
 /turf/closed/wall/mineral/stone{
 	baseturfs = /turf/open/misc/dirt/planet;
@@ -3050,7 +3026,7 @@
 	name = "\improper Mountains"
 	})
 "tc" = (
-/mob/living/simple_animal/hostile/cazador{
+/mob/living/simple_animal/hostile/ant{
 	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
 /turf/open/floor/material/meat{
@@ -4021,13 +3997,12 @@
 	name = "\improper Mountains"
 	})
 "AM" = (
-/mob/living/simple_animal/hostile/carp{
-	desc = "A ferocious, fang-bearing creature that resembles a fish. We may need an expert to double check on the matter though.";
-	name = "cave carp";
-	obj_damage = 10;
+/mob/living/simple_animal/hostile/cazador{
 	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
-/turf/open/water/overlay/hotspring/planet,
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -5191,8 +5166,7 @@
 /obj/item/flashlight/flare/torch{
 	name = "wall torch";
 	on = 1;
-	fuel = 1000000;
-	light_range = 5
+	fuel = 1000000
 	},
 /turf/closed/wall/mineral/stone{
 	baseturfs = /turf/open/misc/dirt/planet
@@ -7032,12 +7006,13 @@
 	name = "\improper Mountains"
 	})
 "Qo" = (
-/mob/living/simple_animal/hostile/ant{
+/mob/living/simple_animal/hostile/carp{
+	desc = "A ferocious, fang-bearing creature that resembles a fish. We may need an expert to double check on the matter though.";
+	name = "cave carp";
+	obj_damage = 10;
 	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
-/turf/open/floor/material/meat{
-	baseturfs = /turf/open/misc/dirt/planet
-	},
+/turf/open/water/overlay/hotspring/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -7664,8 +7639,7 @@
 /obj/item/flashlight/flare/torch{
 	name = "wall torch";
 	on = 1;
-	fuel = 1000000;
-	light_range = 5
+	fuel = 1000000
 	},
 /turf/closed/wall/mineral/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
@@ -8868,6 +8842,29 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"ZT" = (
+/mob/living/simple_animal/hostile/faithless{
+	attack_sound = 'sound/weapons/rapierhit.ogg';
+	attack_verb_continuous = "shivs";
+	attack_verb_simple = "shiv";
+	color = "#00FF00";
+	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
+	faction = s;
+	loot = list(/obj/item/kitchen/knife/shiv);
+	melee_damage_lower = 10;
+	melee_damage_upper = 10;
+	name = "Goblin";
+	resize = 1;
+	response_help_continuous = "stares at";
+	response_help_simple = "stare at";
+	wander = 0
+	},
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "ZV" = (
 /obj/structure/rack{
@@ -54783,7 +54780,7 @@ Ho
 Ho
 jv
 jv
-AM
+Qo
 rS
 kq
 qd
@@ -58701,7 +58698,7 @@ Yl
 tK
 GG
 yL
-tc
+AM
 tK
 Yv
 tK
@@ -59214,7 +59211,7 @@ Yl
 yL
 tK
 Xm
-Qo
+tc
 Vc
 QD
 tK
@@ -60180,7 +60177,7 @@ IK
 GD
 GD
 kq
-oI
+ZT
 GD
 GD
 GD
