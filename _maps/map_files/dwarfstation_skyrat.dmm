@@ -3,7 +3,9 @@
 /obj/structure/chair/stool/bamboo{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/plantmutant,
+/mob/living/simple_animal/hostile/plantmutant{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -21,7 +23,7 @@
 	attack_verb_simple = "stab";
 	color = "#20B2AA";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Slightly stronger than their weaker brothers however still die with a good hatchet in the skull.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	health = 150;
 	loot = list(/obj/item/kitchen/knife/combat/bone);
 	maxHealth = 150;
@@ -86,7 +88,9 @@
 	harvested_name = "harvested goblin-caps";
 	name = "goblin-caps"
 	},
-/mob/living/simple_animal/hostile/ooze/gelatinous,
+/mob/living/simple_animal/hostile/ooze/gelatinous{
+	faction = list("hostile","vines","plants","mining","slime")
+	},
 /turf/open/misc/grass/planet{
 	color = "#fbff00";
 	desc = "A patch of grass?";
@@ -141,7 +145,8 @@
 "aP" = (
 /mob/living/simple_animal/hostile/blob/blobspore/independent{
 	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
-	name = "Cave Blob"
+	name = "Cave Blob";
+	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
 /turf/open/misc/grass/planet{
 	color = "#ff814f";
@@ -259,7 +264,8 @@
 	},
 /mob/living/simple_animal/hostile/blob/blobspore/independent{
 	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
-	name = "Cave Blob"
+	name = "Cave Blob";
+	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
@@ -352,7 +358,9 @@
 	name = "\improper Mountains"
 	})
 "cc" = (
-/mob/living/simple_animal/hostile/plantmutant,
+/mob/living/simple_animal/hostile/plantmutant{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
 /turf/open/misc/grass/planet{
 	color = "#fbff00";
 	desc = "A patch of grass?";
@@ -470,7 +478,9 @@
 	})
 "cO" = (
 /obj/structure/flora/ash/stem_shroom,
-/mob/living/simple_animal/hostile/plantmutant,
+/mob/living/simple_animal/hostile/plantmutant{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
 /turf/open/misc/grass/planet{
 	color = "#00ccff";
 	desc = "A patch of grass?";
@@ -525,7 +535,7 @@
 	color = "#00FF7F";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. They also have blunderbusses apparently!";
 	dir = 1;
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	health = 80;
 	icon = 'icons/mob/animal.dmi';
 	icon_dead = "faithless_dead";
@@ -777,7 +787,7 @@
 	color = "#00FF7F";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. They also have blunderbusses apparently!";
 	dir = 8;
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	health = 80;
 	icon = 'icons/mob/animal.dmi';
 	icon_dead = "faithless_dead";
@@ -853,7 +863,7 @@
 	attack_verb_simple = "shiv";
 	color = "#00FF00";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	loot = list(/obj/item/kitchen/knife/shiv);
 	melee_damage_lower = 10;
 	melee_damage_upper = 10;
@@ -870,7 +880,9 @@
 	name = "\improper Mountains"
 	})
 "fm" = (
-/mob/living/simple_animal/hostile/skeleton/plasmaminer,
+/mob/living/simple_animal/hostile/skeleton/plasmaminer{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
 	color = "#9e9e9e"
@@ -1071,7 +1083,9 @@
 	static_lighting = 0
 	})
 "gE" = (
-/mob/living/simple_animal/hostile/plantmutant,
+/mob/living/simple_animal/hostile/plantmutant{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
 /turf/open/misc/grass/planet{
 	color = "#00ccff";
 	desc = "A patch of grass?";
@@ -1241,7 +1255,7 @@
 	attack_verb_continuous = "slices";
 	attack_verb_simple = "slice";
 	desc = "The reanimated remains of a peasant. Don't underestimate his farming equipment as weapons though!";
-	faction = list("skeleton","mining","boss");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	health = 80;
 	loot = list(/obj/effect/decal/remains/human,/obj/item/scythe,/obj/item/stack/sheet/cloth/five);
 	maxHealth = 80;
@@ -1825,7 +1839,9 @@
 	})
 "le" = (
 /obj/structure/flora/ash/stem_shroom,
-/mob/living/simple_animal/hostile/ooze/gelatinous,
+/mob/living/simple_animal/hostile/ooze/gelatinous{
+	faction = list("hostile","vines","plants","mining","slime")
+	},
 /turf/open/misc/grass/planet{
 	color = "#00ccff";
 	desc = "A patch of grass?";
@@ -1990,7 +2006,7 @@
 /mob/living/simple_animal/hostile/asteroid/elite/legionnaire{
 	deathmessage = "'s arms reach out before it falls apart onto the floor, completely lifeless.";
 	desc = "A towering skeleton, empowered by necromantic magic that keeps it in a permanent state of undeath.";
-	faction = list("boss","mining");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	light_range = 3;
 	name = "Skeletal Giant"
 	},
@@ -2019,7 +2035,8 @@
 /mob/living/simple_animal/hostile/rat{
 	desc = "Large rats are benign and will flee from conflict, but they will sometimes fight back albeit with little danger in their attacks. Best not to make any clothing from them or else naming said clothing attire pieces may get awkward.";
 	name = "large rat";
-	resize = 2
+	resize = 2;
+	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
 /turf/open/water/overlay/outdoors,
 /area/ruin/powered{
@@ -2206,7 +2223,7 @@
 	},
 /mob/living/simple_animal/hostile/skeleton{
 	desc = "Weaker than the average skeleton. It's like they were starving to death!";
-	faction = list("skeleton","mining","boss");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	health = 50;
 	maxHealth = 50;
 	name = "reanimated peasant";
@@ -2267,6 +2284,29 @@
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava
 	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
+	})
+"oI" = (
+/mob/living/simple_animal/hostile/faithless{
+	attack_sound = 'sound/weapons/rapierhit.ogg';
+	attack_verb_continuous = "shivs";
+	attack_verb_simple = "shiv";
+	color = "#00FF00";
+	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
+	faction = s;
+	loot = list(/obj/item/kitchen/knife/shiv);
+	melee_damage_lower = 10;
+	melee_damage_upper = 10;
+	name = "Goblin";
+	resize = 1;
+	response_help_continuous = "stares at";
+	response_help_simple = "stare at";
+	wander = 0
+	},
+/turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -2668,7 +2708,7 @@
 "qy" = (
 /mob/living/simple_animal/hostile/asteroid/goliath/beast{
 	desc = "You gotta be fucking kidding.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	health = 200;
 	maxHealth = 200;
 	move_force = 1000;
@@ -2712,7 +2752,9 @@
 	harvested_name = "leafless fungi-caps";
 	name = "fungi-caps"
 	},
-/mob/living/simple_animal/hostile/ooze/gelatinous,
+/mob/living/simple_animal/hostile/ooze/gelatinous{
+	faction = list("hostile","vines","plants","mining","slime")
+	},
 /turf/open/misc/grass/planet{
 	color = "#fbff00";
 	desc = "A patch of grass?";
@@ -2745,7 +2787,8 @@
 /obj/item/flashlight/flare/torch{
 	name = "wall torch";
 	on = 1;
-	fuel = 1000000
+	fuel = 1000000;
+	light_range = 5
 	},
 /turf/closed/wall/mineral/stone{
 	baseturfs = /turf/open/misc/dirt/planet;
@@ -2808,7 +2851,9 @@
 /obj/structure/chair/wood{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/skeleton/templar,
+/mob/living/simple_animal/hostile/skeleton/templar{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
 	color = "#9e9e9e"
@@ -2849,7 +2894,9 @@
 	name = "\improper Mountains"
 	})
 "rM" = (
-/mob/living/simple_animal/hostile/ooze/gelatinous,
+/mob/living/simple_animal/hostile/ooze/gelatinous{
+	faction = list("hostile","vines","plants","mining","slime")
+	},
 /turf/open/misc/grass/planet{
 	color = "#fbff00";
 	desc = "A patch of grass?";
@@ -2862,7 +2909,9 @@
 	name = "\improper Mountains"
 	})
 "rN" = (
-/mob/living/simple_animal/hostile/plantmutant,
+/mob/living/simple_animal/hostile/plantmutant{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
 /turf/open/misc/grass/planet{
 	color = "#ff814f";
 	desc = "A patch of grass?";
@@ -2986,7 +3035,8 @@
 "sY" = (
 /mob/living/simple_animal/hostile/blob/blobspore/independent{
 	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
-	name = "Cave Blob"
+	name = "Cave Blob";
+	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
 /turf/open/misc/grass/planet{
 	color = "#fbff00";
@@ -3000,12 +3050,16 @@
 	name = "\improper Mountains"
 	})
 "tc" = (
-/mob/living/simple_animal/hostile/bigcrab,
-/turf/open/water/overlay/outdoors,
-/area/ruin/powered/beach{
-	name = "Surface";
-	base_lighting_alpha = 255;
-	static_lighting = 0
+/mob/living/simple_animal/hostile/cazador{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "te" = (
 /obj/effect/turf_decal/siding/wood,
@@ -3572,7 +3626,9 @@
 	name = "\improper Mountains"
 	})
 "xG" = (
-/mob/living/simple_animal/hostile/skeleton/ice,
+/mob/living/simple_animal/hostile/skeleton/ice{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
 	color = "#9e9e9e"
@@ -3586,7 +3642,9 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 10
 	},
-/mob/living/simple_animal/hostile/skeleton/templar,
+/mob/living/simple_animal/hostile/skeleton/templar{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
 	color = "#b0b0b0"
@@ -3859,7 +3917,9 @@
 	name = "\improper Mountains"
 	})
 "Av" = (
-/mob/living/simple_animal/hostile/ooze/gelatinous,
+/mob/living/simple_animal/hostile/ooze/gelatinous{
+	faction = list("hostile","vines","plants","mining","slime")
+	},
 /turf/open/misc/grass/planet{
 	color = "#ff814f";
 	desc = "A patch of grass?";
@@ -3961,28 +4021,13 @@
 	name = "\improper Mountains"
 	})
 "AM" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/shotgun/space{
-	casingtype = /obj/item/ammo_casing/shotgun/improvised;
-	color = "#00FF7F";
-	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. They also have blunderbusses apparently!";
-	dir = 8;
-	faction = list("faithless");
-	health = 80;
-	icon = 'icons/mob/animal.dmi';
-	icon_dead = "faithless_dead";
-	icon_living = "faithless";
-	icon_state = "faithless";
-	light_power = 0;
-	loot = list(/obj/effect/gibspawner/human,/obj/item/gun/ballistic/rifle/boltaction/pipegun/prime);
-	maxHealth = 80;
-	melee_damage_lower = 2;
-	melee_damage_upper = 4;
-	name = "Goblin Archer";
-	projectilesound = 'sound/weapons/gun/pistol/shot_alt.ogg';
-	rapid = 1;
-	wander = 0
+/mob/living/simple_animal/hostile/carp{
+	desc = "A ferocious, fang-bearing creature that resembles a fish. We may need an expert to double check on the matter though.";
+	name = "cave carp";
+	obj_damage = 10;
+	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
-/turf/open/misc/sandy_dirt/planet,
+/turf/open/water/overlay/hotspring/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
@@ -4299,7 +4344,7 @@
 	attack_verb_continuous = "slices";
 	attack_verb_simple = "slice";
 	desc = "The reanimated remains of a peasant. Don't underestimate his farming equipment as weapons though!";
-	faction = list("skeleton","mining","boss");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	health = 80;
 	loot = list(/obj/effect/decal/remains/human,/obj/item/scythe,/obj/item/stack/sheet/cloth/five);
 	maxHealth = 80;
@@ -4422,7 +4467,7 @@
 	attack_verb_simple = "shiv";
 	color = "#00FF00";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	loot = list(/obj/item/kitchen/knife/shiv);
 	melee_damage_lower = 10;
 	melee_damage_upper = 10;
@@ -4457,7 +4502,7 @@
 	attack_verb_simple = "shiv";
 	color = "#00FF00";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	loot = list(/obj/item/kitchen/knife/shiv);
 	melee_damage_lower = 10;
 	melee_damage_upper = 10;
@@ -4619,7 +4664,8 @@
 /mob/living/simple_animal/hostile/rat{
 	desc = "Large rats are benign and will flee from conflict, but they will sometimes fight back albeit with little danger in their attacks. Best not to make any clothing from them or else naming said clothing attire pieces may get awkward.";
 	name = "large rat";
-	resize = 2
+	resize = 2;
+	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
@@ -4628,7 +4674,9 @@
 	name = "\improper Mountains"
 	})
 "En" = (
-/mob/living/simple_animal/hostile/ooze/gelatinous,
+/mob/living/simple_animal/hostile/ooze/gelatinous{
+	faction = list("hostile","vines","plants","mining","slime")
+	},
 /turf/open/misc/grass/planet{
 	color = "#00ccff";
 	desc = "A patch of grass?";
@@ -4690,7 +4738,7 @@
 	attack_verb_continuous = "slices";
 	attack_verb_simple = "slice";
 	desc = "The reanimated remains of a peasant. Don't underestimate his farming equipment as weapons though!";
-	faction = list("skeleton","mining","boss");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	health = 80;
 	loot = list(/obj/effect/decal/remains/human,/obj/item/scythe,/obj/item/stack/sheet/cloth/five);
 	maxHealth = 80;
@@ -4864,7 +4912,8 @@
 "Fq" = (
 /mob/living/simple_animal/hostile/blob/blobspore/independent{
 	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
-	name = "Cave Blob"
+	name = "Cave Blob";
+	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
 /obj/effect/gibspawner/generic/animal,
 /turf/open/misc/dirt/planet,
@@ -4877,7 +4926,7 @@
 /obj/structure/chair/wood,
 /mob/living/simple_animal/hostile/skeleton{
 	desc = "Weaker than the average skeleton. It's like they were starving to death!";
-	faction = list("skeleton","mining","boss");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	health = 50;
 	maxHealth = 50;
 	name = "reanimated peasant";
@@ -5142,7 +5191,8 @@
 /obj/item/flashlight/flare/torch{
 	name = "wall torch";
 	on = 1;
-	fuel = 1000000
+	fuel = 1000000;
+	light_range = 5
 	},
 /turf/closed/wall/mineral/stone{
 	baseturfs = /turf/open/misc/dirt/planet
@@ -5365,7 +5415,8 @@
 	},
 /mob/living/simple_animal/hostile/blob/blobspore/independent{
 	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
-	name = "Cave Blob"
+	name = "Cave Blob";
+	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
 /turf/open/misc/grass/planet{
 	color = "#fbff00";
@@ -5406,7 +5457,7 @@
 	attack_verb_simple = "shiv";
 	color = "#00FF00";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	loot = list(/obj/item/kitchen/knife/shiv);
 	melee_damage_lower = 10;
 	melee_damage_upper = 10;
@@ -5496,7 +5547,8 @@
 "Ir" = (
 /mob/living/simple_animal/hostile/blob/blobspore/independent{
 	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
-	name = "Cave Blob"
+	name = "Cave Blob";
+	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
 /obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/material/meat{
@@ -5543,7 +5595,7 @@
 	attack_verb_simple = "shiv";
 	color = "#00FF00";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	loot = list(/obj/item/kitchen/knife/shiv);
 	melee_damage_lower = 10;
 	melee_damage_upper = 10;
@@ -5694,7 +5746,7 @@
 	attack_verb_simple = "shiv";
 	color = "#00FF00";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	loot = list(/obj/item/kitchen/knife/shiv);
 	melee_damage_lower = 10;
 	melee_damage_upper = 10;
@@ -5845,7 +5897,9 @@
 	name = "\improper Mountains"
 	})
 "KN" = (
-/mob/living/simple_animal/hostile/ooze/gelatinous,
+/mob/living/simple_animal/hostile/ooze/gelatinous{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -5867,7 +5921,9 @@
 	})
 "KW" = (
 /obj/structure/flora/ash/tall_shroom,
-/mob/living/simple_animal/hostile/ooze/gelatinous,
+/mob/living/simple_animal/hostile/ooze/gelatinous{
+	faction = list("hostile","vines","plants","mining","slime")
+	},
 /turf/open/misc/grass/planet{
 	color = "#ff814f";
 	desc = "A patch of grass?";
@@ -5899,7 +5955,7 @@
 	attack_verb_simple = "shiv";
 	color = "#00FF00";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	loot = list(/obj/item/kitchen/knife/shiv);
 	melee_damage_lower = 10;
 	melee_damage_upper = 10;
@@ -6131,7 +6187,7 @@
 "Mr" = (
 /mob/living/simple_animal/hostile/giant_spider/tarantula{
 	desc = "Trained by the goblins as a war spider, it seems to be starving for your flesh. This one has abyssal red eyes.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	health = 200;
 	maxHealth = 200;
 	melee_damage_lower = 20;
@@ -6268,7 +6324,7 @@
 	attack_verb_simple = "shiv";
 	color = "#00FF00";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	loot = list(/obj/item/kitchen/knife/shiv);
 	melee_damage_lower = 10;
 	melee_damage_upper = 10;
@@ -6306,7 +6362,9 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 9
 	},
-/mob/living/simple_animal/hostile/skeleton/templar,
+/mob/living/simple_animal/hostile/skeleton/templar{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
 	color = "#b0b0b0"
@@ -6779,7 +6837,8 @@
 "PH" = (
 /mob/living/simple_animal/hostile/blob/blobspore/independent{
 	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
-	name = "Cave Blob"
+	name = "Cave Blob";
+	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
 /turf/open/water/overlay/outdoors,
 /area/ruin/powered{
@@ -6943,7 +7002,7 @@
 	attack_verb_simple = "stab";
 	color = "#20B2AA";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Slightly stronger than their weaker brothers however still die with a good hatchet in the skull.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	health = 150;
 	loot = list(/obj/item/kitchen/knife/combat/bone);
 	maxHealth = 150;
@@ -6973,13 +7032,16 @@
 	name = "\improper Mountains"
 	})
 "Qo" = (
-/obj/structure/flora/ausbushes/stalkybush,
-/mob/living/simple_animal/hostile/bigcrab,
-/turf/open/water/overlay/outdoors,
-/area/ruin/powered/beach{
-	name = "Surface";
-	base_lighting_alpha = 255;
-	static_lighting = 0
+/mob/living/simple_animal/hostile/ant{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
+/turf/open/floor/material/meat{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>Praise Armok!\n</span>";
+	name = "\improper Mountains"
 	})
 "Qp" = (
 /obj/structure/rack{
@@ -7068,7 +7130,8 @@
 "QD" = (
 /mob/living/simple_animal/hostile/blob/blobspore/independent{
 	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
-	name = "Cave Blob"
+	name = "Cave Blob";
+	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
 /turf/open/floor/material/meat{
 	baseturfs = /turf/open/misc/dirt/planet
@@ -7294,7 +7357,7 @@
 	attack_verb_simple = "shiv";
 	color = "#00FF00";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	loot = list(/obj/item/kitchen/knife/shiv);
 	melee_damage_lower = 10;
 	melee_damage_upper = 10;
@@ -7465,7 +7528,9 @@
 	})
 "St" = (
 /obj/structure/flora/ausbushes/stalkybush,
-/mob/living/simple_animal/hostile/giant_spider,
+/mob/living/simple_animal/hostile/giant_spider{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
 /turf/open/misc/grass/planet{
 	color = "#ff814f";
 	desc = "A patch of grass?";
@@ -7599,7 +7664,8 @@
 /obj/item/flashlight/flare/torch{
 	name = "wall torch";
 	on = 1;
-	fuel = 1000000
+	fuel = 1000000;
+	light_range = 5
 	},
 /turf/closed/wall/mineral/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
@@ -7668,7 +7734,7 @@
 	attack_verb_simple = "shiv";
 	color = "#00FF00";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	loot = list(/obj/item/kitchen/knife/shiv);
 	melee_damage_lower = 10;
 	melee_damage_upper = 10;
@@ -7877,7 +7943,8 @@
 "Un" = (
 /mob/living/simple_animal/hostile/blob/blobspore/independent{
 	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
-	name = "Cave Blob"
+	name = "Cave Blob";
+	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
@@ -7945,7 +8012,7 @@
 	attack_verb_simple = "shiv";
 	color = "#00FF00";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = list("faithless");
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	loot = list(/obj/item/kitchen/knife/shiv);
 	melee_damage_lower = 10;
 	melee_damage_upper = 10;
@@ -8133,7 +8200,8 @@
 "VV" = (
 /mob/living/simple_animal/hostile/blob/blobspore/independent{
 	desc = "They lack bones or any kind of internal organs, and instead are filled with orange fluid which causes mild, short-term harm in the form of painful blisters on other creatures when ingested or made contact with.";
-	name = "Cave Blob"
+	name = "Cave Blob";
+	faction = list("hostile","vines","plants","mining","slime","faithless")
 	},
 /turf/open/misc/grass/planet{
 	color = "#00ccff";
@@ -8582,7 +8650,9 @@
 	name = "\improper Mountains"
 	})
 "Yq" = (
-/mob/living/simple_animal/hostile/skeleton/templar,
+/mob/living/simple_animal/hostile/skeleton/templar{
+	faction = list("hostile","vines","plants","mining","slime","faithless")
+	},
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
 	color = "#9e9e9e"
@@ -19111,7 +19181,7 @@ Gk
 Gk
 Gk
 Wf
-tc
+Wf
 Wf
 xD
 Wf
@@ -20101,7 +20171,7 @@ Gk
 Wf
 xD
 Gk
-Qo
+xD
 Gk
 Wf
 Gk
@@ -20338,7 +20408,7 @@ Wf
 Wf
 Gk
 Gk
-tc
+Wf
 Gk
 Gk
 Wf
@@ -20674,7 +20744,7 @@ xD
 xD
 Gk
 xD
-Qo
+xD
 Wf
 Gk
 xD
@@ -20811,7 +20881,7 @@ xD
 Wf
 Wf
 Wf
-tc
+Wf
 xD
 Gk
 Gk
@@ -21047,7 +21117,7 @@ Wf
 Wf
 xD
 Wf
-tc
+Wf
 Wf
 Wf
 Wf
@@ -21249,7 +21319,7 @@ Gk
 Gk
 xD
 xD
-tc
+Wf
 Wf
 Wf
 Gk
@@ -21976,7 +22046,7 @@ Wf
 xD
 Wf
 Gk
-Qo
+xD
 xD
 xD
 xD
@@ -22116,7 +22186,7 @@ Wf
 Gk
 xD
 xD
-tc
+Wf
 Wf
 Gk
 xD
@@ -22769,7 +22839,7 @@ Wf
 xD
 Gk
 Wf
-tc
+Wf
 xD
 xD
 xD
@@ -37965,7 +38035,7 @@ kq
 kq
 kq
 FI
-kq
+GB
 kq
 kq
 kq
@@ -38485,7 +38555,7 @@ Dr
 kq
 kq
 VG
-kq
+GB
 kq
 kq
 kq
@@ -39273,13 +39343,13 @@ kq
 kq
 kq
 kq
-kq
+GB
 kq
 dP
 kq
 kq
 kq
-kq
+GB
 kq
 kq
 kq
@@ -40040,7 +40110,7 @@ QC
 QC
 GB
 kq
-XW
+GB
 px
 BR
 kq
@@ -40558,7 +40628,7 @@ kq
 kq
 kq
 kq
-XW
+GB
 tH
 EV
 kq
@@ -54713,7 +54783,7 @@ Ho
 Ho
 jv
 jv
-lg
+AM
 rS
 kq
 qd
@@ -58631,7 +58701,7 @@ Yl
 tK
 GG
 yL
-Yl
+tc
 tK
 Yv
 tK
@@ -58695,7 +58765,7 @@ GD
 qN
 GD
 Gx
-AM
+Xh
 Xh
 Xh
 Gx
@@ -59144,7 +59214,7 @@ Yl
 yL
 tK
 Xm
-cK
+Qo
 Vc
 QD
 tK
@@ -59483,7 +59553,7 @@ GD
 Gx
 Ar
 er
-er
+Ar
 Gx
 GD
 xr
@@ -60110,7 +60180,7 @@ IK
 GD
 GD
 kq
-Ib
+oI
 GD
 GD
 GD
@@ -61543,7 +61613,7 @@ Xh
 Xh
 GD
 GD
-dj
+Xh
 zM
 kq
 kq
