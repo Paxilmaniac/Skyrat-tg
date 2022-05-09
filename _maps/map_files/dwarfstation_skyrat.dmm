@@ -130,16 +130,6 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
-"aD" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
-/turf/open/misc/asteroid/basalt/lava,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "aK" = (
 /obj/structure/flora/ash/cap_shroom{
 	color = "#ff0000";
@@ -475,14 +465,6 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
-"cg" = (
-/obj/effect/turf_decal/siding/wideplating/dark,
-/turf/open/misc/asteroid/basalt/lava,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "ch" = (
 /obj/structure/spider/stickyweb,
 /mob/living/simple_animal/hostile/giant_spider,
@@ -649,7 +631,9 @@
 	name = "\improper Mountains"
 	})
 "cL" = (
-/obj/structure/fence,
+/obj/structure/fence{
+	color = "#757575"
+	},
 /turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -905,16 +889,6 @@
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
-"dH" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 5
-	},
-/turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -1260,16 +1234,6 @@
 	mood_message = "<span class='warning'>We dug too deep!</span>\n";
 	name = "The Circus of Fun"
 	})
-"ff" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 9
-	},
-/turf/open/misc/asteroid/basalt/lava,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "fi" = (
 /obj/structure/chair/stool/bamboo{
 	dir = 4
@@ -1537,17 +1501,6 @@
 	mood_message = "<span class='warning'>We dug too deep!</span>\n";
 	name = "The Circus of Fun"
 	})
-"gp" = (
-/mob/living/simple_animal/hostile/asteroid/lobstrosity{
-	desc = "Supernatural, fanciful, evil-aligned creatures who inhabit the Underworld that are very large and are among the most powerful enemies you will ever face.";
-	name = "Demon"
-	},
-/turf/open/water/overlay/hotspring/planet,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "gq" = (
 /obj/effect/landmark/start/head_of_personnel,
 /turf/open/misc/dirt/planet,
@@ -1792,16 +1745,6 @@
 	baseturfs = /turf/open/misc/dirt/planet;
 	name = "fungal grass"
 	},
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
-"hl" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
-	dir = 1
-	},
-/turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -2662,16 +2605,6 @@
 	})
 "kq" = (
 /turf/open/misc/dirt/planet,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
-"ks" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 10
-	},
-/turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -5190,16 +5123,6 @@
 	mood_message = "<span class='warning'>We dug too deep!</span>\n";
 	name = "The Circus of Fun"
 	})
-"vb" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
-	dir = 4
-	},
-/turf/open/misc/asteroid/basalt/lava,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "vh" = (
 /obj/structure/bed/maint,
 /obj/item/bedsheet/grey{
@@ -6319,7 +6242,8 @@
 	})
 "ze" = (
 /obj/structure/fence{
-	dir = 4
+	dir = 4;
+	color = "#757575"
 	},
 /turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
@@ -7554,20 +7478,6 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
-"DG" = (
-/mob/living/simple_animal/hostile/asteroid/lobstrosity/lava{
-	desc = "Supernatural, fanciful, evil-aligned creatures who inhabit the Underworld that are very large and are among the most powerful enemies you will ever face.";
-	health = 800;
-	maxHealth = 800;
-	name = "Demon";
-	weather_immunities = list("lava","ash")
-	},
-/turf/open/water/overlay/hotspring/planet,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "DJ" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -8247,10 +8157,7 @@
 	name = "\improper Mountains"
 	})
 "Gg" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner,
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
-	dir = 1
-	},
+/obj/structure/ore_vein/silver,
 /turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -9804,16 +9711,6 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
-	})
-"Lx" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 8
-	},
-/turf/open/misc/asteroid/basalt/lava,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
 	})
 "Lz" = (
 /obj/item/food/grown/korta_nut/sweet,
@@ -11466,16 +11363,6 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
-"QJ" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/turf/open/misc/asteroid/basalt/lava,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "QN" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -12800,14 +12687,6 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
-"Vj" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner,
-/turf/open/misc/asteroid/basalt/lava,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "Vl" = (
 /obj/structure/bed/maint,
 /obj/item/bedsheet/brown{
@@ -12849,16 +12728,6 @@
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
-"Vt" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 6
-	},
-/turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -13131,16 +13000,6 @@
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
 	color = "#9e9e9e"
 	},
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
-"WC" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
-	dir = 8
-	},
-/turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -77934,8 +77793,8 @@ kA
 kA
 kC
 kA
-kA
-kA
+Gg
+Gg
 vt
 vt
 vt
@@ -78127,7 +77986,7 @@ MI
 kA
 kA
 kA
-kA
+Gg
 kA
 kA
 vt
@@ -78373,7 +78232,7 @@ vt
 vt
 vt
 kA
-kA
+Gg
 kA
 kA
 kA
@@ -78684,7 +78543,7 @@ vt
 vt
 vt
 vt
-kA
+Gg
 kA
 kA
 kA
@@ -78719,7 +78578,7 @@ kA
 kA
 kA
 kA
-kA
+Gg
 kA
 vt
 vt
@@ -79137,7 +78996,7 @@ vt
 vt
 vt
 vt
-kA
+Gg
 kA
 kA
 kA
@@ -79164,7 +79023,7 @@ Dg
 kA
 kA
 kA
-kA
+Gg
 kA
 kA
 kA
@@ -79235,7 +79094,7 @@ kC
 kA
 kA
 kA
-kA
+Gg
 kA
 kA
 vt
@@ -79448,7 +79307,7 @@ vt
 vt
 vt
 kA
-kA
+Gg
 kA
 kA
 kC
@@ -79538,7 +79397,7 @@ kA
 kA
 kA
 kA
-kA
+Gg
 kA
 kA
 kA
@@ -79701,12 +79560,12 @@ vt
 vt
 vt
 vt
+Gg
 kA
 kA
 kA
 kA
-kA
-kA
+Gg
 kA
 kA
 Dg
@@ -79797,6 +79656,7 @@ kA
 kA
 kA
 kA
+Gg
 kA
 kA
 kA
@@ -79805,8 +79665,7 @@ kA
 kA
 kA
 kA
-kA
-kA
+Gg
 vt
 vt
 vt
@@ -79845,7 +79704,7 @@ vt
 vt
 vt
 vt
-kA
+Gg
 kA
 MI
 kC
@@ -79872,7 +79731,7 @@ kA
 kA
 kA
 kA
-kA
+Gg
 vt
 vt
 vt
@@ -80050,7 +79909,7 @@ kA
 kA
 kA
 kA
-kA
+Gg
 kA
 kA
 kA
@@ -80151,7 +80010,7 @@ kA
 kA
 kA
 kA
-kA
+Gg
 kA
 vt
 vt
@@ -80198,8 +80057,8 @@ Dg
 Dg
 Dg
 kA
-kA
-kA
+Gg
+Gg
 kA
 kA
 vt
@@ -80297,7 +80156,7 @@ vt
 vt
 vt
 kA
-kA
+Gg
 kA
 NW
 fX
@@ -80400,7 +80259,7 @@ vt
 vt
 vt
 kA
-kA
+Gg
 kA
 kA
 kA
@@ -80433,7 +80292,7 @@ kA
 kA
 kA
 kA
-kA
+Gg
 kA
 kA
 kA
@@ -80441,7 +80300,7 @@ vt
 vt
 vt
 vt
-kA
+Gg
 kA
 kA
 kC
@@ -80467,12 +80326,12 @@ MI
 kA
 kA
 kA
+Gg
 kA
 kA
 kA
 kA
 kA
-kA
 Dg
 Dg
 Dg
@@ -80487,7 +80346,7 @@ Dg
 Dg
 kA
 kA
-kA
+Gg
 kA
 MI
 vt
@@ -80511,7 +80370,7 @@ kA
 kA
 kA
 kA
-kA
+Gg
 kA
 kA
 MI
@@ -80580,7 +80439,7 @@ Dg
 Dg
 Dg
 Dg
-kA
+Gg
 kA
 kA
 kC
@@ -80670,7 +80529,7 @@ kC
 kA
 kA
 kA
-kA
+Gg
 kA
 kA
 kA
@@ -80766,7 +80625,7 @@ vt
 vt
 vt
 kA
-kA
+Gg
 kA
 kA
 kA
@@ -80996,7 +80855,7 @@ Dg
 Dg
 Dg
 kA
-kA
+Gg
 kA
 kA
 vt
@@ -81048,10 +80907,10 @@ Dg
 Dg
 kA
 kA
+Gg
 kA
 kA
 kA
-kA
 vt
 vt
 vt
@@ -81064,7 +80923,7 @@ vt
 vt
 vt
 kA
-kA
+Gg
 kA
 kA
 MI
@@ -81126,7 +80985,7 @@ kA
 kA
 kA
 kA
-kA
+Gg
 Dg
 Dg
 Dg
@@ -81314,7 +81173,7 @@ kA
 MI
 kA
 kA
-kA
+Gg
 kA
 kA
 kA
@@ -81344,8 +81203,8 @@ Dg
 kA
 kA
 kA
+Gg
 kA
-kA
 Dg
 Dg
 Dg
@@ -81358,7 +81217,7 @@ Dg
 Dg
 Dg
 Dg
-kA
+Gg
 kA
 kA
 kA
@@ -81376,7 +81235,7 @@ kA
 kA
 kC
 kA
-kA
+Gg
 kA
 kA
 kA
@@ -81545,7 +81404,7 @@ vt
 vt
 vt
 kA
-kA
+Gg
 kA
 MI
 kA
@@ -81566,7 +81425,7 @@ Dg
 Dg
 kA
 kA
-kA
+Gg
 kA
 kA
 kA
@@ -81667,7 +81526,7 @@ nP
 nP
 sy
 kA
-kA
+Gg
 kA
 kA
 Dg
@@ -81762,7 +81621,7 @@ Dg
 kA
 kA
 kA
-kA
+Gg
 vt
 vt
 vt
@@ -81848,7 +81707,7 @@ rR
 Dg
 Dg
 Dg
-kA
+Gg
 kA
 kA
 kA
@@ -81882,12 +81741,12 @@ Dg
 Dg
 Dg
 kA
+Gg
 kA
 kA
 kA
 kA
 kA
-kA
 Dg
 Dg
 Dg
@@ -81903,7 +81762,7 @@ Dg
 kA
 kA
 kA
-kA
+Gg
 vt
 vt
 vt
@@ -82107,7 +81966,7 @@ Dg
 kA
 kA
 kA
-kA
+Gg
 kA
 vt
 vt
@@ -82218,8 +82077,8 @@ Dg
 kA
 kA
 kA
+Gg
 kA
-kA
 vt
 vt
 vt
@@ -82254,7 +82113,7 @@ vt
 vt
 vt
 vt
-kA
+Gg
 kA
 kA
 MI
@@ -82321,7 +82180,7 @@ vt
 vt
 kA
 kA
-kA
+Gg
 kA
 kA
 kA
@@ -82442,7 +82301,7 @@ vt
 vt
 vt
 vt
-kA
+Gg
 kA
 kA
 kA
@@ -82472,7 +82331,7 @@ MI
 kA
 kA
 kA
-kA
+Gg
 kA
 vt
 vt
@@ -82582,7 +82441,7 @@ kA
 kA
 kA
 kA
-kA
+Gg
 kA
 kA
 kC
@@ -82639,14 +82498,14 @@ vt
 vt
 kA
 kA
-kA
+Gg
 kA
 kA
 MI
 kA
 kA
 kA
-kA
+Gg
 Dg
 Dg
 Dg
@@ -82774,12 +82633,12 @@ vt
 vt
 kA
 kA
+Gg
 kA
 kA
 kA
 kA
-kA
-kA
+Gg
 vt
 vt
 vt
@@ -82875,7 +82734,7 @@ FM
 Zo
 XW
 kA
-kA
+Gg
 vt
 vt
 vt
@@ -82916,7 +82775,7 @@ Dg
 Dg
 Dg
 kA
-kA
+Gg
 kA
 kA
 kA
@@ -83100,7 +82959,7 @@ vt
 vt
 vt
 vt
-kA
+Gg
 kA
 kA
 kA
@@ -83479,7 +83338,7 @@ vt
 vt
 vt
 kA
-kA
+Gg
 kA
 kA
 kA
@@ -83629,13 +83488,13 @@ kA
 kA
 kA
 kA
+Gg
 kA
 kA
 kA
 kA
 kA
-kA
-kA
+Gg
 kA
 kA
 vt
@@ -86128,14 +85987,14 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -86383,17 +86242,17 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -86639,19 +86498,19 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -86895,21 +86754,21 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-SX
-kA
-kA
-kA
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -87151,23 +87010,23 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-kA
-Vj
-QJ
-QJ
-QJ
-QJ
-QJ
-vb
-kA
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -87408,23 +87267,23 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-SX
-Vj
-QJ
-Vt
-Ho
-Ho
-Ho
-Ho
-Ho
-dH
-vb
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -87665,23 +87524,23 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-Vj
-Vt
-Ho
-gp
-Ho
-Ho
-Ho
-DG
-Ho
-Ho
-aD
-SX
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -87922,24 +87781,24 @@ vt
 vt
 vt
 vt
-kA
-kA
-Vj
-Vt
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-dH
-vb
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -88180,23 +88039,23 @@ vt
 vt
 vt
 vt
-kA
-cg
-Ho
-Ho
-Ho
-DG
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-DG
-aD
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -88437,23 +88296,23 @@ vt
 vt
 vt
 vt
-kA
-cg
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-aD
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -88693,23 +88552,23 @@ vt
 vt
 vt
 vt
-kA
-kA
-cg
-Ho
-DG
-Ho
-Ho
-Ho
-gp
-ff
-ks
-Ho
-gp
-ff
-hl
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -88950,24 +88809,24 @@ vt
 vt
 vt
 vt
-kA
-kA
-cg
-Ho
-Ho
-Ho
-Ho
-Ho
-ff
-hl
-WC
-Lx
-Lx
-hl
-SX
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -89206,26 +89065,26 @@ vt
 vt
 vt
 vt
-kA
-kA
-SX
-cg
-gp
-Ho
-DG
-Ho
-Ho
-aD
-SX
-kA
-Vj
-QJ
-QJ
-QJ
-vb
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -89462,27 +89321,27 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-cg
-Ho
-Ho
-Ho
-Ho
-Ho
-aD
-Vj
-QJ
-Vt
-Ho
-gp
-Ho
-dH
-vb
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -89717,29 +89576,29 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-kA
-WC
-ks
-Ho
-Ho
-Ho
-Ho
-aD
-cg
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-aD
-SX
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -89974,30 +89833,30 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-WC
-Lx
-Lx
-Lx
-Lx
-hl
-cg
-gp
-Ho
-Ho
-Ho
-DG
-Ho
-dH
-vb
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -90230,31 +90089,31 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-Vj
-QJ
-QJ
-QJ
-QJ
-vb
-kA
-cg
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-aD
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -90487,32 +90346,32 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-SX
-Vj
-QJ
-Vt
-Ho
-Ho
-DG
-Ho
-aD
-SX
-cg
-Ho
-DG
-Ho
-Ho
-Ho
-Ho
-Ho
-dH
-vb
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -90743,33 +90602,33 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-Vj
-Vt
-Ho
-Ho
-gp
-Ho
-Ho
-Ho
-dH
-vb
-cg
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-gp
-Ho
-aD
-SX
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -91000,33 +90859,33 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-cg
-Ho
-DG
-Ho
-Ho
-Ho
-Ho
-Ho
-gp
-aD
-cg
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-aD
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -91258,33 +91117,33 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-cg
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-aD
-WC
-ks
-gp
-Ho
-Ho
-Ho
-Ho
-Ho
-DG
-aD
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -91515,33 +91374,33 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-cg
-gp
-Ho
-Ho
-Ho
-Ho
-DG
-Ho
-ff
-hl
-kA
-cg
-Ho
-Ho
-Ho
-DG
-Ho
-Ho
-Ho
-dH
-vb
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -91772,34 +91631,34 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-SX
-cg
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-ff
-hl
-kA
-kA
-WC
-ks
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-aD
-SX
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -92028,35 +91887,35 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-cg
-Ho
-DG
-Ho
-Ho
-gp
-ff
-hl
-kA
-kA
-SX
-kA
-cg
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-aD
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -92285,35 +92144,35 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-WC
-Lx
-Lx
-Lx
-Lx
-Lx
-Gg
-QJ
-QJ
-QJ
-QJ
-vb
-WC
-ks
-Ho
-Ho
-Ho
-Ho
-Ho
-gp
-aD
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -92542,35 +92401,35 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-SX
-Vj
-QJ
-Vt
-Ho
-Ho
-gp
-Ho
-dH
-vb
-WC
-ks
-Ho
-DG
-Ho
-Ho
-Ho
-aD
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -92799,35 +92658,35 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-Vj
-Vt
-Ho
-DG
-Ho
-Ho
-Ho
-Ho
-Ho
-dH
-vb
-WC
-Lx
-Lx
-Lx
-Lx
-Lx
-hl
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -93057,34 +92916,34 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-cg
-Ho
-Ho
-Ho
-Ho
-Ho
-DG
-Ho
-Ho
-Ho
-aD
-kA
-kA
-kA
-kA
-kA
-SX
-kA
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -93314,33 +93173,33 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-kA
-SX
-cg
-gp
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-Ho
-DG
-aD
-SX
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -93573,31 +93432,31 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-cg
-Ho
-Ho
-Ho
-Ho
-Ho
-DG
-Ho
-Ho
-Ho
-aD
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -93834,26 +93693,26 @@ vt
 vt
 vt
 vt
-kA
-WC
-ks
-Ho
-DG
-Ho
-Ho
-Ho
-Ho
-Ho
-ff
-hl
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -94091,17 +93950,17 @@ vt
 vt
 vt
 vt
-kA
-kA
-WC
-ks
-Ho
-Ho
-Ho
-Ho
-gp
-ff
-hl
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -94348,17 +94207,17 @@ vt
 vt
 vt
 vt
-kA
-kA
-SX
-WC
-ks
-Ho
-gp
-ff
-Lx
-hl
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -94606,16 +94465,16 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-WC
-Lx
-Lx
-hl
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -94864,15 +94723,15 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-SX
-kA
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -95123,12 +94982,12 @@ vt
 vt
 vt
 vt
-kA
-kA
-kA
-kA
-kA
-kA
+vt
+vt
+vt
+vt
+vt
+vt
 vt
 vt
 vt
