@@ -81,8 +81,10 @@
 /obj/structure/chair/wood{
 	dir = 8
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -367,8 +369,10 @@
 /obj/structure/stone_tile{
 	dir = 4
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -593,7 +597,7 @@
 	deathsound = 'sound/effects/tendril_destroyed.ogg';
 	desc = "A greater demon with a skin and armor made out of raw bananium. As of current records, no one has yet tried to FUCK WITH THIS RINGMASTER!";
 	dir = 8;
-	faction = list("mining");
+	faction = list("hell");
 	health = 2500;
 	light_color = "#FF2400";
 	light_power = 5;
@@ -611,8 +615,10 @@
 	wander = 0;
 	weather_immunities = list("lava","ash")
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -952,8 +958,10 @@
 /obj/structure/mineral_door/iron{
 	color = "#445055"
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -1002,8 +1010,10 @@
 /obj/item/bedsheet/cult{
 	dir = 1
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -1022,8 +1032,10 @@
 /obj/item/stack/sheet/animalhide/ashdrake{
 	amount = 15
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -1050,8 +1062,10 @@
 "el" = (
 /obj/structure/stone_tile/surrounding,
 /obj/structure/stone_tile/center,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -1061,8 +1075,10 @@
 	})
 "ep" = (
 /obj/structure/chair/pew,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -1119,8 +1135,10 @@
 	name = "Bardin's Cookbook";
 	icon_state = "boneworking_learing"
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -1225,8 +1243,10 @@
 	})
 "fd" = (
 /obj/structure/chair/pew/right,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -1297,8 +1317,10 @@
 	})
 "fq" = (
 /obj/structure/stone_tile/block,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -1492,8 +1514,10 @@
 /obj/item/stack/sheet/bone{
 	amount = 25
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -1585,6 +1609,19 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
+"gF" = (
+/obj/effect/gibspawner/human,
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
+	},
+/area/awaymission/caves/listeningpost{
+	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
+	mood_bonus = 0;
+	mood_message = "<span class='warning'>We dug too deep!</span>\n";
+	name = "The Circus of Fun"
+	})
 "gH" = (
 /obj/item/clothing/head/helmet/reagent_clothing,
 /turf/open/misc/sandy_dirt/planet,
@@ -1663,8 +1700,10 @@
 	})
 "hc" = (
 /obj/structure/fluff/drake_statue/falling,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -1784,8 +1823,10 @@
 /obj/item/forging/tongs{
 	color = "#d97c7c"
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -1887,8 +1928,10 @@
 "hQ" = (
 /obj/structure/kitchenspike,
 /obj/effect/mob_spawn/corpse/human/skeleton,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -2027,8 +2070,10 @@
 	pixel_y = 16;
 	pixel_x = -6
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -2124,8 +2169,10 @@
 	})
 "iB" = (
 /obj/structure/fluff/paper/stack,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -2190,8 +2237,10 @@
 	dir = 1
 	},
 /obj/structure/stone_tile,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -2202,8 +2251,10 @@
 "iJ" = (
 /obj/structure/table/bronze,
 /obj/item/forging/incomplete_bow,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -2266,7 +2317,8 @@
 /mob/living/simple_animal/hostile/carp{
 	desc = "A ferocious, fang-bearing creature that resembles a fish. We may need an expert to double check on the matter though.";
 	name = "cave carp";
-	obj_damage = 10
+	obj_damage = 10;
+	faction = list("hostile","vines","plants","mining","slime")
 	},
 /turf/open/water/overlay/hotspring/planet,
 /area/ruin/powered{
@@ -2516,8 +2568,10 @@
 	pixel_x = 16;
 	pixel_y = 13
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -2742,8 +2796,10 @@
 	pixel_x = 12;
 	pixel_y = 9
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -2827,7 +2883,8 @@
 /mob/living/simple_animal/hostile/carp{
 	desc = "A ferocious, fang-bearing creature that resembles a fish. We may need an expert to double check on the matter though.";
 	name = "cave carp";
-	obj_damage = 10
+	obj_damage = 10;
+	faction = list("hostile","vines","plants","mining","slime")
 	},
 /turf/open/water/overlay/hotspring/planet,
 /area/ruin/powered{
@@ -2864,8 +2921,10 @@
 /obj/structure/stone_tile{
 	dir = 1
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -3002,8 +3061,10 @@
 	})
 "lO" = (
 /obj/effect/decal/remains/human,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -3039,8 +3100,10 @@
 	pixel_y = 17;
 	pixel_x = -7
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -3165,8 +3228,10 @@
 /obj/structure/chair/wood{
 	dir = 4
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -3211,8 +3276,10 @@
 /obj/item/gavelhammer{
 	pixel_x = 8
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -3340,8 +3407,10 @@
 /obj/structure/bed/maint,
 /obj/structure/bed/maint,
 /obj/item/bedsheet/cult,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -3357,8 +3426,10 @@
 	dir = 1
 	},
 /mob/living/simple_animal/hostile/imp,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -3476,8 +3547,10 @@
 "nY" = (
 /obj/structure/stone_tile/center,
 /obj/structure/stone_tile/surrounding,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -3568,7 +3641,8 @@
 	desc = "Supernatural, fanciful, evil-aligned creatures who inhabit the Underworld that are very large and are among the most powerful enemies you will ever face.";
 	health = 400;
 	maxHealth = 400;
-	name = "Demon"
+	name = "Demon";
+	faction = list("hell")
 	},
 /turf/open/lava/smooth,
 /area/awaymission/caves/listeningpost{
@@ -4164,8 +4238,10 @@
 	pixel_y = 21;
 	pixel_x = 1
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -4183,8 +4259,10 @@
 	})
 "qm" = (
 /obj/structure/stone_tile/block/burnt,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -4376,8 +4454,10 @@
 	max_integrity = 1500
 	},
 /obj/effect/gibspawner/human,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -4665,8 +4745,10 @@
 /obj/structure/stone_tile/block{
 	dir = 1
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -4679,8 +4761,10 @@
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/imp,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -4753,8 +4837,10 @@
 /obj/item/fugu_gland{
 	pixel_y = 9
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -4787,8 +4873,10 @@
 "tH" = (
 /obj/structure/chair/pew/right,
 /obj/effect/gibspawner/human,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -4976,8 +5064,10 @@
 /obj/item/freeze_cube{
 	pixel_y = 7
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -5035,8 +5125,10 @@
 /obj/structure/table/wood/fancy/red,
 /obj/item/paper_bin/bundlenatural,
 /obj/item/pen/charcoal,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -5048,8 +5140,10 @@
 /obj/structure/chair/pew/left{
 	dir = 1
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -5080,8 +5174,10 @@
 	})
 "uV" = (
 /obj/structure/chair/pew/left,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -5150,8 +5246,10 @@
 /obj/structure/stone_tile/block{
 	dir = 8
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -5292,8 +5390,10 @@
 "vw" = (
 /obj/structure/chair/pew,
 /obj/effect/gibspawner/human,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -5442,8 +5542,10 @@
 	})
 "wf" = (
 /obj/item/banner/red,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -5680,8 +5782,10 @@
 /obj/structure/stone_tile/block{
 	dir = 8
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -5695,8 +5799,10 @@
 	max_integrity = 2500
 	},
 /obj/item/knife/bloodletter,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -5878,8 +5984,10 @@
 "xC" = (
 /obj/structure/kitchenspike,
 /obj/effect/mob_spawn/corpse/human/damaged,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -5963,8 +6071,10 @@
 /obj/item/stack/sheet/runed_metal/fifty{
 	pixel_y = 6
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -6194,12 +6304,23 @@
 	name = "\improper Mountains"
 	})
 "yQ" = (
-/mob/living/simple_animal/hostile/scorpion,
-/turf/open/misc/dirt/planet,
-/area/ruin/powered/beach{
-	name = "Surface";
-	base_lighting_alpha = 255;
-	static_lighting = 0
+/obj/structure/stone_tile{
+	dir = 8
+	},
+/obj/structure/stone_tile,
+/obj/structure/stone_tile/block{
+	dir = 1
+	},
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
+	},
+/area/awaymission/caves/listeningpost{
+	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
+	mood_bonus = 0;
+	mood_message = "<span class='warning'>We dug too deep!</span>\n";
+	name = "The Circus of Fun"
 	})
 "yR" = (
 /obj/structure/barricade/wooden,
@@ -6320,8 +6441,10 @@
 /obj/item/nullrod/scythe/sickle/void{
 	pixel_y = 4
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -6334,8 +6457,10 @@
 /obj/item/bedsheet/cult{
 	dir = 8
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -6371,8 +6496,10 @@
 	})
 "zJ" = (
 /obj/structure/bookcase/random/adult,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -6413,8 +6540,10 @@
 "Ab" = (
 /obj/structure/table/bronze,
 /obj/item/forging/complete/axe,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -6442,8 +6571,10 @@
 	},
 /obj/item/knife/ritual,
 /obj/effect/gibspawner/human,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -6567,8 +6698,10 @@
 	},
 /obj/effect/gibspawner/human,
 /obj/effect/mob_spawn/corpse/human/cook,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -6666,8 +6799,10 @@
 "AY" = (
 /obj/structure/table/wood/fancy/red,
 /obj/item/book/granter/crafting_recipe/boneyard_notes,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -6797,8 +6932,10 @@
 "BA" = (
 /obj/structure/table/bronze,
 /obj/item/nullrod/pitchfork,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -6914,8 +7051,10 @@
 /obj/structure/table/wood/fancy/red,
 /obj/item/hairbrush/tactical,
 /obj/item/gohei,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -7302,8 +7441,10 @@
 	})
 "CV" = (
 /obj/structure/stone_tile/slab,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -7625,16 +7766,16 @@
 	max_integrity = 240
 	},
 /obj/item/clothing/suit/armor/riot/knight/red{
-	armor = list("melee" = 70, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 90, "acid" = 90, "wound" = 50);
 	desc = "A classic suit of plate armor that was made by some of the best blacksmiths that the Humans have?";
 	max_integrity = 1000;
-	name = "Armure de Plaque"
+	name = "Armure de Plaque";
+	armor = list("melee" = 70, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 0, "bio" = 0, "fire" = 80, "acid" = 80, "wound" = 20)
 	},
 /obj/item/clothing/head/helmet/knight/red{
-	armor = list("melee" = 70, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 80, "acid" = 80);
 	desc = "May lack a fancy ornament on the top however it's still really good armor!";
 	max_integrity = 1000;
-	name = "Casque de Plaque"
+	name = "Casque de Plaque";
+	armor = list("melee" = 70, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 0, "bio" = 0, "fire" = 80, "acid" = 80)
 	},
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
@@ -7783,7 +7924,8 @@
 /mob/living/simple_animal/hostile/carp{
 	desc = "A ferocious, fang-bearing creature that resembles a fish. We may need an expert to double check on the matter though.";
 	name = "cave carp";
-	obj_damage = 10
+	obj_damage = 10;
+	faction = list("hostile","vines","plants","mining","slime")
 	},
 /turf/open/water/overlay/hotspring/planet,
 /area/ruin/powered{
@@ -7879,8 +8021,10 @@
 "Fi" = (
 /obj/structure/kitchenspike,
 /obj/effect/mob_spawn/corpse/human/miner/explorer,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -7955,8 +8099,10 @@
 "FB" = (
 /obj/structure/kitchenspike,
 /obj/effect/mob_spawn/corpse/human/bridgeofficer,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -7968,8 +8114,10 @@
 /obj/structure/bed/maint,
 /obj/item/bedsheet/cult,
 /mob/living/simple_animal/hostile/imp,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -8069,8 +8217,10 @@
 /obj/structure/stone_tile{
 	dir = 8
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -8222,8 +8372,10 @@
 	})
 "Gp" = (
 /mob/living/simple_animal/hostile/imp,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -8892,8 +9044,10 @@
 /obj/item/forging/hammer{
 	color = "#d97c7c"
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -9057,8 +9211,10 @@
 "Jd" = (
 /obj/structure/chair/pew/left,
 /obj/effect/gibspawner/human,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -9191,8 +9347,10 @@
 "JG" = (
 /obj/effect/decal/remains/human,
 /obj/item/clothing/head/collectable/petehat,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -9234,8 +9392,10 @@
 "JK" = (
 /obj/structure/kitchenspike,
 /obj/effect/mob_spawn/corpse/human/miner,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -9464,8 +9624,10 @@
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/imp,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -9477,8 +9639,10 @@
 /obj/structure/table/bronze,
 /obj/item/paper_bin/bundlenatural,
 /obj/item/pen/charcoal,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -9521,8 +9685,10 @@
 	})
 "KP" = (
 /obj/structure/statue/bone/skull/half,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -9544,7 +9710,9 @@
 	name = "\improper Mountains"
 	})
 "KV" = (
-/mob/living/simple_animal/hostile/asteroid/brimdemon,
+/mob/living/simple_animal/hostile/asteroid/brimdemon{
+	faction = list("hell")
+	},
 /turf/open/misc/asteroid/basalt/lava,
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -9858,8 +10026,10 @@
 /obj/structure/stone_tile/block/burnt{
 	dir = 1
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -10112,8 +10282,10 @@
 	pixel_x = -7;
 	pixel_y = 9
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -10364,8 +10536,10 @@
 	dir = 1
 	},
 /mob/living/simple_animal/hostile/imp,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -10423,8 +10597,10 @@
 /obj/structure/stone_tile{
 	dir = 8
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -10470,8 +10646,10 @@
 	pixel_x = 8
 	},
 /obj/item/reagent_containers/food/drinks/britcup,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -10676,8 +10854,10 @@
 	pixel_y = 7;
 	pixel_x = 4
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -10690,8 +10870,10 @@
 	dir = 1
 	},
 /obj/structure/stone_tile/block,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -10859,8 +11041,10 @@
 /obj/structure/stone_tile/block{
 	dir = 4
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -10881,8 +11065,10 @@
 /obj/item/forging/complete/katana{
 	pixel_x = -7
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -10897,8 +11083,10 @@
 /obj/structure/stone_tile/block{
 	dir = 8
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -10916,8 +11104,10 @@
 	})
 "PA" = (
 /obj/structure/fluff/drake_statue,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -10947,8 +11137,10 @@
 	throwforce = 30
 	},
 /obj/effect/gibspawner/human,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -11386,7 +11578,8 @@
 	desc = "Supernatural, fanciful, evil-aligned creatures who inhabit the Underworld that are very large and are among the most powerful enemies you will ever face.";
 	health = 800;
 	maxHealth = 800;
-	name = "Demon"
+	name = "Demon";
+	faction = list("hell")
 	},
 /turf/open/lava/smooth,
 /area/awaymission/caves/listeningpost{
@@ -11575,8 +11768,10 @@
 	max_integrity = 2000;
 	name = "HF Murasama Blade"
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -11607,7 +11802,8 @@
 /mob/living/simple_animal/hostile/carp{
 	desc = "A ferocious, fang-bearing creature that resembles a fish. We may need an expert to double check on the matter though.";
 	name = "cave carp";
-	obj_damage = 10
+	obj_damage = 10;
+	faction = list("hostile","vines","plants","mining","slime")
 	},
 /turf/open/water/overlay/hotspring/planet,
 /area/ruin/powered{
@@ -11689,8 +11885,10 @@
 	dir = 8
 	},
 /obj/structure/stone_tile,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -11834,8 +12032,10 @@
 /obj/structure/table/wood/fancy/red,
 /obj/item/knife/ritual,
 /obj/item/hhmirror/wracemagic,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -11876,8 +12076,10 @@
 	max_integrity = 2500
 	},
 /obj/item/knife/envy,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -12117,8 +12319,10 @@
 	max_integrity = 500;
 	name = "statue of an ancient evil"
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -12189,7 +12393,9 @@
 	name = "\improper Mountains"
 	})
 "Tw" = (
-/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/magmawing,
+/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/magmawing{
+	faction = list("hell")
+	},
 /turf/open/misc/asteroid/basalt/lava,
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -12261,8 +12467,10 @@
 "TK" = (
 /obj/structure/table/bronze,
 /obj/item/nullrod/claymore/katana,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -12360,9 +12568,13 @@
 	name = "\improper Mountains"
 	})
 "TU" = (
-/mob/living/simple_animal/hostile/asteroid/elite/herald,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/mob/living/simple_animal/hostile/asteroid/elite/herald{
+	faction = list("hell")
+	},
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -12493,8 +12705,10 @@
 	})
 "Uy" = (
 /obj/structure/statue/bone/skull,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -12661,8 +12875,10 @@
 	pixel_y = 9;
 	pixel_x = 14
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -13058,8 +13274,10 @@
 /obj/structure/stone_tile{
 	dir = 8
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -13085,8 +13303,10 @@
 /obj/item/forging/hammer{
 	color = "#d97c7c"
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -13105,8 +13325,10 @@
 "WR" = (
 /obj/structure/table/wood/fancy/red,
 /obj/item/language_manual/roundstart_species/five,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -13309,6 +13531,25 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
+"XM" = (
+/obj/structure/stone_tile{
+	dir = 4
+	},
+/obj/structure/stone_tile{
+	dir = 1
+	},
+/obj/structure/stone_tile/block,
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
+	},
+/area/awaymission/caves/listeningpost{
+	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
+	mood_bonus = 0;
+	mood_message = "<span class='warning'>We dug too deep!</span>\n";
+	name = "The Circus of Fun"
+	})
 "XP" = (
 /obj/structure/punji_sticks{
 	color = "#000000";
@@ -13368,8 +13609,10 @@
 /obj/structure/chair/pew/right{
 	dir = 1
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -13544,8 +13787,10 @@
 /obj/structure/stone_tile{
 	dir = 4
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -13591,8 +13836,10 @@
 	dir = 1
 	},
 /obj/structure/stone_tile,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -13601,8 +13848,10 @@
 	name = "The Circus of Fun"
 	})
 "YJ" = (
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -13632,8 +13881,10 @@
 "YT" = (
 /obj/structure/bed/maint,
 /obj/item/bedsheet/cult,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -13696,8 +13947,10 @@
 	pixel_y = 5;
 	pixel_x = 2
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -13777,8 +14030,10 @@
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/imp,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -13810,8 +14065,10 @@
 	})
 "ZB" = (
 /obj/structure/destructible/cult/item_dispenser/forge/engine,
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -13916,8 +14173,10 @@
 /obj/item/stack/sheet/bronze/thirty{
 	pixel_y = 4
 	},
-/turf/open/floor/engine/cult{
-	baseturfs = /turf/open/lava/smooth
+/turf/open/indestructible/necropolis/air{
+	color = "#445055";
+	name = "slade floor";
+	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!"
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -30149,7 +30408,7 @@ gJ
 gA
 gJ
 gJ
-Gt
+gJ
 Uh
 gA
 gA
@@ -35998,7 +36257,7 @@ TO
 TO
 TO
 TO
-yQ
+TO
 TO
 TO
 TO
@@ -97872,9 +98131,9 @@ xv
 xv
 xv
 RH
-kG
+yQ
 CV
-sH
+XM
 mf
 xv
 xv
@@ -99414,9 +99673,9 @@ xv
 xv
 xv
 RH
-kG
+yQ
 CV
-sH
+XM
 mf
 xv
 xv
@@ -100956,9 +101215,9 @@ xv
 xv
 xv
 RH
-kG
+yQ
 CV
-sH
+XM
 mf
 xv
 xv
@@ -102412,9 +102671,9 @@ NG
 nS
 nS
 RH
-kG
+yQ
 CV
-sH
+XM
 mf
 NG
 NG
@@ -102446,9 +102705,9 @@ xv
 xv
 xv
 RH
-kG
+yQ
 CV
-sH
+XM
 xv
 xv
 xv
@@ -102498,9 +102757,9 @@ xv
 xv
 xv
 RH
-kG
+yQ
 CV
-sH
+XM
 mf
 xv
 xv
@@ -105529,10 +105788,10 @@ gj
 dP
 gj
 xC
-hr
+gF
 YJ
 YJ
-hr
+gF
 JK
 gj
 gj
@@ -105787,7 +106046,7 @@ YJ
 gj
 gj
 hQ
-hr
+gF
 JG
 YJ
 xC
@@ -106046,11 +106305,11 @@ gj
 Fi
 YJ
 YJ
-hr
+gF
 xC
 gj
 Sr
-hr
+gF
 NS
 YJ
 uQ
@@ -106376,9 +106635,9 @@ xv
 xv
 xv
 RH
-kG
+yQ
 CV
-sH
+XM
 mf
 xv
 xv
@@ -107124,9 +107383,9 @@ xv
 xv
 xv
 RH
-kG
+yQ
 CV
-sH
+XM
 mf
 xv
 xv
@@ -107918,9 +108177,9 @@ xv
 xv
 xv
 RH
-kG
+yQ
 CV
-sH
+XM
 mf
 xv
 xv
@@ -108614,7 +108873,7 @@ xv
 xv
 xv
 xv
-kG
+yQ
 CV
 nJ
 mf
@@ -108666,9 +108925,9 @@ xv
 xv
 xv
 RH
-kG
+yQ
 CV
-sH
+XM
 mf
 xv
 xv
