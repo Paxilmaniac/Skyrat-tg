@@ -5467,7 +5467,9 @@
 /obj/structure/reagent_dispensers/beerkeg{
 	icon = 'icons/obj/objects.dmi';
 	icon_state = "barrel";
-	color = "#9b929c"
+	color = "#9b929c";
+	reagent_id = /datum/reagent/consumable/ethanol/ale;
+	name = "ale keg"
 	},
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
@@ -6787,7 +6789,9 @@
 /obj/structure/reagent_dispensers/beerkeg{
 	icon = 'icons/obj/objects.dmi';
 	icon_state = "barrel";
-	color = "#9b929c"
+	color = "#9b929c";
+	reagent_id = /datum/reagent/consumable/ethanol/ale;
+	name = "ale keg"
 	},
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/dirt/planet
@@ -8119,14 +8123,14 @@
 	name = "\improper Mountains"
 	})
 "FN" = (
-/obj/structure/table/wood,
-/obj/effect/turf_decal/weather/dirt{
-	dir = 8
+/obj/structure/reagent_dispensers/beerkeg{
+	icon = 'icons/obj/objects.dmi';
+	icon_state = "barrel";
+	color = "#9b929c";
+	reagent_id = /datum/reagent/consumable/ethanol/ale;
+	name = "ale keg"
 	},
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/turf/open/floor/stone{
-	baseturfs = /turf/open/misc/dirt/planet
-	},
+/turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -11109,26 +11113,26 @@
 	})
 "PO" = (
 /obj/structure/closet/crate/wooden,
-/obj/item/pickaxe/diamond{
-	pixel_y = -6
+/obj/item/pickaxe/rusted{
+	pixel_y = -4
 	},
-/obj/item/pickaxe/diamond{
-	pixel_y = -6
+/obj/item/pickaxe/rusted{
+	pixel_y = -4
 	},
-/obj/item/pickaxe/diamond{
-	pixel_y = -6
+/obj/item/pickaxe/rusted{
+	pixel_y = -4
 	},
-/obj/item/pickaxe/diamond,
-/obj/item/pickaxe/diamond,
-/obj/item/pickaxe/diamond,
-/obj/item/pickaxe/diamond{
-	pixel_y = 6
+/obj/item/pickaxe/rusted,
+/obj/item/pickaxe/rusted,
+/obj/item/pickaxe/rusted,
+/obj/item/pickaxe/rusted{
+	pixel_y = 4
 	},
-/obj/item/pickaxe/diamond{
-	pixel_y = 6
+/obj/item/pickaxe/rusted{
+	pixel_y = 4
 	},
-/obj/item/pickaxe/diamond{
-	pixel_y = 6
+/obj/item/pickaxe/rusted{
+	pixel_y = 4
 	},
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
@@ -13801,6 +13805,26 @@
 /obj/structure/spider/stickyweb,
 /mob/living/simple_animal/hostile/giant_spider,
 /turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
+	})
+"YZ" = (
+/obj/structure/table/wood,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 8
+	},
+/obj/structure/reagent_dispensers/beerkeg{
+	icon = 'icons/obj/objects.dmi';
+	icon_state = "barrel";
+	color = "#9b929c";
+	reagent_id = /datum/reagent/consumable/ethanol/ale;
+	name = "ale keg"
+	},
+/turf/open/floor/stone{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -42177,9 +42201,9 @@ QC
 og
 og
 og
-kq
-kq
-kq
+TO
+TO
+TO
 og
 og
 og
@@ -42425,7 +42449,7 @@ dn
 Qr
 XW
 In
-FN
+BY
 NU
 QC
 QC
@@ -45766,7 +45790,7 @@ kq
 kq
 GB
 In
-BY
+YZ
 NU
 GB
 XW
@@ -48340,7 +48364,7 @@ AA
 kq
 ke
 kq
-mP
+rT
 lB
 kq
 XW
@@ -49112,10 +49136,10 @@ kq
 XW
 XW
 kq
-mP
+rT
 QC
 QC
-OE
+FN
 kq
 fA
 GB
@@ -50403,7 +50427,7 @@ QC
 QC
 Ul
 OE
-OE
+FN
 QC
 QC
 QC
