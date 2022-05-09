@@ -3296,6 +3296,14 @@
 	mood_message = "<span class='warning'>We dug too deep!</span>\n";
 	name = "The Circus of Fun"
 	})
+"mP" = (
+/obj/item/flashlight/flare/torch,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
+	})
 "mU" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -3412,7 +3420,7 @@
 	})
 "nC" = (
 /turf/open/indestructible/hotelwood,
-/area/tdome)
+/area/ruin/powered/clownplanet)
 "nH" = (
 /obj/structure/chair/pew/right{
 	dir = 1
@@ -6017,15 +6025,6 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
-"xM" = (
-/obj/item/flashlight/flare/torch{
-	name = "wall torch";
-	on = 1;
-	fuel = 1000000;
-	light_range = 5
-	},
-/turf/closed/indestructible/wood,
-/area/station/commons/vacant_room/commissary)
 "xQ" = (
 /obj/effect/landmark/observer_start,
 /obj/effect/turf_decal/weather/dirt{
@@ -6922,7 +6921,7 @@
 	desc = "A terrifying, indestructible wall that is only found in the underworld or demonic shrine altars.";
 	name = "daemonic wall"
 	},
-/area/tdome)
+/area/ruin/powered/clownplanet)
 "BA" = (
 /obj/structure/table/bronze,
 /obj/item/nullrod/pitchfork,
@@ -7609,9 +7608,6 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
-"DN" = (
-/turf/open/indestructible/hotelwood,
-/area/station/commons/vacant_room/commissary)
 "DO" = (
 /obj/effect/decal/remains/human,
 /obj/item/saddle,
@@ -9913,10 +9909,6 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
-"LL" = (
-/obj/item/hand_item/circlegame,
-/turf/open/indestructible/hotelwood,
-/area/station/commons/vacant_room/commissary)
 "LN" = (
 /obj/structure/spawner/mining{
 	name = "crab den";
@@ -10034,7 +10026,7 @@
 	})
 "Mg" = (
 /turf/closed/indestructible/wood,
-/area/tdome)
+/area/ruin/powered/clownplanet)
 "Mj" = (
 /obj/structure/rack{
 	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
@@ -10188,14 +10180,6 @@
 	throwforce = 20;
 	toolspeed = 0.2
 	},
-/turf/open/misc/dirt/planet,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
-"MK" = (
-/obj/item/flashlight/flare/torch,
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -11538,7 +11522,7 @@
 "QT" = (
 /obj/machinery/computer/communications,
 /turf/open/indestructible/hotelwood,
-/area/tdome)
+/area/ruin/powered/clownplanet)
 "QW" = (
 /obj/structure/flora/ash/leaf_shroom{
 	color = "#fff44f";
@@ -11800,7 +11784,7 @@
 "RD" = (
 /obj/machinery/telecomms/allinone/indestructable,
 /turf/open/indestructible/hotelwood,
-/area/tdome)
+/area/ruin/powered/clownplanet)
 "RG" = (
 /obj/structure/flora/ash/stem_shroom,
 /obj/structure/barricade/wooden,
@@ -13466,9 +13450,6 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
-"XI" = (
-/turf/closed/indestructible/wood,
-/area/station/commons/vacant_room/commissary)
 "XK" = (
 /obj/structure/chair/stool/bamboo{
 	dir = 4
@@ -13725,7 +13706,7 @@
 "Yx" = (
 /obj/machinery/gravity_generator/main/station/admin,
 /turf/open/indestructible/hotelwood,
-/area/tdome)
+/area/ruin/powered/clownplanet)
 "Yy" = (
 /obj/structure/fluff/beach_umbrella/security{
 	pixel_x = -10;
@@ -44347,7 +44328,7 @@ pJ
 XW
 XW
 kq
-MK
+mP
 kq
 kq
 QC
@@ -44863,7 +44844,7 @@ GB
 kq
 kq
 kq
-MK
+mP
 kq
 QC
 QC
@@ -45375,7 +45356,7 @@ hS
 XW
 XW
 kq
-MK
+mP
 kq
 kq
 kq
@@ -109244,13 +109225,13 @@ Wb
 Wb
 Wb
 Wb
-sy
-sy
-sy
-sy
-sy
-sy
-sy
+Wb
+Wb
+Wb
+Wb
+Wb
+Wb
+Wb
 Wb
 Wb
 Wb
@@ -109501,13 +109482,13 @@ Wb
 Wb
 Wb
 Wb
-sy
-XI
-XI
-xM
-XI
-XI
-sy
+Wb
+Wb
+Wb
+Wb
+Wb
+Wb
+Wb
 Wb
 Wb
 Wb
@@ -109758,13 +109739,13 @@ Wb
 Wb
 Wb
 Wb
-sy
-XI
-DN
-DN
-DN
-XI
-sy
+Wb
+Wb
+Wb
+Wb
+Wb
+Wb
+Wb
 Wb
 Wb
 Wb
@@ -110015,13 +109996,13 @@ Wb
 Wb
 Wb
 Wb
-sy
-xM
-DN
-LL
-DN
-xM
-sy
+Wb
+Wb
+Wb
+Wb
+Wb
+Wb
+Wb
 Wb
 Wb
 Wb
@@ -110272,13 +110253,13 @@ Wb
 Wb
 Wb
 Wb
-sy
-XI
-DN
-DN
-DN
-XI
-sy
+Wb
+Wb
+Wb
+Wb
+Wb
+Wb
+Wb
 Wb
 Wb
 Wb
@@ -110529,13 +110510,13 @@ Wb
 Wb
 Wb
 Wb
-sy
-XI
-XI
-xM
-XI
-XI
-sy
+Wb
+Wb
+Wb
+Wb
+Wb
+Wb
+Wb
 Wb
 Wb
 Wb
