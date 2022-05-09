@@ -3296,14 +3296,6 @@
 	mood_message = "<span class='warning'>We dug too deep!</span>\n";
 	name = "The Circus of Fun"
 	})
-"mP" = (
-/obj/item/pickaxe/diamond,
-/turf/open/misc/dirt/planet,
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "mU" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -4408,7 +4400,8 @@
 /obj/item/flashlight/flare/torch{
 	name = "wall torch";
 	on = 1;
-	fuel = 1000000
+	fuel = 1000000;
+	light_range = 5
 	},
 /turf/closed/wall/mineral/stone{
 	baseturfs = /turf/open/misc/dirt/planet;
@@ -6028,7 +6021,8 @@
 /obj/item/flashlight/flare/torch{
 	name = "wall torch";
 	on = 1;
-	fuel = 1000000
+	fuel = 1000000;
+	light_range = 5
 	},
 /turf/closed/indestructible/wood,
 /area/station/commons/vacant_room/commissary)
@@ -7472,34 +7466,6 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
-"Db" = (
-/mob/living/simple_animal/hostile/faithless{
-	attack_sound = 'sound/weapons/rapierhit.ogg';
-	attack_verb_continuous = "shivs";
-	attack_verb_simple = "shiv";
-	color = "#00FF00";
-	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = list("hostile","vines","plants","mining","slime","faithless");
-	loot = list(/obj/item/kitchen/knife/shiv);
-	melee_damage_lower = 10;
-	melee_damage_upper = 10;
-	name = "Goblin";
-	resize = 1;
-	response_help_continuous = "stares at";
-	response_help_simple = "stare at";
-	wander = 0
-	},
-/turf/open/misc/grass/planet{
-	color = "#ff814f";
-	desc = "A patch of grass?";
-	baseturfs = /turf/open/misc/dirt/planet;
-	name = "fungal grass"
-	},
-/area/ruin/powered{
-	mood_bonus = 0;
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "Dd" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
@@ -8462,7 +8428,8 @@
 /obj/item/flashlight/flare/torch{
 	name = "wall torch";
 	on = 1;
-	fuel = 1000000
+	fuel = 1000000;
+	light_range = 5
 	},
 /turf/closed/wall/mineral/stone{
 	baseturfs = /turf/open/misc/dirt/planet
@@ -10228,28 +10195,8 @@
 	name = "\improper Mountains"
 	})
 "MK" = (
-/mob/living/simple_animal/hostile/faithless{
-	attack_sound = 'sound/weapons/rapierhit.ogg';
-	attack_verb_continuous = "shivs";
-	attack_verb_simple = "shiv";
-	color = "#00FF00";
-	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = list("hostile","vines","plants","mining","slime","faithless");
-	loot = list(/obj/item/kitchen/knife/shiv);
-	melee_damage_lower = 10;
-	melee_damage_upper = 10;
-	name = "Goblin";
-	resize = 1;
-	response_help_continuous = "stares at";
-	response_help_simple = "stare at";
-	wander = 0
-	},
-/turf/open/misc/grass/planet{
-	color = "#00ccff";
-	desc = "A patch of grass?";
-	baseturfs = /turf/open/misc/dirt/planet;
-	name = "fungal grass"
-	},
+/obj/item/flashlight/flare/torch,
+/turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -12259,7 +12206,8 @@
 /obj/item/flashlight/flare/torch{
 	name = "wall torch";
 	on = 1;
-	fuel = 1000000
+	fuel = 1000000;
+	light_range = 5
 	},
 /turf/closed/wall/mineral/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
@@ -43628,9 +43576,9 @@ QC
 XW
 QC
 QC
-kq
-kq
-kq
+QC
+QC
+QC
 QC
 QC
 QC
@@ -43884,11 +43832,11 @@ KS
 gd
 XW
 QC
-kq
-kq
-kq
-mP
-kq
+QC
+QC
+QC
+QC
+QC
 QC
 QC
 QC
@@ -44140,13 +44088,13 @@ am
 Oz
 uW
 XW
+QC
+QC
 kq
-kq
-kq
-kq
-kq
-kq
-kq
+rT
+QC
+QC
+QC
 QC
 QC
 QC
@@ -44399,12 +44347,12 @@ pJ
 XW
 XW
 kq
+MK
 kq
 kq
-kq
-kq
-kq
-kq
+QC
+QC
+QC
 QC
 QC
 QC
@@ -44660,8 +44608,8 @@ kq
 kq
 kq
 kq
-kq
-kq
+QC
+QC
 QC
 QC
 QC
@@ -44915,10 +44863,10 @@ GB
 kq
 kq
 kq
+MK
 kq
-kq
-kq
-mP
+QC
+QC
 QC
 QC
 QC
@@ -45173,8 +45121,8 @@ kq
 kq
 kq
 kq
-kq
-kq
+rT
+QC
 QC
 QC
 QC
@@ -45427,7 +45375,7 @@ hS
 XW
 XW
 kq
-kq
+MK
 kq
 kq
 kq
@@ -45682,12 +45630,12 @@ YC
 Oz
 lD
 XW
-kq
-kq
-kq
-kq
-mP
 QC
+QC
+rT
+kq
+kq
+kq
 QC
 QC
 QC
@@ -45940,10 +45888,10 @@ sn
 IO
 XW
 QC
-mP
-kq
-kq
-kq
+QC
+QC
+QC
+QC
 QC
 QC
 QC
@@ -46198,8 +46146,8 @@ QC
 XW
 QC
 QC
-kq
-kq
+QC
+QC
 QC
 QC
 QC
@@ -53113,7 +53061,7 @@ Qj
 hk
 BM
 hk
-MK
+BM
 kq
 kq
 kq
@@ -54657,7 +54605,7 @@ QF
 GK
 kq
 kq
-Ib
+kq
 kq
 kq
 qE
@@ -55422,7 +55370,7 @@ kq
 ps
 Cb
 xr
-Ib
+kq
 kq
 kq
 kq
@@ -55683,7 +55631,7 @@ ps
 kq
 kq
 kq
-Db
+PI
 Gz
 Gz
 pK
