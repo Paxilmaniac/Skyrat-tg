@@ -1389,7 +1389,7 @@
 	name = "dense rock";
 	tool_mine_speed = 80;
 	mineralAmt = 10;
-	baseturfs = s;
+	baseturfs = /turf/open/misc/asteroid;
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15"
 	},
 /area/ruin/powered{
@@ -10135,7 +10135,7 @@
 	icon_state = "empty_shelf_1"
 	},
 /obj/item/pickaxe/diamond{
-	desc = s"A pickaxe with a plasma pick head. Better at cracking skulls and mining than a diamond pickaxe!";
+	desc = "A pickaxe with a plasma pick head. Better at cracking skulls and mining than a diamond pickaxe!";
 	force = 35;
 	icon_state = "ppickaxe";
 	name = "plasma plated pickaxe";
@@ -13976,7 +13976,7 @@
 	attack_verb_simple = "shiv";
 	color = "#00FF00";
 	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
-	faction = s;
+	faction = list("hostile","vines","plants","mining","slime","faithless");
 	loot = list(/obj/item/kitchen/knife/shiv);
 	melee_damage_lower = 10;
 	melee_damage_upper = 10;
