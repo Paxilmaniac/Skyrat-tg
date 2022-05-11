@@ -1,0 +1,1104 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aq" = (
+/obj/structure/ore_vein/iron{
+	ore_amount = 50
+	},
+/turf/open/misc/dirt/planet,
+/area/tdome/arena)
+"ar" = (
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"aE" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/table/bronze,
+/obj/item/sharpener{
+	uses = 10000;
+	name = "extremely durable grindstone";
+	anchored = 1
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"bk" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"bu" = (
+/obj/structure/flora/ash/chilly{
+	regrowth_time_high = 10;
+	regrowth_time_low = 10
+	},
+/turf/open/misc/dirt/planet,
+/area/tdome/arena)
+"bR" = (
+/turf/open/misc/dirt/planet,
+/area/tdome/arena)
+"cu" = (
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"dg" = (
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/obj/item/stack/sheet/sinew{
+	amount = 50
+	},
+/obj/item/stack/sheet/sinew{
+	amount = 50
+	},
+/obj/item/stack/sheet/sinew{
+	amount = 50
+	},
+/obj/item/stack/sheet/sinew{
+	amount = 50
+	},
+/obj/item/stack/sheet/sinew{
+	amount = 50
+	},
+/obj/item/stack/sheet/sinew{
+	amount = 50
+	},
+/obj/item/stack/sheet/sinew{
+	amount = 50
+	},
+/obj/item/stack/sheet/bone{
+	amount = 50
+	},
+/obj/item/stack/sheet/bone{
+	amount = 50
+	},
+/obj/item/stack/sheet/bone{
+	amount = 50
+	},
+/obj/item/stack/sheet/bone{
+	amount = 50
+	},
+/obj/item/stack/sheet/bone{
+	amount = 50
+	},
+/obj/item/stack/sheet/bone{
+	amount = 50
+	},
+/obj/item/stack/sheet/bone{
+	amount = 50
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"fE" = (
+/obj/structure/sink/oil_well,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 5
+	},
+/turf/open/misc/sandy_dirt/planet,
+/area/tdome/arena)
+"fS" = (
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/item/stack/sheet/cloth{
+	amount = 50
+	},
+/obj/item/stack/sheet/cloth{
+	amount = 50
+	},
+/obj/item/stack/sheet/cloth{
+	amount = 50
+	},
+/obj/item/stack/sheet/cloth{
+	amount = 50
+	},
+/obj/item/stack/sheet/cloth{
+	amount = 50
+	},
+/obj/item/stack/sheet/cloth{
+	amount = 50
+	},
+/obj/item/stack/sheet/cloth{
+	amount = 50
+	},
+/obj/item/stack/sheet/leather{
+	amount = 50
+	},
+/obj/item/stack/sheet/leather{
+	amount = 50
+	},
+/obj/item/stack/sheet/leather{
+	amount = 50
+	},
+/obj/item/stack/sheet/leather{
+	amount = 50
+	},
+/obj/item/stack/sheet/leather{
+	amount = 50
+	},
+/obj/item/stack/sheet/leather{
+	amount = 50
+	},
+/obj/item/stack/sheet/leather{
+	amount = 50
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"ig" = (
+/obj/structure/flora/ash/tall_shroom{
+	color = "#fc03f0";
+	regrowth_time_high = 10;
+	regrowth_time_low = 10
+	},
+/turf/open/misc/dirt/planet,
+/area/tdome/arena)
+"ip" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/item/forging/billow,
+/obj/item/forging/hammer,
+/obj/item/forging/tongs,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"iq" = (
+/obj/structure/ore_vein/silver{
+	ore_amount = 50
+	},
+/turf/open/misc/dirt/planet,
+/area/tdome/arena)
+"iT" = (
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"jm" = (
+/obj/structure/flora/ash/seraka{
+	regrowth_time_high = 10;
+	regrowth_time_low = 10
+	},
+/turf/open/misc/dirt/planet,
+/area/tdome/arena)
+"lc" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/item/forging/billow,
+/obj/item/forging/hammer,
+/obj/item/forging/tongs,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"lC" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/table/wood,
+/obj/item/reagent_containers/glass/primitive_centrifuge{
+	pixel_y = 12;
+	pixel_x = 5
+	},
+/obj/item/burner/fuel{
+	pixel_x = 8
+	},
+/obj/item/burner/oil{
+	pixel_y = 3;
+	pixel_x = -6
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"lG" = (
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/item/stack/sheet/cloth{
+	amount = 50
+	},
+/obj/item/stack/sheet/cloth{
+	amount = 50
+	},
+/obj/item/stack/sheet/cloth{
+	amount = 50
+	},
+/obj/item/stack/sheet/cloth{
+	amount = 50
+	},
+/obj/item/stack/sheet/cloth{
+	amount = 50
+	},
+/obj/item/stack/sheet/cloth{
+	amount = 50
+	},
+/obj/item/stack/sheet/leather{
+	amount = 50
+	},
+/obj/item/stack/sheet/leather{
+	amount = 50
+	},
+/obj/item/stack/sheet/leather{
+	amount = 50
+	},
+/obj/item/stack/sheet/leather{
+	amount = 50
+	},
+/obj/item/stack/sheet/leather{
+	amount = 50
+	},
+/obj/item/stack/sheet/leather{
+	amount = 50
+	},
+/obj/item/stack/sheet/leather{
+	amount = 50
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"mD" = (
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"mH" = (
+/obj/structure/flora/ash/leaf_shroom{
+	color = "#fff44f";
+	desc = "Fungi-caps are underground fungi, likely related to the tower-cap, however has numerous lemon-colored leaves coming out of it. If picked at the perfect time, they tend to taste like fine grain.";
+	harvested_desc = "A bunch of formerly-leafed fungi-caps, with their sporangiums exposed. I thought these were meant to give some sort of wood? Eh, forget it.";
+	harvested_name = "leafless fungi-caps";
+	name = "fungi-caps";
+	regrowth_time_high = 10;
+	regrowth_time_low = 10
+	},
+/turf/open/misc/dirt/planet,
+/area/tdome/arena)
+"nb" = (
+/obj/structure/ore_vein/gold{
+	ore_amount = 50
+	},
+/turf/open/misc/dirt/planet,
+/area/tdome/arena)
+"ng" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/item/reagent_containers/food/drinks/bottle,
+/obj/item/reagent_containers/food/drinks/bottle,
+/obj/item/reagent_containers/food/drinks/bottle,
+/obj/item/reagent_containers/food/drinks/bottle,
+/obj/item/reagent_containers/food/drinks/bottle,
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = -5
+	},
+/obj/item/fishing_rod,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"oB" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/item/glassblowing/blowing_rod,
+/obj/item/glassblowing/shears,
+/obj/item/glassblowing/metal_cup,
+/obj/item/glassblowing/paddle,
+/obj/item/glassblowing/shears,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"oP" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/obj/machinery/autolathe/hacked{
+	max_integrity = 5000
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"pp" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"pW" = (
+/obj/structure/sink/fuel_well,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/misc/sandy_dirt/planet,
+/area/tdome/arena)
+"rQ" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/reagent_forge/ready{
+	icon_state = "primitive_forge_empty";
+	primitive = 1;
+	name = "magma forge"
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"sK" = (
+/obj/structure/water_source/puddle,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/turf/open/misc/sandy_dirt/planet,
+/area/tdome/arena)
+"tr" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/obj/structure/table/wood,
+/obj/item/disk/design_disk/adv/knight_gear,
+/obj/item/disk/design_disk/adv/cleric_mace{
+	pixel_y = 6
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"tw" = (
+/obj/structure/sink/oil_well,
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/turf/open/misc/sandy_dirt/planet,
+/area/tdome/arena)
+"vj" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/reagent_water_basin{
+	icon_state = "primitive_water_basin";
+	name = "oil basin";
+	desc = "A basin full of oil, ready to quench the hot metal.";
+	color = "#ff8800"
+	},
+/obj/item/stack/sheet/bluespace_crystal,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"zL" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/obj/machinery/smartfridge/drying_rack,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"BK" = (
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"Cn" = (
+/obj/structure/flora/ash/stem_shroom{
+	color = "#00FFFF";
+	desc = "Spore shrooms are a type of underground fungus, and when cut down, yield glowing mushrooms that may change in color afterwards.";
+	harvest_message_high = "You acquire a number of stems from these spore shrooms.";
+	harvest_message_low = "You pick and slice the cap off a spore shroom, leaving the stem.";
+	harvest_message_med = "You pick and decapitate several spore shrooms for their stems.";
+	harvested_desc = "A few tiny spore shrooms around larger stumps. You can already see them growing back.";
+	harvested_name = "harvested spore shrooms";
+	light_color = "#00FFFF";
+	light_range = 3;
+	name = "spore shrooms";
+	regrowth_time_high = 10;
+	regrowth_time_low = 10
+	},
+/turf/open/misc/dirt/planet,
+/area/tdome/arena)
+"DX" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/iron/fifty{
+	pixel_y = 4
+	},
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty{
+	pixel_y = 4
+	},
+/obj/item/pickaxe/diamond{
+	desc = "The best pickaxe in this mountain you're going to find. It may even be fast enough to compete with a plasma cutter in both speed and DEFINITELY damage!";
+	force = 50;
+	icon_state = "gpickaxe";
+	light_color = "#FFD700";
+	light_power = 5;
+	light_range = 4;
+	name = "Blessing of Armok";
+	throwforce = 40;
+	toolspeed = 0;
+	pixel_y = 6
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"Ef" = (
+/obj/structure/ore_vein/diamond{
+	ore_amount = 50
+	},
+/turf/open/misc/dirt/planet,
+/area/tdome/arena)
+"FU" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/reagent_anvil{
+	icon_state = "primitive_anvil_empty"
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"Gr" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/obj/machinery/smartfridge/drying_rack,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"GJ" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/table/bronze,
+/obj/structure/throwing_wheel{
+	pixel_y = 13
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"GN" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/obj/structure/table/wood,
+/obj/item/reagent_containers/glass/mortar,
+/obj/item/pestle,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"Hl" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/loom,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"Ik" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/table/bronze,
+/obj/structure/throwing_wheel{
+	pixel_y = 13
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"IJ" = (
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"Jk" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/item/reagent_containers/food/drinks/bottle,
+/obj/item/reagent_containers/food/drinks/bottle,
+/obj/item/reagent_containers/food/drinks/bottle,
+/obj/item/reagent_containers/food/drinks/bottle,
+/obj/item/reagent_containers/food/drinks/bottle,
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small{
+	pixel_y = -5;
+	pixel_x = -5
+	},
+/obj/item/fishing_rod,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"Jl" = (
+/obj/structure/ore_vein/plasma{
+	ore_amount = 50
+	},
+/turf/open/misc/dirt/planet,
+/area/tdome/arena)
+"Lv" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/obj/structure/table/wood,
+/obj/item/disk/design_disk/adv/knight_gear,
+/obj/item/disk/design_disk/adv/cleric_mace{
+	pixel_y = 6
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"Mo" = (
+/obj/structure/ore_vein/stone{
+	ore_amount = 50
+	},
+/turf/open/misc/dirt/planet,
+/area/tdome/arena)
+"Nv" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/reagent_anvil{
+	icon_state = "primitive_anvil_empty"
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"NI" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"NL" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/table/bronze,
+/obj/item/sharpener{
+	uses = 10000;
+	name = "extremely durable grindstone";
+	anchored = 1
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"PG" = (
+/obj/structure/flora/ash/cap_shroom{
+	color = "#ff0000";
+	desc = "Several mushrooms that are all dark-red. The red means that it is dangerous, not faster!";
+	harvest_message_high = "You slice off a number of caps from these goblin-caps.";
+	harvest_message_low = "You slice the cap off a single goblin-cap.";
+	harvest_message_med = "You slice off a few caps from the larger goblin-caps.";
+	harvested_desc = "Are there goblins around here? These ones are already picked.";
+	harvested_name = "harvested goblin-caps";
+	name = "goblin-caps";
+	regrowth_time_high = 10;
+	regrowth_time_low = 10
+	},
+/turf/open/misc/dirt/planet,
+/area/tdome/arena)
+"QR" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/reagent_forge/ready{
+	icon_state = "primitive_forge_empty";
+	primitive = 1;
+	name = "magma forge"
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"Rw" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/obj/structure/table/wood,
+/obj/item/reagent_containers/glass/mortar,
+/obj/item/pestle,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"SX" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/table/wood,
+/obj/item/reagent_containers/glass/primitive_centrifuge{
+	pixel_y = 12;
+	pixel_x = 5
+	},
+/obj/item/burner/fuel{
+	pixel_x = 8
+	},
+/obj/item/burner/oil{
+	pixel_y = 3;
+	pixel_x = -6
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"Wi" = (
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/obj/item/stack/sheet/sinew{
+	amount = 50
+	},
+/obj/item/stack/sheet/sinew{
+	amount = 50
+	},
+/obj/item/stack/sheet/sinew{
+	amount = 50
+	},
+/obj/item/stack/sheet/sinew{
+	amount = 50
+	},
+/obj/item/stack/sheet/sinew{
+	amount = 50
+	},
+/obj/item/stack/sheet/sinew{
+	amount = 50
+	},
+/obj/item/stack/sheet/bone{
+	amount = 50
+	},
+/obj/item/stack/sheet/bone{
+	amount = 50
+	},
+/obj/item/stack/sheet/bone{
+	amount = 50
+	},
+/obj/item/stack/sheet/bone{
+	amount = 50
+	},
+/obj/item/stack/sheet/bone{
+	amount = 50
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"Wv" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/reagent_crafting_bench,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"WO" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/reagent_water_basin{
+	icon_state = "primitive_water_basin";
+	name = "oil basin";
+	desc = "A basin full of oil, ready to quench the hot metal.";
+	color = "#ff8800"
+	},
+/obj/item/stack/sheet/bluespace_crystal,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"XU" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/item/glassblowing/blowing_rod,
+/obj/item/glassblowing/shears,
+/obj/item/glassblowing/metal_cup,
+/obj/item/glassblowing/paddle,
+/obj/item/glassblowing/shears,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"Zj" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/reagent_crafting_bench,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+"ZC" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/obj/machinery/autolathe/hacked{
+	max_integrity = 5000
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/tdome/arena)
+
+(1,1,1) = {"
+tr
+lc
+NL
+GJ
+oB
+Jk
+SX
+Rw
+"}
+(2,1,1) = {"
+DX
+iT
+iT
+iT
+iT
+iT
+iT
+Hl
+"}
+(3,1,1) = {"
+oP
+pp
+QR
+FU
+WO
+Zj
+pp
+zL
+"}
+(4,1,1) = {"
+Mo
+bR
+Ef
+bR
+PG
+mH
+bR
+Cn
+"}
+(5,1,1) = {"
+aq
+bR
+nb
+bR
+bu
+jm
+bR
+ig
+"}
+(6,1,1) = {"
+iq
+bR
+bR
+bR
+bR
+bR
+bR
+tw
+"}
+(7,1,1) = {"
+Jl
+bR
+dg
+fS
+BK
+cu
+bR
+pW
+"}
+(8,1,1) = {"
+bR
+bR
+NI
+iT
+iT
+IJ
+bR
+sK
+"}
+(9,1,1) = {"
+Jl
+bR
+Wi
+lG
+ar
+mD
+bR
+pW
+"}
+(10,1,1) = {"
+iq
+bR
+bR
+bR
+bR
+bR
+bR
+fE
+"}
+(11,1,1) = {"
+aq
+bR
+nb
+bR
+bu
+jm
+bR
+ig
+"}
+(12,1,1) = {"
+Mo
+bR
+Ef
+bR
+PG
+mH
+bR
+Cn
+"}
+(13,1,1) = {"
+ZC
+bk
+rQ
+Nv
+vj
+Wv
+bk
+Gr
+"}
+(14,1,1) = {"
+DX
+iT
+iT
+iT
+iT
+iT
+iT
+Hl
+"}
+(15,1,1) = {"
+Lv
+ip
+aE
+Ik
+XU
+ng
+lC
+GN
+"}
