@@ -381,7 +381,9 @@
 	name = "The Circus of Fun"
 	})
 "bI" = (
-/obj/structure/ore_vein/iron,
+/obj/structure/ore_vein/iron{
+	ore_amount = 5
+	},
 /turf/open/misc/dirt/planet,
 /area/ruin/powered/beach{
 	name = "Surface";
@@ -700,7 +702,9 @@
 	name = "\improper Mountains"
 	})
 "cY" = (
-/obj/structure/ore_vein/stone,
+/obj/structure/ore_vein/stone{
+	ore_amount = 5
+	},
 /turf/open/misc/dirt/planet,
 /area/ruin/powered/beach{
 	name = "Surface";
@@ -1112,6 +1116,20 @@
 	dir = 8
 	},
 /turf/open/misc/sandy_dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
+	})
+"ez" = (
+/obj/structure/reagent_dispensers/beerkeg{
+	icon = 'icons/obj/objects.dmi';
+	icon_state = "barrel";
+	color = "#9b929c";
+	reagent_id = /datum/reagent/consumable/blackpepper;
+	name = "pepper barrel"
+	},
+/turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -1556,7 +1574,9 @@
 	name = "\improper Mountains"
 	})
 "gy" = (
-/obj/structure/ore_vein/plasma,
+/obj/structure/ore_vein/plasma{
+	ore_amount = 5
+	},
 /turf/open/misc/asteroid/basalt/lava,
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -2694,7 +2714,9 @@
 	name = "\improper Mountains"
 	})
 "kC" = (
-/obj/structure/ore_vein/stone,
+/obj/structure/ore_vein/stone{
+	ore_amount = 5
+	},
 /turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -3801,6 +3823,20 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
+"oY" = (
+/obj/structure/reagent_dispensers/beerkeg{
+	icon = 'icons/obj/objects.dmi';
+	icon_state = "barrel";
+	color = "#9b929c";
+	reagent_id = /datum/reagent/consumable/salt;
+	name = "salt barrel"
+	},
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
+	})
 "oZ" = (
 /obj/structure/table/wood,
 /obj/item/paper/crumpled,
@@ -4450,6 +4486,18 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
+"rh" = (
+/obj/structure/closet/crate/wooden,
+/obj/item/seeds/tea,
+/obj/item/seeds/tea,
+/obj/item/seeds/tea,
+/obj/item/seeds/tea,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
+	})
 "rl" = (
 /obj/structure/destructible/eldritch_crucible{
 	max_integrity = 1500
@@ -4857,6 +4905,22 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
+"ty" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/obj/structure/table/wood,
+/obj/item/kitchen/rollingpin,
+/obj/item/knife/hunting,
+/obj/item/storage/box/matches,
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
+	})
 "tz" = (
 /obj/structure/reagent_forge{
 	icon_state = "primitive_forge_empty";
@@ -5153,7 +5217,9 @@
 	name = "The Circus of Fun"
 	})
 "uR" = (
-/obj/structure/ore_vein/silver,
+/obj/structure/ore_vein/silver{
+	ore_amount = 5
+	},
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -7070,7 +7136,9 @@
 	name = "\improper Mountains"
 	})
 "BW" = (
-/obj/structure/ore_vein/stone,
+/obj/structure/ore_vein/stone{
+	ore_amount = 5
+	},
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -7654,7 +7722,9 @@
 	})
 "Ed" = (
 /obj/structure/flora/ash/seraka,
-/obj/structure/ore_vein/silver,
+/obj/structure/ore_vein/silver{
+	ore_amount = 5
+	},
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -7749,7 +7819,9 @@
 	name = "\improper Mountains"
 	})
 "Ev" = (
-/obj/structure/ore_vein/stone,
+/obj/structure/ore_vein/stone{
+	ore_amount = 5
+	},
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/open/misc/dirt/planet,
 /area/ruin/powered/beach{
@@ -8269,7 +8341,9 @@
 	name = "\improper Mountains"
 	})
 "Gg" = (
-/obj/structure/ore_vein/silver,
+/obj/structure/ore_vein/silver{
+	ore_amount = 5
+	},
 /turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -8554,11 +8628,13 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
-/obj/structure/rack{
-	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
-	icon_state = "empty_shelf_1"
+/obj/structure/reagent_dispensers/beerkeg{
+	icon = 'icons/obj/objects.dmi';
+	icon_state = "barrel";
+	color = "#9b929c";
+	reagent_id = /datum/reagent/consumable/blackpepper;
+	name = "pepper barrel"
 	},
-/obj/item/storage/box/matches,
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
@@ -9784,7 +9860,9 @@
 	name = "\improper Mountains"
 	})
 "Lk" = (
-/obj/structure/ore_vein/diamond,
+/obj/structure/ore_vein/diamond{
+	ore_amount = 5
+	},
 /turf/open/misc/asteroid/basalt/lava,
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -9919,6 +9997,19 @@
 	name = "Surface";
 	base_lighting_alpha = 255;
 	static_lighting = 0
+	})
+"LO" = (
+/obj/structure/closet/crate/wooden,
+/obj/item/seeds/tomato,
+/obj/item/seeds/tomato,
+/obj/item/seeds/tomato,
+/obj/item/seeds/tomato,
+/obj/item/seeds/tomato,
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
 	})
 "LT" = (
 /obj/item/saddle,
@@ -10160,7 +10251,9 @@
 	name = "\improper Mountains"
 	})
 "MI" = (
-/obj/structure/ore_vein/gold,
+/obj/structure/ore_vein/gold{
+	ore_amount = 5
+	},
 /turf/open/misc/asteroid/basalt/lava,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -42493,7 +42586,7 @@ Qr
 XW
 iT
 dn
-Qr
+ty
 XW
 In
 BY
@@ -43258,13 +43351,13 @@ QC
 QC
 QC
 QC
-kq
+oY
 kq
 kq
 kq
 FI
 kq
-kq
+oY
 kq
 kq
 kq
@@ -43518,7 +43611,7 @@ QC
 Pr
 wN
 IW
-kq
+ez
 kq
 kq
 kq
@@ -47886,8 +47979,8 @@ gX
 kq
 zq
 AA
-kq
-kq
+LO
+rh
 kq
 kq
 AA
@@ -48419,7 +48512,7 @@ PO
 xg
 kq
 kq
-kq
+oY
 Ul
 gu
 QC
@@ -48934,7 +49027,7 @@ kq
 kq
 Ul
 kq
-kq
+oY
 HR
 gu
 QC
@@ -49706,7 +49799,7 @@ kq
 kq
 kq
 kq
-kq
+ez
 fA
 QC
 QC
