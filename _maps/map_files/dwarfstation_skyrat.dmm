@@ -4707,6 +4707,20 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
+"sp" = (
+/obj/structure/deployable_barricade/wooden{
+	dir = 1;
+	pixel_y = 13
+	},
+/obj/structure/deployable_barricade/wooden{
+	dir = 4
+	},
+/turf/open/misc/dirt/planet,
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
+	})
 "sy" = (
 /turf/cordon,
 /area/cordon)
@@ -4907,11 +4921,13 @@
 	})
 "ty" = (
 /obj/effect/turf_decal/siding/wood{
-	dir = 10
+	dir = 1
 	},
-/obj/structure/table/wood,
-/obj/item/kitchen/rollingpin,
-/obj/item/knife/hunting,
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
+	},
+/obj/item/stack/sheet/mineral/wood/fifty,
 /obj/item/storage/box/matches,
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
@@ -6658,10 +6674,17 @@
 	name = "\improper Mountains"
 	})
 "Ak" = (
-/mob/living/simple_animal/mouse/brown/tom,
-/turf/open/floor/wood/large{
-	baseturfs = /turf/open/misc/dirt/planet
+/obj/structure/fluff{
+	desc = "Perhaps you should heed the warning...";
+	icon_state = "signpost";
+	max_integrity = 9999;
+	move_force = 4000;
+	move_resist = 4000;
+	name = "DANGER AHEAD";
+	pull_force = 4000;
+	resistance_flags = 115
 	},
+/turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -7784,6 +7807,22 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
+"Eq" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/obj/structure/reagent_forge{
+	icon_state = "primitive_forge_empty";
+	primitive = 1
+	},
+/turf/open/floor/wood/large{
+	baseturfs = /turf/open/misc/dirt/planet
+	},
+/area/ruin/powered{
+	mood_bonus = 0;
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
+	})
 "Er" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/open/misc/dirt/planet,
@@ -8625,16 +8664,13 @@
 	name = "\improper Mountains"
 	})
 "Hd" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 5
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/rack{
+	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
+	icon_state = "empty_shelf_1"
 	},
-/obj/structure/reagent_dispensers/beerkeg{
-	icon = 'icons/obj/objects.dmi';
-	icon_state = "barrel";
-	color = "#9b929c";
-	reagent_id = /datum/reagent/consumable/blackpepper;
-	name = "pepper barrel"
-	},
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/storage/box/matches,
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
@@ -8691,13 +8727,12 @@
 	})
 "Hs" = (
 /obj/effect/turf_decal/siding/wood{
-	dir = 6
+	dir = 5
 	},
-/obj/structure/rack{
-	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
-	icon_state = "empty_shelf_1"
+/obj/structure/reagent_forge{
+	icon_state = "primitive_forge_empty";
+	primitive = 1
 	},
-/obj/item/storage/box/matches,
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
 	},
@@ -42586,7 +42621,7 @@ Qr
 XW
 iT
 dn
-ty
+Qr
 XW
 In
 BY
@@ -42839,10 +42874,10 @@ QC
 XW
 QX
 Oz
-uW
+Hd
 XW
-am
-Ak
+ty
+Oz
 Fv
 XW
 Xz
@@ -43094,13 +43129,13 @@ QC
 QC
 QC
 XW
-LW
-sn
 Hs
-XW
-Hd
 sn
 PV
+XW
+LW
+sn
+Eq
 XW
 kq
 kq
@@ -43358,7 +43393,7 @@ kq
 FI
 kq
 oY
-kq
+ez
 kq
 kq
 kq
@@ -49533,7 +49568,7 @@ AA
 QC
 XW
 QC
-QC
+kq
 QC
 GB
 fA
@@ -50048,7 +50083,7 @@ QC
 QC
 QC
 kq
-QC
+kq
 QC
 pq
 kq
@@ -50304,8 +50339,8 @@ QC
 QC
 QC
 QC
-kq
-kq
+PC
+Ak
 QC
 Ul
 Ul
@@ -50561,8 +50596,8 @@ QC
 QC
 QC
 QC
-kq
-kq
+jE
+sp
 QC
 QC
 Ul
@@ -50819,7 +50854,7 @@ QC
 QC
 QC
 QC
-kq
+jE
 QC
 QC
 QC
