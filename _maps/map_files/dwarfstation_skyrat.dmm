@@ -5098,14 +5098,6 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
-"us" = (
-/obj/effect/landmark/start/ai/secondary,
-/turf/open/misc/dirt/planet,
-/area/ruin/powered/beach{
-	name = "Surface";
-	base_lighting_alpha = 255;
-	static_lighting = 0
-	})
 "uu" = (
 /obj/effect/landmark/start/customs_agent,
 /turf/open/misc/dirt/planet,
@@ -6757,14 +6749,6 @@
 	mood_bonus = 0;
 	mood_message = "<span class='warning'>We dug too deep!</span>\n";
 	name = "The Circus of Fun"
-	})
-"Az" = (
-/obj/effect/landmark/start/cyborg,
-/turf/open/misc/dirt/planet,
-/area/ruin/powered/beach{
-	name = "Surface";
-	base_lighting_alpha = 255;
-	static_lighting = 0
 	})
 "AA" = (
 /obj/machinery/hydroponics/soil,
@@ -10736,14 +10720,6 @@
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
-	})
-"Oj" = (
-/obj/effect/landmark/start/ai,
-/turf/open/misc/dirt/planet,
-/area/ruin/powered/beach{
-	name = "Surface";
-	base_lighting_alpha = 255;
-	static_lighting = 0
 	})
 "Ok" = (
 /obj/item/banner/medical/mundane,
@@ -41086,8 +41062,8 @@ TO
 TO
 TO
 TO
-us
-Az
+TO
+TO
 TO
 TO
 TO
@@ -41344,8 +41320,8 @@ TO
 TO
 TO
 TO
-Oj
-Az
+TO
+TO
 TO
 TO
 fG
@@ -41857,8 +41833,8 @@ QC
 Cg
 Cg
 Cg
-us
-Az
+TO
+TO
 TO
 TO
 TO
