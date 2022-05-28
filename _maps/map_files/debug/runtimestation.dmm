@@ -720,6 +720,7 @@
 	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
 	icon_state = "empty_shelf_1"
 	},
+<<<<<<< HEAD
 /obj/item/ammo_casing/shotgun/improvised,
 /obj/item/ammo_casing/shotgun/improvised,
 /obj/item/ammo_casing/shotgun/improvised,
@@ -785,6 +786,67 @@
 	})
 "dn" = (
 /obj/effect/turf_decal/siding/wood{
+=======
+/obj/structure/table/glass,
+/turf/open/floor/iron/white/corner,
+/area/station/medical/medbay)
+"cN" = (
+/turf/closed/wall/r_wall,
+/area/station/construction)
+"cP" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/turf/closed/wall/r_wall,
+/area/station/construction)
+"cS" = (
+/turf/closed/wall/r_wall,
+/area/station/commons/storage/primary)
+"cT" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/turf/open/floor/iron,
+/area/station/medical/chemistry)
+"cV" = (
+/obj/machinery/door/airlock/public/glass,
+/turf/open/floor/iron,
+/area/station/commons/storage/primary)
+"cW" = (
+/obj/machinery/airalarm/unlocked{
+	dir = 1;
+	pixel_y = 23
+	},
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/effect/turf_decal/stripes/corner,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/construction)
+"cX" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/construction)
+"cY" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/iron,
+/area/station/construction)
+"cZ" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/construction)
+"da" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/turf/closed/wall/r_wall,
+/area/station/commons/storage/primary)
+"db" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/station/hallway/secondary/entry)
+"dc" = (
+/obj/effect/turf_decal/stripes/corner{
+>>>>>>> master
 	dir = 8
 	},
 /obj/structure/table/wood,
@@ -798,11 +860,33 @@
 /obj/item/reagent_containers/glass/bowl/mushroom_bowl{
 	pixel_y = 1
 	},
+<<<<<<< HEAD
 /obj/item/reagent_containers/glass/bowl/mushroom_bowl{
 	pixel_y = 5
 	},
 /obj/item/reagent_containers/glass/bowl/mushroom_bowl{
 	pixel_y = 9
+=======
+/turf/open/floor/iron,
+/area/station/construction)
+"dn" = (
+/turf/open/floor/plating,
+/area/station/construction)
+"do" = (
+/obj/machinery/light/directional/east,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/construction)
+"dp" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/plating,
+/area/station/commons/storage/primary)
+"dq" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L2"
+>>>>>>> master
 	},
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
@@ -839,6 +923,7 @@
 /turf/open/misc/snow/actually_safe{
 	baseturfs = /turf/open/misc/sandy_dirt/planet
 	},
+<<<<<<< HEAD
 /area/ruin/powered/beach{
 	name = "Surface";
 	base_lighting_alpha = 255;
@@ -859,6 +944,19 @@
 	},
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
+=======
+/turf/open/floor/iron,
+/area/station/construction)
+"dz" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/construction)
+"dA" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+>>>>>>> master
 	},
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -912,11 +1010,16 @@
 	baseturfs = /turf/open/misc/dirt/planet;
 	name = "fungal grass"
 	},
+<<<<<<< HEAD
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
+=======
+/turf/open/floor/iron,
+/area/station/construction)
+>>>>>>> master
 "dL" = (
 /obj/structure/stone_tile/slab,
 /obj/structure/rack{
@@ -924,6 +1027,7 @@
 	icon_state = "minibar";
 	name = "skeletal minibar"
 	},
+<<<<<<< HEAD
 /obj/item/sharpener/cult{
 	pixel_y = 4;
 	anchored = 1;
@@ -937,6 +1041,20 @@
 	mood_message = "<span class='warning'>We dug too deep!</span>\n";
 	name = "The Circus of Fun"
 	})
+=======
+/turf/open/floor/iron,
+/area/station/construction)
+"dM" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/construction)
+"dN" = (
+/obj/structure/table,
+/turf/open/floor/iron,
+/area/station/commons/storage/primary)
+>>>>>>> master
 "dO" = (
 /obj/structure/bed/maint,
 /turf/open/floor/stone{
@@ -988,6 +1106,7 @@
 	name = "\improper Mountains"
 	})
 "dV" = (
+<<<<<<< HEAD
 /obj/effect/landmark/start/scientist,
 /turf/open/misc/snow/actually_safe{
 	baseturfs = /turf/open/misc/sandy_dirt/planet
@@ -997,13 +1116,95 @@
 	base_lighting_alpha = 255;
 	static_lighting = 0
 	})
+=======
+/turf/open/floor/plating,
+/area/station/hallway/secondary/entry)
+"dW" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/camera/directional/north,
+/turf/open/floor/iron,
+/area/station/construction)
+"dX" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/camera/autoname/directional/west,
+/obj/machinery/light/directional/west,
+/turf/open/floor/iron,
+/area/station/construction)
+>>>>>>> master
 "dY" = (
 /obj/structure/bed/maint,
 /obj/item/bedsheet/cult{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/floor/engine/cult{
 	baseturfs = /turf/open/lava/smooth
+=======
+/obj/machinery/camera/autoname/directional/south,
+/turf/open/floor/iron,
+/area/station/construction)
+"ea" = (
+/obj/structure/table,
+/obj/machinery/camera/autoname/directional/south,
+/obj/item/gun/magic/wand/resurrection/debug,
+/turf/open/floor/iron,
+/area/station/commons/storage/primary)
+"eb" = (
+/obj/docking_port/stationary{
+	dir = 8;
+	dwidth = 2;
+	height = 5;
+	id = "laborcamp_home";
+	name = "fore bay 1";
+	roundstart_template = /datum/map_template/shuttle/labour/generic;
+	width = 9
+	},
+/turf/open/space/basic,
+/area/space)
+"ec" = (
+/obj/docking_port/stationary{
+	dir = 8;
+	dwidth = 3;
+	height = 15;
+	id = "arrivals_stationary";
+	name = "arrivals";
+	roundstart_template = /datum/map_template/shuttle/arrival/box;
+	width = 7
+	},
+/turf/open/floor/engine,
+/area/station/hallway/secondary/entry)
+"ed" = (
+/obj/structure/sign/warning/pods,
+/turf/closed/wall/r_wall,
+/area/station/hallway/secondary/entry)
+"ef" = (
+/obj/machinery/door/airlock,
+/turf/open/floor/iron,
+/area/station/construction)
+"eg" = (
+/obj/machinery/door/airlock,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/security/brig)
+"eh" = (
+/turf/open/floor/iron,
+/area/station/hallway/secondary/entry)
+"ei" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/entry)
+"ej" = (
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/entry)
+"ek" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+>>>>>>> master
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -1167,6 +1368,7 @@
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
 	color = "#b0b0b0"
 	},
+<<<<<<< HEAD
 /area/ruin/powered{
 	mood_bonus = 0;
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -1175,6 +1377,11 @@
 "eW" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
+=======
+/obj/machinery/door/poddoor{
+	id = "cargounload";
+	name = "Supply Dock Unloading Door"
+>>>>>>> master
 	},
 /obj/structure/closet/crate/miningcar,
 /obj/item/stack/ore/iron{
@@ -1186,8 +1393,14 @@
 /obj/item/stack/ore/iron{
 	amount = 50
 	},
+<<<<<<< HEAD
 /obj/item/stack/ore/stone{
 	amount = 50
+=======
+/obj/machinery/door/poddoor{
+	id = "cargoload";
+	name = "Supply Dock Loading Door"
+>>>>>>> master
 	},
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
@@ -1719,9 +1932,24 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
 	},
+<<<<<<< HEAD
 /obj/structure/rack{
 	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
 	icon_state = "empty_shelf_1"
+=======
+/obj/machinery/light/directional/east,
+/turf/open/floor/iron,
+/area/station/construction)
+"gz" = (
+/obj/structure/table,
+/obj/item/card/id/advanced/gold/captains_spare,
+/obj/machinery/keycard_auth/directional/north,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/exit/departure_lounge)
+"gA" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+>>>>>>> master
 	},
 /obj/item/stack/sheet/sinew{
 	amount = 25
@@ -1767,9 +1995,18 @@
 	name = "reanimated peasant";
 	wander = 0
 	},
+<<<<<<< HEAD
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
 	color = "#9e9e9e"
+=======
+/obj/machinery/light/directional/west,
+/turf/open/floor/iron,
+/area/station/construction)
+"gH" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+>>>>>>> master
 	},
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -1784,8 +2021,22 @@
 /obj/item/forging/tongs{
 	color = "#d97c7c"
 	},
+<<<<<<< HEAD
 /turf/open/floor/engine/cult{
 	baseturfs = /turf/open/lava/smooth
+=======
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/iron,
+/area/station/construction)
+"jb" = (
+/obj/machinery/door/airlock,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/science)
+"jE" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 8
+>>>>>>> master
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -1890,6 +2141,7 @@
 /turf/open/floor/engine/cult{
 	baseturfs = /turf/open/lava/smooth
 	},
+<<<<<<< HEAD
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
 	mood_bonus = 0;
@@ -1899,6 +2151,32 @@
 "hS" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
+=======
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
+"rL" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central)
+"sr" = (
+/obj/machinery/door/airlock/shell,
+/turf/open/floor/iron/dark,
+/area/station/construction)
+"sH" = (
+/obj/structure/table,
+/obj/item/storage/box/shipping,
+/turf/open/floor/iron,
+/area/station/commons/storage/primary)
+"tE" = (
+/obj/machinery/door/airlock/research,
+/turf/open/floor/iron/dark,
+/area/station/construction)
+"tG" = (
+/obj/docking_port/stationary/random{
+	id = "pod_lavaland";
+	name = "lavaland"
+>>>>>>> master
 	},
 /obj/structure/rack{
 	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
@@ -2027,6 +2305,7 @@
 	pixel_y = 16;
 	pixel_x = -6
 	},
+<<<<<<< HEAD
 /turf/open/floor/engine/cult{
 	baseturfs = /turf/open/lava/smooth
 	},
@@ -2041,6 +2320,30 @@
 	icon = 'icons/obj/objects.dmi';
 	icon_state = "barrel";
 	color = "#9b929c"
+=======
+/turf/open/floor/iron/white/corner,
+/area/station/medical/medbay)
+"EA" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/construction)
+"EB" = (
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/open/floor/iron,
+/area/station/medical/medbay)
+"EG" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/light_switch/directional/east,
+/turf/open/floor/iron,
+/area/station/construction)
+"EI" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+>>>>>>> master
 	},
 /obj/structure/reagent_dispensers/beerkeg{
 	icon = 'icons/obj/objects.dmi';
@@ -2189,9 +2492,43 @@
 /obj/structure/stone_tile{
 	dir = 1
 	},
+<<<<<<< HEAD
 /obj/structure/stone_tile,
 /turf/open/floor/engine/cult{
 	baseturfs = /turf/open/lava/smooth
+=======
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
+"Tj" = (
+/obj/machinery/door/poddoor,
+/turf/open/floor/engine,
+/area/station/hallway/secondary/entry)
+"Tt" = (
+/turf/open/floor/plating,
+/area/station/maintenance/aft)
+"TV" = (
+/obj/machinery/door/airlock,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/construction)
+"Ut" = (
+/obj/structure/closet/secure_closet/medical3{
+	locked = 0
+	},
+/obj/item/healthanalyzer/advanced,
+/turf/open/floor/iron,
+/area/station/medical/medbay)
+"Vg" = (
+/obj/machinery/light/directional/south,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central)
+"Vr" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+>>>>>>> master
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
