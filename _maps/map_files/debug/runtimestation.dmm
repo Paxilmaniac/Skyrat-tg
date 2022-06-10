@@ -540,11 +540,31 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
+<<<<<<< HEAD
 /obj/structure/table/bronze,
 /obj/item/sharpener{
 	uses = 10000;
 	name = "extremely durable grindstone";
 	anchored = 1
+=======
+/area/station/medical/medbay)
+"cv" = (
+/mob/living/circuit_drone,
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"cw" = (
+/obj/machinery/door/airlock,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/turf/open/floor/iron,
+/area/station/command/bridge)
+"cx" = (
+/obj/machinery/door/airlock/public/glass,
+/turf/open/floor/iron,
+/area/station/medical/medbay)
+"cy" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 8
+>>>>>>> master
 	},
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
@@ -2498,6 +2518,7 @@
 	baseturfs = /turf/open/lava/smooth
 =======
 /turf/open/floor/iron,
+<<<<<<< HEAD
 /area/station/cargo/miningoffice)
 "Tj" = (
 /obj/machinery/door/poddoor,
@@ -2507,6 +2528,13 @@
 /turf/open/floor/plating,
 /area/station/maintenance/aft)
 "TV" = (
+=======
+/area/station/construction)
+"iW" = (
+/turf/closed/wall/r_wall,
+/area/station/science/explab)
+"jb" = (
+>>>>>>> master
 /obj/machinery/door/airlock,
 /obj/structure/cable,
 /turf/open/floor/iron,
@@ -2523,7 +2551,15 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
+<<<<<<< HEAD
 "Vr" = (
+=======
+"kQ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 8
+	},
+/obj/machinery/power/apc/auto_name/directional/north,
+>>>>>>> master
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -2542,6 +2578,7 @@
 /turf/open/floor/engine/cult{
 	baseturfs = /turf/open/lava/smooth
 	},
+<<<<<<< HEAD
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
 	mood_bonus = 0;
@@ -2563,6 +2600,18 @@
 "iT" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
+=======
+/turf/open/floor/iron,
+/area/station/hallway/primary/central)
+"mE" = (
+/obj/structure/cable,
+/obj/machinery/chem_mass_spec,
+/turf/open/floor/iron,
+/area/station/medical/chemistry)
+"nq" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+>>>>>>> master
 	},
 /obj/structure/table/wood,
 /obj/item/reagent_containers/glass/mortar,
@@ -2605,6 +2654,7 @@
 	name = "cave carp";
 	obj_damage = 10
 	},
+<<<<<<< HEAD
 /turf/open/water/overlay/hotspring/planet,
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -2626,6 +2676,46 @@
 	},
 /obj/structure/reagent_anvil{
 	icon_state = "primitive_anvil_empty"
+=======
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
+"rL" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central)
+"sd" = (
+/obj/machinery/light/directional/east,
+/obj/item/integrated_circuit/loaded/hello_world,
+/obj/item/integrated_circuit/loaded/speech_relay,
+/obj/structure/rack,
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"sr" = (
+/obj/machinery/door/airlock/shell,
+/turf/open/floor/iron/dark,
+/area/station/construction)
+"sH" = (
+/obj/structure/table,
+/obj/item/storage/box/shipping,
+/turf/open/floor/iron,
+/area/station/commons/storage/primary)
+"tE" = (
+/obj/machinery/door/airlock/research,
+/turf/open/floor/iron/dark,
+/area/station/construction)
+"tG" = (
+/obj/docking_port/stationary/random{
+	id = "pod_lavaland";
+	name = "lavaland"
+	},
+/turf/open/space/basic,
+/area/space)
+"uf" = (
+/obj/structure/fans/tiny/invisible,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+>>>>>>> master
 	},
 /obj/item/forging/hammer,
 /turf/open/floor/wood/large{
@@ -2648,6 +2738,7 @@
 /obj/structure/flora/ash/tall_shroom{
 	color = "#fc03f0"
 	},
+<<<<<<< HEAD
 /mob/living/simple_animal/hostile/giant_spider,
 /turf/open/misc/grass/planet{
 	color = "#ff814f";
@@ -2722,6 +2813,22 @@
 	})
 "jF" = (
 /obj/effect/turf_decal/siding/wood{
+=======
+/obj/machinery/light/directional/north,
+/turf/open/floor/plating,
+/area/station/engineering/atmos)
+"uO" = (
+/obj/machinery/door/airlock/public/glass,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/commons/storage/primary)
+"vv" = (
+/obj/machinery/door/airlock,
+/turf/open/floor/plating,
+/area/station/commons/storage/primary)
+"vy" = (
+/obj/effect/turf_decal/stripes/corner{
+>>>>>>> master
 	dir = 4
 	},
 /turf/open/floor/wood/large{
@@ -2822,6 +2929,7 @@
 	pixel_x = -7;
 	pixel_y = -6
 	},
+<<<<<<< HEAD
 /obj/item/seeds/soya{
 	pixel_x = -7;
 	pixel_y = -6
@@ -2852,6 +2960,57 @@
 /obj/item/reagent_containers/glass/bottle/potion/flight{
 	pixel_x = 16;
 	pixel_y = 13
+=======
+/turf/open/floor/iron,
+/area/station/hallway/primary/central)
+"wV" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/station/science/explab)
+"xe" = (
+/obj/structure/table,
+/obj/item/storage/toolbox/electrical,
+/obj/item/multitool/circuit{
+	pixel_x = -4
+	},
+/obj/item/multitool{
+	pixel_x = 4
+	},
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"yK" = (
+/obj/structure/fans/tiny/invisible,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/station/hallway/secondary/entry)
+"yN" = (
+/obj/structure/cable,
+/obj/machinery/power/rtg/debug,
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
+"zo" = (
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/engineering/atmos)
+"AP" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/science)
+"Bu" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"BD" = (
+/obj/structure/closet/secure_closet/chief_medical{
+	locked = 0
+>>>>>>> master
 	},
 /turf/open/floor/engine/cult{
 	baseturfs = /turf/open/lava/smooth
@@ -2890,6 +3049,7 @@
 /obj/structure/stone_tile{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/lava/smooth,
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -2950,6 +3110,18 @@
 "ku" = (
 /obj/structure/flora/tree/jungle{
 	color = "#ff814f"
+=======
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
+"CV" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/medical/chemistry)
+"DW" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+>>>>>>> master
 	},
 /turf/open/misc/dirt/planet,
 /area/ruin/powered{
@@ -3023,9 +3195,21 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
+<<<<<<< HEAD
 /obj/structure/rack{
 	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
 	icon_state = "empty_shelf_1"
+=======
+/turf/open/floor/iron,
+/area/station/medical/chemistry)
+"If" = (
+/obj/machinery/rnd/production/techfab/department,
+/turf/open/floor/iron,
+/area/station/science)
+"Iy" = (
+/obj/structure/closet/secure_closet/research_director{
+	locked = 0
+>>>>>>> master
 	},
 /obj/item/glassblowing/blowing_rod,
 /obj/item/glassblowing/blowing_rod{
@@ -3065,6 +3249,7 @@
 /obj/structure/stone_tile{
 	dir = 1
 	},
+<<<<<<< HEAD
 /turf/open/lava/smooth,
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -3244,11 +3429,118 @@
 	dir = 4
 	},
 /obj/structure/stone_tile{
+=======
+/turf/open/floor/engine,
+/area/station/cargo/miningoffice)
+"Kx" = (
+/obj/structure/table,
+/obj/item/analyzer,
+/obj/item/wrench,
+/obj/machinery/light/directional/south,
+/turf/open/floor/plating,
+/area/station/engineering/atmos)
+"KH" = (
+/obj/structure/table,
+/obj/item/organ/cyberimp/bci{
+	pixel_y = 5
+	},
+/obj/item/organ/cyberimp/bci{
+	pixel_y = 5
+	},
+/obj/item/organ/cyberimp/bci{
+	pixel_y = 5
+	},
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"Lb" = (
+/obj/structure/bot,
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"Ly" = (
+/obj/machinery/chem_dispenser/chem_synthesizer,
+/turf/open/floor/iron/dark,
+/area/station/medical/chemistry)
+"LW" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/entry)
+"Mh" = (
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central)
+"ME" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
+"MN" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/turf/open/floor/iron/dark,
+/area/station/engineering/gravity_generator)
+"MY" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/engineering/atmos)
+"Nc" = (
+/obj/machinery/chem_recipe_debug,
+/turf/open/floor/iron,
+/area/station/medical/chemistry)
+"Ne" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/door/airlock/research,
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"Ns" = (
+/obj/machinery/door/airlock/public/glass,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/medical/medbay)
+"NE" = (
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"NZ" = (
+/obj/machinery/rnd/production/protolathe/department,
+/turf/open/floor/iron,
+/area/station/science)
+"OU" = (
+/obj/item/disk/tech_disk/debug,
+/turf/open/floor/iron,
+/area/station/science)
+"Pe" = (
+/obj/machinery/component_printer,
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"Qa" = (
+/obj/machinery/light/directional/west,
+/obj/structure/table,
+/obj/item/compact_remote,
+/obj/item/compact_remote,
+/obj/item/compact_remote{
+	pixel_x = -5
+	},
+/obj/item/controller{
+	pixel_x = 5
+	},
+/obj/item/controller{
+	pixel_x = 5
+	},
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"Qi" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+>>>>>>> master
 	dir = 8
 	},
 /obj/structure/stone_tile/block{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/lava/smooth,
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -3394,6 +3686,37 @@
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
 	color = "#9e9e9e"
+=======
+/obj/machinery/door/airlock/external/glass/ruin,
+/turf/open/floor/plating,
+/area/station/medical/medbay)
+"QD" = (
+/obj/structure/server,
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"Rb" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/station/maintenance/aft)
+"Re" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/hallway/secondary/entry)
+"Rn" = (
+/obj/structure/table,
+/obj/machinery/cell_charger,
+/obj/item/stock_parts/cell/bluespace,
+/obj/item/stock_parts/cell/bluespace,
+/obj/item/stock_parts/cell/bluespace,
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"RM" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+>>>>>>> master
 	},
 /area/ruin/powered{
 	mood_bonus = 0;
@@ -3439,6 +3762,7 @@
 /obj/structure/chair/bronze{
 	dir = 8
 	},
+<<<<<<< HEAD
 /mob/living/simple_animal/hostile/asteroid/elite/legionnaire{
 	deathmessage = "'s arms reach out before it falls apart onto the floor, completely lifeless.";
 	desc = "A towering skeleton, empowered by necromantic magic that keeps it in a permanent state of undeath.";
@@ -3513,6 +3837,64 @@
 	})
 "mm" = (
 /obj/structure/stone_tile{
+=======
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
+"Tj" = (
+/obj/machinery/door/poddoor,
+/turf/open/floor/engine,
+/area/station/hallway/secondary/entry)
+"Tt" = (
+/turf/open/floor/plating,
+/area/station/maintenance/aft)
+"TC" = (
+/obj/structure/money_bot,
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"TV" = (
+/obj/machinery/door/airlock,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/construction)
+"Ut" = (
+/obj/structure/closet/secure_closet/medical3{
+	locked = 0
+	},
+/obj/item/healthanalyzer/advanced,
+/turf/open/floor/iron,
+/area/station/medical/medbay)
+"Vg" = (
+/obj/machinery/light/directional/south,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central)
+"Vy" = (
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/engineering/main)
+"VA" = (
+/obj/structure/fans/tiny,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/engineering/main)
+"VW" = (
+/obj/machinery/airalarm/unlocked{
+	dir = 1;
+	pixel_y = 23
+	},
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"We" = (
+/obj/machinery/newscaster/directional/west,
+/turf/open/floor/iron,
+/area/station/engineering/main)
+"Wh" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/station/engineering/atmos)
+"Wq" = (
+/obj/effect/turf_decal/tile/blue{
+>>>>>>> master
 	dir = 1
 	},
 /obj/structure/stone_tile/surrounding_tile{
@@ -3578,7 +3960,15 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/weather/dirt{
+=======
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/engineering/gravity_generator)
+"WT" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+>>>>>>> master
 	dir = 8
 	},
 /obj/effect/turf_decal/weather/dirt,
@@ -3595,6 +3985,7 @@
 	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
 	icon_state = "empty_shelf_1"
 	},
+<<<<<<< HEAD
 /obj/item/knife/ritual{
 	desc = "Despite being made by goblins, it seems REALLY sharp.";
 	force = 20;
@@ -16318,6 +16709,420 @@ nP
 nP
 nP
 nP
+=======
+/turf/open/floor/iron,
+/area/station/engineering/atmos)
+"XB" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"XC" = (
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/science)
+"XR" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/station/engineering/atmos)
+"XU" = (
+/obj/machinery/atmospherics/components/tank/air,
+/obj/machinery/light/directional/north,
+/turf/open/floor/plating,
+/area/station/engineering/atmos)
+"XZ" = (
+/obj/effect/landmark/blobstart,
+/turf/open/floor/iron,
+/area/station/commons/storage/primary)
+"Yy" = (
+/obj/machinery/light/directional/north,
+/obj/machinery/rnd/production/circuit_imprinter/department,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/science)
+"YP" = (
+/obj/machinery/bci_implanter,
+/turf/open/floor/iron/dark,
+/area/station/science/explab)
+"ZD" = (
+/obj/machinery/suit_storage_unit/ce,
+/turf/open/floor/iron,
+/area/station/engineering/atmos)
+
+(1,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(2,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(3,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(4,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> master
 "}
 (9,1,1) = {"
 nP
@@ -29683,6 +30488,7 @@ nP
 nP
 nP
 "}
+<<<<<<< HEAD
 (61,1,1) = {"
 nP
 nP
@@ -30967,6 +31773,375 @@ nP
 nP
 nP
 nP
+=======
+(36,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ah
+ah
+qb
+ah
+ah
+ah
+ah
+ah
+bA
+bA
+bA
+gd
+bA
+bZ
+ft
+bZ
+cN
+cN
+cN
+cN
+cN
+cN
+ef
+ef
+cN
+cN
+cN
+cN
+cN
+cN
+Ne
+en
+dY
+dY
+dY
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(37,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ah
+ut
+aw
+ou
+aw
+aw
+Kx
+ah
+bs
+bB
+ca
+If
+bA
+kn
+ES
+bE
+cN
+cW
+dm
+dy
+ii
+dX
+dy
+dy
+gG
+ii
+dy
+dm
+dM
+cN
+XB
+cv
+Qa
+Rn
+wV
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(38,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ah
+am
+aw
+aw
+ba
+jE
+MY
+bk
+bt
+bt
+bt
+AP
+pA
+kQ
+ES
+rL
+cP
+cX
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dL
+sr
+Bu
+NE
+NE
+TC
+wV
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(39,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ah
+dS
+aw
+aN
+bb
+bl
+zo
+ah
+Yy
+bD
+XC
+gY
+jb
+ES
+bE
+Mh
+TV
+EA
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dL
+cN
+VW
+QD
+KH
+xe
+wV
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> master
 "}
 (66,1,1) = {"
 nP
@@ -30988,6 +32163,7 @@ TO
 TO
 TO
 cY
+<<<<<<< HEAD
 TO
 TO
 gA
@@ -31481,6 +32657,160 @@ nP
 nP
 nP
 nP
+=======
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dL
+tE
+NE
+NE
+NE
+Lb
+wV
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(41,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ah
+XU
+bl
+aP
+aP
+XR
+Xp
+ah
+NZ
+bD
+XC
+co
+bA
+wS
+bE
+bE
+cN
+dW
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dL
+cN
+NE
+sd
+YP
+Pe
+wV
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> master
 "}
 (68,1,1) = {"
 nP
@@ -31758,6 +33088,7 @@ Cg
 TO
 TO
 cY
+<<<<<<< HEAD
 NA
 TO
 TO
@@ -31995,6 +33326,68 @@ nP
 nP
 nP
 nP
+=======
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dn
+dL
+cN
+fI
+iW
+iW
+iW
+iW
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+>>>>>>> master
 "}
 (70,1,1) = {"
 nP
