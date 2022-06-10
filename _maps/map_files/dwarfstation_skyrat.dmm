@@ -269,9 +269,33 @@
 	name = "\improper Mountains"
 	})
 "br" = (
-/obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/giant_spider/hunter,
-/turf/open/misc/sandy_dirt/planet,
+/mob/living/simple_animal/hostile/syndicate/ranged/shotgun/space{
+	casingtype = /obj/item/ammo_casing/shotgun/improvised;
+	color = "#00FF7F";
+	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. They also have blunderbusses apparently!";
+	dir = 8;
+	faction = list("hostile","vines","plants","mining","slime","faithless");
+	health = 80;
+	icon = 'icons/mob/animal.dmi';
+	icon_dead = "faithless_dead";
+	icon_living = "faithless";
+	icon_state = "faithless";
+	light_power = 0;
+	loot = list(/obj/effect/gibspawner/human,/obj/item/gun/ballistic/rifle/boltaction/pipegun/prime);
+	maxHealth = 80;
+	melee_damage_lower = 2;
+	melee_damage_upper = 4;
+	name = "Goblin Archer";
+	projectilesound = 'sound/weapons/gun/pistol/shot_alt.ogg';
+	rapid = 1;
+	wander = 0
+	},
+/turf/open/misc/grass/planet{
+	baseturfs = /turf/open/misc/dirt/planet;
+	color = "#fbff00";
+	desc = "A patch of grass?";
+	name = "fungal grass"
+	},
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -444,9 +468,29 @@
 	name = "\improper Mountains"
 	})
 "ch" = (
-/obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/giant_spider,
-/turf/open/misc/dirt/planet,
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood/old,
+/mob/living/simple_animal/hostile/faithless{
+	attack_sound = 'sound/weapons/rapierhit.ogg';
+	attack_verb_continuous = "shivs";
+	attack_verb_simple = "shiv";
+	color = "#00FF00";
+	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
+	faction = list("hostile","vines","plants","mining","slime","faithless");
+	loot = list(/obj/item/kitchen/knife/shiv);
+	melee_damage_lower = 10;
+	melee_damage_upper = 10;
+	name = "Goblin";
+	response_help_continuous = "stares at";
+	response_help_simple = "stare at";
+	wander = 0
+	},
+/turf/open/misc/grass/planet{
+	baseturfs = /turf/open/misc/dirt/planet;
+	color = "#fbff00";
+	desc = "A patch of grass?";
+	name = "fungal grass"
+	},
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -470,9 +514,28 @@
 	name = "\improper Mountains"
 	})
 "cq" = (
-/obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/giant_spider,
-/turf/open/misc/sandy_dirt/planet,
+/mob/living/simple_animal/hostile/syndicate/ranged/shotgun/space{
+	casingtype = /obj/item/ammo_casing/shotgun/improvised;
+	color = "#00FF7F";
+	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. They also have blunderbusses apparently!";
+	dir = 8;
+	faction = list("hostile","vines","plants","mining","slime","faithless");
+	health = 80;
+	icon = 'icons/mob/animal.dmi';
+	icon_dead = "faithless_dead";
+	icon_living = "faithless";
+	icon_state = "faithless";
+	light_power = 0;
+	loot = list(/obj/effect/gibspawner/human,/obj/item/gun/ballistic/rifle/boltaction/pipegun/prime);
+	maxHealth = 80;
+	melee_damage_lower = 2;
+	melee_damage_upper = 4;
+	name = "Goblin Archer";
+	projectilesound = 'sound/weapons/gun/pistol/shot_alt.ogg';
+	rapid = 1;
+	wander = 0
+	},
+/turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -503,6 +566,7 @@
 	dir = 1
 	},
 /obj/structure/stone_tile,
+/obj/item/clothing/head/collectable/wizard,
 /turf/open/lava/smooth,
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -537,8 +601,21 @@
 	name = "\improper Mountains"
 	})
 "cD" = (
-/obj/structure/flora/ash/stem_shroom,
-/obj/structure/spider/stickyweb,
+/mob/living/simple_animal/hostile/faithless{
+	attack_sound = 'sound/weapons/rapierhit.ogg';
+	attack_verb_continuous = "shivs";
+	attack_verb_simple = "shiv";
+	color = "#00FF00";
+	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
+	faction = list("hostile","vines","plants","mining","slime","faithless");
+	loot = list(/obj/item/kitchen/knife/shiv);
+	melee_damage_lower = 10;
+	melee_damage_upper = 10;
+	name = "Goblin";
+	response_help_continuous = "stares at";
+	response_help_simple = "stare at";
+	wander = 0
+	},
 /turf/open/misc/grass/planet{
 	baseturfs = /turf/open/misc/dirt/planet;
 	color = "#00ccff";
@@ -698,7 +775,7 @@
 /obj/effect/decal/remains/xeno,
 /obj/item/clothing/suit/armor/riot/chaplain/clock,
 /obj/item/clothing/head/helmet/chaplain/clock,
-/turf/open/misc/sandy_dirt/planet,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -761,7 +838,7 @@
 	color = "#fc03f0"
 	},
 /obj/item/gun/ballistic/bow,
-/turf/open/misc/sandy_dirt/planet,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -1880,6 +1957,15 @@
 	name = "Surface";
 	static_lighting = 0
 	})
+"hZ" = (
+/obj/structure/flora/ash/tall_shroom{
+	color = "#fc03f0"
+	},
+/turf/open/water/overlay/outdoors,
+/area/ruin/powered{
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
+	})
 "ic" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -2062,10 +2148,25 @@
 	name = "\improper Mountains"
 	})
 "iE" = (
-/obj/structure/spider/stickyweb,
+/obj/structure/flora/ash/stem_shroom,
+/mob/living/simple_animal/hostile/faithless{
+	attack_sound = 'sound/weapons/rapierhit.ogg';
+	attack_verb_continuous = "shivs";
+	attack_verb_simple = "shiv";
+	color = "#00FF00";
+	desc = "Intelligent, evil, aggressive humanoid creatures that wants you dead. Kill. Them. All.";
+	faction = list("hostile","vines","plants","mining","slime","faithless");
+	loot = list(/obj/item/kitchen/knife/shiv);
+	melee_damage_lower = 10;
+	melee_damage_upper = 10;
+	name = "Goblin";
+	response_help_continuous = "stares at";
+	response_help_simple = "stare at";
+	wander = 0
+	},
 /turf/open/misc/grass/planet{
 	baseturfs = /turf/open/misc/dirt/planet;
-	color = "#fbff00";
+	color = "#00ccff";
 	desc = "A patch of grass?";
 	name = "fungal grass"
 	},
@@ -2629,8 +2730,7 @@
 	harvested_name = "leafless fungi-caps";
 	name = "fungi-caps"
 	},
-/obj/structure/spider/stickyweb,
-/turf/open/misc/sandy_dirt/planet,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -2845,6 +2945,13 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
+"lJ" = (
+/obj/item/storage/bag/quiver,
+/turf/open/water/overlay/outdoors,
+/area/ruin/powered{
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
+	})
 "lL" = (
 /obj/structure/rack{
 	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
@@ -2934,11 +3041,8 @@
 	name = "\improper Mountains"
 	})
 "lX" = (
-/obj/structure/flora/ash/tall_shroom{
-	color = "#fc03f0"
-	},
-/obj/structure/spider/stickyweb,
-/turf/open/misc/sandy_dirt/planet,
+/mob/living/simple_animal/hostile/giant_spider,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -3373,6 +3477,13 @@
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
 	mood_message = "<span class='warning'>We dug too deep!</span>\n";
 	name = "The Circus of Fun"
+	})
+"nW" = (
+/obj/item/food/spidereggs,
+/turf/open/water/overlay/outdoors,
+/area/ruin/powered{
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
 	})
 "nX" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -3901,15 +4012,8 @@
 	name = "\improper Mountains"
 	})
 "pT" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/structure/mineral_door/iron,
-/turf/open/floor/stone{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava;
-	color = "#9e9e9e"
-	},
+/obj/structure/barricade/wooden,
+/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -4235,9 +4339,8 @@
 	name = "\improper Mountains"
 	})
 "qW" = (
-/obj/structure/spider/stickyweb,
-/obj/item/food/spidereggs,
-/turf/open/misc/sandy_dirt/planet,
+/obj/structure/deployable_barricade/wooden,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -4289,6 +4392,7 @@
 	})
 "rp" = (
 /obj/item/gun/ballistic/bow,
+/mob/living/simple_animal/hostile/giant_spider,
 /turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -4837,17 +4941,6 @@
 	name = "Surface";
 	static_lighting = 0
 	})
-"uw" = (
-/obj/structure/flora/ash/tall_shroom{
-	color = "#fc03f0"
-	},
-/obj/structure/spider/stickyweb,
-/obj/item/food/spidereggs,
-/turf/open/misc/sandy_dirt/planet,
-/area/ruin/powered{
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "uz" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/crude,
@@ -4934,17 +5027,9 @@
 	name = "The Circus of Fun"
 	})
 "uO" = (
-/obj/item/highfrequencyblade{
-	color = "#DC143C";
-	desc = "A high-frequency blade that has astonishing metal properties and an ominous, crimson glow. Wielding it in two hands will allow you to deflect gunfire.";
-	force = 30;
-	light_color = "#DC143CF";
-	light_power = 3;
-	light_range = 1;
-	max_integrity = 2000;
-	name = "HF Murasama Blade"
-	},
 /obj/structure/stone_tile/surrounding,
+/obj/item/book/granter/spell/forcewall,
+/obj/effect/gibspawner/human,
 /turf/open/indestructible/necropolis/air{
 	color = "#445055";
 	desc = "A chunk of pure slade that is indestructible. It's like an obsidian monolith!";
@@ -5463,7 +5548,6 @@
 	name = "\improper Mountains"
 	})
 "wy" = (
-/obj/structure/spider/stickyweb,
 /mob/living/simple_animal/hostile/giant_spider/tarantula,
 /turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
@@ -6110,7 +6194,7 @@
 	})
 "zh" = (
 /obj/effect/decal/remains/xeno,
-/turf/open/misc/sandy_dirt/planet,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -6752,7 +6836,7 @@
 	},
 /obj/item/gun/ballistic/bow,
 /obj/item/food/spidereggs,
-/turf/open/misc/sandy_dirt/planet,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -6904,7 +6988,6 @@
 	light_range = 3;
 	name = "spore shrooms"
 	},
-/obj/structure/spider/stickyweb,
 /mob/living/simple_animal/hostile/giant_spider/hunter,
 /turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
@@ -6986,22 +7069,6 @@
 /obj/item/forging/tongs,
 /turf/open/floor/wood/large{
 	baseturfs = /turf/open/misc/dirt/planet
-	},
-/area/ruin/powered{
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
-"CF" = (
-/obj/structure/flora/biolumi/mine/weaklight{
-	light_power = 0.2;
-	light_range = 3
-	},
-/obj/structure/spider/stickyweb,
-/turf/open/misc/grass/planet{
-	baseturfs = /turf/open/misc/dirt/planet;
-	color = "#00ccff";
-	desc = "A patch of grass?";
-	name = "fungal grass"
 	},
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -7255,13 +7322,6 @@
 	name = "Surface";
 	static_lighting = 0
 	})
-"Dt" = (
-/obj/structure/spider/stickyweb,
-/turf/open/misc/sandy_dirt/planet,
-/area/ruin/powered{
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "Dy" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
@@ -7316,7 +7376,7 @@
 "DP" = (
 /obj/structure/spider/cocoon,
 /obj/item/clothing/suit/armor/vest/cuirass,
-/turf/open/misc/sandy_dirt/planet,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -7432,13 +7492,13 @@
 	max_integrity = 240
 	},
 /obj/item/clothing/suit/armor/riot/knight/red{
-	armor = list("melee" = 70, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 0, "bio" = 0, "fire" = 80, "acid" = 80, "wound" = 20);
+	armor = list("melee"=70,"bullet"=10,"laser"=10,"energy"=10,"bomb"=0,"bio"=0,"fire"=80,"acid"=80,"wound"=20);
 	desc = "A classic suit of plate armor that was made by some of the best blacksmiths that the Humans have?";
 	max_integrity = 1000;
 	name = "Armure de Plaque"
 	},
 /obj/item/clothing/head/helmet/knight/red{
-	armor = list("melee" = 70, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 0, "bio" = 0, "fire" = 80, "acid" = 80);
+	armor = list("melee"=70,"bullet"=10,"laser"=10,"energy"=10,"bomb"=0,"bio"=0,"fire"=80,"acid"=80);
 	desc = "May lack a fancy ornament on the top however it's still really good armor!";
 	max_integrity = 1000;
 	name = "Casque de Plaque"
@@ -7564,14 +7624,8 @@
 	name = "\improper Mountains"
 	})
 "EH" = (
-/obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/giant_spider/tarantula,
-/turf/open/misc/grass/planet{
-	baseturfs = /turf/open/misc/dirt/planet;
-	color = "#00ccff";
-	desc = "A patch of grass?";
-	name = "fungal grass"
-	},
+/mob/living/simple_animal/hostile/giant_spider/hunter,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -7894,26 +7948,6 @@
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/misc/dirt/planet,
-/area/ruin/powered{
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
-"FY" = (
-/obj/structure/flora/ash/stem_shroom{
-	color = "#00FFFF";
-	desc = "Spore shrooms are a type of underground fungus, and when cut down, yield glowing mushrooms that may change in color afterwards.";
-	harvest_message_high = "You acquire a number of stems from these spore shrooms.";
-	harvest_message_low = "You pick and slice the cap off a spore shroom, leaving the stem.";
-	harvest_message_med = "You pick and decapitate several spore shrooms for their stems.";
-	harvested_desc = "A few tiny spore shrooms around larger stumps. You can already see them growing back.";
-	harvested_name = "harvested spore shrooms";
-	light_color = "#00FFFF";
-	light_range = 3;
-	name = "spore shrooms"
-	},
-/obj/structure/spider/stickyweb,
-/obj/item/food/spidereggs,
-/turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -8475,9 +8509,7 @@
 	light_range = 3;
 	name = "spore shrooms"
 	},
-/obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/giant_spider,
-/turf/open/misc/sandy_dirt/planet,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -8510,18 +8542,6 @@
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
 	color = "#9e9e9e"
-	},
-/area/ruin/powered{
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
-"Ie" = (
-/obj/structure/spider/stickyweb,
-/turf/open/misc/grass/planet{
-	baseturfs = /turf/open/misc/dirt/planet;
-	color = "#00ccff";
-	desc = "A patch of grass?";
-	name = "fungal grass"
 	},
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -8825,9 +8845,8 @@
 	harvested_name = "harvested goblin-caps";
 	name = "goblin-caps"
 	},
-/obj/structure/spider/stickyweb,
 /mob/living/simple_animal/hostile/giant_spider,
-/turf/open/misc/sandy_dirt/planet,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -9056,20 +9075,10 @@
 	mood_message = "<span class='warning'>We dug too deep!</span>\n";
 	name = "The Circus of Fun"
 	})
-"Kb" = (
-/obj/structure/flora/ash/tall_shroom{
-	color = "#fc03f0"
-	},
-/mob/living/simple_animal/hostile/giant_spider/viper,
-/turf/open/misc/sandy_dirt/planet,
-/area/ruin/powered{
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "Kh" = (
 /obj/item/storage/bag/quiver,
 /obj/item/food/spidereggs,
-/turf/open/misc/sandy_dirt/planet,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -9079,7 +9088,9 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/structure/mineral_door/iron,
+/obj/structure/mineral_door/dungeon{
+	color = "#757575"
+	},
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
 	color = "#9e9e9e"
@@ -9661,7 +9672,6 @@
 	melee_damage_upper = 20;
 	name = "trained goblin spider"
 	},
-/obj/structure/spider/stickyweb,
 /turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -9714,23 +9724,18 @@
 	name = "\improper Mountains"
 	})
 "Mz" = (
-/obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/giant_spider/tarantula,
-/turf/open/misc/dirt/planet,
+/obj/effect/decal/remains/human,
+/obj/item/hatchet/wooden,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
 "ME" = (
-/obj/structure/flora/ash/leaf_shroom{
-	color = "#fff44f";
-	desc = "Fungi-caps are underground fungi, likely related to the tower-cap, however has numerous lemon-colored leaves coming out of it. If picked at the perfect time, they tend to taste like fine grain.";
-	harvested_desc = "A bunch of formerly-leafed fungi-caps, with their sporangiums exposed. I thought these were meant to give some sort of wood? Eh, forget it.";
-	harvested_name = "leafless fungi-caps";
-	name = "fungi-caps"
+/obj/structure/flora/biolumi/mine/weaklight{
+	light_power = 0.2;
+	light_range = 3
 	},
-/obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/giant_spider/hunter,
 /turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
@@ -9774,18 +9779,6 @@
 	toolspeed = 0.2
 	},
 /turf/open/misc/dirt/planet,
-/area/ruin/powered{
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
-"MM" = (
-/obj/structure/spider/stickyweb,
-/turf/open/misc/grass/planet{
-	baseturfs = /turf/open/misc/dirt/planet;
-	color = "#ff814f";
-	desc = "A patch of grass?";
-	name = "fungal grass"
-	},
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -9839,13 +9832,6 @@
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
 	color = "#b0b0b0"
 	},
-/area/ruin/powered{
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
-"MV" = (
-/obj/structure/spider/stickyweb,
-/turf/open/misc/dirt/planet,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -9912,7 +9898,7 @@
 	name = "spore shrooms"
 	},
 /obj/item/food/spidereggs,
-/turf/open/misc/sandy_dirt/planet,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -10010,7 +9996,8 @@
 	light_color = "#00fbff";
 	light_range = 2;
 	name = "glittering ore rock";
-	turf_type = /turf/open/floor/plating/dirt/jungle
+	turf_type = /turf/open/floor/plating/dirt/jungle;
+	tool_mine_speed = 300
 	},
 /area/awaymission/caves/listeningpost{
 	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
@@ -10119,25 +10106,6 @@
 	name = "Surface";
 	static_lighting = 0
 	})
-"Ob" = (
-/obj/structure/flora/ash/stem_shroom{
-	color = "#00FFFF";
-	desc = "Spore shrooms are a type of underground fungus, and when cut down, yield glowing mushrooms that may change in color afterwards.";
-	harvest_message_high = "You acquire a number of stems from these spore shrooms.";
-	harvest_message_low = "You pick and slice the cap off a spore shroom, leaving the stem.";
-	harvest_message_med = "You pick and decapitate several spore shrooms for their stems.";
-	harvested_desc = "A few tiny spore shrooms around larger stumps. You can already see them growing back.";
-	harvested_name = "harvested spore shrooms";
-	light_color = "#00FFFF";
-	light_range = 3;
-	name = "spore shrooms"
-	},
-/obj/structure/spider/stickyweb,
-/turf/open/misc/sandy_dirt/planet,
-/area/ruin/powered{
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "Oc" = (
 /obj/structure/table/wood/fancy/red,
 /obj/item/reagent_containers/food/drinks/bottle/holywater/hell{
@@ -10235,7 +10203,6 @@
 	harvested_name = "harvested goblin-caps";
 	name = "goblin-caps"
 	},
-/obj/structure/spider/stickyweb,
 /obj/item/food/spidereggs,
 /turf/open/misc/sandy_dirt/planet,
 /area/ruin/powered{
@@ -10395,8 +10362,8 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/thinplating/dark,
-/obj/structure/mineral_door/iron{
-	color = "#ffd375"
+/obj/structure/mineral_door/dungeon{
+	color = "#757575"
 	},
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
@@ -11004,20 +10971,6 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
-"QP" = (
-/mob/living/simple_animal/hostile/asteroid/goliath/beast/ancient{
-	desc = "Supernatural, fanciful, evil-aligned creatures who inhabit the Underworld that are very large and are among the most powerful enemies you will ever face.";
-	faction = list("hell");
-	health = 800;
-	maxHealth = 800;
-	name = "Demon"
-	},
-/turf/open/lava/smooth,
-/area/awaymission/caves/listeningpost{
-	ambientsounds = list('sound/ambience/ambimine.ogg','sound/ambience/ambicave.ogg','sound/ambience/ambiruin.ogg','sound/ambience/ambiruin2.ogg','sound/ambience/ambiruin3.ogg','sound/ambience/ambiruin4.ogg','sound/ambience/ambiruin5.ogg','sound/ambience/ambiruin6.ogg','sound/ambience/ambiruin7.ogg','sound/ambience/ambidanger.ogg','sound/ambience/ambidanger2.ogg','sound/ambience/ambitech3.ogg','sound/ambience/ambimystery.ogg','sound/ambience/ambimaint1.ogg');
-	mood_message = "<span class='warning'>We dug too deep!</span>\n";
-	name = "The Circus of Fun"
-	})
 "QT" = (
 /obj/machinery/computer/communications,
 /turf/open/indestructible/hotelwood,
@@ -11257,6 +11210,22 @@
 /obj/machinery/telecomms/allinone/indestructable,
 /turf/open/indestructible/hotelwood,
 /area/ruin/powered/clownplanet)
+"RE" = (
+/obj/structure/flora/ash/cap_shroom{
+	color = "#ff0000";
+	desc = "Several mushrooms that are all dark-red. The red means that it is dangerous, not faster!";
+	harvest_message_high = "You slice off a number of caps from these goblin-caps.";
+	harvest_message_low = "You slice the cap off a single goblin-cap.";
+	harvest_message_med = "You slice off a few caps from the larger goblin-caps.";
+	harvested_desc = "Are there goblins around here? These ones are already picked.";
+	harvested_name = "harvested goblin-caps";
+	name = "goblin-caps"
+	},
+/turf/open/water/overlay/outdoors,
+/area/ruin/powered{
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
+	})
 "RG" = (
 /obj/structure/flora/ash/stem_shroom,
 /obj/structure/barricade/wooden,
@@ -12152,6 +12121,13 @@
 	name = "Surface";
 	static_lighting = 0
 	})
+"UL" = (
+/obj/structure/flora/ash/seraka,
+/turf/open/water/overlay/outdoors,
+/area/ruin/powered{
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
+	})
 "UN" = (
 /obj/structure/spawner/mining/goliath,
 /turf/open/misc/asteroid/basalt/lava,
@@ -12214,23 +12190,6 @@
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
 	})
-"Vb" = (
-/obj/structure/flora/ash/cap_shroom{
-	color = "#ff0000";
-	desc = "Several mushrooms that are all dark-red. The red means that it is dangerous, not faster!";
-	harvest_message_high = "You slice off a number of caps from these goblin-caps.";
-	harvest_message_low = "You slice the cap off a single goblin-cap.";
-	harvest_message_med = "You slice off a few caps from the larger goblin-caps.";
-	harvested_desc = "Are there goblins around here? These ones are already picked.";
-	harvested_name = "harvested goblin-caps";
-	name = "goblin-caps"
-	},
-/obj/structure/spider/stickyweb,
-/turf/open/misc/sandy_dirt/planet,
-/area/ruin/powered{
-	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
-	name = "\improper Mountains"
-	})
 "Vc" = (
 /obj/structure/alien/egg/burst,
 /turf/open/floor/material/meat{
@@ -12262,17 +12221,8 @@
 	name = "The Circus of Fun"
 	})
 "Ve" = (
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/obj/structure/mineral_door/iron{
-	color = "#ffd375"
-	},
-/turf/open/floor/stone{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava;
-	color = "#9e9e9e"
-	},
+/obj/item/clothing/head/helmet/reagent_clothing,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -12461,6 +12411,16 @@
 	base_lighting_alpha = 255;
 	name = "Surface";
 	static_lighting = 0
+	})
+"Wg" = (
+/obj/structure/deployable_barricade/wooden{
+	dir = 1;
+	pixel_y = 13
+	},
+/turf/open/water/overlay/outdoors,
+/area/ruin/powered{
+	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
+	name = "\improper Mountains"
 	})
 "Wi" = (
 /mob/living/simple_animal/hostile/giant_spider/viper,
@@ -12985,8 +12945,8 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
 	},
-/obj/structure/mineral_door/iron{
-	color = "#ffd375"
+/obj/structure/mineral_door/dungeon{
+	color = "#757575"
 	},
 /turf/open/floor/stone{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava;
@@ -13206,16 +13166,11 @@
 	name = "\improper Mountains"
 	})
 "YY" = (
-/obj/structure/flora/ash/leaf_shroom{
-	color = "#fff44f";
-	desc = "Fungi-caps are underground fungi, likely related to the tower-cap, however has numerous lemon-colored leaves coming out of it. If picked at the perfect time, they tend to taste like fine grain.";
-	harvested_desc = "A bunch of formerly-leafed fungi-caps, with their sporangiums exposed. I thought these were meant to give some sort of wood? Eh, forget it.";
-	harvested_name = "leafless fungi-caps";
-	name = "fungi-caps"
+/obj/structure/flora/ash/tall_shroom{
+	color = "#fc03f0"
 	},
-/obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/giant_spider,
-/turf/open/misc/sandy_dirt/planet,
+/obj/item/food/spidereggs,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -13311,7 +13266,7 @@
 	name = "fungi-caps"
 	},
 /obj/item/food/spidereggs,
-/turf/open/misc/sandy_dirt/planet,
+/turf/open/water/overlay/outdoors,
 /area/ruin/powered{
 	mood_message = "<span class='nicegreen'>The underground is a comforting place\n</span>";
 	name = "\improper Mountains"
@@ -62882,9 +62837,9 @@ BM
 BM
 BM
 Qj
-GD
-GD
-GD
+Gx
+Gx
+Gx
 GD
 GD
 GD
@@ -63139,18 +63094,18 @@ hk
 BM
 BM
 hk
-Ie
+BM
+Xh
+Xh
+Xh
+Xh
+Gx
 GD
 GD
 GD
 GD
 GD
-GD
-GD
-GD
-GD
-GD
-Ie
+BM
 BM
 BM
 hk
@@ -63396,20 +63351,20 @@ Qj
 BM
 BM
 hk
-Ie
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-Ie
 BM
-BM
+Xh
+Xh
+GD
+Xh
+GD
+GD
+GD
+GD
+Gx
+Gx
+Gx
+Ar
+yf
 BM
 BM
 BM
@@ -63599,8 +63554,8 @@ kq
 ps
 GD
 GD
-Dt
-Dt
+Xh
+Xh
 GD
 Gx
 GD
@@ -63652,22 +63607,22 @@ hk
 BM
 BM
 BM
-cD
-Ie
-Ie
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-Ie
-Ie
 hk
 BM
-BM
+Gx
+Gx
+GD
+Xh
+Xh
+GD
+GD
+GD
+GD
+Xh
+Xh
+Xh
+Xh
+yf
 BM
 hk
 BM
@@ -63855,10 +63810,10 @@ no
 no
 no
 GD
-Dt
+Xh
 Mr
-qW
-Dt
+Ai
+Xh
 GD
 GD
 Xh
@@ -63905,26 +63860,26 @@ GD
 GD
 GD
 GD
-GD
-CF
-Ie
-cD
-Ie
-Ie
-Ie
-Ie
-GD
-GD
+Gx
+Xh
+Xh
+Gx
+Gx
+Xh
+Gx
+Xh
 GD
 GD
+Xh
+Gx
 GD
 GD
-Ie
-cD
-Ie
-cD
-BM
-BM
+Xh
+Xh
+Xh
+Xh
+Xh
+zM
 BM
 BM
 Qj
@@ -64112,10 +64067,10 @@ kq
 no
 GD
 GD
-qW
-qW
-Dt
-qW
+Ai
+Ai
+Xh
+Ai
 GD
 Xh
 Xh
@@ -64162,26 +64117,26 @@ GD
 GD
 GD
 GD
+Gx
+Xh
+Xh
+Gx
+Xh
+Xh
+Xh
+Xh
+Xh
 GD
-GD
-Ie
-Ie
-Ie
-cD
-Ie
-Ie
-Dt
-GD
-GD
-GD
-GD
-GD
-Ie
-Ie
-Ie
-Ie
-Ie
-GD
+Xh
+Xh
+Xh
+Gx
+Gx
+Gx
+Gx
+Xh
+Xh
+Gx
 BM
 BM
 kq
@@ -64370,7 +64325,7 @@ kq
 GD
 GD
 Mr
-Dt
+Xh
 Dl
 GD
 GD
@@ -64420,25 +64375,25 @@ GD
 GD
 GD
 GD
+Xh
+Xh
+Gx
+Xh
+Xh
+Xh
+Xh
+Xh
+Xh
+Xh
 GD
+Xh
+Xh
+Xh
+Xh
+Ip
+Xh
 GD
-Ie
-Ie
-Ie
-Ie
-Ie
-cq
-Dt
-GD
-GD
-GD
-GD
-Dt
-Dt
-EH
-Ie
-GD
-GD
+Gx
 kq
 kq
 kq
@@ -64626,8 +64581,8 @@ kq
 kq
 Qj
 GD
-Dt
-qW
+Xh
+Ai
 Xh
 Ip
 Xh
@@ -64678,24 +64633,24 @@ GD
 GD
 GD
 GD
-GD
-GD
-Ie
-Ie
-EH
-Dt
+Xh
+Xh
+Xh
+Xh
+Xh
+Xh
 wo
+Gx
+Gx
+GD
+GD
+Xh
+Xh
+Xh
+Gx
 Xh
 GD
-GD
-GD
-Dt
-Dt
-Dt
-Dt
-Dt
-GD
-GD
+Gx
 GD
 kq
 kq
@@ -64884,7 +64839,7 @@ BM
 rE
 GD
 qN
-Dt
+Xh
 Ai
 GD
 Xh
@@ -64934,23 +64889,23 @@ GD
 GD
 GD
 GD
+Gx
 GD
 GD
-GD
-GD
-Ie
-Dt
+Gx
+Gx
+Gx
 Xh
-Xh
-Xh
+Gx
+Gx
 Pb
 GD
-GD
-cq
-Dt
-Dt
-Dt
-GD
+Gx
+Xh
+Xh
+Xh
+Gx
+Gx
 GD
 GD
 GD
@@ -65141,7 +65096,7 @@ rE
 RG
 GD
 GD
-Dt
+Xh
 Mr
 GD
 Xh
@@ -65195,18 +65150,18 @@ GD
 GD
 GD
 GD
-Dt
-Dt
+Xh
+Xh
 Xh
 Hc
 gH
 Xh
-qW
-lX
-FY
-Dt
-qW
-Dt
+Ai
+Gx
+Xh
+Xh
+Xh
+Xh
 GD
 GD
 GD
@@ -65453,16 +65408,16 @@ GD
 GD
 GD
 GD
-Dt
 Xh
-Dt
+Xh
+Xh
 YR
 Vn
 Xh
-PP
-br
-Dt
-Dt
+pT
+Xh
+Xh
+Xh
 GD
 GD
 GD
@@ -65709,16 +65664,16 @@ GD
 GD
 GD
 GD
-GD
-GD
 Xh
-Dt
-Dt
+Xh
+wy
+Xh
+ME
 XB
-Kb
 PP
-pZ
-Dt
+pT
+pT
+Xh
 GD
 GD
 GD
@@ -65952,7 +65907,6 @@ no
 no
 kq
 kq
-kq
 GD
 GD
 GD
@@ -65966,17 +65920,18 @@ GD
 GD
 GD
 GD
-GD
+Xh
+wy
 Pb
 oi
 Ai
-Dt
+Xh
 rp
 PP
-lX
-qW
-GD
-GD
+Xh
+pT
+Gx
+Gx
 GD
 GD
 GD
@@ -66209,9 +66164,7 @@ kq
 kq
 no
 kq
-kq
-kq
-kq
+pK
 GD
 GD
 GD
@@ -66223,14 +66176,16 @@ GD
 GD
 GD
 GD
+Xh
+Xh
 PW
 Xh
 Wi
-Dt
-Dt
-Dt
-Ob
-uw
+Xh
+GK
+GK
+Ia
+YY
 Sn
 GD
 GD
@@ -66465,41 +66420,41 @@ Qj
 kq
 no
 kq
-GD
-kq
-no
-no
-kq
-GD
-GD
-GD
-GD
-GD
+pK
+pK
+pK
+UL
+GK
+Gx
+Gx
+Gx
 GD
 GD
 GD
-PW
 GD
-kT
-Vb
-Dt
-Dt
-Kh
-Dt
 Xh
-jr
-PP
+PW
+Xh
+qF
+PW
+GK
+GK
+Kh
+GK
+GK
+lX
+hZ
 DP
 GD
 GD
 GD
+Gx
+Gx
+Gx
 GD
 GD
 GD
-GD
-GD
-GD
-ps
+pK
 ps
 xr
 ps
@@ -66722,42 +66677,42 @@ hk
 BM
 BM
 no
-GD
-GD
-no
-kq
-kq
-kq
-MV
-MV
-Dt
-Dt
+pK
+pK
+UL
+GK
+GK
+Wg
+GK
+qW
+GK
+GK
 GD
 PW
-kT
-Dt
-Ai
-Xh
-Vb
-Dt
+qF
+GK
+nW
+GK
+RE
+GK
 dk
 DP
-Dt
-Dt
-PP
+GK
+GK
+hZ
 ds
-gH
-Dt
-Dt
-Dt
-MV
-MV
-MV
-MV
-iE
-iE
-ps
-xr
+Ve
+GK
+GK
+GK
+Wg
+GK
+qW
+GK
+pK
+pK
+pK
+pK
 ps
 Cb
 GD
@@ -66943,7 +66898,7 @@ qN
 jV
 UE
 GD
-ps
+br
 ps
 xr
 ps
@@ -66983,38 +66938,38 @@ GD
 GD
 GD
 GD
-kq
-MV
-MV
-Dt
-wy
+GK
+Wg
+GK
+qW
+GK
 kT
 kT
-qF
-Hc
-Vb
-Dt
-wK
+kT
+GK
+RE
+GK
+Mz
 Jl
 BP
-gH
+Ve
 Wi
 Xh
-Dt
-qW
-Vn
-uw
-lX
+wy
+Ai
+lJ
+YY
+hZ
 Na
-Xh
-Dt
-Mz
-MV
-MV
-MV
-ps
-ps
-ps
+GK
+Wg
+GK
+qW
+GK
+GK
+pK
+pK
+pK
 ps
 GD
 GD
@@ -67241,36 +67196,36 @@ GD
 GD
 GD
 GD
+Gx
+Gx
+Gx
 GD
-GD
-GD
-GD
-Dt
-Xh
-PW
+GK
+GK
+RE
 zh
 Zv
 kT
-Dt
-Dt
+Xh
+Xh
 Xh
 wK
-GD
 Xh
+jr
 Ta
-Dt
-Ob
-qW
-Hc
+Xh
 pZ
+Ai
+EH
+Ia
+GD
+Gx
+Gx
+Gx
 GD
 GD
-GD
-GD
-GD
-GD
-xr
-Cb
+pK
+pK
 Cb
 xr
 GD
@@ -67507,18 +67462,18 @@ GD
 GD
 Pb
 Xh
-Dt
-kT
-qW
-Dt
+ME
+qF
+Ai
+Xh
 GD
 GD
 Xh
 pZ
 Ai
-Ob
-Dt
-Dt
+pZ
+Xh
+Xh
 Ai
 GD
 GD
@@ -67526,8 +67481,8 @@ GD
 GD
 GD
 GD
-xr
-ps
+pK
+pK
 xr
 ps
 GD
@@ -67761,23 +67716,23 @@ GD
 GD
 GD
 GD
-Dt
-Dt
-Dt
+Xh
+Xh
+Xh
 Or
 qF
 Xh
-Dt
+Hc
 GD
 GD
 GD
 Pb
 PP
 PP
-Dt
-Dt
-Dt
-Dt
+ME
+Xh
+Xh
+Xh
 GD
 GD
 GD
@@ -68020,7 +67975,7 @@ GD
 GD
 Xh
 Sn
-kT
+qF
 qF
 Xh
 GD
@@ -68031,12 +67986,12 @@ GD
 Xh
 Sf
 PP
-lX
+PP
 PP
 PP
 Xh
 GD
-GD
+Gx
 GD
 GD
 GD
@@ -68231,7 +68186,7 @@ GD
 xr
 Cb
 Cb
-ps
+JU
 GD
 GD
 GD
@@ -68273,13 +68228,13 @@ GD
 GD
 GD
 GD
-GD
-Dt
+Gx
+Gx
 qF
-Dt
-qW
-kT
-qW
+Xh
+Ai
+qF
+Ai
 GD
 GD
 GD
@@ -68287,13 +68242,13 @@ GD
 GD
 GD
 Xh
-Dt
+Xh
 Cn
-lX
+PP
 Xh
 Xh
 Xh
-GD
+Gx
 GD
 GD
 GD
@@ -68530,27 +68485,27 @@ GD
 GD
 GD
 GD
-Dt
-Dt
-ME
-Vb
-Dt
 Xh
-Dt
-GD
-GD
-GD
-GD
-GD
-GD
-Dt
-Dt
+Gx
+Gx
+pT
+pT
 Xh
-Dt
-lX
+Xh
+GD
+GD
+GD
+GD
+GD
+GD
 Xh
 Xh
 Xh
+Xh
+PP
+Xh
+Xh
+Gx
 GD
 GD
 GD
@@ -68780,18 +68735,18 @@ GD
 GD
 GD
 GD
+Gx
+Xh
+Xh
+Xh
+Gx
 GD
-GD
-GD
-GD
-GD
-GD
-Dt
-Dt
-kT
-kT
-PW
-Vb
+Xh
+Xh
+Xh
+Xh
+Xh
+pT
 Xh
 GD
 GD
@@ -68804,11 +68759,11 @@ GD
 GD
 Xh
 Xh
-Dt
-Ob
+Xh
 pZ
-PP
-Dt
+Gx
+Gx
+Gx
 GD
 GD
 GD
@@ -69037,19 +68992,19 @@ BM
 kq
 kq
 GD
-GD
-GD
-GD
-GD
-GD
-Dt
-Dt
-Dt
-Dt
-YY
-Dt
-kT
-br
+Gx
+Xh
+Xh
+Xh
+Gx
+Xh
+Xh
+Xh
+Xh
+Xh
+Xh
+pT
+Xh
 GD
 GD
 GD
@@ -69062,12 +69017,12 @@ GD
 GD
 Xh
 Xh
-Dt
-Ob
-Dt
-Dt
-Dt
-MV
+Xh
+Xh
+Xh
+Xh
+Xh
+kq
 GD
 GD
 GD
@@ -69256,7 +69211,7 @@ Xh
 Xh
 UB
 ps
-pt
+ch
 ps
 ps
 Xh
@@ -69295,20 +69250,17 @@ no
 kq
 PI
 PI
-GD
-GD
-MM
-MM
-MM
-Dt
-wy
-Vb
-Dt
-Dt
-qF
-Dt
-Dt
-GD
+PI
+Xh
+Xh
+Gx
+Gx
+Gx
+Xh
+Xh
+Xh
+Xh
+Gx
 GD
 GD
 GD
@@ -69319,13 +69271,16 @@ GD
 GD
 GD
 GD
-Dt
-Dt
-Ia
-Dt
-MV
-MV
-MV
+GD
+GD
+GD
+Xh
+Gx
+Gx
+Gx
+kq
+kq
+kq
 GD
 GD
 GD
@@ -69556,15 +69511,13 @@ Gz
 qd
 qd
 qd
-MM
-MM
-Dt
-Dt
-Dt
-GD
-PW
-qF
-Dt
+PI
+Gx
+Xh
+Xh
+Xh
+Xh
+Gx
 GD
 GD
 GD
@@ -69576,14 +69529,16 @@ GD
 GD
 GD
 GD
-Dt
-Dt
-Ob
-MV
-MV
-MV
-MV
-MV
+GD
+GD
+Xh
+Gx
+Xh
+kq
+kq
+kq
+kq
+kq
 GD
 GD
 GD
@@ -69814,15 +69769,12 @@ Gz
 Gz
 Gz
 qd
-MM
-Dt
-Dt
-GD
-GD
-GD
-PW
-qF
-Dt
+Xh
+Xh
+Xh
+Xh
+Xh
+Gx
 GD
 GD
 GD
@@ -69834,13 +69786,16 @@ GD
 GD
 GD
 GD
-MV
-MV
-MV
-Mz
-MV
-MV
-MV
+GD
+Gx
+Gx
+Gx
+kq
+kq
+kq
+kq
+kq
+kq
 no
 no
 kq
@@ -70071,33 +70026,33 @@ Gz
 PI
 PI
 PI
-MM
+Gx
+Xh
+Xh
+Xh
+Xh
+Gx
+GD
+GD
+GD
+Gx
 GD
 GD
 GD
 GD
 GD
 GD
-Dt
-Dt
 GD
 GD
 GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-MV
-MV
-MV
-MV
-MV
-MV
-MV
-MV
+kq
+kq
+kq
+kq
+kq
+kq
+kq
+kq
 kq
 kq
 no
@@ -70286,7 +70241,7 @@ qd
 kq
 kq
 kq
-kq
+cq
 kq
 GD
 AA
@@ -70328,6 +70283,16 @@ PI
 PI
 PI
 GD
+Gx
+Gx
+Gx
+Xh
+Xh
+Xh
+GD
+GD
+Xh
+Xh
 GD
 GD
 GD
@@ -70335,25 +70300,15 @@ GD
 GD
 GD
 GD
-Dt
-Mz
-MV
 GD
+kq
+kq
+kq
 GD
-GD
-GD
-GD
-GD
-GD
-GD
-MV
-ch
-MV
-GD
-MV
-MV
-MV
-MV
+kq
+kq
+kq
+kq
 kq
 kq
 kq
@@ -70588,15 +70543,15 @@ GD
 GD
 GD
 GD
+Xh
+Xh
+Xh
+Xh
+Xh
+Xh
+Xh
 GD
-GD
-GD
-GD
-GD
-MV
-MV
-GD
-GD
+Gx
 GD
 GD
 GD
@@ -70604,13 +70559,13 @@ GD
 GD
 BM
 BM
-MV
+kq
 GD
 GD
 GD
-MV
-MV
-MV
+kq
+kq
+kq
 kq
 kq
 kq
@@ -70843,17 +70798,17 @@ qd
 GD
 GD
 GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-MV
-MV
-MV
-GD
+Gx
+Xh
+Xh
+Xh
+Gx
+Xh
+Xh
+Gx
+Xh
+Xh
+Gx
 GD
 GD
 GD
@@ -71071,7 +71026,7 @@ GD
 GD
 GD
 ps
-ps
+br
 xr
 ps
 xr
@@ -71100,17 +71055,17 @@ qd
 GD
 GD
 GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-GD
-MV
-kq
-GD
+Gx
+Xh
+Xh
+Xh
+Gx
+Gx
+Gx
+Gx
+Xh
+Xh
+Gx
 GD
 GD
 GD
@@ -71357,14 +71312,14 @@ qd
 Gz
 GD
 GD
-GD
-GD
-GD
-GD
-GD
+Gx
+Gx
+Xh
+Gx
+Gx
 GD
 kq
-kq
+Gx
 kq
 no
 kq
@@ -71575,7 +71530,7 @@ hk
 hk
 BM
 Qj
-hk
+iE
 hk
 Qj
 kq
@@ -72086,7 +72041,7 @@ XK
 XK
 GD
 GD
-BM
+cD
 BM
 BM
 Qj
@@ -72357,7 +72312,7 @@ no
 kq
 ps
 ps
-ps
+JU
 GD
 Ip
 GD
@@ -72607,7 +72562,7 @@ At
 kq
 kq
 kq
-kq
+cq
 kq
 kq
 kq
@@ -85451,7 +85406,7 @@ vt
 YM
 YM
 YM
-oq
+Yp
 YM
 YM
 YM
@@ -85463,7 +85418,7 @@ kA
 YM
 YM
 YM
-oq
+Yp
 YM
 YM
 YM
@@ -89046,7 +89001,7 @@ vt
 YM
 YM
 YM
-oq
+Yp
 YM
 YM
 YM
@@ -89064,7 +89019,7 @@ vt
 YM
 YM
 YM
-oq
+Yp
 YM
 YM
 YM
@@ -89590,7 +89545,7 @@ Gl
 wm
 dS
 Gl
-Ve
+Ki
 kA
 kA
 kA
@@ -89820,19 +89775,19 @@ Gl
 Gl
 Gl
 Gl
-pT
+OX
 Gl
 Gl
-pT
+OX
 Gl
 Gl
 Gl
 Gl
 Gl
-pT
+OX
 Gl
 Gl
-pT
+OX
 Gl
 Gl
 Gl
@@ -98122,7 +98077,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -98238,7 +98193,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -98435,7 +98390,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -98996,7 +98951,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -99221,7 +99176,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -99658,7 +99613,6 @@ xv
 xv
 xv
 xv
-QP
 xv
 xv
 xv
@@ -99673,7 +99627,8 @@ xv
 xv
 xv
 xv
-QP
+xv
+xv
 xv
 xv
 xv
@@ -99715,7 +99670,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -99744,7 +99699,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -100198,7 +100153,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -100481,7 +100436,6 @@ xv
 xv
 xv
 xv
-QP
 xv
 xv
 xv
@@ -100491,7 +100445,8 @@ xv
 xv
 xv
 xv
-QP
+xv
+xv
 xv
 xv
 xv
@@ -100551,7 +100506,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -100694,7 +100649,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -100821,7 +100776,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -101277,7 +101232,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -101307,7 +101262,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -101372,7 +101327,7 @@ sy
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -101451,7 +101406,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -101482,7 +101437,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -101504,7 +101459,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -101556,7 +101511,6 @@ xv
 xv
 xv
 xv
-QP
 xv
 xv
 xv
@@ -101584,7 +101538,8 @@ xv
 xv
 xv
 xv
-QP
+xv
+xv
 xv
 xv
 xv
@@ -101670,7 +101625,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -102004,7 +101959,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -102227,7 +102182,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -102283,7 +102238,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -102408,7 +102363,6 @@ xv
 xv
 xv
 xv
-QP
 xv
 xv
 xv
@@ -102431,7 +102385,8 @@ xv
 xv
 xv
 xv
-QP
+xv
+xv
 xv
 xv
 xv
@@ -102708,7 +102663,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -102782,7 +102737,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -102884,7 +102839,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -102954,7 +102909,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -103428,7 +103383,6 @@ sy
 xv
 xv
 xv
-QP
 xv
 xv
 xv
@@ -103451,7 +103405,8 @@ xv
 xv
 xv
 xv
-QP
+xv
+xv
 xv
 xv
 xv
@@ -103650,7 +103605,6 @@ xv
 xv
 xv
 xv
-QP
 xv
 xv
 xv
@@ -103660,7 +103614,8 @@ xv
 xv
 xv
 xv
-QP
+xv
+xv
 xv
 xv
 xv
@@ -103699,7 +103654,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -104759,7 +104714,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -104940,7 +104895,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -105006,7 +104961,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -105044,7 +104999,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 gj
 gj
@@ -105291,7 +105246,7 @@ nS
 nS
 xv
 xv
-QP
+xv
 xv
 xv
 RH
@@ -105567,7 +105522,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -105624,7 +105579,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -105830,7 +105785,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 gj
@@ -105866,7 +105821,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -105955,7 +105910,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -106166,7 +106121,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -106231,7 +106186,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -106481,7 +106436,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -106546,7 +106501,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -106714,7 +106669,7 @@ gj
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -106825,7 +106780,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -107111,7 +107066,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -107157,7 +107112,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -107356,7 +107311,6 @@ xv
 xv
 xv
 xv
-QP
 xv
 xv
 xv
@@ -107376,7 +107330,8 @@ xv
 xv
 xv
 xv
-QP
+xv
+xv
 xv
 xv
 xv
@@ -107396,7 +107351,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -107944,7 +107899,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -107957,7 +107912,7 @@ mf
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
@@ -108120,7 +108075,7 @@ xv
 xv
 xv
 xv
-QP
+xv
 xv
 xv
 xv
