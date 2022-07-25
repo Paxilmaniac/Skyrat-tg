@@ -1,362 +1,309 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ad" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/dark/diagonal,
-/area/shuttle/blackmarket_chevvy)
-"bu" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/shuttle/cargo,
+/obj/structure/table/wood,
+/obj/item/seeds/tobacco/space,
+/obj/item/seeds/peanut{
+	pixel_y = 9;
+	pixel_x = 5
+	},
+/obj/item/seeds/odious_puffball{
+	pixel_x = -9;
+	pixel_y = 6
+	},
+/obj/item/seeds/greenbean{
+	pixel_y = -3;
+	pixel_x = -7
+	},
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "cL" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/shuttle/cargo,
+/obj/structure/table/wood,
+/obj/item/fishing_rod/master,
+/obj/item/fishing_rod/master{
+	pixel_y = 8;
+	pixel_x = 3
+	},
+/obj/item/fishing_line/bouncy{
+	pixel_y = 13;
+	pixel_x = -9
+	},
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "en" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
+/obj/structure/table/wood,
+/obj/item/clothing/suit/armor/elder_atmosian{
+	pixel_x = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/shuttle/cargo,
+/obj/item/clothing/suit/armor/bone{
+	pixel_y = 14;
+	pixel_x = 4
+	},
+/obj/item/clothing/suit/armor/vest/cuirass{
+	pixel_x = -8;
+	pixel_y = 6
+	},
+/obj/item/clothing/suit/armor/vest/cuirass{
+	pixel_x = -6
+	},
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "eu" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
+/obj/structure/table/wood,
+/obj/item/gun/ballistic/bow,
+/obj/item/gun/ballistic/bow{
+	pixel_x = -6;
+	pixel_y = -2
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
+/obj/item/storage/bag/quiver{
+	pixel_y = -7;
+	pixel_x = -7
 	},
-/obj/structure/fans/tiny/forcefield{
-	dir = 4
-	},
-/obj/machinery/door/poddoor{
-	id = "skiffcargo"
-	},
-/obj/structure/fluff/metalpole/end{
-	dir = 4;
-	pixel_x = 32
-	},
-/turf/open/floor/engine,
-/area/shuttle/blackmarket_chevvy)
-"fp" = (
-/turf/closed/wall/mineral/titanium,
-/area/shuttle/blackmarket_chevvy)
-"gt" = (
-/obj/structure/shuttle/engine/propulsion/in_wall{
-	dir = 1;
-	pixel_y = 32
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "jD" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/machinery/door/airlock/external,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "skiffside"
+/obj/structure/table/wood,
+/obj/item/hatchet/wooden,
+/obj/item/hatchet/wooden{
+	pixel_x = 5;
+	pixel_y = 4
 	},
-/turf/open/floor/iron/dark/textured_large,
+/obj/item/hatchet/wooden{
+	pixel_y = 8;
+	pixel_x = -3
+	},
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "ka" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer4{
-	dir = 4
+/obj/structure/table/wood,
+/obj/item/clothing/shoes/combat/expeditionary_corps{
+	pixel_x = 4
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/bot_white,
-/turf/open/floor/iron/dark/smooth_large,
+/obj/item/clothing/shoes/jackboots/ashwalker{
+	pixel_x = 9;
+	pixel_y = 9
+	},
+/obj/item/clothing/shoes/jackboots/ashwalker/legate{
+	pixel_x = -8;
+	pixel_y = -8
+	},
+/obj/item/clothing/shoes/cowboy/lizard/masterwork{
+	pixel_x = -9;
+	pixel_y = 9
+	},
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "nB" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
+/obj/structure/table/wood,
+/obj/item/storage/box/papersack/meat,
+/obj/item/storage/box/papersack/meat{
+	pixel_x = 6;
+	pixel_y = 5
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/shuttle/cargo,
+/obj/item/storage/box/papersack/meat{
+	pixel_y = 9;
+	pixel_x = -4
+	},
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "pI" = (
-/obj/structure/fluff/metalpole/end{
-	dir = 4;
-	pixel_x = 32
+/obj/structure/table/wood,
+/obj/item/melee/baseball_bat/ablative,
+/obj/item/melee/cleric_mace{
+	pixel_y = 10;
+	pixel_x = 4
 	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/blackmarket_chevvy)
-"ss" = (
-/obj/structure/marker_beacon/burgundy,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/blackmarket_chevvy)
-"tp" = (
-/obj/structure/shuttle/engine/propulsion/in_wall{
-	pixel_y = -32
+/obj/item/melee/curator_whip{
+	pixel_x = 3;
+	pixel_y = -9
 	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "uW" = (
-/obj/structure/shuttle/engine/heater{
-	dir = 8
+/obj/structure/table/wood,
+/obj/item/melee/baton,
+/obj/item/melee/baton{
+	pixel_y = 6
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
+/obj/item/melee/chainofcommand/tailwhip/kitty{
+	pixel_y = 9;
+	pixel_x = -13
 	},
-/obj/structure/window/reinforced/plasma/spawner/east,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/plating/airless,
-/area/shuttle/blackmarket_chevvy)
-"vK" = (
-/obj/machinery/button/door/directional/north{
-	id = "skiffextb";
-	name = "External Airlock Bolt Control";
-	specialfunctions = 4;
-	normaldoorcontrol = 1
-	},
-/obj/machinery/light/dim/directional/south,
-/turf/open/floor/catwalk_floor,
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "wE" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 8
+/obj/structure/table/wood,
+/obj/item/grown/cotton/durathread{
+	pixel_x = 6
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/shuttle/cargo,
+/obj/item/grown/cotton/durathread{
+	pixel_y = -4
+	},
+/obj/item/grown/cotton/durathread{
+	pixel_y = 7
+	},
+/obj/item/grown/cotton/durathread{
+	pixel_x = -6;
+	pixel_y = 2
+	},
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "yt" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/drinks/bottle/lizardwine{
+	pixel_y = 3
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
+/obj/item/reagent_containers/food/drinks/bottle/kahlua{
+	pixel_x = 8
 	},
-/obj/machinery/button/door/directional/south{
-	name = "Blast Door Control";
-	id = "skiffcargo"
+/obj/item/reagent_containers/food/drinks/bottle/amaretto{
+	pixel_y = 7;
+	pixel_x = 18
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/shuttle/cargo,
+/obj/item/reagent_containers/food/drinks/bottle/applejack{
+	pixel_x = -8;
+	pixel_y = 3
+	},
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "zi" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
+/obj/structure/table/wood,
+/obj/item/melee/tomahawk{
+	pixel_y = 6
 	},
-/obj/machinery/atmospherics/components/unary/passive_vent/layer2{
-	dir = 4
-	},
-/obj/structure/fluff/metalpole/end{
-	dir = 8;
-	pixel_x = -32
-	},
-/obj/structure/shuttle/engine/propulsion{
-	dir = 8
-	},
-/turf/open/floor/plating/airless,
+/obj/item/melee/cleaving_saw,
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "zH" = (
-/obj/machinery/button/door/directional/north{
-	id = "skiffexts";
-	name = "External Airlock Bolt Control";
-	specialfunctions = 4;
-	normaldoorcontrol = 1
+/obj/structure/table/wood,
+/obj/item/clothing/head/helmet/gladiator,
+/obj/item/clothing/head/helmet/gladiator,
+/obj/item/clothing/head/helmet/gladiator,
+/obj/item/clothing/head/helmet/elder_atmosian{
+	pixel_x = 7;
+	pixel_y = 6
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/catwalk_floor,
-/area/shuttle/blackmarket_chevvy)
-"Dx" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/machinery/door/airlock/external,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
+/obj/item/clothing/head/helmet/skull{
+	pixel_y = 6;
+	pixel_x = -8
 	},
-/turf/open/floor/iron/dark/smooth_large,
-/area/shuttle/blackmarket_chevvy)
-"Ee" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/dim/directional/south,
-/turf/open/floor/iron/shuttle/cargo,
-/area/shuttle/blackmarket_chevvy)
-"Fr" = (
-/obj/structure/marker_beacon/olive,
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "Fu" = (
-/obj/effect/turf_decal/box/white/corners{
-	dir = 4
+/obj/structure/table/wood,
+/obj/item/knife/bowie,
+/obj/item/knife/bowie{
+	pixel_y = 2;
+	pixel_x = 10
 	},
-/obj/effect/turf_decal/box/white/corners,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/machinery/button/door/directional/north{
-	id = "skiffcargo";
-	name = "Blast Door Control"
+/obj/item/reagent_containers/glass/bowl/mushroom_bowl{
+	pixel_y = 12;
+	pixel_x = -8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/dark/diagonal,
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "GO" = (
-/obj/effect/spawner/structure/window/reinforced/shuttle,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "skiffwinds"
-	},
-/turf/open/floor/plating,
-/area/shuttle/blackmarket_chevvy)
-"Hj" = (
-/obj/machinery/computer/shuttle/caravan/blackmarket_chevvy,
-/obj/effect/turf_decal/bot_white,
-/obj/structure/window/reinforced/plasma/spawner/north,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/dark/smooth_large,
-/area/shuttle/blackmarket_chevvy)
-"Ii" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/light/dim/directional/south,
-/turf/open/floor/catwalk_floor,
-/area/shuttle/blackmarket_chevvy)
-"JW" = (
-/obj/structure/table/survival_pod,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/button/door/directional/north{
-	name = "Window Shutter Control";
-	id = "skiffwinds"
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/dark/smooth_large,
+/obj/structure/table/wood/shuttle_bar,
+/obj/structure/curtain/bounty,
+/obj/structure/fans/tiny/invisible,
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "Ov" = (
-/turf/template_noop,
-/area/template_noop)
+/turf/closed/indestructible/wood,
+/area/shuttle/blackmarket_chevvy)
 "OB" = (
-/obj/effect/turf_decal/box/white/corners{
-	dir = 4
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/drinks/bottle/vodka/badminka,
+/obj/item/reagent_containers/food/drinks/bottle/hooch{
+	pixel_x = -9;
+	pixel_y = 8
 	},
-/obj/effect/turf_decal/box/white/corners,
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/dark/diagonal,
+/obj/item/reagent_containers/food/drinks/bottle/moonshine{
+	pixel_x = 10
+	},
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "OR" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 4
+/obj/structure/table/wood,
+/obj/item/fishing_line/reinforced{
+	pixel_x = 15
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/shuttle/cargo,
+/obj/item/fishing_hook/weighted{
+	pixel_y = 8;
+	pixel_x = 11
+	},
+/obj/item/fishing_hook/weighted{
+	pixel_y = 11;
+	pixel_x = 7
+	},
+/obj/item/fishing_hook/shiny{
+	pixel_x = 5
+	},
+/obj/item/bait_can/worm/premium{
+	pixel_y = 6;
+	pixel_x = -5
+	},
+/obj/item/bait_can/worm/premium{
+	pixel_y = 14;
+	pixel_x = -5
+	},
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "PY" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
+/obj/structure/table/wood,
+/obj/item/storage/belt/crusader,
+/obj/item/storage/belt/crusader{
+	pixel_y = 9;
+	pixel_x = 3
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
+/obj/item/storage/backpack/satchel/crusader{
+	pixel_y = 4
 	},
-/obj/structure/fans/tiny/forcefield{
-	dir = 4
-	},
-/obj/machinery/door/poddoor{
-	id = "skiffcargo"
-	},
-/turf/open/floor/engine,
-/area/shuttle/blackmarket_chevvy)
-"RN" = (
-/obj/machinery/computer/camera_advanced/shuttle_docker/blackmarket_chevvy,
-/obj/effect/turf_decal/bot_white,
-/obj/structure/window/reinforced/plasma/spawner/north,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/airalarm/directional/west,
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "SY" = (
-/obj/effect/turf_decal/bot_white,
-/obj/machinery/modular_computer/console/preset/engineering{
-	dir = 8
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/drinks/bottle/rum{
+	pixel_y = 12
 	},
-/obj/machinery/button/door/directional/south{
-	name = "Window Shutter Control";
-	id = "skiffwindf"
+/obj/item/reagent_containers/food/drinks/bottle/whiskey{
+	pixel_y = 7;
+	pixel_x = -8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/radio/intercom/directional/north,
-/turf/open/floor/iron/dark/smooth_large,
+/obj/item/reagent_containers/food/drinks/bottle/trappist{
+	pixel_x = 4
+	},
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "Tk" = (
-/obj/structure/bed{
-	dir = 4
-	},
-/obj/item/bedsheet/black{
-	dir = 1
-	},
-/obj/effect/turf_decal/bot_white,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/dim/directional/east,
-/turf/open/floor/iron/dark/smooth_large,
-/area/shuttle/blackmarket_chevvy)
-"Vy" = (
-/obj/effect/turf_decal/bot_white,
-/obj/machinery/modular_computer/console/preset/civilian{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/airalarm/directional/west,
-/turf/open/floor/iron/dark/smooth_large,
-/area/shuttle/blackmarket_chevvy)
-"VX" = (
-/obj/effect/spawner/structure/window/reinforced/shuttle,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "skiffwindf"
-	},
-/turf/open/floor/plating,
-/area/shuttle/blackmarket_chevvy)
-"Yg" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/airlock/hatch,
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "YP" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/machinery/door/airlock/external{
-	id_tag = "skiffextb"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/turf/open/floor/iron/dark/smooth_large,
+/turf/closed/indestructible/weeb,
 /area/shuttle/blackmarket_chevvy)
 "YX" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/obj/structure/table/wood,
+/obj/item/seeds/lavaland/cactus{
+	pixel_y = 4
+	},
+/obj/item/seeds/korta_nut/sweet{
+	pixel_x = -7
+	},
+/obj/item/seeds/kronkus{
+	pixel_y = 18;
+	pixel_x = 10
+	},
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "ZC" = (
-/obj/effect/turf_decal/box/white/corners{
-	dir = 8
+/obj/structure/table/wood,
+/obj/item/papercutter,
+/obj/item/seeds/tea/catnip{
+	pixel_y = 10
 	},
-/obj/effect/turf_decal/box/white/corners{
-	dir = 1
+/obj/item/seeds/tea/astra{
+	pixel_x = 5
 	},
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/dim/directional/west,
-/turf/open/floor/iron/dark/diagonal,
-/area/shuttle/blackmarket_chevvy)
-"ZE" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/airalarm/directional/north,
-/turf/open/floor/iron/dark/diagonal,
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 "ZW" = (
 /obj/docking_port/mobile{
@@ -369,51 +316,47 @@
 	preferred_direction = 4;
 	width = 11
 	},
-/obj/machinery/door/airlock/external{
-	id_tag = "skiffexts"
-	},
-/obj/effect/turf_decal/delivery/white,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "skiffside"
-	},
-/turf/open/floor/iron/dark/textured_large,
+/obj/structure/table/wood/shuttle_bar,
+/obj/structure/curtain/bounty,
+/obj/structure/fans/tiny/invisible,
+/turf/open/indestructible/hotelwood,
 /area/shuttle/blackmarket_chevvy)
 
 (1,1,1) = {"
 Ov
 Ov
-YX
 YP
-YX
+YP
+YP
 Ov
 Ov
 "}
 (2,1,1) = {"
-fp
+Ov
+ka
+en
+Tk
+pI
 zi
-YX
-vK
-YX
-zi
-fp
+Ov
 "}
 (3,1,1) = {"
-ss
+Ov
+zH
+Tk
+Tk
+Tk
 uW
-YX
-Dx
-YX
-uW
-Fr
+Ov
 "}
 (4,1,1) = {"
-gt
-JW
-Vy
+GO
+Tk
+Tk
 OR
-YX
-ka
-tp
+Tk
+Tk
+GO
 "}
 (5,1,1) = {"
 GO
@@ -421,60 +364,60 @@ Tk
 wE
 cL
 jD
-Ii
-YX
+Tk
+GO
 "}
 (6,1,1) = {"
-YX
-YX
-Yg
-YX
-YX
-zH
+GO
+Tk
+Tk
+Tk
+Tk
+Tk
 ZW
 "}
 (7,1,1) = {"
-ss
-ZC
+GO
+Tk
 nB
 ZC
 YX
-jD
-Fr
+Tk
+GO
 "}
 (8,1,1) = {"
-YX
-ZE
-bu
+GO
+Tk
+Tk
 ad
-RN
-Ee
-YX
+Tk
+Tk
+GO
 "}
 (9,1,1) = {"
-gt
+Ov
 Fu
-en
-OB
-Hj
+Tk
+Tk
+Tk
 yt
-tp
+Ov
 "}
 (10,1,1) = {"
-YX
+Ov
 eu
 PY
-eu
-YX
+Tk
+OB
 SY
-YX
+Ov
 "}
 (11,1,1) = {"
 Ov
 Ov
+YP
+YP
+YP
 Ov
 Ov
-fp
-VX
-pI
 "}
