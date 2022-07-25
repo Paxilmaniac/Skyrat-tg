@@ -4,8 +4,8 @@
 	light_range = 8
 
 /obj/structure/lavaland/ash_walker/attackby(obj/item/I, mob/living/user, params)
-	if(istype(I, /obj/item/organ/regenerative_core) && user.mind.has_antag_datum(/datum/antagonist/ashwalker))
-		var/obj/item/organ/regenerative_core/regen_core = I
+	if(istype(I, /obj/item/organ/internal/regenerative_core) && user.mind.has_antag_datum(/datum/antagonist/ashwalker))
+		var/obj/item/organ/internal/regenerative_core/regen_core = I
 		regen_core.preserved()
 		playsound(src, 'sound/magic/demon_consume.ogg', 50, TRUE)
 		to_chat(user, span_notice("The tendril revitalizes [regen_core]."))
@@ -48,6 +48,9 @@
 		human_user.underwear = "Nude"
 		human_user.update_body()
 		human_user.mind.add_antag_datum(/datum/antagonist/ashwalker)
+		if(SSmapping.level_trait(human_user.z, ZTRAIT_ICE_RUINS_UNDERGROUND) || SSmapping.level_trait(human_user.z, ZTRAIT_ICE_RUINS_UNDERGROUND))
+			ADD_TRAIT(human_user, TRAIT_NOBREATH, ROUNDSTART_TRAIT)
+			ADD_TRAIT(human_user, TRAIT_RESISTCOLD, ROUNDSTART_TRAIT)
 		ADD_TRAIT(human_user, TRAIT_PRIMITIVE, ROUNDSTART_TRAIT)
 		playsound(src, 'sound/magic/demon_dies.ogg', 50, TRUE)
 		meat_counter++

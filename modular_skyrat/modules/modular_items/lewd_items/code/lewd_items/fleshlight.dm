@@ -14,7 +14,7 @@
 	/// A list of toy designs for use in the radial color choice menu
 	var/static/list/fleshlight_designs
 	slot_flags = NONE
-	moth_edible = FALSE
+	clothing_flags = INEDIBLE_CLOTHING
 
 /// Generates a list of toy colors (or designs) for use in the radial color choice menu
 /obj/item/clothing/sextoy/fleshlight/proc/populate_fleshlight_designs()
@@ -61,7 +61,7 @@
 		return
 	switch(user.zone_selected) //to let code know what part of body we gonna... Uhh... You get the point.
 		if(BODY_ZONE_PRECISE_GROIN)
-			var/obj/item/organ/genital/penis = target.getorganslot(ORGAN_SLOT_PENIS)
+			var/obj/item/organ/external/genital/penis = target.getorganslot(ORGAN_SLOT_PENIS)
 			if(!penis)
 				to_chat(user, span_danger("[target] doesn't have a penis!"))
 				return
@@ -71,7 +71,7 @@
 			message = (user == target) ? pick("moans in ecstasy as [target.p_they()] use the [src]", "slowly moves [src] up and down on [target]'s penis, causing [target.p_them()] to bend in pleasure", "slightly shivers in pleasure as [target.p_they()] use [src]") : pick("uses [src] on [target]'s penis", "fucks [target] with [src]", "masturbates [target] with [src], causing [target.p_them()] to moan in ecstasy")
 			if(!(prob(40) && (target.stat != DEAD)))
 				return
-			target.emote(pick("twitch_s", "moan", "blush"))
+			target.try_lewd_autoemote(pick("twitch_s", "moan", "blush"))
 			target.adjustArousal(6)
 			target.adjustPleasure(9)
 			user.visible_message(span_purple("[user] [message]!"))

@@ -28,7 +28,7 @@
 	var/change_sprite = TRUE
 	w_class = WEIGHT_CLASS_TINY
 	slot_flags = ITEM_SLOT_ANUS|ITEM_SLOT_VAGINA
-	moth_edible = FALSE
+	clothing_flags = INEDIBLE_CLOTHING
 
 /// Create an assoc list of designs for the radial color/design menu
 /obj/item/clothing/sextoy/dildo/proc/populate_dildo_designs()
@@ -96,7 +96,7 @@
 		return
 
 	var/message = ""
-	var/obj/item/organ/genital/vagina = target.getorganslot(ORGAN_SLOT_VAGINA)
+	var/obj/item/organ/external/genital/vagina = target.getorganslot(ORGAN_SLOT_VAGINA)
 	if(!target.client?.prefs?.read_preference(/datum/preference/toggle/erp/sex_toy))
 		to_chat(user, span_danger("[target] doesn't want you to do that."))
 		return
@@ -113,18 +113,18 @@
 				target.adjustArousal(4)
 				target.adjustPleasure(5)
 				if(prob(20) && (target.stat != DEAD))
-					target.emote("moan")
+					target.try_lewd_autoemote("moan")
 			else if(poly_size == "medium")
 				target.adjustArousal(6)
 				target.adjustPleasure(8)
 				if(prob(40) && (target.stat != DEAD))
-					target.emote(pick("twitch_s", "moan"))
+					target.try_lewd_autoemote(pick("twitch_s", "moan"))
 			else if(poly_size == "big")
 				target.adjustArousal(8)
 				target.adjustPleasure(10)
 				target.adjustPain(2)
 				if(prob(60) && (target.stat != DEAD))
-					target.emote(pick("twitch_s", "moan", "gasp"))
+					target.try_lewd_autoemote(pick("twitch_s", "moan", "gasp"))
 			if(side_double)
 				user.adjustArousal(6)
 				user.adjustPleasure(8)
@@ -137,7 +137,7 @@
 			target.adjustArousal(4)
 			target.adjustPleasure(1)
 			if(prob(70) && (target.stat != DEAD))
-				target.emote(pick("gasp", "moan"))
+				target.try_lewd_autoemote(pick("gasp", "moan"))
 
 
 		else
@@ -148,7 +148,7 @@
 			target.adjustArousal(5)
 			target.adjustPleasure(5)
 			if(prob(60) && (target.stat != DEAD))
-				target.emote(pick("twitch_s", "moan", "shiver"))
+				target.try_lewd_autoemote(pick("twitch_s", "moan", "shiver"))
 
 	user.visible_message(span_purple("[user] [message]!"))
 	playsound(loc, pick('modular_skyrat/modules/modular_items/lewd_items/sounds/bang1.ogg',
@@ -191,7 +191,6 @@ GLOBAL_LIST_INIT(dildo_colors, list(//mostly neon colors
 	var/static/list/dildo_sizes = list()
 	w_class = WEIGHT_CLASS_TINY
 	slot_flags = ITEM_SLOT_ANUS|ITEM_SLOT_VAGINA
-	moth_edible = FALSE
 
 /obj/item/clothing/sextoy/dildo/custom_dildo/populate_dildo_designs()
 	dildo_sizes = list(
@@ -264,7 +263,6 @@ GLOBAL_LIST_INIT(dildo_colors, list(//mostly neon colors
 	/// Reference to the end of the toy that you can hold when the other end is inserted in you
 	var/obj/item/clothing/sextoy/dildo_side/the_toy
 	change_sprite = FALSE
-	moth_edible = FALSE
 
 /obj/item/clothing/sextoy/dildo/double_dildo/Initialize()
 	. = ..()
@@ -346,10 +344,10 @@ GLOBAL_LIST_INIT(dildo_colors, list(//mostly neon colors
 	. = ..()
 	if(!istype(user))
 		return
-	var/obj/item/organ/genital/vagina/vagina = user.getorganslot(ORGAN_SLOT_VAGINA)
-	var/obj/item/organ/genital/womb/womb = user.getorganslot(ORGAN_SLOT_WOMB)
-	var/obj/item/organ/genital/penis/penis = user.getorganslot(ORGAN_SLOT_PENIS)
-	var/obj/item/organ/genital/testicles/testicles = user.getorganslot(ORGAN_SLOT_TESTICLES)
+	var/obj/item/organ/external/genital/vagina/vagina = user.getorganslot(ORGAN_SLOT_VAGINA)
+	var/obj/item/organ/external/genital/womb/womb = user.getorganslot(ORGAN_SLOT_WOMB)
+	var/obj/item/organ/external/genital/penis/penis = user.getorganslot(ORGAN_SLOT_PENIS)
+	var/obj/item/organ/external/genital/testicles/testicles = user.getorganslot(ORGAN_SLOT_TESTICLES)
 
 
 	if(src == user.vagina)
@@ -382,10 +380,10 @@ GLOBAL_LIST_INIT(dildo_colors, list(//mostly neon colors
 	. = ..()
 	if(!istype(user))
 		return
-	var/obj/item/organ/genital/vagina/vagina = user.getorganslot(ORGAN_SLOT_VAGINA)
-	var/obj/item/organ/genital/womb/womb = user.getorganslot(ORGAN_SLOT_WOMB)
-	var/obj/item/organ/genital/penis/penis = user.getorganslot(ORGAN_SLOT_PENIS)
-	var/obj/item/organ/genital/testicles/testicles = user.getorganslot(ORGAN_SLOT_TESTICLES)
+	var/obj/item/organ/external/genital/vagina/vagina = user.getorganslot(ORGAN_SLOT_VAGINA)
+	var/obj/item/organ/external/genital/womb/womb = user.getorganslot(ORGAN_SLOT_WOMB)
+	var/obj/item/organ/external/genital/penis/penis = user.getorganslot(ORGAN_SLOT_PENIS)
+	var/obj/item/organ/external/genital/testicles/testicles = user.getorganslot(ORGAN_SLOT_TESTICLES)
 
 	if(!(src == user.vagina))
 		return
@@ -402,7 +400,6 @@ GLOBAL_LIST_INIT(dildo_colors, list(//mostly neon colors
 	icon_state = "dildo_side"
 	inhand_icon_state = "nothing"
 	item_flags = ABSTRACT | HAND_ITEM
-	moth_edible = FALSE
 	side_double = TRUE
 
 /obj/item/clothing/sextoy/dildo_side/dildo/Initialize()

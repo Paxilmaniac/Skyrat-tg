@@ -180,7 +180,10 @@ GLOBAL_LIST_EMPTY(total_uf_len_by_block)
 	//We update the translation to make sure our character doesn't go out of the southern bounds of the tile
 	var/translate = ((change_multiplier-1) * 32)/2
 	holder.transform = holder.transform.Scale(change_multiplier)
-	holder.transform = holder.transform.Translate(0, translate)
+	// Splits the updated translation into X and Y based on the user's rotation.
+	var/translate_x = translate * ( holder.transform.b / features["body_size"] )
+	var/translate_y = translate * ( holder.transform.e / features["body_size"] )
+	holder.transform = holder.transform.Translate(translate_x, translate_y)
 	holder.maptext_height = 32 * features["body_size"] // Adjust runechat height
 	current_body_size = features["body_size"]
 
@@ -255,7 +258,7 @@ GLOBAL_LIST_EMPTY(total_uf_len_by_block)
 	eye_color_left = sanitize_hexcolor(get_uni_identity_block(structure, DNA_EYE_COLOR_LEFT_BLOCK))
 	eye_color_right = sanitize_hexcolor(get_uni_identity_block(structure, DNA_EYE_COLOR_RIGHT_BLOCK))
 	if(eyeorgancolor_update)
-		var/obj/item/organ/eyes/eye_organ = getorganslot(ORGAN_SLOT_EYES)
+		var/obj/item/organ/internal/eyes/eye_organ = getorganslot(ORGAN_SLOT_EYES)
 		eye_organ.eye_color_left = eye_color_left
 		eye_organ.eye_color_right = eye_color_right
 		eye_organ.old_eye_color_left = eye_color_left

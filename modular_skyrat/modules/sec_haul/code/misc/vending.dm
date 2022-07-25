@@ -78,7 +78,7 @@
 					/obj/item/clothing/gloves/color/black/security = 10,
 					)
 	premium = list( /obj/item/clothing/under/rank/security/officer/formal = 3,
-					/obj/item/clothing/suit/security/officer = 3,
+					/obj/item/clothing/suit/jacket/officer = 3,
 					/obj/item/clothing/head/beret/sec/navyofficer = 3)
 	refill_canister = /obj/item/vending_refill/wardrobe/peacekeeper_wardrobe
 	payment_department = ACCOUNT_SEC
@@ -106,9 +106,9 @@
 					/obj/item/clothing/mask/bandana/red = 3,
 					/obj/item/clothing/gloves/color/black = 3,
 					/obj/item/clothing/under/rank/security/officer/skirt = 3,
-					/obj/item/clothing/under/utility/sec/old = 3,
+					/obj/item/clothing/under/rank/security/skyrat/utility/redsec = 3,
 					/obj/item/clothing/suit/toggle/jacket/sec/old = 3,
 					)
 	premium = list( /obj/item/clothing/under/rank/security/officer/formal = 5,
-					/obj/item/clothing/suit/security/officer = 5,
+					/obj/item/clothing/suit/jacket/officer = 5,
 					/obj/item/clothing/head/beret/sec/navyofficer = 5)

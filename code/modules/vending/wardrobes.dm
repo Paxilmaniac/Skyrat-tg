@@ -34,7 +34,7 @@
 		)
 	premium = list(
 		/obj/item/clothing/under/rank/security/officer/formal = 3,
-		/obj/item/clothing/suit/security/officer = 3,
+		/obj/item/clothing/suit/jacket/officer/blue = 3,
 		/obj/item/clothing/head/beret/sec/navyofficer = 3,
 		)
 	*/
@@ -185,7 +185,7 @@
 	contraband = list(
 		/obj/item/clothing/suit/hooded/techpriest = 2,
 		/obj/item/clothing/under/costume/mech_suit = 2,
-		/obj/item/organ/tongue/robot = 2,
+		/obj/item/organ/internal/tongue/robot = 2,
 		)
 	refill_canister = /obj/item/vending_refill/wardrobe/robo_wardrobe
 	extra_price = PAYCHECK_COMMAND * 1.2
@@ -390,6 +390,7 @@
 		/obj/item/clothing/suit/toggle/lawyer/purple = 1,
 		/obj/item/clothing/under/suit/black = 1,
 		/obj/item/clothing/under/suit/black/skirt = 1,
+		/obj/item/clothing/neck/tie = 3,
 		/obj/item/clothing/suit/toggle/lawyer/black = 1,
 		/obj/item/clothing/under/rank/civilian/lawyer/beige = 1,
 		/obj/item/clothing/under/rank/civilian/lawyer/beige/skirt = 1,
@@ -531,23 +532,23 @@
 		/obj/item/clothing/under/rank/security/detective = 2,
 		/obj/item/clothing/under/rank/security/detective/skirt = 2,
 		/obj/item/clothing/shoes/sneakers/brown = 2,
-		/obj/item/clothing/suit/det_suit = 2,
+		/obj/item/clothing/suit/jacket/det_suit = 2,
 		/obj/item/clothing/head/fedora/det_hat = 2,
 		/obj/item/clothing/under/rank/security/detective/noir = 2,
 		/obj/item/clothing/under/rank/security/detective/noir/skirt = 2,
 		/obj/item/clothing/accessory/waistcoat = 2,
 		/obj/item/clothing/shoes/laceup = 2,
-		/obj/item/clothing/suit/det_suit/dark = 1,
-		/obj/item/clothing/suit/det_suit/noir = 1,
+		/obj/item/clothing/suit/jacket/det_suit/dark = 1,
+		/obj/item/clothing/suit/jacket/det_suit/noir = 1,
 		/obj/item/clothing/head/fedora = 2,
 		/obj/item/clothing/gloves/color/black = 2,
 		/obj/item/clothing/gloves/color/latex = 2,
 		/obj/item/clothing/under/rank/security/detective/disco = 1,
-		/obj/item/clothing/suit/det_suit/disco = 1,
+		/obj/item/clothing/suit/jacket/det_suit/disco = 1,
 		/obj/item/clothing/shoes/discoshoes = 1,
 		/obj/item/clothing/neck/tie/disco = 1,
 		/obj/item/clothing/under/rank/security/detective/kim = 1,
-		/obj/item/clothing/suit/det_suit/kim = 1,
+		/obj/item/clothing/suit/jacket/det_suit/kim = 1,
 		/obj/item/clothing/shoes/kim = 1,
 		/obj/item/clothing/gloves/kim = 1,
 		/obj/item/clothing/glasses/regular/kim = 1,

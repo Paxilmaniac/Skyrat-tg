@@ -10,19 +10,19 @@
 	inherent_traits = list(
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
-		TRAIT_RESISTCOLD,
-		TRAIT_RADIMMUNE,
 		TRAIT_GENELESS,
-		TRAIT_NOHUNGER,
 		TRAIT_HARDLY_WOUNDED,
 		TRAIT_LITERATE,
+		TRAIT_RADIMMUNE,
+		TRAIT_RESISTCOLD,
+		TRAIT_NOHUNGER,
 	)
 
 	inherent_biotypes = MOB_HUMANOID|MOB_MINERAL
-	mutantlungs = /obj/item/organ/lungs/plasmaman
-	mutanttongue = /obj/item/organ/tongue/bone/plasmaman
-	mutantliver = /obj/item/organ/liver/plasmaman
-	mutantstomach = /obj/item/organ/stomach/bone/plasmaman
+	mutantlungs = /obj/item/organ/internal/lungs/plasmaman
+	mutanttongue = /obj/item/organ/internal/tongue/bone/plasmaman
+	mutantliver = /obj/item/organ/internal/liver/plasmaman
+	mutantstomach = /obj/item/organ/internal/stomach/bone/plasmaman
 	burnmod = 1.5
 	heatmod = 1.5
 	brutemod = 1.5
@@ -122,8 +122,6 @@
 	if(job.plasmaman_outfit)
 		equipping.equipOutfit(job.plasmaman_outfit, visuals_only)
 	equipping.internal = equipping.get_item_for_held_index(2)
-	equipping.update_internals_hud_icon(1)
-
 
 /datum/species/plasmaman/random_name(gender,unique,lastname)
 	if(unique)
