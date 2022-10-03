@@ -197,7 +197,7 @@
 		selects["Save"] = "Save"
 		selects["Delete"] = "Delete"
 		var/selection = input(user, "", "Color Menu", currentcolor) as null|anything in selects
-		if(QDELETED(src) || !user.canUseTopic(src, BE_CLOSE))
+		if(QDELETED(src) || !user.canUseTopic(src, be_close = TRUE))
 			return
 		switch(selection)
 			if("Save")
@@ -214,7 +214,7 @@
 				currentcolor = colors[selection]
 	else if(istype(action, /datum/action/item_action/dtcleargrid))
 		var/yesnomaybe = tgui_alert("Are you sure you wanna clear the canvas?", "", list("Yes", "No", "Maybe"))
-		if(QDELETED(src) || !user.canUseTopic(src, BE_CLOSE))
+		if(QDELETED(src) || !user.canUseTopic(src, be_close = TRUE))
 			return
 		switch(yesnomaybe)
 			if("Yes")
@@ -1235,7 +1235,7 @@
 /obj/item/clothing/suit/toggle/labcoat/tenrai/worn_overlays(mutable_appearance/standing, isinhands, icon_file)
 	. = ..()
 	if(!isinhands)
-		. += emissive_appearance(icon_file, "[icon_state]-emissive", alpha = src.alpha)
+		. += emissive_appearance(icon_file, "[icon_state]-emissive", src, alpha = src.alpha)
 
 //Donation reward for RealWinterFrost
 /obj/item/clothing/neck/cloak/fluffycloak
@@ -1248,7 +1248,7 @@
 /obj/item/clothing/neck/cloak/fluffycloak/worn_overlays(mutable_appearance/standing, isinhands, icon_file)
 	. = ..()
 	if(!isinhands)
-		. += emissive_appearance(icon_file, "[icon_state]-emissive", alpha = src.alpha)
+		. += emissive_appearance(icon_file, "[icon_state]-emissive", src, alpha = src.alpha)
 
 
 /obj/item/clothing/mask/gas/larpswat
