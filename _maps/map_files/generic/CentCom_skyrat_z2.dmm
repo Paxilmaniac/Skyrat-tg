@@ -5585,9 +5585,6 @@
 /turf/open/floor/iron,
 /area/centcom/interlink)
 "aZq" = (
-/obj/structure/chair/sofa/corp/left{
-	dir = 4
-	},
 /obj/structure/chair/sofa/corp{
 	dir = 4
 	},
@@ -5708,10 +5705,10 @@
 /area/centcom/interlink)
 "bfK" = (
 /obj/machinery/button/door/directional/west{
-	name = "Cabin Lock";
 	id = "dorm28";
-	specialfunctions = 4;
-	normaldoorcontrol = 1
+	name = "Cabin Lock";
+	normaldoorcontrol = 1;
+	specialfunctions = 4
 	},
 /turf/open/floor/carpet,
 /area/centcom/interlink)
@@ -6431,10 +6428,10 @@
 /area/centcom/interlink)
 "dXZ" = (
 /obj/machinery/button/door/directional/west{
-	name = "Cabin Lock";
 	id = "dorm27";
-	specialfunctions = 4;
-	normaldoorcontrol = 1
+	name = "Cabin Lock";
+	normaldoorcontrol = 1;
+	specialfunctions = 4
 	},
 /turf/open/floor/wood,
 /area/centcom/interlink)
@@ -6673,10 +6670,6 @@
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/iron/dark,
 /area/cruiser_dock)
-"fkW" = (
-/obj/effect/landmark/hell,
-/turf/open/indestructible/necropolis/air,
-/area/centcom/central_command_areas/prison)
 "fta" = (
 /obj/effect/turf_decal/trimline/blue/arrow_cw,
 /obj/machinery/light/directional/south,
@@ -6734,10 +6727,10 @@
 /area/centcom/interlink)
 "fzF" = (
 /obj/machinery/button/door/directional/west{
-	name = "Cabin Lock";
 	id = "dorm26";
-	specialfunctions = 4;
-	normaldoorcontrol = 1
+	name = "Cabin Lock";
+	normaldoorcontrol = 1;
+	specialfunctions = 4
 	},
 /turf/open/floor/iron/grimy,
 /area/centcom/interlink)
@@ -6852,10 +6845,10 @@
 /area/centcom/holding/cafepark)
 "fUk" = (
 /obj/machinery/button/door/directional/west{
-	name = "Lodge Lock";
 	id = "dorm23";
-	specialfunctions = 4;
-	normaldoorcontrol = 1
+	name = "Lodge Lock";
+	normaldoorcontrol = 1;
+	specialfunctions = 4
 	},
 /turf/open/indestructible/hotelwood,
 /area/centcom/interlink)
@@ -7772,9 +7765,6 @@
 	},
 /turf/open/floor/glass/reinforced,
 /area/cruiser_dock)
-"jFj" = (
-/turf/closed/indestructible/necropolis,
-/area/centcom/central_command_areas/prison)
 "jFn" = (
 /obj/structure/alien/weeds,
 /obj/structure/alien/egg/burst,
@@ -8159,10 +8149,10 @@
 /area/centcom/interlink)
 "kXx" = (
 /obj/machinery/button/door/directional/west{
-	name = "Lodge Lock";
 	id = "dorm22";
-	specialfunctions = 4;
-	normaldoorcontrol = 1
+	name = "Lodge Lock";
+	normaldoorcontrol = 1;
+	specialfunctions = 4
 	},
 /turf/open/indestructible/hotelwood,
 /area/centcom/interlink)
@@ -8900,10 +8890,10 @@
 /area/cruiser_dock)
 "nGK" = (
 /obj/machinery/button/door/directional/west{
-	name = "Lodge Lock";
 	id = "dorm25";
-	specialfunctions = 4;
-	normaldoorcontrol = 1
+	name = "Lodge Lock";
+	normaldoorcontrol = 1;
+	specialfunctions = 4
 	},
 /turf/open/floor/carpet,
 /area/centcom/interlink)
@@ -11006,10 +10996,10 @@
 /area/centcom/interlink)
 "vmC" = (
 /obj/machinery/button/door/directional/west{
-	name = "Lodge Lock";
 	id = "dorm21";
-	specialfunctions = 4;
-	normaldoorcontrol = 1
+	name = "Lodge Lock";
+	normaldoorcontrol = 1;
+	specialfunctions = 4
 	},
 /turf/open/indestructible/hotelwood,
 /area/centcom/interlink)
@@ -11282,9 +11272,6 @@
 /obj/structure/reagent_water_basin,
 /turf/open/misc/dirt/planet,
 /area/centcom/holding/cafepark)
-"wnE" = (
-/turf/open/indestructible/necropolis/air,
-/area/centcom/central_command_areas/prison)
 "woU" = (
 /obj/structure/railing{
 	dir = 10
@@ -11422,10 +11409,6 @@
 	},
 /turf/open/floor/wood,
 /area/centcom/holding/cafedorms)
-"wJx" = (
-/mob/living/simple_animal/hostile/megafauna/bubblegum/no_gps,
-/turf/open/indestructible/necropolis/air,
-/area/centcom/central_command_areas/prison)
 "wJG" = (
 /obj/effect/turf_decal/trimline/red/filled/warning,
 /turf/open/floor/iron/dark,
@@ -11645,10 +11628,10 @@
 /area/cruiser_dock)
 "xSv" = (
 /obj/machinery/button/door/directional/west{
-	name = "Lodge Lock";
 	id = "dorm24";
-	specialfunctions = 4;
-	normaldoorcontrol = 1
+	name = "Lodge Lock";
+	normaldoorcontrol = 1;
+	specialfunctions = 4
 	},
 /turf/open/indestructible/hotelwood,
 /area/centcom/interlink)
@@ -12778,19 +12761,19 @@ aaa
 aaa
 aaa
 aaa
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -13035,19 +13018,19 @@ aaa
 aaa
 aaa
 aaa
-jFj
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-jFj
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -13292,19 +13275,19 @@ aaa
 aaa
 aaa
 aaa
-jFj
-wnE
-wJx
-wnE
-wnE
-wnE
-fkW
-wnE
-wnE
-wnE
-wJx
-wnE
-jFj
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -13549,19 +13532,19 @@ aaa
 aaa
 aaa
 aaa
-jFj
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-jFj
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -13806,19 +13789,19 @@ aaa
 aaa
 aaa
 aaa
-jFj
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-jFj
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -14063,19 +14046,19 @@ aaa
 aaa
 aaa
 aaa
-jFj
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-jFj
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -14320,19 +14303,19 @@ aaa
 aaa
 aaa
 aaa
-jFj
-wnE
-fkW
-wnE
-wnE
-wnE
-fkW
-wnE
-wnE
-wnE
-fkW
-wnE
-jFj
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -14577,19 +14560,19 @@ aaa
 aaa
 aaa
 aaa
-jFj
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-jFj
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -14834,19 +14817,19 @@ aaa
 aaa
 aaa
 aaa
-jFj
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-jFj
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -15091,19 +15074,19 @@ aaa
 aaa
 aaa
 aaa
-jFj
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-jFj
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -15348,19 +15331,19 @@ aaa
 aaa
 aaa
 aaa
-jFj
-wnE
-wJx
-wnE
-wnE
-wnE
-fkW
-wnE
-wnE
-wnE
-wJx
-wnE
-jFj
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -15605,19 +15588,19 @@ aaa
 aaa
 aaa
 aaa
-jFj
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-wnE
-jFj
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -15862,19 +15845,19 @@ aaa
 aaa
 aaa
 aaa
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
-jFj
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
