@@ -2,7 +2,6 @@
 	name = "testing modular vehicle"
 	icon = 'modular_skyrat/modules/event_combat_stuff/icons/vehicles.dmi'
 	icon_state = "generic"
-	icon_state = null
 	movedelay = 2
 
 	base_pixel_x = -32
@@ -36,6 +35,7 @@
 /obj/vehicle/modular_apc/Initialize(mapload)
 	. = ..()
 	soundloop = new(src, TRUE)
+	map_deletion_generator = new
 
 /obj/vehicle/modular_apc/New()
 	. = ..()
@@ -98,7 +98,7 @@
 			run_that_man_down(bumped_mob)
 
 /// Because someone will try running people over in this thing, you may as well let them have some fun
-/obj/vehicle/modular_apc/proc/run_over(mob/living/carbon/human/crushed)
+/obj/vehicle/modular_apc/proc/run_that_man_down(mob/living/carbon/human/crushed)
 	log_combat(src, crushed, "run over", addition = "(DAMTYPE: [uppertext(BRUTE)])")
 	crushed.visible_message(
 		span_danger("[src] drives over [crushed]!"),
@@ -108,12 +108,13 @@
 	playsound(src, 'sound/effects/splat.ogg', 50, TRUE)
 
 	var/damage = rand(20, 30)
-	crushed.apply_damage(2 * damage, BRUTE, BODY_ZONE_HEAD, run_armor_check(BODY_ZONE_HEAD, MELEE))
-	crushed.apply_damage(2 * damage, BRUTE, BODY_ZONE_CHEST, run_armor_check(BODY_ZONE_CHEST, MELEE))
-	crushed.apply_damage(0.5 * damage, BRUTE, BODY_ZONE_L_LEG, run_armor_check(BODY_ZONE_L_LEG, MELEE))
-	crushed.apply_damage(0.5 * damage, BRUTE, BODY_ZONE_R_LEG, run_armor_check(BODY_ZONE_R_LEG, MELEE))
-	crushed.apply_damage(0.5 * damage, BRUTE, BODY_ZONE_L_ARM, run_armor_check(BODY_ZONE_L_ARM, MELEE))
-	crushed.apply_damage(0.5 * damage, BRUTE, BODY_ZONE_R_ARM, run_armor_check(BODY_ZONE_R_ARM, MELEE))
+	crushed.Knockdown(damage, TRUE)
+	crushed.apply_damage(2 * damage, BRUTE, BODY_ZONE_HEAD)
+	crushed.apply_damage(2 * damage, BRUTE, BODY_ZONE_CHEST)
+	crushed.apply_damage(0.5 * damage, BRUTE, BODY_ZONE_L_LEG)
+	crushed.apply_damage(0.5 * damage, BRUTE, BODY_ZONE_R_LEG)
+	crushed.apply_damage(0.5 * damage, BRUTE, BODY_ZONE_L_ARM)
+	crushed.apply_damage(0.5 * damage, BRUTE, BODY_ZONE_R_ARM)
 
 /obj/effect/landmark/vehicle_interior_location
 	name = "Vehicle Interior Spawn Marker"
