@@ -57,7 +57,7 @@
 	},
 /area/centcom/vehicle_interior)
 "r" = (
-/turf/closed/indestructible/start_area,
+/turf/closed/indestructible/syndicate,
 /area/centcom/vehicle_interior)
 "v" = (
 /obj/structure/chair/comfy/shuttle/tactical{
