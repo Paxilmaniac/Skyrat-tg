@@ -37,6 +37,8 @@
 	soundloop = new(src, TRUE)
 	map_deletion_generator = new
 
+	RegisterSignal(src, COMSIG_MOUSEDROPPED_ONTO, .proc/try_and_enter)
+
 /obj/vehicle/modular_apc/New()
 	. = ..()
 	generate_vehicle_interior()
@@ -79,15 +81,26 @@
 		if(!interior_landmark.currently_occupied)
 			return interior_landmark
 
-/obj/vehicle/modular_apc/MouseDrop_T(mob/dragged_mob, mob/user)
+/obj/vehicle/modular_apc/proc/try_and_enter(mob/thing_dropped, mob/user)
+	SIGNAL_HANDLER
+	if(!istype(thing_dropped))
+		return FALSE
 	if(user.incapacitated())
-		return
-	if(get_dist(user, src) > 2 || get_dist(dragged_mob, src) > 2)
+		return FALSE
+	if(get_dist(user, src) > 2 || get_dist(thing_dropped, src) > 3)
 		balloon_alert(user, "too far")
-		return
-	if(!(get_dir(user, src) == dir))
+		return FALSE
+	if(!check_if_behind_vehicle(user))
 		balloon_alert(user, "wrong side")
-	dragged_mob.forceMove(get_step(rear_door, rear_door.dir))
+		return FALSE
+	thing_dropped.forceMove(get_step(rear_door, rear_door.dir))
+	return TRUE
+
+/obj/vehicle/modular_apc/proc/check_if_behind_vehicle(mob/get_that_guy)
+	var/attempted_enter_direction = get_dir(get_that_guy, src)
+	if(dir & attempted_enter_direction)
+		return TRUE
+	return FALSE
 
 /obj/vehicle/modular_apc/Moved(atom/old_loc, movement_dir, forced, list/old_locs, momentum_change = TRUE)
 	. = ..()
