@@ -1,0 +1,196 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/cordon,
+/area/centcom/vehicle_interior)
+"d" = (
+/obj/structure/chair/comfy/shuttle/tactical{
+	dir = 1
+	},
+/obj/structure/deployable_barricade/guardrail{
+	dir = 8
+	},
+/obj/machinery/light/red/dim/directional/south,
+/turf/open/indestructible/dark{
+	icon_state = "podfloor_light"
+	},
+/area/centcom/vehicle_interior)
+"g" = (
+/turf/open/indestructible/dark{
+	icon_state = "podfloor_dark"
+	},
+/area/centcom/vehicle_interior)
+"j" = (
+/obj/machinery/bsa/front{
+	dir = 1
+	},
+/obj/structure/extinguisher_cabinet/directional/west,
+/turf/open/indestructible/dark{
+	icon_state = "plating"
+	},
+/area/centcom/vehicle_interior)
+"l" = (
+/obj/structure/chair/comfy/shuttle/tactical{
+	dir = 1
+	},
+/obj/machinery/vending/wallmed/directional/south,
+/turf/open/indestructible/dark{
+	icon_state = "podfloor_light"
+	},
+/area/centcom/vehicle_interior)
+"n" = (
+/obj/structure/fans,
+/obj/machinery/light/red/dim/directional/north,
+/turf/open/indestructible/dark{
+	icon_state = "plating"
+	},
+/area/centcom/vehicle_interior)
+"o" = (
+/obj/structure/chair/comfy/shuttle/vehicle_control_seat{
+	dir = 8
+	},
+/obj/structure/deployable_barricade/guardrail{
+	dir = 4
+	},
+/obj/structure/sign/poster/contraband/random/directional/north,
+/turf/open/indestructible/dark{
+	icon_state = "podfloor_light"
+	},
+/area/centcom/vehicle_interior)
+"r" = (
+/turf/closed/indestructible/start_area,
+/area/centcom/vehicle_interior)
+"v" = (
+/obj/structure/chair/comfy/shuttle/tactical{
+	dir = 1
+	},
+/obj/structure/extinguisher_cabinet/directional/south,
+/obj/machinery/light/red/dim/directional/south,
+/turf/open/indestructible/dark{
+	icon_state = "podfloor_light"
+	},
+/area/centcom/vehicle_interior)
+"w" = (
+/obj/machinery/bsa/back{
+	dir = 8
+	},
+/obj/effect/engine_noise_maker,
+/turf/open/indestructible/dark{
+	icon_state = "plating"
+	},
+/area/centcom/vehicle_interior)
+"B" = (
+/obj/structure/chair/comfy/shuttle/tactical,
+/obj/structure/deployable_barricade/guardrail{
+	dir = 8
+	},
+/turf/open/indestructible/dark{
+	icon_state = "podfloor_light"
+	},
+/area/centcom/vehicle_interior)
+"K" = (
+/obj/structure/chair/comfy/shuttle/tactical,
+/obj/structure/extinguisher_cabinet/directional/north,
+/obj/machinery/light/red/dim/directional/north,
+/turf/open/indestructible/dark{
+	icon_state = "podfloor_light"
+	},
+/area/centcom/vehicle_interior)
+"O" = (
+/obj/machinery/bsa/middle{
+	dir = 8
+	},
+/obj/structure/sign/poster/contraband/random/directional/west,
+/turf/open/indestructible/dark{
+	icon_state = "plating"
+	},
+/area/centcom/vehicle_interior)
+"R" = (
+/obj/effect/bump_teleporter/vehicle_door{
+	dir = 8
+	},
+/turf/open/indestructible/dark{
+	icon_state = "podfloor_dark"
+	},
+/area/centcom/vehicle_interior)
+
+(1,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+a
+r
+r
+r
+r
+a
+"}
+(3,1,1) = {"
+a
+r
+r
+j
+O
+r
+a
+"}
+(4,1,1) = {"
+a
+r
+o
+g
+w
+r
+a
+"}
+(5,1,1) = {"
+a
+r
+n
+g
+d
+r
+a
+"}
+(6,1,1) = {"
+a
+r
+B
+g
+l
+r
+a
+"}
+(7,1,1) = {"
+a
+r
+K
+g
+v
+r
+a
+"}
+(8,1,1) = {"
+a
+r
+r
+R
+r
+r
+a
+"}
+(9,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+"}

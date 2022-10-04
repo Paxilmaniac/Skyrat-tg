@@ -3,6 +3,13 @@
 	icon = 'modular_skyrat/modules/event_combat_stuff/icons/vehicles.dmi'
 	icon_state = "generic"
 	icon_state = null
+	movedelay = 2
+
+	base_pixel_x = -32
+	pixel_x = -32
+
+	base_pixel_y = -32
+	pixel_y = -32
 
 	bound_width = 96
 	bound_height = 96
@@ -15,21 +22,24 @@
 	/// How long should it take for people to climb in
 	var/enter_delay = 2 SECONDS
 	/// What map template should this vehicle spawn for the interior?
-	var/datum/map_template/interior_map_template
+	var/datum/map_template/interior_map_template = /datum/map_template/vehicle_interior
 	/// Saves a mapgen tool for deleting the interior of the vehicle if it gets deleted
 	var/datum/map_generator/massdelete/map_deletion_generator
 	/// Keeps track of the area that makes up the internals of our vehicle
-	var/inside_area
+	var/area/inside_area
 	/// What is the rear door of this vehicle?
-	var/rear_door
+	var/obj/effect/rear_door
 
 	/// The engine soundloop for the outside of the vehicle
 	var/datum/looping_sound/generator/soundloop
 
 /obj/vehicle/modular_apc/Initialize(mapload)
 	. = ..()
-	generate_vehicle_interior()
 	soundloop = new(src, TRUE)
+
+/obj/vehicle/modular_apc/New()
+	. = ..()
+	generate_vehicle_interior()
 
 /obj/vehicle/modular_apc/Destroy()
 	dump_all_occupants()
@@ -55,7 +65,7 @@
 	var/list/bounds = interior_map_template.load(spawn_turf)
 	if(!bounds)
 		CRASH("Loading [src]'s interior failed!")
-	map_deletion_generator.defineRegion(spawn_area, locate(spawn_area.x + 8,spawn_area.y + 8,spawn_area.z), replace = TRUE)
+	map_deletion_generator.defineRegion(spawn_turf, locate(spawn_turf.x + 8,spawn_turf.y + 6,spawn_turf.z), replace = TRUE)
 
 	inside_area = get_area(interior_landmark)
 	for(var/obj/structure/chair/comfy/shuttle/vehicle_control_seat/control_seat in inside_area.contents)
@@ -69,15 +79,41 @@
 		if(!interior_landmark.currently_occupied)
 			return interior_landmark
 
-/obj/vehicle/modular_apc/MouseDrop_T(mob/living/dragged_mob, /mob/living/user)
+/obj/vehicle/modular_apc/MouseDrop_T(mob/dragged_mob, mob/user)
 	if(user.incapacitated())
 		return
 	if(get_dist(user, src) > 2 || get_dist(dragged_mob, src) > 2)
-		user.balloon_alert(user, "too far")
+		balloon_alert(user, "too far")
 		return
 	if(!(get_dir(user, src) == dir))
-		user.balloon_alert(user, "wrong side")
+		balloon_alert(user, "wrong side")
 	dragged_mob.forceMove(get_step(rear_door, rear_door.dir))
+
+/obj/vehicle/modular_apc/Moved(atom/old_loc, movement_dir, forced, list/old_locs, momentum_change = TRUE)
+	. = ..()
+	for(var/mob/bumped_mob in range(2, src))
+		if(get_dist(bumped_mob, src) < 2)
+			run_that_man_down(bumped_mob)
+		else if(get_dir(src, bumped_mob) == movement_dir)
+			run_that_man_down(bumped_mob)
+
+/// Because someone will try running people over in this thing, you may as well let them have some fun
+/obj/vehicle/modular_apc/proc/run_over(mob/living/carbon/human/crushed)
+	log_combat(src, crushed, "run over", addition = "(DAMTYPE: [uppertext(BRUTE)])")
+	crushed.visible_message(
+		span_danger("[src] drives over [crushed]!"),
+		span_userdanger("[src] drives over you!"),
+	)
+
+	playsound(src, 'sound/effects/splat.ogg', 50, TRUE)
+
+	var/damage = rand(20, 30)
+	crushed.apply_damage(2 * damage, BRUTE, BODY_ZONE_HEAD, run_armor_check(BODY_ZONE_HEAD, MELEE))
+	crushed.apply_damage(2 * damage, BRUTE, BODY_ZONE_CHEST, run_armor_check(BODY_ZONE_CHEST, MELEE))
+	crushed.apply_damage(0.5 * damage, BRUTE, BODY_ZONE_L_LEG, run_armor_check(BODY_ZONE_L_LEG, MELEE))
+	crushed.apply_damage(0.5 * damage, BRUTE, BODY_ZONE_R_LEG, run_armor_check(BODY_ZONE_R_LEG, MELEE))
+	crushed.apply_damage(0.5 * damage, BRUTE, BODY_ZONE_L_ARM, run_armor_check(BODY_ZONE_L_ARM, MELEE))
+	crushed.apply_damage(0.5 * damage, BRUTE, BODY_ZONE_R_ARM, run_armor_check(BODY_ZONE_R_ARM, MELEE))
 
 /obj/effect/landmark/vehicle_interior_location
 	name = "Vehicle Interior Spawn Marker"
@@ -109,7 +145,7 @@
 	invisibility = 0
 	opacity = TRUE
 	/// What vehicle should we drop people off by
-	var/parent_vehicle
+	var/obj/vehicle/parent_vehicle
 	/// What angle from forwards should we drop people off at, in degrees
 	var/dropoff_direction_angle = 180
 
@@ -133,3 +169,7 @@
 /area/centcom/vehicle_interior
 	name = "Vehicle Interior"
 	area_flags = NOTELEPORT
+
+/datum/map_template/vehicle_interior
+	name = "Generic APC Interior"
+	mappath = "_maps/skyrat/vehicle_inside_apc.dmm"
