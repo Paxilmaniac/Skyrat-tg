@@ -1182,6 +1182,20 @@ digi
 /datum/greyscale_config/skirt/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
 
+//Robes
+
+/datum/greyscale_config/royal_robes
+	name = "Robes"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/robes/robes.json'
+
+/datum/greyscale_config/royal_robes/worn
+	name = "Robes (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/robes/robes_worn.json'
+
+/datum/greyscale_config/royal_robes/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
 /*
 * Headgear for el evento
 */

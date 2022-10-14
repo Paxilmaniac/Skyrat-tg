@@ -22,6 +22,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	icon_state = "overalls_buttondown"
 	greyscale_config = /datum/greyscale_config/overalls
 	greyscale_config_worn = /datum/greyscale_config/overalls/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/overalls/worn/newvox
 
 /obj/item/clothing/under/costume/buttondown/event_clothing/overalls/Initialize(mapload)
 	. = ..()
@@ -37,6 +38,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	icon_state = "pants_buttondown"
 	greyscale_config = /datum/greyscale_config/workpants
 	greyscale_config_worn = /datum/greyscale_config/workpants/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/workpants/worn/newvox
 
 /obj/item/clothing/under/costume/buttondown/event_clothing/workpants/Initialize(mapload)
 	. = ..()
@@ -52,6 +54,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	icon_state = "longpants_buttondown"
 	greyscale_config = /datum/greyscale_config/longpants
 	greyscale_config_worn = /datum/greyscale_config/longpants/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/longpants/worn/newvox
 
 /obj/item/clothing/under/costume/buttondown/event_clothing/longpants/Initialize(mapload)
 	. = ..()
@@ -65,6 +68,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	icon_state = "skirt_buttondown"
 	greyscale_config = /datum/greyscale_config/skirt
 	greyscale_config_worn = /datum/greyscale_config/skirt/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/skirt/worn/newvox
 
 /obj/item/clothing/under/costume/buttondown/event_clothing/skirt/Initialize(mapload)
 	. = ..()
@@ -87,6 +91,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_colors = "#ec6a00"
 	greyscale_config = /datum/greyscale_config/hardhat
 	greyscale_config_worn = /datum/greyscale_config/hardhat/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/hardhat/worn/newvox
 
 /obj/item/clothing/head/helmet/event_hardhat/Initialize(mapload)
 	. = ..()
@@ -106,6 +111,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_colors = "#F1F1F1#F1F1F1"
 	greyscale_config = /datum/greyscale_config/lonehood
 	greyscale_config_worn = /datum/greyscale_config/lonehood/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/lonehood/worn/newvox
 
 /obj/item/clothing/head/standalone_hood/Initialize(mapload)
 	. = ..()
@@ -126,6 +132,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_colors = "#3a2313"
 	greyscale_config = /datum/greyscale_config/civboots
 	greyscale_config_worn = /datum/greyscale_config/civboots/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/civboots/worn/newvox
 
 /obj/item/clothing/shoes/jackboots/leather/Initialize(mapload)
 	. = ..()
@@ -147,6 +154,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_colors = "#3a2313#ec6a00"
 	greyscale_config = /datum/greyscale_config/armorboots
 	greyscale_config_worn = /datum/greyscale_config/armorboots/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/armorboots/worn/newvox
 
 /obj/item/clothing/shoes/jackboots/armored_leather/Initialize(mapload)
 	. = ..()
@@ -171,6 +179,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_colors = "#3a2313"
 	greyscale_config = /datum/greyscale_config/sandals
 	greyscale_config_worn = /datum/greyscale_config/sandals/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/sandals/worn/newvox
 
 /obj/item/clothing/shoes/event_sandals/Initialize(mapload)
 	. = ..()
@@ -182,10 +191,12 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	icon_state = "holegloves"
+	cut_type = null
 	greyscale_colors = "#3a2313"
 	greyscale_config = /datum/greyscale_config/holegloves
 	greyscale_config_worn = /datum/greyscale_config/holegloves/worn
-	cut_type = null
+	greyscale_config_worn_better_vox = /datum/greyscale_config/holegloves/worn/newvox
+
 
 /obj/item/clothing/gloves/color/black/leather/Initialize(mapload)
 	. = ..()
@@ -200,6 +211,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_colors = "#3a2313"
 	greyscale_config = /datum/greyscale_config/fingieless
 	greyscale_config_worn = /datum/greyscale_config/fingieless/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/fingieless/worn/newvox
 
 /obj/item/clothing/gloves/fingerless/leather/Initialize(mapload)
 	. = ..()
@@ -214,6 +226,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_colors = "#3a2313"
 	greyscale_config = /datum/greyscale_config/event_cloak
 	greyscale_config_worn = /datum/greyscale_config/event_cloak/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/event_cloak/worn/newvox
 
 /obj/item/clothing/neck/mantle/cloak/Initialize(mapload)
 	. = ..()
@@ -236,6 +249,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_colors = "#F1F1F1"
 	greyscale_config = /datum/greyscale_config/apron
 	greyscale_config_worn = /datum/greyscale_config/apron/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/apron/worn/newvox
 
 /obj/item/clothing/suit/apron/event_apron/Initialize(mapload)
 	. = ..()
@@ -258,6 +272,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_colors = "#ec6a00"
 	greyscale_config = /datum/greyscale_config/armor_plate
 	greyscale_config_worn = /datum/greyscale_config/armor_plate/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/armor_plate/worn/newvox
 
 /obj/item/clothing/suit/armor/armor_plate/Initialize(mapload)
 	. = ..()
@@ -268,16 +283,21 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	icon_state = "backpack"
 	worn_icon_state = "backpack_worn"
+	worn_icon_better_vox =	'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
 
 /obj/item/storage/backpack/satchel/explorer/event
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	icon_state = "satchel"
 	worn_icon_state = "satchel_worn"
+	worn_icon_better_vox =	'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
 
 /obj/item/clothing/under/costume/skyrat/bathrobe/event
 	name = "robes"
 	desc = "Comfortable, definitely posh looking robes fit for a king, or just a huge nerd who has no other job."
+	greyscale_config = /datum/greyscale_config/royal_robes
+	greyscale_config_worn = /datum/greyscale_config/royal_robes/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/royal_robes/worn/newvox
 
 /obj/item/clothing/under/costume/skyrat/bathrobe/event/Initialize(mapload)
 	. = ..()
