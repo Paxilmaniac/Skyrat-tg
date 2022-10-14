@@ -73,7 +73,46 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	set_greyscale("[pick(GLOB.fabric_clothing_colors)][pick(GLOB.fabric_clothing_colors)]")
 
 /*
-* Misc
+* Headwear
+*/
+
+/obj/item/clothing/head/helmet/event_hardhat
+	name = "armored hardhat"
+	desc = "A reinforced hardhat issued to defense forces and mining teams alike."
+	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	icon_state = "hardhat"
+	flags_inv = null
+	dog_fashion = null
+	greyscale_colors = "#ec6a00"
+	greyscale_config = /datum/greyscale_config/hardhat
+	greyscale_config_worn = /datum/greyscale_config/hardhat/worn
+
+/obj/item/clothing/head/helmet/event_hardhat/Initialize(mapload)
+	. = ..()
+	set_greyscale("[pick(GLOB.metal_clothing_colors)]")
+
+/obj/item/clothing/head/standalone_hood
+	name = "hood"
+	desc = "A hood with a little bit of support around the neck so it actually stays in place, for when you can't let the rain ruin that perfect head of yours."
+	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	icon_state = "hood"
+	body_parts_covered = HEAD
+	cold_protection = HEAD
+	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	flags_inv = HIDEHAIR|HIDEEARS
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 10, FIRE = 0, ACID = 0)
+	greyscale_colors = "#F1F1F1#F1F1F1"
+	greyscale_config = /datum/greyscale_config/lonehood
+	greyscale_config_worn = /datum/greyscale_config/lonehood/worn
+
+/obj/item/clothing/head/standalone_hood/Initialize(mapload)
+	. = ..()
+	set_greyscale("[pick(GLOB.leather_clothing_colors)][pick(GLOB.fabric_clothing_colors)]")
+
+/*
+* Footwear
 */
 
 /obj/item/clothing/shoes/jackboots/leather
@@ -93,6 +132,11 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	create_storage(type = /datum/storage/pockets/shoes)
 	set_greyscale("[pick(GLOB.leather_clothing_colors)]")
 
+/obj/item/clothing/shoes/jackboots/leather/short
+	name = "leather shoes"
+	desc = "Tough leather shoes, though you can't really tell what /kind/ of leather it is."
+	icon_state = "civshoes"
+
 /obj/item/clothing/shoes/jackboots/armored_leather
 	name = "armored boots"
 	desc = "Tough leather boots with some kind of metal plating added to the toes and shins for extra protection."
@@ -108,6 +152,10 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	. = ..()
 	create_storage(type = /datum/storage/pockets/shoes)
 	set_greyscale("[pick(GLOB.leather_clothing_colors)][pick(GLOB.metal_clothing_colors)]")
+
+/*
+* Misc
+*/
 
 /obj/item/clothing/shoes/event_sandals
 	name = "sandals"
@@ -200,22 +248,6 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 /obj/item/clothing/suit/apron/event_apron/leather/Initialize(mapload)
 	. = ..()
 	set_greyscale("[pick(GLOB.leather_clothing_colors)]")
-
-/obj/item/clothing/head/helmet/event_hardhat
-	name = "armored hardhat"
-	desc = "A reinforced hardhat issued to defense forces and mining teams alike."
-	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	icon_state = "hardhat"
-	flags_inv = null
-	dog_fashion = null
-	greyscale_colors = "#ec6a00"
-	greyscale_config = /datum/greyscale_config/hardhat
-	greyscale_config_worn = /datum/greyscale_config/hardhat/worn
-
-/obj/item/clothing/head/helmet/event_hardhat/Initialize(mapload)
-	. = ..()
-	set_greyscale("[pick(GLOB.metal_clothing_colors)]")
 
 /obj/item/clothing/suit/armor/armor_plate
 	name = "armor plate"
