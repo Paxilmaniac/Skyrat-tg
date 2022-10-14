@@ -213,7 +213,7 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 	ears = /obj/item/radio/headset/headset_sec/alt
 	gloves = /obj/item/clothing/gloves/color/black/leather
 	head = /obj/item/clothing/head/helmet/event_hardhat
-	shoes = /obj/item/clothing/shoes/jackboots/leather/armored
+	shoes = /obj/item/clothing/shoes/jackboots/armored_leather
 	l_pocket = null
 	r_pocket = null
 
