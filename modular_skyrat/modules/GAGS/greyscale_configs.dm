@@ -855,7 +855,7 @@ TREK
 	name = "High Waist Pants + Shirt (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/longpants/longpants_worn.json'
 
-/datum/greyscale_config/shirt
+/datum/greyscale_config/skirt
 	name = "Skirt + Shirt"
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/skirt/skirt.json'
