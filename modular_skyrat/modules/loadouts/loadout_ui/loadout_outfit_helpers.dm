@@ -29,7 +29,7 @@
 		equipped_outfit = outfit
 	else
 		CRASH("Outfit passed to equip_outfit_and_loadout was neither a path nor an instantiated type!")
-
+/* //You's a muthafucka, you know that right?
 	var/override_preference = preference_source.read_preference(/datum/preference/choiced/loadout_override_preference)
 
 	var/list/loadout_datums = loadout_list_to_datums(preference_source?.loadout_list)
@@ -56,11 +56,14 @@
 				continue
 
 			item.insert_path_into_outfit(equipped_outfit, src, visuals_only)
+*/
 
 	equipOutfit(equipped_outfit, visuals_only)
 
+/*
 	for(var/datum/loadout_item/item as anything in loadout_datums)
 		item.on_equip_item(preference_source, src, visuals_only)
+*/
 
 	regenerate_icons()
 	return TRUE

@@ -7,3 +7,9 @@
 
 /obj/item/storage/box/foodpack/PopulateContents()
 	. = ..()
+	new /obj/item/food/plumphelmetbiscuit(src)
+	new /obj/item/food/sausage(src)
+	new /obj/item/reagent_containers/cup/glass/flask/filled(src)
+
+/obj/item/reagent_containers/cup/glass/flask/filled
+	list_reagents = list(/datum/reagent/consumable/ethanol/wine = 30)

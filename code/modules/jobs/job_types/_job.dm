@@ -207,10 +207,10 @@
 	equip_outfit_and_loadout(equipping.outfit, used_pref, visual_only, equipping) //SKYRAT EDIT CHANGE
 
 /// tells the given channel that the given mob is the new department head. See communications.dm for valid channels.
-/datum/job/proc/announce_head(mob/living/carbon/human/H, channels, job_title) // SKYRAT EDIT CHANGE - ALTERNATIVE_JOB_TITLES - Original: /datum/job/proc/announce_head(mob/living/carbon/human/H, channels)
+/datum/job/proc/announce_head(mob/living/carbon/human/H, channels)
 	if(H && GLOB.announcement_systems.len)
 		//timer because these should come after the captain announcement
-		SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/_addtimer, CALLBACK(pick(GLOB.announcement_systems), /obj/machinery/announcement_system/proc/announce, "NEWHEAD", H.real_name, job_title, channels), 1)) // SKYRAT EDIT CHANGE - ALTERNATIVE_JOB_TITLES - Original: SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/_addtimer, CALLBACK(pick(GLOB.announcement_systems), /obj/machinery/announcement_system/proc/announce, "NEWHEAD", H.real_name, H.job, channels), 1))
+		SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/_addtimer, CALLBACK(pick(GLOB.announcement_systems), /obj/machinery/announcement_system/proc/announce, "NEWHEAD", H.real_name, channels), 1)) // SKYRAT EDIT CHANGE - ALTERNATIVE_JOB_TITLES - Original: SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/_addtimer, CALLBACK(pick(GLOB.announcement_systems), /obj/machinery/announcement_system/proc/announce, "NEWHEAD", H.real_name, H.job, channels), 1))
 
 //If the configuration option is set to require players to be logged as old enough to play certain jobs, then this proc checks that they are, otherwise it just returns 1
 /datum/job/proc/player_old_enough(client/player)
@@ -286,7 +286,6 @@
 	belt = /obj/item/modular_computer/tablet/pda
 	back = /obj/item/storage/backpack
 	shoes = /obj/item/clothing/shoes/sneakers/black
-	box = /obj/item/storage/box/survival
 
 	preload = TRUE // These are used by the prefs ui, and also just kinda could use the extra help at roundstart
 
@@ -297,6 +296,7 @@
 	var/pda_slot = ITEM_SLOT_BELT
 
 /datum/outfit/job/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/*
 	if(ispath(back, /obj/item/storage/backpack))
 		switch(H.backpack)
 			if(GBACKPACK)
@@ -323,6 +323,7 @@
 	else
 		holder = "[uniform]"
 	uniform = text2path(holder)
+*/
 
 	var/client/client = GLOB.directory[ckey(H.mind?.key)]
 
@@ -362,16 +363,16 @@
 /datum/outfit/job/get_chameleon_disguise_info()
 	var/list/types = ..()
 	types -= /obj/item/storage/backpack //otherwise this will override the actual backpacks
-	types += backpack
-	types += satchel
-	types += duffelbag
+	//types += backpack
+	//types += satchel
+	//types += duffelbag
 	return types
 
 /datum/outfit/job/get_types_to_preload()
 	var/list/preload = ..()
-	preload += backpack
-	preload += satchel
-	preload += duffelbag
+	//preload += backpack
+	//preload += satchel
+	//preload += duffelbag
 	preload += /obj/item/storage/backpack/satchel/leather
 	var/skirtpath = "[uniform]/skirt"
 	preload += text2path(skirtpath)

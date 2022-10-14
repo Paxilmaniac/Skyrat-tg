@@ -38,7 +38,7 @@
 		/obj/item/clothing/mask/whistle = 5,
 		/obj/item/melee/baton/security/boomerang/loaded = 1
 	)
-	rpg_title = "Guard"
+	rpg_title = "Militia Guard"
 	job_flags = JOB_ANNOUNCE_ARRIVAL | JOB_CREW_MANIFEST | JOB_EQUIP_RANK | JOB_CREW_MEMBER | JOB_NEW_PLAYER_JOINABLE | JOB_REOPEN_ON_ROUNDSTART_LOSS | JOB_ASSIGN_QUIRKS | JOB_CAN_BE_INTERN
 
 
@@ -208,7 +208,7 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 	uniform = /obj/item/clothing/under/costume/buttondown/workshirt
 	suit = /obj/item/clothing/suit/armor/armor_plate
 	suit_store = /obj/item/melee/baton
-	backpack_contents = list()
+	backpack_contents = list(/obj/item/storage/box/trail_food_kit)
 	belt = /obj/item/storage/belt/sabre/cargo/security_actually
 	ears = /obj/item/radio/headset/headset_sec/alt
 	gloves = /obj/item/clothing/gloves/color/black/leather
