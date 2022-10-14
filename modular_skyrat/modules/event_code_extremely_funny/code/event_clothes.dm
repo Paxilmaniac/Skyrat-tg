@@ -59,7 +59,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 		icon_state = "longpants_longshirt"
 	set_greyscale("[pick(GLOB.fabric_clothing_colors)][pick(GLOB.leather_clothing_colors)]")
 
-/obj/item/clothing/under/costume/buttondown/event_clothingskirt
+/obj/item/clothing/under/costume/buttondown/event_clothing/skirt
 	name = "long skirt"
 	desc = "A plain skirt (or kilt if you feel like it) with a fairly comfortable shirt on top."
 	icon_state = "skirt_buttondown"
