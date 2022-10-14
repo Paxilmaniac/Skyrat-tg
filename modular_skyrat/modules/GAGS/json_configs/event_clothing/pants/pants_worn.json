@@ -1,5 +1,5 @@
 {
-	"overalls_buttondown": [
+	"pants_buttondown": [
 		{
 			"type": "icon_state",
 			"icon_state": "buttondown_worn",
@@ -8,12 +8,12 @@
 		},
 		{
 			"type": "icon_state",
-			"icon_state": "overalls_worn",
+			"icon_state": "pants_worn",
 			"blend_mode": "overlay",
 			"color_ids": [ 2 ]
 		}
 	],
-	"overalls_longshirt": [
+	"pants_longshirt": [
 		{
 			"type": "icon_state",
 			"icon_state": "longshirt_worn",
@@ -22,7 +22,7 @@
 		},
 		{
 			"type": "icon_state",
-			"icon_state": "overalls_worn",
+			"icon_state": "pants_worn",
 			"blend_mode": "overlay",
 			"color_ids": [ 2 ]
 		}

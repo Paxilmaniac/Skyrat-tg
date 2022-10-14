@@ -1,8 +1,80 @@
 GLOBAL_LIST_INIT(metal_clothing_colors, list("#c74900","#857994","#bec7d3",))
-GLOBAL_LIST_INIT(dark_leather_clothing_colors, list("#362a2a","#272320","#2b2835",))
-GLOBAL_LIST_INIT(light_leather_clothing_colors, list("#6b6560","#6e423c","#4d5157",))
+GLOBAL_LIST_INIT(leather_clothing_colors, list("#362a2a","#272320","#27252e","#53453a","#6e423c","#533737",))
 GLOBAL_LIST_INIT(fabric_clothing_colors, list("#F1F1F1","#ffefd3","#dbcbb5","#e5e9be",))
 GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
+
+/*
+* Underclothes
+*/
+
+/obj/item/clothing/under/costume/buttondown/event_clothing
+	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	can_adjust = FALSE
+	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
+	greyscale_colors = "#F1F1F1#F1F1F1"
+
+// Overalls
+
+/obj/item/clothing/under/costume/buttondown/event_clothing/overalls
+	name = "leather overalls"
+	desc = "Leather overalls with a pretty normal looking shirt under it, you have no idea what any of this is actually made from."
+	icon_state = "overalls_buttondown"
+	greyscale_config = /datum/greyscale_config/overalls
+	greyscale_config_worn = /datum/greyscale_config/overalls/worn
+
+/obj/item/clothing/under/costume/buttondown/event_clothing/overalls/Initialize(mapload)
+	. = ..()
+	if(prob(50))
+		icon_state = "overalls_longshirt"
+	set_greyscale("[pick(GLOB.fabric_clothing_colors)][pick(GLOB.leather_clothing_colors)]")
+
+//Pants with a shirt
+
+/obj/item/clothing/under/costume/buttondown/event_clothing/workpants
+	name = "leather pants"
+	desc = "Worn looking leather pants with a pretty comfortable shirt on top, where the leather for these pants came from is as of now unknown."
+	icon_state = "pants_buttondown"
+	greyscale_config = /datum/greyscale_config/workpants
+	greyscale_config_worn = /datum/greyscale_config/workpants/worn
+
+/obj/item/clothing/under/costume/buttondown/event_clothing/workpants/Initialize(mapload)
+	. = ..()
+	if(prob(50))
+		icon_state = "pants_longshirt"
+	set_greyscale("[pick(GLOB.fabric_clothing_colors)][pick(GLOB.leather_clothing_colors)]")
+
+//High waist pants with a shirt
+
+/obj/item/clothing/under/costume/buttondown/event_clothing/longpants
+	name = "high waist leather pants"
+	desc = "Leather pants with an exceptionally high waist for working around water, or for geeks, you choose."
+	icon_state = "longpants_buttondown"
+	greyscale_config = /datum/greyscale_config/longpants
+	greyscale_config_worn = /datum/greyscale_config/longpants/worn
+
+/obj/item/clothing/under/costume/buttondown/event_clothing/longpants/Initialize(mapload)
+	. = ..()
+	if(prob(50))
+		icon_state = "longpants_longshirt"
+	set_greyscale("[pick(GLOB.fabric_clothing_colors)][pick(GLOB.leather_clothing_colors)]")
+
+/obj/item/clothing/under/costume/buttondown/event_clothingskirt
+	name = "long skirt"
+	desc = "A plain skirt (or kilt if you feel like it) with a fairly comfortable shirt on top."
+	icon_state = "skirt_buttondown"
+	greyscale_config = /datum/greyscale_config/skirt
+	greyscale_config_worn = /datum/greyscale_config/skirt/worn
+
+/obj/item/clothing/under/costume/buttondown/event_clothing/skirt/Initialize(mapload)
+	. = ..()
+	if(prob(50))
+		icon_state = "skirt_longshirt"
+	set_greyscale("[pick(GLOB.fabric_clothing_colors)][pick(GLOB.fabric_clothing_colors)]")
+
+/*
+* Misc
+*/
 
 /obj/item/clothing/shoes/jackboots/leather
 	name = "leather boots"
@@ -21,7 +93,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 /obj/item/clothing/shoes/jackboots/leather/Initialize(mapload)
 	. = ..()
 	create_storage(type = /datum/storage/pockets/shoes)
-	set_greyscale("[pick(GLOB.dark_leather_clothing_colors)]")
+	set_greyscale("[pick(GLOB.leather_clothing_colors)]")
 
 /obj/item/clothing/shoes/jackboots/leather/armored
 	name = "armored boots"
@@ -34,7 +106,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 
 /obj/item/clothing/shoes/jackboots/leather/armored/Initialize(mapload)
 	. = ..()
-	set_greyscale("[pick(GLOB.dark_leather_clothing_colors)][pick(GLOB.metal_clothing_colors)]")
+	set_greyscale("[pick(GLOB.leather_clothing_colors)][pick(GLOB.metal_clothing_colors)]")
 
 /obj/item/clothing/shoes/event_sandals
 	name = "sandals"
@@ -53,39 +125,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 
 /obj/item/clothing/shoes/event_sandals/Initialize(mapload)
 	. = ..()
-	set_greyscale("[pick(GLOB.dark_leather_clothing_colors)]")
-
-/obj/item/clothing/under/costume/buttondown/overalls
-	name = "leather overalls with buttondown shirt"
-	desc = "Leather overalls with a pretty normal looking buttondown shirt under it, you have no idea what any of this is actually made from."
-	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	icon_state = "overalls"
-	can_adjust = FALSE
-	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
-	greyscale_colors = "#F1F1F1#3a2313"
-	greyscale_config = /datum/greyscale_config/overalls
-	greyscale_config_worn = /datum/greyscale_config/overalls/worn
-
-/obj/item/clothing/under/costume/buttondown/overalls/Initialize(mapload)
-	. = ..()
-	set_greyscale("[pick(GLOB.fabric_clothing_colors)][pick(GLOB.dark_leather_clothing_colors)]")
-
-/obj/item/clothing/under/costume/buttondown/workshirt
-	name = "leather pants with buttondown shirt"
-	desc = "Worn looking leather pants with a pretty comfortable buttondown shirt on top, where the leather for these pants came from us as of now unknown."
-	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	icon_state = "workshirt"
-	can_adjust = FALSE
-	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
-	greyscale_colors = "#F1F1F1#3a2313"
-	greyscale_config = /datum/greyscale_config/workshirt
-	greyscale_config_worn = /datum/greyscale_config/workshirt/worn
-
-/obj/item/clothing/under/costume/buttondown/workshirt/Initialize(mapload)
-	. = ..()
-	set_greyscale("[pick(GLOB.fabric_clothing_colors)][pick(GLOB.light_leather_clothing_colors)]")
+	set_greyscale("[pick(GLOB.leather_clothing_colors)]")
 
 /obj/item/clothing/gloves/color/black/leather
 	name = "leather gloves"
@@ -100,7 +140,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 
 /obj/item/clothing/gloves/color/black/leather/Initialize(mapload)
 	. = ..()
-	set_greyscale("[pick(GLOB.light_leather_clothing_colors)]")
+	set_greyscale("[pick(GLOB.leather_clothing_colors)]")
 
 /obj/item/clothing/gloves/fingerless/leather
 	name = "fingerless leather gloves"
@@ -114,7 +154,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 
 /obj/item/clothing/gloves/fingerless/leather/Initialize(mapload)
 	. = ..()
-	set_greyscale("[pick(GLOB.light_leather_clothing_colors)]")
+	set_greyscale("[pick(GLOB.leather_clothing_colors)]")
 
 /obj/item/clothing/neck/mantle/cloak
 	name = "cloak"
@@ -128,7 +168,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 
 /obj/item/clothing/neck/mantle/cloak/Initialize(mapload)
 	. = ..()
-	set_greyscale("[pick(GLOB.light_leather_clothing_colors)]")
+	set_greyscale("[pick(GLOB.leather_clothing_colors)]")
 
 /obj/item/clothing/neck/mantle/cloak/cloth
 	name = "cloak"
@@ -158,7 +198,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 
 /obj/item/clothing/suit/apron/event_apron/leather/Initialize(mapload)
 	. = ..()
-	set_greyscale("[pick(GLOB.dark_leather_clothing_colors)]")
+	set_greyscale("[pick(GLOB.leather_clothing_colors)]")
 
 /obj/item/clothing/head/helmet/event_hardhat
 	name = "armored hardhat"
