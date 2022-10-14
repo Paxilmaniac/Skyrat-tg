@@ -1,0 +1,15 @@
+{
+	"hardhat": [
+		{
+			"type": "icon_state",
+			"icon_state": "hardhat",
+			"blend_mode": "overlay",
+			"color_ids": [ 1 ]
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "hardhat_leather",
+			"blend_mode": "overlay"
+		}
+	]
+}

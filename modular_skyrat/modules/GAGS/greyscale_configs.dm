@@ -819,3 +819,106 @@ TREK
 	name = "Wargame Hologram Projector"
 	icon_file = 'modular_skyrat/modules/wargame_projectors/icons/projectors_and_holograms.dmi'
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/wargame_holoprojector/projector.json'
+
+/*
+* NIGHTMARE NIGHTMARE NIGHTMARE
+*/
+
+/datum/greyscale_config/armorboots
+	name = "Armored Leather Boots"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/armorboots/armorboots.json'
+
+/datum/greyscale_config/armorboots/worn
+	name = "Armored Leather Boots (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/armorboots/armorboots_worn.json'
+
+/datum/greyscale_config/civboots
+	name = "Leather Boots"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/civboots/civboots.json'
+
+/datum/greyscale_config/civboots/worn
+	name = "Leather Boots (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/civboots/civboots_worn.json'
+
+/datum/greyscale_config/sandals
+	name = "Sandals"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/sandals/sandals.json'
+
+/datum/greyscale_config/sandals/worn
+	name = "Sandals (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/sandals/sandals_worn.json'
+
+/datum/greyscale_config/overalls
+	name = "Overalls"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/overalls/overalls.json'
+
+/datum/greyscale_config/overalls/worn
+	name = "Overalls (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/overalls/overalls_worn.json'
+
+/datum/greyscale_config/workshirt
+	name = "Workshirt"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/workshirt/workshirt.json'
+
+/datum/greyscale_config/workshirt/worn
+	name = "Workshirt (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/workshirt/workshirt_worn.json'
+
+/datum/greyscale_config/holegloves
+	name = "Leather Gloves"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/holegloves/holegloves.json'
+
+/datum/greyscale_config/holegloves/worn
+	name = "Leather Gloves (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/holegloves/holegloves_worn.json'
+
+/datum/greyscale_config/fingieless
+	name = "Fingerless Leather Gloves"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/fingieless/fingieless.json'
+
+/datum/greyscale_config/fingieless/worn
+	name = "Fingerless Leather Gloves (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/fingieless/fingieless_worn.json'
+
+/datum/greyscale_config/cloak
+	name = "Cloak"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/cloak/cloak.json'
+
+/datum/greyscale_config/cloak/worn
+	name = "Cloak (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/cloak/cloak_worn.json'
+
+/datum/greyscale_config/apron
+	name = "Apron"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/apron/apron.json'
+
+/datum/greyscale_config/apron/worn
+	name = "Apron (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/apron/apron_worn.json'
+
+/datum/greyscale_config/hardhat
+	name = "Hardhat"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/hardhat/hardhat.json'
+
+/datum/greyscale_config/hardhat/worn
+	name = "Hardhat (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/hardhat/hardhat_worn.json'
+
+/datum/greyscale_config/armor_plate
+	name = "Armor Plate"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/armor/armor.json'
+
+/datum/greyscale_config/armor_plate/worn
+	name = "Armor Plate (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/armor/armor_worn.json'

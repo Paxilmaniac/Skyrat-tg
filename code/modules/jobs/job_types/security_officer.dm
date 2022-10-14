@@ -205,32 +205,21 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 	jobtype = /datum/job/security_officer
 
 	id_trim = /datum/id_trim/job/security_officer
-	uniform = /obj/item/clothing/under/rank/security/officer
-	suit = /obj/item/clothing/suit/armor/vest/alt/sec
-	suit_store = /obj/item/gun/energy/disabler
-	backpack_contents = list(
-		/obj/item/evidencebag = 1,
-		)
-	belt = /obj/item/modular_computer/tablet/pda/security
+	uniform = /obj/item/clothing/under/costume/buttondown/workshirt
+	suit = /obj/item/clothing/suit/armor/armor_plate
+	suit_store = /obj/item/melee/baton
+	backpack_contents = list()
+	belt = /obj/item/storage/belt/sabre/cargo/security_actually
 	ears = /obj/item/radio/headset/headset_sec/alt
-	gloves = /obj/item/clothing/gloves/color/black/security //SKYRAT EDIT CHANGE - Original: /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/security_garrison //SKYRAT EDIT CHANGE - Original: /obj/item/clothing/head/helmet/sec
-	shoes = /obj/item/clothing/shoes/jackboots/sec
-	l_pocket = /obj/item/restraints/handcuffs
-	r_pocket = /obj/item/assembly/flash/handheld
+	gloves = /obj/item/clothing/gloves/color/black/leather
+	head = /obj/item/clothing/head/helmet/event_hardhat
+	shoes = /obj/item/clothing/shoes/jackboots/leather/armored
+	l_pocket = null
+	r_pocket = null
 
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
+	back = /obj/item/storage/backpack/explorer/event
 
-	box = /obj/item/storage/box/survival/security
-	chameleon_extras = list(
-		/obj/item/clothing/glasses/hud/security/sunglasses,
-		/obj/item/clothing/head/helmet,
-		/obj/item/gun/energy/disabler,
-		)
-		//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
-	implants = list(/obj/item/implant/mindshield)
+	box = null
 
 /datum/outfit/job/security/mod
 	name = "Security Officer (MODsuit)"
