@@ -1126,6 +1126,8 @@ digi
 * Underclothes for the event
 */
 
+//Overalls
+
 /datum/greyscale_config/overalls
 	name = "Overalls + Shirt"
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
@@ -1134,6 +1136,11 @@ digi
 /datum/greyscale_config/overalls/worn
 	name = "Overalls + Shirt (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/overalls/overalls_worn.json'
+
+/datum/greyscale_config/overalls/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+//Normal ass pants
 
 /datum/greyscale_config/workpants
 	name = "Pants + Shirt"
@@ -1144,6 +1151,11 @@ digi
 	name = "Pants + Shirt (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/pants/pants_worn.json'
 
+/datum/greyscale_config/workpants/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+//High waist pants
+
 /datum/greyscale_config/longpants
 	name = "High Waist Pants + Shirt"
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
@@ -1152,6 +1164,11 @@ digi
 /datum/greyscale_config/longpants/worn
 	name = "High Waist Pants + Shirt (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/longpants/longpants_worn.json'
+
+/datum/greyscale_config/longpants/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+//Skirt
 
 /datum/greyscale_config/skirt
 	name = "Skirt + Shirt"
@@ -1162,9 +1179,14 @@ digi
 	name = "Skirt + Shirt (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/skirt/skirt_worn.json'
 
+/datum/greyscale_config/skirt/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
 /*
 * Headgear for el evento
 */
+
+//Helmet hardhat thing
 
 /datum/greyscale_config/hardhat
 	name = "Hardhat"
@@ -1175,6 +1197,11 @@ digi
 	name = "Hardhat (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/hardhat/hardhat_worn.json'
 
+/datum/greyscale_config/hardhat/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+//Hood
+
 /datum/greyscale_config/lonehood
 	name = "Standalone Hood"
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
@@ -1184,9 +1211,14 @@ digi
 	name = "Standalone Hood (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/lonehood/lonehood_worn.json'
 
+/datum/greyscale_config/lonehood/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
 /*
 * Misc stuff for the event
 */
+
+//Armored boots
 
 /datum/greyscale_config/armorboots
 	name = "Armored Leather Boots"
@@ -1197,6 +1229,11 @@ digi
 	name = "Armored Leather Boots (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/armorboots/armorboots_worn.json'
 
+/datum/greyscale_config/armorboots/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+//Civilian shoes
+
 /datum/greyscale_config/civboots
 	name = "Leather Boots"
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
@@ -1205,6 +1242,11 @@ digi
 /datum/greyscale_config/civboots/worn
 	name = "Leather Boots (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/civboots/civboots_worn.json'
+
+/datum/greyscale_config/civboots/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+//Sandals
 
 /datum/greyscale_config/sandals
 	name = "Sandals"
@@ -1215,6 +1257,11 @@ digi
 	name = "Sandals (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/sandals/sandals_worn.json'
 
+/datum/greyscale_config/sandals/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+//Gloves
+
 /datum/greyscale_config/holegloves
 	name = "Leather Gloves"
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
@@ -1223,6 +1270,11 @@ digi
 /datum/greyscale_config/holegloves/worn
 	name = "Leather Gloves (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/holegloves/holegloves_worn.json'
+
+/datum/greyscale_config/holegloves/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+//Gloves missing the fingers dlc
 
 /datum/greyscale_config/fingieless
 	name = "Fingerless Leather Gloves"
@@ -1233,6 +1285,11 @@ digi
 	name = "Fingerless Leather Gloves (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/fingieless/fingieless_worn.json'
 
+/datum/greyscale_config/fingieless/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+//Cloak
+
 /datum/greyscale_config/event_cloak
 	name = "Cloak"
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
@@ -1241,6 +1298,11 @@ digi
 /datum/greyscale_config/event_cloak/worn
 	name = "Cloak (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/cloak/cloak_worn.json'
+
+/datum/greyscale_config/event_cloak/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+//Apron
 
 /datum/greyscale_config/apron
 	name = "Apron"
@@ -1251,6 +1313,11 @@ digi
 	name = "Apron (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/apron/apron_worn.json'
 
+/datum/greyscale_config/apron/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+//Armor vest
+
 /datum/greyscale_config/armor_plate
 	name = "Armor Plate"
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
@@ -1259,3 +1326,6 @@ digi
 /datum/greyscale_config/armor_plate/worn
 	name = "Armor Plate (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/armor/armor_worn.json'
+
+/datum/greyscale_config/armor_plate/worn/newvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
