@@ -1211,12 +1211,12 @@ digi
 	name = "Fingerless Leather Gloves (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/fingieless/fingieless_worn.json'
 
-/datum/greyscale_config/cloak
+/datum/greyscale_config/event_cloak
 	name = "Cloak"
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/cloak/cloak.json'
 
-/datum/greyscale_config/cloak/worn
+/datum/greyscale_config/event_cloak/worn
 	name = "Cloak (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/cloak/cloak_worn.json'
 

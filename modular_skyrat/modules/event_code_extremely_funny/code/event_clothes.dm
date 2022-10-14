@@ -163,8 +163,8 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	icon_state = "cloak"
 	greyscale_colors = "#3a2313"
-	greyscale_config = /datum/greyscale_config/cloak
-	greyscale_config_worn = /datum/greyscale_config/cloak/worn
+	greyscale_config = /datum/greyscale_config/event_cloak
+	greyscale_config_worn = /datum/greyscale_config/event_cloak/worn
 
 /obj/item/clothing/neck/mantle/cloak/Initialize(mapload)
 	. = ..()
