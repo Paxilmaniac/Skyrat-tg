@@ -37,7 +37,7 @@ GLOBAL_DATUM(rpgtitle_controller, /datum/rpgtitle_controller)
 	SIGNAL_HANDLER
 
 	var/datum/job/job = SSjob.GetJob(rank)
-
+/*
 	//we must prepare for the mother of all strings
 	new_crewmember.maptext_height = 32
 	new_crewmember.maptext_width = 80
@@ -89,15 +89,15 @@ GLOBAL_DATUM(rpgtitle_controller, /datum/rpgtitle_controller)
 
 	//mother of all strings...
 	new_crewmember.maptext = "<span class='maptext' style='text-align: center'><span style='color: [new_crewmember.chat_color || rgb(rand(100,255), rand(100,255), rand(100,255))]'>Level [rand(1, 100)] [maptext_title]</span></span>"
-
+*/
 	if(!(job.job_flags & JOB_CREW_MEMBER))
 		return
 
 	var/obj/item/card/id/card = new_crewmember.get_idcard()
 	if(!card)//since this is called on current crew, some may not have IDs. shame on them for missing out!
 		return
-	card.name = "adventuring license"
-	card.desc = "A written license from the adventuring guild. You're good to go!"
+	card.name = "identification paper"
+	card.desc = "A written form from the capital that says who you are, and what you're probably good at!"
 	card.icon_state = "card_rpg"
 	card.assignment = job.rpg_title
 	if(istype(card, /obj/item/card/id/advanced))

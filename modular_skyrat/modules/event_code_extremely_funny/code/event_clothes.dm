@@ -1,6 +1,6 @@
-GLOBAL_LIST_INIT(metal_clothing_colors, list("#ec6a00","#ffb700","#c76000","#aac3db","#8893a1",))
-GLOBAL_LIST_INIT(dark_leather_clothing_colors, list("#3a2313","#413731","#36251a",))
-GLOBAL_LIST_INIT(light_leather_clothing_colors, list("#6d5e53","#634c40","#634e3b",))
+GLOBAL_LIST_INIT(metal_clothing_colors, list("#c74900","#857994","#bec7d3",))
+GLOBAL_LIST_INIT(dark_leather_clothing_colors, list("#362a2a","#272320","#2b2835",))
+GLOBAL_LIST_INIT(light_leather_clothing_colors, list("#6b6560","#6e423c","#4d5157",))
 GLOBAL_LIST_INIT(fabric_clothing_colors, list("#F1F1F1","#ffefd3","#dbcbb5","#e5e9be",))
 GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 
