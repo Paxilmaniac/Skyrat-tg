@@ -212,10 +212,6 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	create_storage(type = /datum/storage/pockets/shoes)
 	set_greyscale("[pick(GLOB.leather_clothing_colors)][pick(GLOB.metal_clothing_colors)]")
 
-/*
-* Misc
-*/
-
 /obj/item/clothing/shoes/event_sandals
 	name = "sandals"
 	desc = "A pair of rather plain sandals."
@@ -240,6 +236,77 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 /obj/item/clothing/shoes/event_sandals/Initialize(mapload)
 	. = ..()
 	set_greyscale("[pick(GLOB.leather_clothing_colors)]")
+
+/*
+* Suit Slot Stuff
+*/
+
+/obj/item/clothing/suit/toggle/jacket/sweater/cloth_colors
+	greyscale_colors = "#F1F1F1"
+	flags_1 = NONE
+
+/obj/item/clothing/suit/toggle/jacket/sweater/cloth_colors/Initialize(mapload)
+	. = ..()
+	set_greyscale("[pick(GLOB.fabric_clothing_colors)]")
+
+/obj/item/clothing/suit/toggle/jacket/sweater/leather_colors
+	name = "leather sweater jacket"
+	desc = "Say that name ten times fast."
+	greyscale_colors = "#F1F1F1"
+	flags_1 = NONE
+
+/obj/item/clothing/suit/toggle/jacket/sweater/leather_colors/Initialize(mapload)
+	. = ..()
+	set_greyscale("[pick(GLOB.leather_clothing_colors)]")
+
+/obj/item/clothing/suit/apron/event_apron
+	name = "apron"
+	desc = "A basic apron made of a close enough to white fabric to be used by butchers and doctors alike, some may even say these are the same job."
+	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
+	greyscale_colors = "#F1F1F1"
+	greyscale_config = /datum/greyscale_config/apron
+	greyscale_config_worn = /datum/greyscale_config/apron/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/apron/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/apron/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/apron/worn/teshari
+
+/obj/item/clothing/suit/apron/event_apron/Initialize(mapload)
+	. = ..()
+	set_greyscale("[pick(GLOB.fabric_clothing_colors)]")
+
+/obj/item/clothing/suit/apron/event_apron/leather
+	desc = "A basic apron made of thick leather, popular with blacksmiths, and other individuals who might want to protect their chest."
+	greyscale_colors = "#3a2313"
+
+/obj/item/clothing/suit/apron/event_apron/leather/Initialize(mapload)
+	. = ..()
+	set_greyscale("[pick(GLOB.leather_clothing_colors)]")
+
+/obj/item/clothing/suit/armor/armor_plate
+	name = "armor plate"
+	desc = "A plate of some pretty cheap looking metal, but at least it'll keep you safe, right?"
+	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
+	icon_state = "armor"
+	greyscale_colors = "#ec6a00"
+	greyscale_config = /datum/greyscale_config/armor_plate
+	greyscale_config_worn = /datum/greyscale_config/armor_plate/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/armor_plate/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/armor_plate/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/armor_plate/worn/teshari
+
+/obj/item/clothing/suit/armor/armor_plate/Initialize(mapload)
+	. = ..()
+	set_greyscale("[pick(GLOB.metal_clothing_colors)]")
+
+/*
+* Misc
+*/
 
 /obj/item/clothing/gloves/color/black/leather
 	name = "leather gloves"
@@ -304,51 +371,6 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 /obj/item/clothing/neck/mantle/cloak/cloth/Initialize(mapload)
 	. = ..()
 	set_greyscale("[pick(GLOB.fabric_clothing_colors)]")
-
-/obj/item/clothing/suit/apron/event_apron
-	name = "apron"
-	desc = "A basic apron made of close enough to white fabric to be used by butchers and doctors alike, some may even say these are the same job."
-	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
-	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
-	greyscale_colors = "#F1F1F1"
-	greyscale_config = /datum/greyscale_config/apron
-	greyscale_config_worn = /datum/greyscale_config/apron/worn
-	greyscale_config_worn_better_vox = /datum/greyscale_config/apron/worn/newvox
-	greyscale_config_worn_vox = /datum/greyscale_config/apron/worn/oldvox
-	greyscale_config_worn_teshari = /datum/greyscale_config/apron/worn/teshari
-
-/obj/item/clothing/suit/apron/event_apron/Initialize(mapload)
-	. = ..()
-	set_greyscale("[pick(GLOB.fabric_clothing_colors)]")
-
-/obj/item/clothing/suit/apron/event_apron/leather
-	desc = "A basic apron made of thick leather, popular with blacksmiths, and other individuals who might want to protect their chest."
-	greyscale_colors = "#3a2313"
-
-/obj/item/clothing/suit/apron/event_apron/leather/Initialize(mapload)
-	. = ..()
-	set_greyscale("[pick(GLOB.leather_clothing_colors)]")
-
-/obj/item/clothing/suit/armor/armor_plate
-	name = "armor plate"
-	desc = "A plate of some pretty cheap looking metal, but at least it'll keep you safe, right?"
-	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
-	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
-	icon_state = "armor"
-	greyscale_colors = "#ec6a00"
-	greyscale_config = /datum/greyscale_config/armor_plate
-	greyscale_config_worn = /datum/greyscale_config/armor_plate/worn
-	greyscale_config_worn_better_vox = /datum/greyscale_config/armor_plate/worn/newvox
-	greyscale_config_worn_vox = /datum/greyscale_config/armor_plate/worn/oldvox
-	greyscale_config_worn_teshari = /datum/greyscale_config/armor_plate/worn/teshari
-
-/obj/item/clothing/suit/armor/armor_plate/Initialize(mapload)
-	. = ..()
-	set_greyscale("[pick(GLOB.metal_clothing_colors)]")
 
 /obj/item/storage/backpack/explorer/event
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'

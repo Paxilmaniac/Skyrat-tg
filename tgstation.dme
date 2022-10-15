@@ -5597,6 +5597,7 @@
 #include "modular_skyrat\modules\ERT_Factions\FTU\code\items.dm"
 #include "modular_skyrat\modules\ERT_Factions\FTU\code\projectiles.dm"
 #include "modular_skyrat\modules\event_code_extremely_funny\code\event_clothes.dm"
+#include "modular_skyrat\modules\event_code_extremely_funny\code\rain.dm"
 #include "modular_skyrat\modules\event_code_extremely_funny\code\random_items.dm"
 #include "modular_skyrat\modules\event_vote\code\event_chaos_system.dm"
 #include "modular_skyrat\modules\event_vote\code\event_vote.dm"
