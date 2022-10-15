@@ -3,8 +3,8 @@
 	description = "Alter genomes, turn monkeys into humans (and vice-versa), and make DNA backups."
 	department_head = list(JOB_RESEARCH_DIRECTOR)
 	faction = FACTION_STATION
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = SUPERVISOR_RD
 	selection_color = "#ffeeff"
 	exp_requirements = 60

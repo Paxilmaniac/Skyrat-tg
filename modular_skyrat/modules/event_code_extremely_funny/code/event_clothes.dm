@@ -1,6 +1,6 @@
 GLOBAL_LIST_INIT(metal_clothing_colors, list("#c74900","#857994","#bec7d3",))
-GLOBAL_LIST_INIT(leather_clothing_colors, list("#362a2a","#272320","#27252e","#53453a","#6e423c","#533737",))
-GLOBAL_LIST_INIT(fabric_clothing_colors, list("#F1F1F1","#ffefd3","#dbcbb5","#e5e9be",))
+GLOBAL_LIST_INIT(leather_clothing_colors, list("#553f3f","#4e331e","#363441","#645041","#6e423c","#533737",))
+GLOBAL_LIST_INIT(fabric_clothing_colors, list("#F1F1F1","#b9b9b9","#d4c7a3","#dac381","#e0d0af","#e9e2d6"))
 GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 
 /*
@@ -88,6 +88,25 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	if(prob(50))
 		icon_state = "skirt_longshirt"
 	set_greyscale("[pick(GLOB.fabric_clothing_colors)][pick(GLOB.fabric_clothing_colors)]")
+
+//Robes
+/obj/item/clothing/under/costume/skyrat/bathrobe/event
+	name = "robes"
+	desc = "Comfortable, definitely posh looking robes fit for a king, or just a huge nerd who has no other job."
+	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+	icon_state = "robes"
+	worn_icon_state = "robes_worn"
+	greyscale_config = /datum/greyscale_config/royal_robes
+	greyscale_config_worn = /datum/greyscale_config/royal_robes/worn
+	greyscale_config_worn_better_vox = /datum/greyscale_config/royal_robes/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/royal_robes/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/royal_robes/worn/teshari
+
+/obj/item/clothing/under/costume/skyrat/bathrobe/event/Initialize(mapload)
+	. = ..()
+	set_greyscale("[pick(GLOB.science_robe_colors)]")
 
 /*
 * Headwear
@@ -348,24 +367,6 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	worn_icon_better_vox =	'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
 	worn_icon_vox = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
 	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
-
-/obj/item/clothing/under/costume/skyrat/bathrobe/event
-	name = "robes"
-	desc = "Comfortable, definitely posh looking robes fit for a king, or just a huge nerd who has no other job."
-	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
-	icon_state = "robes"
-	worn_icon_state = "robes_worn"
-	greyscale_config = /datum/greyscale_config/royal_robes
-	greyscale_config_worn = /datum/greyscale_config/royal_robes/worn
-	greyscale_config_worn_better_vox = /datum/greyscale_config/royal_robes/worn/newvox
-	greyscale_config_worn_vox = /datum/greyscale_config/royal_robes/worn/oldvox
-	greyscale_config_worn_teshari = /datum/greyscale_config/royal_robes/worn/teshari
-
-/obj/item/clothing/under/costume/skyrat/bathrobe/event/Initialize(mapload)
-	. = ..()
-	set_greyscale("[pick(GLOB.science_robe_colors)]")
 
 /obj/item/storage/belt/sabre/cargo/security_actually
 	name = "leather sheath"
