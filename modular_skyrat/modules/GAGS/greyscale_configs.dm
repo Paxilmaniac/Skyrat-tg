@@ -842,6 +842,15 @@ TREK
 /datum/greyscale_config/overalls/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
 
+/datum/greyscale_config/overalls/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/overalls/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+
+/datum/greyscale_config/overalls/worn/digi
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_furry.dmi'
+
 //Normal ass pants
 
 /datum/greyscale_config/workpants
@@ -855,6 +864,15 @@ TREK
 
 /datum/greyscale_config/workpants/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+/datum/greyscale_config/workpants/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/workpants/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+
+/datum/greyscale_config/workpants/worn/digi
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_furry.dmi'
 
 //High waist pants
 
@@ -870,6 +888,15 @@ TREK
 /datum/greyscale_config/longpants/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
 
+/datum/greyscale_config/longpants/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/longpants/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+
+/datum/greyscale_config/longpants/worn/digi
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_furry.dmi'
+
 //Skirt
 
 /datum/greyscale_config/skirt
@@ -884,6 +911,12 @@ TREK
 /datum/greyscale_config/skirt/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
 
+/datum/greyscale_config/skirt/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/skirt/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+
 //Robes
 
 /datum/greyscale_config/royal_robes
@@ -897,6 +930,12 @@ TREK
 
 /datum/greyscale_config/royal_robes/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+/datum/greyscale_config/royal_robes/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/royal_robes/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 
 /*
 * Headgear for el evento
@@ -916,6 +955,12 @@ TREK
 /datum/greyscale_config/hardhat/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
 
+/datum/greyscale_config/hardhat/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/hardhat/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+
 //Hood
 
 /datum/greyscale_config/lonehood
@@ -929,6 +974,12 @@ TREK
 
 /datum/greyscale_config/lonehood/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+/datum/greyscale_config/lonehood/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/lonehood/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 
 /*
 * Misc stuff for the event
@@ -948,6 +999,15 @@ TREK
 /datum/greyscale_config/armorboots/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
 
+/datum/greyscale_config/armorboots/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/armorboots/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+
+/datum/greyscale_config/armorboots/worn/digi
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_furry.dmi'
+
 //Civilian shoes
 
 /datum/greyscale_config/civboots
@@ -961,6 +1021,15 @@ TREK
 
 /datum/greyscale_config/civboots/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+/datum/greyscale_config/civboots/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/civboots/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+
+/datum/greyscale_config/civboots/worn/digi
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_furry.dmi'
 
 //Sandals
 
@@ -976,6 +1045,15 @@ TREK
 /datum/greyscale_config/sandals/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
 
+/datum/greyscale_config/sandals/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/sandals/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+
+/datum/greyscale_config/sandals/worn/digi
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_furry.dmi'
+
 //Gloves
 
 /datum/greyscale_config/holegloves
@@ -989,6 +1067,12 @@ TREK
 
 /datum/greyscale_config/holegloves/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+/datum/greyscale_config/holegloves/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/holegloves/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 
 //Gloves missing the fingers dlc
 
@@ -1004,6 +1088,12 @@ TREK
 /datum/greyscale_config/fingieless/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
 
+/datum/greyscale_config/fingieless/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/fingieless/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+
 //Cloak
 
 /datum/greyscale_config/event_cloak
@@ -1017,6 +1107,12 @@ TREK
 
 /datum/greyscale_config/event_cloak/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+/datum/greyscale_config/event_cloak/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/event_cloak/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 
 //Apron
 
@@ -1032,6 +1128,12 @@ TREK
 /datum/greyscale_config/apron/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
 
+/datum/greyscale_config/apron/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/apron/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+
 //Armor vest
 
 /datum/greyscale_config/armor_plate
@@ -1045,3 +1147,9 @@ TREK
 
 /datum/greyscale_config/armor_plate/worn/newvox
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+
+/datum/greyscale_config/armor_plate/worn/oldvox
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+
+/datum/greyscale_config/armor_plate/worn/teshari
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'

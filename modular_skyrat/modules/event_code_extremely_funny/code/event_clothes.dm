@@ -10,6 +10,7 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 /obj/item/clothing/under/costume/buttondown/event_clothing
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 	can_adjust = FALSE
 	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
 	greyscale_colors = "#F1F1F1#F1F1F1"
@@ -23,6 +24,9 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_config = /datum/greyscale_config/overalls
 	greyscale_config_worn = /datum/greyscale_config/overalls/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/overalls/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/overalls/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/overalls/worn/teshari
+	greyscale_config_worn_digi = /datum/greyscale_config/overalls/worn/digi
 
 /obj/item/clothing/under/costume/buttondown/event_clothing/overalls/Initialize(mapload)
 	. = ..()
@@ -39,6 +43,9 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_config = /datum/greyscale_config/workpants
 	greyscale_config_worn = /datum/greyscale_config/workpants/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/workpants/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/workpants/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/workpants/worn/teshari
+	greyscale_config_worn_digi = /datum/greyscale_config/workpants/worn/digi
 
 /obj/item/clothing/under/costume/buttondown/event_clothing/workpants/Initialize(mapload)
 	. = ..()
@@ -55,6 +62,9 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_config = /datum/greyscale_config/longpants
 	greyscale_config_worn = /datum/greyscale_config/longpants/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/longpants/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/longpants/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/longpants/worn/teshari
+	greyscale_config_worn_digi = /datum/greyscale_config/longpants/worn/digi
 
 /obj/item/clothing/under/costume/buttondown/event_clothing/longpants/Initialize(mapload)
 	. = ..()
@@ -66,9 +76,12 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	name = "long skirt"
 	desc = "A plain skirt (or kilt if you feel like it) with a fairly comfortable shirt on top."
 	icon_state = "skirt_buttondown"
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	greyscale_config = /datum/greyscale_config/skirt
 	greyscale_config_worn = /datum/greyscale_config/skirt/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/skirt/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/skirt/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/skirt/worn/teshari
 
 /obj/item/clothing/under/costume/buttondown/event_clothing/skirt/Initialize(mapload)
 	. = ..()
@@ -85,13 +98,17 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	desc = "A reinforced hardhat issued to defense forces and mining teams alike."
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 	icon_state = "hardhat"
 	flags_inv = null
 	dog_fashion = null
+	supports_variations_flags = CLOTHING_SNOUTED_VARIATION_NO_NEW_ICON
 	greyscale_colors = "#ec6a00"
 	greyscale_config = /datum/greyscale_config/hardhat
 	greyscale_config_worn = /datum/greyscale_config/hardhat/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/hardhat/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/hardhat/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/hardhat/worn/teshari
 
 /obj/item/clothing/head/helmet/event_hardhat/Initialize(mapload)
 	. = ..()
@@ -102,16 +119,20 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	desc = "A hood with a little bit of support around the neck so it actually stays in place, for when you can't let the rain ruin that perfect head of yours."
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 	icon_state = "hood"
 	body_parts_covered = HEAD
 	cold_protection = HEAD
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	flags_inv = HIDEHAIR|HIDEEARS
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 10, FIRE = 0, ACID = 0)
+	supports_variations_flags = CLOTHING_SNOUTED_VARIATION_NO_NEW_ICON
 	greyscale_colors = "#F1F1F1#F1F1F1"
 	greyscale_config = /datum/greyscale_config/lonehood
 	greyscale_config_worn = /datum/greyscale_config/lonehood/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/lonehood/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/lonehood/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/lonehood/worn/teshari
 
 /obj/item/clothing/head/standalone_hood/Initialize(mapload)
 	. = ..()
@@ -125,6 +146,8 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	name = "leather boots"
 	desc = "Tough leather boots, though you can't really tell what /kind/ of leather it is."
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 	icon_state = "civboots"
 	resistance_flags = NONE
 	armor = list(MELEE = 10, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 20, BIO = 90, FIRE = 10, ACID = 50)
@@ -133,6 +156,9 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_config = /datum/greyscale_config/civboots
 	greyscale_config_worn = /datum/greyscale_config/civboots/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/civboots/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/civboots/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/civboots/worn/teshari
+	greyscale_config_worn_digi = /datum/greyscale_config/civboots/worn/digi
 
 /obj/item/clothing/shoes/jackboots/leather/Initialize(mapload)
 	. = ..()
@@ -147,6 +173,9 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 /obj/item/clothing/shoes/jackboots/armored_leather
 	name = "armored boots"
 	desc = "Tough leather boots with some kind of metal plating added to the toes and shins for extra protection."
+	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 	icon_state = "armorboots"
 	resistance_flags = NONE
 	armor = list(MELEE = 30, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 50, BIO = 90, FIRE = 30, ACID = 50)
@@ -155,6 +184,9 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_config = /datum/greyscale_config/armorboots
 	greyscale_config_worn = /datum/greyscale_config/armorboots/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/armorboots/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/armorboots/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/armorboots/worn/teshari
+	greyscale_config_worn_digi = /datum/greyscale_config/armorboots/worn/digi
 
 /obj/item/clothing/shoes/jackboots/armored_leather/Initialize(mapload)
 	. = ..()
@@ -169,6 +201,8 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	name = "sandals"
 	desc = "A pair of rather plain sandals."
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 	icon_state = "sandals"
 	inhand_icon_state = "wizshoe"
 	strip_delay = 5
@@ -180,6 +214,9 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	greyscale_config = /datum/greyscale_config/sandals
 	greyscale_config_worn = /datum/greyscale_config/sandals/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/sandals/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/sandals/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/sandals/worn/teshari
+	greyscale_config_worn_digi = /datum/greyscale_config/sandals/worn/digi
 
 /obj/item/clothing/shoes/event_sandals/Initialize(mapload)
 	. = ..()
@@ -190,13 +227,15 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	desc = "Made of some unknown leather, they'll probably protect your hands from burning."
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 	icon_state = "holegloves"
 	cut_type = null
 	greyscale_colors = "#3a2313"
 	greyscale_config = /datum/greyscale_config/holegloves
 	greyscale_config_worn = /datum/greyscale_config/holegloves/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/holegloves/worn/newvox
-
+	greyscale_config_worn_vox = /datum/greyscale_config/holegloves/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/holegloves/worn/teshari
 
 /obj/item/clothing/gloves/color/black/leather/Initialize(mapload)
 	. = ..()
@@ -207,11 +246,14 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	desc = "Made of some unknown leather, protecting everything but your fingertips, so everything but the most important parts."
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 	icon_state = "fingieless"
 	greyscale_colors = "#3a2313"
 	greyscale_config = /datum/greyscale_config/fingieless
 	greyscale_config_worn = /datum/greyscale_config/fingieless/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/fingieless/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/fingieless/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/fingieless/worn/teshari
 
 /obj/item/clothing/gloves/fingerless/leather/Initialize(mapload)
 	. = ..()
@@ -222,11 +264,14 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	desc = "A cloak made of leather, for windy days and terrible rain, you wouldn't need this thing if you just lived underground you know."
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 	icon_state = "cloak"
 	greyscale_colors = "#3a2313"
 	greyscale_config = /datum/greyscale_config/event_cloak
 	greyscale_config_worn = /datum/greyscale_config/event_cloak/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/event_cloak/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/event_cloak/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/event_cloak/worn/teshari
 
 /obj/item/clothing/neck/mantle/cloak/Initialize(mapload)
 	. = ..()
@@ -246,10 +291,14 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	desc = "A basic apron made of close enough to white fabric to be used by butchers and doctors alike, some may even say these are the same job."
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	greyscale_colors = "#F1F1F1"
 	greyscale_config = /datum/greyscale_config/apron
 	greyscale_config_worn = /datum/greyscale_config/apron/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/apron/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/apron/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/apron/worn/teshari
 
 /obj/item/clothing/suit/apron/event_apron/Initialize(mapload)
 	. = ..()
@@ -268,11 +317,15 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	desc = "A plate of some pretty cheap looking metal, but at least it'll keep you safe, right?"
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	icon_state = "armor"
 	greyscale_colors = "#ec6a00"
 	greyscale_config = /datum/greyscale_config/armor_plate
 	greyscale_config_worn = /datum/greyscale_config/armor_plate/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/armor_plate/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/armor_plate/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/armor_plate/worn/teshari
 
 /obj/item/clothing/suit/armor/armor_plate/Initialize(mapload)
 	. = ..()
@@ -284,6 +337,8 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	icon_state = "backpack"
 	worn_icon_state = "backpack_worn"
 	worn_icon_better_vox =	'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+	worn_icon_vox = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 
 /obj/item/storage/backpack/satchel/explorer/event
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
@@ -291,13 +346,22 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	icon_state = "satchel"
 	worn_icon_state = "satchel_worn"
 	worn_icon_better_vox =	'modular_skyrat/modules/GAGS/icons/event_clothes_new_vox.dmi'
+	worn_icon_vox = 'modular_skyrat/modules/GAGS/icons/event_clothes_old_vox.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
 
 /obj/item/clothing/under/costume/skyrat/bathrobe/event
 	name = "robes"
 	desc = "Comfortable, definitely posh looking robes fit for a king, or just a huge nerd who has no other job."
+	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
+	icon_state = "robes"
+	worn_icon_state = "robes_worn"
 	greyscale_config = /datum/greyscale_config/royal_robes
 	greyscale_config_worn = /datum/greyscale_config/royal_robes/worn
 	greyscale_config_worn_better_vox = /datum/greyscale_config/royal_robes/worn/newvox
+	greyscale_config_worn_vox = /datum/greyscale_config/royal_robes/worn/oldvox
+	greyscale_config_worn_teshari = /datum/greyscale_config/royal_robes/worn/teshari
 
 /obj/item/clothing/under/costume/skyrat/bathrobe/event/Initialize(mapload)
 	. = ..()
@@ -306,8 +370,6 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 /obj/item/storage/belt/sabre/cargo/security_actually
 	name = "leather sheath"
 	desc = "A fairly standard looking guard's sabre sheath, its a bit dusty from the trip here."
-	icon = 'modular_skyrat/master_files/icons/obj/clothing/belts.dmi'
-	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/belt.dmi'
 
 /obj/item/storage/belt/sabre/cargo/security_actually/PopulateContents()
 	new /obj/item/melee/sabre/cargo/security_actually(src)
