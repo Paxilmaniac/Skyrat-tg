@@ -18,6 +18,9 @@
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15"
 	},
 /area/df_event/underground)
+"kO" = (
+/turf/closed/indestructible/hotelwall,
+/area/df_event)
 "xO" = (
 /obj/effect/landmark/latejoin,
 /turf/open/misc/grass/planet,
@@ -31,62 +34,66 @@
 "RQ" = (
 /turf/open/misc/asteroid,
 /area/df_event/underground)
+"Vi" = (
+/turf/closed/indestructible/hotelwall,
+/area/df_event/underground)
 
 (1,1,1) = {"
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 "}
 (2,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -137,10 +144,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (3,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -191,10 +198,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (4,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -245,10 +252,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (5,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -299,10 +306,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (6,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -353,10 +360,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (7,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -407,10 +414,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (8,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -461,10 +468,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (9,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -515,10 +522,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (10,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -569,10 +576,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (11,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -623,10 +630,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (12,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -677,10 +684,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (13,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -731,10 +738,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (14,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -785,11 +792,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (15,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -840,10 +846,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (16,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -894,10 +900,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (17,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -948,10 +954,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (18,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1002,10 +1008,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (19,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1056,10 +1062,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (20,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1110,10 +1116,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (21,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1164,10 +1170,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (22,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1218,10 +1224,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (23,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1272,10 +1278,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (24,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1326,10 +1332,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (25,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1380,10 +1386,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (26,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1434,10 +1440,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (27,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1488,10 +1494,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (28,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1542,10 +1548,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (29,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1596,10 +1602,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (30,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1650,10 +1656,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (31,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1704,10 +1710,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (32,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1758,10 +1764,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (33,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1812,10 +1818,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (34,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1866,10 +1872,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (35,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1920,10 +1926,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (36,1,1) = {"
-bd
+Vi
 bd
 bd
 bd
@@ -1974,9 +1980,10 @@ bd
 bd
 bd
 bd
-bd
+Vi
 "}
 (37,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2027,10 +2034,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (38,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2081,10 +2088,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (39,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2135,10 +2142,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (40,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2189,10 +2196,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (41,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2243,10 +2250,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (42,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2297,10 +2304,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (43,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2351,10 +2358,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (44,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2405,10 +2412,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (45,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2459,10 +2466,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (46,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2513,10 +2520,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (47,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2567,10 +2574,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (48,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2621,10 +2628,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (49,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2675,10 +2682,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (50,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2729,10 +2736,10 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (51,1,1) = {"
+Vi
 bd
 bd
 bd
@@ -2783,119 +2790,119 @@ bd
 bd
 bd
 bd
-bd
-bd
+Vi
 "}
 (52,1,1) = {"
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
-bd
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 "}
 
 (1,1,2) = {"
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 "}
 (2,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -2946,10 +2953,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (3,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -3000,10 +3007,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (4,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -3054,10 +3061,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (5,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -3108,10 +3115,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (6,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -3162,10 +3169,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (7,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -3216,10 +3223,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (8,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -3270,10 +3277,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (9,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -3324,10 +3331,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (10,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -3378,10 +3385,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (11,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -3432,10 +3439,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (12,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -3486,10 +3493,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (13,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -3540,11 +3547,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (14,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -3595,10 +3601,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (15,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -3649,10 +3655,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (16,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -3703,10 +3709,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (17,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -3757,10 +3763,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (18,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -3811,10 +3817,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (19,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -3865,10 +3871,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (20,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -3919,10 +3925,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (21,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -3973,10 +3979,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (22,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4027,10 +4033,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (23,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4081,10 +4087,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (24,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4135,10 +4141,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (25,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4189,10 +4195,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (26,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4243,10 +4249,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (27,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4297,10 +4303,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (28,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4351,10 +4357,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (29,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4405,10 +4411,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (30,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4459,10 +4465,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (31,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4513,10 +4519,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (32,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4567,10 +4573,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (33,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4621,10 +4627,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (34,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4675,10 +4681,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (35,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4729,10 +4735,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (36,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4783,10 +4789,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (37,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4837,10 +4843,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (38,1,2) = {"
-eI
+Vi
 eI
 eI
 eI
@@ -4891,9 +4897,10 @@ eI
 eI
 eI
 eI
-eI
+Vi
 "}
 (39,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -4944,10 +4951,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (40,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -4998,10 +5005,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (41,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -5052,10 +5059,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (42,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -5106,10 +5113,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (43,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -5160,10 +5167,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (44,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -5214,10 +5221,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (45,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -5268,10 +5275,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (46,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -5322,10 +5329,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (47,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -5376,10 +5383,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (48,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -5430,10 +5437,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (49,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -5484,10 +5491,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (50,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -5538,10 +5545,10 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (51,1,2) = {"
+Vi
 eI
 eI
 eI
@@ -5592,119 +5599,119 @@ eI
 eI
 eI
 eI
-eI
-eI
+Vi
 "}
 (52,1,2) = {"
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
-eI
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 "}
 
 (1,1,3) = {"
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
 "}
 (2,1,3) = {"
+kO
 JH
 JH
 JH
@@ -5755,10 +5762,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (3,1,3) = {"
+kO
 JH
 JH
 JH
@@ -5809,10 +5816,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (4,1,3) = {"
+kO
 JH
 JH
 JH
@@ -5863,10 +5870,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (5,1,3) = {"
+kO
 JH
 JH
 JH
@@ -5917,10 +5924,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (6,1,3) = {"
+kO
 JH
 JH
 JH
@@ -5971,10 +5978,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (7,1,3) = {"
+kO
 JH
 JH
 JH
@@ -6025,10 +6032,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (8,1,3) = {"
+kO
 JH
 JH
 JH
@@ -6079,10 +6086,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (9,1,3) = {"
+kO
 JH
 JH
 JH
@@ -6133,10 +6140,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (10,1,3) = {"
+kO
 JH
 JH
 JH
@@ -6187,10 +6194,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (11,1,3) = {"
+kO
 JH
 JH
 JH
@@ -6241,10 +6248,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (12,1,3) = {"
+kO
 JH
 JH
 JH
@@ -6295,10 +6302,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (13,1,3) = {"
+kO
 JH
 JH
 JH
@@ -6349,10 +6356,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (14,1,3) = {"
+kO
 JH
 JH
 JH
@@ -6403,10 +6410,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (15,1,3) = {"
+kO
 JH
 JH
 JH
@@ -6457,10 +6464,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (16,1,3) = {"
+kO
 JH
 JH
 JH
@@ -6511,10 +6518,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (17,1,3) = {"
+kO
 JH
 JH
 JH
@@ -6565,11 +6572,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (18,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -6620,10 +6626,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (19,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -6674,10 +6680,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (20,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -6728,10 +6734,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (21,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -6782,10 +6788,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (22,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -6836,10 +6842,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (23,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -6890,10 +6896,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (24,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -6944,10 +6950,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (25,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -6998,10 +7004,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (26,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -7052,10 +7058,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (27,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -7106,10 +7112,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (28,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -7160,10 +7166,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (29,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -7214,10 +7220,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (30,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -7268,10 +7274,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (31,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -7322,10 +7328,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (32,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -7376,10 +7382,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (33,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -7430,10 +7436,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (34,1,3) = {"
-JH
+kO
 JH
 JH
 JH
@@ -7484,9 +7490,10 @@ JH
 JH
 JH
 JH
-JH
+kO
 "}
 (35,1,3) = {"
+kO
 JH
 JH
 JH
@@ -7537,10 +7544,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (36,1,3) = {"
+kO
 JH
 JH
 JH
@@ -7591,10 +7598,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (37,1,3) = {"
+kO
 JH
 JH
 JH
@@ -7645,10 +7652,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (38,1,3) = {"
+kO
 JH
 JH
 JH
@@ -7699,10 +7706,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (39,1,3) = {"
+kO
 JH
 JH
 JH
@@ -7753,10 +7760,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (40,1,3) = {"
+kO
 JH
 JH
 JH
@@ -7807,10 +7814,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (41,1,3) = {"
+kO
 JH
 JH
 JH
@@ -7861,10 +7868,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (42,1,3) = {"
+kO
 JH
 JH
 JH
@@ -7915,10 +7922,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (43,1,3) = {"
+kO
 JH
 JH
 JH
@@ -7969,10 +7976,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (44,1,3) = {"
+kO
 JH
 JH
 JH
@@ -8023,10 +8030,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (45,1,3) = {"
+kO
 JH
 JH
 JH
@@ -8077,10 +8084,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (46,1,3) = {"
+kO
 JH
 JH
 JH
@@ -8131,10 +8138,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (47,1,3) = {"
+kO
 JH
 JH
 JH
@@ -8185,10 +8192,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (48,1,3) = {"
+kO
 JH
 JH
 JH
@@ -8239,10 +8246,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (49,1,3) = {"
+kO
 JH
 JH
 JH
@@ -8293,10 +8300,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (50,1,3) = {"
+kO
 JH
 JH
 JH
@@ -8347,10 +8354,10 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (51,1,3) = {"
+kO
 JH
 JH
 JH
@@ -8401,60 +8408,59 @@ JH
 JH
 JH
 JH
-JH
-JH
+kO
 "}
 (52,1,3) = {"
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
+kO
 "}

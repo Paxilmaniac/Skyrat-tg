@@ -3,12 +3,12 @@
 
 	area_flags = UNIQUE_AREA | NOTELEPORT
 
-	outdoors = FALSE
+	outdoors = TRUE
 	mood_bonus = -1
 	mood_message = "The surface is dark, cold, and rainy, going underground should solve at least one of those."
 
-	base_lighting_alpha = 150
-	base_lighting_color = "#8da2b6"
+	base_lighting_alpha = 255
+	base_lighting_color = "#fff0d4"
 
 	requires_power = FALSE
 	has_gravity = TRUE
@@ -31,7 +31,7 @@
 	mood_bonus = 2
 	mood_message = "Nothing quite beats the safety of the underground!"
 
-	base_lighting_alpha = 50
-	base_lighting_color = "#364450"
+	base_lighting_alpha = 155
+	base_lighting_color = "#445869"
 
 	ambient_light_level = 1

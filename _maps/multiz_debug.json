@@ -3,21 +3,29 @@
 	"map_name": "MultiZ Debug",
 	"map_path": "map_files/debug",
 	"map_file": "multiz.dmm",
+	"space_ruin_levels": 0,
+	"space_empty_levels": 0,
+	"minetype": "none",
 	"traits": [
 		{
 			"Up": 1,
-			"Linkage": "Cross"
+			"Baseturf": "/turf/open/misc/asteroid",
+			"Linkage": null,
+			"Gravity": true
 		},
 		{
 			"Up": 1,
 			"Down": -1,
 			"Baseturf": "/turf/open/openspace",
-			"Linkage": "Cross"
+			"Linkage": null,
+			"Gravity": true
 		},
 		{
 			"Down": -1,
 			"Baseturf": "/turf/open/openspace",
-			"Linkage": "Cross"
+			"Linkage": null,
+			"Gravity": true,
+			"Weather_Snowstorm": true
 		}
 	]
 }
