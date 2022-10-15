@@ -5596,6 +5596,7 @@
 #include "modular_skyrat\modules\energy_axe\code\energy_fireaxe_case.dm"
 #include "modular_skyrat\modules\ERT_Factions\FTU\code\items.dm"
 #include "modular_skyrat\modules\ERT_Factions\FTU\code\projectiles.dm"
+#include "modular_skyrat\modules\event_code_extremely_funny\code\areas_and_terrain.dm"
 #include "modular_skyrat\modules\event_code_extremely_funny\code\event_clothes.dm"
 #include "modular_skyrat\modules\event_code_extremely_funny\code\rain.dm"
 #include "modular_skyrat\modules\event_code_extremely_funny\code\random_items.dm"
