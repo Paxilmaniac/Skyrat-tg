@@ -44,9 +44,10 @@ Assistant
 	belt = /obj/item/modular_computer/tablet/pda/assistant
 	uniform = /obj/item/clothing/under/color/random // SKYRAT EDIT ADD
 
+/*
 /datum/outfit/job/assistant/pre_equip(mob/living/carbon/human/target)
 	..()
-	//give_jumpsuit(target)
+	give_jumpsuit(target)
 
 /datum/outfit/job/assistant/proc/give_jumpsuit(mob/living/carbon/human/target)
 	var/static/jumpsuit_number = 0
@@ -68,14 +69,17 @@ Assistant
 	if (target.jumpsuit_style == PREF_SUIT)
 		uniform = GLOB.colored_assistant.jumpsuits[index]
 	else
-		uniform = GLOB.colored_assistant.jumpskirts[index]
+		uniform = GLOB.colored_assistant.jumpskirts[index]\
+*/
 
 /datum/outfit/job/assistant/consistent
 	name = "Assistant - Consistent"
+	uniform = /obj/item/clothing/under/color/grey
 
-
+/*
 /datum/outfit/job/assistant/consistent/give_jumpsuit(mob/living/carbon/human/target)
 	uniform = /obj/item/clothing/under/color/grey
+*/
 
 /datum/outfit/job/assistant/consistent/post_equip(mob/living/carbon/human/H, visualsOnly)
 	..()
