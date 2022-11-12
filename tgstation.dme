@@ -5636,6 +5636,7 @@
 #include "modular_skyrat\modules\event_code_extremely_funny\code\rain.dm"
 #include "modular_skyrat\modules\event_code_extremely_funny\code\random_items.dm"
 #include "modular_skyrat\modules\event_code_extremely_funny\code\materials\base_material.dm"
+#include "modular_skyrat\modules\event_code_extremely_funny\code\materials\glass\glass.dm"
 #include "modular_skyrat\modules\event_vote\code\event_chaos_system.dm"
 #include "modular_skyrat\modules\event_vote\code\event_vote.dm"
 #include "modular_skyrat\modules\events\code\_event_globalvars.dm"
