@@ -37,6 +37,8 @@
 	mats_per_unit = list(/datum/material/dwarf_certified/glass = MINERAL_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/glass
 
+	max_amount = 3 // im evil, a little fuvked up even
+
 /datum/material/dwarf_certified/glass/green
 	name = "green glass"
 	desc = "Lower quality glass produced from nothing but sand."
