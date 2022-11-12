@@ -206,14 +206,14 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 
 	id_trim = /datum/id_trim/job/security_officer
 	uniform = /obj/item/clothing/under/costume/buttondown/event_clothing/workpants
-	suit = /obj/item/clothing/suit/armor/armor_plate
+	suit = /obj/item/clothing/suit/armor/forging_plate_armor
 	suit_store = /obj/item/melee/baton
 	backpack_contents = list(/obj/item/storage/box/trail_food_kit)
 	belt = /obj/item/storage/belt/sabre/cargo/security_actually
 	ears = /obj/item/radio/headset/headset_sec/alt
-	gloves = /obj/item/clothing/gloves/color/black/leather
-	head = /obj/item/clothing/head/helmet/event_hardhat
-	shoes = /obj/item/clothing/shoes/jackboots/armored_leather
+	gloves = /obj/item/clothing/gloves/forging_plate_gloves
+	head = /obj/item/clothing/head/helmet/forging_plate_helmet
+	shoes = /obj/item/clothing/shoes/forging_plate_boots
 	l_pocket = null
 	r_pocket = null
 
