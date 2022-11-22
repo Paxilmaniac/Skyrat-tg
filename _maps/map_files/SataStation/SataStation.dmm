@@ -93,17 +93,6 @@
 	icon_state = "1,0"
 	},
 /area/space)
-"cXF" = (
-/obj/structure/industrial_lift/tram{
-	icon_state = "plating"
-	},
-/obj/structure/tramwall/titanium,
-/obj/structure/shuttle/engine/propulsion/in_wall{
-	dir = 1;
-	pixel_y = 32
-	},
-/turf/open/space/basic,
-/area/space)
 "dgL" = (
 /obj/structure/industrial_lift/tram{
 	icon_state = "plating"
@@ -226,16 +215,6 @@
 	icon_state = "11,3"
 	},
 /area/space)
-"iYe" = (
-/obj/structure/industrial_lift/tram{
-	icon_state = "plating"
-	},
-/obj/structure/tramwall/titanium,
-/obj/structure/shuttle/engine/propulsion/in_wall{
-	pixel_y = -32
-	},
-/turf/open/space/basic,
-/area/space)
 "jye" = (
 /turf/open/floor/catwalk_floor,
 /area/space)
@@ -332,11 +311,11 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/space)
 "oDq" = (
-/obj/structure/holosign/barrier/atmos/sturdy,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/line,
+/obj/structure/holosign/barrier/atmos/tram,
 /turf/open/floor/iron/smooth_half,
 /area/space)
 "oLX" = (
@@ -446,8 +425,8 @@
 	},
 /area/space)
 "tas" = (
-/obj/structure/holosign/barrier/atmos/sturdy,
 /obj/effect/turf_decal/stripes/line,
+/obj/structure/holosign/barrier/atmos/tram,
 /turf/open/floor/iron/smooth_half,
 /area/space)
 "tbw" = (
@@ -476,10 +455,10 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/space)
 "uua" = (
-/obj/structure/holosign/barrier/atmos/sturdy,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/obj/structure/holosign/barrier/atmos/tram,
 /turf/open/floor/iron/smooth_half,
 /area/space)
 "uyU" = (
@@ -22550,13 +22529,13 @@ chP
 uua
 aaa
 aaa
-cXF
+dgL
 dgL
 tdF
 pgn
 tdF
 dgL
-iYe
+dgL
 aaa
 aaa
 plw
@@ -23578,13 +23557,13 @@ chP
 uua
 aaa
 aaa
-cXF
+dgL
 dgL
 mGH
 mGF
 mGH
 dgL
-iYe
+dgL
 aaa
 aaa
 aaa
