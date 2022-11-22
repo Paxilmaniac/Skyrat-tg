@@ -43,10 +43,10 @@
 
 	if(host.stat == DEAD)
 		var/revive_time = rand(REVIVE_TIME_LOWER, REVIVE_TIME_UPPER)
-		timer_id = addtimer(CALLBACK(src, .proc/transform_host), revive_time, TIMER_STOPPABLE)
+		timer_id = addtimer(CALLBACK(src, PROC_REF(transform_host)), revive_time, TIMER_STOPPABLE)
 		to_chat(host, span_userdanger("You feel your veins throb as your body begins twitching..."))
 
-	RegisterSignal(parent, COMSIG_MUTANT_CURED, .proc/cure_host)
+	RegisterSignal(parent, COMSIG_MUTANT_CURED, PROC_REF(cure_host))
 
 	START_PROCESSING(SSobj, src)
 
@@ -57,11 +57,11 @@
 		deltimer(timer_id)
 		timer_id = null
 	if(host)
-		remove_mutant_datum()
+		remove_infection()
 		host = null
 	return ..()
 
-/datum/component/mutant_infection/proc/remove_mutant_datum()
+/datum/component/mutant_infection/proc/remove_infection()
 	if(ismutant(host) && old_species)
 		host.set_species(old_species)
 	host.grab_ghost()
@@ -69,15 +69,16 @@
 	to_chat(host, span_greentext("You feel like you're free of that foul disease!"))
 	ADD_TRAIT(host, TRAIT_MUTANT_IMMUNE, "mutant_virus")
 	host.mind?.remove_antag_datum(/datum/antagonist/mutant)
-	var/cure_time = rand(IMMUNITY_LOWER, IMMUNITY_UPPER)
-	addtimer(CALLBACK(host, /mob/living/carbon/human/proc/remove_mutant_immunity), cure_time, TIMER_STOPPABLE)
+	host.remove_filter("infection_glow")
+	host.update_appearance()
+	addtimer(CALLBACK(host, /mob/living/carbon/human/proc/remove_mutant_immunity), rand(IMMUNITY_LOWER, IMMUNITY_UPPER), TIMER_STOPPABLE)
 
 /datum/component/mutant_infection/proc/extract_rna()
 	if(rna_extracted)
 		return FALSE
 	to_chat(host, span_userdanger("You feel your genes being altered!"))
 	rna_extracted = TRUE
-	addtimer(CALLBACK(src, .proc/refresh_rna), RNA_REFRESH_TIME, TIMER_STOPPABLE)
+	addtimer(CALLBACK(src, PROC_REF(refresh_rna)), RNA_REFRESH_TIME, TIMER_STOPPABLE)
 	return TRUE
 
 /datum/component/mutant_infection/proc/refresh_rna()
@@ -112,14 +113,14 @@
 		not even death can stop, you will rise again!"))
 	var/revive_time = rand(REVIVE_TIME_LOWER, REVIVE_TIME_UPPER)
 	to_chat(host, span_redtext("You will transform in approximately [revive_time/10] seconds."))
-	timer_id = addtimer(CALLBACK(src, .proc/transform_host), revive_time, TIMER_STOPPABLE)
+	timer_id = addtimer(CALLBACK(src, PROC_REF(transform_host)), revive_time, TIMER_STOPPABLE)
 
 /datum/component/mutant_infection/proc/cure_host()
 	SIGNAL_HANDLER
 	if(!host.stat == DEAD)
 		to_chat(host, span_notice("You start to feel refreshed and invigorated!"))
 	STOP_PROCESSING(SSobj, src)
-	addtimer(CALLBACK(src, .proc/Destroy), CURE_TIME)
+	addtimer(CALLBACK(src, PROC_REF(Destroy)), CURE_TIME)
 
 /datum/component/mutant_infection/proc/transform_host()
 	timer_id = null
@@ -144,13 +145,14 @@
 		to_chat(host, span_redtext("You are a SLOW zombie. You walk slowly and hit more slowly and harder. However, you are far more resilient to most damage types."))
 	to_chat(host, span_alertalien("You are now a mutant! Do not seek to be cured, do not help any non-mutants in any way, do not harm your mutant brethren. You retain some higher functions and can reason to an extent."))
 	host.mind?.add_antag_datum(/datum/antagonist/mutant)
-	RegisterSignal(parent, COMSIG_LIVING_DEATH, .proc/mutant_death)
+	create_glow()
+	RegisterSignal(parent, COMSIG_LIVING_DEATH, PROC_REF(mutant_death))
 
 /datum/component/mutant_infection/proc/mutant_death()
 	SIGNAL_HANDLER
 	var/revive_time = rand(REVIVE_TIME_LOWER, REVIVE_TIME_UPPER)
 	to_chat(host, span_cultlarge("You can feel your heart stopping, but something isn't right... you will rise again!"))
-	timer_id = addtimer(CALLBACK(src, .proc/regenerate), revive_time, TIMER_STOPPABLE)
+	timer_id = addtimer(CALLBACK(src, PROC_REF(regenerate)), revive_time, TIMER_STOPPABLE)
 
 /datum/component/mutant_infection/proc/regenerate()
 	if(!host.mind)
@@ -165,3 +167,19 @@
 		outside as your tissues knit and reknit."))
 	playsound(host, 'sound/magic/demon_consume.ogg', 50, TRUE)
 	host.revive(TRUE, TRUE)
+
+/datum/component/mutant_infection/proc/create_glow()
+	var/atom/movable/parent_movable = parent
+	if(!istype(parent_movable))
+		return
+
+	parent_movable.add_filter("infection_glow", 2, list("type" = "outline", "color" = COLOR_RED, "size" = 2))
+	addtimer(CALLBACK(src, PROC_REF(start_glow_loop), parent_movable), rand(0.1 SECONDS, 1.9 SECONDS))
+
+/datum/component/mutant_infection/proc/start_glow_loop(atom/movable/parent_movable)
+	var/filter = parent_movable.get_filter("infection_glow")
+	if(!filter)
+		return
+
+	animate(filter, alpha = 110, time = 1.5 SECONDS, loop = -1)
+	animate(alpha = 40, time = 2.5 SECONDS)

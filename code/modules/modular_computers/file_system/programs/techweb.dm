@@ -8,12 +8,12 @@
 	size = 10
 	tgui_id = "NtosTechweb"
 	program_icon = "atom"
-	required_access = list(ACCESS_COMMAND, ACCESS_SCIENCE)
+	required_access = list(ACCESS_COMMAND, ACCESS_RESEARCH)
 	transfer_access = list(ACCESS_RESEARCH)
 	/// Reference to global science techweb
 	var/datum/techweb/stored_research
 	/// Access needed to lock/unlock the console
-	var/lock_access = ACCESS_SCIENCE
+	var/lock_access = ACCESS_RESEARCH
 	/// Determines if the console is locked, and consequently if actions can be performed with it
 	var/locked = FALSE
 	/// Used for compressing data sent to the UI via static_data as payload size is of concern
@@ -21,7 +21,7 @@
 	/// Sequence var for the id cache
 	var/id_cache_seq = 1
 
-/datum/computer_file/program/science/run_program(mob/living/user)
+/datum/computer_file/program/science/on_start(mob/living/user)
 	. = ..()
 	stored_research = SSresearch.science_tech
 
@@ -81,10 +81,6 @@
 	. = ..()
 	if (.)
 		return
-	var/obj/item/computer_hardware/card_slot/card_slot
-	if(computer)
-		card_slot = computer.all_components[MC_CARD]
-	var/obj/item/card/id/user_id_card = card_slot?.stored_card
 
 	// Check if the console is locked to block any actions occuring
 	if (locked && action != "toggleLock")
@@ -96,7 +92,7 @@
 			if(computer.obj_flags & EMAGGED)
 				to_chat(usr, span_boldwarning("Security protocol error: Unable to access locking protocols."))
 				return TRUE
-			if(lock_access in user_id_card?.access)
+			if(lock_access in computer?.computer_id_slot?.access)
 				locked = !locked
 			else
 				to_chat(usr, span_boldwarning("Unauthorized Access. Please insert research ID card."))

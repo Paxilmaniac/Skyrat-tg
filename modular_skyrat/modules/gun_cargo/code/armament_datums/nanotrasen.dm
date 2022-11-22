@@ -26,11 +26,6 @@
 	upper_cost = CARGO_CRATE_VALUE * 8
 	stock_mult = 2
 
-/datum/armament_entry/cargo_gun/nanotrasen/shotgun/doublebarrel
-	item_type = /obj/item/gun/ballistic/shotgun/doublebarrel
-	lower_cost = CARGO_CRATE_VALUE * 3
-	upper_cost = CARGO_CRATE_VALUE * 6
-
 /datum/armament_entry/cargo_gun/nanotrasen/shotgun/combat
 	item_type = /obj/item/gun/ballistic/shotgun/automatic/combat
 	lower_cost = CARGO_CRATE_VALUE * 10
@@ -47,7 +42,7 @@
 	restricted = TRUE
 
 /datum/armament_entry/cargo_gun/nanotrasen/smg/saber
-	item_type = /obj/item/gun/ballistic/automatic/proto
+	item_type = /obj/item/gun/ballistic/automatic/proto/unrestricted
 	lower_cost = CARGO_CRATE_VALUE * 16
 	upper_cost = CARGO_CRATE_VALUE * 20
 

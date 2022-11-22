@@ -1,3 +1,7 @@
+/obj/item/storage/backpack
+	species_clothing_color_coords = list(list(BACK_COLORPIXEL_X_1, BACK_COLORPIXEL_Y_1))
+	greyscale_config_worn_teshari_fallback = /datum/greyscale_config/teshari/backpack
+
 /obj/item/clothing/glasses
 	species_clothing_color_coords = list(list(GLASSES_COLORPIXEL_X_1, GLASSES_COLORPIXEL_Y_1), list(GLASSES_COLORPIXEL_X_2, GLASSES_COLORPIXEL_Y_2))
 	greyscale_config_worn_teshari_fallback = /datum/greyscale_config/teshari/glasses
@@ -43,6 +47,10 @@
 	greyscale_config_worn_teshari_fallback = /datum/greyscale_config/teshari/under
 	greyscale_config_worn_teshari_fallback_skirt = /datum/greyscale_config/teshari/under_skirt
 
+/obj/item/mod/control
+	species_clothing_color_coords = list(list(MODCONTROL_COLORPIXEL_X_1, MODCONTROL_COLORPIXEL_Y_1))
+	greyscale_config_worn_teshari_fallback = /datum/greyscale_config/teshari/modcontrol
+
 ///GAGS below here
 
 /obj/item/clothing/under/color
@@ -84,6 +92,9 @@
 /obj/item/clothing/head/beret/science/fancy
 	greyscale_config_worn_teshari = /datum/greyscale_config/beret_badge/worn/teshari
 
+/obj/item/clothing/head/beret/science/rd
+	greyscale_config_worn_teshari = /datum/greyscale_config/beret_badge/worn/teshari
+
 /obj/item/clothing/head/beret/durathread
 	greyscale_config_worn_teshari = /datum/greyscale_config/beret_badge/worn/teshari
 
@@ -117,7 +128,7 @@
 /obj/item/clothing/head/frenchberet
 	greyscale_config_worn_teshari = /datum/greyscale_config/beret/worn/teshari
 
-/obj/item/clothing/head/sec/navywarden/syndicate
+/obj/item/clothing/head/beret/sec/navywarden/syndicate
 	greyscale_config_worn_teshari = /datum/greyscale_config/beret_badge/worn/teshari
 
 /obj/item/clothing/head/nanotrasen_consultant/beret
@@ -131,3 +142,9 @@
 
 /obj/item/clothing/neck/ranger_poncho
 	greyscale_config_worn_teshari = /datum/greyscale_config/ranger_poncho/worn/teshari
+
+/obj/item/clothing/under/dress/skirt/plaid
+	greyscale_config_worn_teshari = /datum/greyscale_config/plaidskirt_worn/teshari
+
+/obj/item/clothing/under/dress/sundress
+	greyscale_config_worn_teshari = /datum/greyscale_config/sundress_worn/teshari

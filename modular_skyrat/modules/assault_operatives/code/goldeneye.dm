@@ -11,8 +11,7 @@ GLOBAL_LIST_EMPTY(goldeneye_pinpointers)
 
 SUBSYSTEM_DEF(goldeneye)
 	name = "GoldenEye"
-	init_order = INIT_ORDER_DEFAULT
-	flags = SS_NO_FIRE
+	flags = SS_NO_FIRE | SS_NO_INIT
 	/// A tracked list of all our keys.
 	var/list/goldeneye_keys = list()
 	/// A list of minds that have been extracted and thus cannot be extracted again.
@@ -55,7 +54,7 @@ SUBSYSTEM_DEF(goldeneye)
 	priority_announce(message, "GoldenEye Defence Network", ANNOUNCER_ICARUS)
 	goldeneye_activated = TRUE
 
-	addtimer(CALLBACK(src, .proc/fire_icarus), ignition_time)
+	addtimer(CALLBACK(src, PROC_REF(fire_icarus)), ignition_time)
 
 
 /datum/controller/subsystem/goldeneye/proc/fire_icarus()
@@ -75,7 +74,7 @@ SUBSYSTEM_DEF(goldeneye)
 // Goldeneye key
 /obj/item/goldeneye_key
 	name = "\improper GoldenEye authentication keycard"
-	desc = "A high profile authentication keycard to Nanotrasen's GoldenEye defence network. It seems indestructable."
+	desc = "A high profile authentication keycard to Nanotrasen's GoldenEye defence network. It seems indestructible."
 	icon = 'modular_skyrat/modules/assault_operatives/icons/goldeneye.dmi'
 	icon_state = "goldeneye_key"
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
@@ -91,6 +90,7 @@ SUBSYSTEM_DEF(goldeneye)
 	goldeneye_tag = "G[rand(10000, 99999)]"
 	name = "\improper GoldenEye authentication keycard: [goldeneye_tag]"
 	AddComponent(/datum/component/gps, goldeneye_tag)
+	SSpoints_of_interest.make_point_of_interest(src)
 
 /obj/item/goldeneye_key/examine(mob/user)
 	. = ..()

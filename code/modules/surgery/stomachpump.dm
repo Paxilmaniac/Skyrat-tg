@@ -15,7 +15,7 @@
 	var/accumulated_experience = 0
 
 /datum/surgery/stomach_pump/can_start(mob/user, mob/living/carbon/target)
-	var/obj/item/organ/stomach/target_stomach = target.getorganslot(ORGAN_SLOT_STOMACH)
+	var/obj/item/organ/internal/stomach/target_stomach = target.getorganslot(ORGAN_SLOT_STOMACH)
 	if(HAS_TRAIT(target, TRAIT_HUSK))
 		return FALSE
 	if(!target_stomach)
@@ -24,7 +24,7 @@
 
 //Working the stomach by hand in such a way that you induce vomiting.
 /datum/surgery_step/stomach_pump
-	name = "Pump Stomach"
+	name = "pump stomach (hand)"
 	accept_hand = TRUE
 	repeatable = TRUE
 	time = 20

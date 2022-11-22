@@ -11,11 +11,13 @@
 	lock_back_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
 	bolt_drop_sound = 'sound/weapons/gun/pistol/slide_drop.ogg'
 	realistic = TRUE
-	can_flashlight = TRUE
 	dirt_modifier = 2
 	emp_damageable = TRUE
 	fire_sound_volume = 50
 	company_flag = COMPANY_BOLT
+
+/obj/item/gun/ballistic/automatic/pistol/pepperball/add_seclight_point()
+	AddComponent(/datum/component/seclite_attachable, light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', light_overlay = "flight")
 
 /obj/item/ammo_box/magazine/pepperball
 	name = "pistol magazine (pepperball)"
@@ -62,13 +64,13 @@
 	build_type = AUTOLATHE | PROTOLATHE
 	materials = list(/datum/material/iron = 5000)
 	build_path = /obj/item/ammo_box/advanced/pepperballs
-	category = list("intial", "Security", "Ammo")
+	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO)
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 
 /obj/item/ammo_box/advanced/pepperballs
 	name = "pepperball ammo box"
 	icon = 'modular_skyrat/modules/sec_haul/icons/guns/ammoboxes.dmi'
-	icon_state = "box10x24"
+	icon_state = "box10x24-15"
 	ammo_type = /obj/item/ammo_casing/pepperball
 	custom_materials = list(/datum/material/iron = 5000)
 	max_ammo = 15

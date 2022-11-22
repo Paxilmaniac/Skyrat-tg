@@ -1,14 +1,15 @@
-/*Composed of 7 parts :
- 3 Particle Emitters
- 1 Power Box
- 1 Fuel Chamber
- 1 End Cap
- 1 Control computer
- Setup map
-   |EC|
- CC|FC|
-   |PB|
- PE|PE|PE
+/*
+ *	Composed of 7 parts:
+ *	3 Particle Emitters
+ *	1 Power Box
+ *	1 Fuel Chamber
+ *	1 End Cap
+ *	1 Control computer
+ *	Setup map
+ *	  |EC|
+ *	CC|FC|
+ *	  |PB|
+ *	PE|PE|PE
 */
 #define PA_CONSTRUCTION_UNSECURED  0
 #define PA_CONSTRUCTION_UNWIRED    1
@@ -50,7 +51,7 @@
 		master = null
 	return ..()
 
-/obj/structure/particle_accelerator/ComponentInitialize()
+/obj/structure/particle_accelerator/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/simple_rotation)
 

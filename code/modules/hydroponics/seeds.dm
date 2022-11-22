@@ -24,6 +24,8 @@
 	var/icon_dead
 	/// Used to override harvest icon (default is `"[species]-harvest"`). If null, plant will use `[icon_grow][growthstages]`.
 	var/icon_harvest
+	/// Used to offset the plant sprite so that it appears at proper height in the tray
+	var/plant_icon_offset = 8
 	/// How long before the plant begins to take damage from age.
 	var/lifespan = 25
 	/// Amount of health the plant has.
@@ -224,7 +226,7 @@
 			t_prod = new t_prod(output_loc, mutated_seed)
 			t_prod.transform = initial(t_prod.transform)
 			t_prod.transform *= TRANSFORM_USING_VARIABLE(t_prod.seed.potency, 100) + 0.5
-			ADD_TRAIT(t_prod, TRAIT_PLANT_WILDMUTATE, user)
+			ADD_TRAIT(t_prod, TRAIT_PLANT_WILDMUTATE, INNATE_TRAIT)
 			t_amount++
 			if(t_prod.seed)
 				t_prod.seed.set_instability(round(instability * 0.5))
@@ -459,14 +461,14 @@
 		var/choice = tgui_input_list(usr, "What would you like to change?", "Seed Alteration", list("Plant Name", "Seed Description", "Product Description"))
 		if(isnull(choice))
 			return
-		if(!user.canUseTopic(src, BE_CLOSE))
+		if(!user.canUseTopic(src, be_close = TRUE))
 			return
 		switch(choice)
 			if("Plant Name")
 				var/newplantname = reject_bad_text(tgui_input_text(user, "Write a new plant name", "Plant Name", plantname, 20))
 				if(isnull(newplantname))
 					return
-				if(!user.canUseTopic(src, BE_CLOSE))
+				if(!user.canUseTopic(src, be_close = TRUE))
 					return
 				name = "[lowertext(newplantname)]"
 				plantname = newplantname
@@ -474,7 +476,7 @@
 				var/newdesc = tgui_input_text(user, "Write a new seed description", "Seed Description", desc, 180)
 				if(isnull(newdesc))
 					return
-				if(!user.canUseTopic(src, BE_CLOSE))
+				if(!user.canUseTopic(src, be_close = TRUE))
 					return
 				desc = newdesc
 			if("Product Description")
@@ -483,7 +485,7 @@
 				var/newproductdesc = tgui_input_text(user, "Write a new product description", "Product Description", productdesc, 180)
 				if(isnull(newproductdesc))
 					return
-				if(!user.canUseTopic(src, BE_CLOSE))
+				if(!user.canUseTopic(src, be_close = TRUE))
 					return
 				productdesc = newproductdesc
 

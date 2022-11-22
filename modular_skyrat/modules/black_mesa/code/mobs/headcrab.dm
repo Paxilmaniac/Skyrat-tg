@@ -77,6 +77,7 @@
 	var/mob/living/carbon/human/human_to_dunk = hit_atom
 	if(!human_to_dunk.get_item_by_slot(ITEM_SLOT_HEAD) && prob(50) && zombify(human_to_dunk))
 		to_chat(human_to_dunk, span_userdanger("[src] latches onto your head as it pierces your skull, instantly killing you!"))
+		human_to_dunk.investigate_log("was headcrab latched by [src].", INVESTIGATE_DEATHS)
 		human_to_dunk.death(FALSE)
 
 /mob/living/simple_animal/hostile/blackmesa/xen/headcrab/proc/zombify(mob/living/carbon/human/zombified_human)
@@ -102,7 +103,7 @@
 	movement_type = GROUND
 	icon_state = ""
 	zombified_human.hairstyle = null
-	zombified_human.update_hair()
+	zombified_human.update_body_parts()
 	zombified_human.forceMove(src)
 	oldguy = zombified_human
 	update_appearance()

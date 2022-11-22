@@ -205,6 +205,16 @@
 		/obj/item/mod/module/flamethrower,
 	)
 
+/obj/item/mod/control/pre_equipped/infiltrator
+	theme = /datum/mod_theme/infiltrator
+	applied_cell = /obj/item/stock_parts/cell/super
+	initial_modules = list(
+		/obj/item/mod/module/emp_shield,
+		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/quick_carry,
+		/obj/item/mod/module/visor/diaghud,
+	)
+
 /obj/item/mod/control/pre_equipped/enchanted
 	theme = /datum/mod_theme/enchanted
 	applied_core = /obj/item/mod/core/infinite
@@ -218,12 +228,13 @@
 	theme = /datum/mod_theme/ninja
 	applied_cell = /obj/item/stock_parts/cell/ninja
 	initial_modules = list(
+		/obj/item/mod/module/storage,
 		/obj/item/mod/module/noslip,
+		/obj/item/mod/module/status_readout,
 		/obj/item/mod/module/stealth/ninja,
 		/obj/item/mod/module/dispenser/ninja,
 		/obj/item/mod/module/dna_lock/reinforced,
 		/obj/item/mod/module/emp_shield/pulse,
-		/obj/item/mod/module/status_readout,
 	)
 
 /obj/item/mod/control/pre_equipped/prototype
@@ -336,8 +347,8 @@
 		/obj/item/mod/module/emp_shield/advanced,
 	)
 
-/obj/item/mod/control/pre_equipped/timeline
-	theme = /datum/mod_theme/timeline
+/obj/item/mod/control/pre_equipped/chrono
+	theme = /datum/mod_theme/chrono
 	applied_core = /obj/item/mod/core/infinite
 	initial_modules = list(
 		/obj/item/mod/module/eradication_lock,
@@ -372,7 +383,7 @@
 		/obj/item/mod/module/stealth/ninja,
 		/obj/item/mod/module/quick_carry/advanced,
 		/obj/item/mod/module/magboot/advanced,
-		/obj/item/mod/module/jetpack,
+		/obj/item/mod/module/jetpack/advanced,
 		/obj/item/mod/module/anomaly_locked/kinesis/plus,
 	)
 

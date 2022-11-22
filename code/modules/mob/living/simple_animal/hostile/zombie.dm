@@ -1,7 +1,7 @@
 /mob/living/simple_animal/hostile/zombie
 	name = "Shambling Corpse"
 	desc = "When there is no more room in hell, the dead will walk in outer space."
-	icon = 'icons/mob/simple_human.dmi'
+	icon = 'icons/mob/simple/simple_human.dmi'
 	icon_state = "zombie"
 	icon_living = "zombie"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
@@ -27,7 +27,7 @@
 
 /mob/living/simple_animal/hostile/zombie/Initialize(mapload)
 	. = ..()
-	INVOKE_ASYNC(src, .proc/setup_visuals)
+	INVOKE_ASYNC(src, PROC_REF(setup_visuals))
 
 /* SKYRAT EDIT REMOVAL - MOVED TO MODULAR ZOMBIE.DM
 /mob/living/simple_animal/hostile/zombie/proc/setup_visuals()
@@ -40,7 +40,6 @@
 	var/mob/living/carbon/human/dummy/dummy = new
 	dummy.equipOutfit(outfit)
 	dummy.set_species(/datum/species/zombie)
-	COMPILE_OVERLAYS(dummy)
 	icon = getFlatIcon(dummy)
 	qdel(dummy)
 */

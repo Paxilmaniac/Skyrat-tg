@@ -1,7 +1,7 @@
 /obj/item/clothing/suit/straight_jacket/shackles
 	name = "shackles"
 	desc = "Fancy shackles with a fake lock."
-	inhand_icon_state = "shackles"
+	inhand_icon_state = null
 	icon = 'modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_clothing/lewd_suits.dmi'
 	worn_icon = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_clothing/lewd_suit/lewd_suits.dmi'
 	worn_icon_digi = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_clothing/lewd_suit/lewd_suits-digi.dmi'
@@ -9,8 +9,6 @@
 	worn_icon_taur_paw = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_clothing/lewd_suit/lewd_suits-paw.dmi'
 	worn_icon_taur_hoof = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_clothing/lewd_suit/lewd_suits-hoof.dmi'
 	icon_state = "shackles"
-	lefthand_file = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_inhands/lewd_inhand_left.dmi'
-	righthand_file = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_inhands/lewd_inhand_right.dmi'
 	body_parts_covered = null//they don't cover anything, but these code parts need to be here, because if they are not here - they make clothing disappear. Magic.
 	flags_inv = null
 	equip_delay_self = NONE
@@ -32,18 +30,13 @@
 		"teal" = image (icon = src.icon, icon_state = "shackles_teal"),
 		"metal" = image (icon = src.icon, icon_state = "shackles_metal"))
 
-//to update model lol
-/obj/item/clothing/suit/straight_jacket/shackles/ComponentInitialize()
-	. = ..()
-	AddElement(/datum/element/update_icon_updates_onmob)
-
 //to change model
 /obj/item/clothing/suit/straight_jacket/shackles/AltClick(mob/user)
 	if(color_changed == FALSE)
 		. = ..()
 		if(.)
 			return
-		var/choice = show_radial_menu(user, src, shackles_designs, custom_check = CALLBACK(src, .proc/check_menu, user), radius = 36, require_near = TRUE)
+		var/choice = show_radial_menu(user, src, shackles_designs, custom_check = CALLBACK(src, PROC_REF(check_menu), user), radius = 36, require_near = TRUE)
 		if(!choice)
 			return FALSE
 		current_color = choice
@@ -60,8 +53,9 @@
 		return FALSE
 	return TRUE
 
-/obj/item/clothing/suit/straight_jacket/shackles/Initialize()
+/obj/item/clothing/suit/straight_jacket/shackles/Initialize(mapload)
 	. = ..()
+	AddElement(/datum/element/update_icon_updates_onmob)
 	update_icon_state()
 	update_icon()
 	if(!length(shackles_designs))
@@ -90,30 +84,21 @@
 
 //reinforcing normal version by using handcuffs on it.
 /obj/item/clothing/suit/straight_jacket/shackles/attackby(obj/item/used_item, mob/user, params) //That part allows reinforcing this item with normal straightjacket
-    if(istype(used_item, /obj/item/restraints/handcuffs))
-        var/obj/item/clothing/suit/straight_jacket/shackles/reinforced/shackles = new /obj/item/clothing/suit/straight_jacket/shackles/reinforced
-        remove_item_from_storage(user)
-        user.put_in_hands(shackles)
-        to_chat(user, span_notice("You reinforced the locks on [src] with [used_item]."))
-        qdel(used_item)
-        qdel(src)
-        return
-    . = ..()
+	if(istype(used_item, /obj/item/restraints/handcuffs))
+		var/obj/item/clothing/suit/straight_jacket/shackles/reinforced/shackles = new()
+		remove_item_from_storage(user)
+		user.put_in_hands(shackles)
+		to_chat(user, span_notice("You reinforced the locks on [src] with [used_item]."))
+		qdel(used_item)
+		qdel(src)
+		return TRUE
+
+	return ..()
 
 //reinforced version.
 /obj/item/clothing/suit/straight_jacket/shackles/reinforced
 	name = "reinforced shackles"
 	desc = "Fancy shackles, but with a suspiciously sturdy lock..."
-	icon_state = "shackles"
-	inhand_icon_state = "shackles"
-	icon = 'modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_clothing/lewd_suits.dmi'
-	worn_icon = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_clothing/lewd_suit/lewd_suits.dmi'
-	worn_icon_digi = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_clothing/lewd_suit/lewd_suits-digi.dmi'
-	worn_icon_taur_snake = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_clothing/lewd_suit/lewd_suits-snake.dmi'
-	worn_icon_taur_paw = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_clothing/lewd_suit/lewd_suits-paw.dmi'
-	worn_icon_taur_hoof = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_clothing/lewd_suit/lewd_suits-hoof.dmi'
-	lefthand_file = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_inhands/lewd_inhand_left.dmi'
-	righthand_file = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_inhands/lewd_inhand_right.dmi'
 	clothing_flags = DANGEROUS_OBJECT
 	equip_delay_self = 100
 	strip_delay = 120

@@ -9,7 +9,6 @@
 	worn_icon_taur_hoof = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_clothing/lewd_suit/sleepbag_special.dmi'
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION|STYLE_TAUR_ALL
 	icon_state = "sleepbag"
-	inhand_icon_state = "sleepbag"
 	w_class = WEIGHT_CLASS_SMALL
 	var/bag_state = "deflated"
 	var/bag_fold = TRUE
@@ -27,8 +26,8 @@
 	var/list/bag_states = list("deflated" = "inflated", "inflated" = "deflated")
 	var/state_thing = "deflated"
 	var/mutable_appearance/bag_overlay
-	var/obj/item/bodypart/l_leg/legr
-	var/obj/item/bodypart/l_leg/legl
+	var/obj/item/bodypart/leg/left/legr
+	var/obj/item/bodypart/leg/left/legl
 	slowdown = 2
 	equip_delay_other = 300
 	equip_delay_self = NONE
@@ -51,11 +50,6 @@
 		"inflated" = image (icon = src.icon, icon_state = "sleepbag_pink_deflated_folded"),
 		"deflated" = image(icon = src.icon, icon_state = "sleepbag_teal_deflated_folded"))
 
-//to update model lol
-/obj/item/clothing/suit/straight_jacket/kinky_sleepbag/ComponentInitialize()
-	. = ..()
-	AddElement(/datum/element/update_icon_updates_onmob)
-
 //to change model
 /obj/item/clothing/suit/straight_jacket/kinky_sleepbag/AltClick(mob/user)
 	var/mob/living/carbon/human/clicking_human = user
@@ -67,7 +61,7 @@
 			. = ..()
 			if(.)
 				return
-			var/choice = show_radial_menu(user, src, bag_colors, custom_check = CALLBACK(src, .proc/check_menu, user), radius = 36, require_near = TRUE)
+			var/choice = show_radial_menu(user, src, bag_colors, custom_check = CALLBACK(src, PROC_REF(check_menu), user), radius = 36, require_near = TRUE)
 			if(!choice)
 				return FALSE
 			bag_color = choice
@@ -91,8 +85,9 @@
 		return FALSE
 	return TRUE
 
-/obj/item/clothing/suit/straight_jacket/kinky_sleepbag/Initialize()
+/obj/item/clothing/suit/straight_jacket/kinky_sleepbag/Initialize(mapload)
 	. = ..()
+	AddElement(/datum/element/update_icon_updates_onmob)
 	update_icon_state()
 	update_icon()
 	if(!length(bag_colors))
@@ -107,7 +102,7 @@
 
 /obj/item/clothing/suit/straight_jacket/kinky_sleepbag/equipped(mob/user, slot)
 	var/mob/living/carbon/human/affected_human = user
-	if(ishuman(user) && slot == ITEM_SLOT_OCLOTHING)
+	if(ishuman(user) && (slot & ITEM_SLOT_OCLOTHING))
 		ADD_TRAIT(user, TRAIT_FLOORED, CLOTHING_TRAIT)
 
 		affected_human.cut_overlay(affected_human.overlays_standing[SHOES_LAYER])
@@ -172,7 +167,7 @@
 			to_chat(user, span_purple("You are finally free! The bag is no longer constricting your movements."))
 
 			affected_human.add_overlay(affected_human.overlays_standing[SHOES_LAYER])
-			affected_human.update_inv_shoes()
+			affected_human.update_worn_shoes()
 			affected_human.add_overlay(affected_human.overlays_standing[BELT_LAYER])
 			affected_human.add_overlay(affected_human.overlays_standing[NECK_LAYER])
 			affected_human.add_overlay(affected_human.overlays_standing[BACK_LAYER])
@@ -182,7 +177,7 @@
 			affected_human.add_overlay(affected_human.overlays_standing[HAIR_LAYER])
 			affected_human.add_overlay(affected_human.overlays_standing[SHOES_LAYER])
 
-			affected_human.update_inv_shoes()
+			affected_human.update_worn_shoes()
 			affected_human.regenerate_icons()
 	STOP_PROCESSING(SSobj, src)
 	. = ..()
@@ -200,5 +195,5 @@
 
 /obj/item/clothing/suit/straight_jacket/kinky_sleepbag/doStrip(mob/stripper, mob/owner)
 	. = ..()
-	owner.update_inv_hands()
-	stripper.update_inv_hands()
+	owner.update_held_items()
+	stripper.update_held_items()

@@ -46,7 +46,7 @@
 	become_area_sensitive(INNATE_TRAIT)
 
 	ADD_TRAIT(src, TRAIT_VENTCRAWLER_ALWAYS, INNATE_TRAIT)
-	RegisterSignal(src, COMSIG_ENTER_AREA, .proc/check_area)
+	RegisterSignal(src, COMSIG_ENTER_AREA, PROC_REF(check_area))
 
 	qdel(GetComponent(/datum/component/butchering))
 
@@ -64,7 +64,7 @@
 			safety_inspection = FALSE
 			priority_announce("This is a generated message due to an automated signal regarding the safety standards of the engineering department onboard [station_name()]. Due to the station engineers failing to meet the standard set by Central Command, each of them are now at risk of being forcefully enrolled in a re-evaluation program at later notice...", "Concerning the results of a safety inspection", type = "Priority")
 			// It's just flavor, no tangible punishment
-	..()
+	return ..()
 
 /mob/living/simple_animal/pet/poppy/revive(full_heal, admin_revive)
 	become_area_sensitive(INNATE_TRAIT)
@@ -120,7 +120,7 @@
 	manual_emote("'s fur stands up, [src.p_their()] body trembling...")
 
 	notify_ghosts("[src] was startled by the supermatter!", source = src, action = NOTIFY_ORBIT, flashwindow = FALSE, header = "Safety Inspection!")
-	addtimer(CALLBACK(src, .proc/calm_down), 60 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(calm_down)), 60 SECONDS)
 
 /mob/living/simple_animal/pet/poppy/proc/calm_down()
 	upset = FALSE

@@ -57,12 +57,12 @@
 /obj/item/stack/shibari_rope/update_overlays()
 	. = ..()
 	if(glow)
-		. += emissive_appearance(icon, icon_state, alpha = alpha)
+		. += emissive_appearance(icon, icon_state, src, alpha = alpha)
 
 /obj/item/stack/shibari_rope/worn_overlays(mutable_appearance/standing, isinhands, icon_file)
 	. = ..()
 	if(glow)
-		. += emissive_appearance(standing.icon, standing.icon_state, alpha = standing.alpha)
+		. += emissive_appearance(standing.icon, standing.icon_state, src, alpha = standing.alpha)
 
 /obj/item/stack/shibari_rope/update_icon_state()
 	if(amount <= (max_amount * (1/3)))
@@ -88,16 +88,13 @@
 
 /obj/item/stack/shibari_rope/Initialize(mapload, new_amount, merge, list/mat_override, mat_amt)
 	. = ..()
-	RegisterSignal(src, COMSIG_ITEM_ATTACK, .proc/handle_roping)
+	AddElement(/datum/element/update_icon_updates_onmob)
+	RegisterSignal(src, COMSIG_ITEM_ATTACK, PROC_REF(handle_roping))
 	if(!greyscale_colors)
 		var/new_color = "#"
 		for(var/i in 1 to 3)
 			new_color += num2hex(rand(0, 255), 2)
 		set_greyscale(colors = list(new_color))
-
-/obj/item/stack/shibari_rope/ComponentInitialize()
-	. = ..()
-	AddElement(/datum/element/update_icon_updates_onmob)
 
 /obj/item/stack/shibari_rope/proc/handle_roping(datum/source, mob/living/carbon/attacked, mob/living/user)
 	SIGNAL_HANDLER
@@ -111,22 +108,22 @@
 		return
 	switch(user.zone_selected)
 		if(BODY_ZONE_L_LEG)
-			INVOKE_ASYNC(src, .proc/handle_leg_tying, attacked, user)
+			INVOKE_ASYNC(src, PROC_REF(handle_leg_tying), attacked, user)
 			return COMPONENT_CANCEL_ATTACK_CHAIN
 		if(BODY_ZONE_R_LEG)
-			INVOKE_ASYNC(src, .proc/handle_leg_tying, attacked, user)
+			INVOKE_ASYNC(src, PROC_REF(handle_leg_tying), attacked, user)
 			return COMPONENT_CANCEL_ATTACK_CHAIN
 		if(BODY_ZONE_PRECISE_GROIN)
-			INVOKE_ASYNC(src, .proc/handle_groin_tying, attacked, user)
+			INVOKE_ASYNC(src, PROC_REF(handle_groin_tying), attacked, user)
 			return COMPONENT_CANCEL_ATTACK_CHAIN
 		if(BODY_ZONE_CHEST)
-			INVOKE_ASYNC(src, .proc/handle_chest_tying, attacked, user)
+			INVOKE_ASYNC(src, PROC_REF(handle_chest_tying), attacked, user)
 			return COMPONENT_CANCEL_ATTACK_CHAIN
 		if(BODY_ZONE_L_ARM)
-			INVOKE_ASYNC(src, .proc/handle_arm_tying, attacked, user)
+			INVOKE_ASYNC(src, PROC_REF(handle_arm_tying), attacked, user)
 			return COMPONENT_CANCEL_ATTACK_CHAIN
 		if(BODY_ZONE_R_ARM)
-			INVOKE_ASYNC(src, .proc/handle_arm_tying, attacked, user)
+			INVOKE_ASYNC(src, PROC_REF(handle_arm_tying), attacked, user)
 			return COMPONENT_CANCEL_ATTACK_CHAIN
 
 
@@ -144,13 +141,9 @@
 		return
 	var/obj/item/stack/shibari_rope/split_rope = null
 	var/slow = 0
-	if(them?.dna?.mutant_bodyparts["taur"])
-		var/datum/sprite_accessory/taur/taur_accessory = GLOB.sprite_accessories["taur"][them.dna.species.mutant_bodyparts["taur"][MUTANT_INDEX_NAME]]
-		if(taur_accessory.hide_legs)
-			split_rope = split_stack(null, 2)
-			slow = 4
-		else
-			split_rope = split_stack(null, 1)
+	if(them.dna.species.bodytype & BODYTYPE_TAUR)
+		split_rope = split_stack(null, 2)
+		slow = 4
 	else
 		split_rope = split_stack(null, 1)
 	if(split_rope)
@@ -225,11 +218,9 @@
 	if(them.shoes)
 		to_chat(user, span_warning("They're already wearing something on this slot!"))
 		return
-	if(them?.dna?.mutant_bodyparts["taur"])
-		var/datum/sprite_accessory/taur/taur_accessory = GLOB.sprite_accessories["taur"][them.dna.species.mutant_bodyparts["taur"][MUTANT_INDEX_NAME]]
-		if(taur_accessory.hide_legs)
-			to_chat(user, span_warning("You can't tie their feet, they're a taur!"))
-			return
+	if(them.dna.species.bodytype & BODYTYPE_TAUR)
+		to_chat(user, span_warning("You can't tie their feet, they're a taur!"))
+		return
 	them.visible_message(span_warning("[user] starts tying [them]'s feet!"),\
 		span_userdanger("[user] starts tying your feet!"),\
 		span_hear("You hear ropes being tightened."))
@@ -259,10 +250,8 @@
 			if(!do_mob(user, them, HAS_TRAIT(user, TRAIT_RIGGER) ? 20 : 60))
 				return
 			var/slow = 0
-			if(them?.dna?.mutant_bodyparts["taur"])
-				var/datum/sprite_accessory/taur/taur_accessory = GLOB.sprite_accessories["taur"][them.dna.species.mutant_bodyparts["taur"][MUTANT_INDEX_NAME]]
-				if(taur_accessory.hide_legs)
-					slow = 4
+			if(them.dna.species.bodytype & BODYTYPE_TAUR)
+				slow = 4
 			var/obj/item/stack/shibari_rope/split_rope = split_stack(null, 1)
 			if(split_rope)
 				var/obj/item/clothing/under/shibari/body_rope = them.w_uniform
@@ -294,13 +283,9 @@
 				return
 			var/obj/item/stack/shibari_rope/split_rope = null
 			var/slow = 0
-			if(them?.dna?.mutant_bodyparts["taur"])
-				var/datum/sprite_accessory/taur/taur_accessory = GLOB.sprite_accessories["taur"][them.dna.species.mutant_bodyparts["taur"][MUTANT_INDEX_NAME]]
-				if(taur_accessory.hide_legs)
-					split_rope = split_stack(null, 2)
-					slow = 4
-				else
-					split_rope = split_stack(null, 1)
+			if(them.dna.species.bodytype & BODYTYPE_TAUR)
+				split_rope = split_stack(null, 2)
+				slow = 4
 			else
 				split_rope = split_stack(null, 1)
 			if(split_rope)

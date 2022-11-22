@@ -4,7 +4,7 @@
 	baseturfs = /turf/open/openspace/ocean
 	var/replacement_turf = /turf/open/floor/plating/ocean
 
-/turf/open/openspace/ocean/Initialize()
+/turf/open/openspace/ocean/Initialize(mapload)
 	. = ..()
 
 	for(var/obj/structure/flora/plant in contents)
@@ -21,7 +21,7 @@
 		M.gets_drilled()
 		baseturfs = /turf/open/openspace/ocean //This is to ensure that IF random turf generation produces a openturf, there won't be other turfs assigned other than openspace.
 
-/turf/open/openspace/ocean/Initialize()
+/turf/open/openspace/ocean/Initialize(mapload)
 	. = ..()
 	if(liquids)
 		if(liquids.immutable)
@@ -86,7 +86,7 @@
 	var/rand_chance = 30
 	var/liquid_type = /obj/effect/abstract/liquid_turf/immutable/ocean
 
-/turf/open/floor/plating/ocean/Initialize()
+/turf/open/floor/plating/ocean/Initialize(mapload)
 	. = ..()
 	if(liquids)
 		if(liquids.immutable)
@@ -105,7 +105,7 @@
 	planetary_atmos = TRUE
 	baseturfs = /turf/open/floor/plating/ocean_plating
 
-/turf/open/floor/plating/ocean_plating/Initialize()
+/turf/open/floor/plating/ocean_plating/Initialize(mapload)
 	. = ..()
 	if(liquids)
 		if(liquids.immutable)
@@ -119,7 +119,7 @@
 	planetary_atmos = TRUE
 	baseturfs = /turf/open/floor/iron/ocean
 
-/turf/open/floor/iron/ocean/Initialize()
+/turf/open/floor/iron/ocean/Initialize(mapload)
 	. = ..()
 	if(liquids)
 		if(liquids.immutable)
@@ -144,14 +144,6 @@
 	turf_type = /turf/open/floor/plating/ocean/rock/heavy
 	color = "#58606b"
 
-//extremely low chance of rare ores, meant mostly for populating stations with large amounts of asteroid
-/turf/closed/mineral/random/stationside
-	icon_state = "rock_nochance"
-	mineralChance = 4
-	mineralSpawnChanceList = list(
-		/obj/item/stack/ore/uranium = 1, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 3, /obj/item/stack/ore/titanium = 5,
-		/obj/item/stack/ore/silver = 4, /obj/item/stack/ore/plasma = 3, /obj/item/stack/ore/iron = 50)
-
 /turf/closed/mineral/random/stationside/ocean
 	baseturfs = /turf/open/floor/plating/ocean/rock/heavy
 	turf_type = /turf/open/floor/plating/ocean/rock/heavy
@@ -174,7 +166,7 @@
 	liquid_height = -30
 	turf_height = -30
 
-/turf/open/floor/plating/canal/Initialize()
+/turf/open/floor/plating/canal/Initialize(mapload)
 	. = ..()
 	if(liquids)
 		if(liquids.immutable)

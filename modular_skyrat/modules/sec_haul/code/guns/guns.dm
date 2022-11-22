@@ -30,11 +30,13 @@
 	rack_sound = 'sound/weapons/gun/pistol/rack.ogg'
 	lock_back_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
 	bolt_drop_sound = 'sound/weapons/gun/pistol/slide_drop.ogg'
-	can_flashlight = TRUE
-	dirt_modifier = 1
+	dirt_modifier = 0.5
 	emp_damageable = TRUE
 	fire_delay = 1.90
 	company_flag = COMPANY_CANTALAN
+
+/obj/item/gun/ballistic/automatic/pistol/g17/add_seclight_point()
+	return
 
 /obj/item/ammo_box/magazine/multi_sprite/g17
 	name = "\improper GK-17 magazine"
@@ -75,9 +77,11 @@
 	spread = 8
 	mag_display = FALSE
 	mag_display_ammo = FALSE
-	can_flashlight = TRUE
 	company_flag = COMPANY_CANTALAN
-	dirt_modifier = 1
+	dirt_modifier = 0.7
+
+/obj/item/gun/ballistic/automatic/pistol/g18/add_seclight_point()
+	AddComponent(/datum/component/seclite_attachable, light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', light_overlay = "flight")
 
 /obj/item/ammo_box/magazine/multi_sprite/g18
 	name = "\improper GK-18 magazine"
@@ -102,23 +106,25 @@
 	round_type = AMMO_TYPE_RUBBER
 
 /obj/item/gun/ballistic/automatic/pistol/g17/mesa
-	name = "\improper Glock-17"
-	desc = "A weapon from bygone times, and this is the exact 21st century version. In fact, even more reliable. Chambered in 9x19mm Peacekeeper."
+	name = "\improper Glock 20"
+	desc = "A weapon from bygone times, and this is the exact 21st century version. In fact, even more reliable. Chambered in 10mm Auto."
 	icon = 'modular_skyrat/modules/sec_haul/icons/guns/glock.dmi'
 	icon_state = "glock_mesa"
 	w_class = WEIGHT_CLASS_NORMAL
-	mag_type = /obj/item/ammo_box/magazine/multi_sprite/g17
-	can_suppress = FALSE
+	mag_type = /obj/item/ammo_box/magazine/multi_sprite/ladon // C o m p a t i b i l i t y .
 	fire_sound = 'modular_skyrat/master_files/sound/weapons/glock17_fire.ogg'
 	rack_sound = 'sound/weapons/gun/pistol/rack.ogg'
 	lock_back_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
 	bolt_drop_sound = 'sound/weapons/gun/pistol/slide_drop.ogg'
 	realistic = TRUE
-	can_flashlight = TRUE
 	dirt_modifier = 0.2
 	emp_damageable = FALSE
 	fire_delay = 0.9
 	company_flag = null
+
+/obj/item/gun/ballistic/automatic/pistol/g17/mesa/add_seclight_point()
+	AddComponent(/datum/component/seclite_attachable, light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', light_overlay = "flight")
+
 /*
 * PDH 40x32
 */
@@ -139,9 +145,12 @@
 	lock_back_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
 	bolt_drop_sound = 'sound/weapons/gun/pistol/slide_drop.ogg'
 	realistic = TRUE
-	can_flashlight = TRUE
+	dirt_modifier = 0.3
 	emp_damageable = TRUE
 	company_flag = COMPANY_ARMADYNE
+
+/obj/item/gun/ballistic/automatic/pistol/pdh/add_seclight_point()
+	AddComponent(/datum/component/seclite_attachable, light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', light_overlay = "flight")
 
 /obj/item/gun/ballistic/automatic/pistol/pdh/alt
 	name = "\improper PDH-6C 'SOCOM'"
@@ -156,7 +165,6 @@
 	spread = 1
 	realistic = TRUE
 	dirt_modifier = 0.1
-	can_flashlight = TRUE
 	emp_damageable = FALSE
 
 /obj/item/ammo_box/magazine/multi_sprite/pdh
@@ -191,7 +199,6 @@
 	spread = 5
 	realistic = TRUE
 	dirt_modifier = 0.1
-	can_flashlight = TRUE
 	company_flag = COMPANY_ARMADYNE
 
 /obj/item/ammo_box/magazine/multi_sprite/pdh_corpo
@@ -217,7 +224,7 @@
 	mag_type = /obj/item/ammo_box/magazine/multi_sprite/pdh_peacekeeper
 	fire_sound = 'modular_skyrat/modules/sec_haul/sound/pistol_fire.ogg'
 	realistic = TRUE
-	can_flashlight = TRUE
+	dirt_modifier = 0.6
 	company_flag = COMPANY_ARMADYNE
 
 /obj/item/ammo_box/magazine/multi_sprite/pdh_peacekeeper
@@ -262,11 +269,13 @@
 	lock_back_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
 	bolt_drop_sound = 'sound/weapons/gun/pistol/slide_drop.ogg'
 	realistic = TRUE
-	can_flashlight = TRUE
-	dirt_modifier = 0.8
+	dirt_modifier = 0.6
 	emp_damageable = TRUE
 	fire_delay = 4.20
 	company_flag = COMPANY_ARMADYNE
+
+/obj/item/gun/ballistic/automatic/pistol/ladon/add_seclight_point()
+	AddComponent(/datum/component/seclite_attachable, light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', light_overlay = "flight")
 
 /obj/item/ammo_box/magazine/multi_sprite/ladon
 	name = "\improper Ladon magazine"
@@ -305,7 +314,7 @@
 	rack_sound = 'sound/weapons/gun/pistol/rack.ogg'
 	lock_back_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
 	bolt_drop_sound = 'sound/weapons/gun/pistol/slide_drop.ogg'
-	dirt_modifier = 0.75
+	dirt_modifier = 0.3
 	emp_damageable = TRUE
 	company_flag = COMPANY_IZHEVSK
 
@@ -391,9 +400,12 @@
 	mag_type = /obj/item/ammo_box/magazine/multi_sprite/firefly
 	can_suppress = FALSE
 	realistic = TRUE
-	can_flashlight = TRUE
 	emp_damageable = TRUE
 	company_flag = COMPANY_ARMADYNE
+
+/obj/item/gun/ballistic/automatic/pistol/firefly/add_seclight_point()
+	AddComponent(/datum/component/seclite_attachable, light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', light_overlay = "flight")
+
 
 /obj/item/ammo_box/magazine/multi_sprite/firefly
 	name = "\improper P-92 magazine"
@@ -669,7 +681,7 @@
 /obj/item/gun/ballistic/automatic/smartgun/process_chamber()
 	. = ..()
 	recharging = TRUE
-	addtimer(CALLBACK(src, .proc/recharge), recharge_time)
+	addtimer(CALLBACK(src, PROC_REF(recharge)), recharge_time)
 
 /obj/item/gun/ballistic/automatic/smartgun/proc/recharge()
 	recharging = FALSE
@@ -750,7 +762,6 @@
 	fire_sound = 'modular_skyrat/modules/sec_haul/sound/ltrifle_fire.ogg'
 	emp_damageable = FALSE
 	can_bayonet = TRUE
-	can_flashlight = TRUE
 	dirt_modifier = 0.1
 	company_flag = COMPANY_OLDARMS
 
@@ -843,7 +854,6 @@
 	can_suppress = FALSE
 	can_bayonet = TRUE
 	mag_display = TRUE
-	can_flashlight = TRUE
 	mag_display_ammo = TRUE
 	actions_types = null
 	realistic = TRUE
@@ -857,6 +867,9 @@
 /obj/item/gun/ballistic/automatic/norwind/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/scope, range_modifier = 1.75)
+
+/obj/item/gun/ballistic/automatic/norwind/add_seclight_point()
+	AddComponent(/datum/component/seclite_attachable, light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', light_overlay = "flight")
 
 /obj/item/ammo_box/magazine/multi_sprite/norwind
 	name = "\improper Norwind magazine"
@@ -962,8 +975,10 @@
 	realistic = TRUE
 	fire_sound = 'modular_skyrat/modules/sec_haul/sound/smg_fire.ogg'
 	emp_damageable = TRUE
-	can_flashlight = TRUE
 	company_flag = COMPANY_BOLT
+
+/obj/item/gun/ballistic/automatic/pcr/add_seclight_point()
+	AddComponent(/datum/component/seclite_attachable, light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', light_overlay = "flight")
 
 /obj/item/ammo_box/magazine/multi_sprite/pcr
 	name = "\improper PCR-9 magazine"
@@ -1010,8 +1025,10 @@
 	fire_sound = 'modular_skyrat/modules/sec_haul/sound/sfrifle_fire.ogg'
 	emp_damageable = TRUE
 	can_bayonet = TRUE
-	can_flashlight = TRUE
 	company_flag = COMPANY_BOLT
+
+/obj/item/gun/ballistic/automatic/pitbull/add_seclight_point()
+	AddComponent(/datum/component/seclite_attachable, light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', light_overlay = "flight")
 
 /obj/item/ammo_box/magazine/multi_sprite/pitbull
 	name = "\improper Pitbull magazine"
@@ -1061,9 +1078,11 @@
 	mag_display = TRUE
 	mag_display_ammo = TRUE
 	realistic = TRUE
+	dirt_modifier = 0.4
 	fire_sound = 'sound/weapons/gun/smg/shot.ogg'
 	emp_damageable = TRUE
 	can_bayonet = TRUE
+	company_flag = COMPANY_ARMADYNE
 
 /obj/item/ammo_box/magazine/multi_sprite/ostwind
 	name = "\improper DTR-6 magazine"

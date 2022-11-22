@@ -262,7 +262,7 @@
 	playsound(loc, 'sound/items/rped.ogg', 60, 1)
 	flick("h_lathe_wloop", src)
 	use_power(3000)
-	timer_id = addtimer(CALLBACK(src, .proc/recombinate_step), recombination_step_time, TIMER_STOPPABLE)
+	timer_id = addtimer(CALLBACK(src, PROC_REF(recombinate_step)), recombination_step_time, TIMER_STOPPABLE)
 
 /obj/machinery/rnd/rna_recombinator/proc/recombinate_step()
 	if(machine_stat & (NOPOWER|BROKEN))
@@ -279,7 +279,7 @@
 	flick("h_lathe_wloop", src)
 	use_power(3000)
 	playsound(loc, 'sound/items/rped.ogg', 60, 1)
-	timer_id = addtimer(CALLBACK(src, .proc/recombinate_step), recombination_step_time, TIMER_STOPPABLE)
+	timer_id = addtimer(CALLBACK(src, PROC_REF(recombinate_step)), recombination_step_time, TIMER_STOPPABLE)
 
 /obj/machinery/rnd/rna_recombinator/proc/recombinate_finish()
 	if(machine_stat & (NOPOWER|BROKEN))
@@ -295,7 +295,7 @@
 		new /obj/item/hnz_cure(get_turf(src))
 		new /obj/item/hnz_cure(get_turf(src))
 	else
-		new /obj/item/reagent_containers/glass/bottle/hnz/one(get_turf(src))
+		new /obj/item/reagent_containers/cup/bottle/hnz/one(get_turf(src))
 	flick("h_lathe_leave", src)
 	use_power(3000)
 	playsound(loc, 'sound/machines/ding.ogg', 60, 1)
@@ -343,7 +343,7 @@
 	. = ..()
 	try_to_mutant_infect(exposed_mob, TRUE)
 
-/obj/item/reagent_containers/glass/bottle/hnz
+/obj/item/reagent_containers/cup/bottle/hnz
 	name = "HNZ-1 bottle"
 	desc = "A small bottle of the HNZ-1 pathogen. Nanotrasen Bioweapons inc."
 	icon = 'modular_skyrat/modules/mutants/icons/extractor.dmi'
@@ -351,7 +351,7 @@
 	list_reagents = list(/datum/reagent/hnz = 30)
 	custom_materials = list(/datum/material/glass=500)
 
-/obj/item/reagent_containers/glass/bottle/hnz/one
+/obj/item/reagent_containers/cup/bottle/hnz/one
 	list_reagents = list(/datum/reagent/hnz = 1)
 
 
@@ -362,8 +362,8 @@
 	max_integrity = 500
 
 /obj/item/storage/briefcase/virology/hnz/PopulateContents()
-	new /obj/item/reagent_containers/glass/bottle/hnz/one(src)
-	new /obj/item/reagent_containers/glass/bottle/hnz/one(src)
+	new /obj/item/reagent_containers/cup/bottle/hnz/one(src)
+	new /obj/item/reagent_containers/cup/bottle/hnz/one(src)
 	new /obj/item/circuitboard/machine/rna_recombinator(src)
 	new /obj/item/rna_extractor(src)
 	new /obj/item/rna_vial(src)

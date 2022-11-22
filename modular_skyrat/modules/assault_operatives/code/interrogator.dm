@@ -130,7 +130,7 @@
 	locked = TRUE
 	processing = TRUE
 	say("Starting DNA data extraction!")
-	timer_id = addtimer(CALLBACK(src, .proc/stage_one), rand(STAGE_PROCESS_TIME_LOWER, STAGE_PROCESS_TIME_UPPER), TIMER_STOPPABLE|TIMER_UNIQUE) //Random times so crew can't anticipate exactly when it will drop.
+	timer_id = addtimer(CALLBACK(src, PROC_REF(stage_one)), rand(STAGE_PROCESS_TIME_LOWER, STAGE_PROCESS_TIME_UPPER), TIMER_STOPPABLE|TIMER_UNIQUE) //Random times so crew can't anticipate exactly when it will drop.
 	update_appearance()
 
 /obj/machinery/interrogator/proc/stage_one()
@@ -142,7 +142,7 @@
 	playsound(loc, 'sound/items/rped.ogg', 60)
 	say("Stage one complete!")
 	minor_announce("SECURITY BREACH DETECTED, NETWORK COMPROMISED! READING COORDINATES...", "GoldenEye Defence Network")
-	timer_id = addtimer(CALLBACK(src, .proc/stage_two), rand(STAGE_PROCESS_TIME_LOWER, STAGE_PROCESS_TIME_UPPER), TIMER_STOPPABLE|TIMER_UNIQUE)
+	timer_id = addtimer(CALLBACK(src, PROC_REF(stage_two)), rand(STAGE_PROCESS_TIME_LOWER, STAGE_PROCESS_TIME_UPPER), TIMER_STOPPABLE|TIMER_UNIQUE)
 
 /obj/machinery/interrogator/proc/stage_two()
 	if(!check_requirements())
@@ -155,8 +155,8 @@
 	playsound(src, 'sound/effects/wounds/blood1.ogg', 100)
 	playsound(src, 'sound/items/drill_use.ogg', 100)
 	say("Stage two complete!")
-	minor_announce("SECURITY BREACH DETECTED, NETWORK COMPROMISED! COORDINATES: [x], [y], [z]", "GoldenEye Defence Network")
-	timer_id = addtimer(CALLBACK(src, .proc/stage_three), rand(STAGE_PROCESS_TIME_LOWER, STAGE_PROCESS_TIME_UPPER), TIMER_STOPPABLE|TIMER_UNIQUE)
+	minor_announce("SECURITY BREACH DETECTED, NETWORK COMPROMISED! INTERROGATION COORDINATES: [x], [y], [z]", "GoldenEye Defence Network")
+	timer_id = addtimer(CALLBACK(src, PROC_REF(stage_three)), rand(STAGE_PROCESS_TIME_LOWER, STAGE_PROCESS_TIME_UPPER), TIMER_STOPPABLE|TIMER_UNIQUE)
 
 /obj/machinery/interrogator/proc/stage_three()
 	if(!check_requirements())
@@ -166,7 +166,7 @@
 	to_chat(human_occupant, span_userdanger("You feel something penetrating your brain, it feels as though your childhood memories are fading! Please, make it stop! After a moment of silence, you realize you can't remember what happened to you!"))
 	human_occupant.emote("scream")
 	human_occupant.apply_damage(20, BRUTE, BODY_ZONE_HEAD)
-	human_occupant.set_timed_status_effect(3 MINUTES, /datum/status_effect/jitter, only_if_higher = TRUE)
+	human_occupant.set_jitter_if_lower(3 MINUTES)
 	human_occupant.Unconscious(1 MINUTES)
 	playsound(src, 'sound/effects/dismember.ogg', 100)
 	playsound(src, 'sound/machines/ping.ogg', 100)
@@ -175,7 +175,7 @@
 	processing = FALSE
 	locked = FALSE
 	update_appearance()
-	addtimer(CALLBACK(src, .proc/announce_creation), ALERT_CREW_TIME)
+	addtimer(CALLBACK(src, PROC_REF(announce_creation)), ALERT_CREW_TIME)
 
 /obj/machinery/interrogator/proc/announce_creation()
 	priority_announce("CRITICAL SECURITY BREACH DETECTED! A GoldenEye authentication keycard has been illegally extracted and is being sent in somewhere on the station!", "GoldenEye Defence Network")
@@ -204,8 +204,8 @@
 
 	var/obj/structure/test_structure = new() // This is apparently the most intuative way to check if a turf is able to support entering.
 
-	for(var/area/station/maintenance/maint_area in world)
-		for(var/turf/floor in maint_area)
+	for(var/area/station/maintenance/maint_area in GLOB.areas)
+		for(var/turf/floor as anything in maint_area.get_contained_turfs())
 			if(!is_station_level(floor.z))
 				continue
 			if(floor.Enter(test_structure))

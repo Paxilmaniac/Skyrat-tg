@@ -54,7 +54,6 @@
 	name = "research director's jumpsuit"
 	desc = "A shiny nano-weave uniform for those holding the title of \"Research Director\". Its fabric provides minor protection from biological contaminants."
 	icon_state = "director_jumpsuit"
-	inhand_icon_state = "purple_suit"
 	can_adjust = TRUE
 	alt_covers_chest = TRUE
 
@@ -65,6 +64,11 @@
 	dying_key = DYE_REGISTRY_JUMPSKIRT
 	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
+
+/obj/item/clothing/under/rank/rnd/research_director/skyrat/imperial //Rank pins of the Major General
+	desc = "An off-white naval suit over black pants, with a rank badge denoting the Officer of the Internal Science Division. It's a peaceful life."
+	name = "research director's naval jumpsuit"
+	icon_state = "imprd"
 
 /*
 *	OVERRIDES

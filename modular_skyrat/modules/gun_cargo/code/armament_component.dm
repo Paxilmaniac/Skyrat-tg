@@ -39,8 +39,7 @@
 	var/datum/bank_account/buyer = SSeconomy.get_dep_account(ACCOUNT_CAR)
 
 	if(console_state == IRN_CONSOLE)
-		var/obj/item/computer_hardware/card_slot/card_slot = parent_prog.computer.all_components[MC_CARD]
-		id_card = card_slot.GetID()
+		id_card = parent_prog.computer.computer_id_slot?.GetID()
 	else
 		if(istype(the_person))
 			id_card = the_person.get_idcard(TRUE)
@@ -81,7 +80,7 @@
 	data["self_paid"] = !!self_paid
 	data["armaments_list"] = list()
 
-	for(var/armament_category as anything in GLOB.armament_entries)
+	for(var/armament_category as anything in SSarmaments.entries)
 		var/illegal_failure
 
 		for(var/company as anything in SSgun_companies.companies)
@@ -104,9 +103,9 @@
 
 		var/list/armament_subcategories = list()
 
-		for(var/subcategory as anything in GLOB.armament_entries[armament_category][CATEGORY_ENTRY])
+		for(var/subcategory as anything in SSarmaments.entries[armament_category][CATEGORY_ENTRY])
 			var/list/subcategory_items = list()
-			for(var/datum/armament_entry/armament_entry as anything in GLOB.armament_entries[armament_category][CATEGORY_ENTRY][subcategory])
+			for(var/datum/armament_entry/armament_entry as anything in SSarmaments.entries[armament_category][CATEGORY_ENTRY][subcategory])
 				if(products && !(armament_entry.type in products))
 					continue
 
@@ -214,8 +213,7 @@
 	var/obj/item/card/id/id_card
 
 	if(console_state == IRN_CONSOLE)
-		var/obj/item/computer_hardware/card_slot/card_slot = parent_prog.computer.all_components[MC_CARD]
-		id_card = card_slot.GetID()
+		id_card = parent_prog.computer.computer_id_slot?.GetID()
 	else
 		id_card = the_person.get_idcard(TRUE)
 
@@ -273,8 +271,7 @@
 
 	else if(possible_downloader)
 		var/datum/computer_file/program/budgetorders/parent_file = parent_prog
-		var/obj/item/computer_hardware/card_slot/card_slot = possible_downloader.all_components[MC_CARD]
-		if((parent_file.requestonly && !self_paid) || !(card_slot?.GetID()))
+		if((parent_file.requestonly && !self_paid) || !(possible_downloader.computer_id_slot?.GetID()))
 			reason = tgui_input_text(user, "Reason", name)
 			if(isnull(reason))
 				return
@@ -333,8 +330,7 @@
 	var/obj/item/card/id/id_card
 
 	if(console_state == IRN_CONSOLE)
-		var/obj/item/computer_hardware/card_slot/card_slot = parent_prog.computer.all_components[MC_CARD]
-		id_card = card_slot.GetID()
+		id_card = parent_prog.computer.computer_id_slot?.GetID()
 	else
 		id_card = the_person.get_idcard(TRUE)
 
@@ -390,8 +386,7 @@
 
 	else if(possible_downloader)
 		var/datum/computer_file/program/budgetorders/parent_file = parent_prog
-		var/obj/item/computer_hardware/card_slot/card_slot = possible_downloader.all_components[MC_CARD]
-		if((parent_file.requestonly && !self_paid) || !(card_slot?.GetID()))
+		if((parent_file.requestonly && !self_paid) || !(possible_downloader.computer_id_slot?.GetID()))
 			reason = tgui_input_text(user, "Reason", name)
 			if(isnull(reason))
 				return
@@ -519,8 +514,7 @@
 				return
 
 			if(console_state == IRN_CONSOLE)
-				var/obj/item/computer_hardware/card_slot/card_slot = parent_prog.computer.all_components[MC_CARD]
-				id_card = card_slot.GetID()
+				id_card = parent_prog.computer.computer_id_slot?.GetID()
 			else
 				id_card = the_person.get_idcard(TRUE)
 

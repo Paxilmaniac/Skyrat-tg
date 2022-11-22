@@ -11,11 +11,11 @@
 	/// Custom materials that the original table used, if any
 	var/list/table_materials = list()
 
-/obj/structure/flippedtable/Initialize()
+/obj/structure/flippedtable/Initialize(mapload)
 	. = ..()
 
 	var/static/list/loc_connections = list(
-		COMSIG_ATOM_EXIT = .proc/on_exit,
+		COMSIG_ATOM_EXIT = PROC_REF(on_exit),
 	)
 
 	AddElement(/datum/element/connect_loc, loc_connections)

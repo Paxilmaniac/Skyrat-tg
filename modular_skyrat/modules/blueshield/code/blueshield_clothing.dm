@@ -3,13 +3,13 @@
 //Uniform items are in command.dm
 
 /obj/item/clothing/gloves/tackler/combat/insulated/blueshield
-    name = "combat gloves"
-    desc = "These tactical gloves appear to be unique, made out of double woven durathread fibers which make it fireproof as well as acid resistant"
-    icon = 'modular_skyrat/master_files/icons/obj/clothing/gloves.dmi'
-    icon_state = "combat"
-    worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/hands.dmi'
-    resistance_flags = FIRE_PROOF |  ACID_PROOF
-    armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "fire" = 100, "acid" = 100)
+	name = "combat gloves"
+	desc = "These tactical gloves appear to be unique, made out of double woven durathread fibers which make it fireproof as well as acid resistant"
+	icon = 'modular_skyrat/master_files/icons/obj/clothing/gloves.dmi'
+	icon_state = "combat"
+	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/hands.dmi'
+	resistance_flags = FIRE_PROOF |  ACID_PROOF
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "fire" = 100, "acid" = 100)
 
 /obj/item/radio/headset/headset_bs
 	name = "\proper the blueshield's headset"
@@ -22,7 +22,7 @@
 /obj/item/radio/headset/headset_bs/alt
 	icon_state = "bshield_headset_alt"
 
-/obj/item/radio/headset/headset_bs/alt/ComponentInitialize()
+/obj/item/radio/headset/headset_bs/alt/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection, list(ITEM_SLOT_EARS))
 
@@ -54,6 +54,7 @@
 	//alternate_worn_icon_digi = 'modular_skyrat/icons/mob/head_muzzled.dmi'
 	icon_state = "beret_badge_police"
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 25,"energy" = 15, "bomb" = 25, "bio" = 0, "fire" = 75, "acid" = 75)
+	supports_variations_flags = CLOTHING_SNOUTED_VARIATION_NO_NEW_ICON
 
 /obj/item/clothing/head/beret/blueshield/navy
 	name = "navy blueshield's beret"
@@ -87,7 +88,7 @@
 //blueshield armor
 /obj/item/clothing/suit/armor/vest/blueshield
 	name = "blueshield's jacket"
-	desc = "An expensive kevlar-lined jacket with a golden badge on the chest and \"NT\" emblazoned on the back. It weighs surprisingly little, despite how heavy it looks. There's a tight-fitting vest tucked in underneath."
+	desc = "An expensive kevlar-lined jacket with a golden badge on the chest and \"NT\" emblazoned on the back. It weighs surprisingly little, despite how heavy it looks."
 	icon = 'modular_skyrat/master_files/icons/obj/clothing/suits.dmi'
 	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/suit.dmi'
 	//alternate_worn_icon_digi = 'modular_skyrat/icons/mob/suit_digi.dmi'
@@ -95,9 +96,13 @@
 	body_parts_covered = CHEST|ARMS
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 25,"energy" = 25, "bomb" = 30, "bio" = 0, "fire" = 75, "acid" = 75)
 
+/obj/item/clothing/suit/armor/vest/blueshield/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/toggle_icon)
+
 /obj/item/clothing/suit/armor/vest/blueshieldarmor
 	name = "blueshield's armor"
-	desc = "A tight-fitting kevlar-lined vest with a golden badge on the chest and \"NT\" emblazoned on the back. It weighs surprisingly little, despite how heavy it looks."
+	desc = "A tight-fitting kevlar-lined vest with a blue badge on the chest of it."
 	icon = 'modular_skyrat/master_files/icons/obj/clothing/suits.dmi'
 	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/suit.dmi'
 	icon_state = "blueshieldarmor"
@@ -109,13 +114,12 @@
 	icon = 'modular_skyrat/master_files/icons/obj/clothing/suits.dmi'
 	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/suit.dmi'
 	icon_state = "coatblueshield"
-	inhand_icon_state = "coatblueshield"
-	desc = "A comfy kevlar-lined coat with \"NT\" emblazoned on the back."
+	desc = "A comfy kevlar-lined coat with blue highlights, for the blueshield."
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/blueshield
 	allowed = list(/obj/item/melee/baton/security/loaded)
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 25,"energy" = 25, "bomb" = 30, "bio" = 0, "fire" = 75, "acid" = 75)
 
-/obj/item/clothing/suit/hooded/wintercoat/blueshield/Initialize()
+/obj/item/clothing/suit/hooded/wintercoat/blueshield/Initialize(mapload)
 	. = ..()
 	allowed += GLOB.security_vest_allowed
 

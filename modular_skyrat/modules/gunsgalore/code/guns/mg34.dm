@@ -26,9 +26,10 @@
 	bolt_type = BOLT_TYPE_OPEN
 	show_bolt_icon = FALSE
 	tac_reloads = FALSE
+	company_flag = COMPANY_OLDARMS
 	var/cover_open = FALSE
 
-/obj/item/gun/ballistic/automatic/mg34/ComponentInitialize()
+/obj/item/gun/ballistic/automatic/mg34/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/update_icon_updates_onmob)
 
@@ -122,9 +123,9 @@
 	/// Have we overheated?
 	var/overheated = FALSE
 
-/obj/item/gun/ballistic/automatic/mg34/mg42/Initialize()
+/obj/item/gun/ballistic/automatic/mg34/mg42/Initialize(mapload)
 	. = ..()
-	RegisterSignal(src, COMSIG_GUN_FIRED, .proc/process_heat)
+	RegisterSignal(src, COMSIG_GUN_FIRED, PROC_REF(process_heat))
 	START_PROCESSING(SSobj, src)
 
 /obj/item/gun/ballistic/automatic/mg34/mg42/process(delta_time)
@@ -154,7 +155,7 @@
 
 /obj/item/gun/ballistic/automatic/mg34/mg42/pickup(mob/user)
 	. = ..()
-	RegisterSignal(user, COMSIG_LIVING_UPDATED_RESTING, .proc/deploy_bipod)
+	RegisterSignal(user, COMSIG_LIVING_UPDATED_RESTING, PROC_REF(deploy_bipod))
 
 /obj/item/gun/ballistic/automatic/mg34/mg42/dropped(mob/user)
 	. = ..()
@@ -183,7 +184,7 @@
 	if(barrel_heat >= 100)
 		overheated = TRUE
 		playsound(src, 'modular_skyrat/modules/gunsgalore/sound/guns/fire/mg_overheat.ogg', 100)
-		addtimer(CALLBACK(src, .proc/reset_overheat), TIME_TO_COOLDOWN)
+		addtimer(CALLBACK(src, PROC_REF(reset_overheat)), TIME_TO_COOLDOWN)
 	update_appearance()
 
 /obj/item/gun/ballistic/automatic/mg34/mg42/proc/reset_overheat()

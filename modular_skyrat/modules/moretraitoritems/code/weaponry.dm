@@ -2,7 +2,6 @@
 	name = "odd bowler"
 	desc = "A deep black bowler. Inside the hat, there is a sleek red S, with a smaller X insignia embroidered within. On closer inspection, the brim feels oddly weighted..."
 	icon_state = "bowler"
-	inhand_icon_state = "bowler"
 	force = 10
 	throwforce = 45
 	throw_speed = 5
@@ -16,7 +15,7 @@
 ///obj/item/clothing/head/sus_bowler/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
 	//var/caught = hit_atom.hitby(src, FALSE, FALSE, throwingdatum=throwingdatum)
 	//if(thrownby && !caught)
-		//addtimer(CALLBACK(src, /atom/movable.proc/throw_at, thrownby, throw_range+2, throw_speed, null, TRUE), 1)
+		//addtimer(CALLBACK(src, TYPE_PROC_REF(/atom/movable, throw_at), thrownby, throw_range+2, throw_speed, null, TRUE), 1)
 	//else
 		//return ..()
 

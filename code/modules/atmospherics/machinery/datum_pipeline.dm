@@ -92,9 +92,9 @@
 					var/static/pipenetwarnings = 10
 					if(pipenetwarnings > 0)
 						log_mapping("build_pipeline(): [item.type] added to a pipenet while still having one. (pipes leading to the same spot stacking in one turf) around [AREACOORD(item)].")
-					if(pipenetwarnings == 0)
-						log_mapping("build_pipeline(): further messages about pipenets will be suppressed")
-					pipenetwarnings--
+						pipenetwarnings--
+						if(pipenetwarnings == 0)
+							log_mapping("build_pipeline(): further messages about pipenets will be suppressed")
 
 				members += item
 				possible_expansions += item
@@ -202,7 +202,7 @@
 		if(turf_heat_capacity <= 0 || partial_heat_capacity <= 0)
 			return TRUE
 
-		var/heat = thermal_conductivity * CALCULATE_CONDUCTION_ENERGY(delta_temperature, turf_heat_capacity, partial_heat_capacity)
+		var/heat = CALCULATE_CONDUCTION_ENERGY(thermal_conductivity * delta_temperature, turf_heat_capacity, partial_heat_capacity)
 
 		air.temperature -= heat / total_heat_capacity
 		if(!target.liquids.immutable)

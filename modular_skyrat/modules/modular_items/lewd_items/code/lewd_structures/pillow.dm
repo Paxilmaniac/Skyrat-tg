@@ -4,14 +4,14 @@
 *	CODE FOR PILLOW ITEM
 */
 
-/obj/item/pillow
+/obj/item/fancy_pillow
 	name = "pillow"
 	desc = "A big, soft pillow."
 	icon = 'modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_items/lewd_items.dmi'
 	lefthand_file = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_inhands/lewd_inhand_left.dmi'
 	righthand_file = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_inhands/lewd_inhand_right.dmi'
 	icon_state = "pillow"
-	inhand_icon_state = "pillow"
+	inhand_icon_state = "pillow_pink_round"
 	var/datum/effect_system/feathers/pillow_feathers
 	var/current_color = "pink"
 	var/current_form = "round"
@@ -21,29 +21,24 @@
 	var/static/list/pillow_forms
 	w_class = WEIGHT_CLASS_SMALL
 
-// To update model
-/obj/item/pillow/ComponentInitialize()
-	. = ..()
-	AddElement(/datum/element/update_icon_updates_onmob)
-
 // Create radial menu
-/obj/item/pillow/proc/populate_pillow_colors()
+/obj/item/fancy_pillow/proc/populate_pillow_colors()
 	pillow_colors = list(
 		"pink" = image (icon = src.icon, icon_state = "pillow_pink_round"),
 		"teal" = image(icon = src.icon, icon_state = "pillow_teal_round"))
 
 // Create radial menu, BUT for forms. I'm smort
-/obj/item/pillow/proc/populate_pillow_forms()
+/obj/item/fancy_pillow/proc/populate_pillow_forms()
 	pillow_forms = list(
 		"square" = image (icon = src.icon, icon_state = "pillow_pink_square"),
 		"round" = image(icon = src.icon, icon_state = "pillow_pink_round"))
 
-/obj/item/pillow/AltClick(mob/user)
+/obj/item/fancy_pillow/AltClick(mob/user)
 	if(color_changed == FALSE)
 		. = ..()
 		if(.)
 			return
-		var/choice = show_radial_menu(user, src, pillow_colors, custom_check = CALLBACK(src, .proc/check_menu, user), radius = 36, require_near = TRUE)
+		var/choice = show_radial_menu(user, src, pillow_colors, custom_check = CALLBACK(src, PROC_REF(check_menu), user), radius = 36, require_near = TRUE)
 		if(!choice)
 			return FALSE
 		current_color = choice
@@ -55,7 +50,7 @@
 			. = ..()
 			if(.)
 				return
-			var/choice = show_radial_menu(user, src, pillow_forms, custom_check = CALLBACK(src, .proc/check_menu, user), radius = 36, require_near = TRUE)
+			var/choice = show_radial_menu(user, src, pillow_forms, custom_check = CALLBACK(src, PROC_REF(check_menu), user), radius = 36, require_near = TRUE)
 			if(!choice)
 				return FALSE
 			current_form = choice
@@ -66,15 +61,16 @@
 		return
 
 //to check if we can change pillow's model
-/obj/item/pillow/proc/check_menu(mob/living/user)
+/obj/item/fancy_pillow/proc/check_menu(mob/living/user)
 	if(!istype(user))
 		return FALSE
 	if(user.incapacitated())
 		return FALSE
 	return TRUE
 
-/obj/item/pillow/Initialize()
+/obj/item/fancy_pillow/Initialize(mapload)
 	. = ..()
+	AddElement(/datum/element/update_icon_updates_onmob)
 	update_icon_state()
 	update_icon()
 	if(!length(pillow_colors))
@@ -86,12 +82,12 @@
 	pillow_feathers.set_up(2, 0, src)
 	pillow_feathers.attach(src)
 
-/obj/item/pillow/update_icon_state()
+/obj/item/fancy_pillow/update_icon_state()
 	. = ..()
 	icon_state = "[initial(icon_state)]_[current_color]_[current_form]"
 	inhand_icon_state = "[initial(icon_state)]_[current_color]_[current_form]"
 
-/obj/item/pillow/Destroy()
+/obj/item/fancy_pillow/Destroy()
 	if(pillow_feathers)
 		qdel(pillow_feathers)
 		pillow_feathers = null
@@ -108,7 +104,7 @@
 /datum/effect_system/feathers
 	effect_type = /obj/effect/temp_visual/feathers
 
-/obj/item/pillow/attack(mob/living/carbon/human/affected_mob, mob/living/carbon/human/user)
+/obj/item/fancy_pillow/attack(mob/living/carbon/human/affected_mob, mob/living/carbon/human/user)
 	. = ..()
 	if(!istype(affected_mob, /mob/living/carbon/human))
 		return
@@ -146,7 +142,7 @@
 
 //spawning pillow on the ground when clicking on pillow	by LBM
 
-/obj/item/pillow/attack_self(mob/user)
+/obj/item/fancy_pillow/attack_self(mob/user)
 	if(IN_INVENTORY)
 		to_chat(user, span_notice("You set [src] down on the floor."))
 		var/obj/structure/bed/pillow_tiny/pillow_pile = new(get_turf(src))
@@ -176,7 +172,7 @@
 
 	buildstacktype = /obj/item/stack/sheet/cloth
 
-/obj/structure/bed/pillow_tiny/Initialize()
+/obj/structure/bed/pillow_tiny/Initialize(mapload)
 	.=..()
 	update_icon_state()
 	update_icon()
@@ -189,7 +185,7 @@
 
 /obj/structure/bed/pillow_tiny/AltClick(mob/user)
 	to_chat(user, span_notice("You pick up [src]."))
-	var/obj/item/pillow/taken_pillow = new()
+	var/obj/item/fancy_pillow/taken_pillow = new()
 	user.put_in_hands(taken_pillow)
 
 	taken_pillow.current_form = current_form
@@ -217,8 +213,8 @@
 
 //"Upgrading" pillow
 /obj/structure/bed/pillow_tiny/attackby(obj/item/used_item, mob/living/user, params)
-	if(istype(used_item, /obj/item/pillow))
-		var/obj/item/pillow/used_pillow = used_item
+	if(istype(used_item, /obj/item/fancy_pillow))
+		var/obj/item/fancy_pillow/used_pillow = used_item
 		var/obj/structure/chair/pillow_small/pillow_pile
 		if(used_pillow.current_color == current_color)
 			to_chat(user, span_notice("You add [src] to a pile."))
@@ -272,7 +268,7 @@
 
 	buildstacktype = /obj/item/stack/sheet/cloth
 
-/obj/structure/chair/pillow_small/Initialize()
+/obj/structure/chair/pillow_small/Initialize(mapload)
 	update_icon()
 	return ..()
 
@@ -287,16 +283,16 @@
 	return ..()
 
 /obj/structure/chair/pillow_small/post_buckle_mob(mob/living/affected_mob)
-    . = ..()
-    update_icon()
-    density = TRUE
-    //Push them up from the normal lying position
-    affected_mob.pixel_y = affected_mob.base_pixel_y + 2
+	. = ..()
+	update_icon()
+	density = TRUE
+	//Push them up from the normal lying position
+	affected_mob.pixel_y = affected_mob.base_pixel_y + 2
 
 /obj/structure/chair/pillow_small/update_overlays()
-    . = ..()
-    if(has_buckled_mobs())
-        . += mutable_appearance('modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_structures/pillows.dmi', "pillowpile_small_[current_color]_overlay", layer = ABOVE_MOB_LAYER + 0.2)
+	. = ..()
+	if(has_buckled_mobs())
+		. += mutable_appearance('modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_structures/pillows.dmi', "pillowpile_small_[current_color]_overlay", layer = ABOVE_MOB_LAYER + 0.2)
 
 /obj/structure/chair/pillow_small/post_unbuckle_mob(mob/living/affected_mob)
 	. = ..()
@@ -311,7 +307,7 @@
 //Removing pillow from a pile
 /obj/structure/chair/pillow_small/AltClick(mob/user)
 	to_chat(user, span_notice("You take [src] from the pile."))
-	var/obj/item/pillow/taken_pillow = new()
+	var/obj/item/fancy_pillow/taken_pillow = new()
 	var/obj/structure/bed/pillow_tiny/pillow_pile = new(get_turf(src))
 	user.put_in_hands(taken_pillow)
 	//magic
@@ -334,8 +330,8 @@
 
 //Upgrading pillow pile to a PILLOW PILE!
 /obj/structure/chair/pillow_small/attackby(obj/item/used_item, mob/living/user, params)
-	if(istype(used_item, /obj/item/pillow))
-		var/obj/item/pillow/used_pillow = used_item
+	if(istype(used_item, /obj/item/fancy_pillow))
+		var/obj/item/fancy_pillow/used_pillow = used_item
 		var/obj/structure/bed/pillow_large/pillow_pile
 		if(used_pillow.current_color == current_color)
 			to_chat(user, span_notice("You add [src] to the pile."))
@@ -400,9 +396,9 @@
 
 	buildstacktype = /obj/item/stack/sheet/cloth
 
-/obj/structure/bed/pillow_large/Initialize()
-    update_icon()
-    return ..()
+/obj/structure/bed/pillow_large/Initialize(mapload)
+	update_icon()
+	return ..()
 
 /obj/structure/bed/pillow_large/proc/GetArmrest()
 	if(current_color == "pink")
@@ -415,16 +411,16 @@
 	return ..()
 
 /obj/structure/bed/pillow_large/post_buckle_mob(mob/living/affected_mob)
-    . = ..()
-    update_icon()
-    density = TRUE
-    //Push them up from the normal lying position
-    affected_mob.pixel_y = affected_mob.base_pixel_y + 0.5
+	. = ..()
+	update_icon()
+	density = TRUE
+	//Push them up from the normal lying position
+	affected_mob.pixel_y = affected_mob.base_pixel_y + 0.5
 
 /obj/structure/bed/pillow_large/update_overlays()
-    . = ..()
-    if(has_buckled_mobs())
-        . += mutable_appearance('modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_structures/pillows.dmi', "pillowpile_large_[current_color]_overlay", layer = ABOVE_MOB_LAYER + 0.2)
+	. = ..()
+	if(has_buckled_mobs())
+		. += mutable_appearance('modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_structures/pillows.dmi', "pillowpile_large_[current_color]_overlay", layer = ABOVE_MOB_LAYER + 0.2)
 
 /obj/structure/bed/pillow_large/post_unbuckle_mob(mob/living/affected_mob)
 	. = ..()
@@ -439,7 +435,7 @@
 //Removing pillow from a pile
 /obj/structure/bed/pillow_large/AltClick(mob/user)
 	to_chat(user, span_notice("You take [src] from the pile."))
-	var/obj/item/pillow/taken_pillow = new()
+	var/obj/item/fancy_pillow/taken_pillow = new()
 	var/obj/structure/chair/pillow_small/pillow_pile = new(get_turf(src))
 	user.put_in_hands(taken_pillow)
 	//magic

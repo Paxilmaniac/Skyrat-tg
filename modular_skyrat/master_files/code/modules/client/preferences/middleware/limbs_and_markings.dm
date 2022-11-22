@@ -4,15 +4,15 @@
 
 /datum/preference_middleware/limbs_and_markings
 	action_delegations = list(
-		"set_limb_aug" = .proc/set_limb_aug,
-		"set_limb_aug_style" = .proc/set_limb_aug_style,
-		"add_marking" = .proc/add_marking,
-		"change_marking" = .proc/change_marking,
-		"color_marking" = .proc/color_marking,
-		"remove_marking" = .proc/remove_marking,
-		"set_organ_aug" = .proc/set_organ_aug,
-		"set_preset" = .proc/set_preset,
-		"change_emissive" = .proc/change_emissive_marking,
+		"set_limb_aug" = PROC_REF(set_limb_aug),
+		"set_limb_aug_style" = PROC_REF(set_limb_aug_style),
+		"add_marking" = PROC_REF(add_marking),
+		"change_marking" = PROC_REF(change_marking),
+		"color_marking" = PROC_REF(color_marking),
+		"remove_marking" = PROC_REF(remove_marking),
+		"set_organ_aug" = PROC_REF(set_organ_aug),
+		"set_preset" = PROC_REF(set_preset),
+		"change_emissive" = PROC_REF(change_emissive_marking),
 	)
 	var/list/limbs_to_process = list(
 		"l_arm" = "Left Arm",
@@ -193,6 +193,8 @@
 
 /datum/preference_middleware/limbs_and_markings/get_ui_data(mob/user)
 	var/list/data = list()
+	var/datum/species/species_type = preferences.read_preference(/datum/preference/choiced/species)
+	var/allow_mismatched_parts = preferences.read_preference(/datum/preference/toggle/allow_mismatched_parts)
 	if(!robotic_styles)
 		robotic_styles = list()
 		for(var/style_name in GLOB.robotic_styles_list)
@@ -219,6 +221,12 @@
 			chosen_augment = nice_aug_names[limb][preferences.augments[limbs_to_process[limb]]]
 		else
 			chosen_augment = "None"
+		var/list/choices = GLOB.body_markings_per_limb[limb].Copy()
+		if (!allow_mismatched_parts)
+			for (var/name in choices)
+				var/datum/body_marking/marking = GLOB.body_markings[name]
+				if (marking.recommended_species && !(initial(species_type.id) in marking.recommended_species))
+					choices -= name
 		limbs_data += list(list(
 			"slot" = limb,
 			"name" = limbs_to_process[limb],
@@ -228,7 +236,7 @@
 			"aug_choices" = nice_aug_names[limb],
 			"costs" = costs[AUGMENT_CATEGORY_LIMBS],
 			"markings" = list(
-				"marking_choices" = GLOB.body_markings_per_limb[limb],
+				"marking_choices" = choices,
 				"markings_list" = fix_colors_on_markings_to_tgui(preferences.body_markings[limb], limb)
 			),
 		))
@@ -267,10 +275,9 @@
 	data["organs_data"] = organs_data
 
 	var/list/presets = GLOB.body_marking_sets.Copy()
-	if (!preferences.read_preference(/datum/preference/toggle/allow_mismatched_parts))
+	if (!allow_mismatched_parts)
 		for (var/name in presets)
 			var/datum/body_marking_set/BMS = presets[name]
-			var/datum/species/species_type = preferences.read_preference(/datum/preference/choiced/species)
 			if (BMS.recommended_species && !(initial(species_type.id) in BMS.recommended_species))
 				presets -= name
 

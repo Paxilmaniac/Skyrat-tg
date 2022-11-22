@@ -2,15 +2,15 @@
 
 //ITEM INVENTORY WEIGHT, FOR w_class
 /// Usually items smaller then a human hand, (e.g. playing cards, lighter, scalpel, coins/holochips)
-#define WEIGHT_CLASS_TINY     1
+#define WEIGHT_CLASS_TINY 1
 /// Pockets can hold small and tiny items, (e.g. flashlight, multitool, grenades, GPS device)
-#define WEIGHT_CLASS_SMALL    2
+#define WEIGHT_CLASS_SMALL 2
 /// Standard backpacks can carry tiny, small & normal items, (e.g. fire extinguisher, stun baton, gas mask, metal sheets)
-#define WEIGHT_CLASS_NORMAL   3
+#define WEIGHT_CLASS_NORMAL 3
 /// Items that can be weilded or equipped but not stored in an inventory, (e.g. defibrillator, backpack, space suits)
-#define WEIGHT_CLASS_BULKY    4
+#define WEIGHT_CLASS_BULKY 4
 /// Usually represents objects that require two hands to operate, (e.g. shotgun, two-handed melee weapons)
-#define WEIGHT_CLASS_HUGE     5
+#define WEIGHT_CLASS_HUGE 5
 /// Essentially means it cannot be picked up or placed in an inventory, (e.g. mech parts, safe)
 #define WEIGHT_CLASS_GIGANTIC 6
 
@@ -61,25 +61,14 @@
 /// Legcuff slot (bolas, beartraps)
 #define ITEM_SLOT_LEGCUFFED (1<<19)
 
-//SKYRAT EDIT ADDITION BEGIN - ERP UPDATE
-/// Penis slot
-#define ITEM_SLOT_PENIS (1<<20)
-/// Vagina slot
-#define ITEM_SLOT_VAGINA (1<<21)
-/// Anus slot
-#define ITEM_SLOT_ANUS (1<<22)
-/// Nipples slot
-#define ITEM_SLOT_NIPPLES (1<<23)
-//SKYRATE EDIT ADDITION END
-
 /// Total amount of slots
-//SKYRAT EDIT CHANGE BEGIN
-// #define SLOTS_AMT 20 // Keep this up to date! - SKYRAT EDIT - ORIGINAL
-#define SLOTS_AMT 24 // Keep this up to date!
-//SKYRAT EDIT CHANGE END
+#define SLOTS_AMT 20 // Keep this up to date!
 
 //SLOT GROUP HELPERS
 #define ITEM_SLOT_POCKETS (ITEM_SLOT_LPOCKET|ITEM_SLOT_RPOCKET)
+/// Slots that are physically on you
+#define ITEM_SLOT_ON_BODY (ITEM_SLOT_ICLOTHING | ITEM_SLOT_OCLOTHING | ITEM_SLOT_GLOVES | ITEM_SLOT_EYES | ITEM_SLOT_EARS | \
+	ITEM_SLOT_MASK | ITEM_SLOT_HEAD | ITEM_SLOT_FEET | ITEM_SLOT_ID | ITEM_SLOT_BELT | ITEM_SLOT_BACK | ITEM_SLOT_NECK )
 
 //Bit flags for the flags_inv variable, which determine when a piece of clothing hides another. IE a helmet hiding glasses.
 //Make sure to update check_obscured_slots() if you add more.
@@ -157,15 +146,21 @@
 #define CLOTHING_DIGITIGRADE_VARIATION (1<<1)
 ///The sprite works fine for digitigrade legs as-is.
 #define CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON (1<<2)
+///has a sprite for monkeys
+#define CLOTHING_MONKEY_VARIATION (1<<3)
 // SKYRAT EDIT ADDITION
 /// The sprite works fine for snouts.
-#define CLOTHING_SNOUTED_VARIATION (1<<3)
+#define CLOTHING_SNOUTED_VARIATION (1<<4)
 /// The sprite works fine for snouts as-is.
-#define CLOTHING_SNOUTED_VARIATION_NO_NEW_ICON (1<<4)
+#define CLOTHING_SNOUTED_VARIATION_NO_NEW_ICON (1<<5)
 /// The sprite works fine for vox snouts.
-#define CLOTHING_SNOUTED_VOX_VARIATION (1<<5)
+#define CLOTHING_SNOUTED_VOX_VARIATION (1<<6)
 /// The sprite works fine for vox snouts as is.
-#define CLOTHING_SNOUTED_VOX_VARIATION_NO_NEW_ICON (1<<6)
+#define CLOTHING_SNOUTED_VOX_VARIATION_NO_NEW_ICON (1<<7)
+/// The sprite works fine for vox snouts.
+#define CLOTHING_SNOUTED_BETTER_VOX_VARIATION (1<<8)
+/// The sprite works fine for vox snouts as is.
+#define CLOTHING_SNOUTED_BETTER_VOX_VARIATION_NO_NEW_ICON (1<<9)
 // SKYRAT EDIT END
 
 //flags for covering body parts

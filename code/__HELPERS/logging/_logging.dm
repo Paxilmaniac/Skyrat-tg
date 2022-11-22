@@ -76,14 +76,17 @@ GLOBAL_LIST_INIT(testing_global_profiler, list("_PROFILE_NAME" = "Global"))
 	//SKYRAT EDIT ADDITION BEGIN
 	#ifndef SPACEMAN_DMM
 	if(CONFIG_GET(flag/sql_game_log) && CONFIG_GET(flag/sql_enabled))
-		var/datum/db_query/query_sql_log_messages = SSdbcore.NewQuery({"
-			INSERT INTO [format_table_name("game_log")] (datetime, round_id, ckey, loc, type, message)
-			VALUES (:time, :round_id, :ckey, :loc, :type, :message)
-		"}, list("time" = SQLtime(), "round_id" = "[GLOB.round_id]", "ckey" = key_name(src), "loc" = loc_name(src), type = message_type, "message" = message))
-		if(!query_sql_log_messages.warn_execute())
-			qdel(query_sql_log_messages)
-			return
-		qdel(query_sql_log_messages)
+		SSdbcore.add_log_to_mass_insert_queue(
+			format_table_name("game_log"),
+			list(
+				"datetime" = SQLtime(),
+				"round_id" = "[GLOB.round_id]",
+				"ckey" = key_name(src),
+				"loc" = loc_name(src),
+				"type" = message_type,
+				"message" = message,
+			)
+		)
 		if(!CONFIG_GET(flag/file_game_log))
 			return
 	#endif
@@ -132,6 +135,8 @@ GLOBAL_LIST_INIT(testing_global_profiler, list("_PROFILE_NAME" = "Global"))
 			log_mecha(log_text)
 		if(LOG_SHUTTLE)
 			log_shuttle(log_text)
+		if(LOG_SPEECH_INDICATORS)
+			log_speech_indicators(log_text)
 		else
 			stack_trace("Invalid individual logging type: [message_type]. Defaulting to [LOG_GAME] (LOG_GAME).")
 			log_game(log_text)
@@ -186,7 +191,7 @@ GLOBAL_LIST_INIT(testing_global_profiler, list("_PROFILE_NAME" = "Global"))
 		if(istype(whom, /atom))
 			var/atom/A = whom
 			swhom = "[A.name]"
-		else if(istype(whom, /datum))
+		else if(isdatum(whom))
 			swhom = "[whom]"
 
 		if(!swhom)
@@ -202,7 +207,7 @@ GLOBAL_LIST_INIT(testing_global_profiler, list("_PROFILE_NAME" = "Global"))
 	if(key)
 		if(C?.holder && C.holder.fakekey && !include_name)
 			if(include_link)
-				. += "<a href='?priv_msg=[C.findStealthKey()]'>"
+				. += "<a href='?priv_msg=[C.getStealthKey()]'>"
 			. += "Administrator"
 		else
 			if(include_link)

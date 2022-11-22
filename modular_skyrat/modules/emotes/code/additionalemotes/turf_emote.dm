@@ -56,7 +56,7 @@
 			user.allowed_turfs += "dust" //moth's dust ✨
 
 		//body parts
-		if(istype(user.getorganslot(ORGAN_SLOT_TAIL), /obj/item/organ/tail))
+		if(istype(user.getorganslot(ORGAN_SLOT_EXTERNAL_TAIL), /obj/item/organ/external/tail))
 			var/name = human_user.dna.species.mutant_bodyparts["tail"][MUTANT_INDEX_NAME]
 			var/datum/sprite_accessory/tails/tail = GLOB.sprite_accessories["tail"][name]
 			if(tail.fluffy)
@@ -88,7 +88,7 @@
 		display_turf[initial(choice)] = option
 
 	sort_list(display_turf)
-	var/chosen_turf = show_radial_menu(user, user, display_turf, custom_check = CALLBACK(src, .proc/check_menu, user))
+	var/chosen_turf = show_radial_menu(user, user, display_turf, custom_check = CALLBACK(src, PROC_REF(check_menu), user))
 
 	if(QDELETED(src) || QDELETED(user) || !chosen_turf)
 		return FALSE
@@ -158,7 +158,7 @@
 			owned_turf.transform = owned_turf.transform.Translate(0, translate)
 			owned_turf.appearance_flags = PIXEL_SCALE
 
-		RegisterSignal(user, COMSIG_MOVABLE_MOVED, .proc/turf_owner, override = TRUE)
+		RegisterSignal(user, COMSIG_MOVABLE_MOVED, PROC_REF(turf_owner), override = TRUE)
 
 	return ..()
 

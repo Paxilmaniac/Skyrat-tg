@@ -9,10 +9,10 @@
 	var/datum/component/uplink/hidden_uplink = GetComponent(/datum/component/uplink)
 	hidden_uplink.name = "old radio"
 
-/obj/item/reagent_containers/glass/rag/large
-    volume = 30
-    amount_per_transfer_from_this = 30
-    desc = "A damp rag made from a highly absorbant materials. Can hold up to 30u liquids. You can also clean up messes I guess."
+/obj/item/reagent_containers/cup/rag/large
+	volume = 30
+	amount_per_transfer_from_this = 30
+	desc = "A damp rag made from a highly absorbant materials. Can hold up to 30u liquids. You can also clean up messes I guess."
 
 
 /obj/item/storage/box/syndie_kit/gunman_outfit
@@ -31,8 +31,8 @@
 	new /obj/item/clothing/suit/armor/vest/leather/gunman(src)
 	new /obj/item/clothing/shoes/combat(src)
 
-/obj/item/autosurgeon/organ/syndicate/hackerman
-	starting_organ = /obj/item/organ/cyberimp/arm/hacker
+/obj/item/autosurgeon/syndicate/hackerman
+	starting_organ = /obj/item/organ/internal/cyberimp/arm/hacker
 
 /obj/item/storage/box/syndie_kit/insurgent
 	name = "syndicate insurgent bundle"
@@ -65,9 +65,9 @@
 
 /obj/item/clothing/suit/toggle/lawyer/black/better/heister/equipped(mob/living/user, slot)
 	. = ..()
-	if(slot != ITEM_SLOT_OCLOTHING)
+	if(!(slot & ITEM_SLOT_OCLOTHING))
 		return
-	RegisterSignal(user, COMSIG_HUMAN_CHECK_SHIELDS, .proc/armor_reaction)
+	RegisterSignal(user, COMSIG_HUMAN_CHECK_SHIELDS, PROC_REF(armor_reaction))
 
 /obj/item/clothing/suit/toggle/lawyer/black/better/heister/proc/armor_reaction(mob/living/carbon/human/owner, atom/movable/hitby, damage = 0, attack_text = "the attack", attack_type = MELEE_ATTACK, armour_penetration = 0)
 	if(SEND_SIGNAL(src, COMSIG_ITEM_HIT_REACT, owner, hitby, attack_text, 0, damage, attack_type) & COMPONENT_HIT_REACTION_BLOCK)

@@ -50,9 +50,9 @@
 
 /datum/quirk/equipping/lungs
 	abstract_parent_type = /datum/quirk/equipping/lungs
-	var/obj/item/organ/lungs/lungs_holding
-	var/obj/item/organ/lungs/lungs_added
-	var/lungs_typepath = /obj/item/organ/lungs
+	var/obj/item/organ/internal/lungs/lungs_holding
+	var/obj/item/organ/internal/lungs/lungs_added
+	var/lungs_typepath = /obj/item/organ/internal/lungs
 	items = list(/obj/item/clothing/accessory/breathing = list(ITEM_SLOT_BACKPACK))
 	var/breath_type = "oxygen"
 
@@ -73,13 +73,12 @@
 	var/mob/living/carbon/carbon_holder = quirk_holder
 	if (!istype(carbon_holder) || !lungs_holding)
 		return
-	var/obj/item/organ/lungs/lungs = carbon_holder.getorganslot(ORGAN_SLOT_LUNGS)
+	var/obj/item/organ/internal/lungs/lungs = carbon_holder.getorganslot(ORGAN_SLOT_LUNGS)
 	if (lungs != lungs_added && lungs != lungs_holding)
 		qdel(lungs_holding)
 		return
 	lungs_holding.Insert(carbon_holder, drop_if_replaced = FALSE)
 	lungs_holding.organ_flags &= ~ORGAN_FROZEN
-	carbon_holder.update_internals_hud_icon(1)
 
 /datum/quirk/equipping/lungs/on_equip_item(obj/item/equipped, success)
 	var/mob/living/carbon/human/human_holder = quirk_holder
@@ -105,7 +104,7 @@
 
 /obj/item/clothing/accessory/breathing/on_uniform_equip(obj/item/clothing/under/uniform, user)
 	. = ..()
-	RegisterSignal(uniform, COMSIG_PARENT_EXAMINE, .proc/on_examine)
+	RegisterSignal(uniform, COMSIG_PARENT_EXAMINE, PROC_REF(on_examine))
 
 /obj/item/clothing/accessory/breathing/on_uniform_dropped(obj/item/clothing/under/uniform, user)
 	. = ..()
@@ -126,7 +125,7 @@
 	forced_items = list(
 		/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
 		/obj/item/tank/internals/nitrogen/belt/full = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET))
-	lungs_typepath = /obj/item/organ/lungs/nitrogen
+	lungs_typepath = /obj/item/organ/internal/lungs/nitrogen
 	breath_type = "nitrogen"
 
 /datum/quirk/equipping/lungs/nitrogen/on_equip_item(obj/item/equipped, success)
@@ -135,4 +134,3 @@
 	if (!success || !istype(carbon_holder) || !istype(equipped, /obj/item/tank/internals))
 		return
 	carbon_holder.internal = equipped
-	carbon_holder.update_internals_hud_icon(1)

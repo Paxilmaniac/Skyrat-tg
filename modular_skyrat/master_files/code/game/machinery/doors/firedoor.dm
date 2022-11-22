@@ -1,6 +1,6 @@
 /obj/machinery/door/firedoor/AltClick(mob/user)
 	. = ..()
-	if(!user.canUseTopic(src, BE_CLOSE))
+	if(!user.canUseTopic(src, be_close = TRUE))
 		return
 	try_manual_override(user)
 
@@ -25,3 +25,21 @@
 		open()
 	else
 		close()
+
+/obj/machinery/door/firedoor/heavy/closed
+	icon_state = "door_closed"
+	density = TRUE
+	alarm_type = FIRELOCK_ALARM_TYPE_GENERIC
+
+/obj/machinery/door/firedoor/solid
+	name = "solid emergency shutter"
+	desc = "Emergency air-tight shutter, capable of sealing off breached areas. It has a mechanism to open it with just your hands."
+	icon = 'modular_skyrat/modules/aesthetics/firedoor/icons/firedoor.dmi'
+	glass = FALSE
+
+/obj/machinery/door/firedoor/solid/closed
+	icon_state = "door_closed"
+	density = TRUE
+	opacity = TRUE
+	alarm_type = FIRELOCK_ALARM_TYPE_GENERIC
+

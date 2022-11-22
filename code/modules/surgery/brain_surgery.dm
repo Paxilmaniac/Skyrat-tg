@@ -13,7 +13,7 @@
 	requires_bodypart_type = 0
 
 /datum/surgery_step/fix_brain
-	name = "fix brain"
+	name = "fix brain (hemostat)"
 	implements = list(
 		TOOL_HEMOSTAT = 85,
 		TOOL_SCREWDRIVER = 35,
@@ -25,7 +25,7 @@
 	failure_sound = 'sound/surgery/organ2.ogg'
 
 /datum/surgery/brain_surgery/can_start(mob/user, mob/living/carbon/target)
-	var/obj/item/organ/brain/target_brain = target.getorganslot(ORGAN_SLOT_BRAIN)
+	var/obj/item/organ/internal/brain/target_brain = target.getorganslot(ORGAN_SLOT_BRAIN)
 	if(!target_brain)
 		return FALSE
 	return TRUE

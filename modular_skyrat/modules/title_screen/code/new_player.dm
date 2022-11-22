@@ -1,3 +1,7 @@
+/mob/dead/new_player
+	/// Title screen is ready to receive signals
+	var/title_screen_is_ready = FALSE
+
 /mob/dead/new_player/Topic(href, href_list[])
 	if(src != usr)
 		return
@@ -111,6 +115,10 @@
 		vote_on_poll_handler(poll, href_list)
 		return
 
+	if(href_list["title_is_ready"])
+		title_screen_is_ready = TRUE
+		return
+
 
 /mob/dead/new_player/Login()
 	. = ..()
@@ -124,6 +132,7 @@
 		return
 
 	winset(src, "title_browser", "is-disabled=false;is-visible=true")
+	winset(src, "status_bar", "is-visible=false")
 
 	var/datum/asset/assets = get_asset_datum(/datum/asset/simple/lobby) //Sending pictures to the client
 	assets.send(src)
@@ -150,6 +159,7 @@
 /mob/dead/new_player/proc/hide_title_screen()
 	if(client?.mob)
 		winset(client, "title_browser", "is-disabled=true;is-visible=false")
+		winset(client, "status_bar", "is-visible=true")
 
 /mob/dead/new_player/proc/play_lobby_button_sound()
 	SEND_SOUND(src, sound('modular_skyrat/master_files/sound/effects/save.ogg'))
@@ -165,6 +175,9 @@
 				if(IsJobUnavailable(job_datum.title, TRUE) != JOB_AVAILABLE)
 					continue
 				dept_data += job_datum.title
+		if(dept_data.len <= 0) //Congratufuckinglations
+			tgui_alert(src, "There are literally no random jobs available for you on this server, ahelp for assistance.")
+			return
 		var/random = pick(dept_data)
 		var/randomjob = "<p><center><a href='byond://?src=[REF(src)];SelectedJob=[random]'>[random]</a></center><center><a href='byond://?src=[REF(src)];SelectedJob=Random'>Reroll</a></center><center><a href='byond://?src=[REF(src)];cancrand=[1]'>Cancel</a></center></p>"
 		var/datum/browser/popup = new(src, "randjob", "<div align='center'>Random Job</div>", 200, 150)
@@ -223,6 +236,9 @@
  * Shows the player a list of current polls, if any.
  */
 /mob/dead/new_player/proc/playerpolls()
+	if(!usr || !client)
+		return
+
 	var/output
 	if (!SSdbcore.Connect())
 		return
@@ -250,9 +266,9 @@
 		qdel(query_get_new_polls)
 		return
 	if(query_get_new_polls.NextRow())
-		output +={"<a class="menu_button menu_newpoll" href='?src=\ref[src];viewpoll=1'>POLLS (NEW)</a>"}
+		output +={"<a class="menu_button menu_newpoll" href='?src=[text_ref(src)];viewpoll=1'>POLLS (NEW)</a>"}
 	else
-		output +={"<a class="menu_button" href='?src=\ref[src];viewpoll=1'>POLLS</a>"}
+		output +={"<a class="menu_button" href='?src=[text_ref(src)];viewpoll=1'>POLLS</a>"}
 	qdel(query_get_new_polls)
 	if(QDELETED(src))
 		return

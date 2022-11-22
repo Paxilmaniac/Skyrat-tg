@@ -49,7 +49,7 @@
 	has_gun_safety = TRUE
 	item_flags = null
 
-/obj/item/gun/syringe/smartdart/Initialize()
+/obj/item/gun/syringe/smartdart/Initialize(mapload)
 	. = ..()
 	chambered = new /obj/item/ammo_casing/syringegun/dart(src)
 
@@ -83,7 +83,7 @@
 		/datum/reagent/medicine,
 		/datum/reagent/vaccine
 	)
-        ///Blacklist that contains medicines that SmartDarts are unable to inject.
+	///Blacklist that contains medicines that SmartDarts are unable to inject.
 	var/list/disallowed_medicine = list(
 		/datum/reagent/inverse/,
 		/datum/reagent/medicine/morphine,

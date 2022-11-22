@@ -55,7 +55,7 @@
 	minbodytemp = 0
 	loot = list(/obj/effect/decal/cleanable/oil/slippery)
 	butcher_results = list(/obj/item/clothing/head/corgi/en = 1, /obj/item/clothing/suit/corgisuit/en = 1)
-	deathmessage = "beeps, its mechanical parts hissing before the chassis collapses in a loud thud."
+	death_message = "beeps, its mechanical parts hissing before the chassis collapses in a loud thud."
 	gold_core_spawnable = NO_SPAWN
 	animal_species = /mob/living/simple_animal/pet/dog/corgi
 	nofur = TRUE
@@ -66,18 +66,18 @@
 	light_power = 0.8
 	light_on = FALSE
 
-/mob/living/simple_animal/pet/dog/corgi/borgi/Initialize()
+/mob/living/simple_animal/pet/dog/corgi/borgi/Initialize(mapload)
 	. = ..()
 	var/datum/component/overlay_lighting/lighting_object = src.GetComponent(/datum/component/overlay_lighting)
 	var/image/cone = lighting_object.cone
 	cone.transform = cone.transform.Translate(0, -8)
 
 	// Defense protocol
-	RegisterSignal(src, COMSIG_ATOM_ATTACK_HAND, .proc/on_attack_hand)
-	RegisterSignal(src, COMSIG_PARENT_ATTACKBY, .proc/on_attackby)
-	RegisterSignal(src, COMSIG_ATOM_HITBY, .proc/on_hitby)
+	RegisterSignal(src, COMSIG_ATOM_ATTACK_HAND, PROC_REF(on_attack_hand))
+	RegisterSignal(src, COMSIG_PARENT_ATTACKBY, PROC_REF(on_attackby))
+	RegisterSignal(src, COMSIG_ATOM_HITBY, PROC_REF(on_hitby))
 	// For traitor objectives
-	RegisterSignal(src, COMSIG_ATOM_EMAG_ACT, .proc/on_emag_act)
+	RegisterSignal(src, COMSIG_ATOM_EMAG_ACT, PROC_REF(on_emag_act))
 
 /mob/living/simple_animal/pet/dog/corgi/borgi/proc/on_attack_hand(datum/source, mob/living/target)
 	if(target.combat_mode && health > 0)
@@ -147,7 +147,7 @@
 	if(!source_turf || !target_turf)
 		return
 	var/obj/projectile/bullet/reusable/foam_dart/fired_dart = new /obj/projectile/bullet/reusable/foam_dart(loc)
-	fired_dart.icon = 'icons/obj/guns/toy.dmi'
+	fired_dart.icon = 'icons/obj/weapons/guns/toy.dmi'
 	fired_dart.icon_state = "foamdart_proj"
 	playsound(loc, 'sound/items/syringeproj.ogg', 75, 1)
 	fired_dart.preparePixelProjectile(target, source_turf)
@@ -190,16 +190,17 @@
 		set_light_on(TRUE)
 
 		add_fingerprint(user, TRUE)
+		investigate_log("has been gibbed due to being emagged by [user].", INVESTIGATE_DEATHS)
 		visible_message(span_boldwarning("[user] swipes a card through [target]!"), span_notice("You overload [target]s internal reactor..."))
 
 		notify_ghosts("[user] has shortcircuited [target] to explode in 60 seconds!", source = target, action = NOTIFY_ORBIT, flashwindow = FALSE, header = "Borgi Emagged")
-		addtimer(CALLBACK(src, .proc/explode_imminent), 50 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(explode_imminent)), 50 SECONDS)
 
 /mob/living/simple_animal/pet/dog/corgi/borgi/proc/explode_imminent()
 	visible_message(span_bolddanger("[src] makes an odd whining noise!"))
 	do_jitter_animation(30)
 
-	addtimer(CALLBACK(src, .proc/explode), 10 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(explode)), 10 SECONDS)
 
 /mob/living/simple_animal/pet/dog/corgi/borgi/proc/explode()
 	explosion(get_turf(src), 1, 2, 4, 4, 6) // Should this be changed?
