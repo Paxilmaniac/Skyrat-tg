@@ -9,12 +9,12 @@
 
 /// Adds the shielded component to the belt
 /obj/item/personal_shield_generator/combat/proc/setup_shielding()
-	AddComponent(/datum/component/shielded/skyrat_shield_flicker,
-		max_charges = 3,
-		recharge_start_delay = 20 SECONDS,
-		charge_increment_delay = 1 SECONDS,
-		charge_recovery = 1,
-		lose_multiple_charges = FALSE,
-		shield_icon_file = src.shield_icon_file,
-		shield_icon = src.shield_icon,
+	AddComponent(/datum/component/shielded/skyrat_shield_flicker, \
+		max_charges = 3, \
+		recharge_start_delay = 20 SECONDS, \
+		charge_increment_delay = 1 SECONDS, \
+		charge_recovery = 1, \
+		lose_multiple_charges = FALSE, \
+		shield_icon_file = src.shield_icon_file, \
+		shield_icon = src.shield_icon, \
 	)
