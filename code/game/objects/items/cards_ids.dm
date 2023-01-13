@@ -8,7 +8,7 @@
 #define INTERN_THRESHOLD_FALLBACK_HOURS 15
 
 /// Max time interval between projecting holopays
-#define HOLOPAY_PROJECTION_INTERVAL 7 SECONDS
+#define HOLOPAY_PROJECTION_INTERVAL (7 SECONDS)
 
 /* Cards
  * Contains:
@@ -45,12 +45,12 @@
 	name = "retro identification card"
 	desc = "A card used to provide ID and determine access across the station."
 	icon_state = "card_grey"
-	worn_icon_state = "card_retro"
 	inhand_icon_state = "card-id"
+	worn_icon_state = "nothing"
 	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 	slot_flags = ITEM_SLOT_ID
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/card_id
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 	/// Cached icon that has been built for this card. Intended for use in chat.
@@ -102,6 +102,10 @@
 	/// Boolean value. If TRUE, the [Intern] tag gets prepended to this ID card when the label is updated.
 	var/is_intern = FALSE
 
+/datum/armor/card_id
+	fire = 100
+	acid = 100
+
 /obj/item/card/id/Initialize(mapload)
 	. = ..()
 
@@ -119,7 +123,7 @@
 
 	register_context()
 
-	RegisterSignal(src, COMSIG_ATOM_UPDATED_ICON, .proc/update_in_wallet)
+	RegisterSignal(src, COMSIG_ATOM_UPDATED_ICON, PROC_REF(update_in_wallet))
 	if(prob(1))
 		ADD_TRAIT(src, TRAIT_TASTEFULLY_THICK_ID_CARD, ROUNDSTART_TRAIT)
 
@@ -708,7 +712,7 @@
 			if(isliving(user))
 				var/mob/living/living_user = user
 				living_user.adjust_jitter(10 SECONDS)
-			addtimer(CALLBACK(src, .proc/drop_card, user), 10 SECONDS)
+			addtimer(CALLBACK(src, PROC_REF(drop_card), user), 10 SECONDS)
 	. += span_notice("<i>There's more information below, you can look again to take a closer look...</i>")
 
 /obj/item/card/id/proc/drop_card(mob/user)
@@ -840,6 +844,10 @@
 	desc = "An ID card that allows access to bots maintenance protocols."
 	trim = /datum/id_trim/away/old/robo
 
+/datum/armor/card_id
+	fire = 100
+	acid = 100
+
 /obj/item/card/id/away/deep_storage //deepstorage.dmm space ruin
 	name = "bunker access ID"
 
@@ -850,6 +858,10 @@
 	var/department_ID = ACCOUNT_CIV
 	var/department_name = ACCOUNT_CIV_NAME
 	registered_age = null
+
+/datum/armor/card_id
+	fire = 100
+	acid = 100
 
 /obj/item/card/id/departmental_budget/Initialize(mapload)
 	. = ..()
@@ -874,6 +886,10 @@
 	department_name = ACCOUNT_CAR_NAME
 	icon_state = "car_budget" //saving up for a new tesla
 
+/datum/armor/card_id
+	fire = 100
+	acid = 100
+
 /obj/item/card/id/departmental_budget/AltClick(mob/living/user)
 	registered_account.bank_card_talk(span_warning("Withdrawing is not compatible with this card design."), TRUE) //prevents the vault bank machine being useless and putting money from the budget to your card to go over personal crates
 
@@ -881,7 +897,6 @@
 	name = "identification card"
 	desc = "A card used to provide ID and determine access across the station. Has an integrated digital display and advanced microchips."
 	icon_state = "card_grey"
-	worn_icon_state = "card_grey"
 
 	wildcard_slots = WILDCARD_LIMIT_GREY
 	flags_1 = UNPAINTABLE_1
@@ -904,10 +919,14 @@
 	/// If this is set, will manually override the trim shown for SecHUDs. Intended for admins to VV edit and chameleon ID cards.
 	var/sechud_icon_state_override = null
 
+/datum/armor/card_id
+	fire = 100
+	acid = 100
+
 /obj/item/card/id/advanced/Initialize(mapload)
 	. = ..()
-	RegisterSignal(src, COMSIG_ITEM_EQUIPPED, .proc/update_intern_status)
-	RegisterSignal(src, COMSIG_ITEM_DROPPED, .proc/remove_intern_status)
+	RegisterSignal(src, COMSIG_ITEM_EQUIPPED, PROC_REF(update_intern_status))
+	RegisterSignal(src, COMSIG_ITEM_DROPPED, PROC_REF(remove_intern_status))
 
 /obj/item/card/id/advanced/Destroy()
 	UnregisterSignal(src, list(COMSIG_ITEM_EQUIPPED, COMSIG_ITEM_DROPPED))
@@ -964,43 +983,35 @@
 	is_intern = FALSE
 	update_label()
 
-/obj/item/card/id/advanced/proc/on_holding_card_slot_moved(obj/item/computer_hardware/card_slot/source, atom/old_loc, dir, forced)
+/obj/item/card/id/advanced/proc/on_holding_card_slot_moved(obj/item/modular_computer/pda/source, atom/old_loc, dir, forced)
 	SIGNAL_HANDLER
-	if(istype(old_loc, /obj/item/modular_computer/tablet))
+	if(istype(old_loc, /obj/item/modular_computer/pda))
 		UnregisterSignal(old_loc, list(COMSIG_ITEM_EQUIPPED, COMSIG_ITEM_DROPPED))
 
-	if(istype(source.loc, /obj/item/modular_computer/tablet))
-		RegisterSignal(source.loc, COMSIG_ITEM_EQUIPPED, .proc/update_intern_status)
-		RegisterSignal(source.loc, COMSIG_ITEM_DROPPED, .proc/remove_intern_status)
+	if(source)
+		RegisterSignal(source, COMSIG_ITEM_EQUIPPED, PROC_REF(update_intern_status))
+		RegisterSignal(source, COMSIG_ITEM_DROPPED, PROC_REF(remove_intern_status))
 
 /obj/item/card/id/advanced/Moved(atom/old_loc, movement_dir, forced, list/old_locs, momentum_change = TRUE)
 	. = ..()
 
+	//Old loc
 	if(istype(old_loc, /obj/item/storage/wallet))
 		UnregisterSignal(old_loc, list(COMSIG_ITEM_EQUIPPED, COMSIG_ITEM_DROPPED))
 
-	if(istype(old_loc, /obj/item/computer_hardware/card_slot))
-		var/obj/item/computer_hardware/card_slot/slot = old_loc
-
+	if(istype(old_loc, /obj/item/modular_computer/pda))
 		UnregisterSignal(old_loc, COMSIG_MOVABLE_MOVED)
+		UnregisterSignal(old_loc, list(COMSIG_ITEM_EQUIPPED, COMSIG_ITEM_DROPPED))
 
-		if(istype(slot.holder, /obj/item/modular_computer/tablet))
-			var/obj/item/modular_computer/tablet/slot_holder = slot.holder
-			UnregisterSignal(slot_holder, list(COMSIG_ITEM_EQUIPPED, COMSIG_ITEM_DROPPED))
-
+	//New loc
 	if(istype(loc, /obj/item/storage/wallet))
-		RegisterSignal(loc, COMSIG_ITEM_EQUIPPED, .proc/update_intern_status)
-		RegisterSignal(loc, COMSIG_ITEM_DROPPED, .proc/remove_intern_status)
+		RegisterSignal(loc, COMSIG_ITEM_EQUIPPED, PROC_REF(update_intern_status))
+		RegisterSignal(loc, COMSIG_ITEM_DROPPED, PROC_REF(remove_intern_status))
 
-	if(istype(loc, /obj/item/computer_hardware/card_slot))
-		var/obj/item/computer_hardware/card_slot/slot = loc
-
-		RegisterSignal(loc, COMSIG_MOVABLE_MOVED, .proc/on_holding_card_slot_moved)
-
-		if(istype(slot.holder, /obj/item/modular_computer/tablet))
-			var/obj/item/modular_computer/tablet/slot_holder = slot.holder
-			RegisterSignal(slot_holder, COMSIG_ITEM_EQUIPPED, .proc/update_intern_status)
-			RegisterSignal(slot_holder, COMSIG_ITEM_DROPPED, .proc/remove_intern_status)
+	if(istype(loc, /obj/item/modular_computer/pda))
+		RegisterSignal(loc, COMSIG_MOVABLE_MOVED, PROC_REF(on_holding_card_slot_moved))
+		RegisterSignal(loc, COMSIG_ITEM_EQUIPPED, PROC_REF(update_intern_status))
+		RegisterSignal(loc, COMSIG_ITEM_DROPPED, PROC_REF(remove_intern_status))
 
 /obj/item/card/id/advanced/update_overlays()
 	. = ..()
@@ -1047,13 +1058,11 @@
 	name = "rainbow identification card"
 	desc = "A rainbow card, promoting fun in a 'business proper' sense!"
 	icon_state = "card_rainbow"
-	worn_icon_state = "card_rainbow"
 
 /obj/item/card/id/advanced/silver
 	name = "silver identification card"
 	desc = "A silver card which shows honour and dedication."
 	icon_state = "card_silver"
-	worn_icon_state = "card_silver"
 	inhand_icon_state = "silver_id"
 	assigned_icon_state = "assigned_silver"
 	wildcard_slots = WILDCARD_LIMIT_SILVER
@@ -1072,10 +1081,13 @@
 	name = "gold identification card"
 	desc = "A golden card which shows power and might."
 	icon_state = "card_gold"
-	worn_icon_state = "card_gold"
 	inhand_icon_state = "gold_id"
 	assigned_icon_state = "assigned_gold"
 	wildcard_slots = WILDCARD_LIMIT_GOLD
+
+/datum/armor/card_id
+	fire = 100
+	acid = 100
 
 /obj/item/card/id/advanced/gold/Initialize(mapload)
 	. = ..()
@@ -1088,6 +1100,10 @@
 	trim = /datum/id_trim/job/captain
 	registered_age = null
 
+/datum/armor/card_id
+	fire = 100
+	acid = 100
+
 /obj/item/card/id/advanced/gold/captains_spare/update_label() //so it doesn't change to Captain's ID card (Captain) on a sneeze
 	if(registered_name == "Captain")
 		name = "[initial(name)][(!assignment || assignment == "Captain") ? "" : " ([assignment])"]"
@@ -1099,7 +1115,6 @@
 	name = "\improper CentCom ID"
 	desc = "An ID straight from Central Command."
 	icon_state = "card_centcom"
-	worn_icon_state = "card_centcom"
 	assigned_icon_state = "assigned_centcom"
 	registered_name = JOB_CENTCOM
 	registered_age = null
@@ -1145,7 +1160,6 @@
 	name = "black identification card"
 	desc = "This card is telling you one thing and one thing alone. The person holding this card is an utter badass."
 	icon_state = "card_black"
-	worn_icon_state = "card_black"
 	assigned_icon_state = "assigned_syndicate"
 	wildcard_slots = WILDCARD_LIMIT_GOLD
 
@@ -1183,6 +1197,10 @@
 	registered_name = "Captain"
 	registered_age = null
 
+/datum/armor/card_id
+	fire = 100
+	acid = 100
+
 /obj/item/card/id/advanced/black/syndicate_command/captain_id/syndie_spare/update_label()
 	if(registered_name == "Captain")
 		name = "[initial(name)][(!assignment || assignment == "Captain") ? "" : " ([assignment])"]"
@@ -1195,10 +1213,13 @@
 	name = "\improper Debug ID"
 	desc = "A debug ID card. Has ALL the all access, you really shouldn't have this."
 	icon_state = "card_centcom"
-	worn_icon_state = "card_centcom"
 	assigned_icon_state = "assigned_centcom"
 	trim = /datum/id_trim/admin
 	wildcard_slots = WILDCARD_LIMIT_ADMIN
+
+/datum/armor/card_id
+	fire = 100
+	acid = 100
 
 /obj/item/card/id/advanced/debug/Initialize(mapload)
 	. = ..()
@@ -1208,7 +1229,6 @@
 	name = "prisoner ID card"
 	desc = "You are a number, you are not a free man."
 	icon_state = "card_prisoner"
-	worn_icon_state = "card_prisoner"
 	inhand_icon_state = "orange-id"
 	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
@@ -1228,6 +1248,10 @@
 	var/time_to_assign
 	/// Time left on a card till they can leave.
 	var/time_left = 0
+
+/datum/armor/card_id
+	fire = 100
+	acid = 100
 
 /obj/item/card/id/advanced/prisoner/attackby(obj/item/card/id/C, mob/user)
 	..()
@@ -1321,7 +1345,6 @@
 	registered_name = "Highlander"
 	desc = "There can be only one!"
 	icon_state = "card_black"
-	worn_icon_state = "card_black"
 	assigned_icon_state = "assigned_syndicate"
 	trim = /datum/id_trim/highlander
 	wildcard_slots = WILDCARD_LIMIT_ADMIN
@@ -1339,6 +1362,10 @@
 	/// Weak ref to the ID card we're currently attempting to steal access from.
 	var/datum/weakref/theft_target
 
+/datum/armor/card_id
+	fire = 100
+	acid = 100
+
 /obj/item/card/id/advanced/chameleon/Initialize(mapload)
 	. = ..()
 
@@ -1347,6 +1374,7 @@
 	chameleon_card_action.chameleon_name = "ID Card"
 	chameleon_card_action.initialize_disguises()
 	add_item_action(chameleon_card_action)
+	register_item_context()
 
 /obj/item/card/id/advanced/chameleon/Destroy()
 	theft_target = null
@@ -1359,7 +1387,7 @@
 	if(isidcard(target))
 		theft_target = WEAKREF(target)
 		ui_interact(user)
-		return
+		return AFTERATTACK_PROCESSED_ITEM
 
 	return ..()
 
@@ -1562,7 +1590,7 @@
 							var/fake_trim_name = "[trim.assignment] ([trim.trim_state])"
 							trim_list[fake_trim_name] = trim_path
 
-					var/selected_trim_path = tgui_input_list(user, "Select trim to apply to your card.\nNote: This will not grant any trim accesses.", "Forge Trim", sort_list(trim_list, /proc/cmp_typepaths_asc))
+					var/selected_trim_path = tgui_input_list(user, "Select trim to apply to your card.\nNote: This will not grant any trim accesses.", "Forge Trim", sort_list(trim_list, GLOBAL_PROC_REF(cmp_typepaths_asc)))
 					if(selected_trim_path)
 						SSid_access.apply_trim_to_chameleon_card(src, trim_list[selected_trim_path])
 
@@ -1611,10 +1639,22 @@
 			return
 	return ..()
 
+/obj/item/card/id/advanced/chameleon/add_item_context(obj/item/source, list/context, atom/target, mob/living/user,)
+	. = ..()
+
+	if(!in_range(user, target))
+		return .
+	if(ishuman(target))
+		context[SCREENTIP_CONTEXT_RMB] = "Copy access"
+		return CONTEXTUAL_SCREENTIP_SET
+	if(isitem(target))
+		context[SCREENTIP_CONTEXT_RMB] = "Scan for access"
+		return CONTEXTUAL_SCREENTIP_SET
+	return .
+
 /// A special variant of the classic chameleon ID card which accepts all access.
 /obj/item/card/id/advanced/chameleon/black
 	icon_state = "card_black"
-	worn_icon_state = "card_black"
 	assigned_icon_state = "assigned_syndicate"
 	wildcard_slots = WILDCARD_LIMIT_GOLD
 

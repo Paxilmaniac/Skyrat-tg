@@ -1,7 +1,8 @@
 /obj/item/clothing/glasses/hypno
 	name = "hypnotic goggles"
 	desc = "Woaa-a-ah... This is lewd."
-	icon_state = "hypnogoggles"
+	icon_state = "hypnogoggles_pink"
+	base_icon_state = "hypnogoggles"
 	inhand_icon_state = "hypnogoggles_pink"
 	icon = 'modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_clothing/lewd_eyes.dmi'
 	worn_icon = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_clothing/lewd_eyes.dmi'
@@ -63,7 +64,7 @@
 	. = ..()
 	if(.)
 		return
-	var/choice = show_radial_menu(user, src, hypnogoggles_designs, custom_check = CALLBACK(src, .proc/check_menu, user), radius = 36, require_near = TRUE)
+	var/choice = show_radial_menu(user, src, hypnogoggles_designs, custom_check = CALLBACK(src, PROC_REF(check_menu), user), radius = 36, require_near = TRUE)
 	if(!choice)
 		return FALSE
 	current_hypnogoggles_color = choice
@@ -88,8 +89,8 @@
 
 /obj/item/clothing/glasses/hypno/update_icon_state()
 	. = ..()
-	icon_state = icon_state = "[initial(icon_state)]_[current_hypnogoggles_color]"
-	inhand_icon_state = "[initial(icon_state)]_[current_hypnogoggles_color]"
+	icon_state = "[base_icon_state]_[current_hypnogoggles_color]"
+	inhand_icon_state = "[base_icon_state]_[current_hypnogoggles_color]"
 
 /datum/brain_trauma/very_special/induced_hypnosis
 	name = "Hypnosis"
@@ -143,4 +144,7 @@
 			new /datum/hallucination/chat(owner, TRUE, FALSE, span_hypnophrase("[hypnotic_phrase]"))
 
 /datum/brain_trauma/very_special/induced_hypnosis/handle_hearing(datum/source, list/hearing_args)
+	if(!owner.can_hear() || owner == hearing_args[HEARING_SPEAKER])
+		return
+
 	hearing_args[HEARING_RAW_MESSAGE] = target_phrase.Replace(hearing_args[HEARING_RAW_MESSAGE], span_hypnophrase("$1"))

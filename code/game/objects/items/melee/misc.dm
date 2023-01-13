@@ -132,8 +132,8 @@
 		var/speedbase = abs((4 SECONDS) / limbs_to_dismember.len)
 		for(bodypart in limbs_to_dismember)
 			i++
-			addtimer(CALLBACK(src, .proc/suicide_dismember, user, bodypart), speedbase * i)
-	addtimer(CALLBACK(src, .proc/manual_suicide, user), (5 SECONDS) * i)
+			addtimer(CALLBACK(src, PROC_REF(suicide_dismember), user, bodypart), speedbase * i)
+	addtimer(CALLBACK(src, PROC_REF(manual_suicide), user), (5 SECONDS) * i)
 	return MANUAL_SUICIDE
 
 /obj/item/melee/sabre/proc/suicide_dismember(mob/living/user, obj/item/bodypart/affecting)
@@ -224,6 +224,7 @@
 		user.dropItemToGround(src)
 	if(proximity_flag)
 		consume_everything(target)
+		return . | AFTERATTACK_PROCESSED_ITEM
 
 /obj/item/melee/supermatter_sword/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
 	..()
@@ -335,8 +336,8 @@
 	AddComponent(/datum/component/transforming, \
 		hitsound_on = hitsound, \
 		clumsy_check = FALSE)
-	RegisterSignal(src, COMSIG_TRANSFORMING_PRE_TRANSFORM, .proc/attempt_transform)
-	RegisterSignal(src, COMSIG_TRANSFORMING_ON_TRANSFORM, .proc/on_transform)
+	RegisterSignal(src, COMSIG_TRANSFORMING_PRE_TRANSFORM, PROC_REF(attempt_transform))
+	RegisterSignal(src, COMSIG_TRANSFORMING_ON_TRANSFORM, PROC_REF(on_transform))
 
 /*
  * Signal proc for [COMSIG_TRANSFORMING_PRE_TRANSFORM].

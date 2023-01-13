@@ -96,6 +96,10 @@
 
 	/// Whether a user will face atoms on entering them with a mouse. Despite being a mob variable, it is here for performances //SKYRAT EDIT ADDITION
 	var/face_mouse = FALSE //SKYRAT EDIT ADDITION
+	/// Value used to increment ex_act() if reactionary_explosions is on
+	/// How much we as a source block explosions by
+	/// Will not automatically apply to the turf below you, you need to apply /datum/element/block_explosives in conjunction with this
+	var/explosion_block = 0
 
 /mutable_appearance/emissive_blocker
 
@@ -107,6 +111,11 @@
 
 /atom/movable/Initialize(mapload)
 	. = ..()
+#ifdef UNIT_TESTS
+	if(explosion_block && !HAS_TRAIT(src, TRAIT_BLOCKING_EXPLOSIVES))
+		stack_trace("[type] blocks explosives, but does not have the managing element applied")
+#endif
+
 	switch(blocks_emissive)
 		if(EMISSIVE_BLOCK_GENERIC)
 			var/static/mutable_appearance/emissive_blocker/blocker = new()
@@ -207,9 +216,7 @@
 	if(!blocks_emissive)
 		return
 	else if (blocks_emissive == EMISSIVE_BLOCK_GENERIC)
-		var/mutable_appearance/gen_emissive_blocker = emissive_blocker(icon, icon_state, src, alpha = src.alpha, appearance_flags = src.appearance_flags)
-		gen_emissive_blocker.dir = dir
-		return gen_emissive_blocker
+		return fast_emissive_blocker(src)
 	else if(blocks_emissive == EMISSIVE_BLOCK_UNIQUE)
 		if(!em_block && !QDELETED(src))
 			render_target = ref(src)
@@ -223,6 +230,7 @@
 		. += emissive_block
 
 /atom/movable/proc/onZImpact(turf/impacted_turf, levels, message = TRUE)
+	SHOULD_CALL_PARENT(TRUE)
 	if(message)
 		visible_message(span_danger("[src] crashes into [impacted_turf]!"))
 	var/atom/highest = impacted_turf
@@ -232,8 +240,21 @@
 		if(isobj(hurt_atom) || ismob(hurt_atom))
 			if(hurt_atom.layer > highest.layer)
 				highest = hurt_atom
-	INVOKE_ASYNC(src, .proc/SpinAnimation, 5, 2)
+	INVOKE_ASYNC(src, PROC_REF(SpinAnimation), 5, 2)
+	SEND_SIGNAL(src, COMSIG_ATOM_ON_Z_IMPACT, impacted_turf, levels)
 	return TRUE
+
+/*
+ * Attempts to move using zMove if direction is UP or DOWN, step if not
+ *
+ * Args:
+ * direction: The direction to go
+ * z_move_flags: bitflags used for checks in zMove and can_z_move
+*/
+/atom/movable/proc/try_step_multiz(direction, z_move_flags = ZMOVE_FLIGHT_FLAGS)
+	if(direction == UP || direction == DOWN)
+		return zMove(direction, null, z_move_flags)
+	return step(src, direction)
 
 /*
  * The core multi-z movement proc. Used to move a movable through z levels.
@@ -325,9 +346,9 @@
 	return destination //used by some child types checks and zMove()
 
 /atom/movable/vv_edit_var(var_name, var_value)
-	var/static/list/banned_edits = list(NAMEOF(src, step_x) = TRUE, NAMEOF(src, step_y) = TRUE, NAMEOF(src, step_size) = TRUE, NAMEOF(src, bounds) = TRUE)
-	var/static/list/careful_edits = list(NAMEOF(src, bound_x) = TRUE, NAMEOF(src, bound_y) = TRUE, NAMEOF(src, bound_width) = TRUE, NAMEOF(src, bound_height) = TRUE)
-	var/static/list/not_falsey_edits = list(NAMEOF(src, bound_width) = TRUE, NAMEOF(src, bound_height) = TRUE)
+	var/static/list/banned_edits = list(NAMEOF_STATIC(src, step_x) = TRUE, NAMEOF_STATIC(src, step_y) = TRUE, NAMEOF_STATIC(src, step_size) = TRUE, NAMEOF_STATIC(src, bounds) = TRUE)
+	var/static/list/careful_edits = list(NAMEOF_STATIC(src, bound_x) = TRUE, NAMEOF_STATIC(src, bound_y) = TRUE, NAMEOF_STATIC(src, bound_width) = TRUE, NAMEOF_STATIC(src, bound_height) = TRUE)
+	var/static/list/not_falsey_edits = list(NAMEOF_STATIC(src, bound_width) = TRUE, NAMEOF_STATIC(src, bound_height) = TRUE)
 	if(banned_edits[var_name])
 		return FALSE //PLEASE no.
 	if(careful_edits[var_name] && (var_value % world.icon_size) != 0)
@@ -506,7 +527,7 @@
 	if(set_dir_on_move && dir != direction && !face_mouse) // SKYRAT EDIT CHANGE
 		setDir(direction)
 
-	var/is_multi_tile_object = bound_width > 32 || bound_height > 32
+	var/is_multi_tile_object = is_multi_tile_object(src)
 
 	var/list/old_locs
 	if(is_multi_tile_object && isturf(loc))
@@ -738,7 +759,7 @@
 
 	return TRUE
 
-// Make sure you know what you're doing if you call this, this is intended to only be called by byond directly.
+// Make sure you know what you're doing if you call this
 // You probably want CanPass()
 /atom/movable/Cross(atom/movable/crossed_atom)
 	. = TRUE
@@ -1123,6 +1144,13 @@
 
 	return TRUE
 
+/atom/movable/set_explosion_block(explosion_block)
+	var/old_block = src.explosion_block
+	explosive_resistance -= old_block
+	src.explosion_block = explosion_block
+	explosive_resistance += explosion_block
+	SEND_SIGNAL(src, COMSIG_MOVABLE_EXPLOSION_BLOCK_CHANGED, old_block, explosion_block)
+
 /atom/movable/proc/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
 	set waitfor = FALSE
 	var/hitpush = TRUE
@@ -1382,7 +1410,7 @@
 	return language_holder.can_speak_language(language)
 
 /// Returns the result of tongue specific limitations on spoken languages.
-/atom/movable/proc/could_speak_language(language)
+/atom/movable/proc/could_speak_language(datum/language/language_path)
 	return TRUE
 
 /// Returns selected language, if it can be spoken, or finds, sets and returns a new selected language if possible.
@@ -1414,6 +1442,29 @@
 /atom/movable/proc/update_atom_languages()
 	var/datum/language_holder/language_holder = get_language_holder()
 	return language_holder.update_atom_languages(src)
+
+/**
+ * Randomizes our atom's language to an uncommon language if:
+ * - They are on the station Z level
+ * OR
+ * - They are on the escape shuttle
+ */
+/atom/movable/proc/randomize_language_if_on_station()
+	var/turf/atom_turf = get_turf(src)
+	var/area/atom_area = get_area(src)
+
+	if(!atom_turf) // some machines spawn in nullspace
+		return
+
+	if(!is_station_level(atom_turf.z) && !istype(atom_area, /area/shuttle/escape))
+		// Why snowflake check for escape shuttle? Well, a lot of shuttles spawn with machines
+		// but docked at centcom, and I wanted those machines to also speak funny languages
+		return FALSE
+
+	/// The atom's language holder - so we can randomize and change their language
+	var/datum/language_holder/atom_languages = get_language_holder()
+	atom_languages.selected_language = atom_languages.get_random_spoken_uncommon_language()
+	return TRUE
 
 /* End language procs */
 
@@ -1472,6 +1523,7 @@
 
 /atom/movable/vv_get_dropdown()
 	. = ..()
+	VV_DROPDOWN_OPTION(VV_HK_EDIT_PARTICLES, "Edit Particles")
 	VV_DROPDOWN_OPTION(VV_HK_DEADCHAT_PLAYS, "Start/Stop Deadchat Plays")
 	VV_DROPDOWN_OPTION(VV_HK_ADD_FANTASY_AFFIX, "Add Fantasy Affix")
 
@@ -1480,6 +1532,10 @@
 
 	if(!.)
 		return
+
+	if(href_list[VV_HK_EDIT_PARTICLES] && check_rights(R_VAREDIT))
+		var/client/C = usr.client
+		C?.open_particle_editor(src)
 
 	if(href_list[VV_HK_DEADCHAT_PLAYS] && check_rights(R_FUN))
 		if(tgui_alert(usr, "Allow deadchat to control [src] via chat commands?", "Deadchat Plays [src]", list("Allow", "Cancel")) != "Allow")

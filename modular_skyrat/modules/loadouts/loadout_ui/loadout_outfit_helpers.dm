@@ -46,7 +46,7 @@
 			new item.item_path(briefcase)
 
 		briefcase.name = "[preference_source.read_preference(/datum/preference/name/real_name)]'s travel suitcase"
-
+		equipOutfit(equipped_outfit, visuals_only)
 		put_in_hands(briefcase)
 	else
 		for(var/datum/loadout_item/item as anything in loadout_datums)
@@ -58,7 +58,6 @@
 			item.insert_path_into_outfit(equipped_outfit, src, visuals_only)
 */
 
-	equipOutfit(equipped_outfit, visuals_only)
 
 /*
 	for(var/datum/loadout_item/item as anything in loadout_datums)

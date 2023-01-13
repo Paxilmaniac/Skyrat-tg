@@ -6,7 +6,6 @@
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "your laws"
-	selection_color = "#ccffcc"
 	spawn_type = /mob/living/silicon/ai
 	req_admin_notify = TRUE
 	minimal_player_age = 30

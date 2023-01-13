@@ -41,9 +41,9 @@ export const CargoContent = (props, context) => {
           </Tabs.Tab>
           <Tabs.Tab
             icon="clipboard-list"
-            selected={tab === 'gun_window'}
-            onClick={() => act('gun_window')}>
-            Gun Requisitions
+            selected={tab === 'company_import_window'}
+            onClick={() => act('company_import_window')}>
+            Company Imports
           </Tabs.Tab>
           {!requestonly && (
             <>
@@ -68,7 +68,7 @@ export const CargoContent = (props, context) => {
       {tab === 'requests' && <CargoRequests />}
       {tab === 'cart' && <CargoCart />}
       {tab === 'help' && <CargoHelp />}
-      {tab === 'gun_window' && tab === 'catalog'}
+      {tab === 'company_import_window' && tab === 'catalog'}
     </Box>
   );
 };
@@ -107,7 +107,8 @@ const CargoStatus = (props, context) => {
               color={(grocery && 'orange') || 'green'}
               content={location}
               tooltip={
-                (grocery && 'The chef is waiting on their grocery supplies.') ||
+                (grocery &&
+                  'The kitchen is waiting for their grocery supply delivery!') ||
                 ''
               }
               tooltipPosition="right"
@@ -406,15 +407,15 @@ const CargoCart = (props, context) => {
               </Table.Cell>
               {(entry.dep_order && (
                 <Table.Cell collapsing textAlign="right">
-                  {formatMoney(entry.cost)} cr earned on delivery
+                  {formatMoney(entry.cost)} {entry.cost_type} earned on delivery
                 </Table.Cell>
               )) || (
                 <>
                   <Table.Cell collapsing textAlign="right">
-                    {formatMoney(entry.cost)} cr
+                    {formatMoney(entry.cost)} {entry.cost_type}
                   </Table.Cell>
                   <Table.Cell collapsing>
-                    {can_send && (
+                    {can_send && !!entry.can_be_cancelled && (
                       <Button
                         icon="minus"
                         onClick={() =>

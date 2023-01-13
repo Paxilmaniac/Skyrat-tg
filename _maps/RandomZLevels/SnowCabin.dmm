@@ -277,7 +277,7 @@
 	desc = "A sink used for washing one's hands and face. It looks rusty and home-made";
 	name = "sink"
 	},
-/obj/structure/janitorialcart,
+/obj/structure/mop_bucket/janitorialcart,
 /obj/item/mop,
 /obj/item/reagent_containers/cup/bucket,
 /obj/item/clothing/suit/caution,
@@ -335,11 +335,6 @@
 /area/awaymission/cabin)
 "bb" = (
 /obj/structure/cable,
-/turf/open/floor/carpet,
-/area/awaymission/cabin)
-"bc" = (
-/obj/structure/table/wood,
-/obj/item/reagent_containers/cup/glass/britcup,
 /turf/open/floor/carpet,
 /area/awaymission/cabin)
 "bd" = (
@@ -431,6 +426,18 @@
 /turf/open/floor/carpet,
 /area/awaymission/cabin)
 "bu" = (
+/obj/item/clothing/suit/hooded/wintercoat/hydro{
+	name = "service winter coat";
+	pixel_y = 4
+	},
+/obj/item/clothing/suit/hooded/wintercoat/hydro{
+	name = "service winter coat";
+	pixel_y = 4
+	},
+/obj/item/clothing/suit/hooded/wintercoat/hydro{
+	name = "service winter coat";
+	pixel_y = 4
+	},
 /obj/structure/table/wood,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
@@ -450,8 +457,8 @@
 /turf/open/floor/iron/cafeteria,
 /area/awaymission/cabin)
 "by" = (
-/obj/structure/table,
-/obj/machinery/reagentgrinder,
+/obj/machinery/oven,
+/obj/item/plate/oven_tray,
 /turf/open/floor/iron/cafeteria,
 /area/awaymission/cabin)
 "bz" = (
@@ -618,19 +625,7 @@
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "cj" = (
-/obj/structure/table,
-/obj/item/clothing/suit/hooded/wintercoat/hydro{
-	name = "service winter coat";
-	pixel_y = 4
-	},
-/obj/item/clothing/suit/hooded/wintercoat/hydro{
-	name = "service winter coat";
-	pixel_y = 4
-	},
-/obj/item/clothing/suit/hooded/wintercoat/hydro{
-	name = "service winter coat";
-	pixel_y = 4
-	},
+/obj/machinery/griddle,
 /turf/open/floor/iron/cafeteria,
 /area/awaymission/cabin)
 "ck" = (
@@ -743,7 +738,7 @@
 /area/awaymission/cabin)
 "cF" = (
 /obj/structure/table,
-/obj/structure/cable,
+/obj/machinery/reagentgrinder,
 /turf/open/floor/iron/cafeteria,
 /area/awaymission/cabin)
 "cG" = (
@@ -782,13 +777,6 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/iron/cafeteria,
-/area/awaymission/cabin)
-"cK" = (
-/obj/structure/table/wood/fancy,
-/obj/item/reagent_containers/cup/glass/sillycup/smallcarton{
-	pixel_y = 4
-	},
-/turf/open/floor/wood,
 /area/awaymission/cabin)
 "cL" = (
 /obj/machinery/light/small/directional/west,
@@ -1818,14 +1806,6 @@
 	name = "Jail Cell 7212"
 	},
 /area/awaymission/cabin/caves/mountain)
-"fT" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/fulltile{
-	desc = "Enjoy the view.";
-	name = "window"
-	},
-/turf/open/floor/plating,
-/area/awaymission/cabin/caves/mountain)
 "fU" = (
 /obj/machinery/door/airlock/centcom{
 	desc = "Look at what you have done.";
@@ -2295,10 +2275,6 @@
 "hM" = (
 /turf/closed/wall/mineral/snow,
 /area/awaymission/cabin/caves/mountain)
-"hP" = (
-/obj/item/candle/infinite,
-/turf/open/floor/plating/snowed,
-/area/awaymission/cabin/caves)
 "hQ" = (
 /obj/item/reagent_containers/cup/glass/bottle/beer,
 /turf/open/floor/plating/snowed,
@@ -3587,6 +3563,32 @@
 /obj/effect/decal/remains/human,
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/caves)
+"pi" = (
+/obj/structure/statue/snow/snowman{
+	anchored = 1;
+	name = "Who"
+	},
+/obj/item/clothing/head/helmet/knight/yellow{
+	armor = list("melee" = 11, "bullet" = 2, "laser" = 1, "energy" = 1, "bomb" = 5, "bio" = 2, "fire" = 0, "acid" = 10);
+	desc = "A classic metal helmet. The cold has made it unreliable though.";
+	name = "old medieval helmet";
+	pixel_y = 7
+	},
+/obj/item/claymore/weak/ceremonial{
+	desc = "Brought to you by the guys in charge of making replica katana toys!";
+	force = 1;
+	layer = 3.01;
+	name = "replica claymore";
+	pixel_x = 5;
+	pixel_y = 8;
+	throwforce = 2
+	},
+/obj/item/shield/roman/fake{
+	layer = 3.01;
+	pixel_x = -7
+	},
+/turf/open/misc/asteroid/snow/snow_cabin,
+/area/awaymission/cabin/snowforest)
 "pj" = (
 /obj/structure/sign/warning/engine_safety{
 	desc = "A sign detailing the various safety protocols when working on-site to ensure a safe shift. It seems to particularly focus on how dangerous the sawblade is.";
@@ -3622,6 +3624,14 @@
 /obj/structure/flora/tree/pine/style_random,
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/snowforest)
+"pQ" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile{
+	desc = "Enjoy the view.";
+	name = "window"
+	},
+/turf/open/floor/plating,
+/area/awaymission/cabin/caves/mountain)
 "qe" = (
 /obj/effect/light_emitter{
 	name = "outdoor light";
@@ -3685,11 +3695,24 @@
 /mob/living/simple_animal/pet/penguin/emperor,
 /turf/open/misc/ice/smooth,
 /area/awaymission/cabin/snowforest)
+"rR" = (
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/decal/cleanable/glitter/blue{
+	desc = "It looks like fancy glitter to me.";
+	name = "icy wind"
+	},
+/obj/item/clothing/head/helmet/skull{
+	armor = list("melee" = 15, "bullet" = 5, "laser" = 5, "energy" = 2, "bomb" = 10, "bio" = 5, "fire" = 20, "acid" = 20);
+	desc = "It's not bloody for some reason. Dear god.";
+	name = "human skull"
+	},
+/turf/open/misc/asteroid/snow/snow_cabin,
+/area/awaymission/cabin/caves)
 "so" = (
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/structure/displaycase{
 	start_showpiece_type = /obj/item/dice/d6/space;
-	trophy_message = "Stolen from dice collector before he could enjoy his day."
+	desc = "Contains an artifact stolen from dice collector before he could enjoy his day."
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
@@ -3706,23 +3729,6 @@
 /obj/structure/fluff/fokoff_sign,
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/snowforest)
-"sK" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/item/clothing/shoes/sneakers/brown,
-/obj/item/clothing/head/hats/warden/police{
-	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 2, "bomb" = 15, "bio" = 0, "fire" = 20, "acid" = 20);
-	desc = "I am the law!"
-	},
-/obj/structure/closet{
-	anchored = 1;
-	name = "uniform closet"
-	},
-/obj/item/clothing/under/rank/security/officer/spacepol{
-	armor = list("melee" = 2, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "fire" = 10, "acid" = 10);
-	desc = "Anyone enjoying their time while working in a megacorporation, planetary government, or band of pirates is under the jurisdiction of the fun police."
-	},
-/turf/open/floor/iron/dark,
-/area/awaymission/cabin/caves/mountain)
 "sY" = (
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/effect/light_emitter{
@@ -3851,9 +3857,9 @@
 /area/awaymission/cabin/caves)
 "vD" = (
 /obj/effect/turf_decal/weather/snow,
-/obj/item/modular_computer/tablet/pda/syndicate{
-	inserted_disk = /obj/item/computer_disk/virus/clown;
+/obj/item/modular_computer/pda/syndicate{
 	desc = "A portable microcomputer by Thinktronic Systems, LTD.";
+	inserted_disk = /obj/item/computer_disk/virus/clown;
 	name = "soviet tablet"
 	},
 /obj/effect/decal/remains/human{
@@ -3892,6 +3898,11 @@
 /obj/item/food/fishmeat/carp,
 /turf/open/misc/ice/smooth,
 /area/awaymission/cabin/snowforest)
+"xo" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/glass/mug/britcup,
+/turf/open/floor/carpet,
+/area/awaymission/cabin)
 "xs" = (
 /mob/living/simple_animal/hostile/tree{
 	desc = "I am death. I will have my vengeance upon my enemies.";
@@ -3998,9 +4009,9 @@
 /area/awaymission/cabin/caves/mountain)
 "yR" = (
 /obj/structure/table/reinforced,
-/obj/item/modular_computer/tablet/pda/syndicate{
-	inserted_disk = /obj/item/computer_disk/virus/mime;
+/obj/item/modular_computer/pda/syndicate{
 	desc = "A portable microcomputer by Thinktronic Systems, LTD.";
+	inserted_disk = /obj/item/computer_disk/virus/mime;
 	name = "soviet tablet"
 	},
 /turf/open/floor/plating/snowed/snow_cabin,
@@ -4008,32 +4019,6 @@
 "yY" = (
 /obj/vehicle/ridden/atv{
 	dir = 4
-	},
-/turf/open/misc/asteroid/snow/snow_cabin,
-/area/awaymission/cabin/snowforest)
-"zd" = (
-/obj/structure/statue/snow/snowman{
-	anchored = 1;
-	name = "Who"
-	},
-/obj/item/clothing/head/helmet/knight/yellow{
-	armor = list("melee" = 11, "bullet" = 2, "laser" = 1, "energy" = 1, "bomb" = 5, "bio" = 2, "fire" = 0, "acid" = 10);
-	desc = "A classic metal helmet. The cold has made it unreliable though.";
-	name = "old medieval helmet";
-	pixel_y = 7
-	},
-/obj/item/claymore/weak/ceremonial{
-	desc = "Brought to you by the guys in charge of making replica katana toys!";
-	force = 1;
-	layer = 3.01;
-	name = "replica claymore";
-	pixel_x = 5;
-	pixel_y = 8;
-	throwforce = 2
-	},
-/obj/item/shield/riot/roman/fake{
-	layer = 3.01;
-	pixel_x = -7
 	},
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/snowforest)
@@ -4278,6 +4263,23 @@
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /turf/open/indestructible,
 /area/awaymission/cabin/caves/mountain)
+"JI" = (
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/item/clothing/shoes/sneakers/brown,
+/obj/item/clothing/head/hats/warden/police{
+	armor = list("melee" = 5, "bullet" = 5, "laser" = 5, "energy" = 2, "bomb" = 15, "bio" = 0, "fire" = 20, "acid" = 20);
+	desc = "I am the law!"
+	},
+/obj/structure/closet{
+	anchored = 1;
+	name = "uniform closet"
+	},
+/obj/item/clothing/under/rank/security/officer/spacepol{
+	armor = list("melee" = 2, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "fire" = 10, "acid" = 10);
+	desc = "Anyone enjoying their time while working in a megacorporation, planetary government, or band of pirates is under the jurisdiction of the fun police."
+	},
+/turf/open/floor/iron/dark,
+/area/awaymission/cabin/caves/mountain)
 "JL" = (
 /turf/open/misc/asteroid/snow/snow_cabin{
 	floor_variance = 0;
@@ -4472,6 +4474,10 @@
 	},
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/snowforest)
+"Oz" = (
+/obj/item/candle/infinite,
+/turf/open/floor/plating/snowed,
+/area/awaymission/cabin/caves)
 "OF" = (
 /obj/structure/table/wood,
 /obj/structure/sign/warning/no_smoking/circle{
@@ -4619,6 +4625,13 @@
 	},
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/caves)
+"RV" = (
+/obj/structure/table/wood/fancy,
+/obj/item/reagent_containers/cup/glass/bottle/juice/smallcarton{
+	pixel_y = 4
+	},
+/turf/open/floor/wood,
+/area/awaymission/cabin)
 "RY" = (
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/structure/sign/poster/official/do_not_question{
@@ -4838,19 +4851,6 @@
 /obj/item/storage/medkit/fire,
 /turf/open/floor/iron/white,
 /area/awaymission/cabin)
-"WH" = (
-/obj/effect/decal/cleanable/blood/old,
-/obj/effect/decal/cleanable/glitter/blue{
-	desc = "It looks like fancy glitter to me.";
-	name = "icy wind"
-	},
-/obj/item/clothing/head/helmet/skull{
-	armor = list("melee" = 15, "bullet" = 5, "laser" = 5, "energy" = 2, "bomb" = 10, "bio" = 5, "fire" = 20, "acid" = 20);
-	desc = "It's not bloody for some reason. Dear god.";
-	name = "human skull"
-	},
-/turf/open/misc/asteroid/snow/snow_cabin,
-/area/awaymission/cabin/caves)
 "WK" = (
 /obj/structure/statue/snow/snowman{
 	anchored = 1;
@@ -8273,7 +8273,7 @@ cx
 cx
 td
 Xy
-sK
+JI
 cx
 co
 co
@@ -9809,7 +9809,7 @@ fr
 fq
 fJ
 fN
-fT
+pQ
 Pd
 cx
 cx
@@ -28140,7 +28140,7 @@ ab
 jm
 Oe
 RC
-zd
+pi
 RC
 nE
 RC
@@ -29231,7 +29231,7 @@ hb
 bU
 ev
 eu
-cK
+RV
 cD
 an
 aq
@@ -35391,7 +35391,7 @@ ed
 hu
 an
 aY
-bc
+xo
 bg
 an
 nU
@@ -47873,9 +47873,9 @@ gx
 gx
 gx
 hM
-hP
+Oz
 hQ
-hP
+Oz
 wI
 PV
 Oe
@@ -48387,9 +48387,9 @@ gx
 gx
 gx
 hM
-hP
+Oz
 hQ
-hP
+Oz
 Rz
 PV
 PV
@@ -51858,7 +51858,7 @@ Lj
 tC
 Dw
 tC
-WH
+rR
 gx
 Oe
 gx
