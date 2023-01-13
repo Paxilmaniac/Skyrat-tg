@@ -81,8 +81,6 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	desc = "Tough leather boots, though you can't really tell what /kind/ of leather it is."
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	icon_state = "civboots"
-	strip_delay = 30
-	equip_delay_other = 50
 	resistance_flags = NONE
 	armor = list(MELEE = 10, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 20, BIO = 90, FIRE = 10, ACID = 50)
 	can_be_tied = TRUE
@@ -95,17 +93,20 @@ GLOBAL_LIST_INIT(science_robe_colors, list("#46313f","#382744","#443653",))
 	create_storage(type = /datum/storage/pockets/shoes)
 	set_greyscale("[pick(GLOB.leather_clothing_colors)]")
 
-/obj/item/clothing/shoes/jackboots/leather/armored
+/obj/item/clothing/shoes/jackboots/armored_leather
 	name = "armored boots"
 	desc = "Tough leather boots with some kind of metal plating added to the toes and shins for extra protection."
 	icon_state = "armorboots"
+	resistance_flags = NONE
 	armor = list(MELEE = 30, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 50, BIO = 90, FIRE = 30, ACID = 50)
+	can_be_tied = TRUE
 	greyscale_colors = "#3a2313#ec6a00"
 	greyscale_config = /datum/greyscale_config/armorboots
 	greyscale_config_worn = /datum/greyscale_config/armorboots/worn
 
-/obj/item/clothing/shoes/jackboots/leather/armored/Initialize(mapload)
+/obj/item/clothing/shoes/jackboots/armored_leather/Initialize(mapload)
 	. = ..()
+	create_storage(type = /datum/storage/pockets/shoes)
 	set_greyscale("[pick(GLOB.leather_clothing_colors)][pick(GLOB.metal_clothing_colors)]")
 
 /obj/item/clothing/shoes/event_sandals
