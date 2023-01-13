@@ -1,3 +1,20 @@
+// CRAFTING RECIPES
+
+GLOBAL_LIST_INIT(dwarf_glass_recipes, list(
+	new /datum/stack_recipe( \
+	"glass window", \
+	/obj/structure/window/material, \
+	req_amount = 1, \
+	res_amount = 1, \
+	time = 3 SECONDS, \
+	one_per_turf = TRUE, \
+	on_solid_ground = TRUE, \
+	applies_mats = TRUE \
+	), \
+))
+
+// MATERIAL DATUM
+
 /datum/material/dwarf_certified/glass
 	name = "generic special event glass"
 	desc = "Hey... you shouldn't see this!"
@@ -18,7 +35,7 @@
 	item_sound_override = 'sound/effects/glasshit.ogg'
 	turf_sound_override = FOOTSTEP_PLATING
 
-/datum/material/dwarf_certified/on_accidental_mat_consumption(mob/living/carbon/victim, obj/item/source_item)
+/datum/material/dwarf_certified/glass/on_accidental_mat_consumption(mob/living/carbon/victim, obj/item/source_item)
 	victim.apply_damage(10, BRUTE, BODY_ZONE_HEAD, wound_bonus = 5, sharpness = TRUE)
 	return TRUE
 
@@ -28,9 +45,9 @@
 
 	desc = "Strange... Maybe you shouldn't be seeing this."
 
-	icon_state = "sheet" // maxwell.gif
+	icon_state = null
 
-	inhand_icon_state = "sheetlike" // dk approves of me fucking up
+	inhand_icon_state = null
 
 	merge_type = /obj/item/stack/dwarf_certified/glass
 
@@ -38,6 +55,10 @@
 	material_type = /datum/material/dwarf_certified/glass
 
 	max_amount = 3 // im evil, a little fuvked up even
+
+/obj/item/stack/dwarf_certified/glass/get_main_recipes()
+	. = ..()
+	. += GLOB.dwarf_glass_recipes
 
 /datum/material/dwarf_certified/glass/green
 	name = "green glass"
@@ -114,3 +135,16 @@
 
 	mats_per_unit = list(/datum/material/dwarf_certified/glass/crystal = MINERAL_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/glass/crystal
+
+// THE WINDOW STRUCTURE ITSELF
+
+/obj/structure/window/material
+	icon = 'modular_skyrat/modules/dwarf_fortress_other_stuff/icons/material_wall.dmi'
+	icon_state = "wall"
+	glass_type = null
+
+/obj/structure/window/material/set_custom_materials()
+	. = ..()
+
+	if(length(custom_materials))
+		glass_type = custom_materials[1].sheet_type

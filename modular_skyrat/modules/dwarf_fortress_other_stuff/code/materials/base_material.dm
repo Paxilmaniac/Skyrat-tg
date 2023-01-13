@@ -31,11 +31,11 @@
 	desc = "Strange... Maybe you shouldn't be seeing this."
 
 	icon_state = null // maxwell.gif
-	icon = 'modular_skyrat/modules/event_code_extremely_funny/icons/stacks.dmi'
+	icon = 'modular_skyrat/modules/dwarf_fortress_other_stuff/icons/stacks.dmi'
 
 	inhand_icon_state = null // dk approves of me fucking up
-	lefthand_file = 'modular_skyrat/modules/event_code_extremely_funny/icons/stacks_lefthand.dmi'
-	righthand_file = 'modular_skyrat/modules/event_code_extremely_funny/icons/stacks_righthand.dmi'
+	lefthand_file = 'modular_skyrat/modules/dwarf_fortress_other_stuff/icons/stacks_lefthand.dmi'
+	righthand_file = 'modular_skyrat/modules/dwarf_fortress_other_stuff/icons/stacks_righthand.dmi'
 
 	merge_type = /obj/item/stack/dwarf_certified
 
