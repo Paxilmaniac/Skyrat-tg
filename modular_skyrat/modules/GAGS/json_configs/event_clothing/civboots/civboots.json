@@ -1,0 +1,10 @@
+{
+	"civboots": [
+		{
+			"type": "icon_state",
+			"icon_state": "civboots",
+			"blend_mode": "overlay",
+			"color_ids": [ 1 ]
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"fingieless": [
+		{
+			"type": "icon_state",
+			"icon_state": "fingieless",
+			"blend_mode": "overlay",
+			"color_ids": [ 1 ]
+		}
+	]
+}
