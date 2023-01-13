@@ -8,21 +8,21 @@
 
 	categories = list(MAT_CATEGORY_ITEM_MATERIAL = TRUE)
 
-	sheet_type
-	///This is a modifier for force, and resembles the strength of the material
-	var/strength_modifier = 1
-	///This is a modifier for integrity, and resembles the strength of the material
-	var/integrity_modifier = 1
-	///This is the amount of value per 1 unit of the material
-	var/value_per_unit = 0
-	///Armor modifiers, multiplies an items normal armor vars by these amounts.
-	var/armor_modifiers = list(MELEE = 1, BULLET = 1, LASER = 1, ENERGY = 1, BOMB = 1, BIO = 1, FIRE = 1, ACID = 1)
-	///How beautiful is this material per unit.
-	var/beauty_modifier = 0
-	///Can be used to override the sound items make, lets add some SLOSHing.
-	var/item_sound_override
-	///Can be used to override the stepsound a turf makes. MORE SLOOOSH
-	var/turf_sound_override
+	sheet_type = /obj/item/stack/dwarf_certified
+
+	strength_modifier = 1
+	integrity_modifier = 1
+	armor_modifiers = list(MELEE = 1, BULLET = 1, LASER = 1, ENERGY = 1, BOMB = 1, BIO = 1, FIRE = 1, ACID = 1)
+
+	// wood is 0.1, diamond is 0.3, iron is 0
+	beauty_modifier = 0
+
+	item_sound_override = null
+	turf_sound_override = null
+
+/datum/material/dwarf_certified/on_accidental_mat_consumption(mob/living/carbon/victim, obj/item/source_item)
+	victim.gib() // I hope she explodes
+	return TRUE
 
 /obj/item/stack/dwarf_certified
 	name = "generic special event sheets"
@@ -30,8 +30,12 @@
 
 	desc = "Strange... Maybe you shouldn't be seeing this."
 
-	//lefthand_file = 'icons/mob/inhands/items/sheets_lefthand.dmi'
-	//righthand_file = 'icons/mob/inhands/items/sheets_righthand.dmi'
+	icon_state = null // maxwell.gif
+	icon = 'modular_skyrat/modules/event_code_extremely_funny/icons/stacks.dmi'
+
+	inhand_icon_state = null // dk approves of me fucking up
+	lefthand_file = 'modular_skyrat/modules/event_code_extremely_funny/icons/stacks_lefthand.dmi'
+	righthand_file = 'modular_skyrat/modules/event_code_extremely_funny/icons/stacks_righthand.dmi'
 
 	merge_type = /obj/item/stack/dwarf_certified
 
@@ -44,8 +48,11 @@
 	throw_speed = 1
 	throw_range = 3
 
+	material_flags = MATERIAL_EFFECTS | MATERIAL_COLOR
+	mats_per_unit = list(/datum/material/dwarf_certified = MINERAL_MATERIAL_AMOUNT)
+	material_type = /datum/material/dwarf_certified
+
 	attack_verb_continuous = list("bashes", "batters", "bludgeons", "thrashes", "smashes")
 	attack_verb_simple = list("bash", "batter", "bludgeon", "thrash", "smash")
 
 	novariants = FALSE
-	material_flags = MATERIAL_EFFECTS
