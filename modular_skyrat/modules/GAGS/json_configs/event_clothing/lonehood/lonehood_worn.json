@@ -1,18 +1,16 @@
 {
-	"civboots": [
+	"hood": [
 		{
 			"type": "icon_state",
-			"icon_state": "civboots_worn",
+			"icon_state": "hood_worn",
 			"blend_mode": "overlay",
 			"color_ids": [ 1 ]
-		}
-	],
-	"civshoes": [
+		},
 		{
 			"type": "icon_state",
-			"icon_state": "civshoes_worn",
+			"icon_state": "hood_neck_worn",
 			"blend_mode": "overlay",
-			"color_ids": [ 1 ]
+			"color_ids": [ 2 ]
 		}
 	]
 }

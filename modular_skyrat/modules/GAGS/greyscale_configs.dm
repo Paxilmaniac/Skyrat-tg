@@ -1163,6 +1163,28 @@ digi
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/skirt/skirt_worn.json'
 
 /*
+* Headgear for el evento
+*/
+
+/datum/greyscale_config/hardhat
+	name = "Hardhat"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/hardhat/hardhat.json'
+
+/datum/greyscale_config/hardhat/worn
+	name = "Hardhat (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/hardhat/hardhat_worn.json'
+
+/datum/greyscale_config/lonehood
+	name = "Standalone Hood"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/lonehood/lonehood.json'
+
+/datum/greyscale_config/lonehood/worn
+	name = "Standalone Hood (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/lonehood/lonehood_worn.json'
+
+/*
 * Misc stuff for the event
 */
 
@@ -1228,15 +1250,6 @@ digi
 /datum/greyscale_config/apron/worn
 	name = "Apron (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/apron/apron_worn.json'
-
-/datum/greyscale_config/hardhat
-	name = "Hardhat"
-	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/hardhat/hardhat.json'
-
-/datum/greyscale_config/hardhat/worn
-	name = "Hardhat (Worn)"
-	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/hardhat/hardhat_worn.json'
 
 /datum/greyscale_config/armor_plate
 	name = "Armor Plate"
