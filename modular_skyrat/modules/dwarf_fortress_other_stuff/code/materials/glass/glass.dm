@@ -3,7 +3,7 @@
 GLOBAL_LIST_INIT(dwarf_glass_recipes, list(
 	new /datum/stack_recipe( \
 	"glass window", \
-	/obj/structure/window/material, \
+	/obj/structure/window/fulltile/material, \
 	req_amount = 1, \
 	res_amount = 1, \
 	time = 3 SECONDS, \
