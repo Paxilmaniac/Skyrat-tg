@@ -141,6 +141,7 @@ GLOBAL_LIST_INIT(dwarf_glass_recipes, list(
 /obj/structure/window/fulltile/material
 	icon = 'modular_skyrat/modules/dwarf_fortress_other_stuff/icons/material_wall.dmi'
 	icon_state = "wall-0"
+	base_icon_state = "wall"
 	glass_type = null
 	material_flags = MATERIAL_EFFECTS | MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
 
