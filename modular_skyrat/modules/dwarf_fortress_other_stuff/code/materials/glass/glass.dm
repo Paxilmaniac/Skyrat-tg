@@ -45,9 +45,9 @@ GLOBAL_LIST_INIT(dwarf_glass_recipes, list(
 
 	desc = "Strange... Maybe you shouldn't be seeing this."
 
-	icon_state = null
+	icon_state = "sheet"
 
-	inhand_icon_state = null
+	inhand_icon_state = "sheetlike"
 
 	merge_type = /obj/item/stack/dwarf_certified/glass
 
