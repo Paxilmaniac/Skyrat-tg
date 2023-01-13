@@ -1,14 +1,28 @@
 {
-	"overalls": [
+	"overalls_buttondown": [
 		{
 			"type": "icon_state",
-			"icon_state": "overalls",
+			"icon_state": "buttondown",
 			"blend_mode": "overlay",
 			"color_ids": [ 1 ]
 		},
 		{
 			"type": "icon_state",
-			"icon_state": "overalls_over",
+			"icon_state": "overalls",
+			"blend_mode": "overlay",
+			"color_ids": [ 2 ]
+		}
+	],
+	"overalls_longshirt": [
+		{
+			"type": "icon_state",
+			"icon_state": "longshirt",
+			"blend_mode": "overlay",
+			"color_ids": [ 1 ]
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "overalls",
 			"blend_mode": "overlay",
 			"color_ids": [ 2 ]
 		}

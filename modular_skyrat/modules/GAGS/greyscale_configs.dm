@@ -1122,6 +1122,50 @@ digi
 * NIGHTMARE NIGHTMARE NIGHTMARE
 */
 
+/*
+* Underclothes for the event
+*/
+
+/datum/greyscale_config/overalls
+	name = "Overalls + Shirt"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/overalls/overalls.json'
+
+/datum/greyscale_config/overalls/worn
+	name = "Overalls + Shirt (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/overalls/overalls_worn.json'
+
+/datum/greyscale_config/workpants
+	name = "Pants + Shirt"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/pants/pants.json'
+
+/datum/greyscale_config/workpants/worn
+	name = "Pants + Shirt (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/pants/pants_worn.json'
+
+/datum/greyscale_config/longpants
+	name = "High Waist Pants + Shirt"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/longpants/longpants.json'
+
+/datum/greyscale_config/longpants/worn
+	name = "High Waist Pants + Shirt (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/longpants/longpants_worn.json'
+
+/datum/greyscale_config/shirt
+	name = "Skirt + Shirt"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/skirt/skirt.json'
+
+/datum/greyscale_config/skirt/worn
+	name = "Skirt + Shirt (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/skirt/skirt_worn.json'
+
+/*
+* Misc stuff for the event
+*/
+
 /datum/greyscale_config/armorboots
 	name = "Armored Leather Boots"
 	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
@@ -1148,24 +1192,6 @@ digi
 /datum/greyscale_config/sandals/worn
 	name = "Sandals (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/sandals/sandals_worn.json'
-
-/datum/greyscale_config/overalls
-	name = "Overalls"
-	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/overalls/overalls.json'
-
-/datum/greyscale_config/overalls/worn
-	name = "Overalls (Worn)"
-	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/overalls/overalls_worn.json'
-
-/datum/greyscale_config/workshirt
-	name = "Workshirt"
-	icon_file = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
-	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/workshirt/workshirt.json'
-
-/datum/greyscale_config/workshirt/worn
-	name = "Workshirt (Worn)"
-	json_config = 'modular_skyrat/modules/GAGS/json_configs/event_clothing/workshirt/workshirt_worn.json'
 
 /datum/greyscale_config/holegloves
 	name = "Leather Gloves"
