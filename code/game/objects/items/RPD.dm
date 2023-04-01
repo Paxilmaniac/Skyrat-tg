@@ -1,8 +1,3 @@
-/*
-CONTAINS:
-RPD
-*/
-
 #define ATMOS_CATEGORY 0
 #define DISPOSALS_CATEGORY 1
 #define TRANSIT_CATEGORY 2
@@ -139,14 +134,19 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 			dirs = list("[NORTH]" = "North", "[EAST]" = "East", "[SOUTH]" = "South", "[WEST]" = "West",
 						"[NORTHEAST]" = "North Flipped", "[SOUTHEAST]" = "East Flipped", "[SOUTHWEST]" = "South Flipped", "[NORTHWEST]" = "West Flipped")
 
-
 	var/list/rows = list()
 	var/list/row = list("previews" = list())
 	var/i = 0
 	for(var/dir in dirs)
 		var/numdir = text2num(dir)
 		var/flipped = ((dirtype == PIPE_TRIN_M) || (dirtype == PIPE_UNARY_FLIPPABLE)) && (ISDIAGONALDIR(numdir))
-		row["previews"] += list(list("selected" = (numdir == selected_dir), "dir" = dir2text(numdir), "dir_name" = dirs[dir], "icon_state" = icon_state, "flipped" = flipped))
+		row["previews"] += list(list(
+			"selected" = dirtype == PIPE_ONEDIR ? TRUE : (numdir == selected_dir),
+			"dir" = dir2text(numdir), 
+			"dir_name" = dirs[dir],
+			"icon_state" = icon_state,
+			"flipped" = flipped,
+		))
 		if(i++ || dirtype == PIPE_ONEDIR)
 			rows += list(row)
 			row = list("previews" = list())
@@ -205,7 +205,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 		icon_state = "[icon_state]_preview"
 
 /obj/item/pipe_dispenser
-	name = "Rapid Pipe Dispenser (RPD)"
+	name = "Rapid Pipe Dispenser"
 	desc = "A device used to rapidly pipe things."
 	icon = 'icons/obj/tools.dmi'
 	icon_state = "rpd"
@@ -278,6 +278,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 		first_transit = GLOB.transit_tube_recipes[GLOB.transit_tube_recipes[1]][1]
 
 	recipe = first_atmos
+	register_item_context()
 
 /obj/item/pipe_dispenser/Destroy()
 	qdel(spark_system)
@@ -317,7 +318,6 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 	if(istype(target, /obj/machinery/air_sensor))
 		if(!do_after(user, destroy_speed, target))
 			return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
-
 		qdel(target)
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
@@ -334,6 +334,14 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 		install_upgrade(W, user)
 		return TRUE
 	return ..()
+
+/obj/item/pipe_dispenser/add_item_context(obj/item/source, list/context, atom/target, mob/living/user)
+	. = ..()
+	if(istype(target, /obj/machinery/atmospherics))
+		var/obj/machinery/atmospherics/atmos_target = target
+		if(atmos_target.pipe_color && atmos_target.piping_layer)
+			context[SCREENTIP_CONTEXT_RMB] = "Copy piping color and layer"
+	return CONTEXTUAL_SCREENTIP_SET
 
 /**
  * Installs an upgrade into the RPD
@@ -379,6 +387,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 		"ducting_layer" = ducting_layer,
 		"preview_rows" = recipe.get_preview(p_dir),
 		"categories" = list(),
+		"selected_recipe" = recipe.name,
 		"selected_color" = paint_color,
 		"mode" = mode,
 	)
@@ -401,10 +410,10 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 			if(info.type == /datum/pipe_info/sensor)
 				var/datum/pipe_info/sensor/sensor_info = info
 				var/obj/machinery/air_sensor/sensor = sensor_info.id
-				if(GLOB.objects_by_id_tag[initial(sensor.chamber_id) + "_sensor"] != null)
+				if(GLOB.objects_by_id_tag[CHAMBER_SENSOR_FROM_ID(initial(sensor.chamber_id))] != null)
 					continue
 
-			r += list(list("pipe_name" = info.name, "pipe_index" = i, "selected" = (info == recipe), "all_layers" = info.all_layers))
+			r += list(list("pipe_name" = info.name, "pipe_index" = i))
 			if(info == recipe)
 				data["selected_category"] = c
 		if(r.len == 0) //when all air sensors are installed this list will become empty
