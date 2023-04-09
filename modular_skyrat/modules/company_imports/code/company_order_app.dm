@@ -24,7 +24,7 @@ GLOBAL_LIST_EMPTY(ftu_import_products)
 
 	if(GLOB.ftu_import_products.len)
 		return
-	for(var/datum/orderable_item/path as anything in subtypesof(/datum/orderable_item))
+	for(var/datum/ftu_import/path as anything in subtypesof(/datum/ftu_import))
 		if(!initial(path.item_path))
 			continue
 		GLOB.ftu_import_products += new path
@@ -32,7 +32,7 @@ GLOBAL_LIST_EMPTY(ftu_import_products)
 /// Gets the total cost of every item in the cart
 /datum/computer_file/program/ftu_import/proc/get_total_cost()
 	var/cost = 0
-	for(var/datum/orderable_item/item as anything in grocery_list)
+	for(var/datum/ftu_import/item as anything in grocery_list)
 		cost += grocery_list[item] * item.cost_per_order
 	return cost
 
@@ -48,11 +48,11 @@ GLOBAL_LIST_EMPTY(ftu_import_products)
 			self_paid = !self_paid
 
 		if("add_one")
-			var/datum/orderable_item/wanted_item = locate(params["target"]) in GLOB.ftu_import_products
+			var/datum/ftu_import/wanted_item = locate(params["target"]) in GLOB.ftu_import_products
 			grocery_list[wanted_item] += 1
 
 		if("remove_one")
-			var/datum/orderable_item/wanted_item = locate(params["target"]) in GLOB.ftu_import_products
+			var/datum/ftu_import/wanted_item = locate(params["target"]) in GLOB.ftu_import_products
 			if(!grocery_list[wanted_item])
 				return
 			grocery_list[wanted_item] -= 1
@@ -61,7 +61,7 @@ GLOBAL_LIST_EMPTY(ftu_import_products)
 
 		if("cart_set")
 			//this is null if the action doesn't need it (purchase, quickpurchase)
-			var/datum/orderable_item/wanted_item = locate(params["target"]) in GLOB.ftu_import_products
+			var/datum/ftu_import/wanted_item = locate(params["target"]) in GLOB.ftu_import_products
 			grocery_list[wanted_item] = clamp(params["amt"], 0, 20)
 			if(!grocery_list[wanted_item])
 				grocery_list -= wanted_item
@@ -106,7 +106,7 @@ GLOBAL_LIST_EMPTY(ftu_import_products)
 	data["non_budget"] = non_budget
 	data["self_paid"] = self_paid
 
-	for(var/datum/orderable_item/item as anything in GLOB.ftu_import_products)
+	for(var/datum/ftu_import/item as anything in GLOB.ftu_import_products)
 		data["item_amts"] += list(list(
 			"name" = item.name,
 			"amt" = grocery_list[item],
@@ -118,7 +118,7 @@ GLOBAL_LIST_EMPTY(ftu_import_products)
 	var/list/data = list()
 
 	data["order_datums"] = list()
-	for(var/datum/orderable_item/item as anything in GLOB.ftu_import_products)
+	for(var/datum/ftu_import/item as anything in GLOB.ftu_import_products)
 		data["order_datums"] += list(list(
 			"name" = item.name,
 			"desc" = item.desc,
@@ -131,13 +131,35 @@ GLOBAL_LIST_EMPTY(ftu_import_products)
 	return data
 
 /// Checks if the given bank account can actually purchase the items in the cart
-/datum/computer_file/program/ftu_import/proc/purchase_items(datum/bank_account)
+/datum/computer_file/program/ftu_import/proc/purchase_items(datum/bank_account/used_account)
 	var/final_cost = get_total_cost()
-	var/failure_message = "Sorry, but you do not have enough money."
-	if(express)
-		final_cost *= express_cost_multiplier
-		failure_message += " Remember, Express upcharges the cost!"
-	if(card.registered_account.adjust_money(-final_cost, "[name]: Purchase"))
+	if(used_account.adjust_money(-final_cost, "[name]: Purchase"))
 		return TRUE
-	say(failure_message)
+	computer.say("You lack sufficient funds to complete this order.")
 	return FALSE
+
+/datum/computer_file/program/ftu_import/proc/order_groceries(mob/living/purchaser, datum/bank_account/account_to_use, list/groceries)
+	var/list/things_to_order = list()
+	for(var/datum/orderable_item/item as anything in groceries)
+		things_to_order[item.item_path] = groceries[item]
+
+	var/datum/supply_pack/custom/import_order = new(
+		purchaser = purchaser, \
+		cost = get_total_cost(), \
+		contains = things_to_order,
+	)
+	var/datum/supply_order/new_order = new(
+		pack = import_order,
+		orderer = purchaser,
+		orderer_rank = "Private Import",
+		orderer_ckey = purchaser.ckey,
+		reason = "",
+		paying_account = account_to_use,
+		department_destination = null,
+		coupon = null,
+		charge_on_purchase = FALSE,
+		manifest_can_fail = FALSE,
+		can_be_cancelled = FALSE,
+	)
+
+	SSshuttle.shopping_list += new_order
