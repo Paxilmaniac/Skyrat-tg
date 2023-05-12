@@ -16,6 +16,8 @@
 	var/purchase_price = 300
 	///What catagory is the NIFSoft under?
 	var/buying_category = NIFSOFT_CATEGORY_GENERAL
+	///What font awesome icon is shown next to the name of the nifsoft?
+	var/ui_icon = "floppy-disk"
 
 	///Can the program be installed with other instances of itself?
 	var/single_install = TRUE
@@ -45,6 +47,8 @@
 	var/rewards_points_eligible = TRUE
 	///Does the NIFSoft have anything that is saved cross-round?
 	var/persistence = FALSE
+	///Is it a lewd item?
+	var/lewd_nifsoft = FALSE
 
 /datum/nifsoft/New(obj/item/organ/internal/cyberimp/brain/nif/recepient_nif, no_rewards_points = FALSE)
 	. = ..()
@@ -146,8 +150,11 @@
 	///Is the datadisk reusable?
 	var/reusable = FALSE
 
-/obj/item/disk/nifsoft_uploader/Initialize()
+/obj/item/disk/nifsoft_uploader/Initialize(mapload)
 	. = ..()
+
+	if(CONFIG_GET(flag/disable_lewd_items) && initial(loaded_nifsoft.lewd_nifsoft))
+		return INITIALIZE_HINT_QDEL
 
 	name = "[initial(loaded_nifsoft.name)] datadisk"
 

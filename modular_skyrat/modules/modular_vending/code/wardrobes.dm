@@ -58,6 +58,9 @@
 		/obj/item/clothing/mask/breath = 2,
 		/obj/item/reagent_containers/cup/bottle/morphine = 2,
 		/obj/item/reagent_containers/syringe = 2,
+		/obj/item/storage/backpack/science/robo = 2,
+		/obj/item/storage/backpack/satchel/science/robo = 2,
+		/obj/item/storage/backpack/duffelbag/science/robo = 2,
 	)
 
 /obj/machinery/vending/wardrobe/science_wardrobe
@@ -118,8 +121,6 @@
 	skyrat_products = list(
 		/obj/item/clothing/head/fedora/beige = 2,
 		/obj/item/clothing/head/fedora/white = 2,
-		/obj/item/clothing/head/fedora/fedblack = 2,
-		/obj/item/clothing/head/fedora/fedbrown = 2,
 		/obj/item/clothing/under/costume/cybersleek = 2,
 		/obj/item/clothing/under/costume/cybersleek/long = 2,
 		/obj/item/clothing/head/fedora/det_hat/cybergoggles = 2,
