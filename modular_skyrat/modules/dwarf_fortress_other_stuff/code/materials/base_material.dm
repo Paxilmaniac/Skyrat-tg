@@ -49,7 +49,7 @@
 	throw_range = 3
 
 	material_flags = MATERIAL_EFFECTS | MATERIAL_COLOR | MATERIAL_GREYSCALE | MATERIAL_AFFECT_STATISTICS
-	mats_per_unit = list(/datum/material/dwarf_certified = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified
 
 	attack_verb_continuous = list("bashes", "batters", "bludgeons", "thrashes", "smashes")

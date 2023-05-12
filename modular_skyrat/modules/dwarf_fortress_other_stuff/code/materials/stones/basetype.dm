@@ -65,7 +65,7 @@ GLOBAL_LIST_INIT(dwarf_brick_recipes, list(
 
 	merge_type = /obj/item/stack/dwarf_certified/rock
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/rock = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/rock
 
 	max_amount = 1
@@ -106,7 +106,7 @@ GLOBAL_LIST_INIT(dwarf_brick_recipes, list(
 
 	merge_type = /obj/item/stack/dwarf_certified/brick
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/rock = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/rock
 
 	max_amount = 6 // Blocks are so much easier to store and move around, don't you know?

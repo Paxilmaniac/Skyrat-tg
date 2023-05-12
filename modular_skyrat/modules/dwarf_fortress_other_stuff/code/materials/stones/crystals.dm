@@ -20,7 +20,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/rock/crystal
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/crystal = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/crystal = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/rock/crystal
 
 	cut_amount = 1
@@ -37,7 +37,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/cut_gem
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/crystal = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/crystal = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/rock/crystal
 
 	max_amount = 3
@@ -64,7 +64,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/rock/crystal/rock_crystal
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/crystal/rock_crystal = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/crystal/rock_crystal = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/rock/crystal/rock_crystal
 
 	cut_type = /obj/item/stack/dwarf_certified/cut_gem/rock_crystal
@@ -87,5 +87,5 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/cut_gem/rock_crystal
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/crystal/rock_crystal = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/crystal/rock_crystal = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/rock/crystal/rock_crystal

@@ -24,7 +24,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/rock/siltstone
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/siltstone = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/siltstone = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/rock/siltstone
 
 	cut_type = /obj/item/stack/dwarf_certified/brick/siltstone
@@ -37,7 +37,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/brick/siltstone
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/siltstone = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/siltstone = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/rock/siltstone
 
 // Marble
@@ -62,7 +62,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/rock/marble
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/marble = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/marble = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/rock/marble
 
 	cut_type = /obj/item/stack/dwarf_certified/brick/marble
@@ -75,7 +75,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/brick/marble
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/marble = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/marble = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/rock/marble
 
 // Andesite
@@ -97,7 +97,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/rock/andesite
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/andesite = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/andesite = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/rock/andesite
 
 	cut_type = /obj/item/stack/dwarf_certified/brick/andesite
@@ -110,7 +110,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/brick/andesite
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/andesite = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/andesite = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/rock/andesite
 
 // Basalt
@@ -132,7 +132,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/rock/basalt
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/basalt = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/basalt = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/rock/basalt
 
 	cut_type = /obj/item/stack/dwarf_certified/brick/basalt
@@ -145,5 +145,5 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/brick/basalt
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/basalt = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/basalt = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/rock/basalt

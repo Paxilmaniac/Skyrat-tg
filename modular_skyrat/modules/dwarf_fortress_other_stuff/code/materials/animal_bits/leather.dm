@@ -28,7 +28,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/leather_or_cloth/leather
 
-	mats_per_unit = list(/datum/material/dwarf_certified/leather = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/leather = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/leather
 
 /obj/item/stack/dwarf_certified/leather_or_cloth/examine(mob/user)
@@ -55,5 +55,5 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/leather_or_cloth/leather/animal
 
-	mats_per_unit = list(/datum/material/dwarf_certified/leather/animal = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/leather/animal = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/leather/animal

@@ -30,7 +30,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/powder
 
-	mats_per_unit = list(/datum/material/dwarf_certified/powder = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/powder = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/powder
 
 	max_amount = 1

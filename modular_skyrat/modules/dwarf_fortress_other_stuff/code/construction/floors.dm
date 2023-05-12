@@ -27,7 +27,7 @@
 /turf/open/floor/material/dwarf_fortress/spawn_tile() // We just spawn the base material sheet of whatever we are made out of
 	for(var/material as anything in custom_materials)
 		var/datum/material/found_material = material
-		new found_material.sheet_type(src, FLOOR(custom_materials[found_material] / MINERAL_MATERIAL_AMOUNT, 1))
+		new found_material.sheet_type(src, FLOOR(custom_materials[found_material] / SHEET_MATERIAL_AMOUNT, 1))
 
 /turf/open/floor/material/dwarf_fortress/wood
 	icon_state = "wood"

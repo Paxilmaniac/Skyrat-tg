@@ -15,7 +15,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/powder/potash
 
-	mats_per_unit = list(/datum/material/dwarf_certified/powder/potash = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/powder/potash = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/powder/potash
 
 // potash + sand (clear glass mix)
@@ -37,7 +37,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/powder/clear_glass_mix
 
-	mats_per_unit = list(/datum/material/dwarf_certified/powder/clear_glass_mix = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/powder/clear_glass_mix = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/powder/clear_glass_mix
 
 /obj/item/stack/dwarf_certified/powder/clear_glass_mix/Initialize(mapload)

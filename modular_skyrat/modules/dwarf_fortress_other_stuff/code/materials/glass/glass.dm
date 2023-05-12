@@ -49,7 +49,7 @@ GLOBAL_LIST_INIT(dwarf_glass_recipes, list(
 
 	merge_type = /obj/item/stack/dwarf_certified/glass
 
-	mats_per_unit = list(/datum/material/dwarf_certified/glass = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/glass = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/glass
 
 	max_amount = 3 // im evil, a little fuvked up even
@@ -81,7 +81,7 @@ GLOBAL_LIST_INIT(dwarf_glass_recipes, list(
 
 	merge_type = /obj/item/stack/dwarf_certified/glass/green
 
-	mats_per_unit = list(/datum/material/dwarf_certified/glass/green = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/glass/green = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/glass/green
 
 /datum/material/dwarf_certified/glass/clear
@@ -105,7 +105,7 @@ GLOBAL_LIST_INIT(dwarf_glass_recipes, list(
 
 	merge_type = /obj/item/stack/dwarf_certified/glass/clear
 
-	mats_per_unit = list(/datum/material/dwarf_certified/glass/clear = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/glass/clear = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/glass/clear
 
 /datum/material/dwarf_certified/glass/crystal
@@ -133,5 +133,5 @@ GLOBAL_LIST_INIT(dwarf_glass_recipes, list(
 
 	merge_type = /obj/item/stack/dwarf_certified/glass/crystal
 
-	mats_per_unit = list(/datum/material/dwarf_certified/glass/crystal = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/glass/crystal = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/glass/crystal

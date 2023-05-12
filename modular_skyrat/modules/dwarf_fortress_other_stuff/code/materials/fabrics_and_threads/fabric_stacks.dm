@@ -12,7 +12,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/thread
 
-	mats_per_unit = list(/datum/material/dwarf_certified/fabric = MINERAL_MATERIAL_AMOUNT / 2)
+	mats_per_unit = list(/datum/material/dwarf_certified/fabric = SHEET_MATERIAL_AMOUNT / 2)
 	material_type = /obj/item/stack/dwarf_certified/leather_or_cloth/fabric
 
 	max_amount = 6
@@ -50,7 +50,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/leather_or_cloth/fabric
 
-	mats_per_unit = list(/datum/material/dwarf_certified/fabric = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/fabric = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/fabric
 
 /obj/item/stack/dwarf_certified/leather_or_cloth/examine(mob/user)
@@ -68,7 +68,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/thread/cotton
 
-	mats_per_unit = list(/datum/material/dwarf_certified/fabric/cotton = MINERAL_MATERIAL_AMOUNT / 2)
+	mats_per_unit = list(/datum/material/dwarf_certified/fabric/cotton = SHEET_MATERIAL_AMOUNT / 2)
 	material_type = /datum/material/dwarf_certified/fabric/cotton
 
 	fabric_we_weave = /obj/item/stack/dwarf_certified/leather_or_cloth/fabric/cotton
@@ -81,7 +81,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/leather_or_cloth/fabric/cotton
 
-	mats_per_unit = list(/datum/material/dwarf_certified/fabric/cotton = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/fabric/cotton = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/fabric/cotton
 
 // FLAX
@@ -94,7 +94,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/thread/flax
 
-	mats_per_unit = list(/datum/material/dwarf_certified/fabric/flax = MINERAL_MATERIAL_AMOUNT / 2)
+	mats_per_unit = list(/datum/material/dwarf_certified/fabric/flax = SHEET_MATERIAL_AMOUNT / 2)
 	material_type = /datum/material/dwarf_certified/fabric/flax
 
 	fabric_we_weave = /obj/item/stack/dwarf_certified/leather_or_cloth/fabric/flax
@@ -107,7 +107,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/leather_or_cloth/fabric/flax
 
-	mats_per_unit = list(/datum/material/dwarf_certified/fabric/flax = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/fabric/flax = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/fabric/flax
 
 // REED FIBER
@@ -120,7 +120,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/thread/reed
 
-	mats_per_unit = list(/datum/material/dwarf_certified/fabric/reed = MINERAL_MATERIAL_AMOUNT / 2)
+	mats_per_unit = list(/datum/material/dwarf_certified/fabric/reed = SHEET_MATERIAL_AMOUNT / 2)
 	material_type = /datum/material/dwarf_certified/fabric/reed
 
 	fabric_we_weave = /obj/item/stack/dwarf_certified/leather_or_cloth/fabric/reed
@@ -133,7 +133,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/leather_or_cloth/fabric/reed
 
-	mats_per_unit = list(/datum/material/dwarf_certified/fabric/reed = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/fabric/reed = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/fabric/reed
 
 // SPIDER SILK
@@ -146,7 +146,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/thread/silk
 
-	mats_per_unit = list(/datum/material/dwarf_certified/fabric/silk = MINERAL_MATERIAL_AMOUNT / 2)
+	mats_per_unit = list(/datum/material/dwarf_certified/fabric/silk = SHEET_MATERIAL_AMOUNT / 2)
 	material_type = /datum/material/dwarf_certified/fabric/silk
 
 	fabric_we_weave = /obj/item/stack/dwarf_certified/leather_or_cloth/fabric/silk
@@ -159,5 +159,5 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/leather_or_cloth/fabric/silk
 
-	mats_per_unit = list(/datum/material/dwarf_certified/fabric/silk = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/fabric/silk = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/fabric/silk

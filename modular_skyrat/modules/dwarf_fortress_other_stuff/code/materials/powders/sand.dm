@@ -17,7 +17,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/powder/sand
 
-	mats_per_unit = list(/datum/material/dwarf_certified/powder/sand = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/powder/sand = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/powder/sand
 
 /obj/item/stack/dwarf_certified/powder/sand/Initialize(mapload)
@@ -50,7 +50,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/powder/sand/yellow
 
-	mats_per_unit = list(/datum/material/dwarf_certified/powder/sand/yellow = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/powder/sand/yellow = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/powder/sand/yellow
 
 // Red sand
@@ -72,7 +72,7 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/powder/sand/red
 
-	mats_per_unit = list(/datum/material/dwarf_certified/powder/sand/red = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/powder/sand/red = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/powder/sand/red
 
 // Black sand
@@ -94,5 +94,5 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/powder/sand/black
 
-	mats_per_unit = list(/datum/material/dwarf_certified/powder/sand/black = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/dwarf_certified/powder/sand/black = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/powder/sand/black
