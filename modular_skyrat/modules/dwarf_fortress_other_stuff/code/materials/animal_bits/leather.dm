@@ -31,11 +31,6 @@
 	mats_per_unit = list(/datum/material/dwarf_certified/leather = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/leather
 
-/obj/item/stack/dwarf_certified/leather_or_cloth/examine(mob/user)
-	. = ..()
-
-	. += span_notice("Maybe with a <b>tailoring station</b>, you could turn [src] into clothing and armor?")
-
 // Generic animal leather
 
 /datum/material/dwarf_certified/leather/animal
