@@ -74,11 +74,6 @@
 
 	AddComponent(/datum/component/bakeable, /obj/item/stack/dwarf_certified/glass/crystal, rand(30 SECONDS, 45 SECONDS), TRUE, TRUE)
 
-/obj/item/stack/dwarf_certified/rock/crystal/rock_crystal/examine(mob/user)
-	. = ..()
-
-	. += span_notice("You could probably <b>bake</b> this into glass.")
-
 /obj/item/stack/dwarf_certified/cut_gem/rock_crystal
 	name = "cut rock crystal"
 	singular_name = "cut rock crystal"

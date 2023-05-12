@@ -5,7 +5,7 @@
 	if(!thread_type)
 		return
 
-	AddComponent(/datum/component/loomable, thread_type)
+	AddElement(/datum/element/loomable, thread_type)
 
 /obj/item/grown/cotton
 	thread_type = /obj/item/stack/dwarf_certified/thread/cotton
