@@ -430,6 +430,10 @@
 	dir = 10
 	},
 /area/station/command/bridge)
+"cq" = (
+/obj/item/food/grown/redbeet,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "cr" = (
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron{
@@ -598,6 +602,10 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/plating,
 /area/station/commons/storage/primary)
+"dz" = (
+/obj/item/food/grown/ash_flora/seraka,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "dA" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -744,6 +752,10 @@
 "eo" = (
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
+"eq" = (
+/obj/machinery/light/directional/west,
+/turf/open/misc/beach/sand,
+/area/station/hallway/secondary/service)
 "es" = (
 /obj/effect/turf_decal/stripes/asteroid/corner,
 /turf/open/floor/iron,
@@ -769,6 +781,10 @@
 /turf/open/floor/iron{
 	dir = 8
 	},
+/area/station/hallway/secondary/service)
+"eB" = (
+/obj/item/food/grown/vanillapod,
+/turf/open/misc/dirt/dark,
 /area/station/hallway/secondary/service)
 "eC" = (
 /turf/open/openspace,
@@ -827,6 +843,10 @@
 /obj/structure/ladder,
 /turf/open/floor/iron,
 /area/station/engineering/storage)
+"eW" = (
+/obj/item/food/grown/mushroom/plumphelmet,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "eX" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
@@ -865,6 +885,18 @@
 /obj/machinery/suit_storage_unit/ce,
 /turf/open/floor/iron,
 /area/station/construction)
+"fT" = (
+/obj/item/food/grown/bungofruit,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
+"gh" = (
+/obj/item/food/grown/plum,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
+"gu" = (
+/obj/structure/flora/tree/jungle/small,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "gz" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -907,6 +939,10 @@
 /obj/structure/grille,
 /turf/open/openspace/airless,
 /area/space/nearstation)
+"hL" = (
+/obj/item/food/grown/mushroom/chanterelle,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "hT" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
@@ -1139,10 +1175,26 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/plating,
 /area/station/maintenance/department/bridge)
+"oG" = (
+/obj/item/food/grown/tea/astra,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "oJ" = (
 /obj/effect/turf_decal/stripes/asteroid/line,
 /turf/open/floor/plating,
 /area/station/maintenance/department/bridge)
+"oR" = (
+/obj/item/food/grown/herbs,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
+"pf" = (
+/obj/item/food/grown/tea,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
+"pj" = (
+/obj/item/food/grown/korta_nut,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "pl" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -1190,10 +1242,18 @@
 	},
 /turf/open/floor/plating,
 /area/station/engineering/storage)
+"qU" = (
+/obj/item/food/grown/kronkus,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "rd" = (
 /obj/machinery/light/directional/west,
 /turf/open/openspace,
 /area/station/engineering/storage)
+"ru" = (
+/obj/item/food/grown/berries,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "rN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 8
@@ -1201,6 +1261,14 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
+"rP" = (
+/obj/item/food/grown/mushroom/odious_puffball,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
+"rZ" = (
+/obj/item/food/grown/tobacco/space,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "sg" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -1218,6 +1286,10 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
+/area/station/hallway/secondary/service)
+"sv" = (
+/obj/item/food/grown/parsnip,
+/turf/open/misc/dirt/dark,
 /area/station/hallway/secondary/service)
 "sw" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
@@ -1254,6 +1326,10 @@
 "uw" = (
 /turf/open/floor/engine/hull,
 /area/space/nearstation)
+"uV" = (
+/obj/item/food/grown/cherries,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "vt" = (
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 1
@@ -1307,6 +1383,14 @@
 	},
 /turf/open/floor/plating,
 /area/station/construction)
+"wS" = (
+/obj/item/food/grown/ash_flora/mushroom_leaf,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
+"xq" = (
+/obj/structure/flora/ash/seraka,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "xw" = (
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 8
@@ -1343,6 +1427,10 @@
 /obj/structure/lattice,
 /turf/open/openspace,
 /area/station/engineering/storage)
+"xU" = (
+/obj/item/food/grown/tobacco,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "ye" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -1388,6 +1476,10 @@
 	},
 /turf/open/floor/plating,
 /area/station/hallway/secondary/service)
+"zL" = (
+/obj/item/food/grown/cabbage,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "Af" = (
 /obj/effect/turf_decal/stripes/white/line,
 /turf/open/floor/plating,
@@ -1431,9 +1523,17 @@
 /obj/item/pipe_dispenser,
 /turf/open/floor/iron,
 /area/station/construction)
+"Ca" = (
+/obj/item/food/grown/korta_nut/sweet,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "Cc" = (
 /turf/open/space/basic,
 /area/space)
+"Cw" = (
+/obj/item/food/grown/oat,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "CA" = (
 /obj/machinery/door/airlock/external/glass/ruin,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -1442,10 +1542,17 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/engineering/main)
+"CH" = (
+/obj/item/food/grown/potato,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "CK" = (
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal/bin,
 /turf/open/floor/plating,
+/area/station/hallway/secondary/service)
+"CN" = (
+/turf/open/misc/dirt/dark,
 /area/station/hallway/secondary/service)
 "Dl" = (
 /obj/structure/lattice/catwalk,
@@ -1480,6 +1587,14 @@
 	},
 /turf/open/floor/plating,
 /area/station/engineering/storage)
+"Et" = (
+/obj/item/food/grown/garlic,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
+"EB" = (
+/obj/item/food/grown/trumpet,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "EH" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 1
@@ -1507,6 +1622,10 @@
 "Gb" = (
 /turf/open/floor/plating,
 /area/station/hallway/secondary/service)
+"Gd" = (
+/obj/item/food/grown/toechtauese,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "GG" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing,
@@ -1525,6 +1644,10 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/construction)
+"If" = (
+/obj/item/food/grown/galaxythistle,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "Ix" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -1556,6 +1679,10 @@
 "Jg" = (
 /obj/structure/cable,
 /turf/open/floor/plating,
+/area/station/hallway/secondary/service)
+"Ji" = (
+/obj/item/food/grown/onion,
+/turf/open/misc/dirt/dark,
 /area/station/hallway/secondary/service)
 "Jk" = (
 /obj/effect/turf_decal/stripes/corner,
@@ -1626,6 +1753,9 @@
 	},
 /turf/open/floor/iron,
 /area/station/engineering/gravity_generator)
+"KQ" = (
+/turf/open/misc/beach/sand,
+/area/station/hallway/secondary/service)
 "KV" = (
 /turf/open/floor/plating,
 /area/station/construction)
@@ -1637,6 +1767,10 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/construction)
+"Lp" = (
+/obj/item/food/grown/mushroom/jupitercup,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "Lu" = (
 /obj/structure/railing{
 	dir = 4
@@ -1678,6 +1812,10 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
+"Mj" = (
+/obj/item/food/grown/ambrosia,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "Mk" = (
 /obj/machinery/light/directional/north,
 /obj/structure/sign/warning/directional/north,
@@ -1757,6 +1895,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
+"PR" = (
+/obj/item/food/grown/wheat,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "Qf" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron,
@@ -1797,6 +1939,10 @@
 /obj/machinery/door/airlock/glass,
 /turf/open/floor/iron,
 /area/station/construction)
+"Rt" = (
+/obj/item/food/grown/ash_flora/cactus_fruit,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "RC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
@@ -1813,6 +1959,10 @@
 "SF" = (
 /turf/open/openspace/airless,
 /area/space)
+"SI" = (
+/obj/machinery/hydroponics/soil,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "TH" = (
 /turf/open/floor/plating,
 /area/station/engineering/storage)
@@ -1961,6 +2111,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
+"Xq" = (
+/obj/item/food/grown/berries/poison,
+/turf/open/misc/dirt/dark,
+/area/station/hallway/secondary/service)
 "XK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/closed/wall/r_wall,
@@ -1980,6 +2134,10 @@
 	},
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
+/area/station/hallway/secondary/service)
+"YL" = (
+/obj/machinery/light/directional/east,
+/turf/open/misc/beach/sand,
 /area/station/hallway/secondary/service)
 "YV" = (
 /obj/effect/turf_decal/stripes/line{
@@ -5540,10 +5698,10 @@ Gb
 eE
 Gb
 dY
-dY
-WN
-dY
-dY
+KQ
+eq
+KQ
+KQ
 dY
 dY
 dY
@@ -5592,13 +5750,13 @@ TY
 Gb
 Gb
 Gb
-dY
-dY
-dY
-dY
-dY
-dY
-dY
+KQ
+KQ
+KQ
+KQ
+KQ
+KQ
+KQ
 dY
 dY
 dY
@@ -5646,13 +5804,13 @@ TY
 Gb
 Gb
 dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
+KQ
+KQ
+KQ
+KQ
+KQ
+KQ
+KQ
 dY
 dY
 dY
@@ -5700,12 +5858,12 @@ TY
 Gb
 dY
 dY
-dY
-dY
-dY
-dY
-dY
-dY
+KQ
+KQ
+KQ
+KQ
+KQ
+KQ
 dY
 dY
 dY
@@ -5755,11 +5913,11 @@ dY
 dY
 dY
 dY
-dY
-dY
-dY
-dY
-eN
+KQ
+KQ
+KQ
+KQ
+YL
 dY
 dY
 dY
@@ -6348,19 +6506,19 @@ TY
 dY
 dY
 dY
+zL
+sv
+ru
+Cw
 dY
+eB
+Gd
+uV
 dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
+rP
+Lp
+dz
+Mj
 dY
 dY
 dY
@@ -6402,19 +6560,19 @@ TY
 dY
 eN
 dY
+cq
+Ji
+Xq
+PR
 dY
+oG
+pj
+fT
 dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
+eW
+rZ
+Rt
+EB
 dY
 eF
 eF
@@ -6456,19 +6614,19 @@ TY
 dY
 TY
 dY
+xU
+oR
+Et
+CH
 dY
+gh
+Ca
+pf
 dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
+hL
+qU
+wS
+If
 dY
 eF
 iu
@@ -6510,19 +6668,19 @@ TY
 dY
 dY
 dY
+CN
+CN
+CN
+CN
 dY
+CN
+CN
+CN
 dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
+CN
+CN
+CN
+CN
 dY
 eF
 iu
@@ -6564,19 +6722,19 @@ TY
 dY
 dY
 dY
+SI
+CN
+CN
+CN
 dY
+gu
+CN
+CN
 dY
-TY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
-dY
+xq
+CN
+CN
+CN
 dY
 eF
 iu
@@ -6620,7 +6778,7 @@ dY
 dY
 dY
 dY
-TY
+dY
 dY
 dY
 eN
