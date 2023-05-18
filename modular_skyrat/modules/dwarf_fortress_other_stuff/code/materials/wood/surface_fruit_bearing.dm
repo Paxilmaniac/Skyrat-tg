@@ -7,7 +7,7 @@
 	color = "#71675e"
 	greyscale_colors = "#71675e"
 
-	leaf_fruit = list(
+	leaf_fruits = list(
 		/obj/item/food/grown/tea = 5,
 		/obj/item/food/grown/tea/astra = 1,
 	)

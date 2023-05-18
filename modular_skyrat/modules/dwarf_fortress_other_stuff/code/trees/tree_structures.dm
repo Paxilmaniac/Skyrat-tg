@@ -43,7 +43,7 @@
 	var/list/leaves = list()
 
 /obj/structure/tree_bits/trunk/top/Destroy()
-	for(var/iterated_leaves in leaves)
+	for(var/obj/structure/tree_bits/leaves/iterated_leaves in leaves)
 		iterated_leaves.Destroy()
 
 	return ..()
