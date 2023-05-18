@@ -18,7 +18,6 @@
 	turf_type = /turf/open/floor/material/dwarf_fortress/metal
 	merge_type = /obj/item/stack/tile/material/dwarf_fortress/metal
 
-
 /turf/open/floor/material/dwarf_fortress
 	icon = 'modular_skyrat/modules/dwarf_fortress_other_stuff/icons/floors.dmi'
 	material_flags = MATERIAL_EFFECTS | MATERIAL_ADD_PREFIX | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS

@@ -16,6 +16,11 @@
 	// wood is 0.1, diamond is 0.3, iron is 0
 	beauty_modifier = 0.05
 
+/datum/material/dwarf_certified/rock/siltstone/brick
+	sheet_type = /obj/item/stack/dwarf_certified/brick/siltstone
+
+	integrity_modifier = 1
+
 /obj/item/stack/dwarf_certified/rock/siltstone
 	name = "siltstone boulder"
 	singular_name = "siltstone boulder"
@@ -37,8 +42,8 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/brick/siltstone
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/siltstone = SHEET_MATERIAL_AMOUNT)
-	material_type = /datum/material/dwarf_certified/rock/siltstone
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/siltstone/brick = SHEET_MATERIAL_AMOUNT)
+	material_type = /datum/material/dwarf_certified/rock/siltstone/brick
 
 // Marble
 
@@ -53,6 +58,9 @@
 
 	// wood is 0.1, diamond is 0.3, iron is 0
 	beauty_modifier = 0.2
+
+/datum/material/dwarf_certified/rock/marble/brick
+	sheet_type = /obj/item/stack/dwarf_certified/brick/marble
 
 /obj/item/stack/dwarf_certified/rock/marble
 	name = "marble boulder"
@@ -75,8 +83,8 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/brick/marble
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/marble = SHEET_MATERIAL_AMOUNT)
-	material_type = /datum/material/dwarf_certified/rock/marble
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/marble/brick = SHEET_MATERIAL_AMOUNT)
+	material_type = /datum/material/dwarf_certified/rock/marble/brick
 
 // Andesite
 
@@ -88,6 +96,9 @@
 	greyscale_colors = "#656666"
 
 	sheet_type = /obj/item/stack/dwarf_certified/rock/andesite
+
+/datum/material/dwarf_certified/rock/andesite/brick
+	sheet_type = /obj/item/stack/dwarf_certified/brick/andesite
 
 /obj/item/stack/dwarf_certified/rock/andesite
 	name = "andesite boulder"
@@ -110,8 +121,8 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/brick/andesite
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/andesite = SHEET_MATERIAL_AMOUNT)
-	material_type = /datum/material/dwarf_certified/rock/andesite
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/andesite/brick = SHEET_MATERIAL_AMOUNT)
+	material_type = /datum/material/dwarf_certified/rock/andesite/brick
 
 // Basalt
 
@@ -123,6 +134,9 @@
 	greyscale_colors = "#292727"
 
 	sheet_type = /obj/item/stack/dwarf_certified/rock/basalt
+
+/datum/material/dwarf_certified/rock/basalt/brick
+	sheet_type = /obj/item/stack/dwarf_certified/brick/basalt
 
 /obj/item/stack/dwarf_certified/rock/basalt
 	name = "basalt boulder"
@@ -145,5 +159,5 @@
 
 	merge_type = /obj/item/stack/dwarf_certified/brick/basalt
 
-	mats_per_unit = list(/datum/material/dwarf_certified/rock/basalt = SHEET_MATERIAL_AMOUNT)
-	material_type = /datum/material/dwarf_certified/rock/basalt
+	mats_per_unit = list(/datum/material/dwarf_certified/rock/basalt/brick = SHEET_MATERIAL_AMOUNT)
+	material_type = /datum/material/dwarf_certified/rock/basalt/brick
