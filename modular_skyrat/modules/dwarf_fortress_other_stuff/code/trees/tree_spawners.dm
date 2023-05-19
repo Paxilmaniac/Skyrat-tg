@@ -29,11 +29,11 @@
 	for(var/turf/leaf_subject in turfs_to_leaf_up)
 		if(leaf_subject.is_blocked_turf(TRUE))
 			continue // Don't put leaves on blocked turfs
-		if(/obj/structure/tree_bits in leaf_subject)
+		if(/obj/structure/tree_bits in leaf_subject.contents)
 			continue // Don't put leaves on turfs that already have tree bits on them
 		var/obj/structure/tree_bits/leaves/new_leaves = new /obj/structure/tree_bits/leaves(leaf_subject)
 		new_leaves.set_up_colors_n_fruits(tree_material)
-		upper_trunk.leaves += leaf_subject
+		upper_trunk.leaves += new_leaves
 
 /obj/effect/spawner/dwarf_fortress_tree/tea_wood_test
 	tree_material = /datum/material/dwarf_certified/wood/tea

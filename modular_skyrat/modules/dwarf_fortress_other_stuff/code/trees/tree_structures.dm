@@ -16,12 +16,12 @@
 /obj/structure/tree_bits/trunk/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
 	playsound(src, SFX_TREE_CHOP, 50, vary = TRUE)
 
-/obj/structure/tree_bits/trunk/deconstruct()
+/obj/structure/tree_bits/trunk/deconstruct(disassembled = FALSE)
 	for(var/iterated_material in custom_materials)
 		var/datum/material/found_material = iterated_material
 		new found_material.sheet_type(src, FLOOR(custom_materials[found_material] / SHEET_MATERIAL_AMOUNT, 1))
 
-	. = ..()
+	qdel(src)
 
 /obj/structure/tree_bits/trunk/base
 	desc = "Look its a tree trunk, its made of wood (at least you'd hope) and is likely the base of a larger tree. Try looking up every now and then?"
@@ -29,24 +29,31 @@
 	/// The thinner log segment of the top of the tree, which should also be destroyed if this is
 	var/obj/structure/tree_bits/trunk/top/linked_tree_top
 
-/obj/structure/tree_bits/trunk/base/deconstruct()
+/obj/structure/tree_bits/trunk/base/deconstruct(disassembled = FALSE)
 	if(linked_tree_top)
-		linked_tree_top.deconstruct()
+		linked_tree_top.deconstruct(FALSE)
 
-	return ..()
+	. = ..()
 
 /obj/structure/tree_bits/trunk/top
 	desc = "Look its a tree trunk, its made of wood (at least you'd hope) and is likely the top of a larger tree. Have you tried looking down?"
-	icon_state = "surfacetrunk_top"
+	icon = 'modular_skyrat/modules/dwarf_fortress_other_stuff/icons/trees/big_tree_bits.dmi'
+	icon_state = "surfacetree_top"
+
+	pixel_x = -16
+	pixel_y = -16
+
+	base_pixel_x = -16
+	base_pixel_y = -16
 
 	/// Keeps track of every leaf structure attached to this treetop
 	var/list/leaves = list()
 
-/obj/structure/tree_bits/trunk/top/deconstruct()
+/obj/structure/tree_bits/trunk/top/deconstruct(disassembled = FALSE)
 	for(var/obj/structure/tree_bits/leaves/iterated_leaves in leaves)
-		iterated_leaves.deconstruct()
+		iterated_leaves.deconstruct(FALSE)
 
-	return ..()
+	. = ..()
 
 /obj/structure/tree_bits/leaves
 	name = "leaves"
@@ -73,11 +80,11 @@
 /obj/structure/tree_bits/leaves/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
 	playsound(src, SFX_CRUNCHY_BUSH_WHACK, 50, vary = TRUE)
 
-/obj/structure/tree_bits/leaves/deconstruct()
+/obj/structure/tree_bits/leaves/deconstruct(disassembled = FALSE)
 	for(var/iterated_fruit in 1 to fruit_amount)
 		new fruit(drop_location())
 
-	return ..()
+	qdel(src)
 
 /// Sets the color of the leaves, the fruit, and the amount of fruit based off of a passed wood material datum
 /obj/structure/tree_bits/leaves/proc/set_up_colors_n_fruits(datum/material/dwarf_certified/wood/tree_material)
