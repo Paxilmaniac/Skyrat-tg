@@ -13,13 +13,17 @@
 
 	material_flags = MATERIAL_EFFECTS | MATERIAL_ADD_PREFIX | MATERIAL_GREYSCALE | MATERIAL_COLOR | MATERIAL_AFFECT_STATISTICS
 
+	/// What type of logs this drops
+	var/obj/item/stack/dropped_logs
+	/// How many logs this drops
+	var/number_of_logs = 4
+
 /obj/structure/tree_bits/trunk/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
 	playsound(src, SFX_TREE_CHOP, 50, vary = TRUE)
 
 /obj/structure/tree_bits/trunk/deconstruct(disassembled = FALSE)
-	for(var/iterated_material in custom_materials)
-		var/datum/material/found_material = iterated_material
-		new found_material.sheet_type(src, FLOOR(custom_materials[found_material] / SHEET_MATERIAL_AMOUNT, 1))
+	for(var/iterated_log in 1 to number_of_logs)
+	new dropped_logs(drop_location())
 
 	qdel(src)
 
@@ -76,13 +80,16 @@
 	var/fruit
 	/// How many of the above mentioned item should spawn
 	var/fruit_amount
+	/// The rng chance that a particular leaf structure actually bears fruit when broken
+	var/chance_bears_fruit = 50
 
 /obj/structure/tree_bits/leaves/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
 	playsound(src, SFX_CRUNCHY_BUSH_WHACK, 50, vary = TRUE)
 
 /obj/structure/tree_bits/leaves/deconstruct(disassembled = FALSE)
-	for(var/iterated_fruit in 1 to fruit_amount)
-		new fruit(drop_location())
+	if(prob(chance_bears_fruit))
+		for(var/iterated_fruit in 1 to fruit_amount)
+			new fruit(drop_location())
 
 	qdel(src)
 

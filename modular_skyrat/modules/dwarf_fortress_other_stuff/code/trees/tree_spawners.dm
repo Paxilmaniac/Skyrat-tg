@@ -19,7 +19,7 @@
 
 /obj/effect/spawner/dwarf_fortress_tree/proc/make_tree_top(turf/turf_to_work_on, obj/structure/tree_bits/trunk/base/trunk_to_link_to)
 	var/obj/structure/tree_bits/trunk/top/upper_trunk = new /obj/structure/tree_bits/trunk/top(turf_to_work_on)
-	upper_trunk.set_custom_materials(list(GET_MATERIAL_REF(tree_material) = SHEET_MATERIAL_AMOUNT * 3))
+	upper_trunk.set_custom_materials(list(GET_MATERIAL_REF(tree_material) = SHEET_MATERIAL_AMOUNT * 4))
 
 	if(trunk_to_link_to)
 		trunk_to_link_to.linked_tree_top = upper_trunk

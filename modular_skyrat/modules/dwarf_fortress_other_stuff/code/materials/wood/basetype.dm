@@ -45,7 +45,7 @@ GLOBAL_LIST_INIT(dwarf_plank_recipes, list(
 	/// What types of items the leaves drop when broken or just over time (for examples, nuts and fruits)
 	var/list/leaf_fruit = list()
 	/// How many fruits spawn when the leaves of this wood's tree are broken
-	var/number_of_leaf_fruits = 3
+	var/number_of_leaf_fruits = 2
 
 	sheet_type = /obj/item/stack/dwarf_certified/log
 
