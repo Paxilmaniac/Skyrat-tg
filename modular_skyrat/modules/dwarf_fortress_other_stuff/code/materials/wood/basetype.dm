@@ -77,7 +77,7 @@ GLOBAL_LIST_INIT(dwarf_plank_recipes, list(
 	max_amount = 5
 
 	// What this log cuts into when something sharp is used on it
-	var/obj/item/stack/cut_type = /obj/item/stack/dwarf_certified/wood/plank
+	var/obj/item/stack/cut_type = /obj/item/stack/dwarf_certified/plank
 	// How many of cut_type do we spawn
 	var/cut_amount = 2
 
