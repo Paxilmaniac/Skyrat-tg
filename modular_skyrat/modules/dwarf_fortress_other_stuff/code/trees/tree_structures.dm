@@ -16,12 +16,12 @@
 /obj/structure/tree_bits/trunk/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
 	playsound(src, SFX_TREE_CHOP, 50, vary = TRUE)
 
-/obj/structure/tree_bits/trunk/Destroy()
+/obj/structure/tree_bits/trunk/deconstruct()
 	for(var/iterated_material in custom_materials)
 		var/datum/material/found_material = iterated_material
 		new found_material.sheet_type(src, FLOOR(custom_materials[found_material] / SHEET_MATERIAL_AMOUNT, 1))
 
-	return ..()
+	. = ..()
 
 /obj/structure/tree_bits/trunk/base
 	desc = "Look its a tree trunk, its made of wood (at least you'd hope) and is likely the base of a larger tree. Try looking up every now and then?"
@@ -29,9 +29,9 @@
 	/// The thinner log segment of the top of the tree, which should also be destroyed if this is
 	var/obj/structure/tree_bits/trunk/top/linked_tree_top
 
-/obj/structure/tree_bits/trunk/base/Destroy()
+/obj/structure/tree_bits/trunk/base/deconstruct()
 	if(linked_tree_top)
-		linked_tree_top.Destroy()
+		linked_tree_top.deconstruct()
 
 	return ..()
 
@@ -42,9 +42,9 @@
 	/// Keeps track of every leaf structure attached to this treetop
 	var/list/leaves = list()
 
-/obj/structure/tree_bits/trunk/top/Destroy()
+/obj/structure/tree_bits/trunk/top/deconstruct()
 	for(var/obj/structure/tree_bits/leaves/iterated_leaves in leaves)
-		iterated_leaves.Destroy()
+		iterated_leaves.deconstruct()
 
 	return ..()
 
@@ -70,7 +70,10 @@
 	/// How many of the above mentioned item should spawn
 	var/fruit_amount
 
-/obj/structure/tree_bits/leaves/Destroy()
+/obj/structure/tree_bits/leaves/play_attack_sound(damage_amount, damage_type = BRUTE, damage_flag = 0)
+	playsound(src, SFX_CRUNCHY_BUSH_WHACK, 50, vary = TRUE)
+
+/obj/structure/tree_bits/leaves/deconstruct()
 	for(var/iterated_fruit in 1 to fruit_amount)
 		new fruit(drop_location())
 
