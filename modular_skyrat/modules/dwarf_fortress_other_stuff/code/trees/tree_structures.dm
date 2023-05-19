@@ -23,9 +23,13 @@
 
 /obj/structure/tree_bits/trunk/deconstruct(disassembled = FALSE)
 	for(var/iterated_log in 1 to number_of_logs)
-	new dropped_logs(drop_location())
+		new dropped_logs(drop_location())
 
 	qdel(src)
+
+/// Sets the dropped_logs var to whatever the sheet type of the given material is
+/obj/structure/tree_bits/trunk/proc/set_logs(datum/material/dwarf_certified/wood/tree_material)
+	dropped_logs = initial(tree_material.sheet_type)
 
 /obj/structure/tree_bits/trunk/base
 	desc = "Look its a tree trunk, its made of wood (at least you'd hope) and is likely the base of a larger tree. Try looking up every now and then?"
