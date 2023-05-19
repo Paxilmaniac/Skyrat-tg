@@ -12,6 +12,7 @@
 	var/turf/above_turf = get_step_multiz(get_turf(src), UP)
 	if(istype(above_turf, /turf/open/openspace))
 		var/obj/structure/tree_bits/trunk/tree_bottom = new base_trunk(get_turf(src))
+		tree_bottom.set_custom_materials(list(GET_MATERIAL_REF(tree_material) = SHEET_MATERIAL_AMOUNT * 4))
 		tree_bottom.set_logs(tree_material)
 		make_tree_top(above_turf, tree_bottom)
 	else
@@ -19,6 +20,7 @@
 
 /obj/effect/spawner/dwarf_fortress_tree/proc/make_tree_top(turf/turf_to_work_on, obj/structure/tree_bits/trunk/base/trunk_to_link_to)
 	var/obj/structure/tree_bits/trunk/top/upper_trunk = new /obj/structure/tree_bits/trunk/top(turf_to_work_on)
+	upper_trunk.set_custom_materials(list(GET_MATERIAL_REF(tree_material) = SHEET_MATERIAL_AMOUNT * 4))
 	upper_trunk.set_logs(tree_material)
 
 	if(trunk_to_link_to)
