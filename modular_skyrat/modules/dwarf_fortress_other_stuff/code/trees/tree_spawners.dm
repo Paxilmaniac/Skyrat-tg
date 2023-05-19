@@ -2,7 +2,7 @@
 	name = "tree structure spawner"
 
 	/// The type of structure we use as the "base" or bottom level trunk for the spawner
-	var/obj/structure/tree_bits/base_trunk = /obj/structure/tree_bits/trunk/base
+	var/obj/structure/tree_bits/trunk/base_trunk = /obj/structure/tree_bits/trunk/base
 	/// What wood material we are using for the tree to be made
 	var/datum/material/dwarf_certified/wood/tree_material
 
@@ -11,7 +11,7 @@
 
 	var/turf/above_turf = get_step_multiz(get_turf(src), UP)
 	if(istype(above_turf, /turf/open/openspace))
-		var/obj/structure/tree_bits/tree_bottom = new base_trunk(get_turf(src))
+		var/obj/structure/tree_bits/trunk/tree_bottom = new base_trunk(get_turf(src))
 		tree_bottom.set_logs(tree_material)
 		make_tree_top(above_turf, tree_bottom)
 	else
