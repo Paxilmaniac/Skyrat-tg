@@ -43,7 +43,7 @@ GLOBAL_LIST_INIT(dwarf_plank_recipes, list(
 	/// What color the leaves of the tree this comes from will eventually be
 	var/leaf_color = "#a2dc34"
 	/// What types of items the leaves drop when broken or just over time (for examples, nuts and fruits)
-	var/list/leaf_fruits = list()
+	var/list/leaf_fruit = list()
 	/// How many fruits spawn when the leaves of this wood's tree are broken
 	var/number_of_leaf_fruits = 3
 

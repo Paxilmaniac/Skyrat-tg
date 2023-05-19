@@ -79,5 +79,5 @@
 /// Sets the color of the leaves, the fruit, and the amount of fruit based off of a passed wood material datum
 /obj/structure/tree_bits/leaves/proc/set_up_colors_n_fruits(datum/material/dwarf_certified/wood/tree_material)
 	color = initial(tree_material.leaf_color)
-	fruit = pick_weight(initial(tree_material.leaf_fruits))
+	fruit = initial(tree_material.leaf_fruit)
 	fruit_amount = initial(tree_material.number_of_leaf_fruits)

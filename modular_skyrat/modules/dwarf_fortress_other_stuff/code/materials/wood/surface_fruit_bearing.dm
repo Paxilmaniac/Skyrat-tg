@@ -7,12 +7,16 @@
 	color = "#71675e"
 	greyscale_colors = "#71675e"
 
-	leaf_fruits = list(
-		/obj/item/food/grown/tea = 5,
-		/obj/item/food/grown/tea/astra = 1,
-	)
+	leaf_fruit = /obj/effect/spawner/random/food_or_drink/tea_tree_leaves
 
 	sheet_type = /obj/item/stack/dwarf_certified/log/tea
+
+/obj/effect/spawner/random/food_or_drink/tea_tree_leaves
+	name = "tea leaf spawner"
+	loot = list(
+		/obj/item/food/grown/tea/astra = 5,
+		/obj/item/food/grown/tea/astra = 1,
+	)
 
 /obj/item/stack/dwarf_certified/log/tea
 	name = "tea logs"

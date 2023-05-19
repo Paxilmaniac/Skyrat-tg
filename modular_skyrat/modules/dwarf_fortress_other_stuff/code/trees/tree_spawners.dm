@@ -24,7 +24,7 @@
 	if(trunk_to_link_to)
 		trunk_to_link_to.linked_tree_top = upper_trunk
 
-	var/list/turfs_to_leaf_up = circle_view_turfs(src, pick(3.5,3,2.5)) // Just don't worry about that pick list bro just trust me
+	var/list/turfs_to_leaf_up = circle_view_turfs(turf_to_work_on, pick(3,2.5,2)) // Just don't worry about that pick list bro just trust me
 
 	for(var/turf/leaf_subject in turfs_to_leaf_up)
 		if(leaf_subject.is_blocked_turf(TRUE))
