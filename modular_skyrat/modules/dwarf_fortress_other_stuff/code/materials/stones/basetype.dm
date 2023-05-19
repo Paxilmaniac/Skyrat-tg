@@ -28,7 +28,7 @@ GLOBAL_LIST_INIT(dwarf_brick_recipes, list(
 	req_amount = 1, \
 	res_amount = 1, \
 	one_per_turf = FALSE, \
-	on_solid_ground = TRUE, \
+	on_solid_ground = FALSE, \
 	applies_mats = TRUE \
 	), \
 ))
@@ -91,7 +91,7 @@ GLOBAL_LIST_INIT(dwarf_brick_recipes, list(
 		balloon_alert_to_viewers("stopped cutting")
 		return FALSE
 	new cut_type(drop_location(), cut_amount)
-	qdel(src)
+	use(1)
 
 /datum/material/dwarf_certified/rock/brick
 	sheet_type = /obj/item/stack/dwarf_certified/brick
