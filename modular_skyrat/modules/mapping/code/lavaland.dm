@@ -11,3 +11,13 @@
 	allow_duplicates = FALSE
 	never_spawn_with = list(/datum/map_template/ruin/icemoon/underground/skyrat/syndicate_base)
 	always_place = TRUE
+
+/turf/open/lava/plasma/lava_land_surface
+	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	planetary_atmos = TRUE
+	baseturfs = /turf/open/lava/plasma/lava_land_surface
+
+/turf/open/openspace/lava_land_surface
+	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	planetary_atmos = TRUE
+	baseturfs = /turf/open/openspace/lava_land_surface
