@@ -19,7 +19,8 @@
 			"Mining": true,
 			"Linkage": null,
 			"Gravity": true,
-			"No Parallax": true
+			"No Parallax": true,
+			"Weather_Ashstorm": true
 		},
 		{
 			"Down": -1,
@@ -27,7 +28,8 @@
 			"Mining": true,
 			"Linkage": null,
 			"Gravity": true,
-			"No Parallax": true
+			"No Parallax": true,
+			"Weather_Ashstorm": true
 		}
 	],
 	"job_changes": {
