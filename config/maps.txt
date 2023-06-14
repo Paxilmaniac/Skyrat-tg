@@ -44,6 +44,11 @@ map northstar
 	votable
 endmap
 
+map kenzanstation
+	minplayers 25
+	votable
+endmap
+
 
 map runtimestation
 endmap

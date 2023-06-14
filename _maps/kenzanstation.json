@@ -1,0 +1,41 @@
+{
+	"version": 1,
+	"map_name": "Kenzan Station",
+	"map_path": "map_files/KenzanStation",
+	"map_file": "KenzanStation.dmm",
+	"space_ruin_levels": 0,
+	"space_empty_levels": 0,
+	"planetary": 1,
+	"shuttles": {
+		"cargo": "cargo_skyrat",
+		"ferry": "ferry_fancy",
+		"whiteship": "whiteship_tram",
+		"emergency": "emergency_tram"
+	},
+	"traits": [
+		{
+			"Up": 1,
+			"Baseturf": "/turf/open/misc/asteroid/basalt/lava_land_surface",
+			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"No Parallax": true
+		},
+		{
+			"Down": -1,
+			"Baseturf": "/turf/open/openspace/lava_land_surface",
+			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"No Parallax": true
+		}
+	],
+	"job_changes": {
+		"Cook": {
+			"additional_cqc_areas": ["/area/station/commons/lounge"]
+		},
+		"Captain": {
+			"special_charter": "moon"
+		}
+	}
+}
