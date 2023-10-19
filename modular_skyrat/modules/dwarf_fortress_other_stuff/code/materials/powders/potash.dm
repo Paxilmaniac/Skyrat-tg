@@ -53,6 +53,7 @@
 /datum/crafting_recipe/clear_glass_mix
 	name = "Clear Glass Powder Mix"
 	result = /obj/item/stack/dwarf_certified/powder/clear_glass_mix
+	always_available = TRUE
 	reqs = list(
 		/obj/item/stack/dwarf_certified/powder/potash = 1,
 		/obj/item/stack/dwarf_certified/powder/sand = 1,

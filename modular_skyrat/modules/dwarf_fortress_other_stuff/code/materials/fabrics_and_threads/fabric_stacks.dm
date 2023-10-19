@@ -35,11 +35,6 @@
 
 	return recipe_we_return
 
-/obj/item/stack/dwarf_certified/thread/examine(mob/user)
-	. = ..()
-
-	. += span_notice("If you had <b>2</b> of [src], you could turn it into fabric.")
-
 /obj/item/stack/dwarf_certified/leather_or_cloth/fabric
 	name = "generic fabric"
 	singular_name = "generic fabric"
@@ -56,7 +51,7 @@
 /obj/item/stack/dwarf_certified/leather_or_cloth/examine(mob/user)
 	. = ..()
 
-	. += span_notice("Maybe with a <b>tailoring station</b>, you could turn [src] into clothing?")
+	. += span_notice("Maybe with a <b>tailoring station</b>, you could work this into more advanced items?")
 
 // CLOTH
 

@@ -46,7 +46,7 @@
 	name = "animal leather sheets"
 	singular_name = "animal leather sheet"
 
-	desc = "Leather brown... leather, this stuff usually comes from animals, unless you're having a bad year, in which case I'd say be careful because you might be next."
+	desc = "Leather brown... leather. This stuff usually comes from animals, unless you're having a bad year. In that case I'd say be careful because you might be next."
 
 	merge_type = /obj/item/stack/dwarf_certified/leather_or_cloth/leather/animal
 
