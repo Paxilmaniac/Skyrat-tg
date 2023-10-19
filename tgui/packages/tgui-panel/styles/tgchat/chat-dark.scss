@@ -437,8 +437,31 @@ em {
 }
 
 .minorannounce {
+  color: #c51e1e;
   font-weight: bold;
   font-size: 185%;
+}
+
+.minoralert {
+  color: #a4bad6;
+  font-size: 125%;
+}
+
+.priorityannounce {
+  color: #a4bad6;
+  font-weight: bold;
+  font-size: 225%;
+}
+
+.prioritytitle {
+  color: #6685f5;
+  font-weight: bold;
+  font-size: 185%;
+}
+
+.priorityalert {
+  color: #c51e1e;
+  font-size: 140%;
 }
 
 .greenannounce {
@@ -535,6 +558,10 @@ em {
 }
 
 .blob {
+  color: #ee4000;
+}
+
+.blobannounce {
   color: #556b2f;
   font-weight: bold;
   font-size: 185%;
@@ -952,6 +979,15 @@ em {
 
 .resonate {
   color: #298f85;
+}
+
+.upside_down {
+  display: inline;
+  -moz-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -ms-transform: scale(-1, -1);
+  transform: scale(-1, -1);
 }
 
 .connectionClosed,

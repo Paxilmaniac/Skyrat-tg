@@ -65,9 +65,9 @@
 	if(stage < 6)
 		INVOKE_ASYNC(src, PROC_REF(RefreshInfectionImage))
 		var/slowdown = 1
-		if(ishuman(owner))
-			var/mob/living/carbon/human/baby_momma = owner
-			slowdown = baby_momma.reagents.has_reagent(/datum/reagent/medicine/spaceacillin) ? 2 : 1 // spaceacillin doubles the time it takes to grow
+		if(!isnull(owner)) // it gestates out of bodies.
+			if(HAS_TRAIT(owner, TRAIT_VIRUS_RESISTANCE))
+				slowdown *= 2 // spaceacillin doubles the time it takes to grow
 			if(owner.has_status_effect(/datum/status_effect/nest_sustenance))
 				slowdown *= 0.80 //egg gestates 20% faster if you're trapped in a nest
 
@@ -111,9 +111,8 @@
 	var/mob/living/carbon/alien/larva/new_xeno = new(xeno_loc)
 	new_xeno.key = ghost.key
 	SEND_SOUND(new_xeno, sound('sound/voice/hiss5.ogg',0,0,0,100)) //To get the player's attention
-	new_xeno.add_traits(list(TRAIT_IMMOBILIZED, TRAIT_HANDS_BLOCKED), type) //so we don't move during the bursting animation
-	new_xeno.notransform = 1
-	new_xeno.invisibility = INVISIBILITY_MAXIMUM
+	new_xeno.add_traits(list(TRAIT_HANDS_BLOCKED, TRAIT_IMMOBILIZED, TRAIT_NO_TRANSFORM), type) //so we don't move during the bursting animation
+	new_xeno.SetInvisibility(INVISIBILITY_MAXIMUM, id=type)
 
 	sleep(0.6 SECONDS)
 
@@ -121,16 +120,14 @@
 		qdel(new_xeno)
 		CRASH("AttemptGrow failed due to the early qdeletion of source or owner.")
 
-	if(new_xeno)
-		REMOVE_TRAIT(new_xeno, TRAIT_IMMOBILIZED, type)
-		REMOVE_TRAIT(new_xeno, TRAIT_HANDS_BLOCKED, type)
-		new_xeno.notransform = 0
-		new_xeno.invisibility = 0
+	if(!isnull(new_xeno))
+		new_xeno.remove_traits(list(TRAIT_HANDS_BLOCKED, TRAIT_IMMOBILIZED, TRAIT_NO_TRANSFORM), type)
+		new_xeno.RemoveInvisibility(type)
 
 	if(gib_on_success)
 		new_xeno.visible_message(span_danger("[new_xeno] bursts out of [owner] in a shower of gore!"), span_userdanger("You exit [owner], your previous host."), span_hear("You hear organic matter ripping and tearing!"))
-		// owner.investigate_log("has been gibbed by an alien larva.", INVESTIGATE_DEATHS) SKYRAT EDIT REMOVAL - ALIEN QOL - don't ever gib host.
-		// owner.gib(TRUE) SKYRAT EDIT REMOVAL - ALIEN QOL - don't ever gib host.
+		//owner.investigate_log("has been gibbed by an alien larva.", INVESTIGATE_DEATHS) // SKYRAT EDIT REMOVAL - ALIEN QOL - don't ever gib host.
+		//owner.gib(DROP_ORGANS|DROP_BODYPARTS)
 		// SKYRAT EDIT ADDITION BEGIN - ALIEN QOL - You aren't getting gibbed but you aren't going to be having fun
 		owner.apply_damage(150, BRUTE, BODY_ZONE_CHEST, wound_bonus = 30, sharpness = SHARP_POINTY)
 		owner.spawn_gibs()
