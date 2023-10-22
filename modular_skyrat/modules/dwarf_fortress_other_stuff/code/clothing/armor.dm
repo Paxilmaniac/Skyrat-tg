@@ -10,7 +10,7 @@
 
 /obj/item/clothing/suit/armor/df_plate_armor
 	name = "armor vest"
-	desc = "An armor vest made of uh, something, look you're the one wearing it not me."
+	desc = "A vest of armor to protect your guts from transitioning from innards to outards."
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'
@@ -29,7 +29,7 @@
 
 /obj/item/clothing/head/helmet/df_plate_helmet
 	name = "helmet"
-	desc = "A helmet made out of uh, something, look you're the one wearing it not me."
+	desc = "An armored helmet to make the difference between an open and closed casket funeral."
 	icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	worn_icon = 'modular_skyrat/modules/GAGS/icons/event_clothes_human.dmi'
 	worn_icon_teshari = 'modular_skyrat/modules/GAGS/icons/event_clothes_teshari.dmi'

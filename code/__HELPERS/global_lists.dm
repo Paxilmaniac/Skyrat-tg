@@ -104,8 +104,7 @@
 			if(is_cooking)
 				GLOB.cooking_recipes += recipe
 			else
-				if(recipe.category in GLOB.crafting_category) // MOOOOM PHINEAS AND FERB ARE MAKING DWARF FORTRESS EDITS AGAIN
-					GLOB.crafting_recipes += recipe // SAME HREE
+				GLOB.crafting_recipes += recipe
 
 	var/list/global_stack_recipes = list(
 		/obj/item/stack/sheet/glass = GLOB.glass_recipes,
