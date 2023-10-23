@@ -12,8 +12,10 @@
 	harvest_message_med = "You pluck a number of bunches."
 	harvest_message_high = "You pluck quite the number of bunches."
 	regrowth_time_low = 3 MINUTES
-	regrowth_time_high = 10 MINUTES
+	regrowth_time_high = 7 MINUTES
 	number_of_variants = 2
+	can_uproot = FALSE
+	flora_flags = FLORA_HERBAL
 
 /obj/structure/flora/ash/df_wild_harvestables/Initialize(mapload)
 	. = ..()

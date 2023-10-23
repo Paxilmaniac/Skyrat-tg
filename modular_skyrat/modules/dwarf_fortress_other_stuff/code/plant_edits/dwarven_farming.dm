@@ -8,80 +8,59 @@
 	var/list/required_turf_types
 	/// How long it takes to loom the item
 	var/plant_time
+	/// Typecache of turfs that can be planted upon
+	var/list/turf_typecache
 
-/datum/element/loomable/Attach(
+/datum/element/dwarven_plantable/Attach(
 	obj/item/target,
 	resulting_atom = /obj/item/stack/sheet/cloth,
-	required_amount = 4,
-	loom_type = /obj/structure/loom,
-	process_completion_verb = "spun",
-	target_needs_anchoring = TRUE,
-	loom_time = 1 SECONDS
+	required_turf_types = list(
+		/turf,
+	),
+	plant_time = 3 SECONDS
 )
 	. = ..()
 	//currently this element only works for items as we need to call /obj/item/attack_atom()
 	if(!isitem(target))
 		return ELEMENT_INCOMPATIBLE
 	src.resulting_atom = resulting_atom
-	src.required_amount = required_amount
-	src.loom_type = loom_type
-	src.process_completion_verb = process_completion_verb
-	src.target_needs_anchoring = target_needs_anchoring
-	src.loom_time = loom_time
-	RegisterSignal(target, COMSIG_ITEM_ATTACK_ATOM, PROC_REF(try_and_loom_me))
+	src.required_turf_types = required_turf_types
+	for(var/turf/plantable_turf in required_turf_types)
+		turf_typecache |= typecacheof(plantable_turf)
+	src.plant_time = plant_time
+	RegisterSignal(target, COMSIG_ITEM_ATTACK_ATOM, PROC_REF(try_and_plant_me))
 	RegisterSignal(target, COMSIG_ATOM_EXAMINE, PROC_REF(on_examine))
 
-/datum/element/loomable/Detach(obj/item/source)
+/datum/element/dwarven_plantable/Detach(obj/item/source)
 	. = ..()
 	UnregisterSignal(source, list(COMSIG_ITEM_ATTACK_ATOM, COMSIG_ATOM_EXAMINE))
 
-/// Adds an examine blurb to the description of any item that can be loomed
-/datum/element/loomable/proc/on_examine(obj/item/source, mob/examiner, list/examine_list)
+/// Adds an examine blurb to the description of any item that can be planted
+/datum/element/dwarven_plantable/proc/on_examine(obj/item/source, mob/examiner, list/examine_list)
 	SIGNAL_HANDLER
 
-	examine_list += span_notice("You could probably process [source] at \a <b>[initial(loom_type.name)]</b>.")
+	var/list/names_of_all_plantable_turfs
+	for(var/turf/plantable_turf in required_turf_types)
+		names_of_all_plantable_turfs |= initial(plantable_turf.name)
+
+	examine_list += span_notice("You could <b>plant</b> this in: \a [english_list(names_of_all_plantable_turfs)].")
 
 /// Checks if the thing we clicked on can be used as a loom, and if we can actually loom the source at present (an example being does the stack have enough in it (if its a stack))
-/datum/element/loomable/proc/try_and_loom_me(obj/item/source, atom/target, mob/living/user)
+/datum/element/dwarven_plantable/proc/try_and_plant_me(obj/item/source, turf/target, mob/living/user)
 	SIGNAL_HANDLER
 
-	if(!istype(target, loom_type))
+	if(!is_type_in_typecache(target, turf_typecache))
 		return
 
-	if(ismovable(target))
-		var/atom/movable/movable_target = target
-		if(target_needs_anchoring && !movable_target.anchored)
-			user.balloon_alert(user, "[movable_target] must be secured!")
-			return
-
-	if((required_amount > 1) && istype(source, /obj/item/stack))
-		var/obj/item/stack/source_stack = source
-		if(source_stack.amount < required_amount)
-			user.balloon_alert(user, "need [required_amount] of [source]!")
-			return
-
-	INVOKE_ASYNC(src, PROC_REF(loom_me), source, user, target)
+	INVOKE_ASYNC(src, PROC_REF(plant_me), source, user, target)
 	return COMPONENT_CANCEL_ATTACK_CHAIN
 
 /// If a do_after of the specified loom_time passes, will create a new one of resulting_atom and either delete the item, or .use the required amount if its a stack
-/datum/element/loomable/proc/loom_me(obj/item/source, mob/living/user, atom/target)
-	if(!do_after(user, loom_time, target))
+/datum/element/dwarven_plantable/proc/plant_me(obj/item/source, mob/living/user, turf/target)
+	if(!do_after(user, plant_time, target))
 		user.balloon_alert(user, "interrupted!")
 		return
 
-	///we need to perform another check in case a stack somehow got diminished in the middle of the do_after
-	var/successful = TRUE
-	if(isstack(source))
-		var/obj/item/stack/stack_we_use = source
-		if(!stack_we_use.use(required_amount))
-			successful = FALSE
-	else
-		qdel(source)
-
-	//ripbozo
-	if(!successful)
-		user.balloon_alert(user, "need [required_amount] of [source]!")
-		return
-
 	var/new_thing = new resulting_atom(target.drop_location())
-	user.balloon_alert_to_viewers("[process_completion_verb] [new_thing]")
+	user.balloon_alert_to_viewers("planted [new_thing]")
+	qdel(source)

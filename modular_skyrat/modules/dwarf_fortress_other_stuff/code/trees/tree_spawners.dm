@@ -17,6 +17,7 @@
 		make_tree_top(above_turf, tree_bottom)
 	else
 		make_tree_top(get_turf(src))
+	return INITIALIZE_HINT_QDEL
 
 /obj/effect/spawner/dwarf_fortress_tree/proc/make_tree_top(turf/turf_to_work_on, obj/structure/tree_bits/trunk/base/trunk_to_link_to)
 	var/obj/structure/tree_bits/trunk/top/upper_trunk = new /obj/structure/tree_bits/trunk/top(turf_to_work_on)
@@ -26,7 +27,7 @@
 	if(trunk_to_link_to)
 		trunk_to_link_to.linked_tree_top = upper_trunk
 
-	var/list/turfs_to_leaf_up = circle_view_turfs(turf_to_work_on, pick(3,2.5,2)) // Just don't worry about that pick list bro just trust me
+	var/list/turfs_to_leaf_up = circle_view_turfs(turf_to_work_on, pick(3,2.5,2,1.5)) // Just don't worry about that pick list bro just trust me
 
 	for(var/turf/leaf_subject in turfs_to_leaf_up)
 		if(leaf_subject.is_blocked_turf(TRUE))

@@ -102,3 +102,39 @@
 	color = initial(tree_material.leaf_color)
 	fruit = initial(tree_material.leaf_fruit)
 	fruit_amount = initial(tree_material.number_of_leaf_fruits)
+
+/// Saplings that grow into tree spawners that make trees, wonderful !
+
+/obj/structure/flora/df_sapling
+	name = "tree sapling"
+	desc = "The sapling of a tree of some sort, this one seems sickly and ill."
+	icon = 'modular_skyrat/modules/dwarf_fortress_other_stuff/icons/trees/saplings.dmi'
+	icon_state = "surfacesapling_base"
+	harvestable = FALSE
+	harvested = TRUE
+	can_uproot = FALSE
+	flora_flags = FLORA_WOODEN
+	/// The type of tree spawner we reference for later
+	var/obj/effect/spawner/dwarf_fortress_tree/tree_spawner_type
+
+/obj/structure/flora/df_sapling/Initialize(mapload)
+	. = ..()
+	if(!tree_spawner_type)
+		return INITIALIZE_HINT_QDEL
+	if(harvested)
+		addtimer(CALLBACK(src, PROC_REF(regrow)), rand(regrowth_time_low, regrowth_time_high))
+	set_up_appearance()
+
+/obj/structure/flora/df_sapling/regrow()
+	new tree_spawner_type(get_turf(src))
+	qdel(src)
+
+/// Sets up how the sapling looks, giving it its stem and colored leaves appropriate to the tree spawner's material
+/obj/structure/flora/df_sapling/proc/set_up_appearance()
+	var/datum/material/dwarf_certified/wood/spawner_material = tree_spawner_type.tree_material
+
+	color = initial(spawner_material.color)
+
+	var/image/overlayed_leaves = image(icon = icon, icon_state = "surfacesapling_top")
+	overlayed_leaves.color = initial(spawner_material.leaf_color)
+	add_overlay(overlayed_item)
