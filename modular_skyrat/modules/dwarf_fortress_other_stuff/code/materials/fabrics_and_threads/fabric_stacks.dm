@@ -79,32 +79,6 @@
 	mats_per_unit = list(/datum/material/dwarf_certified/fabric/cotton = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/fabric/cotton
 
-// FLAX
-
-/obj/item/stack/dwarf_certified/thread/flax
-	name = "spool of flax thread"
-	singular_name = "flax thread"
-
-	desc = "Thread made of flax."
-
-	merge_type = /obj/item/stack/dwarf_certified/thread/flax
-
-	mats_per_unit = list(/datum/material/dwarf_certified/fabric/flax = SHEET_MATERIAL_AMOUNT / 2)
-	material_type = /datum/material/dwarf_certified/fabric/flax
-
-	fabric_we_weave = /obj/item/stack/dwarf_certified/leather_or_cloth/fabric/flax
-
-/obj/item/stack/dwarf_certified/leather_or_cloth/fabric/flax
-	name = "bolt of flax fabric"
-	singular_name = "flax fabric"
-
-	desc = "Fabric made of flax."
-
-	merge_type = /obj/item/stack/dwarf_certified/leather_or_cloth/fabric/flax
-
-	mats_per_unit = list(/datum/material/dwarf_certified/fabric/flax = SHEET_MATERIAL_AMOUNT)
-	material_type = /datum/material/dwarf_certified/fabric/flax
-
 // REED FIBER
 
 /obj/item/stack/dwarf_certified/thread/reed

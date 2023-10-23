@@ -32,6 +32,16 @@
 
 	//if its a seed, lets try to plant
 	if(istype(attacking_item, /obj/item/seeds))
+		var/obj/item/seeds/attacking_seeds = attacking_item
+
+		if(attacking_seeds.special_plant_type)
+			var/locate_plant = locate(attacking_seeds.special_plant_type) in get_turf(atom_parent)
+			if(locate_plant)
+				atom_parent.balloon_alert_to_viewers("cannot plant more seeds here!")
+				return
+			new attacking_seeds.special_plant_type(get_turf(atom_parent))
+			return
+
 		var/obj/structure/simple_farm/locate_farm = locate() in get_turf(atom_parent)
 
 		if(one_per_turf && locate_farm)
@@ -69,14 +79,21 @@
 	///the max amount harvested from the plants
 	var/max_harvest = 3
 	///the cooldown amount between each harvest
-	var/harvest_cooldown = 1 MINUTES
+	var/harvest_cooldown = 5 MINUTES
 	//the cooldown between each harvest
 	COOLDOWN_DECLARE(harvest_timer)
+
+	/// Is the farm deleted when we harvest from it
+	var/deletes_on_harvest = FALSE
+	/// Does the farm spawn ready to harvest? Used for wild plants ready to go out the gate
+	var/spawns_fully_grown = FALSE
+	/// Does the plant give double returns due to being fertilized with potash?
+	var/potash_fertilized = FALSE
 
 /obj/structure/simple_farm/Initialize(mapload)
 	. = ..()
 	START_PROCESSING(SSobj, src)
-	COOLDOWN_START(src, harvest_timer, harvest_cooldown)
+	COOLDOWN_START(src, harvest_timer, (spawns_fully_grown ? 0.1 SECONDS : harvest_cooldown))
 
 /obj/structure/simple_farm/Destroy()
 	STOP_PROCESSING(SSobj, src)
@@ -95,11 +112,11 @@
 
 /obj/structure/simple_farm/examine(mob/user)
 	. = ..()
-	. += span_notice("<br>[src] will be ready for harvest in [DisplayTimeText(COOLDOWN_TIMELEFT(src, harvest_timer))]")
-	if(max_harvest < 6)
-		. += span_notice("<br>You can use sinew or worm fertilizer to lower the time between each harvest!")
-	if(harvest_cooldown > 30 SECONDS)
-		. += span_notice("You can use goliath hides or worm fertilizer to increase the amount dropped per harvest!")
+	. += span_notice("<br>It will be ready for harvest in [DisplayTimeText(COOLDOWN_TIMELEFT(src, harvest_timer))]")
+	if(potash_fertilized)
+		. += span_notice("<br>It has been fertilized and will yield more crop its next harvest!")
+	else
+		. += span_notice("<br>You can use <b>potash</b> to increase the harvest yield!")
 
 /obj/structure/simple_farm/process(seconds_per_tick)
 	update_appearance()
@@ -130,9 +147,9 @@
 		balloon_alert(user, "plant not ready for harvest!")
 		return
 
-	COOLDOWN_START(src, harvest_timer, harvest_cooldown)
 	create_harvest()
 	update_appearance()
+	COOLDOWN_START(src, harvest_timer, (harvest_cooldown + rand(-1.5 MINUTES, 1.5 MINUTES)))
 	return ..()
 
 /obj/structure/simple_farm/attackby(obj/item/attacking_item, mob/user, params)
@@ -143,72 +160,20 @@
 		Destroy()
 		return
 
-	//if its sinew, lower the cooldown
-	else if(istype(attacking_item, /obj/item/stack/sheet/sinew))
-		var/obj/item/stack/sheet/sinew/use_item = attacking_item
+	if(istype(attacking_item, /obj/item/stack/dwarf_certified/powder/potash))
+		if(potash_fertilized)
+			balloon_alert(user, "already fertilized")
+			return
+
+		var/obj/item/stack/dwarf_certified/powder/potash/use_item = attacking_item
 
 		if(!use_item.use(1))
 			return
 
-		decrease_cooldown(user)
-		return
-
-	//if its goliath hide, increase the amount dropped
-	else if(istype(attacking_item, /obj/item/stack/sheet/animalhide/goliath_hide))
-		var/obj/item/stack/sheet/animalhide/goliath_hide/use_item = attacking_item
-
-		if(!use_item.use(1))
-			return
-
-		increase_yield(user)
-		return
-
-	else if(istype(attacking_item, /obj/item/worm_fertilizer))
-		qdel(attacking_item)
-
-		if(!decrease_cooldown(user, silent = TRUE) && !increase_yield(user, silent = TRUE))
-			balloon_alert(user, "plant is already fully upgraded")
-
-		else
-			balloon_alert(user, "plant was upgraded")
-
+		potash_fertilized = TRUE
 		return
 
 	return ..()
-
-/**
- * a proc that will increase the amount of items the crop could produce (at a maximum of 6, from base of 3)
- */
-/obj/structure/simple_farm/proc/increase_yield(mob/user, var/silent = FALSE)
-	if(max_harvest >= 6)
-		if(!silent)
-			balloon_alert(user, "plant is at maximum yield")
-
-		return FALSE
-
-	max_harvest++
-
-	if(!silent)
-		balloon_alert_to_viewers("plant will have increased yield")
-
-	return TRUE
-
-/**
- * a proc that will decrease the amount of time it takes to be ready for harvest (at a maximum of 30 seconds, from a base of 1 minute)
- */
-/obj/structure/simple_farm/proc/decrease_cooldown(mob/user, var/silent = FALSE)
-	if(harvest_cooldown <= 30 SECONDS)
-		if(!silent)
-			balloon_alert(user, "already at maximum growth speed!")
-
-		return FALSE
-
-	harvest_cooldown -= 10 SECONDS
-
-	if(!silent)
-		balloon_alert_to_viewers("plant will grow faster")
-
-	return TRUE
 
 /**
  * used during the component so that it can move when its attached atom moves
@@ -231,19 +196,15 @@
 	if(!planted_seed)
 		return
 
-	for(var/i in 1 to rand(1, max_harvest))
+	if(locate(/datum/plant_gene/trait/repeated_harvest) in planted_seed.genes)
+		deletes_on_harvest = FALSE
+
+	var/amount_of_crop = planted_seed.yield
+	if(potash_fertilized)
+		amount_of_crop = round(amount_of_crop * 1.5, 1)
+
+	for(var/i in 1 to rand(1, amount_of_crop))
 		var/obj/creating_obj
-
-		if(prob(15) && length(planted_seed.mutatelist))
-			var/obj/item/seeds/choose_seed = pick(planted_seed.mutatelist)
-			creating_obj = initial(choose_seed.product)
-
-			if(!creating_obj)
-				creating_obj = choose_seed
-
-			new creating_obj(get_turf(src))
-			balloon_alert_to_viewers("something special drops!")
-			continue
 
 		creating_obj = planted_seed.product
 
@@ -251,6 +212,11 @@
 			creating_obj = planted_seed.type
 
 		new creating_obj(get_turf(src))
+
+	/// You'll have to refertilize after every harvest if you want those gainz
+	potash_fertilized = FALSE
+	if(deletes_on_harvest)
+		qdel(src)
 
 /turf/open/misc/asteroid/basalt/Initialize(mapload)
 	. = ..()

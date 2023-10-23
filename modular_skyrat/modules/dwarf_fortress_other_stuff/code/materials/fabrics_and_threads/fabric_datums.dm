@@ -32,20 +32,6 @@
 	// wood is 0.1, diamond is 0.3, iron is 0, glass is 0.05
 	beauty_modifier = 0.1
 
-/datum/material/dwarf_certified/fabric/flax
-	name = "flax"
-	desc = "Woven from flax, don't bother eating the seeds they don't do anything for you anyways."
-
-	color = "#d4ebd5"
-	greyscale_colors = "#d4ebd5"
-
-	sheet_type = /obj/item/stack/dwarf_certified/leather_or_cloth/fabric/flax
-
-	// wood is 0.1, diamond is 0.3, iron is 0, glass is 0.05
-	beauty_modifier = 0.05
-
-	integrity_modifier = 0.75
-
 /datum/material/dwarf_certified/fabric/reed
 	name = "reed fiber"
 	desc = "Did you know you can make threads and such out of reeds? No? Well now you do."
