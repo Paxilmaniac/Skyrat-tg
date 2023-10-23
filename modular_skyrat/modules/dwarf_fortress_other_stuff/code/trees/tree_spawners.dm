@@ -37,5 +37,16 @@
 		new_leaves.set_up_colors_n_fruits(tree_material)
 		upper_trunk.leaves += new_leaves
 
-/obj/effect/spawner/dwarf_fortress_tree/tea_wood_test
+/// Spawner subtypes start here
+
+/obj/effect/spawner/dwarf_fortress_tree/tea
 	tree_material = /datum/material/dwarf_certified/wood/tea
+
+/obj/effect/spawner/dwarf_fortress_tree/apple
+	tree_material = /datum/material/dwarf_certified/wood/apple
+
+/obj/effect/spawner/dwarf_fortress_tree/nut
+	tree_material = /datum/material/dwarf_certified/wood/korta
+
+/obj/effect/spawner/dwarf_fortress_tree/plum
+	tree_material = /datum/material/dwarf_certified/wood/plum
