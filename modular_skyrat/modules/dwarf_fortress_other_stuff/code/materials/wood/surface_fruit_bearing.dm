@@ -23,7 +23,6 @@
 
 /obj/item/food/grown/tea/Initialize(mapload)
 	. = ..()
-	AddElement(/datum/element/dwarven_plantable, resulting_atom = /obj/structure/flora/df_sapling/tea, plant_time = 5 SECONDS)
 
 /obj/item/stack/dwarf_certified/log/tea
 	name = "tea logs"
@@ -76,7 +75,6 @@
 
 /obj/item/food/grown/apple/Initialize(mapload)
 	. = ..()
-	AddElement(/datum/element/dwarven_plantable, resulting_atom = /obj/structure/flora/df_sapling/apple, plant_time = 5 SECONDS)
 
 /obj/item/stack/dwarf_certified/log/apple
 	name = "apple logs"
@@ -128,7 +126,6 @@
 
 /obj/item/food/grown/korta_nut/Initialize(mapload)
 	. = ..()
-	AddElement(/datum/element/dwarven_plantable, resulting_atom = /obj/structure/flora/df_sapling/nut, plant_time = 5 SECONDS)
 
 /obj/item/stack/dwarf_certified/log/korta
 	name = "korta logs"
@@ -181,7 +178,6 @@
 
 /obj/item/food/grown/plum/Initialize(mapload)
 	. = ..()
-	AddElement(/datum/element/dwarven_plantable, resulting_atom = /obj/structure/flora/df_sapling/plum, plant_time = 5 SECONDS)
 
 /obj/item/stack/dwarf_certified/log/plum
 	name = "plum logs"

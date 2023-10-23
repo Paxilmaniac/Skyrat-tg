@@ -6978,7 +6978,6 @@
 #include "modular_skyrat\modules\dwarf_fortress_other_stuff\code\materials\stones\rocks.dm"
 #include "modular_skyrat\modules\dwarf_fortress_other_stuff\code\materials\wood\basetype.dm"
 #include "modular_skyrat\modules\dwarf_fortress_other_stuff\code\materials\wood\surface_fruit_bearing.dm"
-#include "modular_skyrat\modules\dwarf_fortress_other_stuff\code\plant_edits\dwarven_farming.dm"
 #include "modular_skyrat\modules\dwarf_fortress_other_stuff\code\plant_edits\loomable_plants.dm"
 #include "modular_skyrat\modules\dwarf_fortress_other_stuff\code\plant_edits\wild_harvestable_plants.dm"
 #include "modular_skyrat\modules\dwarf_fortress_other_stuff\code\trees\tree_spawners.dm"
