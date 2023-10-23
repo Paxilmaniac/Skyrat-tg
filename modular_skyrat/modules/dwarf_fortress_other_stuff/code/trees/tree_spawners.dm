@@ -40,14 +40,34 @@
 
 /// Spawner subtypes start here
 
+// Tea
+
 /obj/effect/spawner/dwarf_fortress_tree/tea
 	tree_material = /datum/material/dwarf_certified/wood/tea
+
+/obj/structure/flora/df_sapling/tea
+	tree_spawner_type = /obj/effect/spawner/dwarf_fortress_tree/tea
+
+// Apple
 
 /obj/effect/spawner/dwarf_fortress_tree/apple
 	tree_material = /datum/material/dwarf_certified/wood/apple
 
+/obj/structure/flora/df_sapling/apple
+	tree_spawner_type = /obj/effect/spawner/dwarf_fortress_tree/apple
+
+// Generic (deez) nuts
+
 /obj/effect/spawner/dwarf_fortress_tree/nut
 	tree_material = /datum/material/dwarf_certified/wood/korta
 
+/obj/structure/flora/df_sapling/nut
+	tree_spawner_type = /obj/effect/spawner/dwarf_fortress_tree/nut
+
+// Plum
+
 /obj/effect/spawner/dwarf_fortress_tree/plum
 	tree_material = /datum/material/dwarf_certified/wood/plum
+
+/obj/structure/flora/df_sapling/plum
+	tree_spawner_type = /obj/effect/spawner/dwarf_fortress_tree/plum

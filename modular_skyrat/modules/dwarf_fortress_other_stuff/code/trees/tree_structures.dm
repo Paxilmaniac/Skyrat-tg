@@ -137,4 +137,4 @@
 
 	var/image/overlayed_leaves = image(icon = icon, icon_state = "surfacesapling_top")
 	overlayed_leaves.color = initial(spawner_material.leaf_color)
-	add_overlay(overlayed_item)
+	add_overlay(overlayed_leaves)

@@ -15,7 +15,7 @@
 	obj/item/target,
 	resulting_atom = /obj/item/stack/sheet/cloth,
 	required_turf_types = list(
-		/turf,
+		/turf/open/misc/sandy_dirt,
 	),
 	plant_time = 3 SECONDS
 )
