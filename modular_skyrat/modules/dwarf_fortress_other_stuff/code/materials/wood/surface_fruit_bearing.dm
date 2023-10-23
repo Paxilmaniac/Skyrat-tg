@@ -7,6 +7,8 @@
 	color = "#71675e"
 	greyscale_colors = "#71675e"
 
+	leaf_color = "#8a9b6a"
+
 	leaf_fruit = /obj/effect/spawner/random/food_or_drink/tea_tree_leaves
 
 	sheet_type = /obj/item/stack/dwarf_certified/log/tea
@@ -54,6 +56,8 @@
 
 	color = "#7d5c3c"
 	greyscale_colors = "#7d5c3c"
+
+	leaf_color = "#b8d36d"
 
 	leaf_fruit = /obj/effect/spawner/random/food_or_drink/apple_tree_leaves
 
@@ -149,6 +153,8 @@
 
 	color = "#baab9e"
 	greyscale_colors = "#baab9e"
+
+	leaf_color = "#4d2744"
 
 	leaf_fruit = /obj/effect/spawner/random/food_or_drink/plum_tree_leaves
 
