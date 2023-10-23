@@ -5,18 +5,16 @@
 	/// What will spawn when the item is loomed
 	var/resulting_atom
 	/// How much of item do we need to loom, will be ignored if item isnt a stack
-	var/list/required_turf_types
+	var/list/required_turf_types = list()
 	/// How long it takes to loom the item
 	var/plant_time
 	/// Typecache of turfs that can be planted upon
-	var/list/turf_typecache
+	var/list/turf_typecache = list()
 
 /datum/element/dwarven_plantable/Attach(
 	obj/item/target,
 	resulting_atom = /obj/item/stack/sheet/cloth,
-	required_turf_types = list(
-		/turf/open/misc/sandy_dirt,
-	),
+	required_turf_types = list(/turf/open/misc/sandy_dirt,),
 	plant_time = 3 SECONDS
 )
 	. = ..()
@@ -26,7 +24,7 @@
 	src.resulting_atom = resulting_atom
 	src.required_turf_types = required_turf_types
 	for(var/turf/plantable_turf in required_turf_types)
-		turf_typecache |= typecacheof(plantable_turf)
+		turf_typecache += typecacheof(plantable_turf)
 	src.plant_time = plant_time
 	RegisterSignal(target, COMSIG_ITEM_ATTACK_ATOM, PROC_REF(try_and_plant_me))
 	RegisterSignal(target, COMSIG_ATOM_EXAMINE, PROC_REF(on_examine))
@@ -39,9 +37,9 @@
 /datum/element/dwarven_plantable/proc/on_examine(obj/item/source, mob/examiner, list/examine_list)
 	SIGNAL_HANDLER
 
-	var/list/names_of_all_plantable_turfs
+	var/list/names_of_all_plantable_turfs = list()
 	for(var/turf/plantable_turf in required_turf_types)
-		names_of_all_plantable_turfs |= initial(plantable_turf.name)
+		names_of_all_plantable_turfs += initial(plantable_turf.name)
 
 	examine_list += span_notice("You could <b>plant</b> this in: \a [english_list(names_of_all_plantable_turfs)].")
 

@@ -131,7 +131,7 @@
 
 /// Sets up how the sapling looks, giving it its stem and colored leaves appropriate to the tree spawner's material
 /obj/structure/flora/df_sapling/proc/set_up_appearance()
-	var/datum/material/dwarf_certified/wood/spawner_material = tree_spawner_type.tree_material
+	var/datum/material/dwarf_certified/wood/spawner_material = initial(tree_spawner_type.tree_material)
 
 	color = initial(spawner_material.color)
 
