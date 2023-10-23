@@ -23,8 +23,7 @@
 		return ELEMENT_INCOMPATIBLE
 	src.resulting_atom = resulting_atom
 	src.required_turf_types = required_turf_types
-	for(var/turf/plantable_turf in required_turf_types)
-		turf_typecache += typecacheof(plantable_turf)
+	turf_typecache = typecacheof(required_turf_types)
 	src.plant_time = plant_time
 	RegisterSignal(target, COMSIG_ITEM_ATTACK_ATOM, PROC_REF(try_and_plant_me))
 	RegisterSignal(target, COMSIG_ATOM_EXAMINE, PROC_REF(on_examine))
@@ -41,7 +40,7 @@
 	for(var/turf/plantable_turf in required_turf_types)
 		names_of_all_plantable_turfs += initial(plantable_turf.name)
 
-	examine_list += span_notice("You could <b>plant</b> this in: \a [english_list(names_of_all_plantable_turfs)].")
+	examine_list += span_nicegreen("You could <b>plant</b> this in: [english_list(turf_typecache)].")
 
 /// Checks if the thing we clicked on can be used as a loom, and if we can actually loom the source at present (an example being does the stack have enough in it (if its a stack))
 /datum/element/dwarven_plantable/proc/try_and_plant_me(obj/item/source, turf/target, mob/living/user)
