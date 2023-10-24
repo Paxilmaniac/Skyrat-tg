@@ -1,3 +1,10 @@
+// Oh how I wish so that new items would just fucking fall from a zlevel above like before
+
+/obj/effect/spawner/random/food_or_drink/make_item(spawn_loc, type_path_to_make)
+	var/obj/thing_we_made = new type_path_to_make(spawn_loc)
+	thing_we_made.throw_at(spawn_loc)
+	return thing_we_made
+
 // Tea trees
 
 /datum/material/dwarf_certified/wood/tea

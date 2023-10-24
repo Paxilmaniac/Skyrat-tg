@@ -22,9 +22,8 @@
 	playsound(src, SFX_TREE_CHOP, 50, vary = TRUE)
 
 /obj/structure/tree_bits/trunk/deconstruct(disassembled = FALSE)
-	for(var/iterated_log in 1 to number_of_logs)
-		var/obj/pile_of_logs = new dropped_logs(get_turf(src))
-		pile_of_logs.forceMove(drop_location())
+	var/obj/item/stack/pile_of_logs = new dropped_logs(get_turf(src), number_of_logs)
+	pile_of_logs.throw_at(get_turf(pile_of_logs))
 
 	qdel(src)
 
