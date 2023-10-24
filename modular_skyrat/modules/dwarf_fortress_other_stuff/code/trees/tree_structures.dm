@@ -24,7 +24,7 @@
 /obj/structure/tree_bits/trunk/deconstruct(disassembled = FALSE)
 	for(var/iterated_log in 1 to number_of_logs)
 		var/obj/pile_of_logs = new dropped_logs(get_turf(src))
-		dropItemToGround(pile_of_logs)
+		pile_of_logs.forceMove(drop_location())
 
 	qdel(src)
 
@@ -95,7 +95,8 @@
 	if(prob(chance_bears_fruit))
 		for(var/iterated_fruit in 1 to fruit_amount)
 			var/obj/new_fruit = new fruit(get_turf(src))
-			dropItemToGround(new_fruit)
+			// We need to make the new fruit realize its over openspace so itll fall
+			new_fruit.forceMove(drop_location())
 	qdel(src)
 
 /// Sets the color of the leaves, the fruit, and the amount of fruit based off of a passed wood material datum
