@@ -12,6 +12,8 @@
 	power_equip = TRUE
 	power_light = TRUE
 	requires_power = FALSE
+	static_lighting = FALSE
+	base_lighting_alpha = 255
 
 /area/deep_rock_caves/surface_generator
 	map_generator = /datum/map_generator/dwarf_fortress_surface_generator
@@ -23,6 +25,8 @@
 	ambient_buzz = 'sound/ambience/magma.ogg'
 	min_ambience_cooldown = 70 SECONDS
 	max_ambience_cooldown = 220 SECONDS
+	static_lighting = TRUE
+	base_lighting_alpha = 0
 
 /area/deep_rock_caves/caves/actually_generates/mobless
 	area_flags = UNIQUE_AREA
