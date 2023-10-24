@@ -87,7 +87,7 @@
 		return target_plating // Most executions should end here.
 
 	// If we and the target tile share the same initial baseturf and they consent, replace em.
-	if(!target_plating.allow_replacement || initial(target_plating.baseturfs) != initial(placed_turf_path.baseturfs))
+	if(initial(target_plating.baseturfs) != initial(placed_turf_path.baseturfs))
 		to_chat(user, span_notice("You cannot place this tile here directly!"))
 		return
 	to_chat(user, span_notice("You begin replacing the floor with the tile..."))

@@ -5,7 +5,7 @@
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 	planetary_atmos = TRUE
 	/// The reagent we provide when a container is used on us
-	var/reagent_we_make = /datum/reagent/water
+	var/datum/reagent/reagent_we_make = /datum/reagent/water
 
 /turf/open/water/stream/Initialize(mapload)
 	. = ..()
