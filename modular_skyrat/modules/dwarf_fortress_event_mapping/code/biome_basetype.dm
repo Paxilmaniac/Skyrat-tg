@@ -43,6 +43,8 @@
 		var/atom/picked_feature = pick_weight(weighted_feature_spawn_list)
 
 		for(var/obj/structure/existing_feature in range(2, new_turf))
+			if(istype(picked_feature, /obj/effect/spawner/dwarf_fortress_wild_tree) && istype(existing_feature, /obj/structure/tree_bits/trunk))
+				return
 			if(istype(existing_feature, picked_feature))
 				return
 
