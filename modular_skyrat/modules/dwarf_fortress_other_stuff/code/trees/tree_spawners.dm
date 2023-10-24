@@ -48,13 +48,13 @@
 /obj/structure/flora/df_sapling/tea
 	tree_spawner_type = /obj/effect/spawner/dwarf_fortress_tree/tea
 
-// Apple
+// Tree Berry
 
-/obj/effect/spawner/dwarf_fortress_tree/apple
-	tree_material = /datum/material/dwarf_certified/wood/apple
+/obj/effect/spawner/dwarf_fortress_tree/tree_berry
+	tree_material = /datum/material/dwarf_certified/wood/tree_berry
 
-/obj/structure/flora/df_sapling/apple
-	tree_spawner_type = /obj/effect/spawner/dwarf_fortress_tree/apple
+/obj/structure/flora/df_sapling/tree_berry
+	tree_spawner_type = /obj/effect/spawner/dwarf_fortress_tree/tree_berry
 
 // Generic (deez) nuts
 
@@ -71,3 +71,74 @@
 
 /obj/structure/flora/df_sapling/plum
 	tree_spawner_type = /obj/effect/spawner/dwarf_fortress_tree/plum
+
+// Cacao
+
+/obj/effect/spawner/dwarf_fortress_tree/cacao
+	tree_material = /datum/material/dwarf_certified/wood/cacao
+
+/obj/structure/flora/df_sapling/cacao
+	tree_spawner_type = /obj/effect/spawner/dwarf_fortress_tree/cacao
+
+// lime
+
+/obj/effect/spawner/dwarf_fortress_tree/lime
+	tree_material = /datum/material/dwarf_certified/wood/lime
+
+/obj/structure/flora/df_sapling/lime
+	tree_spawner_type = /obj/effect/spawner/dwarf_fortress_tree/lime
+
+// orange
+
+/obj/effect/spawner/dwarf_fortress_tree/orange
+	tree_material = /datum/material/dwarf_certified/wood/orange
+
+/obj/structure/flora/df_sapling/orange
+	tree_spawner_type = /obj/effect/spawner/dwarf_fortress_tree/orange
+
+// bungofruit
+
+/obj/effect/spawner/dwarf_fortress_tree/bungo
+	tree_material = /datum/material/dwarf_certified/wood/bungo
+
+/obj/structure/flora/df_sapling/bungo
+	tree_spawner_type = /obj/effect/spawner/dwarf_fortress_tree/bungo
+
+// Picks from a list of tree spawners to use
+
+/obj/effect/spawner/dwarf_fortress_wild_tree
+	name = "random wild tree spawner"
+
+	/// List of all seeds that can be spawned as plants
+	var/list/trees_we_can_spawn = list(
+		/obj/effect/spawner/dwarf_fortress_tree/tea,
+		/obj/effect/spawner/dwarf_fortress_tree/tree_berry,
+		/obj/effect/spawner/dwarf_fortress_tree/nut,
+		/obj/effect/spawner/dwarf_fortress_tree/plum,
+		/obj/effect/spawner/dwarf_fortress_tree/cacao,
+		/obj/effect/spawner/dwarf_fortress_tree/lime,
+		/obj/effect/spawner/dwarf_fortress_tree/orange,
+		/obj/effect/spawner/dwarf_fortress_tree/bungo,
+	)
+
+/obj/effect/spawner/dwarf_fortress_wild_tree/Initialize(mapload)
+	. = ..()
+
+	var/spawner_we_are_using = pick(trees_we_can_spawn)
+	new spawner_we_are_using(get_turf(src))
+	return INITIALIZE_HINT_QDEL
+
+// Same as above except we just pick saplings vs the whole tree
+
+/obj/effect/spawner/dwarf_fortress_wild_tree/sapling
+	name = "random wild tree sapling spawner"
+	trees_we_can_spawn = list(
+		/obj/structure/flora/df_sapling/tea,
+		/obj/structure/flora/df_sapling/tree_berry,
+		/obj/structure/flora/df_sapling/nut,
+		/obj/structure/flora/df_sapling/plum,
+		/obj/structure/flora/df_sapling/cacao,
+		/obj/structure/flora/df_sapling/lime,
+		/obj/structure/flora/df_sapling/orange,
+		/obj/structure/flora/df_sapling/bungo,
+	)

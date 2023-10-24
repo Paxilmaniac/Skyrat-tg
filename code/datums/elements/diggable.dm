@@ -17,9 +17,9 @@
 	. = ..()
 	if(!isturf(target))
 		return ELEMENT_INCOMPATIBLE
-	if(!to_spawn)
-		stack_trace("[type] wasn't passed a typepath to spawn attaching to [target].")
-		return ELEMENT_INCOMPATIBLE
+	//if(!to_spawn) // DF EVENT EDIT ALL THIS COMMENTED OUT CODE
+		//stack_trace("[type] wasn't passed a typepath to spawn attaching to [target].")
+		//return ELEMENT_INCOMPATIBLE
 
 	src.to_spawn = to_spawn
 	src.amount = amount
@@ -38,7 +38,8 @@
 	SIGNAL_HANDLER
 
 	for(var/i in 1 to amount)
-		new to_spawn(source)
+		if(to_spawn) // DF EVENT EDIT
+			new to_spawn(source) // DF EVENT EDIT
 	if (prob(worm_chance))
 		new /obj/item/food/bait/worm(source)
 

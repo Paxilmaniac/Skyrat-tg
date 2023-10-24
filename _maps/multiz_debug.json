@@ -2,7 +2,11 @@
 	"version": 1,
 	"map_name": "MultiZ Debug",
 	"map_path": "map_files/debug",
-	"map_file": "multiz.dmm",
+	"map_file": "cavetest.dmm",
+	"space_ruin_levels": 0,
+	"space_empty_levels": 0,
+	"planetary": 1,
+	"minetype": "none",
 	"ignored_unit_tests": [
 		"/datum/unit_test/job_roundstart_spawnpoints",
 		"/datum/unit_test/required_map_items"
@@ -10,18 +14,28 @@
 	"traits": [
 		{
 			"Up": true,
-			"Linkage": "Cross"
+			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"Baseturf": "/turf/open/misc/dirt/dwarf_fortress/stone",
+			"No Parallax": true
 		},
 		{
 			"Up": true,
 			"Down": true,
-			"Baseturf": "/turf/open/openspace",
-			"Linkage": "Cross"
+			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"No Parallax": true,
+			"Baseturf": "/turf/open/openspace/planetary"
 		},
 		{
 			"Down": true,
-			"Baseturf": "/turf/open/openspace",
-			"Linkage": "Cross"
+			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"No Parallax": true,
+			"Baseturf": "/turf/open/openspace/planetary"
 		}
 	]
 }

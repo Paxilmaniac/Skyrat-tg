@@ -52,27 +52,27 @@
 	mats_per_unit = list(/datum/material/dwarf_certified/powder/sand/yellow = SHEET_MATERIAL_AMOUNT)
 	material_type = /datum/material/dwarf_certified/powder/sand/yellow
 
-// Red sand
+// White sand
 
-/datum/material/dwarf_certified/powder/sand/red
-	name = "red sand"
-	desc = "The sandiest sand there is, this one is in red flavor"
+/datum/material/dwarf_certified/powder/sand/white
+	name = "white sand"
+	desc = "The sandiest sand there is, this one is in white flavor"
 
-	color = "#d65d5d"
-	greyscale_colors = "#d65d5d"
+	color = "#ffffff"
+	greyscale_colors = "#ffffff"
 
-	sheet_type = /obj/item/stack/dwarf_certified/powder/sand/red
+	sheet_type = /obj/item/stack/dwarf_certified/powder/sand/white
 
-/obj/item/stack/dwarf_certified/powder/sand/red
-	name = "red sand pile"
-	singular_name = "red sand pile"
+/obj/item/stack/dwarf_certified/powder/sand/white
+	name = "white sand pile"
+	singular_name = "white sand pile"
 
-	desc = "A pile of sand. This one is red flavor."
+	desc = "A pile of sand. This one is white flavor."
 
-	merge_type = /obj/item/stack/dwarf_certified/powder/sand/red
+	merge_type = /obj/item/stack/dwarf_certified/powder/sand/white
 
-	mats_per_unit = list(/datum/material/dwarf_certified/powder/sand/red = SHEET_MATERIAL_AMOUNT)
-	material_type = /datum/material/dwarf_certified/powder/sand/red
+	mats_per_unit = list(/datum/material/dwarf_certified/powder/sand/white = SHEET_MATERIAL_AMOUNT)
+	material_type = /datum/material/dwarf_certified/powder/sand/white
 
 // Black sand
 

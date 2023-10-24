@@ -23,7 +23,7 @@
 
 /obj/structure/tree_bits/trunk/deconstruct(disassembled = FALSE)
 	for(var/iterated_log in 1 to number_of_logs)
-		new dropped_logs(drop_location())
+		new dropped_logs(get_turf(src))
 
 	qdel(src)
 
@@ -93,7 +93,7 @@
 /obj/structure/tree_bits/leaves/deconstruct(disassembled = FALSE)
 	if(prob(chance_bears_fruit))
 		for(var/iterated_fruit in 1 to fruit_amount)
-			new fruit(drop_location())
+			new fruit(get_turf(src))
 
 	qdel(src)
 

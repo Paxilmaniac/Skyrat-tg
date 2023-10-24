@@ -71,7 +71,7 @@
  * * target_plating - Instance of the plating we want to place on. Replaced during sucessful executions.
  * * user - The mob doing the placing.
  */
-/obj/item/stack/tile/proc/place_tile(turf/open/floor/plating/target_plating, mob/user)
+/obj/item/stack/tile/proc/place_tile(turf/open/misc/target_plating, mob/user) // DF EVENT EDIT TARGET PLATING WAS CHANGED TO MISC INSTEAD OF METAL PLATING
 	var/turf/placed_turf_path = turf_type
 	if(!ispath(placed_turf_path))
 		return
