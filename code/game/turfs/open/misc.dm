@@ -32,6 +32,9 @@
 	else if(istype(W, /obj/item/stack/tile/iron))
 		build_with_floor_tiles(W, user)
 		return TRUE
+	else if(istype(W, /obj/item/stack/tile)) // DF EVENT ADDITION
+		var/obj/item/stack/tile/tile = W // I WANT TO PLACE TILES ON THE FLOOR
+		tile.place_tile(src, user) // IS IT REALLY THAT HARD?
 
 /turf/open/misc/attack_paw(mob/user, list/modifiers)
 	return attack_hand(user, modifiers)

@@ -124,6 +124,9 @@
 		build_with_transport_tiles(C, user)
 	else if(istype(C, /obj/item/stack/sheet/mineral/titanium))
 		build_with_titanium(C, user)
+	else if(istype(C, /obj/item/stack/tile)) // DF EVENT ADDITION
+		var/obj/item/stack/tile/tile = C // I WANT TO PLACE TILES ON THE FLOOR
+		tile.place_tile(src, user) // IS IT REALLY THAT HARD?
 
 /turf/open/openspace/build_with_floor_tiles(obj/item/stack/tile/iron/used_tiles)
 	if(!CanCoverUp())
