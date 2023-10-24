@@ -196,9 +196,6 @@
 	if(!planted_seed)
 		return
 
-	if(locate(/datum/plant_gene/trait/repeated_harvest) in planted_seed.genes)
-		deletes_on_harvest = FALSE
-
 	var/amount_of_crop = planted_seed.yield
 	if(potash_fertilized)
 		amount_of_crop = round(amount_of_crop * 1.5, 1)

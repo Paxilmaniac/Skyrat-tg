@@ -26,6 +26,8 @@
 	var/seed_we_are_using = pick(seeds_we_can_spawn)
 	wild_crop.planted_seed = new seed_we_are_using(wild_crop)
 	wild_crop.update_appearance()
+	// All of the wild plants should be one harvest only just to encourage farming
+	wild_crop.deletes_on_harvest = TRUE
 	return INITIALIZE_HINT_QDEL
 
 /obj/structure/simple_farm/spawns_grown
