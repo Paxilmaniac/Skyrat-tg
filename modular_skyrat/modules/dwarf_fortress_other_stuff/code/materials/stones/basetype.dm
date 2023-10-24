@@ -60,7 +60,7 @@ GLOBAL_LIST_INIT(dwarf_brick_recipes, list(
 	beauty_modifier = 0.1
 
 	item_sound_override = null
-	turf_sound_override = FOOTSTEP_FLOOR
+	turf_sound_override = null
 
 /obj/item/stack/dwarf_certified/rock
 	name = "generic boulder"

@@ -22,8 +22,8 @@
 	playsound(src, SFX_TREE_CHOP, 50, vary = TRUE)
 
 /obj/structure/tree_bits/trunk/deconstruct(disassembled = FALSE)
-	var/obj/item/stack/pile_of_logs = new dropped_logs(get_turf(src), number_of_logs)
-	pile_of_logs.throw_at(get_turf(pile_of_logs))
+	for(var/iterated_log in 1 to number_of_logs)
+		new dropped_logs (get_turf(src))
 
 	qdel(src)
 
@@ -93,9 +93,7 @@
 /obj/structure/tree_bits/leaves/deconstruct(disassembled = FALSE)
 	if(prob(chance_bears_fruit))
 		for(var/iterated_fruit in 1 to fruit_amount)
-			var/obj/new_fruit = new fruit(get_turf(src))
-			// We need to make the new fruit realize its over openspace so itll fall
-			new_fruit.forceMove(drop_location())
+			var/obj/new_fruit = new fruit (get_turf(src))
 	qdel(src)
 
 /// Sets the color of the leaves, the fruit, and the amount of fruit based off of a passed wood material datum
