@@ -10,6 +10,16 @@ GLOBAL_LIST_INIT(dwarf_glass_recipes, list(
 	on_solid_ground = TRUE, \
 	applies_mats = TRUE \
 	), \
+	new /datum/stack_recipe( \
+	"stairs", \
+	/obj/structure/stairs/material, \
+	req_amount = 1, \
+	time = 3 SECONDS, \
+	one_per_turf = TRUE, \
+	on_solid_ground = TRUE, \
+	applies_mats = TRUE, \
+	category = CAT_STRUCTURE \
+	), \
 ))
 
 // MATERIAL DATUM

@@ -117,6 +117,6 @@
 /obj/item/food/proc/make_germ_sensitive(mapload)
 	if(!isnull(trash_type))
 		return // You don't eat the package and it protects from decomposing
-	AddComponent(/datum/component/germ_sensitive, mapload)
+	// AddComponent(/datum/component/germ_sensitive, mapload) // DF EDIT THIS KINDA SUCKS FOR SPECIFICALLY THIS OK?
 	if(!preserved_food)
 		AddComponent(/datum/component/decomposition, mapload, decomp_req_handle, decomp_flags = foodtypes, decomp_result = decomp_type, ant_attracting = ant_attracting, custom_time = decomposition_time, stink_particles = decomposition_particles)

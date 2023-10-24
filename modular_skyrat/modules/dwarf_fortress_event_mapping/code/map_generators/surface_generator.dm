@@ -22,7 +22,7 @@
 	var/closed = FALSE
 
 	// Surely this can only go well
-	spawn_rivers(generate_in.z, 7, /turf/open/water/stream, generate_in, 0, 0, 382, 382)
+	spawn_rivers(generate_in.z, 7, /turf/open/water/stream, generate_in, 1, 1, 318, 318)
 
 	for(var/iterated_turf in turfs) //Go through all the turfs and generate them
 		if(!istype(iterated_turf, /turf/open/genturf))
