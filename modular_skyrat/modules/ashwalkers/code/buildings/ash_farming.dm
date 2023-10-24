@@ -98,9 +98,7 @@
 /obj/structure/simple_farm/Destroy()
 	STOP_PROCESSING(SSobj, src)
 
-	if(planted_seed)
-		planted_seed.forceMove(get_turf(src))
-		planted_seed = null
+	QDEL_NULL(planted_seed)
 
 	if(attached_atom)
 		if(ismovable(attached_atom))
