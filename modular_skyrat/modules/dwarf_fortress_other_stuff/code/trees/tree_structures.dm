@@ -24,7 +24,7 @@
 /obj/structure/tree_bits/trunk/deconstruct(disassembled = FALSE)
 	for(var/iterated_log in 1 to number_of_logs)
 		var/obj/pile_of_logs = new dropped_logs(get_turf(src))
-		pile_of_logs.throw_at(get_turf(src))
+		dropItemToGround(pile_of_logs)
 
 	qdel(src)
 
@@ -95,7 +95,7 @@
 	if(prob(chance_bears_fruit))
 		for(var/iterated_fruit in 1 to fruit_amount)
 			var/obj/new_fruit = new fruit(get_turf(src))
-			new_fruit.throw_at(get_turf(src))
+			dropItemToGround(new_fruit)
 	qdel(src)
 
 /// Sets the color of the leaves, the fruit, and the amount of fruit based off of a passed wood material datum
@@ -108,7 +108,7 @@
 
 /obj/structure/flora/df_sapling
 	name = "tree sapling"
-	desc = "The sapling of a tree of some sort, this one seems sickly and ill."
+	desc = "The sapling of a tree of some sort. One day it'll grow into a full tree, that time just happens to not be this very moment."
 	icon = 'modular_skyrat/modules/dwarf_fortress_other_stuff/icons/trees/saplings.dmi'
 	icon_state = "surfacesapling_base"
 	harvestable = FALSE

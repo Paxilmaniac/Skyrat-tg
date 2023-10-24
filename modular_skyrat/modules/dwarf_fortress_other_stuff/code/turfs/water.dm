@@ -4,6 +4,8 @@
 	baseturfs = /turf/baseturf_bottom
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 	planetary_atmos = TRUE
+	color = "#a7e9ff"
+	immerse_overlay_color = "#2c654f"
 	/// The reagent we provide when a container is used on us
 	var/datum/reagent/reagent_we_make = /datum/reagent/water
 
@@ -55,6 +57,8 @@
 	name = "stagnant salt pond"
 	desc = "Murky, kinda gross looking water that smells of salt. In better news, you can boil the water to get salt, how useful!"
 	reagent_we_make = /datum/reagent/water/salt
+	color = "#ffffff"
+	immerse_overlay_color = "#5AAA88"
 
 /turf/open/water/stream/stagnant_pond/make_fishable()
 	AddElement(/datum/element/lazy_fishing_spot, /datum/fish_source/stagnant_pond)
