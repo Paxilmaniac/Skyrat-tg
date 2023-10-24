@@ -14,8 +14,8 @@
 	)
 
 	mob_spawn_chance = 0
-	flora_spawn_chance = 15
-	feature_spawn_chance = 12.5
+	flora_spawn_chance = 9
+	feature_spawn_chance = 3
 
 /datum/biome/dwarf_fortress/surface_forest/hillside
 	weighted_flora_spawn_list = list(
@@ -27,8 +27,8 @@
 	)
 
 	mob_spawn_chance = 0
-	flora_spawn_chance = 17.5
-	feature_spawn_chance = 17.5
+	flora_spawn_chance = 7.5
+	feature_spawn_chance = 1
 
 /datum/biome/dwarf_fortress/surface_forest/hillside/top
 	weighted_open_turf_types = list(
@@ -44,5 +44,5 @@
 	)
 
 	mob_spawn_chance = 0
-	flora_spawn_chance = 17.5
-	feature_spawn_chance = 3
+	flora_spawn_chance = 5
+	feature_spawn_chance = 0.5

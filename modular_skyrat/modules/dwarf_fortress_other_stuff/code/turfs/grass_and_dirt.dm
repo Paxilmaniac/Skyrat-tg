@@ -59,11 +59,15 @@
 		translation.Translate(-9, -9)
 		transform = translation
 	make_diggable()
-	AddComponent(/datum/component/simple_farm)
+	make_farmable()
 
 /// Adds the diggable element, and lets us tweak it for different turfs
 /turf/open/misc/dirt/dwarf_fortress/proc/make_diggable()
 	AddElement(/datum/element/diggable, null, 0, 0)
+
+/// Adds the simple farming component
+/turf/open/misc/dirt/dwarf_fortress/proc/make_farmable()
+	AddComponent(/datum/component/simple_farm)
 
 /turf/open/misc/dirt/dwarf_fortress/sandy_loam
 	name = "sandy loam"
@@ -79,19 +83,24 @@
 	canSmoothWith = SMOOTH_GROUP_FLOOR_GRASS + SMOOTH_GROUP_CLOSED_TURFS + SMOOTH_GROUP_FLOOR_ASH + SMOOTH_GROUP_FLOOR_ASH_ROCKY
 	layer = HIGH_TURF_LAYER + 0.007
 	material_flags = MATERIAL_EFFECTS | MATERIAL_COLOR | MATERIAL_ADD_PREFIX
-	custom_materials = list(/datum/material/dwarf_certified/powder/sand/yellow = SHEET_MATERIAL_AMOUNT)
+	/// The type of material that this spawns with
+	var/datum/material/turf_material = /obj/item/stack/dwarf_certified/powder/sand/yellow
+
+/turf/open/misc/dirt/dwarf_fortress/sand/Initialize(mapload)
+	. = ..()
+	set_custom_materials(list(GET_MATERIAL_REF(turf_material) = SHEET_MATERIAL_AMOUNT))
 
 /turf/open/misc/dirt/dwarf_fortress/sand/make_diggable()
 	AddElement(/datum/element/diggable, /obj/item/stack/dwarf_certified/powder/sand/yellow, 1, 0)
 
 /turf/open/misc/dirt/dwarf_fortress/sand/white
-	custom_materials = list(/datum/material/dwarf_certified/powder/sand/white = SHEET_MATERIAL_AMOUNT)
+	turf_material = /datum/material/dwarf_certified/powder/sand/white
 
 /turf/open/misc/dirt/dwarf_fortress/sand/white/make_diggable()
 	AddElement(/datum/element/diggable, /obj/item/stack/dwarf_certified/powder/sand/white, 1, 0)
 
 /turf/open/misc/dirt/dwarf_fortress/sand/black
-	custom_materials = list(/datum/material/dwarf_certified/powder/sand/black = SHEET_MATERIAL_AMOUNT)
+	turf_material = /datum/material/dwarf_certified/powder/sand/black
 
 /turf/open/misc/dirt/dwarf_fortress/sand/black/make_diggable()
 	AddElement(/datum/element/diggable, /obj/item/stack/dwarf_certified/powder/sand/black, 1, 0)

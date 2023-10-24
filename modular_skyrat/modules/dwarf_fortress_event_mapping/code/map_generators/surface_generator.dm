@@ -35,13 +35,13 @@
 		switch(biome_type)
 			if(0 to 0.05)
 				selected_biome = BIOME_SALT_POND
-			if(0.05 to 0.08)
+			if(0.05 to 0.1)
 				selected_biome = BIOME_POND_SAND_SURROUNDINGS
-			if(0.08 to 0.7)
+			if(0.1 to 0.7)
 				selected_biome = BIOME_FOREST
-			if(0.7 to 0.75)
+			if(0.7 to 0.8)
 				selected_biome = BIOME_HILL_SURROUNDINGS
-			if(0.75 to 1)
+			if(0.8 to 1)
 				selected_biome = BIOME_HILL
 
 		selected_biome = SSmapping.biomes[selected_biome] //Get the instance of this biome from SSmapping
