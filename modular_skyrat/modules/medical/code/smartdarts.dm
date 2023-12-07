@@ -34,7 +34,7 @@
 		to_chat(user, span_warning("You cannot directly remove reagents from [target]!"))
 		return SECONDARY_ATTACK_CONTINUE_CHAIN
 
-	var/trans = target.reagents.trans_to(src, amount_per_transfer_from_this, transfered_by = user) // transfer from, transfer to - who cares?
+	var/trans = target.reagents.trans_to(src, amount_per_transfer_from_this, transferred_by = user) // transfer from, transfer to - who cares?
 	to_chat(user, span_notice("You fill [src] with [trans] units of the solution. It now contains [reagents.total_volume] units."))
 
 	return SECONDARY_ATTACK_CONTINUE_CHAIN
@@ -47,12 +47,14 @@
 	icon = 'modular_skyrat/modules/medical/icons/obj/dartguns.dmi'
 	icon_state = "smartdartgun"
 	worn_icon_state = "medicalsyringegun"
-	has_gun_safety = TRUE
 	item_flags = null
 
 /obj/item/gun/syringe/smartdart/Initialize(mapload)
 	. = ..()
 	chambered = new /obj/item/ammo_casing/syringegun/dart(src)
+
+/obj/item/gun/syringe/smartdart/give_gun_safeties()
+	return
 
 /obj/item/gun/syringe/smartdart/attackby(obj/item/container, mob/user, params, show_msg = TRUE)
 	if(istype(container, /obj/item/reagent_containers/syringe/smartdart))
@@ -90,7 +92,7 @@
 		/datum/reagent/medicine/morphine,
 	)
 
-/obj/projectile/bullet/dart/syringe/dart/on_hit(atom/target, blocked = FALSE)
+/obj/projectile/bullet/dart/syringe/dart/on_hit(atom/target, blocked = 0, pierce_hit)
 	if(!iscarbon(target))
 		..(target, blocked)
 		reagents.flags &= ~(NO_REACT)

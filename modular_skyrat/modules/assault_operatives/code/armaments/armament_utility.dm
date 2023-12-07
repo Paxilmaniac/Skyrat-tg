@@ -7,7 +7,7 @@
 	cost = 1
 
 /datum/armament_entry/assault_operatives/utility/thermals
-	item_type = /obj/item/clothing/glasses/thermal
+	item_type = /obj/item/clothing/glasses/thermal/syndi
 	cost = 4
 
 /datum/armament_entry/assault_operatives/utility/chem_keycard
@@ -27,7 +27,7 @@
 	cost = 3
 
 /datum/armament_entry/assault_operatives/utility/pouch
-	item_type = /obj/item/storage/bag/ammo
+	item_type = /obj/item/storage/pouch/ammo
 	cost = 1
 
 /datum/armament_entry/assault_operatives/utility/noslip

@@ -1,5 +1,4 @@
 /datum/mutation
-
 	var/name
 
 /datum/mutation/human
@@ -125,7 +124,7 @@
 /datum/mutation/human/proc/get_visual_indicator()
 	return
 
-/datum/mutation/human/proc/on_life(delta_time, times_fired)
+/datum/mutation/human/proc/on_life(seconds_per_tick, times_fired)
 	return
 
 /datum/mutation/human/proc/on_losing(mob/living/carbon/human/owner)
@@ -178,7 +177,7 @@
  * returns an instance of a power if modification was complete
  */
 /datum/mutation/human/proc/modify()
-	if(modified || !power_path || !owner)
+	if(modified || !power_path || QDELETED(owner))
 		return
 	var/datum/action/cooldown/modified_power = locate(power_path) in owner.actions
 	if(!modified_power)

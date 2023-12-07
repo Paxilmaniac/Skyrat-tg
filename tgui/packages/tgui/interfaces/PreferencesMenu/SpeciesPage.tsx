@@ -19,6 +19,7 @@ const FOOD_ICONS = {
   [Food.Nuts]: 'seedling',
   [Food.Raw]: 'drumstick-bite',
   [Food.Seafood]: 'fish',
+  [Food.Stone]: 'gem',
   [Food.Sugar]: 'candy-cane',
   [Food.Toxic]: 'biohazard',
   [Food.Vegetables]: 'carrot',
@@ -38,6 +39,7 @@ const FOOD_NAMES: Record<keyof typeof FOOD_ICONS, string> = {
   [Food.Nuts]: 'Nuts',
   [Food.Raw]: 'Raw',
   [Food.Seafood]: 'Seafood',
+  [Food.Stone]: 'Rocks',
   [Food.Sugar]: 'Sugar',
   [Food.Toxic]: 'Toxic food',
   [Food.Vegetables]: 'Vegetables',
@@ -212,14 +214,11 @@ const SpeciesPerks = (props: { perks: Species['perks'] }) => {
   );
 };
 
-const SpeciesPageInner = (
-  props: {
-    handleClose: () => void;
-    species: ServerData['species'];
-  },
-  context
-) => {
-  const { act, data } = useBackend<PreferencesMenuData>(context);
+const SpeciesPageInner = (props: {
+  handleClose: () => void;
+  species: ServerData['species'];
+}) => {
+  const { act, data } = useBackend<PreferencesMenuData>();
   const setSpecies = createSetPreference(act, 'species');
 
   let species: [string, Species][] = Object.entries(props.species).map(
@@ -310,7 +309,7 @@ const SpeciesPageInner = (
                         /* SKYRAT EDIT START - Scrollable description */
                         title="Description"
                         maxHeight="14vh"
-                        overflowY="auto"
+                        scrollable:true
                         /* SKYRAT EDIT END*/
                       >
                         {currentSpecies.desc}

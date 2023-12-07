@@ -7,6 +7,10 @@
 		"malfunction",
 		"default",
 		"ntos",
+		"ntos_darkmode",
+		"ntOS95",
+		"ntos_synth",
+		"ntos_terminal",
 		"wizard",
 	)
 	///What theme is currently being used on the NIF?
@@ -22,6 +26,11 @@
 /obj/item/organ/internal/cyberimp/brain/nif/ui_state(mob/user)
 	return GLOB.conscious_state
 
+/obj/item/organ/internal/cyberimp/brain/nif/ui_status(mob/user)
+	if(user == linked_mob)
+		return UI_INTERACTIVE
+	return UI_CLOSE
+
 /obj/item/organ/internal/cyberimp/brain/nif/ui_static_data(mob/user)
 	var/list/data = list()
 
@@ -35,6 +44,9 @@
 			"activation_cost" = nifsoft.activation_cost,
 			"active_cost" = nifsoft.active_cost,
 			"reference" = REF(nifsoft),
+			"ui_icon" = nifsoft.ui_icon,
+			"able_to_keep" = nifsoft.able_to_keep,
+			"keep_installed" = nifsoft.keep_installed,
 		)
 		data["loaded_nifsofts"] += list(nifsoft_data)
 
@@ -44,6 +56,7 @@
 	data["max_power"] = max_power_level
 	data["max_blood_level"] = linked_mob.blood_volume_normal
 	data["product_notes"] = manufacturer_notes
+	data["stored_points"] = rewards_points
 
 	return data
 
@@ -67,13 +80,6 @@
 	//Durability Variables.
 	data["durability"] = durability
 
-	var/datum/component/nif_examine/examine_component = linked_mob.GetComponent(/datum/component/nif_examine)
-	if(!examine_component)
-		data["examine_text"] = ""
-
-	else
-		data["examine_text"] = examine_component.nif_examine_text
-
 	return data
 
 /obj/item/organ/internal/cyberimp/brain/nif/ui_act(action, list/params)
@@ -96,7 +102,7 @@
 				return FALSE
 
 			if(!text_to_use || length(text_to_use) <= 6)
-				examine_datum.nif_examine_text = span_purple("<b>There's a certain spark to their eyes.<b>")
+				examine_datum.nif_examine_text = "There's a certain spark to their eyes."
 				return FALSE
 
 			examine_datum.nif_examine_text = text_to_use
@@ -115,6 +121,8 @@
 				return FALSE
 
 			current_theme = target_theme
+			for(var/datum/nifsoft/installed_nifsoft as anything in loaded_nifsofts)
+				installed_nifsoft.update_theme()
 
 		if("activate_nifsoft")
 			var/datum/nifsoft/activated_nifsoft = locate(params["activated_nifsoft"]) in loaded_nifsofts
@@ -122,3 +130,11 @@
 				return FALSE
 
 			activated_nifsoft.activate()
+
+		if("toggle_keeping_nifsoft")
+			var/datum/nifsoft/nifsoft_to_keep = locate(params["nifsoft_to_keep"]) in loaded_nifsofts
+			if(!nifsoft_to_keep || !nifsoft_to_keep.able_to_keep)
+				return FALSE
+
+			nifsoft_to_keep.keep_installed = !nifsoft_to_keep.keep_installed
+			update_static_data_for_all_viewers()

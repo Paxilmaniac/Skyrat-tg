@@ -13,11 +13,12 @@
 	///Required chemicals that must be present in the container but are not USED.
 	var/list/required_catalysts = new/list()
 
-	// Both of these variables are mostly going to be used with slime cores - but if you want to, you can use them for other things
-	/// the exact container path required for the reaction to happen
-	var/required_container
-	/// an integer required for the reaction to happen
-	var/required_other = 0
+	/// If required_container will check for the exact type, or will also accept subtypes
+	var/required_container_accepts_subtypes = FALSE
+	/// If required_container_accepts_subtypes is FALSE, the exact type of what container this reaction can take place in. Otherwise, what type including subtypes are acceptable.
+	var/atom/required_container
+	/// Set this to true to call pre_reaction_other_checks() on react and do some more interesting reaction logic
+	var/required_other = FALSE
 
 	///Determines if a chemical reaction can occur inside a mob
 	var/mob_react = TRUE
@@ -80,7 +81,14 @@
 /datum/chemical_reaction/proc/update_info()
 	return
 
+
 ///REACTION PROCS
+
+/**
+ * Checks if this reaction can occur. Only is ran if required_other is set to TRUE.
+ */
+/datum/chemical_reaction/proc/pre_reaction_other_checks(datum/reagents/holder)
+	return TRUE
 
 /**
  * Shit that happens on reaction
@@ -160,7 +168,7 @@
 		var/cached_purity = reagent.purity
 		if((reaction_flags & REACTION_CLEAR_INVERSE) && reagent.inverse_chem)
 			if(reagent.inverse_chem_val > reagent.purity)
-				holder.remove_reagent(reagent.type, cached_volume, FALSE)
+				holder.remove_reagent(reagent.type, cached_volume, safety = FALSE)
 				holder.add_reagent(reagent.inverse_chem, cached_volume, FALSE, added_purity = reagent.get_inverse_purity(cached_purity))
 				return
 
@@ -178,10 +186,10 @@
  */
 /datum/chemical_reaction/proc/overheated(datum/reagents/holder, datum/equilibrium/equilibrium, step_volume_added)
 	for(var/id in results)
-		var/datum/reagent/reagent = holder.get_reagent(id)
+		var/datum/reagent/reagent = holder.has_reagent(id)
 		if(!reagent)
 			return
-		reagent.volume = round((reagent.volume*0.98), 0.01) //Slowly lower yield per tick
+		reagent.volume = round((reagent.volume * 0.98), CHEMICAL_QUANTISATION_LEVEL) //Slowly lower yield per tick
 
 /**
  * Occurs when a reation is too impure (i.e. it's below purity_min)
@@ -198,7 +206,7 @@
 /datum/chemical_reaction/proc/overly_impure(datum/reagents/holder, datum/equilibrium/equilibrium, step_volume_added)
 	var/affected_list = results + required_reagents
 	for(var/_reagent in affected_list)
-		var/datum/reagent/reagent = holder.get_reagent(_reagent)
+		var/datum/reagent/reagent = holder.has_reagent(_reagent)
 		if(!reagent)
 			continue
 		reagent.purity = clamp((reagent.purity-0.01), 0, 1) //slowly reduce purity of reagents
@@ -215,7 +223,7 @@
  * * mob_faction - used in determining targets, mobs from the same faction won't harm eachother.
  * * random - creates random mobs. self explanatory.
  */
-/datum/chemical_reaction/proc/chemical_mob_spawn(datum/reagents/holder, amount_to_spawn, reaction_name, mob_class = HOSTILE_SPAWN, mob_faction = "chemicalsummon", random = TRUE)
+/datum/chemical_reaction/proc/chemical_mob_spawn(datum/reagents/holder, amount_to_spawn, reaction_name, mob_class = HOSTILE_SPAWN, mob_faction = FACTION_CHEMICAL_SUMMON, random = TRUE)
 	if(holder?.my_atom)
 		var/atom/A = holder.my_atom
 		var/turf/T = get_turf(A)

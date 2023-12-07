@@ -1,5 +1,6 @@
-import { useBackend } from '../../backend';
 import { Box, Button, Flex } from '../../components';
+
+import { useBackend } from '../../backend';
 
 type InputButtonsData = {
   large_buttons: boolean;
@@ -7,12 +8,12 @@ type InputButtonsData = {
 };
 
 type InputButtonsProps = {
-  input: string | number;
+  input: string | number | string[];
   message?: string;
 };
 
-export const InputButtons = (props: InputButtonsProps, context) => {
-  const { act, data } = useBackend<InputButtonsData>(context);
+export const InputButtons = (props: InputButtonsProps) => {
+  const { act, data } = useBackend<InputButtonsData>();
   const { large_buttons, swapped_buttons } = data;
   const { input, message } = props;
   const submitButton = (

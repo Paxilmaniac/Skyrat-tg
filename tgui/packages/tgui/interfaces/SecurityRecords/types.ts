@@ -4,6 +4,8 @@ export type SecurityRecordsData = {
   assigned_view: string;
   authenticated: BooleanLike;
   available_statuses: string[];
+  current_user: string;
+  higher_access: BooleanLike;
   records: SecurityRecord[];
   min_age: number;
   max_age: number;
@@ -21,7 +23,9 @@ export type SecurityRecord = {
   rank: string;
   species: string;
   wanted_status: string;
+  voice: string;
   // SKYRAT EDIT START - RP Records
+  past_general_records: string;
   past_security_records: string;
   // SKYRAT EDIT END
 };
@@ -34,6 +38,7 @@ export type Crime = {
   name: string;
   paid: number;
   time: number;
+  valid: BooleanLike;
 };
 
 export enum SECURETAB {

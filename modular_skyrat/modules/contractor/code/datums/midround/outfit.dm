@@ -19,12 +19,10 @@
 		/obj/item/storage/box/syndicate/contract_kit/midround,
 		/obj/item/knife/combat/survival,
 		/obj/item/pinpointer/crew/contractor,
-		/obj/item/melee/baton/telescopic/contractor_baton,
 	)
 
 	implants = list(
-		/obj/item/implant/uplink/precharged/bonus,
-		/obj/item/implant/explosive,
+		/obj/item/implant/uplink,
 	)
 
 	id_trim = /datum/id_trim/chameleon/contractor

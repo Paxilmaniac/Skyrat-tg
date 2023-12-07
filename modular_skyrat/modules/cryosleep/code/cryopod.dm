@@ -22,6 +22,7 @@ GLOBAL_LIST_EMPTY(valid_cryopods)
 	icon = 'modular_skyrat/modules/cryosleep/icons/cryogenics.dmi'
 	icon_state = "cellconsole_1"
 	icon_keyboard = null
+	icon_screen = null
 	use_power = FALSE
 	density = FALSE
 	interaction_flags_machine = INTERACT_MACHINE_OFFLINE
@@ -142,8 +143,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod, 32)
 	state_open = TRUE
 
 	var/open_icon_state = "cryopod-open"
-	var/on_store_message = "has entered long-term storage."
-	var/on_store_name = "Cryogenic Oversight"
 	/// Whether the cryopod respects the minimum time someone has to be disconnected before they can be put into cryo by another player
 	var/allow_timer_override = FALSE
 	/// Minimum time for someone to be SSD before another player can cryo them.
@@ -206,7 +205,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod, 32)
 
 	return control_computer_weakref != null
 
-/obj/machinery/cryopod/close_machine(atom/movable/target)
+/obj/machinery/cryopod/close_machine(atom/movable/target, density_to_set = TRUE)
 	if(!control_computer_weakref)
 		find_control_computer(TRUE)
 	if((isnull(target) || isliving(target)) && state_open && !panel_open)
@@ -219,10 +218,16 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod, 32)
 
 			if(mob_occupant.mind)
 				stored_rank = mob_occupant.mind.assigned_role.title
+				if(isnull(stored_ckey))
+					stored_ckey = mob_occupant.mind.key // if mob does not have a ckey and was placed in cryo by someone else, we can get the key this way
+
+		var/mob/living/carbon/human/human_occupant = occupant
+		if(istype(human_occupant) && human_occupant.mind)
+			human_occupant.save_individual_persistence(stored_ckey)
 
 		COOLDOWN_START(src, despawn_world_time, time_till_despawn)
 
-/obj/machinery/cryopod/open_machine()
+/obj/machinery/cryopod/open_machine(drop = TRUE, density_to_set = FALSE)
 	..()
 	set_density(TRUE)
 	name = initial(name)
@@ -310,30 +315,31 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod, 32)
 					update_objective.owner.announce_objectives()
 			qdel(objective)
 
-/obj/machinery/cryopod/proc/should_preserve_item(obj/item/item)
-	for(var/datum/objective_item/steal/possible_item in GLOB.possible_items)
-		if(istype(item, possible_item.targetitem))
-			return TRUE
-	return FALSE
-
 /// This function can not be undone; do not call this unless you are sure.
 /// Handles despawning the player.
 /obj/machinery/cryopod/proc/despawn_occupant()
 	var/mob/living/mob_occupant = occupant
 
-	if(ishuman(occupant))
-		var/mob/living/carbon/human/human = occupant
-		human.save_individual_persistence()
-
 	SSjob.FreeRole(stored_rank)
+
+	// Handle holy successor removal
+	var/list/holy_successors = list_holy_successors()
+	if(mob_occupant in holy_successors) // if this mob was a holy successor then remove them from the pool
+		GLOB.holy_successors -= WEAKREF(mob_occupant)
 
 	if(mob_occupant.mind)
 		// Handle tater cleanup.
 		if(LAZYLEN(mob_occupant.mind.objectives))
 			mob_occupant.mind.objectives.Cut()
 			mob_occupant.mind.special_role = null
+		// Handle freeing the high priest role for the next chaplain in line
 		if(mob_occupant.mind.holy_role == HOLY_ROLE_HIGHPRIEST)
-			reset_religion() // Reset religion to its default state so the new chaplain becomes high priest and can change the sect, armor, weapon type, etc
+			reset_religion()
+	else
+		// handle the case of the high priest no longer having a mind
+		var/datum/weakref/current_highpriest = GLOB.current_highpriest
+		if(current_highpriest?.resolve() == mob_occupant)
+			reset_religion()
 
 	// Delete them from datacore and ghost records.
 	var/announce_rank = null
@@ -387,26 +393,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod, 32)
 	open_machine()
 	name = initial(name)
 
-// It's time to kill GLOB
-/obj/machinery/cryopod/proc/reset_religion()
-
- // set the altar references to the old religious_sect to null
-	for(var/obj/structure/altar_of_gods/altar in GLOB.chaplain_altars)
-		altar.GetComponent(/datum/component/religious_tool).easy_access_sect = null
-		altar.sect_to_altar = null
-
-	QDEL_NULL(GLOB.religious_sect) // queue for removal but also set it to null, in case a new chaplain joins before it can be deleted
-
-	// set the rest of the global vars to null for the new chaplain
-	GLOB.religion = null
-	GLOB.deity = null
-	GLOB.bible_name = null
-	GLOB.bible_icon_state = null
-	GLOB.bible_inhand_icon_state = null
-	GLOB.holy_armor_type = null
-	GLOB.holy_weapon_type = null
-	GLOB.holy_successor = TRUE // We need to do this so new priests can get a new null rod
-
 /obj/machinery/cryopod/MouseDrop_T(mob/living/target, mob/user)
 	if(!istype(target) || !can_interact(user) || !target.Adjacent(user) || !ismob(target) || isanimal(target) || !istype(user.loc, /turf) || target.buckled)
 		return
@@ -422,7 +408,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod, 32)
 // Allows admins to enable players to override SSD Time check.
 	if(allow_timer_override)
 		if(tgui_alert(user, "Would you like to place [target] into [src]?", "Place into Cryopod?", list("Yes", "No")) != "No")
-			to_chat(user, span_danger("You put [target] into [src]. [target.p_theyre(capitalized = TRUE)] in the cryopod."))
+			to_chat(user, span_danger("You put [target] into [src]. [target.p_Theyre()] in the cryopod."))
 			log_admin("[key_name(user)] has put [key_name(target)] into a overridden stasis pod.")
 			message_admins("[key_name(user)] has put [key_name(target)] into a overridden stasis pod. [ADMIN_JMP(src)]")
 
@@ -433,7 +419,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod, 32)
 
 // Allows players to cryo others. Checks if they have been AFK for 30 minutes.
 	if(target.key && user != target)
-		if (target.getorgan(/obj/item/organ/internal/brain) ) //Target the Brain
+		if (target.get_organ_by_type(/obj/item/organ/internal/brain) ) //Target the Brain
 			if(!target.mind || target.ssd_indicator ) // Is the character empty / AI Controlled
 				if(target.lastclienttime + ssd_time >= world.time)
 					to_chat(user, span_notice("You can't put [target] into [src] for another [round(((ssd_time - (world.time - target.lastclienttime)) / (1 MINUTES)), 1)] minutes."))
@@ -443,7 +429,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod, 32)
 				else if(tgui_alert(user, "Would you like to place [target] into [src]?", "Place into Cryopod?", list("Yes", "No")) == "Yes")
 					if(target.mind.assigned_role.req_admin_notify)
 						tgui_alert(user, "They are an important role! [AHELP_FIRST_MESSAGE]")
-					to_chat(user, span_danger("You put [target] into [src]. [target.p_theyre(capitalized = TRUE)] in the cryopod."))
+					to_chat(user, span_danger("You put [target] into [src]. [target.p_Theyre()] in the cryopod."))
 					log_admin("[key_name(user)] has put [key_name(target)] into a stasis pod.")
 					message_admins("[key_name(user)] has put [key_name(target)] into a stasis pod. [ADMIN_JMP(src)]")
 
@@ -453,9 +439,9 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod, 32)
 					name = "[name] ([target.name])"
 
 		else if(iscyborg(target))
-			to_chat(user, span_danger("You can't put [target] into [src]. [target.p_theyre(capitalized = TRUE)] online."))
+			to_chat(user, span_danger("You can't put [target] into [src]. [target.p_Theyre()] online."))
 		else
-			to_chat(user, span_danger("You can't put [target] into [src]. [target.p_theyre(capitalized = TRUE)] conscious."))
+			to_chat(user, span_danger("You can't put [target] into [src]. [target.p_Theyre()] conscious."))
 		return
 
 	if(target == user && (tgui_alert(target, "Would you like to enter cryosleep?", "Enter Cryopod?", list("Yes", "No")) != "Yes"))
@@ -531,7 +517,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/cryopod/prison, 18)
 	// Simple way to make it always non-dense.
 	return ..(FALSE)
 
-/obj/machinery/cryopod/prison/close_machine(atom/movable/target)
+/obj/machinery/cryopod/prison/close_machine(atom/movable/target, density_to_set = TRUE)
 	. = ..()
 	// Flick the pod for a second when user enters
 	flick("prisonpod-open", src)
@@ -545,7 +531,9 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/cryopod/prison, 18)
 /obj/effect/mob_spawn/ghost_role/create(mob/mob_possessor, newname)
 	var/mob/living/spawned_mob = ..()
 	var/obj/machinery/computer/cryopod/control_computer = find_control_computer()
-	GLOB.ghost_records.Add(list(list("name" = spawned_mob.real_name, "rank" = name)))
+
+	var/alt_name = get_spawner_outfit_name()
+	GLOB.ghost_records.Add(list(list("name" = spawned_mob.real_name, "rank" = alt_name ? alt_name : name)))
 	if(control_computer)
 		control_computer.announce("CRYO_JOIN", spawned_mob.real_name, name)
 
@@ -561,6 +549,16 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/cryopod/prison, 18)
 			return console
 
 	return
+
+/**
+ * Returns the the alt name for this spawner, which is 'outfit.name'.
+ *
+ * For when you might want to use that for things instead of the name var.
+ * example: the DS2 spawners, which have a number of different types of spawner with the same name.
+ */
+/obj/effect/mob_spawn/ghost_role/proc/get_spawner_outfit_name()
+	if(use_outfit_name)
+		return initial(outfit.name)
 
 /obj/effect/mob_spawn/ghost_role/human/lavaland_syndicate
 	computer_area = /area/ruin/syndicate_lava_base/dormitories

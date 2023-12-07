@@ -4,13 +4,12 @@ import { getSecurityRecord } from './helpers';
 import { BlockQuote, Box, Button, Collapsible, Icon, Input, LabeledList, NoticeBox, RestrictedInput, Section, Stack, Tabs, TextArea, Tooltip } from 'tgui/components';
 
 /** Displays a list of crimes and allows to add new ones. */
-export const CrimeWatcher = (props, context) => {
-  const foundRecord = getSecurityRecord(context);
+export const CrimeWatcher = (props) => {
+  const foundRecord = getSecurityRecord();
   if (!foundRecord) return <> </>;
 
   const { crimes, citations } = foundRecord;
   const [selectedTab, setSelectedTab] = useLocalState<SECURETAB>(
-    context,
     'selectedTab',
     SECURETAB.Crimes
   );
@@ -52,8 +51,8 @@ export const CrimeWatcher = (props, context) => {
 };
 
 /** Displays the crimes and citations of a record. */
-const CrimeList = (props, context) => {
-  const foundRecord = getSecurityRecord(context);
+const CrimeList = (props) => {
+  const foundRecord = getSecurityRecord();
   if (!foundRecord) return <> </>;
 
   const { citations, crimes } = foundRecord;
@@ -76,35 +75,39 @@ const CrimeList = (props, context) => {
 };
 
 /** Displays an individual crime */
-const CrimeDisplay = ({ item }: { item: Crime }, context) => {
-  const foundRecord = getSecurityRecord(context);
+const CrimeDisplay = ({ item }: { item: Crime }) => {
+  const foundRecord = getSecurityRecord();
   if (!foundRecord) return <> </>;
 
   const { crew_ref } = foundRecord;
-  const { act } = useBackend<SecurityRecordsData>(context);
-  const { author, crime_ref, details, fine, name, paid, time } = item;
+  const { act, data } = useBackend<SecurityRecordsData>();
+  const { current_user, higher_access } = data;
+  const { author, crime_ref, details, fine, name, paid, time, valid } = item;
   const showFine = !!fine && fine > 0 ? `: ${fine} cr` : '';
+
+  let collapsibleColor = '';
+  if (!valid) {
+    collapsibleColor = 'grey';
+  } else if (fine && fine > 0) {
+    collapsibleColor = 'average';
+  }
+
+  let displayTitle = name;
+  if (fine && fine > 0) {
+    displayTitle = name.slice(0, 18) + showFine;
+  }
+
+  const [editing, setEditing] = useLocalState(`editing_${crime_ref}`, false);
 
   return (
     <Stack.Item>
-      <Collapsible
-        buttons={
-          <Button
-            color="bad"
-            icon="trash"
-            onClick={() =>
-              act('delete_crime', {
-                crew_ref: crew_ref,
-                crime_ref: crime_ref,
-              })
-            }
-          />
-        }
-        color={fine && fine > 0 ? 'average' : ''}
-        title={name.slice(0, 18) + showFine}>
+      <Collapsible color={collapsibleColor} open={editing} title={displayTitle}>
         <LabeledList>
           <LabeledList.Item label="Time">{time}</LabeledList.Item>
           <LabeledList.Item label="Author">{author}</LabeledList.Item>
+          <LabeledList.Item color={!valid ? 'bad' : 'good'} label="Status">
+            {!valid ? 'Void' : 'Active'}
+          </LabeledList.Item>
           {fine && (
             <>
               <LabeledList.Item color="bad" label="Fine">
@@ -120,31 +123,82 @@ const CrimeDisplay = ({ item }: { item: Crime }, context) => {
           Details:
         </Box>
         <BlockQuote>{details}</BlockQuote>
+
+        {!editing ? (
+          <Box mt={2}>
+            <Button
+              disabled={!valid || (!higher_access && author !== current_user)}
+              icon="pen"
+              onClick={() => setEditing(true)}>
+              Edit
+            </Button>
+            <Button.Confirm
+              content="Invalidate"
+              disabled={!higher_access || !valid}
+              icon="ban"
+              onClick={() =>
+                act('invalidate_crime', {
+                  crew_ref: crew_ref,
+                  crime_ref: crime_ref,
+                })
+              }
+            />
+          </Box>
+        ) : (
+          <>
+            <Input
+              fluid
+              maxLength={25}
+              onEscape={() => setEditing(false)}
+              onEnter={(event, value) => {
+                setEditing(false);
+                act('edit_crime', {
+                  crew_ref: crew_ref,
+                  crime_ref: crime_ref,
+                  name: value,
+                });
+              }}
+              placeholder="Enter a new name"
+            />
+            <Input
+              fluid
+              maxLength={1025}
+              mt={1}
+              onEscape={() => setEditing(false)}
+              onEnter={(event, value) => {
+                setEditing(false);
+                act('edit_crime', {
+                  crew_ref: crew_ref,
+                  crime_ref: crime_ref,
+                  description: value,
+                });
+              }}
+              placeholder="Enter a new description"
+            />
+          </>
+        )}
       </Collapsible>
     </Stack.Item>
   );
 };
 
 /** Writes a new crime. Reducers don't seem to work here, so... */
-const CrimeAuthor = (props, context) => {
-  const foundRecord = getSecurityRecord(context);
+const CrimeAuthor = (props) => {
+  const foundRecord = getSecurityRecord();
   if (!foundRecord) return <> </>;
 
   const { crew_ref } = foundRecord;
-  const { act } = useBackend<SecurityRecordsData>(context);
+  const { act } = useBackend<SecurityRecordsData>();
 
-  const [crimeName, setCrimeName] = useLocalState(context, 'crimeName', '');
-  const [crimeDetails, setCrimeDetails] = useLocalState(
-    context,
-    'crimeDetails',
-    ''
-  );
-  const [crimeFine, setCrimeFine] = useLocalState(context, 'crimeFine', 0);
+  const [crimeName, setCrimeName] = useLocalState('crimeName', '');
+  const [crimeDetails, setCrimeDetails] = useLocalState('crimeDetails', '');
+  const [crimeFine, setCrimeFine] = useLocalState('crimeFine', 0);
   const [selectedTab, setSelectedTab] = useLocalState<SECURETAB>(
-    context,
     'selectedTab',
     SECURETAB.Crimes
   );
+
+  const nameMeetsReqs = crimeName?.length > 2;
 
   /** Sends form to backend */
   const createCrime = () => {
@@ -171,19 +225,20 @@ const CrimeAuthor = (props, context) => {
       <Stack.Item color="label">
         Name
         <Input
-          onChange={(_, value) => setCrimeName(value)}
           fluid
           maxLength={25}
+          onChange={(_, value) => setCrimeName(value)}
           placeholder="Brief overview"
         />
       </Stack.Item>
       <Stack.Item color="label">
         Details
         <TextArea
-          onChange={(_, value) => setCrimeDetails(value)}
-          multiline
-          height={4}
           fluid
+          height={4}
+          maxLength={1025}
+          multiline
+          onChange={(_, value) => setCrimeDetails(value)}
           placeholder="Type some details..."
         />
       </Stack.Item>
@@ -198,9 +253,10 @@ const CrimeAuthor = (props, context) => {
       <Stack.Item>
         <Button.Confirm
           content="Create"
-          disabled={!crimeName}
+          disabled={!nameMeetsReqs}
           icon="plus"
           onClick={createCrime}
+          tooltip={!nameMeetsReqs ? 'Name must be at least 3 characters.' : ''}
         />
       </Stack.Item>
     </Stack>

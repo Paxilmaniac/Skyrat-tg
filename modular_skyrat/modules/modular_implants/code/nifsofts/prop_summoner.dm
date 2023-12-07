@@ -15,15 +15,17 @@
 	cooldown = TRUE
 	activation_cost = 100 // Around 1/10th the energy of a standard NIF
 	buying_category = NIFSOFT_CATEGORY_FUN
+	ui_icon = "book-open"
+	able_to_keep = TRUE // These NIFSofts are mostly for comsetic/fun reasons anyways.
 
 	/// Does the resulting object have a holographic like filter appiled to it?
 	var/holographic_filter = TRUE
 	/// Is there any special tag added at the begining of the resulting object name?
 	var/name_tag = "cerulean "
-	purchase_price = 250
+	purchase_price = 175
 
 	///The list of items that can be summoned from the NIFSoft.
-	var/static/list/summonable_items = list(
+	var/list/summonable_items = list(
 		/obj/item/toy/katana/nanite,
 		/obj/item/cane/nanite,
 		/obj/item/storage/dice/nanite,
@@ -46,13 +48,13 @@
 	if(!.)
 		return FALSE
 
-	if(tgui_alert(linked_mob, "Do you wish to summon a new item or dispel an already existing item?", "Grimoire Caeruleam", list("Summon", "Dispel")) == "Dispel")
+	if(tgui_alert(linked_mob, "Do you wish to summon a new item or dispel an already existing item?", program_name, list("Summon", "Dispel")) == "Dispel")
 		refund_activation_cost()
 		if(!length(summoned_items))
 			linked_mob.balloon_alert(linked_mob, "You have no summoned items!")
 			return FALSE
 
-		var/obj/item/choice = tgui_input_list(linked_mob, "Chose an object to desummon.", "Grimoire Caeruleam", summoned_items)
+		var/obj/item/choice = tgui_input_list(linked_mob, "Chose an object to desummon.", program_name, summoned_items)
 
 		if(!choice)
 			linked_mob.balloon_alert(linked_mob, "You did not chose an item!")
@@ -73,7 +75,7 @@
 
 		summon_choices[summon_item] = obj_icon
 
-	var/obj/item/choice = show_radial_menu(linked_mob, linked_mob, summon_choices, radius = 42, custom_check = CALLBACK(src, .proc/check_menu, linked_mob))
+	var/obj/item/choice = show_radial_menu(linked_mob, linked_mob, summon_choices, radius = 42, custom_check = CALLBACK(src, PROC_REF(check_menu), linked_mob))
 	if(!choice)
 		refund_activation_cost()
 		return FALSE
@@ -87,8 +89,16 @@
 		refund_activation_cost()
 		return FALSE
 
+	apply_custom_properties(new_item)
 	summoned_items += new_item
-	new_item.AddComponent(/datum/component/summoned_item, TRUE)
+	new_item.AddComponent(/datum/component/summoned_item, holographic_filter)
+
+/// This proc is called while an item is being summoned, use this to modifiy aspects of the item that aren't modified by the component.
+/datum/nifsoft/summoner/proc/apply_custom_properties(obj/item/target_item)
+	if(!target_item)
+		return FALSE
+
+	return TRUE
 
 /datum/nifsoft/summoner/Destroy()
 	QDEL_LIST(summoned_items)
@@ -101,7 +111,11 @@
 
 	return TRUE
 
-/datum/component/summoned_item/New(holographic_filter = TRUE)
+/datum/component/summoned_item
+	///What items were contained, if any, inside of the summoned item? These are deleted when the item is desummoned.
+	var/list/sub_items = list()
+
+/datum/component/summoned_item/Initialize(holographic_filter = TRUE)
 	. = ..()
 	if(!isobj(parent))
 		return COMPONENT_INCOMPATIBLE
@@ -117,6 +131,26 @@
 				stored_item.alpha = SUMMONED_ITEM_ALPHA
 				stored_item.set_light(SUMMONED_ITEM_LIGHT)
 				stored_item.add_atom_colour("#acccff",FIXED_COLOUR_PRIORITY)
+				sub_items += stored_item
+
+		if(istype(summoned_item, /obj/item/toy/cards/deck))
+			var/obj/item/toy/cards/deck/summoned_deck = summoned_item
+			var/list/cardlist = summoned_deck.fetch_card_atoms()
+			if(!cardlist)
+				return FALSE
+
+			for(var/obj/item/toy/single_card in cardlist)
+				single_card.alpha = SUMMONED_ITEM_ALPHA
+				single_card.set_light(SUMMONED_ITEM_LIGHT)
+				single_card.add_atom_colour("#acccff",FIXED_COLOUR_PRIORITY)
+				sub_items += single_card
+
+/datum/component/summoned_item/Destroy(force, silent)
+	for(var/obj/item in sub_items)
+		sub_items -= item
+		qdel(item)
+
+	return ..()
 
 //Summonable Items
 ///A somehow wekaer version of the toy katana

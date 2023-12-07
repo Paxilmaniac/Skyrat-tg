@@ -4,6 +4,10 @@ import { GenericUplink, Item } from './Uplink/GenericUplink';
 import { BlockQuote, Button, Section, Stack, Tabs } from '../components';
 import { BooleanLike } from 'common/react';
 import { Window } from '../layouts';
+import { ObjectivePrintout, Objective, ReplaceObjectivesButton } from './common/Objectives';
+// SKYRAT EDIT BEGIN
+import { Rules } from './AntagInfoRules';
+// SKYRAT EDIT END
 
 const allystyle = {
   fontWeight: 'bold',
@@ -20,12 +24,6 @@ const goalstyle = {
   fontWeight: 'bold',
 };
 
-type Objective = {
-  count: number;
-  name: string;
-  explanation: string;
-};
-
 type Info = {
   has_codewords: BooleanLike;
   phrases: string;
@@ -37,43 +35,38 @@ type Info = {
   processingTime: string;
   objectives: Objective[];
   categories: any[];
+  can_change_objective: BooleanLike;
 };
 
-const ObjectivePrintout = (props, context) => {
-  const { data } = useBackend<Info>(context);
-  const { objectives } = data;
-  return (
-    <Stack vertical>
-      <Stack.Item bold>Your prime objectives:</Stack.Item>
-      <Stack.Item>
-        {(!objectives && 'None!') ||
-          objectives.map((objective) => (
-            <Stack.Item key={objective.count}>
-              &#8805-{objective.count}: {objective.explanation}
-            </Stack.Item>
-          ))}
-      </Stack.Item>
-    </Stack>
-  );
-};
-
-const IntroductionSection = (props, context) => {
-  const { act, data } = useBackend<Info>(context);
-  const { intro } = data;
+const IntroductionSection = (props) => {
+  const { act, data } = useBackend<Info>();
+  const { intro, objectives, can_change_objective } = data;
   return (
     <Section fill title="Intro" scrollable>
       <Stack vertical fill>
         <Stack.Item fontSize="25px">{intro}</Stack.Item>
         <Stack.Item grow>
-          <ObjectivePrintout />
+          <ObjectivePrintout
+            objectives={objectives}
+            titleMessage="Your prime objectives:"
+            objectivePrefix="&#8805-"
+            objectiveFollowup={
+              <ReplaceObjectivesButton
+                can_change_objective={can_change_objective}
+                button_title={'Overwrite Objectives Data'}
+                button_colour={'green'}
+              />
+            }
+          />
+          <Rules /* SKYRAT EDIT ADDITION */ />
         </Stack.Item>
       </Stack>
     </Section>
   );
 };
 
-const FlavorSection = (props, context) => {
-  const { data } = useBackend<Info>(context);
+const FlavorSection = (props) => {
+  const { data } = useBackend<Info>();
   const { allies, goal } = data;
   return (
     <Section
@@ -84,10 +77,15 @@ const FlavorSection = (props, context) => {
           mr={-0.8}
           mt={-0.5}
           icon="hammer"
+          /* SKYRAT EDIT: ORIGINAL TOOLTIP
           tooltip={multiline`
             This is a gameplay suggestion for bored ais.
             You don't have to follow it, unless you want some
             ideas for how to spend the round.`}
+          */
+          tooltip={multiline`
+            Please refer to the 'Antagonist Policy' section of the wiki
+            if you have any questions.`}
           tooltipPosition="bottom-start">
           Policy
         </Button>
@@ -127,8 +125,8 @@ const FlavorSection = (props, context) => {
   );
 };
 
-const CodewordsSection = (props, context) => {
-  const { data } = useBackend<Info>(context);
+const CodewordsSection = (props) => {
+  const { data } = useBackend<Info>();
   const { has_codewords, phrases, responses } = data;
   return (
     <Section title="Codewords" mb={!has_codewords && -1}>
@@ -173,14 +171,10 @@ const CodewordsSection = (props, context) => {
   );
 };
 
-export const AntagInfoMalf = (props, context) => {
-  const { act, data } = useBackend<Info>(context);
+export const AntagInfoMalf = (props) => {
+  const { act, data } = useBackend<Info>();
   const { processingTime, categories } = data;
-  const [antagInfoTab, setAntagInfoTab] = useLocalState(
-    context,
-    'antagInfoTab',
-    0
-  );
+  const [antagInfoTab, setAntagInfoTab] = useLocalState('antagInfoTab', 0);
   const categoriesList: string[] = [];
   const items: Item[] = [];
   for (let i = 0; i < categories.length; i++) {

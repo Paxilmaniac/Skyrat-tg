@@ -10,16 +10,8 @@
 	var/list/to_insert = list()
 
 	if(!GLOB.all_languages.len)
-		for(var/iterated_language in subtypesof(/datum/language))
-			var/datum/language/language = iterated_language
-			if(!initial(language.key))
-				continue
-
-			GLOB.all_languages += language
-
-			var/datum/language/instance = new language
-
-			GLOB.language_datum_instances[language] = instance
+		stack_trace("Warning: Language spritesheets could not be created because language subsystem has not been loaded yet. This should not happen--adjust the init_order in master_files/code/controllers/subsystem/language.dm.")
+		return
 
 	for (var/language_name in GLOB.all_languages)
 		var/datum/language/language = GLOB.language_datum_instances[language_name]
@@ -38,11 +30,9 @@
 		"remove_language" = PROC_REF(remove_language),
 	)
 
-/datum/preference_middleware/languages/apply_to_human(mob/living/carbon/human/target, datum/preferences/preferences) // SKYRAT EDIT CHANGE
+/datum/preference_middleware/languages/apply_to_human(mob/living/carbon/human/target, datum/preferences/preferences, visuals_only = FALSE)
 	var/datum/language_holder/language_holder = target.get_language_holder()
-	language_holder.remove_all_languages()
-	for(var/lang_path in preferences.languages)
-		language_holder.grant_language(lang_path)
+	language_holder.adjust_languages_to_prefs(preferences)
 
 /datum/preference_middleware/languages/get_ui_assets()
 	return list(
@@ -75,7 +65,7 @@
 
 	var/list/data = list()
 
-	var/max_languages = preferences.all_quirks.Find(QUIRK_LINGUIST) ? MAX_LANGUAGES_LINGUIST : MAX_LANGUAGES_NORMAL
+	var/max_languages = preferences.all_quirks.Find(TRAIT_LINGUIST) ? MAX_LANGUAGES_LINGUIST : MAX_LANGUAGES_NORMAL
 	var/species_type = preferences.read_preference(/datum/preference/choiced/species)
 	var/datum/species/species = new species_type()
 	var/datum/language_holder/lang_holder = preferences.get_adjusted_language_holder()
@@ -90,7 +80,7 @@
 	for (var/language_name in GLOB.all_languages)
 		var/datum/language/language = GLOB.language_datum_instances[language_name]
 
-		if(language.secret)
+		if(language.secret && !(language.type in species.language_prefs_whitelist)) // For ghostrole species who are able to speak a secret language, e.g. ashwalkers, display it.
 			continue
 
 		if(species.always_customizable && !(language.type in lang_holder.spoken_languages)) // For the ghostrole species. We don't want ashwalkers speaking beachtongue now.
@@ -135,7 +125,7 @@
  */
 /datum/preference_middleware/languages/proc/give_language(list/params)
 	var/language_name = params["language_name"]
-	var/max_languages = preferences.all_quirks.Find(QUIRK_LINGUIST) ? MAX_LANGUAGES_LINGUIST : MAX_LANGUAGES_NORMAL
+	var/max_languages = preferences.all_quirks.Find(TRAIT_LINGUIST) ? MAX_LANGUAGES_LINGUIST : MAX_LANGUAGES_NORMAL
 
 	if(preferences.languages && preferences.languages.len == max_languages) // too many languages
 		return TRUE

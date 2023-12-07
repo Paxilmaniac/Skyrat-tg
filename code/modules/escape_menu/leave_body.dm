@@ -8,18 +8,14 @@
 		else
 			stack_trace("The leave body menu was opened before the atoms SS. This shouldn't be possible, as the leave body menu should only be accessible when you have a body.")
 
-	//SKYRAT EDIT REMOVAL BEGIN - Suicide Disabled
-	/*
 	page_holder.give_screen_object(new /atom/movable/screen/escape_menu/leave_body_button(
 		src,
 		"Suicide",
 		"Perform a dramatic suicide in game",
 		/* pixel_offset = */ -105,
-		CALLBACK(src, PROC_REF(leave_suicide)),
+		// CALLBACK(src, PROC_REF(leave_suicide)), // SKYRAT EDIT REMOVAL
 		/* button_overlay = */ dead_clown,
 	))
-	*/
-	//SKYRAT EDIT REMOVAL END
 
 	page_holder.give_screen_object(
 		new /atom/movable/screen/escape_menu/leave_body_button(
@@ -68,7 +64,7 @@
 	var/mob/living/living_user = client?.mob
 	living_user?.ghost()
 
-//SKYRAT EDIT REMOVAL BEGIN - Suicide Disabled
+//SKYRAT EDIT REMOVAL BEGIN
 /*
 /datum/escape_menu/proc/leave_suicide()
 	PRIVATE_PROC(TRUE)
@@ -109,7 +105,7 @@
 	screen_loc = "CENTER:[pixel_offset],CENTER-1"
 
 /atom/movable/screen/escape_menu/leave_body_button/Destroy()
-	QDEL_NULL(on_click_callback)
+	on_click_callback = null
 
 	return ..()
 

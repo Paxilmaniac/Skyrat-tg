@@ -6,6 +6,14 @@
 	icon_state = "gas_clear"
 	flags_inv = NONE
 
+/obj/item/clothing/mask/gas/atmos/glass
+	icon = 'modular_skyrat/master_files/icons/obj/clothing/masks.dmi'
+	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/mask.dmi'
+	name = "advanced gas mask"
+	desc = "A face-covering mask that can be connected to an air supply. This one doesn't obscure your face however."
+	icon_state = "gas_clear"
+	flags_inv = NONE
+
 /obj/item/clothing/mask/gas/alt
 	icon = 'modular_skyrat/master_files/icons/obj/clothing/masks.dmi'
 	icon_state = "gas_alt2"
@@ -47,7 +55,6 @@
 	clothing_flags = MASKINTERNALS
 	flags_cover = MASKCOVERSEYES
 	resistance_flags = FLAMMABLE
-	species_exception = list(/datum/species/golem/bananium)
 	has_fov = FALSE
 	greyscale_config = /datum/greyscale_config/clown_mask
 	greyscale_config_worn = /datum/greyscale_config/clown_mask/worn
@@ -64,7 +71,6 @@
 	inhand_icon_state = null
 	flags_cover = MASKCOVERSEYES
 	resistance_flags = FLAMMABLE
-	species_exception = list(/datum/species/golem/bananium)
 
 /obj/item/clothing/mask/gas/respirator
 	name = "half mask respirator"
@@ -87,6 +93,19 @@
 	greyscale_config_worn_better_vox = /datum/greyscale_config/respirator/worn/better_vox
 	greyscale_config_worn_vox = /datum/greyscale_config/respirator/worn/vox
 	greyscale_config_worn_teshari = /datum/greyscale_config/respirator/worn/teshari
+
+/obj/item/clothing/mask/gas/respirator/examine(mob/user)
+	. = ..()
+	. += span_notice("You can toggle its ability to muffle your TTS voice with <b>control click</b>.")
+
+/obj/item/clothing/mask/gas/respirator/CtrlClick(mob/living/user)
+	if(!isliving(user))
+		return
+	if(user.get_active_held_item() != src)
+		to_chat(user, span_warning("You must hold the [src] in your hand to do this!"))
+		return
+	voice_filter = voice_filter ? null : initial(voice_filter)
+	to_chat(user, span_notice("Mask voice muffling [voice_filter ? "enabled" : "disabled"]."))
 
 /obj/item/clothing/mask/gas/clown_hat/vox
 	desc = "A true prankster's facial attire. A clown is incomplete without his wig and mask. This one's got an easily accessible feeding port to be more suitable for the Vox crewmembers."
@@ -129,7 +148,7 @@
 		update_item_action_buttons()
 		to_chat(user, span_notice("Your Clown Mask has now morphed into [choice], all praise the Honkmother!"))
 		return TRUE
-	
+
 /obj/item/clothing/mask/gas/mime/vox
 	desc = "The traditional mime's mask. It has an eerie facial posture. This one's got an easily accessible feeding port to be more suitable for the Vox crewmembers."
 	icon = 'modular_skyrat/master_files/icons/mob/clothing/species/vox/mask.dmi'
@@ -137,7 +156,7 @@
 	worn_icon_vox = 'modular_skyrat/master_files/icons/mob/clothing/species/vox/mask.dmi'
 	worn_icon_better_vox = 'modular_skyrat/master_files/icons/mob/clothing/species/vox/mask.dmi'
 	starting_filter_type = /obj/item/gas_filter/vox
-	
+
 /obj/item/clothing/mask/gas/mime/vox/Initialize(mapload)
 	.=..()
 	mimemask_designs = list(
@@ -174,7 +193,7 @@
 			worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/species/vox/mask.dmi'
 			icon_state = options[choice]
 		icon_state = options[choice]
-		
+
 		user.update_worn_mask()
 		update_item_action_buttons()
 		to_chat(user, span_notice("Your Mime Mask has now morphed into [choice]!"))

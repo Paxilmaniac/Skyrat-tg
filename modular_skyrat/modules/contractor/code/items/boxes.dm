@@ -58,7 +58,7 @@
 	new /obj/item/storage/fancy/cigarettes/cigpack_syndicate(src)
 	new /obj/item/card/id/advanced/chameleon(src)
 	new /obj/item/lighter(src)
-	new /obj/item/uplink/opfor(src)
+	new /obj/item/uplink/old_radio(src)
 	new /obj/item/jammer(src)
 
 /obj/item/storage/box/contractor/fulton_extraction
@@ -106,8 +106,9 @@
 
 	// Paper guide
 	new /obj/item/paper/contractor_guide/midround(src)
+	new /obj/item/reagent_containers/hypospray/medipen/atropine(src)
+	new /obj/item/jammer(src)
 	new /obj/item/storage/fancy/cigarettes/cigpack_syndicate(src)
 	new /obj/item/lighter(src)
-	new /obj/item/jammer(src)
 
 #undef SMALL_ITEM_AMOUNT

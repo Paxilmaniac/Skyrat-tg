@@ -4,7 +4,7 @@
 	w_class = WEIGHT_CLASS_TINY
 
 /obj/item/ammo_casing/energy/electrode/debug
-	e_cost = 1
+	e_cost = LASER_SHOTS(1000, STANDARD_CELL_CHARGE)
 
 /obj/item/clothing/suit/armor/vest/debug
 	name = "Bluespace Tech vest"
@@ -23,7 +23,6 @@
 	acid = 98
 
 /obj/item/clothing/shoes/combat/debug
-	clothing_flags = NOSLIP
 	w_class = WEIGHT_CLASS_TINY
 
 /obj/item/storage/belt/utility/chief/full/debug

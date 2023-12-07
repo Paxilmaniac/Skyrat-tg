@@ -5,7 +5,7 @@
 	inhand_icon_state = "assembly"
 	lefthand_file = 'icons/mob/inhands/items/devices_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/items/devices_righthand.dmi'
-	flags_1 = CONDUCT_1
+	obj_flags = CONDUCTS_ELECTRICITY
 	throwforce = 5
 	w_class = WEIGHT_CLASS_SMALL
 	throw_speed = 2
@@ -82,7 +82,7 @@
 	update_appearance()
 
 /obj/item/assembly_holder/proc/attach(obj/item/assembly/A, mob/user)
-	if(!A.remove_item_from_storage(src))
+	if(!A.remove_item_from_storage(src, user))
 		if(user)
 			user.transferItemToLoc(A, src)
 		else

@@ -2,6 +2,10 @@ import { useBackend, useLocalState } from '../backend';
 import { Section, Stack, Box, Tabs, Button, BlockQuote } from '../components';
 import { Window } from '../layouts';
 import { BooleanLike } from 'common/react';
+import { ObjectivePrintout, Objective, ReplaceObjectivesButton } from './common/Objectives';
+// SKYRAT EDIT BEGIN
+import { Rules } from './AntagInfoRules';
+// SKYRAT EDIT END
 
 const hereticRed = {
   color: '#e03c3c',
@@ -43,20 +47,18 @@ type KnowledgeInfo = {
   learnedKnowledge: Knowledge[];
 };
 
-type Objective = {
-  count: number;
-  name: string;
-  explanation: string;
-};
-
 type Info = {
   charges: number;
   total_sacrifices: number;
   ascended: BooleanLike;
   objectives: Objective[];
+  can_change_objective: BooleanLike;
 };
 
-const IntroductionSection = () => {
+const IntroductionSection = (props) => {
+  const { data, act } = useBackend<Info>();
+  const { objectives, ascended, can_change_objective } = data;
+
   return (
     <Stack justify="space-evenly" height="100%" width="100%">
       <Stack.Item grow>
@@ -64,14 +66,40 @@ const IntroductionSection = () => {
           <Stack vertical>
             <FlavorSection />
             <Stack.Divider />
-
+            {/* SKYRAT EDIT ADDITION START */}
+            <Stack.Item>
+              <Rules />
+            </Stack.Item>
+            {/* SKYRAT EDIT ADDITION END */}
+            <Stack.Divider />
             <GuideSection />
             <Stack.Divider />
-
             <InformationSection />
             <Stack.Divider />
 
-            <ObjectivePrintout />
+            {!ascended && (
+              <Stack.Item>
+                <ObjectivePrintout
+                  fill
+                  titleMessage={
+                    can_change_objective
+                      ? 'Your OPFOR objectives are your primary ones, but in order to ascend, you have these tasks to fulfill' /* SKYRAT EDIT CHANGE - opfor objectives */
+                      : 'Your OPFOR objectives are your primary ones. Use your dark knowledge to fulfill your personal goal' /* SKYRAT EDIT CHANGE - opfor objectives  */
+                  }
+                  objectives={objectives}
+                  objectiveFollowup={
+                    <ReplaceObjectivesButton
+                      can_change_objective={can_change_objective}
+                      button_title={'Reject Ascension'}
+                      button_colour={'red'}
+                      button_tooltip={
+                        'Turn your back on the Mansus to accomplish a task of your choosing. Selecting this option will prevent you from ascending!'
+                      }
+                    />
+                  }
+                />
+              </Stack.Item>
+            )}
           </Stack>
         </Section>
       </Stack.Item>
@@ -158,8 +186,8 @@ const GuideSection = () => {
   );
 };
 
-const InformationSection = (props, context) => {
-  const { data } = useBackend<Info>(context);
+const InformationSection = (props) => {
+  const { data } = useBackend<Info>();
   const { charges, total_sacrifices, ascended } = data;
   return (
     <Stack.Item>
@@ -194,30 +222,8 @@ const InformationSection = (props, context) => {
   );
 };
 
-const ObjectivePrintout = (props, context) => {
-  const { data } = useBackend<Info>(context);
-  const { objectives } = data;
-  return (
-    <Stack.Item>
-      <Stack vertical fill>
-        <Stack.Item bold>
-          In order to ascend, you have these tasks to fulfill:
-        </Stack.Item>
-        <Stack.Item>
-          {(!objectives && 'None!') ||
-            objectives.map((objective) => (
-              <Stack.Item key={objective.count}>
-                {objective.count}: {objective.explanation}
-              </Stack.Item>
-            ))}
-        </Stack.Item>
-      </Stack>
-    </Stack.Item>
-  );
-};
-
-const ResearchedKnowledge = (props, context) => {
-  const { data } = useBackend<KnowledgeInfo>(context);
+const ResearchedKnowledge = (props) => {
+  const { data } = useBackend<KnowledgeInfo>();
   const { learnedKnowledge } = data;
 
   return (
@@ -241,8 +247,8 @@ const ResearchedKnowledge = (props, context) => {
   );
 };
 
-const KnowledgeShop = (props, context) => {
-  const { data, act } = useBackend<KnowledgeInfo>(context);
+const KnowledgeShop = (props) => {
+  const { data, act } = useBackend<KnowledgeInfo>();
   const { learnableKnowledge } = data;
 
   return (
@@ -276,8 +282,8 @@ const KnowledgeShop = (props, context) => {
   );
 };
 
-const ResearchInfo = (props, context) => {
-  const { data } = useBackend<Info>(context);
+const ResearchInfo = (props) => {
+  const { data } = useBackend<Info>();
   const { charges } = data;
 
   return (
@@ -303,18 +309,16 @@ const ResearchInfo = (props, context) => {
   );
 };
 
-export const AntagInfoHeretic = (props, context) => {
-  const { data } = useBackend<Info>(context);
+export const AntagInfoHeretic = (props) => {
+  const { data } = useBackend<Info>();
   const { ascended } = data;
 
-  const [currentTab, setTab] = useLocalState(context, 'currentTab', 0);
+  const [currentTab, setTab] = useLocalState('currentTab', 0);
 
   return (
-    <Window width={675} height={625}>
+    <Window width={675} height={635}>
       <Window.Content
         style={{
-          // 'font-family': 'Times New Roman',
-          // 'fontSize': '20px',
           'background-image': 'none',
           'background': ascended
             ? 'radial-gradient(circle, rgba(24,9,9,1) 54%, rgba(31,10,10,1) 60%, rgba(46,11,11,1) 80%, rgba(47,14,14,1) 100%);'

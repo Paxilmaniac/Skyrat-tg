@@ -1,4 +1,4 @@
-import { BlockQuote, Collapsible, LabeledList, Modal, Section, Stack, Tabs } from '../components';
+import { BlockQuote, Collapsible, Modal, Section, Stack, Tabs } from '../components';
 import { useBackend } from '../backend';
 import { useLocalState } from '../backend';
 import { Window } from '../layouts';
@@ -30,12 +30,8 @@ enum SCREENS {
   audit,
 }
 
-export const AccountingConsole = (props, context) => {
-  const [screenmode, setScreenmode] = useLocalState(
-    context,
-    'tab_main',
-    SCREENS.users
-  );
+export const AccountingConsole = (props) => {
+  const [screenmode, setScreenmode] = useLocalState('tab_main', SCREENS.users);
 
   return (
     <Window width={300} height={360}>
@@ -66,33 +62,35 @@ export const AccountingConsole = (props, context) => {
   );
 };
 
-const UsersScreen = (props, context) => {
-  const { data } = useBackend<Data>(context);
+const UsersScreen = (props) => {
+  const { data } = useBackend<Data>();
   const { PlayerAccounts } = data;
 
   return (
     <Section fill scrollable title="Crew Account Summary">
       {PlayerAccounts.map((account) => (
-        <Collapsible fill key={account.index} title={account.name}>
-          <LabeledList>
-            <LabeledList.Item label="Occupation">
-              {account.job}
-            </LabeledList.Item>
-            <LabeledList.Item label="Balance">
-              {account.balance}
-            </LabeledList.Item>
-            <LabeledList.Item label="Pay Modifier">
-              {account.modifier * 100}%
-            </LabeledList.Item>
-          </LabeledList>
+        <Collapsible
+          fill
+          key={account.index}
+          title={account.name + ' the ' + account.job}>
+          <Stack vertical>
+            <BlockQuote>
+              <Stack.Item textColor={'green'}>
+                {account.balance} credit balance
+              </Stack.Item>
+              <Stack.Item>
+                Employee has {account.modifier * 100}% pay modifier
+              </Stack.Item>
+            </BlockQuote>
+          </Stack>
         </Collapsible>
       ))}
     </Section>
   );
 };
 
-const AuditScreen = (props, context) => {
-  const { data } = useBackend<Data>(context);
+const AuditScreen = (props) => {
+  const { data } = useBackend<Data>();
   const { AuditLog } = data;
 
   return (
@@ -108,8 +106,8 @@ const AuditScreen = (props, context) => {
 };
 
 /** The modal menu that contains the prompts to making new channels. */
-const MarketCrashing = (props, context) => {
-  const { data } = useBackend<Data>(context);
+const MarketCrashing = (props) => {
+  const { data } = useBackend<Data>();
 
   const { Crashing } = data;
   if (!Crashing) {

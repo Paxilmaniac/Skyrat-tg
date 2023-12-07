@@ -7,6 +7,8 @@ import { Window } from '../layouts';
 type Data = {
   candidates: ReadonlyArray<Candidate>;
   pai: Pai;
+  range_max: number;
+  range_min: number;
 };
 
 type Candidate = Readonly<{
@@ -25,10 +27,12 @@ type Pai = {
   name: string;
   transmit: BooleanLike;
   receive: BooleanLike;
+  range: number;
+  leash_enabled: BooleanLike; // SKYRAT EDIT ADDITION
 };
 
-export const PaiCard = (props, context) => {
-  const { data } = useBackend<Data>(context);
+export const PaiCard = (props) => {
+  const { data } = useBackend<Data>();
   const { pai } = data;
 
   return (
@@ -41,8 +45,8 @@ export const PaiCard = (props, context) => {
 };
 
 /** Gives a list of candidates as cards */
-const PaiDownload = (props, context) => {
-  const { act, data } = useBackend<Data>(context);
+const PaiDownload = (props) => {
+  const { act, data } = useBackend<Data>();
   const { candidates = [] } = data;
 
   return (
@@ -79,11 +83,8 @@ const PaiDownload = (props, context) => {
 /**
  * Renders a custom section that displays a candidate.
  */
-const CandidateDisplay = (
-  props: { candidate: Candidate; index: number },
-  context
-) => {
-  const { act } = useBackend<Data>(context);
+const CandidateDisplay = (props: { candidate: Candidate; index: number }) => {
+  const { act } = useBackend<Data>();
   const {
     candidate: { comments, ckey, description, name },
     index,
@@ -137,10 +138,23 @@ const CandidateDisplay = (
 };
 
 /** Once a pAI has been loaded, you can alter its settings here */
-const PaiOptions = (props, context) => {
-  const { act, data } = useBackend<Data>(context);
+const PaiOptions = (props) => {
+  const { act, data } = useBackend<Data>();
   const {
-    pai: { can_holo, dna, emagged, laws, master, name, transmit, receive },
+    range_max,
+    range_min,
+    pai: {
+      can_holo,
+      dna,
+      emagged,
+      laws,
+      master,
+      name,
+      transmit,
+      receive,
+      range,
+      leash_enabled /* SKYRAT EDIT ADDITION */,
+    },
   } = data;
   const suppliedLaws = laws[0] ? decodeHtmlEntities(laws[0]) : 'None';
 
@@ -169,6 +183,44 @@ const PaiOptions = (props, context) => {
             selected={can_holo}>
             Toggle
           </Button>
+        </LabeledList.Item>
+        {/* SKYRAT EDIT ADDITION START */}
+        {!emagged && (
+          <LabeledList.Item label="Holoform Leashed">
+            <Button
+              icon={leash_enabled ? 'toggle-off' : 'toggle-on'}
+              onClick={() => act('toggle_leash')}
+              selected={leash_enabled}
+              tooltip="Whether or not the holoform is able to roam freely outside of its range.">
+              Toggle
+            </Button>
+          </LabeledList.Item>
+        )}
+        {/* SKYRAT EDIT ADDITION END */}
+        <LabeledList.Item label="Holoform Range">
+          {emagged ? (
+            '∞'
+          ) : (
+            <Stack>
+              <Stack.Item>
+                <Button
+                  icon="fa-circle-minus"
+                  onClick={() => act('decrease_range')}
+                  /* SKYRAT EDIT CHANGE ORIGINAL: disabled={range === range_max} */
+                  disabled={!leash_enabled || range === range_min}
+                />
+              </Stack.Item>
+              <Stack.Item mt={0.5}>{range}</Stack.Item>
+              <Stack.Item>
+                <Button
+                  icon="fa-circle-plus"
+                  onClick={() => act('increase_range')}
+                  /* SKYRAT EDIT CHANGE ORIGINAL: disabled={range === range_max} */
+                  disabled={!leash_enabled || range === range_max}
+                />
+              </Stack.Item>
+            </Stack>
+          )}
         </LabeledList.Item>
         <LabeledList.Item label="Transmit">
           <Button
@@ -206,7 +258,7 @@ const PaiOptions = (props, context) => {
           icon="bug"
           mt={1}
           onClick={() => act('reset_software')}>
-          Malicious Software Detected
+          Reset Software
         </Button>
       )}
     </Section>

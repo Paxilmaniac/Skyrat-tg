@@ -1,4 +1,4 @@
-/obj/item/clothing/suit/wornshirt //ORION TODO: kill or fix literally everything below this line
+/obj/item/clothing/suit/wornshirt
 	name = "worn shirt"
 	desc = "A worn out (or perhaps just baggy), curiously comfortable t-shirt."
 	icon = 'modular_skyrat/master_files/icons/obj/clothing/suits.dmi'
@@ -245,14 +245,6 @@
 	icon_state = "kuban_cossak"
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 
-/obj/item/clothing/suit/armor/cossack/sec
-	icon = 'modular_skyrat/master_files/icons/obj/clothing/suits.dmi'
-	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/suit.dmi'
-	name = "security ukrainian coat"
-	desc = "Hop on your horse, dawn your really fluffy hat, and strap this coat to your back."
-	icon_state = "don_cossak"
-	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
-
 /obj/item/clothing/suit/corgisuit/en
 	name = "\improper super-hero E-N suit"
 	icon = 'modular_skyrat/master_files/icons/obj/clothing/suits.dmi'
@@ -270,9 +262,9 @@
 
 /obj/item/clothing/suit/corgisuit/en/process()
 	if(prob(2))
-		for(var/obj/M in orange(2,src))
-			if(!M.anchored && (M.flags_1 & CONDUCT_1))
-				step_towards(M,src)
+		for(var/obj/object in orange(2,src))
+			if(!object.anchored && (object.obj_flags & CONDUCTS_ELECTRICITY))
+				step_towards(object,src)
 		for(var/mob/living/silicon/S in orange(2,src))
 			if(istype(S, /mob/living/silicon/ai)) continue
 			step_towards(S,src)
@@ -295,7 +287,6 @@
 	icon_state = "bltrenchcoat"
 	body_parts_covered = CHEST|ARMS
 
- //ORION TODO: stop killing below this line these are fine just sort 'em
 /obj/item/clothing/suit/apron/chef/colorable_apron
 	name = "apron"
 	desc = "A basic apron."
@@ -312,49 +303,47 @@
 	greyscale_config_worn_vox = /datum/greyscale_config/apron/worn/oldvox
 	flags_1 = IS_PLAYER_COLORABLE_1
 
-/obj/item/clothing/suit/hawaiian_shirt
-	name = "hawaiian shirt"
-	desc = "Strangely en vogue with aviator wearing shibas."
-	icon_state = "hawaiianshirt"
-	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
-	greyscale_config = /datum/greyscale_config/hawaiian_shirt
-	greyscale_config_worn = /datum/greyscale_config/hawaiian_shirt/worn
-	greyscale_colors = "#313B82#CCCFF0"
-	flags_1 = IS_PLAYER_COLORABLE_1
-
-/obj/item/clothing/suit/apron/overalls/greyscale
-	desc = "A set of overalls."
-	icon_state = "overalls"
-	greyscale_config = /datum/greyscale_config/overalls
-	greyscale_config_worn = /datum/greyscale_config/overalls/worn
+/obj/item/clothing/suit/apron/overalls
 	greyscale_config_worn_digi = /datum/greyscale_config/overalls/worn/digi
-	greyscale_colors = "#594032"
+	greyscale_config_worn_better_vox = /datum/greyscale_config/overalls/worn/better_vox
+	greyscale_config_worn_vox = /datum/greyscale_config/overalls/worn/vox
+
+/obj/item/clothing/suit/apron/overalls/Initialize(mapload)
+	. = ..()
+	allowed += list(
+		/obj/item/flashlight,
+		/obj/item/lighter,
+		/obj/item/modular_computer/pda,
+		/obj/item/radio,
+		/obj/item/storage/bag/books,
+		/obj/item/storage/fancy/cigarettes,
+		/obj/item/tank/internals/emergency_oxygen,
+		/obj/item/tank/internals/plasmaman,
+		/obj/item/toy,
+		/obj/item/analyzer,
+		/obj/item/construction/rcd,
+		/obj/item/fireaxe/metal_h2_axe,
+		/obj/item/pipe_dispenser,
+		/obj/item/storage/bag/construction,
+		/obj/item/t_scanner,
+	)
+
+/obj/item/clothing/suit/warm_sweater
+	name = "warm sweater"
+	desc = "A comfortable warm-looking sweater."
+	icon_state = "warm_sweater"
+	greyscale_config = /datum/greyscale_config/warm_sweater
+	greyscale_config_worn = /datum/greyscale_config/warm_sweater/worn
+	greyscale_colors = "#867361"
 	flags_1 = IS_PLAYER_COLORABLE_1
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 
-/obj/item/clothing/suit/apron/overalls/greyscale/examine(mob/user)
-	. = ..()
-
-	. += span_notice("With <b>Alt + Click</b> you can switch this between making it overclothes or jumpsuit slot wearable.")
-
-	return .
-
-/obj/item/clothing/suit/apron/overalls/greyscale/AltClick(mob/user)
-	. = ..()
-	if(!iscarbon(user))
-		return
-	var/mob/living/carbon/carbon_user = user
-	if(carbon_user.get_item_by_slot(slot_flags) == src)
-		to_chat(user, span_warning("You must take [src] off before adjusting it!"))
-		return
-	if(!user.is_holding(src))
-		to_chat(user, span_warning("You must be holding [src] in order to adjust it!"))
-		return
-	switch(slot_flags)
-		if(ITEM_SLOT_ICLOTHING)
-			slot_flags = ITEM_SLOT_OCLOTHING
-			to_chat(user, span_warning("You adjust [src] to let you wear it over jumpsuits."))
-			return
-		if(ITEM_SLOT_OCLOTHING)
-			slot_flags = ITEM_SLOT_ICLOTHING
-			to_chat(user, span_warning("You adjust [src] to let you wear it as a jumpsuit."))
-			return
+/obj/item/clothing/suit/heart_sweater
+	name = "heart sweater"
+	desc = "A comfortable warm-looking sweater. It even has a heart pattern on it, how cute."
+	icon_state = "heart_sweater"
+	greyscale_config = /datum/greyscale_config/heart_sweater
+	greyscale_config_worn = /datum/greyscale_config/heart_sweater/worn
+	greyscale_colors = "#867361#8f3a3a"
+	flags_1 = IS_PLAYER_COLORABLE_1
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON

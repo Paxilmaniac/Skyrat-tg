@@ -79,12 +79,12 @@
 
 /obj/structure/falsewall/proc/ChangeToWall(delete = 1)
 	var/turf/T = get_turf(src)
-	T.PlaceOnTop(walltype)
+	T.place_on_top(walltype)
 	if(delete)
 		qdel(src)
 	return T
 
-/obj/structure/falsewall/tool_act(mob/living/user, obj/item/tool)
+/obj/structure/falsewall/tool_act(mob/living/user, obj/item/tool, tool_type, is_right_clicking)
 	if(!opening)
 		return ..()
 	to_chat(user, span_warning("You must wait until the door has stopped moving!"))
@@ -385,7 +385,7 @@
 			new girder_type(loc)
 		for(var/material in custom_materials)
 			var/datum/material/material_datum = material
-			new material_datum.sheet_type(loc, FLOOR(custom_materials[material_datum] / MINERAL_MATERIAL_AMOUNT, 1))
+			new material_datum.sheet_type(loc, FLOOR(custom_materials[material_datum] / SHEET_MATERIAL_AMOUNT, 1))
 	qdel(src)
 
 /obj/structure/falsewall/material/mat_update_desc(mat)
@@ -406,7 +406,7 @@
 
 /obj/structure/falsewall/material/ChangeToWall(delete = 1)
 	var/turf/current_turf = get_turf(src)
-	var/turf/closed/wall/material/new_wall = current_turf.PlaceOnTop(/turf/closed/wall/material)
+	var/turf/closed/wall/material/new_wall = current_turf.place_on_top(/turf/closed/wall/material)
 	new_wall.set_custom_materials(custom_materials)
 	if(delete)
 		qdel(src)

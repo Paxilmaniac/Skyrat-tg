@@ -1,48 +1,48 @@
 // Syndicate
 
-/mob/living/basic/syndicate/melee/anthro
+/mob/living/basic/trooper/syndicate/melee/anthro
 	name = "Syndicate Shanker"
 	desc = "An anthromorphic red panda member of the Syndicate, wielding a knife."
 	icon = 'modular_skyrat/master_files/icons/mob/newmobs.dmi'
 	icon_state = "syndiredpan"
 	icon_living = "syndiredpan"
 
-/mob/living/basic/syndicate/melee/sword/anthro
+/mob/living/basic/trooper/syndicate/melee/sword/anthro
 	name = "Syndicate Sword Beast"
 	desc = "An anthromorphic fennec member of the Syndicate, wielding an energy sword and shield."
 	icon = 'modular_skyrat/master_files/icons/mob/newmobs.dmi'
 	icon_state = "syndifennec"
 	icon_living = "syndifennec"
 
-/mob/living/basic/syndicate/ranged/anthro
+/mob/living/basic/trooper/syndicate/ranged/anthro
 	name = "Syndicate Pistoleer"
 	desc = "An anthromorphic member of the Syndicate, wielding a pistol."
 	icon = 'modular_skyrat/master_files/icons/mob/newmobs.dmi'
 	icon_state = "syndisquirrel"
 	icon_living = "syndisquirrel"
 
-/mob/living/basic/syndicate/ranged/smg/anthro
+/mob/living/basic/trooper/syndicate/ranged/smg/anthro
 	name = "Syndicate Rapid Gunnder"
 	desc = "A moth-person member of the Syndicate, wielding an SMG."
 	icon = 'modular_skyrat/master_files/icons/mob/newmobs.dmi'
 	icon_state = "syndimoth"
 	icon_living = "syndimoth"
 
-/mob/living/basic/syndicate/melee/space/anthro/lizard
+/mob/living/basic/trooper/syndicate/melee/space/anthro/lizard
 	name = "Syndicate Commando Lizard"
 	desc = "A reptilian member of the Syndicate!"
 	icon = 'modular_skyrat/master_files/icons/mob/newmobs.dmi'
 	icon_state = "syndilizard"
 	icon_living = "syndilizard"
 
-/mob/living/basic/syndicate/ranged/space/anthro/cat
+/mob/living/basic/trooper/syndicate/ranged/space/anthro/cat
 	icon = 'modular_skyrat/master_files/icons/mob/newmobs.dmi'
 	icon_state = "syndicat"
 	icon_living = "syndicat"
 	name = "Syndicate Commando Feline"
 	desc = "An anthromorphic feline member of the Syndicate."
 
-/mob/living/basic/syndicate/ranged/shotgun/space/stormtrooper/anthro/fox
+/mob/living/basic/trooper/syndicate/ranged/shotgun/space/stormtrooper/anthro/fox
 	icon = 'modular_skyrat/master_files/icons/mob/newmobs.dmi'
 	icon_state = "syndifox"
 	icon_living = "syndifox"
@@ -75,7 +75,7 @@
 	loot = list(/obj/effect/gibspawner/human)
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_plas" = 0, "max_plas" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 7.5
-	faction = list("hostile", "cult")
+	faction = list(FACTION_HOSTILE, FACTION_CULT)
 	status_flags = CANPUSH
 	del_on_death = 1
 	rapid_melee = 2
@@ -192,7 +192,7 @@
 	turns_per_move = 5
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	sentience_type = SENTIENCE_HUMANOID
-	faction = list("hostile", "cult")
+	faction = list(FACTION_HOSTILE, FACTION_CULT)
 	footstep_type = FOOTSTEP_MOB_SHOE
 	weather_immunities = list(TRAIT_LAVA_IMMUNE, TRAIT_ASHSTORM_IMMUNE)
 	minbodytemp = 0
@@ -236,7 +236,7 @@
 	unsuitable_atmos_damage = 15
 	check_friendly_fire = 1
 	dodging = TRUE
-	faction = list("hostile")
+	faction = list(FACTION_HOSTILE)
 	rapid_melee = 2
 	del_on_death = 1
 
@@ -284,7 +284,7 @@
 	casingtype = /obj/item/ammo_casing/shotgun/buckshot
 	loot = list(/obj/effect/spawner/random/maintenance/five)
 	dodging = FALSE
-	faction = list("hostile")
+	faction = list(FACTION_HOSTILE)
 	projectilesound = 'sound/weapons/gun/shotgun/shot.ogg'
 
 /mob/living/simple_animal/hostile/looter/ranged/space
@@ -324,7 +324,6 @@
 	mob_biotypes = MOB_ROBOTIC
 	health = 75
 	maxHealth = 75
-	healable = 0
 	melee_damage_lower = 10
 	melee_damage_upper = 10
 	attack_verb_continuous = "claws"
@@ -333,7 +332,7 @@
 	attack_vis_effect = ATTACK_EFFECT_CLAW
 	projectilesound = 'sound/weapons/gun/pistol/shot.ogg'
 	projectiletype = /obj/projectile/hivebotbullet
-	faction = list("hostile")
+	faction = list(FACTION_HOSTILE)
 	check_friendly_fire = 1
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_plas" = 0, "max_plas" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
@@ -513,7 +512,7 @@
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_plas" = 0, "max_plas" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	maxbodytemp = 1500
-	faction = list("hostile")
+	faction = list(FACTION_HOSTILE)
 	pressure_resistance = 200
 	gold_core_spawnable = HOSTILE_SPAWN
 
@@ -548,7 +547,7 @@
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_plas" = 0, "max_plas" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	maxbodytemp = 1500
-	faction = list("hostile")
+	faction = list(FACTION_HOSTILE)
 	pressure_resistance = 200
 	gold_core_spawnable = HOSTILE_SPAWN
 
@@ -586,7 +585,7 @@
 	atmos_requirements = list("min_oxy" = 10, "max_oxy" = 0, "min_plas" = 0, "max_plas" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	maxbodytemp = 1500
-	faction = list("hostile", "vines", "plants")
+	faction = list(FACTION_HOSTILE, "vines", "plants")
 	pressure_resistance = 200
 	gold_core_spawnable = HOSTILE_SPAWN
 
@@ -625,7 +624,7 @@
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_plas" = 0, "max_plas" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	maxbodytemp = 800
-	faction = list("hostile")
+	faction = list(FACTION_HOSTILE)
 	pressure_resistance = 200
 	gold_core_spawnable = HOSTILE_SPAWN
 
@@ -664,7 +663,7 @@
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_plas" = 0, "max_plas" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	maxbodytemp = 800
-	faction = list("hostile")
+	faction = list(FACTION_HOSTILE)
 	pressure_resistance = 200
 	gold_core_spawnable = NO_SPAWN
 
@@ -696,7 +695,7 @@
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_plas" = 0, "max_plas" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	maxbodytemp = 900
-	faction = list("hostile")
+	faction = list(FACTION_HOSTILE)
 	pressure_resistance = 200
 	gold_core_spawnable = HOSTILE_SPAWN
 
@@ -767,7 +766,7 @@
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_plas" = 0, "max_plas" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	maxbodytemp = 1500
-	faction = list("hostile")
+	faction = list(FACTION_HOSTILE)
 	pressure_resistance = 200
 	gold_core_spawnable = HOSTILE_SPAWN
 
@@ -802,7 +801,7 @@
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_plas" = 0, "max_plas" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	maxbodytemp = 1500
-	faction = list("hostile")
+	faction = list(FACTION_HOSTILE)
 	pressure_resistance = 200
 	gold_core_spawnable = NO_SPAWN
 
@@ -837,7 +836,7 @@
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_plas" = 0, "max_plas" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	maxbodytemp = 1500
-	faction = list("hostile")
+	faction = list(FACTION_HOSTILE)
 	pressure_resistance = 200
 	gold_core_spawnable = NO_SPAWN
 
@@ -869,7 +868,7 @@
 	loot = list(/obj/effect/spawner/random/maintenance/three = 1)
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_plas" = 0, "max_plas" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 5, "max_n2" = 0)
 	unsuitable_atmos_damage = 7.5
-	faction = list("hostile")
+	faction = list(FACTION_HOSTILE)
 	check_friendly_fire = 1
 	status_flags = CANPUSH
 	del_on_death = 1
@@ -890,7 +889,6 @@
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	attack_vis_effect = ATTACK_EFFECT_SLASH
 	status_flags = 0
-	var/projectile_deflect_chance = 0
 
 /mob/living/simple_animal/hostile/vox/ranged
 	name = "Vox Gunman"

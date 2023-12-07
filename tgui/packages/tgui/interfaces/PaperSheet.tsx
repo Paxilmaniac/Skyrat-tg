@@ -117,8 +117,8 @@ class PaperSheetStamper extends Component<PaperSheetStamperProps> {
   state: PaperSheetStamperState = { x: 0, y: 0, rotation: 0, yOffset: 0 };
   scrollableRef: RefObject<HTMLDivElement>;
 
-  constructor(props, context) {
-    super(props, context);
+  constructor(props) {
+    super(props);
 
     this.style = null;
     this.scrollableRef = props.scrollableRef;
@@ -156,7 +156,7 @@ class PaperSheetStamper extends Component<PaperSheetStamperProps> {
     if (e.pageY <= 30) {
       return;
     }
-    const { act } = useBackend<PaperContext>(this.context);
+    const { act } = useBackend<PaperContext>();
 
     act('add_stamp', {
       x: this.state.x,
@@ -224,7 +224,7 @@ class PaperSheetStamper extends Component<PaperSheetStamperProps> {
   }
 
   render() {
-    const { data } = useBackend<PaperContext>(this.context);
+    const { data } = useBackend<PaperContext>();
     const { held_item_details } = data;
 
     if (!held_item_details?.stamp_class) {
@@ -245,7 +245,7 @@ class PaperSheetStamper extends Component<PaperSheetStamperProps> {
 }
 
 // Creates a full stamp div to render the given stamp to the preview.
-export const Stamp = (props, context): InfernoElement<HTMLDivElement> => {
+export const Stamp = (props): InfernoElement<HTMLDivElement> => {
   const { activeStamp, sprite, x, y, rotation, opacity, yOffset = 0 } = props;
   const stamp_transform = {
     'left': x + 'px',
@@ -279,8 +279,8 @@ export class PrimaryView extends Component {
   // holding the main preview. Updates lastDistanceFromBottom.
   onScrollHandler: (this: GlobalEventHandlers, ev: Event) => any;
 
-  constructor(props, context) {
-    super(props, context);
+  constructor(props) {
+    super(props);
     this.scrollableRef = createRef();
     this.lastDistanceFromBottom = 0;
 
@@ -294,7 +294,7 @@ export class PrimaryView extends Component {
   }
 
   render() {
-    const { act, data } = useBackend<PaperContext>(this.context);
+    const { act, data } = useBackend<PaperContext>();
     const {
       raw_text_input,
       raw_field_input,
@@ -310,16 +310,11 @@ export class PrimaryView extends Component {
     const useBold = held_item_details?.use_bold || false;
 
     const [inputFieldData, setInputFieldData] = useLocalState(
-      this.context,
       'inputFieldData',
       {}
     );
 
-    const [textAreaText, setTextAreaText] = useLocalState(
-      this.context,
-      'textAreaText',
-      ''
-    );
+    const [textAreaText, setTextAreaText] = useLocalState('textAreaText', '');
 
     const interactMode =
       held_item_details?.interaction_mode || InteractionType.reading;
@@ -428,9 +423,82 @@ export class PreviewView extends Component<PreviewViewProps> {
   // Array containing cache of HTMLInputElements that are enabled.
   enabledInputFieldCache: { [key: string]: HTMLInputElement } = {};
 
-  constructor(props, context) {
-    super(props, context);
+  // State checking variables. Used to determine whether or not to use cache.
+  lastReadOnly: boolean = true;
+  lastDMInputCount: number = 0;
+  lastFieldCount: number = 0;
+  lastFieldInputCount: number = 0;
+
+  // Cache variables for fully parsed text. Workaround for marked.js not being
+  // super fast on the BYOND/IE js engine.
+  parsedDMCache: string = '';
+  parsedTextBoxCache: string = '';
+
+  constructor(props) {
+    super(props);
+    this.configureMarked();
   }
+
+  configureMarked = (): void => {
+    // This is an extension for marked defining a complete custom tokenizer.
+    // This tokenizer should run before the the non-custom ones, and gives us
+    // the ability to handle [_____] fields before the em/strong tokenizers
+    // mangle them, since underscores are used for italic/bold.
+    // This massively improves the order of operations, allowing us to run
+    // marked, THEN sanitise the output (much safer) and finally insert fields
+    // manually afterwards.
+    const inputField = {
+      name: 'inputField',
+      level: 'inline',
+
+      start(src) {
+        return src.match(/\[/)?.index;
+      },
+
+      tokenizer(src: string) {
+        const rule = /^\[_+\]/;
+        const match = src.match(rule);
+        if (match) {
+          const token = {
+            type: 'inputField',
+            raw: match[0],
+          };
+          return token;
+        }
+      },
+
+      renderer(token) {
+        return `${token.raw}`;
+      },
+    };
+
+    // Override function, any links and images should
+    // kill any other marked tokens we don't want here
+    const walkTokens = (token) => {
+      switch (token.type) {
+        case 'url':
+        case 'autolink':
+        case 'reflink':
+        case 'link':
+        case 'image':
+          token.type = 'text';
+          // Once asset system is up change to some default image
+          // or rewrite for icon images
+          token.href = '';
+          break;
+      }
+    };
+
+    marked.use({
+      extensions: [inputField],
+      breaks: true,
+      gfm: true,
+      smartypants: true,
+      walkTokens: walkTokens,
+      // Once assets are fixed might need to change this for them
+      baseUrl: 'thisshouldbreakhttp',
+    });
+  };
 
   // Extracts the paper field "counter" from a full ID.
   getHeaderID = (header: string): string => {
@@ -453,18 +521,19 @@ export class PreviewView extends Component<PreviewViewProps> {
   onInputHandler = (ev: Event): void => {
     const input = ev.target as HTMLInputElement;
 
-    // Skip text area input.
+    // We don't care about text area input, but this is a good place to
+    // clear the text box cache if we've had new input.
     if (input.nodeName !== 'INPUT') {
+      this.parsedTextBoxCache = '';
       return;
     }
 
     const [inputFieldData, setInputFieldData] = useLocalState(
-      this.context,
       'inputFieldData',
       {}
     );
 
-    const { data } = useBackend<PaperContext>(this.context);
+    const { data } = useBackend<PaperContext>();
     const { default_pen_font, default_pen_color, held_item_details } = data;
 
     if (input.value.length) {
@@ -490,8 +559,9 @@ export class PreviewView extends Component<PreviewViewProps> {
   // Creates the partial inline HTML for previewing or reading the paper from
   // only static_ui_data from DM.
   createPreviewFromDM = (): { text: string; newFieldCount: number } => {
-    const { data } = useBackend<PaperContext>(this.context);
+    const { data } = useBackend<PaperContext>();
     const {
+      raw_field_input,
       raw_text_input,
       default_pen_font,
       default_pen_color,
@@ -503,6 +573,19 @@ export class PreviewView extends Component<PreviewViewProps> {
     let fieldCount = 0;
 
     const readOnly = !canEdit(held_item_details);
+
+    // If readonly is the same (input field writiability state hasn't changed)
+    // And the input stats are the same (no new text inputs since last time)
+    // Then use any cached values.
+    if (
+      this.lastReadOnly === readOnly &&
+      this.lastDMInputCount === raw_text_input?.length &&
+      this.lastFieldInputCount === raw_field_input?.length
+    ) {
+      return { text: this.parsedDMCache, newFieldCount: this.lastFieldCount };
+    }
+
+    this.lastReadOnly = readOnly;
 
     raw_text_input?.forEach((value) => {
       let rawText = value.raw_text.trim();
@@ -531,13 +614,18 @@ export class PreviewView extends Component<PreviewViewProps> {
       fieldCount = processingOutput.nextCounter;
     });
 
+    this.lastDMInputCount = raw_text_input?.length || 0;
+    this.lastFieldInputCount = raw_field_input?.length || 0;
+    this.lastFieldCount = fieldCount;
+    this.parsedDMCache = output;
+
     return { text: output, newFieldCount: fieldCount };
   };
 
   // Creates the partial inline HTML for previewing or reading the paper from
   // the text input area.
   createPreviewFromTextArea = (fieldCount: number = 0): string => {
-    const { data } = useBackend<PaperContext>(this.context);
+    const { data } = useBackend<PaperContext>();
     const {
       default_pen_font,
       default_pen_color,
@@ -545,6 +633,11 @@ export class PreviewView extends Component<PreviewViewProps> {
       held_item_details,
     } = data;
     const { textArea } = this.props;
+
+    // Use the cache if one exists.
+    if (this.parsedTextBoxCache) {
+      return this.parsedTextBoxCache;
+    }
 
     const readOnly = true;
 
@@ -561,6 +654,8 @@ export class PreviewView extends Component<PreviewViewProps> {
       fieldCount,
       readOnly
     );
+
+    this.parsedTextBoxCache = processingOutput.text;
 
     return processingOutput.text;
   };
@@ -628,17 +723,7 @@ export class PreviewView extends Component<PreviewViewProps> {
       },
     };
 
-    // marked.use({ tokenizer });
-    marked.use({ extensions: [inputField] });
-
-    return marked.parse(rawText, {
-      breaks: true,
-      smartypants: true,
-      smartLists: true,
-      walkTokens,
-      // Once assets are fixed might need to change this for them
-      baseUrl: 'thisshouldbreakhttp',
-    });
+    return marked.parse(rawText);
   };
 
   // Fully formats, sanitises and parses the provided raw text and wraps it
@@ -654,7 +739,7 @@ export class PreviewView extends Component<PreviewViewProps> {
     advanced_html: boolean = false
   ): FieldCreationReturn => {
     // First lets make sure it ends in a new line
-    const { data } = useBackend<PaperContext>(this.context);
+    const { data } = useBackend<PaperContext>();
     rawText += rawText[rawText.length] === '\n' ? '\n' : '\n\n';
 
     // Second, parse the text using markup
@@ -709,7 +794,7 @@ export class PreviewView extends Component<PreviewViewProps> {
     forceReadonlyFields: boolean,
     counter: number = 0
   ): FieldCreationReturn => {
-    const { data } = useBackend<PaperContext>(this.context);
+    const { data } = useBackend<PaperContext>();
     const { raw_field_input } = data;
 
     const ret_text = rawText.replace(
@@ -761,7 +846,7 @@ export class PreviewView extends Component<PreviewViewProps> {
   ): string => {
     // This are fields that may potentially be fillable, so we'll use the
     // currently held item's stats for them if possible.
-    const { data } = useBackend<PaperContext>(this.context);
+    const { data } = useBackend<PaperContext>();
     const { held_item_details, max_input_field_length } = data;
 
     const fontColor = held_item_details?.color || color;
@@ -818,7 +903,7 @@ export class PreviewView extends Component<PreviewViewProps> {
     paperColor: string,
     id: string
   ): string => {
-    const { data } = useBackend<PaperContext>(this.context);
+    const { data } = useBackend<PaperContext>();
     const { max_input_field_length } = data;
 
     const fieldData = field.field_data;
@@ -826,7 +911,7 @@ export class PreviewView extends Component<PreviewViewProps> {
     let input = document.createElement('input');
     input.setAttribute('type', 'text');
 
-    input.style.fontSize = field.is_signature ? '30px' : `${fontSize}px`;
+    input.style.fontSize = field.is_signature ? '15px' : `${fontSize}px`;
     input.style.fontFamily = fieldData.font || font;
     input.style.fontStyle = field.is_signature ? 'italic' : 'normal';
     input.style.fontWeight = 'bold';
@@ -844,7 +929,7 @@ export class PreviewView extends Component<PreviewViewProps> {
   };
 
   render() {
-    const { data } = useBackend<PaperContext>(this.context);
+    const { data } = useBackend<PaperContext>();
     const { paper_color, held_item_details } = data;
     const interactMode =
       held_item_details?.interaction_mode || InteractionType.reading;
@@ -888,8 +973,8 @@ export class PreviewView extends Component<PreviewViewProps> {
 }
 
 // Renders all the stamp components for every valid stamp.
-export const StampView = (props, context) => {
-  const { data } = useBackend<PaperContext>(context);
+export const StampView = (props) => {
+  const { data } = useBackend<PaperContext>();
 
   const { raw_stamp_input = [] } = data;
 
@@ -913,15 +998,14 @@ export const StampView = (props, context) => {
   );
 };
 
-export const PaperSheet = (props, context) => {
-  const { data } = useBackend<PaperContext>(context);
+export const PaperSheet = (props) => {
+  const { data } = useBackend<PaperContext>();
   const { paper_color, paper_name, held_item_details } = data;
 
   const writeMode = canEdit(held_item_details);
 
   if (!writeMode) {
     const [inputFieldData, setInputFieldData] = useLocalState(
-      context,
       'inputFieldData',
       {}
     );
