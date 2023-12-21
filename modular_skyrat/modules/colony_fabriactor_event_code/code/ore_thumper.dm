@@ -62,6 +62,8 @@
 	var/obj/structure/cable/cable_under_us = locate() in our_turf
 	if(!cable_under_us && powernet)
 		disconnect_from_network()
+	else if(cable_under_us && !powernet)
+		connect_to_network()
 	if(thumping)
 		if(!see_if_we_can_work(our_turf))
 			balloon_alert_to_viewers("invalid location!")
