@@ -147,13 +147,13 @@
 		cut_that_out()
 		return
 	// Down we go
-	flick("thumper_slam")
+	flick("thumper_slam", src)
 	icon_state = "thumper_down"
 	// Crunch
 	playsound(src, pick(list_of_thumper_sounds), 50, TRUE)
 	slam_jams += 1
 	// Up and at em
-	flick("thumper_rise")
+	flick("thumper_rise", src)
 	icon_state = "thumper_idle"
 
 	addtimer(CALLBACK(src, PROC_REF(slam_it_down)), 15 SECONDS)
