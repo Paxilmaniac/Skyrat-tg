@@ -1,6 +1,6 @@
 #define SLAM_JAM_DELAY 15 SECONDS
 
-/obj/machinery/power/kahraman_ore_thumper
+/obj/machinery/power/colony_ore_thumper
 	name = "ore thumper"
 	desc = "A frame with a heavy block of metal suspended atop a pipe. \
 		Must be deployed outdoors and given a wired power connection. \
@@ -14,6 +14,8 @@
 	anchored = TRUE
 	can_change_cable_layer = FALSE
 	circuit = null
+	layer = ABOVE_MOB_LAYER
+	plane = GAME_PLANE_UPPER
 	/// Are we currently working?
 	var/thumping = FALSE
 	/// Our looping fan sound that we play when turned on
@@ -58,11 +60,11 @@
 	/// How far away does ore spawn?
 	var/ore_spawn_range = 2
 
-/obj/machinery/power/kahraman_ore_thumper/Initialize(mapload)
+/obj/machinery/power/colony_ore_thumper/Initialize(mapload)
 	. = ..()
 	soundloop = new(src, FALSE)
 
-/obj/machinery/power/kahraman_ore_thumper/add_context(
+/obj/machinery/power/colony_ore_thumper/add_context(
 	atom/source,
 	list/context,
 	obj/item/held_item,
@@ -76,7 +78,7 @@
 		return NONE
 
 
-/obj/machinery/power/kahraman_ore_thumper/examine(mob/user)
+/obj/machinery/power/colony_ore_thumper/examine(mob/user)
 	. = ..()
 	var/area/thumper_area = get_area(src)
 	if(!thumper_area.outdoors)
@@ -89,7 +91,7 @@
 	. += span_notice("It will stop producing new boxes if one is left on top of the thumper, building up resources instead.")
 
 
-/obj/machinery/power/kahraman_ore_thumper/process()
+/obj/machinery/power/colony_ore_thumper/process()
 	var/turf/our_turf = get_turf(src)
 	var/obj/structure/cable/cable_under_us = locate() in our_turf
 	if(!cable_under_us && powernet)
@@ -111,7 +113,7 @@
 
 
 /// Checks the turf we are on to make sure we are outdoors and on a misc turf
-/obj/machinery/power/kahraman_ore_thumper/proc/see_if_we_can_work(turf/our_turf)
+/obj/machinery/power/colony_ore_thumper/proc/see_if_we_can_work(turf/our_turf)
 	var/area/our_current_area = get_area(src)
 	if(!our_current_area.outdoors)
 		return FALSE
@@ -120,7 +122,7 @@
 	return TRUE
 
 
-/obj/machinery/power/kahraman_ore_thumper/attack_hand(mob/user, list/modifiers)
+/obj/machinery/power/colony_ore_thumper/attack_hand(mob/user, list/modifiers)
 	. = ..()
 	if(.)
 		return
@@ -133,16 +135,16 @@
 	start_her_up(user)
 
 
-/obj/machinery/power/kahraman_ore_thumper/attack_ai(mob/user)
+/obj/machinery/power/colony_ore_thumper/attack_ai(mob/user)
 	return attack_hand(user)
 
 
-/obj/machinery/power/kahraman_ore_thumper/attack_robot(mob/user)
+/obj/machinery/power/colony_ore_thumper/attack_robot(mob/user)
 	return attack_hand(user)
 
 
 /// Attempts turning the thumper on, failing if any of the conditions aren't met
-/obj/machinery/power/kahraman_ore_thumper/proc/start_her_up(mob/user)
+/obj/machinery/power/colony_ore_thumper/proc/start_her_up(mob/user)
 	var/turf/our_turf = get_turf(src)
 	var/obj/structure/cable/cable_under_us = locate() in our_turf
 	if(!cable_under_us && powernet)
@@ -164,7 +166,7 @@
 
 
 /// Attempts to shut the thumper down
-/obj/machinery/power/kahraman_ore_thumper/proc/cut_that_out(mob/user)
+/obj/machinery/power/colony_ore_thumper/proc/cut_that_out(mob/user)
 	thumping = FALSE
 	soundloop.stop()
 	if(user)
@@ -172,7 +174,7 @@
 
 
 /// Makes the machine slam down, producing a box of ore if it has been slamming long enough
-/obj/machinery/power/kahraman_ore_thumper/proc/slam_it_down()
+/obj/machinery/power/colony_ore_thumper/proc/slam_it_down()
 	if(!thumping)
 		return
 	var/turf/our_turf = get_turf(src)
@@ -209,7 +211,7 @@
 
 
 /// Spawns an ore box on top of the thumper
-/obj/machinery/power/kahraman_ore_thumper/proc/make_some_ore()
+/obj/machinery/power/colony_ore_thumper/proc/make_some_ore()
 	var/list/nearby_valid_turfs = list()
 	for(var/turf/nearby_turf in orange(ore_spawn_range, src))
 		if(nearby_turf.is_blocked_turf(TRUE))
@@ -234,7 +236,7 @@
 	name = "flat-packed ore thumper"
 	icon = 'modular_skyrat/modules/colony_fabriactor_event_code/icons/packed_machines.dmi'
 	icon_state = "thumper_packed"
-	type_to_deploy = /obj/machinery/power/kahraman_ore_thumper
+	type_to_deploy = /obj/machinery/power/colony_ore_thumper
 	custom_materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 15,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 5,
