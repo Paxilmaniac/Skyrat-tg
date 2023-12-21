@@ -21,7 +21,7 @@
 	/// How many times we've slammed, counts up until the number is high enough to make a box of materials
 	var/slam_jams = 0
 	/// How many times we need to slam in order to produce a box of materials
-	var/slam_jams_needed = 20
+	var/slam_jams_needed = 10
 	/// List of the thumping sounds we can choose from
 	var/static/list/list_of_thumper_sounds = list(
 		'modular_skyrat/modules/colony_fabriactor_event_code/sound/thumper_thump/punch_press_1.wav',
@@ -182,7 +182,7 @@
 		return
 	// Down we go
 	flick("thumper_slam", src)
-	playsound(src, pick(list_of_thumper_sounds), 50, TRUE)
+	playsound(src, pick(list_of_thumper_sounds), 80, TRUE)
 	if(slam_jams < (slam_jams_needed + 1))
 		slam_jams += 1
 
@@ -219,12 +219,14 @@
 	if(!length(nearby_valid_turfs))
 		nearby_valid_turfs.Add(get_turf(src))
 
-	for(var/iteration in 1 to rand(5, 8))
+	for(var/iteration in 1 to rand(2, 4))
 		var/turf/target_turf = pick(nearby_valid_turfs)
 		var/obj/item/stack/new_ore = pick_weight(ore_weight_list)
 		var/obj/new_ore_pile = new new_ore(target_turf, ore_spawn_values[new_ore.type])
 		new /obj/effect/temp_visual/mook_dust/robot(target_turf)
 		playsound(new_ore_pile, 'modular_skyrat/master_files/sound/effects/robot_sit.ogg', 25, TRUE)
+
+	slam_jams -= slam_jams_needed
 
 
 // Item for deploying ore thumpers
