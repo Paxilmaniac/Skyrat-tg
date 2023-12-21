@@ -171,7 +171,7 @@
 
 
 /// Spawns an ore box on top of the thumper
-/obj/machinery/power/kahraman_ore_thumper/proc/make_some_ore
+/obj/machinery/power/kahraman_ore_thumper/proc/make_some_ore()
 	new /obj/structure/closet/crate/large/ore_thumper(drop_location(src))
 	playsound(src, 'sound/items/rped.ogg', 50, TRUE)
 	slam_jams -= slam_jams_needed
