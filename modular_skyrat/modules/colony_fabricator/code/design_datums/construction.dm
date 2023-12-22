@@ -25,7 +25,7 @@
 /datum/design/prefab_airlock_kit
 	name = "Prefab Airlock"
 	id = "prefab_airlock_kit"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 2,
@@ -42,7 +42,7 @@
 /datum/design/prefab_shutters_kit
 	name = "Prefab Shutters"
 	id = "prefab_shutters_kit"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 2,
@@ -59,7 +59,7 @@
 /datum/design/prefab_floor_tile
 	name = "Prefab Floor Tile"
 	id = "prefab_floor_tile"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT,
 	)
@@ -75,7 +75,7 @@
 /datum/design/prefab_cat_floor_tile
 	name = "Prefab Catwalk Plating"
 	id = "prefab_cat_floor_tile"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT,
 	)
@@ -91,7 +91,7 @@
 /datum/design/colony_fab_plastic_wall_panel
 	name = "Plastic Paneling x10"
 	id = "colony_fab_plastic_wall_panel"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/plastic = SHEET_MATERIAL_AMOUNT * 5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 5

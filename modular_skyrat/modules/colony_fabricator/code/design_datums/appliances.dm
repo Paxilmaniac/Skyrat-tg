@@ -29,7 +29,7 @@
 /datum/design/wall_mounted_multi_charger
 	name = "Mounted Multi-Cell Charging Rack"
 	id = "wall_multi_cell_rack"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 2,
 		/datum/material/silver = SHEET_MATERIAL_AMOUNT * 1,
@@ -46,7 +46,7 @@
 /datum/design/portable_gas_pump
 	name = "Portable Air Pump"
 	id = "portable_lil_pump"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 7.5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 3,
@@ -61,7 +61,7 @@
 /datum/design/portable_gas_scrubber
 	name = "Portable Air Scrubber"
 	id = "portable_scrubbs"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 7.5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 3,
@@ -78,7 +78,7 @@
 /datum/design/water_synthesizer
 	name = "Water Synthesizer"
 	id = "water_synth"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 2.5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT,

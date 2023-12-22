@@ -5,6 +5,7 @@
 /datum/design/board/cyborgrecharger/New()
 	. = ..()
 	build_type |= COLONY_FABRICATOR
+	build_type |= COLONY_ENGI_FAB
 
 /datum/design/board/microwave/New()
 	. = ..()
@@ -21,6 +22,7 @@
 /datum/design/board/suit_storage_unit/New()
 	. = ..()
 	build_type |= COLONY_FABRICATOR
+	build_type |= COLONY_ENGI_FAB
 
 /datum/design/board/range/New()
 	. = ..()

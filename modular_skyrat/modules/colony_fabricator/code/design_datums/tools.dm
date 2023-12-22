@@ -18,7 +18,7 @@
 /datum/design/colony_power_driver
 	name = "Powered Driver"
 	id = "colony_power_drive"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	build_path = /obj/item/screwdriver/omni_drill
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 1.75,
@@ -35,7 +35,7 @@
 /datum/design/colony_door_crowbar
 	name = "Prybar"
 	id = "colony_prybar"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	build_path = /obj/item/crowbar/large/doorforcer
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 1.75,
@@ -51,7 +51,7 @@
 /datum/design/colony_arc_welder
 	name = "Arc Welder"
 	id = "colony_arc_welder"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	build_path = /obj/item/weldingtool/electric/arc_welder
 	materials = list(
 		/datum/material/iron = HALF_SHEET_MATERIAL_AMOUNT,

@@ -36,7 +36,7 @@
 		rapidly constructing functional structures given resources and power. While it cannot be upgraded, it can be repacked \
 		and moved to any location you see fit."
 	id = "flatpack_colony_fab"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 10,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 7.5,
@@ -57,7 +57,7 @@
 	name = "Flat-packed Solar Panel"
 	desc = "A deployable solar panel, able to be repacked after placement for relocation or recycling."
 	id = "flatpack_solar_panel"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 1.5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 1,
@@ -73,7 +73,7 @@
 	name = "Flat-packed Solar Tracker"
 	desc = "A deployable solar tracker, able to be repacked after placement for relocation or recycling."
 	id = "flatpack_solar_tracker"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 2,
 		/datum/material/glass = HALF_SHEET_MATERIAL_AMOUNT * 3.5,
@@ -92,7 +92,7 @@
 	desc = "A deployable furnace for refining ores. While slower and less safe than conventional refining methods, \
 		it multiplies the output of refined materials enough to still outperform simply recycling ore."
 	id = "flatpack_arc_furnace"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 7.5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 3,
@@ -110,7 +110,7 @@
 	name = "Flat-packed Stationary Battery"
 	desc = "A deployable station-scale power cell with an overall low capacity, but high input and output rate."
 	id = "flatpack_station_battery"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 7,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 2,
@@ -127,7 +127,7 @@
 	name = "Flat-packed Large Stationary Battery"
 	desc = "A deployable station-scale power cell with an overall extremely high capacity, but low input and output rate."
 	id = "flatpack_station_battery_large"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 12,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 4,
@@ -147,7 +147,7 @@
 	desc = "A deployable plasma-burning generator capable of outperforming even upgraded P.A.C.M.A.N. type generators, \
 		at expense of creating hot carbon dioxide exhaust."
 	id = "flatpack_fuel_generator"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT,
@@ -168,7 +168,7 @@
 	desc = "A deployable radioisotope generator capable of producing a practically free trickle of power. \
 		Free if you can tolerate the radiation that the machine makes while deployed, that is."
 	id = "flatpack_rtg"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 15,
 		/datum/material/uranium = SHEET_MATERIAL_AMOUNT * 5,
@@ -189,7 +189,7 @@
 	desc = "A deployable temperature control device for use with atmospherics pipe systems. \
 		Limited in its temperature range, however comes with a higher than normal heat capacity."
 	id = "flatpack_thermo"
-	build_type = COLONY_FABRICATOR
+	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 7.5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT,
