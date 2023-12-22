@@ -3,7 +3,7 @@
 	desc = "A post with two special-designed vertical turbine blades attached to its sides. \
 		When placed outdoors in a planet with an atmosphere, will produce a small trickle of power \
 		for free. If there is a storm in the area the turbine is placed, the power production will \
-		multiple significantly."
+		multiply significantly."
 	icon = 'modular_skyrat/modules/colony_fabriactor_event_code/icons/power_machines.dmi'
 	icon_state = "turbine"
 	density = TRUE
@@ -15,12 +15,10 @@
 	layer = ABOVE_MOB_LAYER
 	plane = GAME_PLANE_UPPER
 	can_change_cable_layer = TRUE
-	/// Our looping fan sound that we play when generating power
-	var/datum/looping_sound/ore_thumper_fan/soundloop
 	/// How much power the turbine makes without a storm
 	var/regular_power_production = 2500
 	/// How much power the turbine makes during a storm
-	var/storm_power_production = 25000
+	var/storm_power_production = 10000
 	/// Is our pressure too low to function?
 	var/pressure_too_low = FALSE
 	/// Minimum external pressure needed to work
