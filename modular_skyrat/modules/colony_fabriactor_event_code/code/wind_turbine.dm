@@ -48,6 +48,7 @@
 	var/datum/gas_mixture/environment = our_turf.return_air()
 	var/area/our_current_area = get_area(src)
 	if(!our_current_area.outdoors)
+		icon_state = "turbine"
 		return
 	if(environment.return_pressure() < minimum_pressure)
 		pressure_too_low = TRUE
@@ -62,14 +63,13 @@
 		if((our_turf.z in possible_weather.impacted_z_levels) || (our_current_area in possible_weather.impacted_areas))
 			weather_we_track = possible_weather
 			break
-	if(!(weather_we_track.stage == END_STAGE))
-		storming_out = TRUE
+	if(weather_we_track)
+		if(!(weather_we_track.stage == END_STAGE))
+			storming_out = TRUE
 
 	add_avail((storming_out ? storm_power_production : regular_power_production))
 
 	var/new_icon_state = (storming_out ? "turbine_storm" : "turbine_normal")
-	if(new_icon_state == icon_state)
-		return
 	icon_state = new_icon_state
 
 
