@@ -13,7 +13,7 @@
 	display_name = "Colony Fabricator Engineering Flatpack Designs"
 	description = "Contains all of the colony fabricator's flatpack machine designs."
 	design_ids = list(
-		"flatpack_engi_fab",
+		"flatpack_engineering_fab",
 		"flatpack_ore_thumper",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000000000000000) // God save you
