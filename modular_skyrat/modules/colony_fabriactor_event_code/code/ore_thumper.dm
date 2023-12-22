@@ -59,10 +59,14 @@
 	var/nearby_ore_limit = 10
 	/// How far away does ore spawn?
 	var/ore_spawn_range = 2
+	/// What do we undeploy into
+	var/undeploy_type = /obj/item/flatpacked_machine/ore_thumper
 
 /obj/machinery/power/colony_ore_thumper/Initialize(mapload)
 	. = ..()
 	soundloop = new(src, FALSE)
+	AddElement(/datum/element/repackable, undeploy_type, 4 SECONDS)
+	AddElement(/datum/element/manufacturer_examine, COMPANY_FRONTIER)
 
 /obj/machinery/power/colony_ore_thumper/add_context(
 	atom/source,
