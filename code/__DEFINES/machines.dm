@@ -70,7 +70,7 @@
 /// Can be made by the orderable colony fabricator
 #define COLONY_FABRICATOR (1<<11)
 /// Can be made by the engineering heavy fabricator
-#define COLONY_ENGI_FAB (1<12)
+#define COLONY_ENGI_FAB (1<<12)
 // SKYRAT EDIT END
 
 #define FIREDOOR_OPEN 1

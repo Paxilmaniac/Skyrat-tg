@@ -33,6 +33,8 @@
 	)
 	construction_time = 30 SECONDS
 
+#undef FABRICATOR_SUBCATEGORY_STRUCTURES
+
 /datum/design/light_switch_frame/New()
 	. = ..()
 	build_type |= COLONY_FABRICATOR

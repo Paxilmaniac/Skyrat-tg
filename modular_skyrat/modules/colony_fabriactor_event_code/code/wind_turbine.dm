@@ -52,6 +52,7 @@
 	if(environment.return_pressure() < minimum_pressure)
 		pressure_too_low = TRUE
 		icon_state = "turbine"
+		add_avail(0)
 		return
 	pressure_too_low = FALSE
 	var/storming_out = FALSE
