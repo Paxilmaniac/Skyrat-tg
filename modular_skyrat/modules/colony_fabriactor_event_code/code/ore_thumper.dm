@@ -198,13 +198,21 @@
 		return
 
 	var/nearby_ore = 0
+	var/is_there_a_thumper_too = FALSE
 	for(var/turf/nearby_turf in orange(ore_spawn_range, src))
 		for(var/ore as anything in nearby_turf.contents)
 			if(istype(ore, /obj/item/stack/ore))
 				nearby_ore += 1
+			if(istype(ore, /obj/machinery/power/colony_ore_thumper))
+				is_there_a_thumper_too = TRUE
+				break
 
 	if(nearby_ore > nearby_ore_limit)
 		balloon_alert_to_viewers("nearby ore too saturated")
+		return
+
+	if(is_there_a_thumper_too)
+		balloon_alert_to_viewers("too close to another thumper")
 		return
 
 	addtimer(CALLBACK(src, PROC_REF(make_some_ore)), 3 SECONDS)
