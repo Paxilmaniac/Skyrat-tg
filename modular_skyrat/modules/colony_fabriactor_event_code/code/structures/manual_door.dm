@@ -25,6 +25,7 @@
 		return
 	if(!do_after(user, manual_actuation_delay, src))
 		return
+	. = ..()
 
 // We don't care about being bumped, just a copy of the base bumped proc
 /obj/structure/mineral_door/manual_colony_door/Bumped(atom/movable/bumped_atom)
@@ -41,3 +42,4 @@
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 2,
 	)
+	w_class = WEIGHT_CLASS_NORMAL

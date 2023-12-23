@@ -18,6 +18,7 @@
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 2,
 	)
+	w_class = WEIGHT_CLASS_NORMAL
 
 // Airlocks
 
@@ -43,3 +44,4 @@
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 2,
 	)
+	w_class = WEIGHT_CLASS_NORMAL

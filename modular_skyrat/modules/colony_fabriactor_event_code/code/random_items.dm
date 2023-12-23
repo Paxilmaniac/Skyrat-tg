@@ -17,3 +17,7 @@
 		Small enough to fit in a backpack, and able to smash windows in case of emergency. \
 		Clearly not a fire axe, because what maniac would fight a fire with an axe?"
 	w_class = WEIGHT_CLASS_NORMAL
+	custom_materials = list(
+		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
+		/datum/material/titanium = HALF_SHEET_MATERIAL_AMOUNT * 3,
+	)

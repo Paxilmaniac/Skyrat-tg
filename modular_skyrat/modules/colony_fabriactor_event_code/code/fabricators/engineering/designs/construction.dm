@@ -35,8 +35,10 @@
 	)
 
 /datum/design/miniature_fire_axe
-	name = "Turbine Stator"
-	desc = "A completely upgraded turbine stator."
+	name = "Emergency Disembarkation Axe"
+	desc = "A lightweight crowbar with an axe head attached to the other end. \
+		Small enough to fit in a backpack, and able to smash windows in case of emergency. \
+		Clearly not a fire axe, because what maniac would fight a fire with an axe?"
 	id = "miniature_fire_axe"
 	build_type = COLONY_ENGI_FAB
 	materials = list(
