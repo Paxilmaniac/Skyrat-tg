@@ -57,7 +57,7 @@
 // Fancy floor tiles
 
 /datum/design/prefab_floor_tile
-	name = "Prefab Floor Tile"
+	name = "Prefab Floor Tile x4"
 	id = "prefab_floor_tile"
 	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
@@ -73,7 +73,7 @@
 // Fancy catwalk floor tiles
 
 /datum/design/prefab_cat_floor_tile
-	name = "Prefab Catwalk Plating"
+	name = "Prefab Catwalk Plating x4"
 	id = "prefab_cat_floor_tile"
 	build_type = COLONY_FABRICATOR | COLONY_ENGI_FAB
 	materials = list(
