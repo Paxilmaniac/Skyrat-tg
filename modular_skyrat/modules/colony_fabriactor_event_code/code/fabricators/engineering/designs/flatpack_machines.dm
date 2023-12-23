@@ -19,6 +19,7 @@
 		"turbine_part_rotor_super",
 		"turbine_part_stator_super",
 		"miniature_fire_axe",
+		"flatpack_ore_silo",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000000000000000) // God save you
 	hidden = TRUE
@@ -48,7 +49,7 @@
 	)
 	construction_time = 2 MINUTES
 
-// Engineering fabricators, gives new designs for engineering stuff specifically
+// Ore thumpers, hit the ground enough times to make ore show up near them
 
 /datum/design/flatpack_ore_thumper
 	name = "Flat-packed Ore Thumper"
@@ -65,6 +66,25 @@
 		/datum/material/gold = HALF_SHEET_MATERIAL_AMOUNT,
 	)
 	build_path = /obj/item/flatpacked_machine/ore_thumper
+	category = list(
+		RND_CATEGORY_INITIAL,
+		FABRICATOR_CATEGORY_FLATPACK_MACHINES + FABRICATOR_SUBCATEGORY_MATERIALS,
+	)
+	construction_time = 1 MINUTES
+
+// Ore silo except it beeps
+
+/datum/design/flatpack_ore_silo
+	name = "Flat-packed Ore Silo"
+	desc = "An all-in-one materials management solution. Connects resource-using machines \
+		through a network of distrobution systems."
+	id = "flatpack_ore_silo"
+	build_type = COLONY_ENGI_FAB
+	materials = list(
+		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
+		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 5,
+	)
+	build_path = /obj/item/flatpacked_machine/ore_silo
 	category = list(
 		RND_CATEGORY_INITIAL,
 		FABRICATOR_CATEGORY_FLATPACK_MACHINES + FABRICATOR_SUBCATEGORY_MATERIALS,
