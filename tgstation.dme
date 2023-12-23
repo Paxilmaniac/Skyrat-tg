@@ -6799,7 +6799,7 @@
 #include "modular_skyrat\modules\cme\code\cme.dm"
 #include "modular_skyrat\modules\colony_fabriactor_event_code\code\looping_sounds.dm"
 #include "modular_skyrat\modules\colony_fabriactor_event_code\code\ore_thumper.dm"
-#include "modular_skyrat\modules\colony_fabriactor_event_code\code\turbine_parts.dm"
+#include "modular_skyrat\modules\colony_fabriactor_event_code\code\random_items.dm"
 #include "modular_skyrat\modules\colony_fabriactor_event_code\code\wind_turbine.dm"
 #include "modular_skyrat\modules\colony_fabriactor_event_code\code\fabricators\designs_for_all\construction.dm"
 #include "modular_skyrat\modules\colony_fabriactor_event_code\code\fabricators\designs_for_all\flatpack_machines.dm"

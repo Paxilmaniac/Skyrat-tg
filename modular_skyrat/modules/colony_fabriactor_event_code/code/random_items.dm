@@ -1,3 +1,5 @@
+// Turbine parts that spawn at max upgrade
+
 /obj/item/turbine_parts/compressor/fullupgrade
 	current_tier = TURBINE_PART_TIER_FOUR
 
