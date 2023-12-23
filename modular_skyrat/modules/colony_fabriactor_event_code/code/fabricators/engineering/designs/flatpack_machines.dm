@@ -15,6 +15,9 @@
 	design_ids = list(
 		"flatpack_engineering_fab",
 		"flatpack_ore_thumper",
+		"turbine_part_compressor_super",
+		"turbine_part_rotor_super",
+		"turbine_part_stator_super",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000000000000000) // God save you
 	hidden = TRUE
