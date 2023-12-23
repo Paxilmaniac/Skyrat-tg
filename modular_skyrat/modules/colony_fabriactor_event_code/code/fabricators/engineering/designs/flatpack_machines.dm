@@ -18,6 +18,7 @@
 		"turbine_part_compressor_super",
 		"turbine_part_rotor_super",
 		"turbine_part_stator_super",
+		"miniature_fire_axe",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000000000000000) // God save you
 	hidden = TRUE

@@ -34,6 +34,21 @@
 		RND_CATEGORY_STOCK_PARTS + RND_SUBCATEGORY_STOCK_PARTS_TURBINE
 	)
 
+/datum/design/miniature_fire_axe
+	name = "Turbine Stator"
+	desc = "A completely upgraded turbine stator."
+	id = "miniature_fire_axe"
+	build_type = COLONY_ENGI_FAB
+	materials = list(
+		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
+		/datum/material/titanium = HALF_SHEET_MATERIAL_AMOUNT * 3,
+	)
+	construction_time = 30 SECONDS
+	build_path = /obj/item/fireaxe/metal_h2_axe/colony_event
+	category = list(
+		RND_CATEGORY_TOOLS + RND_SUBCATEGORY_TOOLS_ENGINEERING_ADVANCED
+	)
+
 /datum/design/ignition_control/New()
 	. = ..()
 	build_type |= COLONY_ENGI_FAB
