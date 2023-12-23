@@ -62,7 +62,6 @@
 
 /datum/design/bolter_wrench/New()
 	. = ..()
-	build_type |= COLONY_FABRICATOR
 	build_type |= COLONY_ENGI_FAB
 
 /datum/design/rpd/New()
@@ -72,7 +71,6 @@
 
 /datum/design/rpd_upgrade/unwrench/New()
 	. = ..()
-	build_type |= COLONY_FABRICATOR
 	build_type |= COLONY_ENGI_FAB
 
 /datum/design/rtd_loaded/New()

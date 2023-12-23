@@ -228,6 +228,8 @@
 	for(var/turf/nearby_turf in orange(ore_spawn_range, src))
 		if(nearby_turf.is_blocked_turf(TRUE))
 			continue
+		if(!ismiscturf(nearby_turf))
+			continue
 		nearby_valid_turfs.Add(nearby_turf)
 	// Fallback in case somehow there are no valid nearby turfs
 	if(!length(nearby_valid_turfs))
