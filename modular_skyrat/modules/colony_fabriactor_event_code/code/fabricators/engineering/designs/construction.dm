@@ -86,3 +86,93 @@
 /datum/design/board/turbine_stator/New()
 	. = ..()
 	build_type |= COLONY_ENGI_FAB
+
+// Mech stuff, yippie!
+
+/datum/design/board/ripley_main/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/ripley_peri/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/ripley_chassis/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/ripley_torso/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/ripley_left_arm/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/ripley_right_arm/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/ripley_left_leg/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/ripley_right_leg/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/ripleyupgrade/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/mech_drill/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/mech_diamond_drill/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/mech_plasma_cutter/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/mecha_kineticgun/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/mech_hydraulic_clamp/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/mech_mining_scanner/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/mech_extinguisher/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/mech_generator/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/mech_radio/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/mech_air_tank/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/mecha_tracking/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/mecha_tracking_ai_control/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/mecha_camera/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
