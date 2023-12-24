@@ -176,3 +176,85 @@
 /datum/design/mecha_camera/New()
 	. = ..()
 	build_type |= COLONY_ENGI_FAB
+
+// No more mech stuff
+
+/datum/design/plasmacutter/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/jackhammer/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/superresonator/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/fax/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/exodrone_launcher/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/exoscanner/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/component_printer/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/module_printer/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/navbeacon/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/crystallizer/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/HFR_interface/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/HFR_corner/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/HFR_moderator_input/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/HFR_waste_output/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/HFR_fuel_input/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/HFR_core/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/stacking_machine/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/stacking_unit_console/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/electrolyzer/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB
+
+/datum/design/board/thermomachine/New()
+	. = ..()
+	build_type |= COLONY_ENGI_FAB

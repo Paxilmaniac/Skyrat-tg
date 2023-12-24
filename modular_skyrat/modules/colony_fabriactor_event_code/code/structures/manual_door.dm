@@ -3,8 +3,8 @@
 	icon = 'modular_skyrat/modules/colony_fabriactor_event_code/icons/airlock_manual.dmi'
 	material_flags = NONE
 	icon_state = "manual"
-	openSound = 'modular_skyrat/modules/colony_fabriactor_event_code/sound/manual_door/manual_door_open.ogg'
-	closeSound = 'modular_skyrat/modules/colony_fabriactor_event_code/sound/manual_door/manual_door_close.ogg'
+	openSound = 'modular_skyrat/modules/colony_fabriactor_event_code/sound/manual_door/manual_door_open.wav'
+	closeSound = 'modular_skyrat/modules/colony_fabriactor_event_code/sound/manual_door/manual_door_close.wav'
 	/// What we disassemble into
 	var/disassembled_type = /obj/item/flatpacked_machine/airlock_kit_manual
 	/// How long it takes to open/close the door
@@ -31,6 +31,42 @@
 /obj/structure/mineral_door/manual_colony_door/Bumped(atom/movable/bumped_atom)
 	set waitfor = FALSE
 	SEND_SIGNAL(src, COMSIG_ATOM_BUMPED, bumped_atom)
+
+/obj/structure/mineral_door/manual_colony_door/Open()
+	isSwitchingStates = TRUE
+	playsound(src, openSound, 100, TRUE)
+	set_opacity(FALSE)
+	flick("[initial(icon_state)]opening",src)
+	icon_state = "[initial(icon_state)]open"
+	sleep(1 SECONDS)
+	set_density(FALSE)
+	door_opened = TRUE
+	layer = OPEN_DOOR_LAYER
+	air_update_turf(TRUE, FALSE)
+	update_appearance()
+	isSwitchingStates = FALSE
+
+	if(close_delay != -1)
+		addtimer(CALLBACK(src, PROC_REF(Close)), close_delay)
+
+/obj/structure/mineral_door/manual_colony_door/Close()
+	if(isSwitchingStates || !door_opened)
+		return
+	var/turf/T = get_turf(src)
+	for(var/mob/living/L in T)
+		return
+	isSwitchingStates = TRUE
+	playsound(src, closeSound, 100, TRUE)
+	flick("[initial(icon_state)]closing",src)
+	icon_state = initial(icon_state)
+	sleep(1 SECONDS)
+	set_density(TRUE)
+	set_opacity(TRUE)
+	door_opened = FALSE
+	layer = initial(layer)
+	air_update_turf(TRUE, TRUE)
+	update_appearance()
+	isSwitchingStates = FALSE
 
 // Parts kit for putting the door together
 /obj/item/flatpacked_machine/airlock_kit_manual
